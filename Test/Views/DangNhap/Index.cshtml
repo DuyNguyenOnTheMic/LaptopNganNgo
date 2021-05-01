@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Đăng Nhập";
     Layout = "~/Views/_DangNhap.cshtml";
 }
@@ -54,8 +53,7 @@ Trợ Giúp</pre>
     <img id="Twitter"
          src="~/Images/twitter.png" />
 
-    <input type="text" placeholder="Tên đăng nhập hoặc email" name="uname" required>
-    <input type="password" placeholder="Mật khẩu" name="psw" required>
+
     <label><b>Lấy lại mật khẩu?</b></label>
     <a href="https://localhost:44357/DangKy/Index">
         <button id="DK"><b>Đăng ký</b></button>
@@ -66,40 +64,17 @@ Trợ Giúp</pre>
     <img id="iconMK"
          src="~/Images/password-icon-28.png" />
 
-    <a href="https://localhost:44357/TrangChu/Index">
+    <form action="Index" method="post">
+        <input type="text" placeholder="Tên đăng nhập hoặc email" id="txt_TenDangNhap">
+        <input type="password" placeholder="Mật khẩu" id="txt_MatKhau">
+
         <button id="myBtn">Đăng nhập</button>
-    </a>
-
-    <div id="myModal" class="modal">
-
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Đăng nhập thành công !!</p>
-        </div>
-    </div>
-
-
-
-    <script>
-        var modal = document.getElementById("myModal");
-        var btn = document.getElementById("myBtn");
-        var span = document.getElementsByClassName("close")[0];
-
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-
+    </form>
 
 </div>
+
+
+
+
+
 

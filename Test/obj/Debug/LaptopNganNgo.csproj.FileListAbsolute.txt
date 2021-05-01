@@ -286,3 +286,7 @@ E:\LaptopNganNgo\Test\obj\Debug\LaptopNganNgo.csproj.CoreCompileInputs.cache
 E:\LaptopNganNgo\Test\obj\Debug\LaptopNganNgo.csproj.CopyComplete
 E:\LaptopNganNgo\Test\obj\Debug\Test.dll
 E:\LaptopNganNgo\Test\obj\Debug\Test.pdb
+E:\LaptopNganNgo\Test\bin\EntityFramework.dll
+E:\LaptopNganNgo\Test\bin\EntityFramework.SqlServer.dll
+E:\LaptopNganNgo\Test\bin\EntityFramework.xml
+E:\LaptopNganNgo\Test\bin\EntityFramework.SqlServer.xml

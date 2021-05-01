@@ -220,7 +220,7 @@ body {
 input[type=text] {
     width: 300.6961088692907px;
     height: 54.45706371191147px;
-    font-family: OpenSans-Light;
+    font-family: Arial;
     font-size: 18.666668px;
     color: #434343;
     background-color: #FFFFFF;
@@ -239,7 +239,7 @@ input[type=text] {
 input[type=password] {
     width: 300.6961088692908px;
     height: 54.45706371191136px;
-    font-family: OpenSans-Light;
+    font-family: Arial;
     font-size: 18.666668px;
     color: #434343;
     background-color: #FFFFFF;
