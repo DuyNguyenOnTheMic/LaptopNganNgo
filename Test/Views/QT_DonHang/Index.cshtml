@@ -1,0 +1,191 @@
+﻿
+@{
+    ViewBag.Title = "Đơn hàng";
+    Layout = "~/Views/_QT_DonHang.cshtml";
+}
+
+<div class="Header">
+
+    <a href="https://localhost:44357/QT_TrangChu/Index">
+        <img id="Logo_Header"
+             src="~/Images/bird.png"
+             width="99" />
+        <p id="Text_Header">LaptopNganNgo</p>
+    </a>
+
+    <a href="https://localhost:44357/QT_TrangChu/Index">
+        <p id="Product_SanPham">Sản phẩm</p>
+    </a>
+    <p id="Product_DonHang">Đơn hàng</p>
+    <p id="Product_KhachHang">Khách hàng</p>
+    <p id="Product_DoanhThu">Doanh thu</p>
+    <p id="Product_TaiKhoan">Tài khoản</p>
+
+    <span id="rectangle"></span>
+</div>
+
+<div class="Footer">
+    <p id="Footer_Text">
+        2021
+        <br />Powered by Squad Ngáo Ngơ
+    </p>
+</div>
+
+<div class="HoaDon">
+
+    <div class="Search_bar">
+        <input type="search"
+               id="search_bar"
+               placeholder="Tìm đơn hàng" />
+        <img id="seach_icon"
+             src="~/Images/search.png"
+             width="19" />
+    </div>
+
+    <div class="Filter_bar">
+        <div id="Filter">
+            Tháng này
+        </div>
+        <img id="Arrow_icon_up"
+             width="13"
+             src="~/Images/next.png" />
+        <img id="Arrow_icon_down"
+             width="13"
+             src="~/Images/next.png" />
+    </div>
+
+    <div id="Dang_SP">
+        &nbsp;&nbsp;&nbsp;
+        &nbsp;&#160;&#160;Tạo đơn hàng
+    </div>
+
+    <img id="Create_img"
+         width="20"
+         src="~/Images/add.png" />
+
+    <div id="rectangle_1">Đơn mới <br /> 45</div>
+    <div id="rectangle_2">Đang xử lý <br /> 54</div>
+    <div id="rectangle_3">Hoàn thành <br /> 65</div>
+    <div id="rectangle_4">Đã huỷ <br /> 11</div>
+
+    <div class="Hoa_Don_Ban_Hang">
+
+        <div id="rectangle_SP1"></div>
+        <div id="rectangle_SP2"></div>
+        <div id="rectangle_SP3"></div>
+        <div id="rectangle_SP4"></div>
+        <div id="rectangle_SP5"></div>
+        <div id="rectangle_SP6"></div>
+
+        <img id="Img_SP1"
+             width="131"
+             height="101"
+             src="~/Images/SP1.jpg" />
+        <img id="Img_SP2"
+             width="131"
+             height="101"
+             src="~/Images/SP2.png" />
+        <img id="Img_SP3"
+             width="131"
+             height="101"
+             src="~/Images/SP3.png" />
+        <img id="Img_SP4"
+             width="131"
+             height="101"
+             src="~/Images/SP4.png" />
+        <img id="Img_SP5"
+             width="131"
+             height="101"
+             src="~/Images/SP5.png" />
+        <img id="Img_SP6"
+             width="131"
+             height="101"
+             src="~/Images/SP6.png" />
+
+    </div>
+
+    <div class="Page_Number">
+        <div id="Page_1">1</div>
+        <div id="Page_2">2</div>
+        <div id="Page_3">3</div>
+        <div id="Page_dot">...</div>
+        <div id="Page_25">25</div>
+    </div>
+
+    <div class="Text_SanPham">
+        <pre id="Text_SP1">
+Mã đơn hàng     <strong>LT31552</strong>
+Thời gian tạo  27/10/2020
+Người nhận  Nguyễn Lựu
+Tổng tiền      12,990,000₫
+Lợi nhuận       <span style="color: red">1,990,000₫</span>
+            </pre>
+
+        <pre id="Text_SP2">
+Mã đơn hàng     <strong>LT44456</strong>
+Thời gian tạo  27/10/2020
+Người nhận      Lê Hoàng
+Tổng tiền      18,390,000₫
+Lợi nhuận       <span style="color: red">4,200,000₫</span>
+            </pre>
+
+        <pre id="Text_SP3">
+Mã đơn hàng      <strong>LT66544</strong>
+Thời gian tạo  26/10/2020
+Người nhận     Trần Hùng
+Tổng tiền      19,490,000₫
+Lợi nhuận       <span style="color: red">4,800,000₫</span>
+            </pre>
+
+        <pre id="Text_SP4">
+Mã đơn hàng     <strong>LT26485</strong>
+Thời gian tạo  25/10/2020
+Người nhận     Trần Công
+Tổng tiền      14,290,000₫
+Lợi nhuận       <span style="color: red">2,200,000₫</span>
+            </pre>
+
+        <pre id="Text_SP5">
+Mã đơn hàng     <strong>LT54333</strong>
+Thời gian tạo  24/10/2020
+Người nhận     Đinh Toàn
+Tổng tiền      19,590,000₫
+Lợi nhuận       <span style="color: red">4,900,000₫</span>
+            </pre>
+
+        <pre id="Text_SP6">
+Mã đơn hàng     <strong>LT85236</strong>
+Thời gian tạo  22/10/2020
+Người nhận    Phạm Thái
+Tổng tiền      18,690,000₫
+Lợi nhuận       <span style="color: red">4,000,000₫</span>
+            </pre>
+    </div>
+
+    <div class="Button_SanPham">
+
+        <a href="https://localhost:44357/QT_XemCTDH/Index">
+            <div id="Button_Xem_SP1">Xem chi tiết</div>
+            <div id="Button_Xem_SP2">Xem chi tiết</div>
+            <div id="Button_Xem_SP3">Xem chi tiết</div>
+            <div id="Button_Xem_SP4">Xem chi tiết</div>
+            <div id="Button_Xem_SP5">Xem chi tiết</div>
+            <div id="Button_Xem_SP6">Xem chi tiết</div>
+        </a>
+
+
+        <div id="Button_Xoa_SP1">Huỷ đơn hàng</div>
+        <div id="Button_Xoa_SP2">Huỷ đơn hàng</div>
+        <div id="Button_Xoa_SP3">Huỷ đơn hàng</div>
+        <div id="Button_Xoa_SP4">Huỷ đơn hàng</div>
+        <div id="Button_Xoa_SP5">Huỷ đơn hàng</div>
+        <div id="Button_Xoa_SP6">Huỷ đơn hàng</div>
+
+
+
+    </div>
+
+</div>
+
+
+

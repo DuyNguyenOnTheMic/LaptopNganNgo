@@ -1,0 +1,470 @@
+﻿.rectangle {
+    width: auto;
+    height: 95.01320904643597px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#8D9CF2,#FF8585);
+}
+
+.circle {
+    width: 82.00000000000011px;
+    height: 74.51294025289904px;
+    position: absolute;
+    left: 528px;
+    top: 8px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #B2B2B2;
+    border: 2px dashed #000000;
+    border-radius: 50%;
+}
+
+#LetterL {
+    position: absolute;
+    left: 535px;
+    top: 10px;
+}
+
+#Tittle {
+    position: absolute;
+    font-family: Arial;
+    font-size: 45px;
+    top: -20px;
+    left: 630.05px;
+    color: #333333;
+}
+
+
+.dropbtn {
+    width: 242.78373603646534px;
+    height: 59.999999999999886px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #282828;
+    border: 0px solid #404040;
+    border-radius: 0px;
+}
+
+
+#header {
+    width: 100%;
+    background: #f00;
+}
+
+body {
+    width: 1579px;
+    padding: 0;
+    margin: 0;
+}
+
+#logo_footer {
+    width: 82.00000000000011px;
+    height: 74.51294025289904px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #B2B2B2;
+    border: 2px dashed #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 2120px;
+    left: 111.5px;
+}
+
+#text1_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 352px;
+}
+#text2_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 617px;
+}
+#text3_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 887px;
+}
+#text4_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 1186px;
+}
+#text5_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 352px;
+}
+#text6_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 617px;
+}
+#Email_textbox {
+    width: 346.2918966478908px;
+    height: 29.999999999999545px;
+    font-family: Arial;
+    font-size: 12.0px;
+    color: #B2B2B2;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    left: 1186px;
+    top: 2150px;
+}
+
+#FB_ft {
+    position: absolute;
+    top: 2150px;
+    left: 887px;
+}
+
+#IG_ft {
+    position: absolute;
+    top: 2150px;
+    left: 937px;
+}
+
+.Footer {
+    position:absolute;
+    top: -1100px;
+}
+
+.button1 {
+    width: 42.03331631083364px;
+    height: 35.000000000000114px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: rgba(255,133,133,0.6);
+    position: absolute;
+    top: 355px;
+    left: 63px;
+    border-radius: 50%;
+}
+
+.button2 {
+    width: 42.03331631083364px;
+    height: 35.000000000000114px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: rgba(255,133,133,0.6);
+    position: absolute;
+    top: 355px;
+    left: 287px;
+    border-radius: 50%;
+}
+
+.button3 {
+    width: 42.03331631083404px;
+    height: 35.000000000000114px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: #CCCCCC;
+    position: absolute;
+    top: 355px;
+    left: 513px;
+    border-radius: 50%;
+}
+
+.button4 {
+    width: 42.03331631083404px;
+    height: 35.000000000000114px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: #CCCCCC;
+    position: absolute;
+    top: 355px;
+    left: 736px;
+    border-radius: 50%;
+}
+
+.button5 {
+    width: 42.03331631083404px;
+    height: 35.000000000000114px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: #CCCCCC;
+    position: absolute;
+    top: 355px;
+    left: 1462px;
+    border-radius: 50%;
+}
+
+
+.btn2 {
+    width: 184.49999999999955px;
+    height: 12.857142857143003px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: #CCCCCC;
+    position: absolute;
+    top: 365px;
+    left: 329px;
+    right: 1086px;
+}
+
+.btn1 {
+    width: 181.99999999999977px;
+    height: 12.85714285714289px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: rgba(255,133,133,0.6);
+    position: absolute;
+    top: 365px;
+    left: 105px;
+    right: 1312px;
+}
+
+.btn3 {
+    width: 181.99999999999977px;
+    height: 12.85714285714289px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: #CCCCCC;
+    position: absolute;
+    top: 365px;
+    left: 554px;
+    right: 864px;
+}
+
+.btn4 {
+    width: 684.4421637214152px;
+    height: 12.857142857143003px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: #CCCCCC;
+    position: absolute;
+    top: 365px;
+    left: 778px;
+    right: 137px;
+}
+
+.khung {
+    width: 775.0000000000002px;
+    height: 446.9999999999998px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    position: absolute;
+    top: 483px;
+    left: 410px;
+}
+
+#p1 {
+    width: 98.974609375px;
+    height: 44.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 277px;
+    left: 61px;
+}
+
+#p2 {
+    width: 98.974609375px;
+    height: 44.0px;
+    font-family: Arial;
+    font-size: 17.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 277px;
+    left: 287px;
+}
+
+#p3 {
+    width: 98.974609375px;
+    height: 44.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 277px;
+    left: 513px;
+}
+
+#p4 {
+    width: 98.974609375px;
+    height: 44.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 277px;
+    left: 736px;
+}
+
+#p5 {
+    width: 576.140625px;
+    height: 54.0px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 277px;
+    left: 902px;
+}
+
+#p6 {
+    width: 317.3203125px;
+    height: 27.0px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 125px;
+    left: 410px;
+}
+
+#p7 {
+    width: 317.3203125px;
+    height: 27.0px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 188px;
+    left: 410px;
+}
+
+#p8 {
+    width: 317.3203125px;
+    height: 27.0px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 419px;
+    left: 410px;
+}
+
+#p9 {
+    width: 474.580078125px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 97px;
+    left: 61px;
+}
+
+#p10 {
+    width: 307.98828125px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 149px;
+    left: 61px;
+}
+
+#lb1 {
+    width: 728.0000000000002px;
+    height: 27.0000000000004px;
+    font-family: Arial;
+    font-size: 25.0px;
+    font-weight: 700;
+    color: #333333;
+    background-color: #F2F2F2;
+    position: absolute;
+    top: 30px;
+    left: 22px;
+}

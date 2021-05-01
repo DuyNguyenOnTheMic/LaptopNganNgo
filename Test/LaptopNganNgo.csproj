@@ -1,0 +1,309 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D81C2EE1-9F62-4266-8B57-57FFB1A0A3FA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Test</RootNamespace>
+    <AssemblyName>Test</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44357</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\Style_BanHang\Style_TT_SuaGioHang.css" />
+    <Content Include="css\Style_BanHang\Style_TimKiemSP.css" />
+    <Content Include="css\Style_BanHang\Style_TT_DiaChi.css" />
+    <Content Include="css\Style_BanHang\Style_DangKy.css" />
+    <Content Include="css\Style_BanHang\Style_TT_ThanhCong.css" />
+    <Content Include="css\Style_BanHang\Style_TT_LoTrinh.css" />
+    <Content Include="css\Style_BanHang\Style_TT_DatMua.css" />
+    <Content Include="css\Style_BanHang\Style_TT_DangKy.css" />
+    <Content Include="css\Style_BanHang\Style_TT_DangNhap.css" />
+    <Content Include="css\Style_BanHang\Style_GioHang.css" />
+    <Content Include="css\Style_BanHang\Style_XemSP.css" />
+    <Content Include="css\Style_BanHang\Style_DangNhap.css" />
+    <Content Include="css\Style_BanHang\Style_CSKH.css" />
+    <Content Include="css\Style_QuanTri\Style_DonHang.css" />
+    <Content Include="css\Style_QuanTri\Style_XemCTTrangChu.css" />
+    <Content Include="css\Style_QuanTri\Style_XemCTDH.css" />
+    <Content Include="css\Style_QuanTri\Style_DangSP.css" />
+    <Content Include="css\Style_QuanTri\Style_CapNhatSP.css" />
+    <Content Include="css\Style_QuanTri\Style_TrangChu.css" />
+    <Content Include="css\Style_QuanTri\Style_DangKy.css" />
+    <Content Include="css\Style_QuanTri\Style_DangNhap.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\0257_270px-Black_triangle.svg.jpg" />
+    <Content Include="Images\add.png" />
+    <Content Include="Images\ahihi.png" />
+    <Content Include="Images\back_TimKiemSP.png" />
+    <Content Include="Images\bird.png" />
+    <Content Include="Images\down-arrow.png" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\FB.png" />
+    <Content Include="Images\google.png" />
+    <Content Include="Images\H1.png" />
+    <Content Include="Images\H2.png" />
+    <Content Include="Images\H3.png" />
+    <Content Include="Images\H4.png" />
+    <Content Include="Images\H5.png" />
+    <Content Include="Images\HAHA.jpg" />
+    <Content Include="Images\HAHU.png" />
+    <Content Include="Images\HEHE.png" />
+    <Content Include="Images\hihi.jpg" />
+    <Content Include="Images\hoho.jpg" />
+    <Content Include="Images\Home_page_1.png" />
+    <Content Include="Images\Home_page_2.png" />
+    <Content Include="Images\Home_page_3.png" />
+    <Content Include="Images\Home_page_4.png" />
+    <Content Include="Images\Home_page_5.png" />
+    <Content Include="Images\HotDeal1.png" />
+    <Content Include="Images\HotDeal2.png" />
+    <Content Include="Images\HotDeal3.png" />
+    <Content Include="Images\HotDeal4.png" />
+    <Content Include="Images\HUHU.png" />
+    <Content Include="Images\iconfinder_arrow-right-01_186409.png" />
+    <Content Include="Images\IG.png" />
+    <Content Include="Images\image.png" />
+    <Content Include="Images\img_227643.png" />
+    <Content Include="Images\JP_Clipboard_Image.png" />
+    <Content Include="Images\JP_Clipboard_Image1.png" />
+    <Content Include="Images\JP_Clipboard_Image2.png" />
+    <Content Include="Images\JP_Clipboard_Image3.png" />
+    <Content Include="Images\JP_Clipboard_Image4.png" />
+    <Content Include="Images\key.png" />
+    <Content Include="Images\next.png" />
+    <Content Include="Images\next_TimKiemSP.png" />
+    <Content Include="Images\password-icon-28.png" />
+    <Content Include="Images\ArrowIcon.png" />
+    <Content Include="Images\policy.png" />
+    <Content Include="Images\previous.png" />
+    <Content Include="Images\promotion.png" />
+    <Content Include="Images\royal-alphabet-crown-letter-english-l-512.png" />
+    <Content Include="Images\search.png" />
+    <Content Include="Images\send.png" />
+    <Content Include="Images\shopping-cart.png" />
+    <Content Include="Images\SP1.jpg" />
+    <Content Include="Images\SP2.png" />
+    <Content Include="Images\SP3.png" />
+    <Content Include="Images\SP4.png" />
+    <Content Include="Images\SP5.png" />
+    <Content Include="Images\SP6.png" />
+    <Content Include="Images\star.png" />
+    <Content Include="Images\support.png" />
+    <Content Include="Images\tich.jpg" />
+    <Content Include="Images\trash.png" />
+    <Content Include="Images\truck.png" />
+    <Content Include="Images\twitter.png" />
+    <Content Include="Images\tym.png" />
+    <Content Include="Images\user.png" />
+    <Content Include="Images\user2.png" />
+    <Content Include="Images\user_CSKH.png" />
+    <Content Include="Images\user_QT.png" />
+    <Content Include="Images\wrench.png" />
+    <Content Include="css\Style_BanHang\Style_TrangChu.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\Website_BanHang\CSKHController.cs" />
+    <Compile Include="Controllers\Website_BanHang\DangKyController.cs" />
+    <Compile Include="Controllers\Website_BanHang\DangNhapController.cs" />
+    <Compile Include="Controllers\Website_BanHang\GioHangController.cs" />
+    <Compile Include="Controllers\Website_BanHang\TimKiemSPController.cs" />
+    <Compile Include="Controllers\Website_BanHang\TrangChuController.cs" />
+    <Compile Include="Controllers\Website_BanHang\TT_DangKyController.cs" />
+    <Compile Include="Controllers\Website_BanHang\TT_DangNhapController.cs" />
+    <Compile Include="Controllers\Website_BanHang\TT_DatMuaController.cs" />
+    <Compile Include="Controllers\Website_BanHang\TT_DiaChiController.cs" />
+    <Compile Include="Controllers\Website_BanHang\TT_LoTrinhController.cs" />
+    <Compile Include="Controllers\Website_BanHang\TT_SuaGioHangController.cs" />
+    <Compile Include="Controllers\Website_BanHang\TT_ThanhCongController.cs" />
+    <Compile Include="Controllers\Website_BanHang\XemSPController.cs" />
+    <Compile Include="Controllers\Website_QuanTri\QT_CapNhatSPController.cs" />
+    <Compile Include="Controllers\Website_QuanTri\QT_DangKyController.cs" />
+    <Compile Include="Controllers\Website_QuanTri\QT_DangNhapController.cs" />
+    <Compile Include="Controllers\Website_QuanTri\QT_DangSPController.cs" />
+    <Compile Include="Controllers\Website_QuanTri\QT_DonHangController.cs" />
+    <Compile Include="Controllers\Website_QuanTri\QT_TrangChuController.cs" />
+    <Compile Include="Controllers\Website_QuanTri\QT_XemCTDHController.cs" />
+    <Compile Include="Controllers\Website_QuanTri\QT_XemCTTrangChuController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <None Include="packages.config" />
+    <Content Include="Views\_TrangChu.cshtml" />
+    <Content Include="Views\TrangChu\Index.cshtml" />
+    <Content Include="Views\_CSKH.cshtml" />
+    <Content Include="Views\CSKH\Index.cshtml" />
+    <Content Include="Views\_DangNhap.cshtml" />
+    <Content Include="Views\DangNhap\Index.cshtml" />
+    <Content Include="Views\_XemSP.cshtml" />
+    <Content Include="Views\XemSP\Index.cshtml" />
+    <Content Include="Views\_GioHang.cshtml" />
+    <Content Include="Views\GioHang\Index.cshtml" />
+    <Content Include="Views\_TT_DangNhap.cshtml" />
+    <Content Include="Views\TT_DangNhap\Index.cshtml" />
+    <Content Include="Views\_TT_DangKy.cshtml" />
+    <Content Include="Views\TT_DangKy\Index.cshtml" />
+    <Content Include="Views\_TT_DatMua.cshtml" />
+    <Content Include="Views\TT_DatMua\Index.cshtml" />
+    <Content Include="Views\_TT_LoTrinh.cshtml" />
+    <Content Include="Views\TT_LoTrinh\Index.cshtml" />
+    <Content Include="Views\_TT_ThanhCong.cshtml" />
+    <Content Include="Views\TT_ThanhCong\Index.cshtml" />
+    <Content Include="Views\_DangKy.cshtml" />
+    <Content Include="Views\DangKy\Index.cshtml" />
+    <Content Include="Views\_TT_DiaChi.cshtml" />
+    <Content Include="Views\TT_DiaChi\Index.cshtml" />
+    <Content Include="Views\QT_DangNhap.cshtml" />
+    <Content Include="Views\QT_DangNhap\Index.cshtml" />
+    <Content Include="Views\QT_DangKy.cshtml" />
+    <Content Include="Views\QT_DangKy\Index.cshtml" />
+    <Content Include="Views\_QT_TrangChu.cshtml" />
+    <Content Include="Views\QT_TrangChu\Index.cshtml" />
+    <Content Include="Views\_QT_CapNhatSP.cshtml" />
+    <Content Include="Views\QT_CapNhatSP\Index.cshtml" />
+    <Content Include="Views\_QT_DangSP.cshtml" />
+    <Content Include="Views\QT_DangSP\Index.cshtml" />
+    <Content Include="Views\_QT_XemCTDH.cshtml" />
+    <Content Include="Views\QT_XemCTDH\Index.cshtml" />
+    <Content Include="Views\_TimKiemSP.cshtml" />
+    <Content Include="Views\TimKiemSP\Index.cshtml" />
+    <Content Include="Views\_TT_SuaGioHang.cshtml" />
+    <Content Include="Views\TT_SuaGioHang\Index.cshtml" />
+    <Content Include="Views\_QT_XemCTTrangChu.cshtml" />
+    <Content Include="Views\QT_XemCTTrangChu\Index.cshtml" />
+    <Content Include="Views\_QT_DonHang.cshtml" />
+    <Content Include="Views\QT_DonHang\Index.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50616</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44357/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,367 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+#Logo_Header {
+    width: 99.00000000000011px;
+    height: 73.99999999999989px;
+    position: absolute;
+    top: 49px;
+    left: 513px;
+}
+
+#Text_Header {
+    width: 466.15625px;
+    height: 73.0px;
+    font-family: Arial;
+    font-size: 64.0px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: -15px;
+    left: 638.88px;
+}
+
+#Product_SanPham {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    top: 136px;
+    left: 136.35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_DonHang {
+    width: 268.1745635910226px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 406px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_KhachHang {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 675px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_DoanhThu {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 944px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_TaiKhoan {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 1213px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Header {
+    position:absolute;
+    left: -15px;
+}
+
+#Footer_Text {
+    width: 309.8372802734375px;
+    height: 103.99999999999955px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 28px;
+    color: #1EAAF1;
+    position: absolute;
+    left: 645.08px;
+    top: 972px;
+}
+
+#rectangle {
+    width: 1345px;
+    height: 42.99999999999977px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background: linear-gradient(#F9E1E0,#FFFFFF);
+    position: absolute;
+    top: 265px;
+    left: 136.35px;
+}
+
+#HD_Laptop{
+    width: 461.05085963504837px;
+    height: 376.49999999999955px;
+    position: absolute;
+    top: 320px;
+    left: 136.35px;
+}
+
+#Back {
+    width: 71.67100694444525px;
+    height: 64.00000000000023px;
+    position: absolute;
+    top: 900px;
+    left: 1038.93px;
+}
+
+#CTDonHang{
+    width: 536.14453125px;
+    height: 513.0px;
+    font-family: Arial;
+    font-size: 24.0px;
+    position: absolute;
+    top: 320px;
+    left: 680px;
+}
+
+#table_TenSP {
+    width: 71.14583587646484px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 417px;
+    left: 793px;
+}
+
+#table_SoLuong {
+    width: 88.76042175292969px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 417px;
+    left: 972px;
+}
+
+#table_DonGia {
+    width: 75.65625px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 417px;
+    left: 1107.77px;
+}
+
+#table_ChietKhau {
+    width: 101.98958587646484px;
+    height: 48.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 417px;
+    left: 1220.42px;
+}
+
+#table_ThanhTien {
+    width: 100.81251525878906px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 417px;
+    left: 1359.23px;
+}
+
+#table {
+    width: 797.0340991051086px;
+    height: 79.64503733786444px;
+    background-color: #EDEDED;
+    border-top: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+    position: absolute;
+    top: 500px;
+    left: 679.69px;
+}
+
+#text_TenSP {
+    width: 35.91904055632212%;
+    height: 100.00000000000011%;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    color: #000000;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    padding-left: 12px;
+}
+
+#text_SL {
+    width: 13.136674884050981%;
+    height: 100.00000000000011%;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    padding-left: 12px;
+}
+
+#text_DonGia {
+    width: 18.528661485475695%;
+    height: 100.00000000000011%;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    padding-left: 12px;
+}
+
+#text_ChietKhau {
+    width: 13.886961588675515%;
+    height: 100.00000000000011%;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    padding-left: 12px;
+}
+
+#text_ThanhTien {
+    width: 18.528661485475695%;
+    height: 100.00000000000011%;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    padding-left: 12px;
+}
+
+#TongTien {
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 617px;
+    left: 1232.89px;
+}
+
+#text_TTKH {
+    width: 480.29296875px;
+    height: 135.0px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 688px;
+    left: 679.69px;
+}
+
+#button_Delete {
+    width: 145.93363596217773px;
+    height: 55.304347826086996px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 900px;
+    left: 725.03px;
+}
+
+#TinhTrangDH {
+
+    position: absolute;
+    top: 802px;
+    left: 290px;
+}

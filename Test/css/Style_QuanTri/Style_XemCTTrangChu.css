@@ -1,0 +1,303 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+#Logo_Header {
+    width: 99.00000000000011px;
+    height: 73.99999999999989px;
+    position: absolute;
+    top: 49px;
+    left: 513px;
+}
+
+#Text_Header {
+    width: 466.15625px;
+    height: 73.0px;
+    font-family: Arial;
+    font-size: 64.0px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: -15px;
+    left: 638.88px;
+}
+
+#Product_SanPham {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    top: 136px;
+    left: 136.35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_DonHang {
+    width: 268.1745635910226px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 406px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+#Product_KhachHang {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 675px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_DoanhThu {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 944px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_TaiKhoan {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 1213px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Header {
+    position:absolute;
+    left: -15px;
+}
+
+#Footer_Text {
+    width: 309.8372802734375px;
+    height: 103.99999999999955px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 28px;
+    color: #1EAAF1;
+    position: absolute;
+    left: 645.08px;
+    top: 1000px;
+}
+
+#rectangle {
+    width: 1345px;
+    height: 42.99999999999977px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background: linear-gradient(#F9E1E0,#FFFFFF);
+    position: absolute;
+    top: 265px;
+    left: 136.35px;
+}
+
+#C1 {
+    width: 605.6015625px;
+    height: 100px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 307px;
+    left: 615px;
+}
+
+#C2 {
+    width: 605.6015625px;
+    height: 100px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 362px;
+    left: 785px;
+}
+
+#C3 {
+    width: 605.6015625px;
+    height: 100px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: red;
+    position: absolute;
+    top: 602px;
+    left: 615px;
+}
+
+#C4 {
+    width: 605.6015625px;
+    height: 100px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 702px;
+    left: 615px;
+}
+
+#C5 {
+    width: 100px;
+    height: 100px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: red;
+    position: absolute;
+    top: 826px;
+    left: 680px;
+}
+
+#B1 {
+    width: 132.0108506944437px;
+    height: 60.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 400;
+    text-align: center;
+    color: #666666;
+    background-color: #EFEFEF;
+    position: absolute;
+    top: 872px;
+    left: 1084px;
+}
+
+#B2 {
+    width: 146.0px;
+    height: 50.99999999999968px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    background-color: #EFEFEF;
+    position: absolute;
+    top: 311px;
+    left: 1210px;
+    cursor: pointer;
+}
+
+#B3 {
+    width: 103.01085069444412px;
+    height: 50.99999999999966px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    background-color: #EFEFEF;
+    position: absolute;
+    top: 311px;
+    left: 1363px;
+    cursor: pointer;
+}
+
+#H1 {
+    width: 377.1411770054034px;
+    height: 348.00000000000017px;
+    border: 1px solid #000000;
+    position: absolute;
+    top: 360px;
+    left: 137px;
+}
+
+#H2 {
+    width: 107.0px;
+    height: 84.99999999999977px;
+    position: absolute;
+    top: 755px;
+    left: 137px;
+}
+
+#H3 {
+    width: 107.0px;
+    height: 84.99999999999977px;
+    position: absolute;
+    top: 755px;
+    left: 274px;
+}
+
+#H4 {
+    width: 107.0px;
+    height: 84.99999999999977px;
+    position: absolute;
+    top: 755px;
+    left: 400px;
+}
+
+#H5 {
+    width: 75.67100694444525px;
+    height: 63.17881944444457px;
+    position: absolute;
+    top: 807px;
+    left: 1378px;
+    cursor: pointer;
+}

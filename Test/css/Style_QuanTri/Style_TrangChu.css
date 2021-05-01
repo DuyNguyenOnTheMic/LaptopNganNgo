@@ -1,0 +1,625 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+#Logo_Header {
+    width: 99.00000000000011px;
+    height: 73.99999999999989px;
+    position: absolute;
+    top: 49px;
+    left: 513px;
+}
+
+#Text_Header {
+    width: 466.15625px;
+    height: 73.0px;
+    font-family: Arial;
+    font-size: 64.0px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: -15px;
+    left: 638.88px;
+}
+
+#Product_SanPham {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    top: 136px;
+    left: 136.35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_DonHang {
+    width: 268.1745635910226px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 406px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+#Product_KhachHang {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 675px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_DoanhThu {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 944px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_TaiKhoan {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 1213px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Header {
+    position:absolute;
+    left: -15px;
+}
+
+#Footer_Text {
+    width: 309.8372802734375px;
+    height: 103.99999999999955px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 28px;
+    color: #1EAAF1;
+    position: absolute;
+    left: 645.08px;
+    top: 972px;
+}
+
+#rectangle {
+    width: 1345px;
+    height: 42.99999999999977px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background: linear-gradient(#F9E1E0,#FFFFFF);
+    position: absolute;
+    top: 265px;
+    left: 136.35px;
+}
+
+#search_bar {
+    width: 269.9999999999997px;
+    height: 40.0px;
+    font-family: Arial;
+    font-size: 16px;
+    color: #666666;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 41px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    top: 334px;
+    left: 121.35px;
+}
+
+#seach_icon {
+    position: absolute;
+    top: 344px;
+    left: 356px;
+    opacity: 0.5;
+}
+
+#seach_icon:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+#Filter {
+    width: 210px;
+    height: 40.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 400;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    position: absolute;
+    top: 334px;
+    left: 430px;
+}
+
+#Arrow_icon_up {
+    position: absolute;
+    top: 340px;
+    left: 620px;
+    transform: rotate(270deg);
+    opacity: 0.5;
+}
+
+#Arrow_icon_up:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+#Arrow_icon_down {
+    position: absolute;
+    top: 358px;
+    left: 620px;
+    transform: rotate(90deg);
+    opacity: 0.5;
+}
+
+#Arrow_icon_down:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+#Dang_SP {
+    width: 191.99999999999955px;
+    height: 58.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 400;
+    color: #000000;
+    background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    position: absolute;
+    left: 1274px;
+    top: 334px;
+    display: flex;
+    align-items: center;
+}
+
+#Dang_SP:hover {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#Create_img {
+    position: absolute;
+    left: 1428px;
+    top: 354px;
+}
+
+#rectangle_1 {
+    width: 553.5078124999997px;
+    height: 200.99999999999977px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #EFEFEF;
+    position: absolute;
+    top: 415px;
+    left: 226.7px;
+}
+
+#rectangle_2 {
+    width: 553.5078124999997px;
+    height: 200.99999999999977px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #EFEFEF;
+    position: absolute;
+    top: 415px;
+    left: 832.91px;
+}
+
+#rectangle_3 {
+    width: 553.5078124999997px;
+    height: 200.99999999999977px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #EFEFEF;
+    position: absolute;
+    top: 642px;
+    left: 226.7px;
+}
+
+#rectangle_4 {
+    width: 553.5078124999997px;
+    height: 200.99999999999977px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #EFEFEF;
+    position: absolute;
+    top: 642px;
+    left: 832.91px;
+}
+
+#SP1 {
+    border: 1px solid #CCCCCC;
+    position: absolute;
+    top: 430px;
+    left: 254.1px;
+    cursor: pointer;
+}
+
+#SP2 {
+    border: 1px solid #CCCCCC;
+    position: absolute;
+    top: 430px;
+    left: 862.61px;
+    cursor: pointer;
+}
+
+#SP3 {
+    border: 1px solid #CCCCCC;
+    position: absolute;
+    top: 653px;
+    left: 254.1px;
+    cursor: pointer;
+}
+
+#SP4 {
+    border: 1px solid #CCCCCC;
+    position: absolute;
+    top: 653px;
+    left: 862.61px;
+    cursor: pointer;
+}
+
+#date_SP1 {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 430px;
+    left: 458.6px;
+}
+
+#tag_SP1 {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+    position: absolute;
+    top: 450px;
+    left: 458.6px;
+}
+
+#name_SP1 {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 470px;
+    left: 458.6px;
+    cursor: pointer;
+}
+
+#price_SP1 {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 530px;
+    left: 458.6px;
+}
+
+#date_SP2 {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 430px;
+    left: 1068.67px;
+}
+
+#tag_SP2 {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+    position: absolute;
+    top: 450px;
+    left: 1068.67px;
+}
+
+
+#name_SP2 {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 470px;
+    left: 1068.67px;
+    cursor: pointer;
+}
+
+#price_SP2 {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 530px;
+    left: 1068.67px;
+}
+
+#date_SP3 {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 653px;
+    left: 458.6px;
+}
+
+#tag_SP3 {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+    position: absolute;
+    top: 673px;
+    left: 458.6px;
+}
+
+
+#name_SP3 {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 693px;
+    left: 458.6px;
+    cursor: pointer;
+}
+
+#price_SP3 {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 753px;
+    left: 458.6px;
+}
+
+#date_SP4 {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 653px;
+    left: 1068.67px;
+}
+
+#tag_SP4 {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+    position: absolute;
+    top: 673px;
+    left: 1068.67px;
+}
+
+
+#name_SP4 {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 693px;
+    left: 1068.67px;
+    cursor: pointer;
+}
+
+#price_SP4 {
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: 753px;
+    left: 1068.67px;
+}
+
+#Page_1 {
+    width: 41.000000000000114px;
+    height: 38.0px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #A9A9A9;
+    position: absolute;
+    top: 887px;
+    left: 652px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Page_1:hover {
+    font-weight: 700;
+}
+
+
+#Page_2 {
+    width: 41.000000000000114px;
+    height: 38.0px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #D9D9D9;
+    position: absolute;
+    top: 887px;
+    left: 716px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Page_2:hover {
+    font-weight: 700;
+}
+
+
+#Page_3 {
+    width: 41.000000000000114px;
+    height: 38.0px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #D9D9D9;
+    position: absolute;
+    top: 887px;
+    left: 779.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Page_3:hover {
+    font-weight: 700;
+}
+
+
+#Page_dot {
+    width: 41.000000000000114px;
+    height: 38.0px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #D9D9D9;
+    position: absolute;
+    top: 887px;
+    left: 843px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Page_dot:hover {
+      font-weight: 700;
+}
+
+#Page_25 {
+    width: 41.000000000000114px;
+    height: 38.0px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #D9D9D9;
+    position: absolute;
+    top: 887px;
+    left: 907px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Page_25:hover {
+  font-weight: 700;
+}

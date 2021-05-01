@@ -1,0 +1,594 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+#Logo_Header {
+    width: 99.00000000000011px;
+    height: 73.99999999999989px;
+    position: absolute;
+    top: 49px;
+    left: 513px;
+}
+
+#Text_Header {
+    width: 466.15625px;
+    height: 73.0px;
+    font-family: Arial;
+    font-size: 64.0px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: -15px;
+    left: 638.88px;
+}
+
+#Product_SanPham {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    top: 136px;
+    left: 136.35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_DonHang {
+    width: 268.1745635910226px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 406px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+#Product_KhachHang {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 675px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_DoanhThu {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 944px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_TaiKhoan {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 1213px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Header {
+    position:absolute;
+    left: -15px;
+}
+
+#Footer_Text {
+    width: 309.8372802734375px;
+    height: 103.99999999999955px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 28px;
+    color: #1EAAF1;
+    position: absolute;
+    left: 645.08px;
+    top: 990px;
+}
+
+#rectangle {
+    width: 1345px;
+    height: 42.99999999999977px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background: linear-gradient(#F9E1E0,#FFFFFF);
+    position: absolute;
+    top: 265px;
+    left: 136.35px;
+}
+
+#down{
+    width: 43.13336450540385px;
+    height: 22.0894097222224px;
+    position: absolute;
+    top: 340px;
+    left: 260px;
+}
+
+#text1_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 352px;
+}
+#text2_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 617px;
+}
+#text3_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 887px;
+}
+#text4_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 1186px;
+}
+#text5_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 352px;
+}
+#text6_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 617px;
+}
+#Email_textbox {
+    width: 346.2918966478908px;
+    height: 29.999999999999545px;
+    font-family: Arial;
+    font-size: 12.0px;
+    color: #B2B2B2;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    left: 1186px;
+    top: 2150px;
+}
+
+#FB_ft {
+    position: absolute;
+    top: 2150px;
+    left: 887px;
+}
+
+#IG_ft {
+    position: absolute;
+    top: 2150px;
+    left: 937px;
+}
+/*-------------------------------------------------------------------------------------------------*/
+#TenSP {
+    width: 1323.1978759765625px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #FF0000;
+    position: absolute;
+    left: 98px;
+    top: 292px;
+}
+
+#GiaChuaGiam {
+    width: 384.17059326171875px;
+    height: 42.0px;
+    font-family: Arial;
+    font-size: 29.333334px;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #333333;
+    position: absolute;
+    left: 702.84px;
+    top: 347px;
+}
+
+#GiaSauGiam {
+    width: 384.17059326171875px;
+    height: 42.0px;
+    font-family: Arial;
+    font-size: 29.333334px;
+    font-weight: 400;
+    color: red;
+    position: absolute;
+    left: 880px;
+    top: 347px;
+}
+
+#TinhTrang {
+    width: 151.2109375px;
+    height: 18.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    left: 702.84px;
+    top: 409px;
+}
+
+/*------------------------------kHUYẾN MÃI---------------------------------*/
+#KM_square1 {
+    width: 716.593561418041px;
+    height: 627.0000000000002px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    color: #333333;
+    background-color: #FFFFFF;
+    border-top: 5px solid #8D9CF2;
+    border-right: 5px solid #8D9CF2;
+    border-bottom: 5px solid #FF8585;
+    border-left: 5px solid #FF8585;
+    border-radius: 63px;
+    position: absolute;
+    left: 702.84px;
+    top: 455px;
+}
+
+#KM_square3 {
+    width: 352px;
+    height: 83.99999999999977px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(#8D9CF2,#FF8585);
+    border: 0px solid #8D9CF2;
+    border-radius: 0px;
+    border-radius: 15px;
+    position: absolute;
+    left: 1077px;
+    top: 1008px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#KMvaQT {
+    width: 371.8489685058594px;
+    height: 30.0px;
+    font-family: Arial;
+    font-size: 26.666668px;
+    font-weight: 700;
+    color: #003BF8;
+    position: absolute;
+    left: 726.97px;
+    top: 467px;
+}
+
+#test_KM {
+    width: 658.8037910461437px;
+    height: 459.0000000000001px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    left: 746.63px;
+    top: 523px;
+}
+/*---------------HÌNH ẢNH SẢN PHẢM----------------------------------------*/
+#pic0 {
+    width: 566.0px;
+    height: 566.0px;
+    border: 1px solid #000000;
+    position: absolute;
+    left: 96px;
+    top: 347px;
+}
+#pic1 {
+    width: 128.0px;
+    height: 163.0px;
+    border: 1px solid #000000;
+    position: absolute;
+    left: 88.5px;
+    top: 928px;
+}
+
+#pic2 {
+    width: 127.99999999999989px;
+    height: 162.9999999999999px;
+    border: 1px solid #000000;
+    position: absolute;
+    left: 242.11px;
+    top: 928px;
+}
+#pic3 {
+    width: 128.0px;
+    height: 163.0px;
+    border: 1px solid #000000;
+    position: absolute;
+    left: 388.63px;
+    top: 928px;
+}
+#pic4 {
+    width: 128.0px;
+    height: 163.0px;
+    border: 1px solid #000000;
+    position: absolute;
+    left: 536px;
+    top: 928px;
+}
+
+/*---------------------------ƯU ĐÃI-------------------------------------*/
+#UD_square1 {
+    width: 559.8757218034752px;
+    height: 304.9999999999998px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #FFFFFF;
+    border-top: 5px solid #FF8585;
+    border-right: 5px solid #8D9CF2;
+    border-bottom: 5px solid #FF8585;
+    border-left: 5px solid #8D9CF2;
+    border-radius: 31px;
+    position: absolute;
+    left: 83.06px;
+    top: 1116px;
+}
+
+#UD_square2 {
+    width: 570px;
+    height: 80.99999999999977px;
+    font-family: Arial;
+    font-size: 26.666668px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(#8D9CF2,#FF8585);
+    border: 0px solid #8D9CF2;
+    border-radius: 15px;
+    position: absolute;
+    left: 83.06px;
+    top: 1360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#test_UD {
+    width: 191.00259399414062px;
+    height: 30.0px;
+    font-family: Arial;
+    font-size: 26.666668px;
+    font-weight: 700;
+    color: #003BF8;
+    position: absolute;
+    left: 110.11px;
+    top: 1110px;
+}
+#test2_UD {
+    width: 545.0625px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 700;
+    color: #003BF8;
+    position: absolute;
+    left: 100px;
+    top: 1310px;
+}
+#test3_UD {
+    width: 361.27734375px;
+    height: 135.0px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    left: 130px;
+    top: 1158px;
+}
+
+#UD_text{
+  width: 352px;
+    height: 83.99999999999977px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(#8D9CF2,#FF8585);
+    border: 0px solid #8D9CF2;
+    border-radius: 0px;
+    border-radius: 15px;
+    position: absolute;
+    left: 188px;
+    top: 1340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*------------------------------CCHI TIẾT CẤU HÌNH-------------------------------*/
+#CTCH_test1 {
+    width: 257.76043701171875px;
+    height: 30.0px;
+    font-family: Arial;
+    font-size: 26.666668px;
+    font-weight: 700;
+    color: #333333;
+    position: absolute;
+    left: 719px;
+    top: 1135px;
+}
+#CTCH_square {
+    width: 846.9034636092036px;
+    height: 785.0000000000005px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 4px solid #D9D9D9;
+    border-radius: 76px;
+    position: absolute;
+    left: 702.84px;
+    top: 1200px;
+}
+
+#CTCH_test2 {
+    width: 846.9034636092036px;
+    height: 756.0000000000005px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #000000;
+    
+}
+
+/*-------------------------CHINHS SÁCH BẢO HÀNH-------------------------------------*/
+#CS_square {
+    width: 559.875721803475px;
+    height: 500.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #FFFFFF;
+    border-top: 5px solid #FF8585;
+    border-right: 5px solid #FF8585;
+    border-bottom: 5px solid #8D9CF2;
+    border-left: 5px solid #8D9CF2;
+    border-radius: 47px;
+    position: absolute;
+    left: 83.06px;
+    top: 1454px;
+}
+
+#test_CS {
+    width: 278.5286560058594px;
+    height: 30.0px;
+    font-family: Arial;
+    font-size: 26.666668px;
+    font-weight: 700;
+    color: #003BF8;
+    position: absolute;
+    left: 110.11px;
+    top: 1450px;
+}
+#test2_CS {
+    width: 474.3576686589254px;
+    height: 404.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    left: 135.821px;
+    top: 1517px;
+}
+/*--------------------FOOTER-----------------------------------------*/
+.Footer {
+    position: absolute;
+    top: 1000px;
+}
+
+

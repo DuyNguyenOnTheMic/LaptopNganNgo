@@ -1,0 +1,1729 @@
+﻿.rectangle {
+    width: auto;
+    height: 95.01320904643597px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#8D9CF2,#FF8585);
+}
+
+.circle {
+    width: 82.00000000000011px;
+    height: 74.51294025289904px;
+    position: absolute;
+    left: 528px;
+    top: 8px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #B2B2B2;
+    border: 2px dashed #000000;
+    border-radius: 50%;
+}
+
+#LetterL {
+    position: absolute;
+    left: 535px;
+    top: 10px;
+}
+
+#User_icon {
+    position: absolute;
+    left: 1390.43px;
+    top: 30px;
+}
+
+#Tittle {
+    position: absolute;
+    font-family: Arial;
+    font-size: 45px;
+    top: -20px;
+    left: 630.05px;
+    color: #333333;
+}
+
+#Log_in {
+    width: 96.44140625px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 700;
+    color: #000000;
+    position: absolute;
+    left: 1449.433px;
+    top: 14px;
+}
+
+#text_1 {
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    left: 1449.433px;
+    top: 35px;
+}
+
+#Search_textbox {
+    width: 462.2120465041146px;
+    height: 47.0px;
+    font-family: Arial;
+    font-size: 18px;
+    color: #666666;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 16px;
+    padding-bottom: 1px;
+    padding-left: 41px;
+    position: absolute;
+    left: 430px;
+    top: 125px;
+}
+
+::-webkit-input-placeholder {
+    color: #B4B4B4;
+}
+
+#Search_button {
+    width: 241.2505113563641px;
+    height: 51px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #282828;
+    border: 0px solid #404040;
+    border-radius: 0px;
+    position: absolute;
+    left: 932.37px;
+    top: 125px;
+}
+
+    #Search_button:hover {
+        background-color: #444444;
+    }
+
+#Cart_image {
+    width: 35.0px;
+    height: 36.00000000000006px;
+    border: 1px solid #000000;
+    position: absolute;
+    left: 1439.43px;
+    top: 131px;
+}
+
+#Cart_number {
+    width: 25px;
+    height: 20px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #FFFFFF;
+    background-color: #FF0000;
+    position: absolute;
+    left: 1455px;
+    top: 105px;
+    border-radius: 50%;
+}
+
+#Cart_text {
+    width: 63.550785064697266px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.666667px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 1493.72px;
+    top: 126px;
+}
+
+.dropbtn {
+    width: 242.78373603646534px;
+    height: 59.999999999999886px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #282828;
+    border: 0px solid #404040;
+    border-radius: 0px;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    left: 64.32px;
+    top: 204px;
+}
+
+.dropdown-content {
+    font-family: Arial;
+    font-size: 17.333334px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 242.78373603646534px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+            .dropdown-content a:hover + #Laptop_Gaming_Content {
+                display: block;
+            }
+
+            .dropdown-content a:hover + #Laptop_VP_Content {
+                display: block;
+            }
+
+            .dropdown-content a:hover + #Laptop_SV_Content {
+                display: block;
+            }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #444444;
+}
+
+#Laptop_Gaming_Content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#Laptop_Gaming_Content {
+    text-decoration: none;
+    left: 245px;
+    top: 0px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 112px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    line-height: 1.6;
+}
+
+    #Laptop_Gaming_Content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    #Laptop_Gaming_Content:hover {
+        display: block;
+    }
+
+#Laptop_VP_Content {
+    text-decoration: none;
+    left: 245px;
+    top: 44px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 112px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    line-height: 1.6;
+}
+
+    #Laptop_VP_Content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    #Laptop_VP_Content:hover {
+        display: block;
+    }
+
+#Laptop_SV_Content {
+    text-decoration: none;
+    left: 245px;
+    top: 88px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 112px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    line-height: 1.6;
+}
+
+    #Laptop_SV_Content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    #Laptop_SV_Content:hover {
+        display: block;
+    }
+
+#Ban_Hang {
+    text-decoration: none;
+    width: 242.03796469648415px;
+    height: 58px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #CBCBCB;
+    border: 1px solid #0487D9;
+    position: absolute;
+    left: 308px;
+    top: 204px;
+}
+
+    #Ban_Hang:hover {
+        font-weight: bold;
+    }
+
+#Bao_Hanh {
+    text-decoration: none;
+    width: 242.03796469648415px;
+    height: 58px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #CBCBCB;
+    border: 1px solid #0487D9;
+    position: absolute;
+    left: 552.7px;
+    top: 204px;
+}
+
+    #Bao_Hanh:hover {
+        font-weight: bold;
+    }
+
+#Van_Chuyen {
+    text-decoration: none;
+    width: 242.03796469648415px;
+    height: 58px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #CBCBCB;
+    border: 1px solid #0487D9;
+    position: absolute;
+    left: 797.23px;
+    top: 204px;
+}
+
+    #Van_Chuyen:hover {
+        font-weight: bold;
+    }
+
+#Khuyen_Mai {
+    text-decoration: none;
+    width: 242.03796469648415px;
+    height: 58px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #CBCBCB;
+    border: 1px solid #0487D9;
+    position: absolute;
+    left: 1041.9px;
+    top: 204px;
+}
+
+    #Khuyen_Mai:hover {
+        font-weight: bold;
+    }
+
+#Cham_Soc {
+    text-decoration: none;
+    width: 242.03796469648415px;
+    height: 58px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #CBCBCB;
+    border: 1px solid #0487D9;
+    position: absolute;
+    left: 1287px;
+    top: 204px;
+}
+
+    #Cham_Soc:hover {
+        font-weight: bold;
+    }
+
+#header {
+    width: 100%;
+    background: #f00;
+}
+
+body {
+    width: 1579px;
+    padding: 0;
+    margin: 0;
+}
+
+#logo_footer {
+    width: 82.00000000000011px;
+    height: 74.51294025289904px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #B2B2B2;
+    border: 2px dashed #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 2120px;
+    left: 111.5px;
+}
+
+#text1_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 352px;
+}
+#text2_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 617px;
+}
+#text3_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 887px;
+}
+#text4_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 1186px;
+}
+#text5_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 352px;
+}
+#text6_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 617px;
+}
+#Email_textbox {
+    width: 346.2918966478908px;
+    height: 29.999999999999545px;
+    font-family: Arial;
+    font-size: 12.0px;
+    color: #B2B2B2;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    left: 1186px;
+    top: 2150px;
+}
+
+#FB_ft {
+    position: absolute;
+    top: 2150px;
+    left: 887px;
+}
+
+#IG_ft {
+    position: absolute;
+    top: 2150px;
+    left: 937px;
+}
+/*-------------------------------------------------------------------------------------------------*/
+#TenSP {
+    width: 1323.1978759765625px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #FF0000;
+    position: absolute;
+    left: 98px;
+    top: 292px;
+}
+
+#GiaChuaGiam {
+    width: 384.17059326171875px;
+    height: 42.0px;
+    font-family: Arial;
+    font-size: 29.333334px;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #333333;
+    position: absolute;
+    left: 702.84px;
+    top: 347px;
+}
+
+#GiaSauGiam {
+    width: 384.17059326171875px;
+    height: 42.0px;
+    font-family: Arial;
+    font-size: 29.333334px;
+    font-weight: 400;
+    color: red;
+    position: absolute;
+    left: 880px;
+    top: 347px;
+}
+
+#TinhTrang {
+    width: 151.2109375px;
+    height: 18.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    left: 702.84px;
+    top: 409px;
+}
+
+#review {
+    width: 130.69921875px;
+    height: 27.0px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #999999;
+    position: absolute;
+    left: 1057.11px;
+    top: 395px;
+}
+
+#star1 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 883.11px;
+    top: 423px;
+}
+#star2 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 914.11px;
+    top: 423px;
+}
+#star3 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 948.11px;
+    top: 423px;
+}
+#star4 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 982.11px;
+    top: 423px;
+}
+#star5 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 1015.11px;
+    top: 423px;
+}
+
+/*------------------------------kHUYẾN MÃI---------------------------------*/
+#KM_square1 {
+    width: 716.593561418041px;
+    height: 627.0000000000002px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    color: #333333;
+    background-color: #FFFFFF;
+    border-top: 5px solid #8D9CF2;
+    border-right: 5px solid #8D9CF2;
+    border-bottom: 5px solid #FF8585;
+    border-left: 5px solid #FF8585;
+    border-radius: 63px;
+    position: absolute;
+    left: 702.84px;
+    top: 455px;
+}
+
+#KM_square2 {
+    width: 373.1916658949699px;
+    height: 84.0px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(#8D9CF2,#FF8585);
+    border: 0px solid #8D9CF2;
+    border-radius: 15px;
+    position: absolute;
+    left: 702.84px;
+    top: 1008px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#KM_square3 {
+    width: 352px;
+    height: 83.99999999999977px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(#8D9CF2,#FF8585);
+    border: 0px solid #8D9CF2;
+    border-radius: 0px;
+    border-radius: 15px;
+    position: absolute;
+    left: 1077px;
+    top: 1008px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#KMvaQT {
+    width: 371.8489685058594px;
+    height: 30.0px;
+    font-family: Arial;
+    font-size: 26.666668px;
+    font-weight: 700;
+    color: #003BF8;
+    position: absolute;
+    left: 726.97px;
+    top: 467px;
+}
+
+#test_KM {
+    width: 658.8037910461437px;
+    height: 459.0000000000001px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    left: 746.63px;
+    top: 523px;
+}
+/*---------------HÌNH ẢNH SẢN PHẢM----------------------------------------*/
+#pic0 {
+    width: 566.0px;
+    height: 566.0px;
+    border: 1px solid #000000;
+    position: absolute;
+    left: 96px;
+    top: 347px;
+}
+#pic1 {
+    width: 128.0px;
+    height: 163.0px;
+    border: 1px solid #000000;
+    position: absolute;
+    left: 88.5px;
+    top: 928px;
+}
+
+#pic2 {
+    width: 127.99999999999989px;
+    height: 162.9999999999999px;
+    border: 1px solid #000000;
+    position: absolute;
+    left: 242.11px;
+    top: 928px;
+}
+#pic3 {
+    width: 128.0px;
+    height: 163.0px;
+    border: 1px solid #000000;
+    position: absolute;
+    left: 388.63px;
+    top: 928px;
+}
+#pic4 {
+    width: 128.0px;
+    height: 163.0px;
+    border: 1px solid #000000;
+    position: absolute;
+    left: 536px;
+    top: 928px;
+}
+
+/*---------------------------ƯU ĐÃI-------------------------------------*/
+#UD_square1 {
+    width: 559.8757218034752px;
+    height: 304.9999999999998px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #FFFFFF;
+    border-top: 5px solid #FF8585;
+    border-right: 5px solid #8D9CF2;
+    border-bottom: 5px solid #FF8585;
+    border-left: 5px solid #8D9CF2;
+    border-radius: 31px;
+    position: absolute;
+    left: 83.06px;
+    top: 1116px;
+}
+
+#UD_square2 {
+    width: 570px;
+    height: 80.99999999999977px;
+    font-family: Arial;
+    font-size: 26.666668px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(#8D9CF2,#FF8585);
+    border: 0px solid #8D9CF2;
+    border-radius: 15px;
+    position: absolute;
+    left: 83.06px;
+    top: 1360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#test_UD {
+    width: 191.00259399414062px;
+    height: 30.0px;
+    font-family: Arial;
+    font-size: 26.666668px;
+    font-weight: 700;
+    color: #003BF8;
+    position: absolute;
+    left: 110.11px;
+    top: 1110px;
+}
+#test2_UD {
+    width: 545.0625px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 700;
+    color: #003BF8;
+    position: absolute;
+    left: 100px;
+    top: 1310px;
+}
+#test3_UD {
+    width: 361.27734375px;
+    height: 135.0px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    left: 130px;
+    top: 1158px;
+}
+
+/*------------------------------CCHI TIẾT CẤU HÌNH-------------------------------*/
+#CTCH_test1 {
+    width: 257.76043701171875px;
+    height: 30.0px;
+    font-family: Arial;
+    font-size: 26.666668px;
+    font-weight: 700;
+    color: #333333;
+    position: absolute;
+    left: 719px;
+    top: 1135px;
+}
+#CTCH_square {
+    width: 846.9034636092036px;
+    height: 785.0000000000005px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 4px solid #D9D9D9;
+    border-radius: 76px;
+    position: absolute;
+    left: 702.84px;
+    top: 1200px;
+}
+
+#CTCH_test2 {
+    width: 846.9034636092036px;
+    height: 756.0000000000005px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #000000;
+    
+}
+
+/*-------------------------CHINHS SÁCH BẢO HÀNH-------------------------------------*/
+#CS_square {
+    width: 559.875721803475px;
+    height: 500.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #FFFFFF;
+    border-top: 5px solid #FF8585;
+    border-right: 5px solid #FF8585;
+    border-bottom: 5px solid #8D9CF2;
+    border-left: 5px solid #8D9CF2;
+    border-radius: 47px;
+    position: absolute;
+    left: 83.06px;
+    top: 1454px;
+}
+
+#test_CS {
+    width: 278.5286560058594px;
+    height: 30.0px;
+    font-family: Arial;
+    font-size: 26.666668px;
+    font-weight: 700;
+    color: #003BF8;
+    position: absolute;
+    left: 110.11px;
+    top: 1450px;
+}
+#test2_CS {
+    width: 474.3576686589254px;
+    height: 404.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    left: 135.821px;
+    top: 1517px;
+}
+/*--------------------FOOTER-----------------------------------------*/
+.Footer {
+    position: absolute;
+    top: 1000px;
+}
+
+/*----------------------SẢN PHẨM TƯƠNG TỰ----------------------------------------------------*/
+#SPTT_square {
+    width: 1600.0000000000002px;
+    height: 391.9999999999998px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #D9D9D9;
+    position: absolute;
+    left: 0px;
+    top: 2050px;
+}
+
+#SPTT_square1 {
+    width: 1489.4147186279306px;
+    height: 332.0px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #FDFDFD;
+    border-radius: 16px;
+    position: absolute;
+    left: 52.97px;
+    top: 2070px;
+}
+#SPTT_square2 {
+    width: 320.0319324545675px;
+    height: 57.0px;
+    font-family: Arial;
+    font-size: 26.666668px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(#8D9CF2,#FF8585);
+    border: 0px solid #8D9CF2;
+    border-radius: 15px;
+    position: absolute;
+    left: 52.97px;
+    top: 2070px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#SPTT_pic0 {
+    width: 250.0px;
+    height: 230.0px;
+    position: absolute;
+    left: 108.75px;
+    top: 2140px;
+}
+#SPTT_pic1 {
+    width: 250.0px;
+    height: 230.0px;
+    position: absolute;
+    left: 395.06px;
+    top: 2140px;
+}
+#SPTT_pic2 {
+    width: 250.0px;
+    height: 230.0px;
+    position: absolute;
+    left: 675px;
+    top: 2140px;
+}
+#SPTT_pic3 {
+    width: 250.0px;
+    height: 230.0px;
+    position: absolute;
+    left: 962.01px;
+    top: 2140px;
+}
+#SPTT_pic4 {
+    width: 250.0px;
+    height: 230.0px;
+    position: absolute;
+    left: 1243.72px;
+    top: 2140px;
+}
+/*-----------------------------ĐÁNH GIÁ KHACHS HÀNG---------------------------------------------------------------------------*/
+#DG_square {
+    width: 1600.0000000000002px;
+    height: 553.0px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #D9D9D9;
+    position: absolute;
+    left: 0px;
+    top: 2500px;
+}
+#DG_square1 {
+    width: 683.1460122757065px;
+    height: 511.0px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #FFFFFF;
+    border-radius: 49px;
+    position: absolute;
+    left: 64.32px;
+    top: 2520px;
+}
+#DG_square2 {
+    width: 760px;
+    height: 511.0px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #FFFFFF;
+    border-radius: 49px;
+    position: absolute;
+    left: 756.28px;
+    top: 2520px;
+}
+#DG_square3 {
+    width: 340.1394919462586px;
+    height: 60.0px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(#8D9CF2,#FF8585);
+    border: 0px solid #8D9CF2;
+    border-radius: 49px;
+    position: absolute;
+    left: 64.32px;
+    top: 2520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#DG_square4 {
+    width: 167.919509006353px;
+    height: 60.0px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(#8D9CF2,#FF8585);
+    border: 0px solid #8D9CF2;
+    border-radius: 49px;
+    position: absolute;
+    left: 756.28px;
+    top: 2520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#NAM {
+    width: 92.67578125px;
+    height: 76.0px;
+    font-family: Arial;
+    font-size: 66.66667px;
+    font-weight: 700;
+    color: #FFCC00;
+    position: absolute;
+    left: 96px;
+    top: 2557.3px;
+}
+#DG_star {
+    width: 71.00000000000011px;
+    height: 72.9886831275735px;
+    position: absolute;
+    left: 196.25px;
+    top: 2619px;
+}
+#DG_sosao {
+    width: 14.830729484558105px;
+    height: 150.0px;
+    font-family: Arial;
+    font-size: 26.666668px;
+    font-weight: 700;
+    color: #FFCC00;
+    position: absolute;
+    left: 308.11px;
+    top: 2580px;
+}
+#DG_star5 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 331.69px;
+    top: 2611px;
+}
+#DG_star4 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 331.69px;
+    top: 2641px;
+}
+#DG_star3 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 331.69px;
+    top: 2671px;
+}
+#DG_star2 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 331.69px;
+    top: 2701px;
+}
+#DG_star1 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 331.69px;
+    top: 2731px;
+}
+#DG_square_DG5 {
+    width: 213.00000000000006px;
+    height: 8.0px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #FFCC00;
+    position: absolute;
+    left: 373px;
+    top: 2620px;
+}
+#DG_square_DG4 {
+    width: 213.00000000000006px;
+    height: 8.0px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #D9D9D9;
+    position: absolute;
+    left: 373px;
+    top: 2650px;
+}
+#DG_square_DG3 {
+    width: 213.00000000000006px;
+    height: 8.0px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #D9D9D9;
+    position: absolute;
+    left: 373px;
+    top: 2680px;
+}
+#DG_square_DG2 {
+    width: 213.00000000000006px;
+    height: 8.0px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #D9D9D9;
+    position: absolute;
+    left: 373px;
+    top: 2710px;
+}
+#DG_square_DG1 {
+    width: 213.00000000000006px;
+    height: 8.0px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #D9D9D9;
+    position: absolute;
+    left: 373px;
+    top: 2740px;
+}
+
+#DG_testDG5 {
+    width: 111.51043701171875px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    left: 594.76px;
+    top: 2590px;
+}
+#DG_testDG4 {
+    width: 111.51043701171875px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    left: 607.18px;
+    top: 2620px;
+}
+#DG_testDG3 {
+    width: 111.51043701171875px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    left: 607.18px;
+    top: 2650px;
+}
+#DG_testDG2 {
+    width: 111.51043701171875px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    left: 607.18px;
+    top: 2680px;
+}
+#DG_testDG1 {
+    width: 111.51043701171875px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    left: 607.18px;
+    top: 2710px;
+}
+
+#DG_line {
+    width: 646.9274213925179px;
+    height: 0.0px;
+    border-top: 2px solid #AFAFAF;
+    position: absolute;
+    left: 81px;
+    top: 2760px;
+}
+
+.DG_cmt {
+    width: 631.603585485032px;
+    height: 171.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 700;
+    color: #333333;
+    position: absolute;
+    left: 92px;
+    top: 2765px;
+}
+#DG_dm1 {
+    width: 631.603585485032px;
+    height: 171.0px;
+    font-family: Arial;
+    font-size: 13.0px;
+    font-weight: 500;
+    color: #35B736;
+    position: absolute;
+    left: 150px;
+    top: -11px;
+}
+#DG_cmt1 {
+    width: 631.603585485032px;
+    height: 171.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #333333;
+    position: absolute;
+    left: 170px;
+    top: 21px;
+}
+#DG_star6 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 117.55px;
+    top: 2810px;
+}
+#DG_star7 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 142.34px;
+    top: 2810px;
+}
+#DG_star8 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 167.54px;
+    top: 2810px;
+}
+#DG_star9 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 192.82px;
+    top: 2810px;
+}
+#DG_star10 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 218px;
+    top: 2810px;
+}
+#DG_tl1 {
+    width: 631.603585485032px;
+    height: 171.0px;
+    font-family: Arial;
+    font-size: 13.0px;
+    font-weight: 500;
+    color: #0191FB;
+    position: absolute;
+    left: 30px;
+    top: 45px;
+}
+#DG_hi1 {
+    width: 631.603585485032px;
+    height: 171.0px;
+    font-family: Arial;
+    font-size: 13.0px;
+    font-weight: 500;
+    color: #0191FB;
+    position: absolute;
+    left: 120px;
+    top: 45px;
+}
+
+#DG_dm2 {
+    width: 631.603585485032px;
+    height: 171.0px;
+    font-family: Arial;
+    font-size: 13.0px;
+    font-weight: 500;
+    color: #35B736;
+    position: absolute;
+    left: 130px;
+    top: 80px;
+}
+
+#DG_cmt2 {
+    width: 631.603585485032px;
+    height: 171.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #333333;
+    position: absolute;
+    left: 170px;
+    top: 113px;
+}
+
+#DG_star11 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 117.55px;
+    top: 2904px;
+}
+
+#DG_star12 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 142.34px;
+    top: 2904px;
+}
+
+#DG_star13 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 167.54px;
+    top: 2904px;
+}
+
+#DG_star14 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 192.82px;
+    top: 2904px;
+}
+
+#DG_star15 {
+    width: 20.179910970982405px;
+    height: 19.39094650205834px;
+    position: absolute;
+    left: 218px;
+    top: 2904px;
+}
+
+#DG_tl2 {
+    width: 631.603585485032px;
+    height: 171.0px;
+    font-family: Arial;
+    font-size: 13.0px;
+    font-weight: 500;
+    color: #0191FB;
+    position: absolute;
+    left: 30px;
+    top: 138px;
+}
+
+#DG_hi2 {
+    width: 631.603585485032px;
+    height: 171.0px;
+    font-family: Arial;
+    font-size: 13.0px;
+    font-weight: 500;
+    color: #0191FB;
+    position: absolute;
+    left: 120px;
+    top: 138px;
+}
+#DG_square_AllDG {
+    width: 181.90947207375206px;
+    height: 37.99999999999909px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 3px solid #8D9CF2;
+    border-radius: 7px;
+    position: absolute;
+    left: 292.75px;
+    top: 2975px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#DG_tich1 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 212.53px;
+    top: 2775px;
+}
+#DG_tich2 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 193px;
+    top: 2867px;
+}
+#BL_user {
+    width: 120.0px;
+    height: 120.0px;
+    position: absolute;
+    left: 780px;
+    top: 2609px;
+}
+#BL_account {
+    width: 105.78385925292969px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 910px;
+    top: 2630px;
+}
+
+#BL_dx {
+    width: 85.09375px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline;
+    color: #333333;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 910px;
+    top: 2660px;
+}
+#comment_textbox {
+    width: 430px;
+    height: 94.39094650205789px;
+    font-family: OpenSans-Light;
+    font-size: 14.666667px;
+    color: #434343;
+    background-color: #EFEFEF;
+    border: 1px solid #DDDDDD;
+    padding-right: 5px;
+    padding-left: 10px;
+    position: absolute;
+    left: 1040.11px;
+    top: 2630px;
+}
+#CMT_square_send {
+    width: 137.29803192590228px;
+    height: 46.99999999999986px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background: linear-gradient(#8D9CF2,#FF8585);
+    border-radius: 20px;
+    position: absolute;
+    left: 1350px;
+    top: 2735px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CMT {
+    position: absolute;
+    top: -20px;
+}
+#DG_line2 {
+    width: 646.9274213925179px;
+    height: 0.0px;
+    border-top: 2px solid #AFAFAF;
+    position: absolute;
+    left: 780.34px;
+    top: 2760px;
+}
+#CMT_circle1 {
+    width: 56.0px;
+    height: 56.0px;
+    font-family: Roboto-Bold;
+    font-size: 24.0px;
+    text-align: center;
+    color: #434343;
+    background-color: #CBCBCB;
+    border: 1px solid #CBCBCB;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    position: absolute;
+    left: 800px;
+    top: 2780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#CMT_circle2 {
+    width: 56.0px;
+    height: 56.0px;
+    font-family: Roboto-Bold;
+    font-size: 24.0px;
+    text-align: center;
+    color: #434343;
+    background-color: #CBCBCB;
+    border: 1px solid #CBCBCB;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    position: absolute;
+    left: 800px;
+    top: 2850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#CMT_circle3 {
+    width: 56.0px;
+    height: 56.0px;
+    font-family: Roboto-Bold;
+    font-size: 24.0px;
+    text-align: center;
+    color: #434343;
+    background-color: #CBCBCB;
+    border: 1px solid #CBCBCB;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    position: absolute;
+    left: 800px;
+    top: 2920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#CMT_Test {
+    width: 629.2980319259023px;
+    height: 198.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 700;
+    color: #333333;
+    position: absolute;
+    left: 880.16px;
+    top: 2770.5px;
+}
+
+#cmt_day1 {
+    width: 629.2980319259023px;
+    height: 198.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 700;
+    color: #BBBBBB;
+    position: absolute;
+    left: 180px;
+    top : -20px;
+}
+
+#cmt_day2 {
+    width: 629.2980319259023px;
+    height: 198.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 700;
+    color: #BBBBBB;
+    position: absolute;
+    left: 180px;
+    top: 55px;
+}
+#cmt_day3 {
+    width: 629.2980319259023px;
+    height: 198.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 700;
+    color: #BBBBBB;
+    position: absolute;
+    left: 180px;
+    top: 130px;
+}
+
+#CMT_cmt1 {
+    width: 629.2980319259023px;
+    height: 198.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 500;
+    color: #333333;
+    position: absolute;
+    top: 5px;
+   
+}
+#CMT_cmt2 {
+    width: 629.2980319259023px;
+    height: 198.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 500;
+    color: #333333;
+    position: absolute;
+    top: 78px;
+}
+#CMT_cmt3 {
+    width: 629.2980319259023px;
+    height: 198.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 500;
+    color: #333333;
+    position: absolute;
+    top: 151px;
+}
+#CMT_reply1 {
+    width: 631.603585485032px;
+    height: 171.0px;
+    font-family: Arial;
+    font-size: 15.0px;
+    font-weight: 700;
+    color: #0191FB;
+    position: absolute;
+    top: 30px;
+}
+#CMT_reply2 {
+    width: 631.603585485032px;
+    height: 171.0px;
+    font-family: Arial;
+    font-size: 15.0px;
+    font-weight: 700;
+    color: #0191FB;
+    position: absolute;
+    top: 100px;
+}
+#CMT_reply3 {
+    width: 631.603585485032px;
+    height: 171.0px;
+    font-family: Arial;
+    font-size: 15.0px;
+    font-weight: 700;
+    color: #0191FB;
+    position: absolute;
+    top: 170px;
+}
+#CMT_square_MoreCmt {
+    width: 181.90947207375206px;
+    height: 37.99999999999909px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 3px solid #8D9CF2;
+    border-radius: 7px;
+    position: absolute;
+    left: 1059.9px;
+    top: 2975px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
