@@ -13,15 +13,24 @@
              src="~/Images/royal-alphabet-crown-letter-english-l-512.png" />
     </a>
 
-    <img id="User_icon" width="40"
-         src="~/Images/User.png" />
+    <div>
+        <img id="User_icon" width="40"
+             src="~/Images/User.png" />
+        @if (Session["HoTen"] != null)
+        {
+            <a>Hello bạn</a>
+            <a>@Session["HoTen"].ToString()</a>
+            <a href="@Url.Action("LogOut", "DangNhap")">Đăng xuất</a>
+        }
+        else
+        {
+            <a href="https://localhost:44357/DangNhap/Index">
 
-    <a href="https://localhost:44357/DangNhap/Index">
-
-        <p id="Log_in">Đăng nhập</p>
-    </a>
-    <p id="text_1">hoặc Đăng ký</p>
-
+                <p id="Log_in">Đăng nhập</p>
+            </a>
+            <p id="text_1">hoặc Đăng ký</p>
+        }
+    </div>
     <div>
         <input id="Search_textbox" type="text"
                placeholder="Tìm kiếm ở đây" />
@@ -39,8 +48,8 @@
     <div>
         <img id="Cart_image" src="~/Images/shopping-cart.png" width="39" />
         <p id="Cart_number">0</p>
-        <a href="https://localhost:44357/GioHang/Index">           
-                <p id="Cart_text">Giỏ hàng</p>           
+        <a href="https://localhost:44357/GioHang/Index">
+            <p id="Cart_text">Giỏ hàng</p>
         </a>
     </div>
 

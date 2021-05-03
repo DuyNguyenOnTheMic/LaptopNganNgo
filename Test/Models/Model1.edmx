@@ -272,7 +272,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="CT25Team24Entities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CT25Team24Entities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="CTDHs" EntityType="Self.CTDH" />
           <EntitySet Name="DonHangs" EntityType="Self.DonHang" />
           <EntitySet Name="HangSPs" EntityType="Self.HangSP" />
@@ -301,7 +301,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CT25Team24ModelStoreContainer" CdmEntityContainer="CT25Team24Entities">
+        <EntityContainerMapping StorageEntityContainer="CT25Team24ModelStoreContainer" CdmEntityContainer="CT25Team24Entities1">
           <EntitySetMapping Name="CTDHs">
             <EntityTypeMapping TypeName="CT25Team24Model.CTDH">
               <MappingFragment StoreEntitySet="CTDH">

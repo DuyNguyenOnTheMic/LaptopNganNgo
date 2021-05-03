@@ -10,6 +10,11 @@ namespace Test.Controllers.Website_BanHang
 {
     public class DangNhapController : Controller
     {
+        CT25Team24Entities1 db;
+        public DangNhapController()
+        {
+            db = new CT25Team24Entities1();
+        }
         // GET: DangNhap
         public ActionResult Index()
         {
@@ -18,20 +23,29 @@ namespace Test.Controllers.Website_BanHang
 
 
         [HttpPost]
-        public ActionResult Index(Models.Membership model)
+        public ActionResult Index(Models.KhachHang model)
         {
-            using (var context = new CT25Team24Entities())
+            using (var context = new CT25Team24Entities1())
             {
-                bool isValid = context.KhachHangs.Any(x => x.TenDangNhap == model.TenDangNhap
+                var account = context.KhachHangs.Where(acc => acc.Email == model.Email && acc.MatKhau == model.MatKhau).FirstOrDefault();
+                bool isValid = context.KhachHangs.Any(x => x.Email == model.Email
                 && x.MatKhau == model.MatKhau);
                 if (isValid)
                 {
-                    FormsAuthentication.SetAuthCookie(model.TenDangNhap, false);
+                    Session["HoTen"] = account.HoTen;
+                    FormsAuthentication.SetAuthCookie(model.Email, false);
                     return RedirectToAction("Index", "TrangChu");
                 }
             }
-            ModelState.AddModelError("", "Invalid username and password!!");
+            ModelState.AddModelError("", "Invalid email and password!!");
+            Session["Message"] = "Sai Email hoặc mật khẩu.";
             return View();
+        }
+
+        public ActionResult LogOut()
+        {
+            Session.Abandon();
+            return RedirectToAction("Index", "TrangChu");
         }
     }
 }

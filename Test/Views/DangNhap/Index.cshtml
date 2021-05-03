@@ -45,7 +45,10 @@ Trợ Giúp</pre>
 
 
 <div class="LogIn">
-
+    @if(Session["Message"] != null)
+    {
+        <div>@Session["Message"].ToString()</div>
+    }
     <img id="Google"
          src="~/Images/google.png" />
     <img id="Facebook"
@@ -63,14 +66,16 @@ Trợ Giúp</pre>
     <img id="iconDN" src="~/Images/img_227643.png" />
     <img id="iconMK"
          src="~/Images/password-icon-28.png" />
+    @using (Html.BeginForm("Index", "DangNhap", FormMethod.Post))
+    {
+        <form action="Index" method="post">
+            <input name="Email" type="text" placeholder="Tên đăng nhập hoặc email" id="txt_TenDangNhap">
+            <input name="MatKhau" type="password" placeholder="Mật khẩu" id="txt_MatKhau">
 
-    <form action="Index" method="post">
-        <input type="text" placeholder="Tên đăng nhập hoặc email" id="txt_TenDangNhap">
-        <input type="password" placeholder="Mật khẩu" id="txt_MatKhau">
-
-        <button id="myBtn">Đăng nhập</button>
-    </form>
-
+            <button id="myBtn">Đăng nhập</button>
+        </form>
+    }
+    
 </div>
 
 

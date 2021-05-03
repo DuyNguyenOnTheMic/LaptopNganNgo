@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Test
+namespace Test.Models
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CT25Team24Entities : DbContext
+    public partial class CT25Team24Entities1 : DbContext
     {
-        public CT25Team24Entities()
-            : base("name=CT25Team24Entities")
+        public CT25Team24Entities1()
+            : base("name=CT25Team24Entities1")
         {
         }
     

@@ -290,3 +290,7 @@ E:\LaptopNganNgo\Test\bin\EntityFramework.dll
 E:\LaptopNganNgo\Test\bin\EntityFramework.SqlServer.dll
 E:\LaptopNganNgo\Test\bin\EntityFramework.xml
 E:\LaptopNganNgo\Test\bin\EntityFramework.SqlServer.xml
+C:\Users\Lenovo\Downloads\Do An\Test\bin\EntityFramework.dll
+C:\Users\Lenovo\Downloads\Do An\Test\bin\EntityFramework.SqlServer.dll
+C:\Users\Lenovo\Downloads\Do An\Test\bin\EntityFramework.xml
+C:\Users\Lenovo\Downloads\Do An\Test\bin\EntityFramework.SqlServer.xml
