@@ -171,3 +171,12 @@ input[type=password] {
     top: 638px;
     cursor: pointer;
 }
+#Failed_Message {
+    font-family: Arial;
+    font-size: 20.0px;
+    font-family: 'UTM Avo';
+    position: absolute;
+    top: 50px;
+    left: 205px;
+    color: red;
+}

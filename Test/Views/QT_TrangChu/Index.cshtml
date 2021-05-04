@@ -24,7 +24,22 @@
     <span id="rectangle"></span>
 
 </div>
+<div>
+    <img id="User_icon" width="40"
+         src="~/Images/User.png" />
+    @if (Session["HoTen"] != null)
+    {
+        <p id="Hello_Text">@Session["HoTen"].ToString()</p>
+        <a href="@Url.Action("LogOut", "DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+    else
+    {
+        <a href="https://localhost:44357/QT_DangNhap/Index">
 
+            <p id="Log_in">Đăng nhập</p>
+        </a>
+    }
+</div>
 <div class="Footer">
     <p id="Footer_Text">
         2021

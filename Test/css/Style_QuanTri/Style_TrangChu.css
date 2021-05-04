@@ -623,3 +623,41 @@
 #Page_25:hover {
   font-weight: 700;
 }
+#Log_in {
+    width: 96.44140625px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 700;
+    color: #000000;
+    position: absolute;
+    left: 1449.433px;
+    top: 10px;
+}
+#Button_LogOut {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    position: absolute;
+    left: 1400px;
+    top: 53px;
+    text-decoration: none;
+}
+
+    #Button_LogOut:hover {
+        color: darkblue;
+    }
+#User_icon {
+    position: absolute;
+    left: 1350.43px;
+    top: 30px;
+}
+#Hello_Text {
+    font-family: Arial;
+    font-size: 16px;
+    color: #000000;
+    position: absolute;
+    left: 1400px;
+    top: 14px;
+}

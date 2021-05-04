@@ -28,11 +28,21 @@
     <input type="password" placeholder="Mật khẩu" required>
     <img id="H1" src="~/Images/user_QT.png" />
     <img id="H2" src="~/Images/key.png" />
-    <a href="https://localhost:44357/QT_TrangChu/Index">
-        <button id="B1">Đăng nhập</button>
-    </a>
+
     <a href="https://localhost:44357/QT_DangKy/Index">
         <button id="B2">Đăng ký tài khoản</button>
     </a>
+    @if (Session["Message"] != null)
+    {
+        <div id="Failed_Message">@Session["Message"].ToString()</div>
+    }
+    @using (Html.BeginForm("Index", "QT_DangNhap", FormMethod.Post))
+    {
+        <form action="Index" method="post">
+            <input name="Email" type="text" placeholder="Địa chỉ email" id="txt_TenDangNhap">
+            <input name="MatKhau" type="password" placeholder="Mật khẩu" id="txt_MatKhau">
 
+            <button id="B1">Đăng nhập</button>
+        </form>
+    }
 </div>
