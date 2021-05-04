@@ -109,6 +109,7 @@
     <Content Include="css\Style_BanHang\Style_XemSP.css" />
     <Content Include="css\Style_BanHang\Style_DangNhap.css" />
     <Content Include="css\Style_BanHang\Style_CSKH.css" />
+    <Content Include="css\Style_QuanTri\Style._QT_DangBai.css" />
     <Content Include="css\Style_QuanTri\Style_DonHang.css" />
     <Content Include="css\Style_QuanTri\Style_XemCTTrangChu.css" />
     <Content Include="css\Style_QuanTri\Style_XemCTDH.css" />
@@ -132,6 +133,7 @@
     <Content Include="Images\H3.png" />
     <Content Include="Images\H4.png" />
     <Content Include="Images\H5.png" />
+    <Content Include="Images\HA.png" />
     <Content Include="Images\HAHA.jpg" />
     <Content Include="Images\HAHU.png" />
     <Content Include="Images\HEHE.png" />
