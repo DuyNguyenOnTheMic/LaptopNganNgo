@@ -304,7 +304,6 @@
     <Content Include="Views\_QT_TrangChu.cshtml" />
     <Content Include="Views\QT_TrangChu\Index.cshtml" />
     <Content Include="Views\_QT_CapNhatSP.cshtml" />
-    <Content Include="Views\QT_CapNhatSP\Index.cshtml" />
     <Content Include="Views\_QT_DangSP.cshtml" />
     <Content Include="Views\QT_DangSP\Index.cshtml" />
     <Content Include="Views\_QT_XemCTDH.cshtml" />
@@ -317,6 +316,7 @@
     <Content Include="Views\QT_XemCTTrangChu\Index.cshtml" />
     <Content Include="Views\_QT_DonHang.cshtml" />
     <Content Include="Views\QT_DonHang\Index.cshtml" />
+    <Content Include="Views\QT_CapNhatSP\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
