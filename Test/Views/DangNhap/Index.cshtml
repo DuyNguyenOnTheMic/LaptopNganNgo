@@ -47,7 +47,7 @@ Trợ Giúp</pre>
 <div class="LogIn">
     @if(Session["Message"] != null)
     {
-        <div>@Session["Message"].ToString()</div>
+        <div id="Failed_Message">@Session["Message"].ToString()</div>
     }
     <img id="Google"
          src="~/Images/google.png" />

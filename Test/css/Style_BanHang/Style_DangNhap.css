@@ -328,3 +328,12 @@ label {
     cursor: pointer;
 }
 
+#Failed_Message {
+    font-family: Arial;
+    font-size: 15.0px;
+    position: absolute;
+    top: 450px;
+    left: 155px;
+    color: red;
+}
+

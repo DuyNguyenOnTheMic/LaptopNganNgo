@@ -18,9 +18,8 @@
              src="~/Images/User.png" />
         @if (Session["HoTen"] != null)
         {
-            <a>Hello bạn</a>
-            <a>@Session["HoTen"].ToString()</a>
-            <a href="@Url.Action("LogOut", "DangNhap")">Đăng xuất</a>
+            <p id="Hello_Text">@Session["HoTen"].ToString()</p>
+            <a href="@Url.Action("LogOut", "DangNhap")" id="Button_LogOut">Đăng xuất</a>
         }
         else
         {

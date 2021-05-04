@@ -56,7 +56,7 @@
     color: #000000;
     position: absolute;
     left: 1449.433px;
-    top: 14px;
+    top: 10px;
 }
 
 #text_1 {
@@ -67,7 +67,7 @@
     color: #000000;
     position: absolute;
     left: 1449.433px;
-    top:35px;
+    top:34px;
 }
 
 #Search_textbox {
@@ -1090,6 +1090,30 @@ body {
     top: 281.5px;
     transform: rotate(180deg);
 }
+
+#Hello_Text {
+    font-family: Arial;
+    font-size: 16px;
+    color: #000000;
+    position: absolute;
+    left: 1442.433px;
+    top: 14px;
+}
+
+#Button_LogOut {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    position: absolute;
+    left: 1442.433px;
+    top: 53px;
+    text-decoration: none;
+}
+
+    #Button_LogOut:hover {
+        color: darkblue;
+    }
 
 
 

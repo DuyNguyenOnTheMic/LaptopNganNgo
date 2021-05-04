@@ -38,7 +38,7 @@ namespace Test.Controllers.Website_BanHang
                 }
             }
             ModelState.AddModelError("", "Invalid email and password!!");
-            Session["Message"] = "Sai Email hoặc mật khẩu.";
+            Session["Message"] = "Sai Email hoặc mật khẩu!!";
             return View();
         }
 
