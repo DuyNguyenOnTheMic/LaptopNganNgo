@@ -246,12 +246,12 @@ body {
 
 .Footer {
     position: absolute;
-    top: -1000px;
+    top: -1080px;
 }
 
 .LogIn_Hihi {
     width: 566.7180392064802px;
-    height: 868.5000000000002px;
+    height: 818.5000000000002px;
     font-family: Arial;
     font-size: 13.333334px;
     font-weight: 400;
@@ -270,7 +270,7 @@ body {
     height: 58.99720810521967px;
     position: absolute;
     left: 130px;
-    top: 773px;
+    top: 700px;
     cursor: pointer;
 }
 
@@ -279,45 +279,13 @@ body {
     height: 58.99720810521967px;
     position: absolute;
     left: 252px;
-    top: 773px;
+    top: 700px;
     cursor: pointer;
 }
 
-#TenDN {
-    width: 382.0px;
-    height: 43.0px;
-    font-family: Arial;
-    font-size: 20.0px;
-    font-weight: 400;
-    color: #434343;
-    background-color: #FFFFFF;
-    border: 1px solid #DDDDDD;
-    border-radius: 1px;
-    padding-top: 3px;
-    padding-right: 7px;
-    padding-bottom: 2px;
-    padding-left: 12px;
-    position: absolute;
-    top: 165px;
-    left: 68px;
-    bottom: 664px;
-}
-
-#TDN {
-    width: 134.560546875px;
-    height: 22.0px;
-    font-family: Arial;
-    font-size: 20.0px;
-    font-weight: 400;
-    color: #282828;
-    position: absolute;
-    top: 119px;
-    left: 73px;
-    bottom: 727px;
-}
 
 #DiaChi {
-    width: 382.0px;
+    width: 410px;
     height: 43.0px;
     font-family: Arial;
     font-size: 20.0px;
@@ -331,7 +299,7 @@ body {
     padding-bottom: 2px;
     padding-left: 12px;
     position: absolute;
-    top: 290px;
+    top: 190px;
     left: 68px;
     bottom: 536px;
 }
@@ -344,13 +312,13 @@ body {
     font-weight: 400;
     color: #282828;
     position: absolute;
-    top: 245px;
-    left: 73px;
+    top: 145px;
+    left: 80px;
     bottom: 601px;
 }
 
 #MatKhau {
-    width: 382.0px;
+    width: 410px;
     height: 43.0px;
     font-family: Arial;
     font-size: 20.0px;
@@ -364,7 +332,7 @@ body {
     padding-bottom: 2px;
     padding-left: 12px;
     position: absolute;
-    top: 414px;
+    top: 314px;
     left: 68px;
     bottom: 412px;
 }
@@ -377,13 +345,13 @@ body {
     font-weight: 400;
     color: #282828;
     position: absolute;
-    top: 366px;
+    top: 266px;
     left: 73px;
     bottom: 474px;
 }
 
 #XacNhan {
-    width: 382.0px;
+    width: 410px;
     height: 43.0px;
     font-family: Arial;
     font-size: 20.0px;
@@ -397,7 +365,7 @@ body {
     padding-bottom: 2px;
     padding-left: 12px;
     position: absolute;
-    top: 533px;
+    top: 433px;
     left: 68px;
     bottom: 293px;
 }
@@ -410,7 +378,7 @@ body {
     font-weight: 400;
     color: #282828;
     position: absolute;
-    top: 483px;
+    top: 383px;
     left: 73px;
     bottom: 353px;
 }
@@ -423,7 +391,7 @@ label {
     font-weight: 400;
     color: #333333;
     position: absolute;
-    top: 709px;
+    top: 630px;
     bottom: 127px;
     left: 194px;
     right: 194px;
@@ -465,14 +433,14 @@ label {
     height: 58.99720810521967px;
     position: absolute;
     left: 374px;
-    top: 773px;
+    top: 700px;
     cursor: pointer;
 }
 
 #myBtn {
     width: 160.0px;
     height: 43.0px;
-    font-family: OpenSans-Regular;
+    font-family: Arial;
     font-size: 20.0px;
     text-align: center;
     color: #FFFFFF;
@@ -481,7 +449,7 @@ label {
     border-radius: 0px;
     position: absolute;
     left: 203px;
-    bottom: 188px;
+    top: 540px;
     cursor: pointer;
 }
 

@@ -4,17 +4,17 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="d4fa629e4fe440d9bc8c3caf9c5034c0" Name="Diagram1" ZoomLevel="82">
+      <Diagram DiagramId="94e25e3e8b9a48a294721aee9c0a868f" Name="Diagram1" ZoomLevel="71">
         <EntityTypeShape EntityType="CT25Team24Model.CTDH" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="CT25Team24Model.DonHang" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="CT25Team24Model.HangSP" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CT25Team24Model.KhachHang" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="CT25Team24Model.SanPham" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team24Model.DonHang" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team24Model.HangSP" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team24Model.KhachHang" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team24Model.SanPham" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
         <EntityTypeShape EntityType="CT25Team24Model.sysdiagram" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
         <AssociationConnector Association="CT25Team24Model.FK_CTDH_DonHang" ManuallyRouted="false" />
-        <AssociationConnector Association="CT25Team24Model.FK_CTDH_SanPham" ManuallyRouted="false" />
         <AssociationConnector Association="CT25Team24Model.FK_DonHang_KhachHang" ManuallyRouted="false" />
         <AssociationConnector Association="CT25Team24Model.FK_SanPham_HangSP" ManuallyRouted="false" />
+        <AssociationConnector Association="CT25Team24Model.FK_CTDH_SanPham" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

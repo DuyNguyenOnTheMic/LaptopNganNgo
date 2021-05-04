@@ -13,10 +13,10 @@ namespace Test.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CT25Team24Entities1 : DbContext
+    public partial class CT25Team24Entities : DbContext
     {
-        public CT25Team24Entities1()
-            : base("name=CT25Team24Entities1")
+        public CT25Team24Entities()
+            : base("name=CT25Team24Entities")
         {
         }
     

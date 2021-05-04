@@ -28,10 +28,11 @@ namespace Test.Models
         public string HinhAnhSP { get; set; }
         public string TrangThaiSP { get; set; }
         public int SL { get; set; }
-        public double DonGia { get; set; }
+        public double DonGiaGoc { get; set; }
+        public double DonGiaKM { get; set; }
     
+        public virtual HangSP HangSP { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CTDH> CTDHs { get; set; }
-        public virtual HangSP HangSP { get; set; }
     }
 }

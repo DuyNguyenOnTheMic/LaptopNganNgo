@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="CT25Team24Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="CT25Team24Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="CTDH">
           <Key>
             <PropertyRef Name="MaDH" />
@@ -43,7 +43,6 @@
           <Property Name="DienThoai" Type="varchar" MaxLength="10" />
           <Property Name="DiaChi" Type="nvarchar" MaxLength="100" />
           <Property Name="NgaySinh" Type="datetime" />
-          <Property Name="TenDangNhap" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="MatKhau" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="VaiTro" Type="nvarchar" MaxLength="50" />
@@ -60,7 +59,8 @@
           <Property Name="HinhAnhSP" Type="varchar" MaxLength="100" />
           <Property Name="TrangThaiSP" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="SL" Type="int" Nullable="false" />
-          <Property Name="DonGia" Type="float" Nullable="false" />
+          <Property Name="DonGiaGoc" Type="float" Nullable="false" />
+          <Property Name="DonGiaKM" Type="float" Nullable="false" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -144,8 +144,7 @@
             <End Role="SanPham" EntitySet="SanPham" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="CT25Team24Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -161,7 +160,7 @@
           <Property Name="ChietKhau" Type="Int32" Nullable="false" />
           <Property Name="ThanhTien" Type="Double" Nullable="false" />
           <NavigationProperty Name="DonHang" Relationship="Self.FK_CTDH_DonHang" FromRole="CTDH" ToRole="DonHang" />
-          <NavigationProperty Name="SanPham" Relationship="Self.FK_CTDH_SanPham" FromRole="CTDH" ToRole="SanPham" />
+          <NavigationProperty Name="SanPham" Relationship="CT25Team24Model.FK_CTDH_SanPham" FromRole="CTDH" ToRole="SanPham" />
         </EntityType>
         <EntityType Name="DonHang">
           <Key>
@@ -192,7 +191,6 @@
           <Property Name="DienThoai" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
           <Property Name="DiaChi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="NgaySinh" Type="DateTime" Precision="3" />
-          <Property Name="TenDangNhap" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="MatKhau" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="VaiTro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -210,9 +208,10 @@
           <Property Name="HinhAnhSP" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="TrangThaiSP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="SL" Type="Int32" Nullable="false" />
-          <Property Name="DonGia" Type="Double" Nullable="false" />
-          <NavigationProperty Name="CTDHs" Relationship="Self.FK_CTDH_SanPham" FromRole="SanPham" ToRole="CTDH" />
+          <Property Name="DonGiaGoc" Type="Double" Nullable="false" />
+          <Property Name="DonGiaKM" Type="Double" Nullable="false" />
           <NavigationProperty Name="HangSP" Relationship="Self.FK_SanPham_HangSP" FromRole="SanPham" ToRole="HangSP" />
+          <NavigationProperty Name="CTDHs" Relationship="CT25Team24Model.FK_CTDH_SanPham" FromRole="SanPham" ToRole="CTDH" />
         </EntityType>
         <EntityType Name="sysdiagram">
           <Key>
@@ -233,18 +232,6 @@
             </Principal>
             <Dependent Role="CTDH">
               <PropertyRef Name="MaDH" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_CTDH_SanPham">
-          <End Role="SanPham" Type="Self.SanPham" Multiplicity="1" />
-          <End Role="CTDH" Type="Self.CTDH" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="SanPham">
-              <PropertyRef Name="MaSP" />
-            </Principal>
-            <Dependent Role="CTDH">
-              <PropertyRef Name="MaSP" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -272,7 +259,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="CT25Team24Entities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CT25Team24Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="CTDHs" EntityType="Self.CTDH" />
           <EntitySet Name="DonHangs" EntityType="Self.DonHang" />
           <EntitySet Name="HangSPs" EntityType="Self.HangSP" />
@@ -283,10 +270,6 @@
             <End Role="DonHang" EntitySet="DonHangs" />
             <End Role="CTDH" EntitySet="CTDHs" />
           </AssociationSet>
-          <AssociationSet Name="FK_CTDH_SanPham" Association="Self.FK_CTDH_SanPham">
-            <End Role="SanPham" EntitySet="SanPhams" />
-            <End Role="CTDH" EntitySet="CTDHs" />
-          </AssociationSet>
           <AssociationSet Name="FK_DonHang_KhachHang" Association="Self.FK_DonHang_KhachHang">
             <End Role="KhachHang" EntitySet="KhachHangs" />
             <End Role="DonHang" EntitySet="DonHangs" />
@@ -295,13 +278,29 @@
             <End Role="HangSP" EntitySet="HangSPs" />
             <End Role="SanPham" EntitySet="SanPhams" />
           </AssociationSet>
+          <AssociationSet Name="FK_CTDH_SanPham" Association="CT25Team24Model.FK_CTDH_SanPham">
+            <End Role="SanPham" EntitySet="SanPhams" />
+            <End Role="CTDH" EntitySet="CTDHs" />
+          </AssociationSet>
         </EntityContainer>
+        <Association Name="FK_CTDH_SanPham">
+          <End Type="CT25Team24Model.SanPham" Role="SanPham" Multiplicity="1" />
+          <End Type="CT25Team24Model.CTDH" Role="CTDH" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SanPham">
+              <PropertyRef Name="MaSP" />
+            </Principal>
+            <Dependent Role="CTDH">
+              <PropertyRef Name="MaSP" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CT25Team24ModelStoreContainer" CdmEntityContainer="CT25Team24Entities1">
+        <EntityContainerMapping StorageEntityContainer="CT25Team24ModelStoreContainer" CdmEntityContainer="CT25Team24Entities">
           <EntitySetMapping Name="CTDHs">
             <EntityTypeMapping TypeName="CT25Team24Model.CTDH">
               <MappingFragment StoreEntitySet="CTDH">
@@ -341,7 +340,6 @@
                 <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
                 <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
                 <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
-                <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
                 <ScalarProperty Name="VaiTro" ColumnName="VaiTro" />
@@ -359,7 +357,8 @@
                 <ScalarProperty Name="HinhAnhSP" ColumnName="HinhAnhSP" />
                 <ScalarProperty Name="TrangThaiSP" ColumnName="TrangThaiSP" />
                 <ScalarProperty Name="SL" ColumnName="SL" />
-                <ScalarProperty Name="DonGia" ColumnName="DonGia" />
+                <ScalarProperty Name="DonGiaGoc" ColumnName="DonGiaGoc" />
+                <ScalarProperty Name="DonGiaKM" ColumnName="DonGiaKM" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

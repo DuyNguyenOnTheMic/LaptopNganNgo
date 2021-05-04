@@ -11,7 +11,12 @@ namespace Test.Controllers
         // GET: TT_DangNhap
         public ActionResult Index()
         {
-            return View();
+            if (User.Identity != null && User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "TT_DiaChi");
+            }
+            else
+                return View();
         }
     }
 }

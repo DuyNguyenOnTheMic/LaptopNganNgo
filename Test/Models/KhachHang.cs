@@ -26,7 +26,6 @@ namespace Test.Models
         public string DienThoai { get; set; }
         public string DiaChi { get; set; }
         public Nullable<System.DateTime> NgaySinh { get; set; }
-        public string TenDangNhap { get; set; }
         public string Email { get; set; }
         public string MatKhau { get; set; }
         public string VaiTro { get; set; }

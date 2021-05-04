@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Lenovo\Downloads\Do An\Test\Models\Model1.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Lenovo\Downloads\Do An\Test\Models\CT25Team24.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
