@@ -1,0 +1,82 @@
+﻿@model IEnumerable<Test.Models.SanPham>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_QT_DangSP.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TenSP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DongSP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ThongTinChiTietSP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HinhAnhSP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrangThaiSP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DonGiaGoc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DonGiaKM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HangSP.TenHang)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenSP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DongSP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ThongTinChiTietSP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HinhAnhSP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TrangThaiSP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DonGiaGoc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DonGiaKM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HangSP.TenHang)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MaSP }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MaSP }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MaSP })
+        </td>
+    </tr>
+}
+
+</table>
