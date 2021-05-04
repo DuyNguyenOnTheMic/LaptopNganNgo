@@ -5,44 +5,59 @@
     Layout = "~/Views/_QT_DangSP.cshtml";
 }
 
-<h2>Thêm sản phẩm</h2>
-
-
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        
+        <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
             @Html.LabelFor(model => model.TenSP, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="T3">
-                @Html.EditorFor(model => model.TenSP, new { htmlAttributes = new { @class = "form-control" } })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TenSP, new
+           {
+               htmlAttributes = new
+               {
+                   @class = "form-control",
+                   placeholder = "Nhập tên sản phẩm",
+                   @id = "T3"
+
+               }
+           })
                 @Html.ValidationMessageFor(model => model.TenSP, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.DongSP, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="W5">
-                @Html.EditorFor(model => model.DongSP, new { htmlAttributes = new { @class = "form-control" } })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DongSP, new { htmlAttributes = new 
+           {
+               @class = "form-control",
+               placeholder = "Nhập dòng sản phẩm",
+               @id = "W5"
+           } })
                 @Html.ValidationMessageFor(model => model.DongSP, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.MaHangSP, "MaHangSP", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="W4">
-                @Html.DropDownList("MaHangSP", null, htmlAttributes: new { @class = "form-control" })
+            <div class="col-md-10">
+                @Html.DropDownList("MaHangSP", null, htmlAttributes: new
+           {
+               @class = "form-control",
+               @id = "W4"
+           })
                 @Html.ValidationMessageFor(model => model.MaHangSP, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.ThongTinChiTietSP, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="S4">
-                @Html.EditorFor(model => model.ThongTinChiTietSP, new { htmlAttributes = new { @class = "form-control" } })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.ThongTinChiTietSP,  new { style = "max-width:100%", @id = "S4" } )
                 @Html.ValidationMessageFor(model => model.ThongTinChiTietSP, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -57,7 +72,7 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.TrangThaiSP, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="W3">
+            <div class="col-md-10">
                 @Html.EditorFor(model => model.TrangThaiSP, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.TrangThaiSP, "", new { @class = "text-danger" })
             </div>
@@ -65,7 +80,7 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.SL, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="T9">
+            <div class="col-md-10">
                 @Html.EditorFor(model => model.SL, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.SL, "", new { @class = "text-danger" })
             </div>
@@ -73,7 +88,7 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.DonGiaGoc, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="W1">
+            <div class="col-md-10">
                 @Html.EditorFor(model => model.DonGiaGoc, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.DonGiaGoc, "", new { @class = "text-danger" })
             </div>
@@ -95,13 +110,6 @@
     </div>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
-
-<script src="~/Scripts/jquery-3.4.1.min.js"></script>
-<script src="~/Scripts/jquery.validate.min.js"></script>
-<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
 
 <div class="Header">
 
@@ -125,4 +133,96 @@
     </p>
 </div>
 
+<p id="Text">Thêm sản phẩm</p>
 
+<div id="K1">
+
+    <p id="T1">Thông tin chung</p>
+
+    <p id="T2">
+        Tên sản phẩm <br /><br /><br /><br />
+    </p>
+
+    <p id="MT">Mô tả sản phẩm</p>
+    
+</div>
+<div id="K2">
+    <p id="A1">
+        Hình ảnh sản phẩm
+    </p>
+
+    <div id="Khung">
+        <img id="iconDN"
+             src="~/Images/HA.png" />
+
+        <p id="add">Thêm hình ảnh</p>
+
+    </div>
+
+</div>
+
+<div id="K3">
+    <p id="A2">
+        Giá tiền sản phẩm
+    </p>
+    <p id="Q1">
+        Giá bán
+    </p>
+
+    <input id="W1" placeholder="0đ" type="number">
+</div>
+
+<div id="K4">
+    <p id="A3">
+        Tình trạng sản phẩm
+    </p>
+    <p id="Q3">
+        Tình trạng
+    </p>
+    <p id="Q4">
+        Số lượng
+    </p>
+    <input type="number" id="T9" placeholder="Nhập số lượng sản phẩm">
+
+    <select id="W3">
+        <option value="-1" selected>Tình trạng sản phẩm</option>
+        <option>Còn hàng</option>
+        <option>Hết hàng</option>
+    </select>
+
+</div>
+
+<div id="K5">
+    <p id="A4">
+        Hãng sản phẩm
+    </p>
+
+</div>
+
+<div id="K6">
+    <p id="A5">
+        Dòng sản phẩm
+    </p>
+
+
+</div>
+
+<div id="K7">
+    <p id="A6">
+        Khuyến mãi
+    </p>
+    <input id="R" type="radio">
+    <p id="A7"> Không áp dụng khuyến mãi </p>
+
+</div>
+
+<button id="myBtn">Lưu</button>
+<button id="myBtn1">Hủy</button>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
