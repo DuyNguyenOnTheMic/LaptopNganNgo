@@ -44,7 +44,7 @@ namespace Test.Controllers.Website_QuanTri
         public ActionResult LogOut()
         {
             Session.Abandon();
-            return RedirectToAction("Index", "QT_TrangChu");
+            return RedirectToAction("Index", "QT_DangNhap");
         }
 
     }

@@ -7,8 +7,8 @@
     width: 99.00000000000011px;
     height: 73.99999999999989px;
     position: absolute;
-    top: 49px;
-    left: 513px;
+    top: 59px;
+    left: 500px;
 }
 
 #Text_Header {
@@ -20,7 +20,7 @@
     color: #000000;
     position: absolute;
     top: -15px;
-    left: 638.88px;
+    left: 625.88px;
 }
 
 
@@ -66,19 +66,19 @@
     font-style: italic;
     color: #333333;
     position: absolute;
-    left: 117px;
+    left: 100px;
     top: 112px;
 }
 
 #C2 {
-    width: 163.59375px;
+    width: 190px;
     height: 18.0px;
     font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
     color: #999999;
     position: absolute;
-    left: 216px;
+    left: 200px;
     top: 202px;
 }
 

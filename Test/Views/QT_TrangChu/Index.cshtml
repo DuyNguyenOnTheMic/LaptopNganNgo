@@ -5,7 +5,9 @@
 }
 
 <div class="Header">
-
+    <img src="~/Images/user_QT.png"
+         id="User_icon"
+         width="45"/>
     <a href="https://localhost:44357/QT_TrangChu/Index">
         <img id="Logo_Header"
              src="~/Images/bird.png"
@@ -25,20 +27,12 @@
 
 </div>
 <div>
-    <img id="User_icon" width="40"
-         src="~/Images/User.png" />
     @if (Session["HoTen"] != null)
     {
         <p id="Hello_Text">@Session["HoTen"].ToString()</p>
-        <a href="@Url.Action("LogOut", "DangNhap")" id="Button_LogOut">Đăng xuất</a>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
     }
-    else
-    {
-        <a href="https://localhost:44357/QT_DangNhap/Index">
-
-            <p id="Log_in">Đăng nhập</p>
-        </a>
-    }
+   
 </div>
 <div class="Footer">
     <p id="Footer_Text">
@@ -69,7 +63,7 @@
              src="~/Images/next.png" />
     </div>
 
-    <a href="https://localhost:44357/QT_DangSP/Index">
+    <a href="https://localhost:44357/SanPhams/Create">
         <div id="Dang_SP">
             &nbsp;&nbsp;&nbsp;
             &nbsp;&#160;&#160;Tạo sản phẩm

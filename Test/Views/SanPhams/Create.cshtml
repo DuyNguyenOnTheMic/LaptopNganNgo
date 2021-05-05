@@ -10,10 +10,8 @@
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.LabelFor(model => model.TenSP, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.TenSP, new
            {
@@ -30,7 +28,6 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.DongSP, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.DongSP, new { htmlAttributes = new 
            {
@@ -43,7 +40,6 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.MaHangSP, "MaHangSP", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("MaHangSP", null, htmlAttributes: new
            {
@@ -55,7 +51,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.ThongTinChiTietSP, htmlAttributes: new { @class = "control-label col-md-2" })
+
             <div class="col-md-10">
                 @Html.TextAreaFor(model => model.ThongTinChiTietSP,  new { style = "max-width:100%", @id = "S4" } )
                 @Html.ValidationMessageFor(model => model.ThongTinChiTietSP, "", new { @class = "text-danger" })
@@ -63,7 +59,6 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.HinhAnhSP, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.HinhAnhSP, new
            {
@@ -78,28 +73,31 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.TrangThaiSP, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.TrangThaiSP, new { htmlAttributes = new 
            { 
                @class = "form-control",
                placeholder = "Tình trạng sản phẩm",
-
+               @id = "W3"
            } })
                 @Html.ValidationMessageFor(model => model.TrangThaiSP, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.SL, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.SL, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.SL, new { htmlAttributes = new 
+           { 
+               @class = "form-control",
+               placeholder = "Nhập số lượng sản phẩm",
+               @id = "T9",
+               @type = "number"
+           } })
                 @Html.ValidationMessageFor(model => model.SL, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.DonGiaGoc, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.DonGiaGoc, new
            {
@@ -110,13 +108,12 @@
                    @type = "number",
                    placeholder = "0đ"
                }
-           });
+           })
                 @Html.ValidationMessageFor(model => model.DonGiaGoc, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.DonGiaKM, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.DonGiaKM, new
            {
@@ -134,7 +131,7 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" value="Lưu" id="myBtn" />
             </div>
         </div>
     </div>
@@ -143,10 +140,12 @@
 
 <div class="Header">
 
-    <img id="Logo_Header"
-         src="~/Images/bird.png"
-         width="99" />
-    <p id="Text_Header">LaptopNganNgo</p>
+    <a href="https://localhost:44357/QT_TrangChu/Index">
+        <img id="Logo_Header"
+             src="~/Images/bird.png"
+             width="99" />
+        <p id="Text_Header">LaptopNganNgo</p>
+    </a>
 
     <p id="Product_SanPham">Sản phẩm</p>
     <p id="Product_DonHang">Đơn hàng</p>
@@ -207,13 +206,7 @@
     <p id="Q4">
         Số lượng
     </p>
-    <input type="number" id="T9" placeholder="Nhập số lượng sản phẩm">
 
-    <select id="W3">
-        <option value="-1" selected>Tình trạng sản phẩm</option>
-        <option>Còn hàng</option>
-        <option>Hết hàng</option>
-    </select>
 
 </div>
 
@@ -241,12 +234,9 @@
 
 </div>
 
-<button id="myBtn">Lưu</button>
-<button id="myBtn1">Hủy</button>
+<a id="myBtn1" href="https://localhost:44357/QT_TrangChu/Index">Hủy</a>
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
-</div>
+
 
 <script src="~/Scripts/jquery-3.4.1.min.js"></script>
 <script src="~/Scripts/jquery.validate.min.js"></script>

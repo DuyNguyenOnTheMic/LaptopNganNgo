@@ -237,13 +237,10 @@
     background-color: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 0px;
-    padding-top: 1px;
-    padding-right: 6px;
-    padding-bottom: 1px;
-    padding-left: 11px;
     position: absolute;
-    top: 105px;
-    left: 565px;
+    top: 1520px;
+    left: 665px;
+    z-index: +1;
 }
 
 #T4 {
@@ -488,7 +485,7 @@
     color: #333333;
     position: absolute;
     top: 50px;
-    left: 500px;
+    left: 472px;
 }
 #W3 {
     width: 415.4875311720693px;
@@ -500,13 +497,10 @@
     background-color: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 0px;
-    padding-top: 1px;
-    padding-right: 6px;
-    padding-bottom: 1px;
-    padding-left: 11px;
     position: absolute;
-    top: 108px;
-    left: 55px;
+    top: 1520px;
+    left: 176px;
+    z-index: +1;
 }
 
 #K4 {
@@ -681,6 +675,9 @@
     font-family: Arial;
     font-size: 24.0px;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: #030303;
     background: #CDCDCD;
@@ -690,6 +687,7 @@
     left: 1400.78px;
     cursor: pointer;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 #Label_GiaKM {
@@ -719,6 +717,7 @@
     left: 665px;
     z-index: +1;
 }
+
 
 
 
