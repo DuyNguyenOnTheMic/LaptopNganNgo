@@ -65,7 +65,14 @@
         <div class="form-group">
             @Html.LabelFor(model => model.HinhAnhSP, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.HinhAnhSP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.HinhAnhSP, new
+           {
+               htmlAttributes = new
+               {
+                   @class = "form-control",
+                   @id = "Khung"
+               }
+           })
                 @Html.ValidationMessageFor(model => model.HinhAnhSP, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -73,7 +80,12 @@
         <div class="form-group">
             @Html.LabelFor(model => model.TrangThaiSP, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.TrangThaiSP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.TrangThaiSP, new { htmlAttributes = new 
+           { 
+               @class = "form-control",
+               placeholder = "Tình trạng sản phẩm",
+
+           } })
                 @Html.ValidationMessageFor(model => model.TrangThaiSP, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -89,7 +101,16 @@
         <div class="form-group">
             @Html.LabelFor(model => model.DonGiaGoc, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.DonGiaGoc, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.DonGiaGoc, new
+           {
+               htmlAttributes = new
+               {
+                   @class = "form-control",
+                   @id = "W1",
+                   @type = "number",
+                   placeholder = "0đ"
+               }
+           });
                 @Html.ValidationMessageFor(model => model.DonGiaGoc, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -97,7 +118,16 @@
         <div class="form-group">
             @Html.LabelFor(model => model.DonGiaKM, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.DonGiaKM, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.DonGiaKM, new
+           {
+               htmlAttributes = new
+               {
+                   @class = "form-control",
+                   placeholder = "0đ",
+                   @type = "number",
+                   @id = "txt_DonGiaKM"
+               }
+           })
                 @Html.ValidationMessageFor(model => model.DonGiaKM, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -151,13 +181,6 @@
         Hình ảnh sản phẩm
     </p>
 
-    <div id="Khung">
-        <img id="iconDN"
-             src="~/Images/HA.png" />
-
-        <p id="add">Thêm hình ảnh</p>
-
-    </div>
 
 </div>
 
@@ -168,8 +191,10 @@
     <p id="Q1">
         Giá bán
     </p>
+    <p id="Label_GiaKM">
+        Giá khuyến mãi
+    </p>
 
-    <input id="W1" placeholder="0đ" type="number">
 </div>
 
 <div id="K4">
