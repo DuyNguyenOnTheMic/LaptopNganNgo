@@ -73,5 +73,25 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="ChiTietGioHangs">
+      <EntityTypeMapping TypeName="CT25Team24Model.ChiTietGioHang">
+        <MappingFragment StoreEntitySet="ChiTietGioHang">
+          <ScalarProperty Name="ThanhTien" ColumnName="ThanhTien" />
+          <ScalarProperty Name="DonGia" ColumnName="DonGia" />
+          <ScalarProperty Name="SL" ColumnName="SL" />
+          <ScalarProperty Name="MaSP" ColumnName="MaSP" />
+          <ScalarProperty Name="MaGH" ColumnName="MaGH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GioHangs">
+      <EntityTypeMapping TypeName="CT25Team24Model.GioHang">
+        <MappingFragment StoreEntitySet="GioHang">
+          <ScalarProperty Name="TongTien" ColumnName="TongTien" />
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+          <ScalarProperty Name="MaGH" ColumnName="MaGH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

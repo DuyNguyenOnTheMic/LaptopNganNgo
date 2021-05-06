@@ -18,6 +18,7 @@ namespace Test.Models
         public SanPham()
         {
             this.CTDHs = new HashSet<CTDH>();
+            this.ChiTietGioHangs = new HashSet<ChiTietGioHang>();
         }
     
         public int MaSP { get; set; }
@@ -34,5 +35,7 @@ namespace Test.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CTDH> CTDHs { get; set; }
         public virtual HangSP HangSP { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ChiTietGioHang> ChiTietGioHangs { get; set; }
     }
 }

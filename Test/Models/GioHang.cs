@@ -12,28 +12,20 @@ namespace Test.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class KhachHang
+    public partial class GioHang
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public KhachHang()
+        public GioHang()
         {
-            this.DonHangs = new HashSet<DonHang>();
-            this.GioHangs = new HashSet<GioHang>();
+            this.ChiTietGioHangs = new HashSet<ChiTietGioHang>();
         }
     
+        public int MaGH { get; set; }
         public int MaKH { get; set; }
-        public string HoTen { get; set; }
-        public Nullable<int> GioiTinh { get; set; }
-        public string DienThoai { get; set; }
-        public string DiaChi { get; set; }
-        public Nullable<System.DateTime> NgaySinh { get; set; }
-        public string Email { get; set; }
-        public string MatKhau { get; set; }
-        public string VaiTro { get; set; }
+        public int TongTien { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DonHang> DonHangs { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GioHang> GioHangs { get; set; }
+        public virtual ICollection<ChiTietGioHang> ChiTietGioHangs { get; set; }
+        public virtual KhachHang KhachHang { get; set; }
     }
 }

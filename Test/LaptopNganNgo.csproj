@@ -228,6 +228,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ChiTietGioHang.cs">
+      <DependentUpon>CT25Team24.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\CT25Team24.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -247,6 +250,9 @@
       <DependentUpon>CT25Team24.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DonHang.cs">
+      <DependentUpon>CT25Team24.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\GioHang.cs">
       <DependentUpon>CT25Team24.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\HangSP.cs">

@@ -47,6 +47,7 @@
     <Property Name="MatKhau" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="VaiTro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="DonHangs" Relationship="Self.FK_DonHang_KhachHang" FromRole="KhachHang" ToRole="DonHang" />
+    <NavigationProperty Name="GioHangs" Relationship="CT25Team24Model.FK_GioHang_KhachHang" FromRole="KhachHang" ToRole="GioHang" />
   </EntityType>
   <EntityType Name="SanPham">
     <Key>
@@ -64,6 +65,7 @@
     <Property Name="DonGiaKM" Type="Double" Nullable="false" />
     <NavigationProperty Name="CTDHs" Relationship="Self.FK_CTDH_SanPham" FromRole="SanPham" ToRole="CTDH" />
     <NavigationProperty Name="HangSP" Relationship="CT25Team24Model.FK_SanPham_HangSP" FromRole="SanPham" ToRole="HangSP" />
+    <NavigationProperty Name="ChiTietGioHangs" Relationship="CT25Team24Model.FK_ChiTietGioHang_SanPham" FromRole="SanPham" ToRole="ChiTietGioHang" />
   </EntityType>
   <EntityType Name="sysdiagram">
     <Key>
@@ -134,6 +136,20 @@
       <End Role="HangSP" EntitySet="HangSPs" />
       <End Role="SanPham" EntitySet="SanPhams" />
     </AssociationSet>
+    <EntitySet Name="ChiTietGioHangs" EntityType="CT25Team24Model.ChiTietGioHang" />
+    <EntitySet Name="GioHangs" EntityType="CT25Team24Model.GioHang" />
+    <AssociationSet Name="FK_ChiTietGioHang_GioHang" Association="CT25Team24Model.FK_ChiTietGioHang_GioHang">
+      <End Role="GioHang" EntitySet="GioHangs" />
+      <End Role="ChiTietGioHang" EntitySet="ChiTietGioHangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChiTietGioHang_SanPham" Association="CT25Team24Model.FK_ChiTietGioHang_SanPham">
+      <End Role="SanPham" EntitySet="SanPhams" />
+      <End Role="ChiTietGioHang" EntitySet="ChiTietGioHangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GioHang_KhachHang" Association="CT25Team24Model.FK_GioHang_KhachHang">
+      <End Role="KhachHang" EntitySet="KhachHangs" />
+      <End Role="GioHang" EntitySet="GioHangs" />
+    </AssociationSet>
   </EntityContainer>
   <Association Name="FK_SanPham_HangSP">
     <End Type="CT25Team24Model.HangSP" Role="HangSP" Multiplicity="1" />
@@ -144,6 +160,65 @@
       </Principal>
       <Dependent Role="SanPham">
         <PropertyRef Name="MaHangSP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="ChiTietGioHang">
+    <Key>
+      <PropertyRef Name="MaGH" />
+      <PropertyRef Name="MaSP" />
+    </Key>
+    <Property Name="MaGH" Type="Int32" Nullable="false" />
+    <Property Name="MaSP" Type="Int32" Nullable="false" />
+    <Property Name="SL" Type="Int32" Nullable="false" />
+    <Property Name="DonGia" Type="Int32" Nullable="false" />
+    <Property Name="ThanhTien" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="GioHang" Relationship="CT25Team24Model.FK_ChiTietGioHang_GioHang" FromRole="ChiTietGioHang" ToRole="GioHang" />
+    <NavigationProperty Name="SanPham" Relationship="CT25Team24Model.FK_ChiTietGioHang_SanPham" FromRole="ChiTietGioHang" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="GioHang">
+    <Key>
+      <PropertyRef Name="MaGH" />
+    </Key>
+    <Property Name="MaGH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaKH" Type="Int32" Nullable="false" />
+    <Property Name="TongTien" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="ChiTietGioHangs" Relationship="CT25Team24Model.FK_ChiTietGioHang_GioHang" FromRole="GioHang" ToRole="ChiTietGioHang" />
+    <NavigationProperty Name="KhachHang" Relationship="CT25Team24Model.FK_GioHang_KhachHang" FromRole="GioHang" ToRole="KhachHang" />
+  </EntityType>
+  <Association Name="FK_ChiTietGioHang_GioHang">
+    <End Type="CT25Team24Model.GioHang" Role="GioHang" Multiplicity="1" />
+    <End Type="CT25Team24Model.ChiTietGioHang" Role="ChiTietGioHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GioHang">
+        <PropertyRef Name="MaGH" />
+      </Principal>
+      <Dependent Role="ChiTietGioHang">
+        <PropertyRef Name="MaGH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChiTietGioHang_SanPham">
+    <End Type="CT25Team24Model.SanPham" Role="SanPham" Multiplicity="1" />
+    <End Type="CT25Team24Model.ChiTietGioHang" Role="ChiTietGioHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPham">
+        <PropertyRef Name="MaSP" />
+      </Principal>
+      <Dependent Role="ChiTietGioHang">
+        <PropertyRef Name="MaSP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GioHang_KhachHang">
+    <End Type="CT25Team24Model.KhachHang" Role="KhachHang" Multiplicity="1" />
+    <End Type="CT25Team24Model.GioHang" Role="GioHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhachHang">
+        <PropertyRef Name="MaKH" />
+      </Principal>
+      <Dependent Role="GioHang">
+        <PropertyRef Name="MaKH" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
