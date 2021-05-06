@@ -25,14 +25,14 @@ namespace Test.Models
         public string DongSP { get; set; }
         public int MaHangSP { get; set; }
         public string ThongTinChiTietSP { get; set; }
-        public string HinhAnhSP { get; set; }
+        public byte[] HinhAnhSP { get; set; }
         public string TrangThaiSP { get; set; }
         public int SL { get; set; }
         public double DonGiaGoc { get; set; }
         public double DonGiaKM { get; set; }
     
-        public virtual HangSP HangSP { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CTDH> CTDHs { get; set; }
+        public virtual HangSP HangSP { get; set; }
     }
 }

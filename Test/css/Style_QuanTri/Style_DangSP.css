@@ -442,7 +442,7 @@
 }
 
 #K3 {
-    width: 1008.0px;
+    width: 1010.0px;
     height: 166.0px;
     font-family: Arial;
     font-size: 13.333334px;
@@ -660,7 +660,7 @@
     font-weight: 400;
     text-align: center;
     color: #030303;
-    background: linear-gradient(#BC85A3,#E6E6E6);
+    background: linear-gradient(#8D9CF2,#FF8585);
     border: 1px solid #CDCDCD;
     position: absolute;
     top: 1592.43px;
@@ -715,6 +715,27 @@
     position: absolute;
     top: 1330px;
     left: 665px;
+    z-index: +1;
+}
+
+#loadFileXml {
+    background: linear-gradient(#8D9CF2,#FF8585);
+    position: absolute;
+    top: 1118px;
+    left: 176px;
+    font-family: Arial;
+    font-size: 16px;
+    z-index: +1;
+}
+
+#loadFileXml:hover {
+    cursor: pointer;
+}
+
+#output {
+    position: absolute;
+    top: 1150px;
+    left: 176px;
     z-index: +1;
 }
 

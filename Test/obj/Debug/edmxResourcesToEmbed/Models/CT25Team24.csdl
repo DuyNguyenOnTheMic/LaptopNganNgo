@@ -12,7 +12,7 @@
     <Property Name="ChietKhau" Type="Int32" Nullable="false" />
     <Property Name="ThanhTien" Type="Double" Nullable="false" />
     <NavigationProperty Name="DonHang" Relationship="Self.FK_CTDH_DonHang" FromRole="CTDH" ToRole="DonHang" />
-    <NavigationProperty Name="SanPham" Relationship="CT25Team24Model.FK_CTDH_SanPham" FromRole="CTDH" ToRole="SanPham" />
+    <NavigationProperty Name="SanPham" Relationship="Self.FK_CTDH_SanPham" FromRole="CTDH" ToRole="SanPham" />
   </EntityType>
   <EntityType Name="DonHang">
     <Key>
@@ -31,7 +31,7 @@
     </Key>
     <Property Name="MaHang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TenHang" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="SanPhams" Relationship="Self.FK_SanPham_HangSP" FromRole="HangSP" ToRole="SanPham" />
+    <NavigationProperty Name="SanPhams" Relationship="CT25Team24Model.FK_SanPham_HangSP" FromRole="HangSP" ToRole="SanPham" />
   </EntityType>
   <EntityType Name="KhachHang">
     <Key>
@@ -57,13 +57,13 @@
     <Property Name="DongSP" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="MaHangSP" Type="Int32" Nullable="false" />
     <Property Name="ThongTinChiTietSP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="HinhAnhSP" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="HinhAnhSP" Type="Binary" MaxLength="Max" FixedLength="false" />
     <Property Name="TrangThaiSP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="SL" Type="Int32" Nullable="false" />
     <Property Name="DonGiaGoc" Type="Double" Nullable="false" />
     <Property Name="DonGiaKM" Type="Double" Nullable="false" />
-    <NavigationProperty Name="HangSP" Relationship="Self.FK_SanPham_HangSP" FromRole="SanPham" ToRole="HangSP" />
-    <NavigationProperty Name="CTDHs" Relationship="CT25Team24Model.FK_CTDH_SanPham" FromRole="SanPham" ToRole="CTDH" />
+    <NavigationProperty Name="CTDHs" Relationship="Self.FK_CTDH_SanPham" FromRole="SanPham" ToRole="CTDH" />
+    <NavigationProperty Name="HangSP" Relationship="CT25Team24Model.FK_SanPham_HangSP" FromRole="SanPham" ToRole="HangSP" />
   </EntityType>
   <EntityType Name="sysdiagram">
     <Key>
@@ -87,6 +87,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_CTDH_SanPham">
+    <End Role="SanPham" Type="Self.SanPham" Multiplicity="1" />
+    <End Role="CTDH" Type="Self.CTDH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPham">
+        <PropertyRef Name="MaSP" />
+      </Principal>
+      <Dependent Role="CTDH">
+        <PropertyRef Name="MaSP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_DonHang_KhachHang">
     <End Role="KhachHang" Type="Self.KhachHang" Multiplicity="1" />
     <End Role="DonHang" Type="Self.DonHang" Multiplicity="*" />
@@ -96,18 +108,6 @@
       </Principal>
       <Dependent Role="DonHang">
         <PropertyRef Name="MaKH" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_SanPham_HangSP">
-    <End Role="HangSP" Type="Self.HangSP" Multiplicity="1" />
-    <End Role="SanPham" Type="Self.SanPham" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="HangSP">
-        <PropertyRef Name="MaHang" />
-      </Principal>
-      <Dependent Role="SanPham">
-        <PropertyRef Name="MaHangSP" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -122,28 +122,28 @@
       <End Role="DonHang" EntitySet="DonHangs" />
       <End Role="CTDH" EntitySet="CTDHs" />
     </AssociationSet>
+    <AssociationSet Name="FK_CTDH_SanPham" Association="Self.FK_CTDH_SanPham">
+      <End Role="SanPham" EntitySet="SanPhams" />
+      <End Role="CTDH" EntitySet="CTDHs" />
+    </AssociationSet>
     <AssociationSet Name="FK_DonHang_KhachHang" Association="Self.FK_DonHang_KhachHang">
       <End Role="KhachHang" EntitySet="KhachHangs" />
       <End Role="DonHang" EntitySet="DonHangs" />
     </AssociationSet>
-    <AssociationSet Name="FK_SanPham_HangSP" Association="Self.FK_SanPham_HangSP">
+    <AssociationSet Name="FK_SanPham_HangSP" Association="CT25Team24Model.FK_SanPham_HangSP">
       <End Role="HangSP" EntitySet="HangSPs" />
       <End Role="SanPham" EntitySet="SanPhams" />
     </AssociationSet>
-    <AssociationSet Name="FK_CTDH_SanPham" Association="CT25Team24Model.FK_CTDH_SanPham">
-      <End Role="SanPham" EntitySet="SanPhams" />
-      <End Role="CTDH" EntitySet="CTDHs" />
-    </AssociationSet>
   </EntityContainer>
-  <Association Name="FK_CTDH_SanPham">
-    <End Type="CT25Team24Model.SanPham" Role="SanPham" Multiplicity="1" />
-    <End Type="CT25Team24Model.CTDH" Role="CTDH" Multiplicity="*" />
+  <Association Name="FK_SanPham_HangSP">
+    <End Type="CT25Team24Model.HangSP" Role="HangSP" Multiplicity="1" />
+    <End Type="CT25Team24Model.SanPham" Role="SanPham" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="SanPham">
-        <PropertyRef Name="MaSP" />
+      <Principal Role="HangSP">
+        <PropertyRef Name="MaHang" />
       </Principal>
-      <Dependent Role="CTDH">
-        <PropertyRef Name="MaSP" />
+      <Dependent Role="SanPham">
+        <PropertyRef Name="MaHangSP" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

@@ -53,9 +53,25 @@
         <td>
             @Html.DisplayFor(modelItem => item.ThongTinChiTietSP)
         </td>
-        <td>
+        @*<td>
             @Html.DisplayFor(modelItem => item.HinhAnhSP)
-        </td>
+        </td>*@
+    <td>
+        @{
+            if (item.HinhAnhSP != null)
+            {
+                var base64 = Convert.ToBase64String(item.HinhAnhSP);
+                var imgsrc = string.Format("data:image/jpg;base64,{0}", base64);
+                <img src='@imgsrc'
+                     style="max-width:100px;max-height:100px" />
+            }
+            else
+            {
+                <img src="~/Images/image.png"
+                     style="max-width:100px;max-height:100px" />
+            }
+        }
+    </td>
         <td>
             @Html.DisplayFor(modelItem => item.TrangThaiSP)
         </td>

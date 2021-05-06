@@ -128,5 +128,33 @@ namespace Test.Controllers.Website_QuanTri
             }
             base.Dispose(disposing);
         }
+
+        public ActionResult AddImage()
+        {
+            SanPham sanpham = new SanPham();
+            return View(sanpham);
+        }
+
+        [HttpPost]
+        public ActionResult AddImage(SanPham model, HttpPostedFileBase image1)
+        {
+            var db = new CT25Team24Entities();
+            if (image1!=null)
+            {
+                model.HinhAnhSP = new byte[image1.ContentLength];
+                image1.InputStream.Read(model.HinhAnhSP, 0, image1.ContentLength);
+            }
+            db.SanPhams.Add(model);
+            db.SaveChanges();
+            return RedirectToAction("Index", "SanPhams");
+        }
+
+        public ActionResult Index1()
+        {
+            CT25Team24Entities db = new CT25Team24Entities();
+            var item = (from d in db.SanPhams
+                        select d).ToList();
+            return View(item);
+        }
     }
 }

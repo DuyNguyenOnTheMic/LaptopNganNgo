@@ -51,7 +51,7 @@
     <Property Name="DongSP" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="MaHangSP" Type="int" Nullable="false" />
     <Property Name="ThongTinChiTietSP" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="HinhAnhSP" Type="varchar" MaxLength="100" />
+    <Property Name="HinhAnhSP" Type="varbinary(max)" />
     <Property Name="TrangThaiSP" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="SL" Type="int" Nullable="false" />
     <Property Name="DonGiaGoc" Type="float" Nullable="false" />
