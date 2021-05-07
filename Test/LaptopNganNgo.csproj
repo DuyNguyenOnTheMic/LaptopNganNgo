@@ -307,7 +307,6 @@
     <Content Include="Views\QT_DangNhap.cshtml" />
     <Content Include="Views\QT_DangNhap\Index.cshtml" />
     <Content Include="Views\QT_DangKy.cshtml" />
-    <Content Include="Views\QT_DangKy\Index.cshtml" />
     <Content Include="Views\_QT_TrangChu.cshtml" />
     <Content Include="Views\QT_TrangChu\Index.cshtml" />
     <Content Include="Views\_QT_CapNhatSP.cshtml" />
