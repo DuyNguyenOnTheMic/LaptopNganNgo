@@ -22,7 +22,7 @@ namespace Test.Models
     
         public int MaGH { get; set; }
         public int MaKH { get; set; }
-        public int TongTien { get; set; }
+        public double TongTien { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChiTietGioHang> ChiTietGioHangs { get; set; }

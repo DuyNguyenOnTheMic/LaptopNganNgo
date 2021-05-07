@@ -96,8 +96,9 @@
     padding-bottom: 1px;
     padding-left: 11px;
     position: absolute;
-    left: 74px;
-    top: 319px;
+    left: 580px;
+    top: 499px;
+    z-index: +1;
 }
 
 #MK {
@@ -114,8 +115,9 @@
     padding-bottom: 1px;
     padding-left: 11px;
     position: absolute;
-    left: 74px;
-    top: 398px;
+    left: 580px;
+    top: 580px;
+    z-index: +1;
 }
 
 #NLMK {
@@ -132,8 +134,9 @@
     padding-bottom: 1px;
     padding-left: 11px;
     position: absolute;
-    left: 74px;
-    top: 476px;
+    left: 580px;
+    top: 661px;
+    z-index: +1;
 }
 
 #B1 {
@@ -149,8 +152,9 @@
     border: 1px solid #DDDDDD;
     border-radius: 12px;
     position: absolute;
-    left: 190px;
-    top: 615px;
+    left: 690px;
+    top: 780px;
     cursor: pointer;
+    z-index: +1;
 }
 

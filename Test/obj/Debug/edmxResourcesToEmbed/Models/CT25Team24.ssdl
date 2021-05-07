@@ -8,8 +8,8 @@
     <Property Name="MaGH" Type="int" Nullable="false" />
     <Property Name="MaSP" Type="int" Nullable="false" />
     <Property Name="SL" Type="int" Nullable="false" />
-    <Property Name="DonGia" Type="int" Nullable="false" />
-    <Property Name="ThanhTien" Type="int" Nullable="false" />
+    <Property Name="DonGia" Type="float" Nullable="false" />
+    <Property Name="ThanhTien" Type="float" Nullable="false" />
   </EntityType>
   <EntityType Name="CTDH">
     <Key>
@@ -38,7 +38,7 @@
     </Key>
     <Property Name="MaGH" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="MaKH" Type="int" Nullable="false" />
-    <Property Name="TongTien" Type="int" Nullable="false" />
+    <Property Name="TongTien" Type="float" Nullable="false" />
   </EntityType>
   <EntityType Name="HangSP">
     <Key>
@@ -53,7 +53,7 @@
     </Key>
     <Property Name="MaKH" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="HoTen" Type="nvarchar" MaxLength="100" />
-    <Property Name="GioiTinh" Type="int" />
+    <Property Name="GioiTinh" Type="nvarchar" MaxLength="10" />
     <Property Name="DienThoai" Type="varchar" MaxLength="10" />
     <Property Name="DiaChi" Type="nvarchar" MaxLength="100" />
     <Property Name="NgaySinh" Type="datetime" />

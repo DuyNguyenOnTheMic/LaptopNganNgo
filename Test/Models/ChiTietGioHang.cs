@@ -17,8 +17,8 @@ namespace Test.Models
         public int MaGH { get; set; }
         public int MaSP { get; set; }
         public int SL { get; set; }
-        public int DonGia { get; set; }
-        public int ThanhTien { get; set; }
+        public double DonGia { get; set; }
+        public double ThanhTien { get; set; }
     
         public virtual GioHang GioHang { get; set; }
         public virtual SanPham SanPham { get; set; }

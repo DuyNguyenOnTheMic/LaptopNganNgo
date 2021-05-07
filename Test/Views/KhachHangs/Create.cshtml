@@ -1,0 +1,95 @@
+﻿@model Test.Models.KhachHang
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/QT_DangKy.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email, new
+           {
+               htmlAttributes = new
+               {
+                   @class = "form-control",
+                   placeholder = "Địa chỉ email",
+                   @id = "text"
+               }
+           })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.PasswordFor(model => model.MatKhau, new
+           {
+               @class = "form-control",
+               placeholder = "Mật khẩu",
+               @id = "MK"
+           })
+                @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <input type="password" id="NLMK" placeholder="Xác nhận mật khẩu"/>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input id="B1" type="submit" value="Đăng ký" class="btn btn-default" onclick="return validate();" />
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function validate() {
+
+            var a = document.getElementById("MK").value;
+            var b = document.getElementById("NLMK").value;
+            if (a != b) {
+                alert("Passwords do no match");
+                return false;
+            }
+        }
+    </script>
+
+}
+
+
+
+<div class="Header">
+    0
+    <img id="Logo_Header"
+         src="~/Images/bird.png"
+         width="99" />
+    <p id="Text_Header">LaptopNganNgo</p>
+
+</div>
+
+<div class="Footer">
+    <p id="Footer_Text">
+        2021
+        <br />Powered by Squad Ngáo Ngơ
+    </p>
+</div>
+
+<div id="Khung">
+
+    <label id="C1">LaptopNganNgo</label>
+    <label id="C2">Đam mê - Trách nhiệm</label>
+
+
+</div>
+
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
