@@ -299,9 +299,9 @@ body {
     padding-bottom: 2px;
     padding-left: 12px;
     position: absolute;
-    top: 190px;
-    left: 68px;
-    bottom: 536px;
+    top: 360px;
+    left: 578px;
+    z-index: +1;
 }
 
 #DC {
@@ -332,9 +332,9 @@ body {
     padding-bottom: 2px;
     padding-left: 12px;
     position: absolute;
-    top: 314px;
-    left: 68px;
-    bottom: 412px;
+    top: 480px;
+    left: 578px;
+    z-index: +1;
 }
 
 #MK {
@@ -365,9 +365,10 @@ body {
     padding-bottom: 2px;
     padding-left: 12px;
     position: absolute;
-    top: 433px;
-    left: 68px;
+    top: 600px;
+    left: 578px;
     bottom: 293px;
+    z-index:  +1;
 }
 
 #XNMK {
@@ -448,47 +449,10 @@ label {
     border: 0px solid #404040;
     border-radius: 0px;
     position: absolute;
-    left: 203px;
-    top: 540px;
+    left: 710px;
+    top: 690px;
     cursor: pointer;
+    z-index: +1;
 }
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 350px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-    .close:hover,
-    .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-    }
 
 

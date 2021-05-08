@@ -17,11 +17,26 @@
     <img id="User_icon" width="40"
          src="~/Images/User.png" />
 
-    <a href="https://localhost:44357/DangNhap/Index">
+    @if (Session["HoTen"] != null)
+    {
+        <p id="Hello_Text">@Session["HoTen"].ToString()</p>
+        <a href="@Url.Action("LogOut", "DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+    else if (Session["Email"] != null && Session["HoTen"] == null)
+    {
+        <p id="Hello_Text">Chào bạn,</p>
+        <a href="@Url.Action("LogOut", "DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+    else
+    {
+        <a href="https://localhost:44357/DangNhap/Index">
 
-        <p id="Log_in">Đăng nhập</p>
-    </a>
-    <p id="text_1">hoặc Đăng ký</p>
+            <p id="Log_in">Đăng nhập</p>
+        </a>
+        <p id="text_1">hoặc Đăng ký</p>
+    }
+
+
 
     <div>
         <input id="Search_textbox" type="text"
@@ -221,3 +236,5 @@ Trợ Giúp</pre>
 
 <div id="button_BanCoVoucher">Bạn có Voucher</div>
 <a href="https://localhost:44357/TT_DangNhap/Index"><div id="button_ThanhToan">Thanh toán</div></a>
+
+

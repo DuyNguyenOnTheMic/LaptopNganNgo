@@ -32,6 +32,7 @@ namespace Test.Controllers.Website_QuanTri
                 if (isValid)
                 {
                     Session["HoTen"] = account.HoTen;
+                    Session["Email"] = account.Email;
                     FormsAuthentication.SetAuthCookie(model.Email, false);
                     return RedirectToAction("Index", "QT_TrangChu");
                 }

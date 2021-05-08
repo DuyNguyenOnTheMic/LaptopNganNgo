@@ -36,7 +36,7 @@ namespace Test.Controllers.Website_QuanTri
         }
 
         // GET: KhachHangs/Create
-        public ActionResult Create()
+        public ActionResult Dky_QT()
         {
             return View();
         }
@@ -46,13 +46,60 @@ namespace Test.Controllers.Website_QuanTri
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MaKH,HoTen,GioiTinh,DienThoai,DiaChi,NgaySinh,Email,MatKhau,VaiTro")] KhachHang khachHang)
+        public ActionResult Dky_QT([Bind(Include = "MaKH,HoTen,GioiTinh,DienThoai,DiaChi,NgaySinh,Email,MatKhau,VaiTro")] KhachHang khachHang)
         {
             if (ModelState.IsValid)
             {
                 db.KhachHangs.Add(khachHang);
                 db.SaveChanges();
                 return RedirectToAction("Index");
+            }
+
+            return View(khachHang);
+        }
+
+
+        // GET: KhachHangs/Create
+        public ActionResult Dky_KH()
+        {
+            return View();
+        }
+
+        // POST: KhachHangs/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Dky_KH([Bind(Include = "MaKH,HoTen,GioiTinh,DienThoai,DiaChi,NgaySinh,Email,MatKhau,VaiTro")] KhachHang khachHang)
+        {
+            if (ModelState.IsValid)
+            {
+                db.KhachHangs.Add(khachHang);
+                db.SaveChanges();
+                return RedirectToAction("Index", "DangNhap");
+            }
+
+            return View(khachHang);
+        }
+
+        // GET: KhachHangs/Create
+        public ActionResult Dky_TT_KH()
+        {
+            return View();
+        }
+
+        // POST: KhachHangs/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Dky_TT_KH([Bind(Include = "MaKH,HoTen,GioiTinh,DienThoai,DiaChi,NgaySinh,Email,MatKhau,VaiTro")] KhachHang khachHang)
+        {
+            if (ModelState.IsValid)
+            {
+                db.KhachHangs.Add(khachHang);
+                db.SaveChanges();
+                return RedirectToAction("Index", "TT_DangNhap");
             }
 
             return View(khachHang);

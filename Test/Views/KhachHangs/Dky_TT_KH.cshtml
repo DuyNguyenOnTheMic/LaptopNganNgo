@@ -1,0 +1,162 @@
+﻿@model Test.Models.KhachHang
+
+@{
+    ViewBag.Title = "Dky_TT_KH";
+    Layout = "~/Views/_TT_DangKy.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Email, new
+       {
+           htmlAttributes = new
+           {
+               @class = "form-control",
+               @id = "DiaChi"
+           }
+       })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.PasswordFor(model => model.MatKhau, new
+       {
+           @class = "form-control",
+           @id = "MatKhau"
+       })
+            @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.VaiTro, new
+       {
+           @class = "form-control",
+           @Value = "Khách lẻ",
+           @type = "hidden"
+       })
+            @Html.ValidationMessageFor(model => model.VaiTro, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <input type="password" id="XacNhan"/>
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input id="myBtn" type="submit" value="Đăng ký" class="btn btn-default" onclick="return validate_TT_KH();" />
+        </div>
+    </div>
+</div>
+
+ <script>
+        function validate_TT_KH() {
+
+            var a = document.getElementById("MatKhau").value;
+            var b = document.getElementById("XacNhan").value;
+            if (a != b) {
+                alert("Passwords do no match");
+                return false;
+            } else {
+                alert("Đăng ký thành công!!");
+            }
+        }
+    </script>
+
+}
+
+<div id="header">
+    <div class="rectangle"></div>
+    <div class="circle"></div>
+
+    <a href="https://localhost:44357/TrangChu/Index">
+        <p id="Tittle">LaptopNganNgo</p>
+        <img id="LetterL" width="70"
+             src="~/Images/royal-alphabet-crown-letter-english-l-512.png" />
+    </a>
+
+</div>
+
+<div class="Footer">
+
+    <div id="logo_footer">
+        <img src="~/Images/royal-alphabet-crown-letter-english-l-512.png "
+             width="70" />
+    </div>
+    <p id="text1_ft">Sản Phẩm  </p>
+    <p id="text2_ft">Tiếp Xúc </p>
+    <p id="text3_ft">Theo Dõi  </p>
+    <p id="text4_ft">Đăng Ký </p>
+
+    <pre id="text5_ft">Đặc Trưng
+Quảng cáo  
+Tải Xuống</pre>
+
+    <pre id="text6_ft">Liên hệ
+FAQ  
+Trợ Giúp</pre>
+
+    <input id="Email_textbox" type="text"
+           placeholder="Nhập Email của bạn" />
+    <img id="FB_ft" src="~/Images/FB.png "
+         width="30" />
+    <img id="IG_ft" src="~/Images/IG.png "
+         width="30" />
+
+</div>
+
+<div class="LogIn">
+
+    <img id="Google"
+         src="~/Images/google.png" />
+    <img id="Facebook"
+         src="~/Images/facebook.png" />
+    <img id="Twitter"
+         src="~/Images/twitter.png" />
+
+
+    <label id="DC" for="uname"><p>Địa chỉ email</p></label>
+
+    <label id="MK" for="psw"><p>Mật khẩu</p></label>
+
+    <label id="XNMK" for="psw"><p>Xác nhận mật khẩu</p></label>
+
+    <label><p>Hoặc đăng ký bằng:</p></label>
+
+    <label id="DK"><p>Đăng ký</p></label>
+
+    <a href="https://localhost:44357/TT_DangNhap/Index">
+        <button id="DN"><p>Đăng nhập</p></button>
+    </a>
+
+
+   
+
+</div>
+
+<button class="button1">1</button>
+<button class="button2">2</button>
+<button class="button3">3</button>
+
+<label id="bt1"><p>Đăng nhập</p></label>
+<label id="bt2"><p>Địa chỉ giao hàng</p></label>
+<label id="bt3"><p>Thanh toán và đặt mua</p></label>
+
+<button class="btn1"></button>
+<button class="btn2"></button>
+
+
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

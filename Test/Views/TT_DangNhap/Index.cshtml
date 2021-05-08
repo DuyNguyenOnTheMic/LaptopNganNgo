@@ -16,6 +16,7 @@
 
 </div>
 
+
 <div class="Footer">
 
     <div id="logo_footer">
@@ -46,6 +47,11 @@ Trợ Giúp</pre>
 
 <div class="LogIn">
 
+    @if (Session["Message"] != null)
+    {
+        <div id="Failed_Message">@Session["Message"].ToString()</div>
+    }
+
     <img id="Google"
          src="~/Images/google.png" />
     <img id="Facebook"
@@ -53,10 +59,9 @@ Trợ Giúp</pre>
     <img id="Twitter"
          src="~/Images/twitter.png" />
 
-    <input type="text" placeholder="Địa chỉ email" name="uname" required>
-    <input type="password" placeholder="Mật khẩu" name="psw" required>
+   
     <label><b>Lấy lại mật khẩu?</b></label>
-    <a href="https://localhost:44357/TT_DangKy/Index">
+    <a href="https://localhost:44357/KhachHangs/Dky_TT_KH">
         <button id="DK"><b>Đăng ký</b></button>
     </a>
 
@@ -65,39 +70,17 @@ Trợ Giúp</pre>
     <img id="iconMK"
          src="~/Images/password-icon-28.png" />
 
-    <a href="https://localhost:44357/TT_DiaChi/Index">
-        <button id="myBtn">Đăng nhập</button>
-    </a>
+   
 
-    <div id="myModal" class="modal">
+    @using (Html.BeginForm("Index", "TT_DangNhap", FormMethod.Post))
+    {
+        <form action="Index" method="post">
+            <input name="Email" type="text" placeholder="Địa chỉ email" id="txt_TenDangNhap">
+            <input name="MatKhau" type="password" placeholder="Mật khẩu" id="txt_MatKhau">
 
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Đăng nhập thành công !!</p>
-        </div>
-    </div>
-
-
-
-    <script>
-        var modal = document.getElementById("myModal");
-        var btn = document.getElementById("myBtn");
-        var span = document.getElementsByClassName("close")[0];
-
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+            <button id="myBtn">Đăng nhập</button>
+        </form>
+    }
 
 
 </div>
@@ -112,5 +95,6 @@ Trợ Giúp</pre>
 
 <button class="btn1"></button>
 <button class="btn2"></button>
+
 
 

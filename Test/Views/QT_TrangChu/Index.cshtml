@@ -32,7 +32,12 @@
         <p id="Hello_Text">@Session["HoTen"].ToString()</p>
         <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
     }
-   
+    else if (Session["Email"] != null && Session["HoTen"] == null)
+    {
+        <p id="Hello_Text">Chào bạn,</p>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+
 </div>
 <div class="Footer">
     <p id="Footer_Text">

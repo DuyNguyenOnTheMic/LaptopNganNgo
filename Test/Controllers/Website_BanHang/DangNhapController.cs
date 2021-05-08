@@ -33,6 +33,7 @@ namespace Test.Controllers.Website_BanHang
                 if (isValid)
                 {
                     Session["HoTen"] = account.HoTen;
+                    Session["Email"] = account.Email;
                     FormsAuthentication.SetAuthCookie(model.Email, false);
                     return RedirectToAction("Index", "TrangChu");
                 }
@@ -44,6 +45,8 @@ namespace Test.Controllers.Website_BanHang
 
         public ActionResult LogOut()
         {
+            Session.Clear();
+            FormsAuthentication.SignOut();
             Session.Abandon();
             return RedirectToAction("Index", "TrangChu");
         }

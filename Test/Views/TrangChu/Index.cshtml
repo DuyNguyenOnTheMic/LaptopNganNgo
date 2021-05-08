@@ -21,6 +21,11 @@
             <p id="Hello_Text">@Session["HoTen"].ToString()</p>
             <a href="@Url.Action("LogOut", "DangNhap")" id="Button_LogOut">Đăng xuất</a>
         }
+        else if (Session["Email"] != null && Session["HoTen"] == null)
+        {
+            <p id="Hello_Text">Chào bạn,</p>
+            <a href="@Url.Action("LogOut", "DangNhap")" id="Button_LogOut">Đăng xuất</a>
+        }
         else
         {
             <a href="https://localhost:44357/DangNhap/Index">

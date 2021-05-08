@@ -203,12 +203,10 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\Website_BanHang\CSKHController.cs" />
-    <Compile Include="Controllers\Website_BanHang\DangKyController.cs" />
     <Compile Include="Controllers\Website_BanHang\DangNhapController.cs" />
     <Compile Include="Controllers\Website_BanHang\GioHangController.cs" />
     <Compile Include="Controllers\Website_BanHang\TimKiemSPController.cs" />
     <Compile Include="Controllers\Website_BanHang\TrangChuController.cs" />
-    <Compile Include="Controllers\Website_BanHang\TT_DangKyController.cs" />
     <Compile Include="Controllers\Website_BanHang\TT_DangNhapController.cs" />
     <Compile Include="Controllers\Website_BanHang\TT_DatMuaController.cs" />
     <Compile Include="Controllers\Website_BanHang\TT_DiaChiController.cs" />
@@ -216,7 +214,7 @@
     <Compile Include="Controllers\Website_BanHang\TT_SuaGioHangController.cs" />
     <Compile Include="Controllers\Website_BanHang\TT_ThanhCongController.cs" />
     <Compile Include="Controllers\Website_BanHang\XemSPController.cs" />
-    <Compile Include="Controllers\Website_QuanTri\KhachHangsController.cs" />
+    <Compile Include="Controllers\KhachHangsController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_CapNhatSPController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_DangKyController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_DangNhapController.cs" />
@@ -225,7 +223,7 @@
     <Compile Include="Controllers\Website_QuanTri\QT_TrangChuController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_XemCTDHController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_XemCTTrangChuController.cs" />
-    <Compile Include="Controllers\Website_QuanTri\SanPhamsController.cs" />
+    <Compile Include="Controllers\SanPhamsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -293,7 +291,6 @@
     <Content Include="Views\_TT_DangNhap.cshtml" />
     <Content Include="Views\TT_DangNhap\Index.cshtml" />
     <Content Include="Views\_TT_DangKy.cshtml" />
-    <Content Include="Views\TT_DangKy\Index.cshtml" />
     <Content Include="Views\_TT_DatMua.cshtml" />
     <Content Include="Views\TT_DatMua\Index.cshtml" />
     <Content Include="Views\_TT_LoTrinh.cshtml" />
@@ -301,7 +298,6 @@
     <Content Include="Views\_TT_ThanhCong.cshtml" />
     <Content Include="Views\TT_ThanhCong\Index.cshtml" />
     <Content Include="Views\_DangKy.cshtml" />
-    <Content Include="Views\DangKy\Index.cshtml" />
     <Content Include="Views\_TT_DiaChi.cshtml" />
     <Content Include="Views\TT_DiaChi\Index.cshtml" />
     <Content Include="Views\QT_DangNhap.cshtml" />
@@ -327,11 +323,13 @@
     <Content Include="Views\SanPhams\Edit.cshtml" />
     <Content Include="Views\SanPhams\Index.cshtml" />
     <Content Include="Views\SanPhams\Create.cshtml" />
-    <Content Include="Views\KhachHangs\Create.cshtml" />
+    <Content Include="Views\KhachHangs\Dky_QT.cshtml" />
     <Content Include="Views\KhachHangs\Delete.cshtml" />
     <Content Include="Views\KhachHangs\Details.cshtml" />
     <Content Include="Views\KhachHangs\Edit.cshtml" />
     <Content Include="Views\KhachHangs\Index.cshtml" />
+    <Content Include="Views\KhachHangs\Dky_KH.cshtml" />
+    <Content Include="Views\KhachHangs\Dky_TT_KH.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
