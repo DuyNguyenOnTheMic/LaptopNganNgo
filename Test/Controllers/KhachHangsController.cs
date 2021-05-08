@@ -106,7 +106,7 @@ namespace Test.Controllers.Website_QuanTri
         }
 
         // GET: KhachHangs/Edit/5
-        public ActionResult Edit(int? id)
+        public ActionResult CapNhat_TT_KH(int? id)
         {
             if (id == null)
             {
@@ -125,7 +125,7 @@ namespace Test.Controllers.Website_QuanTri
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "MaKH,HoTen,GioiTinh,DienThoai,DiaChi,NgaySinh,Email,MatKhau,VaiTro")] KhachHang khachHang)
+        public ActionResult CapNhat_TT_KH([Bind(Include = "MaKH,HoTen,GioiTinh,DienThoai,DiaChi,NgaySinh,Email,MatKhau,VaiTro")] KhachHang khachHang)
         {
             if (ModelState.IsValid)
             {

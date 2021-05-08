@@ -326,10 +326,10 @@
     <Content Include="Views\KhachHangs\Dky_QT.cshtml" />
     <Content Include="Views\KhachHangs\Delete.cshtml" />
     <Content Include="Views\KhachHangs\Details.cshtml" />
-    <Content Include="Views\KhachHangs\Edit.cshtml" />
     <Content Include="Views\KhachHangs\Index.cshtml" />
     <Content Include="Views\KhachHangs\Dky_KH.cshtml" />
     <Content Include="Views\KhachHangs\Dky_TT_KH.cshtml" />
+    <Content Include="Views\KhachHangs\CapNhat_TT_KH.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

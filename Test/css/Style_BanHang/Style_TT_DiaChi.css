@@ -63,7 +63,7 @@
     width: 200.44140625px;
     height: 21.0px;
     font-family: Arial;
-    font-weight:100;
+    font-weight: 100;
     font-size: 18.666668px;
     color: #000000;
     position: absolute;
@@ -71,10 +71,10 @@
     top: 60px;
 }
 
-#Log_out:hover {
-    cursor: pointer;
-    font-weight: 700;
-}
+    #Log_out:hover {
+        cursor: pointer;
+        font-weight: 700;
+    }
 
 #Search_textbox {
     width: 462.2120465041146px;
@@ -111,12 +111,12 @@
     border-radius: 0px;
     position: absolute;
     left: 932.37px;
-    top:125px;
+    top: 125px;
 }
 
-#Search_button:hover {
-    background-color: #444444;
-}
+    #Search_button:hover {
+        background-color: #444444;
+    }
 
 #Cart_image {
     width: 35.0px;
@@ -140,7 +140,7 @@
     position: absolute;
     left: 1455px;
     top: 105px;
-    border-radius: 50%;    
+    border-radius: 50%;
 }
 
 #Cart_text {
@@ -194,21 +194,21 @@
         display: block;
     }
 
-        .dropdown-content a:hover{
+        .dropdown-content a:hover {
             background-color: #f1f1f1;
         }
 
-        .dropdown-content a:hover + #Laptop_Gaming_Content{
-            display:block;
-        }
+            .dropdown-content a:hover + #Laptop_Gaming_Content {
+                display: block;
+            }
 
-         .dropdown-content a:hover + #Laptop_VP_Content{
-            display:block;
-        }
+            .dropdown-content a:hover + #Laptop_VP_Content {
+                display: block;
+            }
 
-         .dropdown-content a:hover + #Laptop_SV_Content{
-            display:block;
-        }
+            .dropdown-content a:hover + #Laptop_SV_Content {
+                display: block;
+            }
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -257,7 +257,7 @@ body {
     }
 
     #Laptop_Gaming_Content:hover {
-        display:block;
+        display: block;
     }
 
 #Laptop_VP_Content {
@@ -300,13 +300,13 @@ body {
     line-height: 1.6;
 }
 
-#Laptop_SV_Content a:hover {
-    background-color: #f1f1f1;
-}
+    #Laptop_SV_Content a:hover {
+        background-color: #f1f1f1;
+    }
 
-#Laptop_SV_Content:hover {
-    display: block;
-}
+    #Laptop_SV_Content:hover {
+        display: block;
+    }
 
 #Ban_Hang {
     text-decoration: none;
@@ -315,9 +315,9 @@ body {
     font-family: Arial;
     font-size: 17.333334px;
     font-weight: 400;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #000000;
     background-color: #CBCBCB;
     border: 1px solid #0487D9;
@@ -326,9 +326,9 @@ body {
     top: 204px;
 }
 
-#Ban_Hang:hover {
-    font-weight:bold;
-}
+    #Ban_Hang:hover {
+        font-weight: bold;
+    }
 
 #Bao_Hanh {
     text-decoration: none;
@@ -348,9 +348,9 @@ body {
     top: 204px;
 }
 
-#Bao_Hanh:hover {
-    font-weight:bold;
-}
+    #Bao_Hanh:hover {
+        font-weight: bold;
+    }
 
 #Van_Chuyen {
     text-decoration: none;
@@ -370,9 +370,9 @@ body {
     top: 204px;
 }
 
-#Van_Chuyen:hover {
-    font-weight: bold;
-}
+    #Van_Chuyen:hover {
+        font-weight: bold;
+    }
 
 #Khuyen_Mai {
     text-decoration: none;
@@ -392,9 +392,9 @@ body {
     top: 204px;
 }
 
-#Khuyen_Mai:hover {
-    font-weight: bold;
-}
+    #Khuyen_Mai:hover {
+        font-weight: bold;
+    }
 
 #Cham_Soc {
     text-decoration: none;
@@ -414,9 +414,9 @@ body {
     top: 204px;
 }
 
-#Cham_Soc:hover {
-    font-weight: bold;
-}
+    #Cham_Soc:hover {
+        font-weight: bold;
+    }
 
 #logo_footer {
     width: 82.00000000000011px;
@@ -488,10 +488,10 @@ body {
     top: 1343px;
 }
 
-#rectangle_HotDealLeft:hover {
-    opacity:0.5;
-    cursor:pointer;
-}
+    #rectangle_HotDealLeft:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
 
 #rectangle_HotDealRight {
     width: 74.90947207375211px;
@@ -508,11 +508,10 @@ body {
     top: 1343px;
 }
 
-#rectangle_HotDealRight:hover {
-    opacity: 0.5;
-    cursor:pointer;
-
-}
+    #rectangle_HotDealRight:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
 
 #text1_ft {
     width: 195.36803013185664px;
@@ -632,7 +631,7 @@ body {
     left: 520px;
 }
 
-#Hoten{
+#Hoten {
     width: 62.85417175292969px;
     height: 24.0px;
     font-family: Arial;
@@ -644,7 +643,7 @@ body {
     left: 600px;
 }
 
-#Gioitinh{
+#Gioitinh {
     width: 81.85417175292969px;
     height: 24.0px;
     font-family: Arial;
@@ -656,7 +655,7 @@ body {
     left: 600px;
 }
 
-#SDT{
+#SDT {
     width: 81.85417175292969px;
     height: 24.0px;
     font-family: Arial;
@@ -668,7 +667,7 @@ body {
     left: 600px;
 }
 
-#Ngaysinh{
+#Ngaysinh {
     width: 94.86459350585938px;
     height: 24.0px;
     font-family: Arial;
@@ -680,7 +679,7 @@ body {
     left: 600px;
 }
 
-#Diachi{
+#Diachi {
     width: 94.86459350585938px;
     height: 24.0px;
     font-family: Arial;
@@ -692,7 +691,7 @@ body {
     left: 600px;
 }
 
-#NhapHoten{
+#NhapHoten {
     width: 324.0px;
     height: 40.0px;
     font-family: Arial;
@@ -708,7 +707,7 @@ body {
     padding-left: 11px;
     position: absolute;
     top: 330px;
-    left: 780px;
+    left: 680px;
 }
 
 #HoTen_Constraint {
@@ -720,7 +719,7 @@ body {
     color: #FF0000;
     position: absolute;
     top: 364px;
-    left: 780px;
+    left: 770px;
 }
 
 
@@ -733,10 +732,22 @@ body {
     color: #333333;
     position: absolute;
     top: 410px;
-    left: 780px;
+    left: 680px;
 }
 
-#lb_nam{
+#lb_nam {
+    width: 45.04166793823242px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 415px;
+    left: 730px;
+}
+
+#lb_nu {
     width: 45.04166793823242px;
     height: 24.0px;
     font-family: Arial;
@@ -748,7 +759,7 @@ body {
     left: 830px;
 }
 
-#lb_nu{
+#lb_khac {
     width: 45.04166793823242px;
     height: 24.0px;
     font-family: Arial;
@@ -760,7 +771,7 @@ body {
     left: 930px;
 }
 
-#lb_khac{
+#GT_Nu {
     width: 45.04166793823242px;
     height: 24.0px;
     font-family: Arial;
@@ -768,11 +779,11 @@ body {
     font-weight: 400;
     color: #333333;
     position: absolute;
-    top: 415px;
-    left: 1030px;
+    top: 410px;
+    left: 780px;
 }
 
-#GT_Nu{
+#GT_Khac {
     width: 45.04166793823242px;
     height: 24.0px;
     font-family: Arial;
@@ -784,20 +795,8 @@ body {
     left: 880px;
 }
 
-#GT_Khac{
-    width: 45.04166793823242px;
-    height: 24.0px;
-    font-family: Arial;
-    font-size: 21.333334px;
-    font-weight: 400;
-    color: #333333;
-    position: absolute;
-    top: 410px;
-    left: 980px;
-}
-
 .Radio_Buttons {
-    position:absolute;
+    position: absolute;
     top: 10px;
 }
 
@@ -817,7 +816,7 @@ body {
     padding-left: 11px;
     position: absolute;
     top: 490px;
-    left: 780px;
+    left: 680px;
 }
 
 input::-webkit-outer-spin-button,
@@ -835,7 +834,7 @@ input::-webkit-inner-spin-button {
     color: #FF0000;
     position: absolute;
     top: 522px;
-    left: 780px;
+    left: 770px;
 }
 
 #NhapNgaysinh {
@@ -854,9 +853,10 @@ input::-webkit-inner-spin-button {
     padding-left: 11px;
     position: absolute;
     top: 570px;
-    left: 780px;
+    left: 680px;
 }
-#NhapDiachi{
+
+#NhapDiachi {
     width: 324.0000000000001px;
     height: 85.0px;
     font-family: Arial;
@@ -872,9 +872,11 @@ input::-webkit-inner-spin-button {
     padding-left: 11px;
     position: absolute;
     top: 650px;
-    left: 780px;
+    left: 680px;
+    resize: none;
 }
-#Btn_CapNhat{
+
+#Btn_CapNhat {
     width: 133.0px;
     height: 61.999999999999545px;
     font-family: Arial;
@@ -890,10 +892,10 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     position: absolute;
     top: 800px;
-    left: 990px;
+    left: 890px;
 }
 
-#Btn_Huy{
+#Btn_Huy {
     width: 133.0px;
     height: 61.999999999999545px;
     font-family: Arial;
@@ -909,7 +911,7 @@ input::-webkit-inner-spin-button {
     left: 800px;
 }
 
-#Btn_TaiKhoan{
+#Btn_TaiKhoan {
     width: 242.1438536321208px;
     height: 70.49999999999989px;
     font-family: Arial;
@@ -924,7 +926,7 @@ input::-webkit-inner-spin-button {
     left: 80px;
 }
 
-#Btn_DonHang{
+#Btn_DonHang {
     width: 242.1438536321208px;
     height: 70.49999999999989px;
     font-family: Arial;
@@ -939,7 +941,7 @@ input::-webkit-inner-spin-button {
     left: 80px;
 }
 
-#Btn_Thoat{
+#Btn_Thoat {
     width: 242.1438536321208px;
     height: 70.49999999999989px;
     font-family: Arial;
@@ -1153,6 +1155,3 @@ input::-webkit-inner-spin-button {
     bottom: 30px;
     cursor: pointer;
 }
-
-
-

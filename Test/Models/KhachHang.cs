@@ -28,6 +28,7 @@ namespace Test.Models
         public string GioiTinh { get; set; }
         public string DienThoai { get; set; }
         public string DiaChi { get; set; }
+        [DataType(DataType.Date)]
         public Nullable<System.DateTime> NgaySinh { get; set; }
         [Required(ErrorMessage = "Email is required.")]
         public string Email { get; set; }
