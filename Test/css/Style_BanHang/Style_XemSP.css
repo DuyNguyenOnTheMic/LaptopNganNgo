@@ -1727,3 +1727,29 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+#Hello_Text {
+    font-family: Arial;
+    font-size: 16px;
+    color: #000000;
+    position: absolute;
+    left: 1442.433px;
+    top: 14px;
+}
+
+#Button_LogOut {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    position: absolute;
+    left: 1442.433px;
+    top: 53px;
+    text-decoration: none;
+}
+
+    #Button_LogOut:hover {
+        color: darkblue;
+    }
+
+
