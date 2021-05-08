@@ -893,6 +893,7 @@ input::-webkit-inner-spin-button {
     position: absolute;
     top: 800px;
     left: 890px;
+    cursor: pointer;
 }
 
 #Btn_Huy {
@@ -909,6 +910,7 @@ input::-webkit-inner-spin-button {
     position: absolute;
     top: 800px;
     left: 800px;
+    cursor: pointer;
 }
 
 #Btn_TaiKhoan {
@@ -1122,36 +1124,6 @@ input::-webkit-inner-spin-button {
     left: 796px;
 }
 
-#myBtn {
-    width: 133.0px;
-    height: 61.999999999999545px;
-    font-family: Arial;
-    font-size: 20.0px;
-    font-weight: 400;
-    text-align: center;
-    color: #FFFFFF;
-    background-color: #282828;
-    border: 0px solid #404040;
-    border-radius: 0px;
-    position: absolute;
-    left: 460px;
-    bottom: 30px;
-    cursor: pointer;
-}
-
-#myButton {
-    width: 133.0px;
-    height: 61.999999999999545px;
-    font-family: Arial;
-    font-size: 20.0px;
-    font-weight: 400;
-    text-align: center;
-    color: #000000;
-    background-color: #FFFFFF;
-    border: 0px solid #404040;
-    border-radius: 0px;
-    position: absolute;
-    left: 309px;
-    bottom: 30px;
-    cursor: pointer;
+#MatKhau {
+    display: none;
 }
