@@ -105,6 +105,7 @@ namespace Test.Controllers.Website_QuanTri
             return View(khachHang);
         }
 
+
         // GET: KhachHangs/Edit/5
         public ActionResult CapNhat_TT_KH(int? id)
         {
@@ -135,6 +136,8 @@ namespace Test.Controllers.Website_QuanTri
             }
             return View(khachHang);
         }
+
+        
 
         // GET: KhachHangs/Delete/5
         public ActionResult Delete(int? id)

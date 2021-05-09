@@ -235,6 +235,15 @@ Trợ Giúp</pre>
 
 
 <div id="button_BanCoVoucher">Bạn có Voucher</div>
-<a href="https://localhost:44357/TT_DangNhap/Index"><div id="button_ThanhToan">Thanh toán</div></a>
+
+
+@if (User.Identity.IsAuthenticated)
+{
+<a href="@Url.Action("CapNhat_TT_KH","KhachHangs")"><div id="button_ThanhToan">Thanh toán</div></a>
+}
+else
+{
+    <a href="@Url.Action("Index", "TT_DangNhap")"><div id="button_ThanhToan">Thanh toán</div></a>
+}
 
 

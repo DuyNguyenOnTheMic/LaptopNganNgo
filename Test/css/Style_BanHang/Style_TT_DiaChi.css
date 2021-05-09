@@ -911,6 +911,10 @@ input::-webkit-inner-spin-button {
     top: 800px;
     left: 800px;
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #Btn_TaiKhoan {
@@ -1122,8 +1126,4 @@ input::-webkit-inner-spin-button {
     position: absolute;
     top: 178px;
     left: 796px;
-}
-
-#MatKhau {
-    display: none;
 }

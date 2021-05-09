@@ -92,12 +92,11 @@
 
         <div class="form-group">
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Email, new
+                @Html.HiddenFor(model => model.Email, new
                 {
                     htmlAttributes = new
            {
                @class = "form-control",
-               @type = "hidden"
            }
                 })
                 @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
@@ -106,12 +105,11 @@
 
         <div class="form-group">
             <div class="col-md-10">
-                @Html.TextBoxFor(model => model.MatKhau, new
+                @Html.HiddenFor(model => model.MatKhau, new
            {
                htmlAttributes = new
                {
                    @class = "form-control",
-                   @id = "MatKhau"
                }
            })
                 @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
@@ -120,12 +118,11 @@
 
         <div class="form-group">
             <div class="col-md-10">
-                @Html.EditorFor(model => model.VaiTro, new
+                @Html.HiddenFor(model => model.VaiTro, new
                 {
                     htmlAttributes = new
            {
                @class = "form-control",
-               @type = "hidden"
            }
                 })
                 @Html.ValidationMessageFor(model => model.VaiTro, "", new { @class = "text-danger" })
@@ -165,8 +162,7 @@
         <p id="HoTen_Constraint">* Họ tên chỉ cho phép nhập chữ</p>
 
         <p id="SĐT_Constraint">* SĐT chỉ được nhập số và đủ 10 kí tự</p>
-
-        <button id="Btn_Huy">Hủy bỏ</button>
+            <a id="Btn_Huy" href="https://localhost:44357/TrangChu/Index">Hủy bỏ</a>
     </form>
 
 
