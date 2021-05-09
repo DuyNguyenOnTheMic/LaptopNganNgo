@@ -109,6 +109,7 @@
     <Content Include="css\Style_BanHang\Style_XemSP.css" />
     <Content Include="css\Style_BanHang\Style_DangNhap.css" />
     <Content Include="css\Style_BanHang\Style_CSKH.css" />
+    <Content Include="css\Style_QuanTri\Style_ThemHangSP.css" />
     <Content Include="css\Style_QuanTri\Style_DangSP.css" />
     <Content Include="css\Style_QuanTri\Style_DonHang.css" />
     <Content Include="css\Style_QuanTri\Style_XemCTTrangChu.css" />
@@ -119,10 +120,14 @@
     <Content Include="css\Style_QuanTri\Style_DangNhap.css" />
     <Content Include="Global.asax" />
     <Content Include="Images\0257_270px-Black_triangle.svg.jpg" />
+    <Content Include="Images\Acer.png" />
     <Content Include="Images\add.png" />
     <Content Include="Images\ahihi.png" />
+    <Content Include="Images\apple.jpg" />
+    <Content Include="Images\Asus.png" />
     <Content Include="Images\back_TimKiemSP.png" />
     <Content Include="Images\bird.png" />
+    <Content Include="Images\dell.png" />
     <Content Include="Images\down-arrow.png" />
     <Content Include="Images\facebook.png" />
     <Content Include="Images\FB.png" />
@@ -147,6 +152,7 @@
     <Content Include="Images\HotDeal2.png" />
     <Content Include="Images\HotDeal3.png" />
     <Content Include="Images\HotDeal4.png" />
+    <Content Include="Images\HP.jpg" />
     <Content Include="Images\HUHU.png" />
     <Content Include="Images\iconfinder_arrow-right-01_186409.png" />
     <Content Include="Images\IG.png" />
@@ -158,6 +164,9 @@
     <Content Include="Images\JP_Clipboard_Image3.png" />
     <Content Include="Images\JP_Clipboard_Image4.png" />
     <Content Include="Images\key.png" />
+    <Content Include="Images\left-arrow.png" />
+    <Content Include="Images\Lenovo.png" />
+    <Content Include="Images\MSI.jpg" />
     <Content Include="Images\next.png" />
     <Content Include="Images\next_TimKiemSP.png" />
     <Content Include="Images\password-icon-28.png" />
@@ -165,6 +174,8 @@
     <Content Include="Images\policy.png" />
     <Content Include="Images\previous.png" />
     <Content Include="Images\promotion.png" />
+    <Content Include="Images\Razer.png" />
+    <Content Include="Images\right-arrow.png" />
     <Content Include="Images\royal-alphabet-crown-letter-english-l-512.png" />
     <Content Include="Images\search.png" />
     <Content Include="Images\send.png" />
@@ -202,6 +213,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HangSPsController.cs" />
     <Compile Include="Controllers\Website_BanHang\CSKHController.cs" />
     <Compile Include="Controllers\Website_BanHang\DangNhapController.cs" />
     <Compile Include="Controllers\Website_BanHang\GioHangController.cs" />
@@ -220,6 +232,7 @@
     <Compile Include="Controllers\Website_QuanTri\QT_DangNhapController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_DangSPController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_DonHangController.cs" />
+    <Compile Include="Controllers\Website_QuanTri\QT_ThemHangSPController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_TrangChuController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_XemCTDHController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_XemCTTrangChuController.cs" />
@@ -330,6 +343,13 @@
     <Content Include="Views\KhachHangs\Dky_KH.cshtml" />
     <Content Include="Views\KhachHangs\Dky_TT_KH.cshtml" />
     <Content Include="Views\KhachHangs\CapNhat_TT_KH.cshtml" />
+    <Content Include="Views\_QT_ThemHangSP.cshtml" />
+    <Content Include="Views\QT_ThemHangSP\Index.cshtml" />
+    <Content Include="Views\HangSPs\Create.cshtml" />
+    <Content Include="Views\HangSPs\Delete.cshtml" />
+    <Content Include="Views\HangSPs\Details.cshtml" />
+    <Content Include="Views\HangSPs\Edit.cshtml" />
+    <Content Include="Views\HangSPs\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

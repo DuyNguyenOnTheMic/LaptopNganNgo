@@ -245,6 +245,21 @@
     align-items: center;
 }
 
+#Hang {
+    width: 191.99999999999955px;
+    height: 58.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 400;
+    color: #000000;
+    background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    position: absolute;
+    left: 1050px;
+    top: 334px;
+    display: flex;
+    align-items: center;
+}
+
 #Dang_SP:hover {
     font-weight: 700;
     cursor: pointer;
