@@ -187,7 +187,8 @@
         @foreach (var item in Model)
         {
             <div class="HOT_DEAL">
-                @*<a href="https://localhost:44357/XemSP/Index">*@
+                 @Html.ActionLink("Details", "Details", new { id = item.MaSP })
+                <a @*class="link" href="https://localhost:44357/XemSP/Index"*@>
                 @{
                     if (item.HinhAnhSP != null)
                     {
@@ -221,7 +222,7 @@
                 <p id="HotDeal1_GiaDaGiam">@item.DonGiaKM@("₫")</p>
           </div>
         }
-        @*</a>*@
+        </a>
     </div>
 
    
