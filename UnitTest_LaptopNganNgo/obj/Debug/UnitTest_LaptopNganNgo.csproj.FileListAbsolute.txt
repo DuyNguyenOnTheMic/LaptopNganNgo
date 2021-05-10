@@ -28,3 +28,8 @@ E:\LaptopNganNgo\UnitTest_LaptopNganNgo\obj\Debug\UnitTest_LaptopNganNgo.csproj.
 E:\LaptopNganNgo\UnitTest_LaptopNganNgo\obj\Debug\UnitTest_LaptopNganNgo.csproj.CopyComplete
 E:\LaptopNganNgo\UnitTest_LaptopNganNgo\obj\Debug\UnitTest_LaptopNganNgo.dll
 E:\LaptopNganNgo\UnitTest_LaptopNganNgo\obj\Debug\UnitTest_LaptopNganNgo.pdb
+E:\LaptopNganNgo\UnitTest_LaptopNganNgo\bin\Debug\System.Web.Helpers.dll
+E:\LaptopNganNgo\UnitTest_LaptopNganNgo\bin\Debug\System.Web.Helpers.xml
+E:\LaptopNganNgo\UnitTest_LaptopNganNgo\bin\Debug\UnitTest_LaptopNganNgo.dll.config
+E:\LaptopNganNgo\UnitTest_LaptopNganNgo\bin\Debug\EntityFramework.SqlServer.dll
+E:\LaptopNganNgo\UnitTest_LaptopNganNgo\bin\Debug\EntityFramework.SqlServer.xml
