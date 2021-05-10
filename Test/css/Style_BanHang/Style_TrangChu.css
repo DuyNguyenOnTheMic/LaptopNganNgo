@@ -541,25 +541,29 @@ body {
 #Star2_HotDeal1 {
     width: 16.89990457258719px;
     height: 17.65678619514688px;
-    
+    position: relative;
+    left: 10px;
 }
 
 #Star3_HotDeal1 {
     width: 16.899904572587218px;
     height: 17.65678619514688px;
-   
+    position: relative;
+    left: 20px;
 }
 
 #Star4_HotDeal1 {
     width: 16.899904572587218px;
     height: 17.65678619514688px;
-   
+    position: relative;
+    left: 30px;
 }
 
 #Star5_HotDeal1 {
     width: 16.899904572587218px;
     height: 17.65678619514688px;
-    
+    position: relative;
+    left: 40px;
 }
 
 
@@ -569,18 +573,21 @@ body {
     height: 27.0px;
     font-family: Arial;
     font-size: 20px;
-   
     color: #999999;
-    
+    position: relative;
+    left: 200px;
 }
 
 #HotDeal1_Text {
-    width: 237.1874542236328px;
+    width: 240px;
     height: 72.0px;
     font-family: Arial;
     font-size: 21.333334px;
     font-weight: 400;
     color: #333333;
+    position: relative;
+    left: 70px;
+    top: -50px;
 }
 
 #HotDeal1_GiaChuaGiam {
@@ -592,6 +599,9 @@ body {
     text-decoration: line-through;
     color: #333333;
     background-color: #FFFFFF;
+    position: relative;
+    left: 120px;
+    top: -50px;
 }
 
 #HotDeal1_GiaDaGiam {
@@ -603,8 +613,8 @@ body {
     color: #FF0000;
     background-color: #FFFFFF;
     position: relative;
-    left: 500px;
-    top: -500px;
+    left: 120px;
+    top: -90px;
 }
 
 
@@ -812,7 +822,12 @@ body {
     bottom: 0;
     width: 100%;
     height: 60px; /* Height of the footer */
-    background: #6cf;
+    
+}
+.Star {
+    position: relative;
+    left: -150px;
+    top: -45px;
 }
 
 
