@@ -65,9 +65,9 @@
     <Property Name="GioiTinh" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
     <Property Name="DienThoai" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <Property Name="DiaChi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-    <Property Name="NgaySinh" Type="DateTime" Precision="3" />
-    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MatKhau" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NgaySinh" Type="DateTime" Precision="0" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MatKhau" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="VaiTro" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="DonHangs" Relationship="Self.FK_DonHang_KhachHang" FromRole="KhachHang" ToRole="DonHang" />
     <NavigationProperty Name="GioHangs" Relationship="Self.FK_GioHang_KhachHang" FromRole="KhachHang" ToRole="GioHang" />
@@ -82,6 +82,7 @@
     <Property Name="MaHangSP" Type="Int32" Nullable="false" />
     <Property Name="ThongTinChiTietSP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="HinhAnhSP" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="URLHinhAnh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="TrangThaiSP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="SL" Type="Int32" Nullable="false" />
     <Property Name="DonGiaGoc" Type="Double" Nullable="false" />

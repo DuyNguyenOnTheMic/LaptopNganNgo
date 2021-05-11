@@ -12,7 +12,6 @@ namespace Test.Models
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
 
     public partial class KhachHang
     {
@@ -32,7 +31,7 @@ namespace Test.Models
         public Nullable<System.DateTime> NgaySinh { get; set; }
         [Required(ErrorMessage = "Email is required.")]
         public string Email { get; set; }
-        [Required(ErrorMessage = "Password is required.")]
+        [Required(ErrorMessage = "Email is required.")]
         [DataType(DataType.Password)]
         public string MatKhau { get; set; }
         public string VaiTro { get; set; }
