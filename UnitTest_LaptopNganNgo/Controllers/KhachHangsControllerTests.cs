@@ -31,5 +31,59 @@ namespace Test.Controllers.Website_QuanTri.Tests
             Assert.IsNotNull(model);
             Assert.AreEqual(db.KhachHangs.Count(), model.Count);
         }
+
+        [TestMethod()]
+        public void Test_Create_TaiKhoan_QuanTri_NotNull()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var result = controller.Dky_QT() as ViewResult;
+
+            //Assert
+            Assert.IsNotNull(result);
+        }
+
+        [TestMethod()]
+        public void Test_Create_TaiKhoan_QuanTri_AreEqual()
+        {
+            //Arrange
+            var rand = new Random();
+            var controller = new KhachHangsController();
+
+            //Act
+            var khachhang = new KhachHang
+            {
+                HoTen = rand.NextDouble().ToString(),
+                DiaChi = rand.NextDouble().ToString(),
+                DienThoai = rand.Next().ToString(),
+                Email = rand.NextDouble().ToString(),
+                GioiTinh = rand.NextDouble().ToString(),
+                MatKhau = rand.NextDouble().ToString(),
+                NgaySinh = DateTime.Today,
+                VaiTro = rand.NextDouble().ToString()
+            };
+
+            var result0 = controller.Dky_QT() as ViewResult;
+
+            //Assert
+            Assert.IsNotNull(result0);
+            Assert.AreEqual("Successful", controller.ModelState["NgaySinh"].Errors[0].ErrorMessage);
+        }
+
+        [TestMethod()]
+        public void Test_Details_View_Data_KhachHang()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var result = controller.Details(3) as ViewResult;
+            var khachhang = (KhachHang)result.ViewData.Model;
+
+            //Assert
+            Assert.IsNotNull("Nguyễn Tân Duy", khachhang.HoTen);
+        }
     }
 }
