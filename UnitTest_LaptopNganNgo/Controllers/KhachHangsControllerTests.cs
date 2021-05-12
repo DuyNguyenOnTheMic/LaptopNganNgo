@@ -15,6 +15,8 @@ namespace Test.Controllers.Website_QuanTri.Tests
     [TestClass()]
     public class KhachHangsControllerTests
     {
+        public ViewResult HttpNotFound { get; private set; }
+
         [TestMethod()]
         public void IndexTest()
         {
@@ -82,8 +84,14 @@ namespace Test.Controllers.Website_QuanTri.Tests
             var result = controller.Details(3) as ViewResult;
             var khachhang = (KhachHang)result.ViewData.Model;
 
+            var result_null = controller.Details(1) as ViewResult;
+            var khachhang_null = (KhachHang)result_null.ViewData.Model;
+
             //Assert
-            Assert.IsNotNull("Nguyễn Tân Duy", khachhang.HoTen);
+            Assert.AreEqual("Nguyễn Tân Duy", khachhang.HoTen);
+            Assert.AreEqual(null, result_null);
+            Assert.AreEqual(HttpNotFound, result_null);
+
         }
     }
 }
