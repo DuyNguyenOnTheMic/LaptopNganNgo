@@ -206,6 +206,7 @@
     <Compile Include="Controllers\Website_BanHang\DangKyController.cs" />
     <Compile Include="Controllers\Website_BanHang\DangNhapController.cs" />
     <Compile Include="Controllers\Website_BanHang\GioHangController.cs" />
+    <Compile Include="Controllers\Website_BanHang\ThemSPvoGHController.cs" />
     <Compile Include="Controllers\Website_BanHang\TimKiemSPController.cs" />
     <Compile Include="Controllers\Website_BanHang\TrangChuController.cs" />
     <Compile Include="Controllers\Website_BanHang\TT_DangKyController.cs" />
@@ -327,6 +328,11 @@
     <Content Include="Views\SanPhams\Details.cshtml" />
     <Content Include="Views\SanPhams\Edit.cshtml" />
     <Content Include="Views\SanPhams\Index.cshtml" />
+    <Content Include="Views\ThemSPvoGH\Create.cshtml" />
+    <Content Include="Views\ThemSPvoGH\Delete.cshtml" />
+    <Content Include="Views\ThemSPvoGH\Details.cshtml" />
+    <Content Include="Views\ThemSPvoGH\Edit.cshtml" />
+    <Content Include="Views\ThemSPvoGH\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
