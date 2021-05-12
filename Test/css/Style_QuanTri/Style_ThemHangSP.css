@@ -1,6 +1,13 @@
 ﻿body {
     margin: 0;
     padding: 0;
+    position: relative;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 103.99999999999955px; /* Set same as footer's height */
 }
 
 #Logo_Header {
@@ -137,9 +144,11 @@
     text-align: center;
     line-height: 28px;
     color: #1EAAF1;
+    clear: both;
     position: absolute;
-    left: 645.08px;
-    top: 60px;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
 }
 
 #rectangle {
@@ -156,10 +165,6 @@
     left: 136.35px;
 }
 
-.Footer {
-    position: absolute;
-    top: 900px;
-}
 
 #Text {
     width: 290.99999999999994px;
@@ -350,10 +355,42 @@
 }
 
 #Name_HangSP {
-    width: 100px;
-    display: block;
-    left: 1360px;
-    top: 55px;
+    height: 0px;
+    position: relative;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    left: 99.86px;
+    top: 1000px;
+    z-index: +1;
+}
+
+#button_EditHangSP {
+    height: 0px;
+    position: relative;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    left: 199.86px;
+    top: 1000px;
+}
+
+#button_DeleteHangSP {
+    height: 0px;
+    position: relative;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    left: 299.86px;
+    top: 1000px;
+}
+
+#Table_Header {
+    font-family: Arial;
+    font-size: 25px;
+    position: relative;
+    left: 99.86px;
+    top: 950px;
 }
 
 

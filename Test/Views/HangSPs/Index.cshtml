@@ -5,15 +5,13 @@
     Layout = "~/Views/_QT_ThemHangSP.cshtml";
 }
 
-<h2>Hãng sản phẩm</h2>
-
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 
 <table class="table">
     <tr>
-        <th>
+        <th id="Table_Header">
             Hãng sản phẩm
         </th>
         <th></th>
@@ -22,14 +20,21 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td id="Name_HangSP">
-                @Html.DisplayFor(modelItem => item.TenHang)
+            <td>
+                <p id="Name_HangSP">
+                    @Html.DisplayFor(modelItem => item.TenHang)
+                </p>
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.MaHang }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.MaHang })
+                <div id="button_EditHangSP">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.MaHang }) 
+                </div>
+                <div id="button_DeleteHangSP">
+                    @Html.ActionLink("Delete", "Delete", new { id = item.MaHang })
+                </div>
             </td>
         </tr>
+
     }
 
 </table>
@@ -54,13 +59,15 @@
     <span id="rectangle"></span>
 </div>
 <div class="Footer">
-    <p id="Footer_Text">
+    <footer id="Footer_Text">
         2021
         <br />Powered by Squad Ngáo Ngơ
-    </p>
+    </footer>
 </div>
 
 <p id="Text">Thêm hãng sản phẩm</p>
+
+
 
 
 
