@@ -658,7 +658,7 @@ body {
     justify-content: center;
     align-items: center;
     cursor : pointer;
-
+    text-decoration: none;
 }
 #KM_square3 {
     width: 352px;
