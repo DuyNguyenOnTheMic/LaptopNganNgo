@@ -34,6 +34,7 @@ namespace Test.Controllers.Website_BanHang
                 {
                     Session["HoTen"] = account.HoTen;
                     Session["Email"] = account.Email;
+                    Session["MaKH"] = account.MaKH;
                     FormsAuthentication.SetAuthCookie(model.Email, false);
                     return RedirectToAction("Index", "TrangChu");
                 }

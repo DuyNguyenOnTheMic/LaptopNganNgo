@@ -20,8 +20,8 @@ namespace Test.Controllers
 
         // GET: TT_DangNhap
         public ActionResult Index()
-        {
-            return View();        
+        {           
+                return View();        
         }
 
         [HttpPost]
