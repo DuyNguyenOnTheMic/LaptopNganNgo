@@ -1,7 +1,7 @@
 ﻿@model Test.Models.HangSP
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Thêm hãng sản phẩm";
     Layout = "~/Views/_QT_ThemHangSP.cshtml";
 }
 
@@ -31,7 +31,9 @@
 
 
 <div class="Header">
-
+    <img src="~/Images/user_QT.png"
+         id="User_icon"
+         width="45" />
     <a href="https://localhost:44357/QT_TrangChu/Index">
         <img id="Logo_Header"
              src="~/Images/bird.png"
@@ -39,14 +41,17 @@
         <p id="Text_Header">LaptopNganNgo</p>
     </a>
 
-        <p id="Product_SanPham">Sản phẩm</p>
+    <p id="Product_SanPham">Sản phẩm</p>
+    <a href="https://localhost:44357/QT_DonHang/Index">
         <p id="Product_DonHang">Đơn hàng</p>
-        <p id="Product_KhachHang">Khách hàng</p>
-        <p id="Product_DoanhThu">Doanh thu</p>
-        <p id="Product_TaiKhoan">Tài khoản</p>
+    </a>
+    <p id="Product_KhachHang">Khách hàng</p>
+    <p id="Product_DoanhThu">Doanh thu</p>
+    <p id="Product_TaiKhoan">Tài khoản</p>
 
-        <span id="rectangle"></span>
+    <span id="rectangle"></span>
 </div>
+
 <div class="Footer">
     <p id="Footer_Text">
         2021
@@ -57,17 +62,19 @@
 <p id="Text">Thêm hãng sản phẩm</p>
 
 
-<img id="dell" src="~/Images/dell.png" />
-<img id="lenovo" src="~/Images/Lenovo.png" />
-<img id="apple" src="~/Images/apple.jpg" />
-<img id="acer" src="~/Images/Acer.png" />
-<img id="asus" src="~/Images/Asus.png" />
-<img id="razer" src="~/Images/Razer.png" />
-<img id="hp" src="~/Images/HP.jpg" />
-<img id="msi" src="~/Images/MSI.jpg" />
+<div>
+    @if (Session["HoTen"] != null)
+    {
+        <p id="Hello_Text">@Session["HoTen"].ToString()</p>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+    else if (Session["Email"] != null && Session["HoTen"] == null)
+    {
+        <p id="Hello_Text">Chào bạn,</p>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
 
-<img id="left-ar" src="~/Images/left-arrow.png" />
-<img id="right-ar" src="~/Images/right-arrow.png" />
+</div>
 
-<a href="https://localhost:44357/QT_TrangChu/Index"><button id="btn">Quay về</button></a>
+<a href="https://localhost:44357/SanPhams/Create"><button id="btn">Quay về</button></a>
 

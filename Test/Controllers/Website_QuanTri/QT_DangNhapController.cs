@@ -44,6 +44,8 @@ namespace Test.Controllers.Website_QuanTri
 
         public ActionResult LogOut()
         {
+            Session.Clear();
+            FormsAuthentication.SignOut();
             Session.Abandon();
             return RedirectToAction("Index", "QT_DangNhap");
         }

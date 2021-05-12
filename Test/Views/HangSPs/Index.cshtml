@@ -5,30 +5,65 @@
     Layout = "~/Views/_QT_ThemHangSP.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Hãng sản phẩm</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.TenHang)
+            Hãng sản phẩm
         </th>
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.TenHang)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.MaHang }) |
-            @Html.ActionLink("Details", "Details", new { id=item.MaHang }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.MaHang })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td id="Name_HangSP">
+                @Html.DisplayFor(modelItem => item.TenHang)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.MaHang }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.MaHang })
+            </td>
+        </tr>
+    }
 
 </table>
+
+
+
+<div class="Header">
+
+    <a href="https://localhost:44357/QT_TrangChu/Index">
+        <img id="Logo_Header"
+             src="~/Images/bird.png"
+             width="99" />
+        <p id="Text_Header">LaptopNganNgo</p>
+    </a>
+
+    <p id="Product_SanPham">Sản phẩm</p>
+    <p id="Product_DonHang">Đơn hàng</p>
+    <p id="Product_KhachHang">Khách hàng</p>
+    <p id="Product_DoanhThu">Doanh thu</p>
+    <p id="Product_TaiKhoan">Tài khoản</p>
+
+    <span id="rectangle"></span>
+</div>
+<div class="Footer">
+    <p id="Footer_Text">
+        2021
+        <br />Powered by Squad Ngáo Ngơ
+    </p>
+</div>
+
+<p id="Text">Thêm hãng sản phẩm</p>
+
+
+
+<a href="https://localhost:44357/QT_TrangChu/Index"><button id="btn">Quay về</button></a>
+
+

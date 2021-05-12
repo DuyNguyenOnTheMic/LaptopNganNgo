@@ -530,7 +530,7 @@
 
 #K5 {
     width: 319.00000000000136px;
-    height: 104.99999999999977px;
+    height: 174.99999999999977px;
     font-family: Arial;
     font-size: 13.333334px;
     font-weight: 400;
@@ -578,7 +578,7 @@
     color: #333333;
     background-color: #EFEFEF;
     position: absolute;
-    top: 510px;
+    top: 580px;
     left: 1150px;
 }
 #A5 {
@@ -603,7 +603,7 @@
     border: 1px solid #000000;
     border-radius: 0px;
     position: absolute;
-    top: 570px;
+    top: 640px;
     left: 1168px;
     z-index: +1;
 }
@@ -618,7 +618,7 @@
     color: #333333;
     background-color: #EFEFEF;
     position: absolute;
-    top: 639px;
+    top: 709px;
     left: 1150px;
 }
 #A6 {
@@ -736,6 +736,25 @@
     position: absolute;
     top: 1150px;
     left: 176px;
+    z-index: +1;
+}
+
+#button_ThemHangSP {
+    width: 170px;
+    height: 40px;
+    background: linear-gradient(#8D9CF2,#FF8585);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    font-family: Arial;
+    font-size: 16px;
     z-index: +1;
 }
 
