@@ -1,0 +1,248 @@
+﻿@model IEnumerable<Test.Models.ChiTietGioHang>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_GioHang.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DonGia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ThanhTien)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GioHang.MaGH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SanPham.TenSP)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SL)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DonGia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThanhTien)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GioHang.MaGH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SanPham.TenSP)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+    }
+
+</table>
+<div id="header">
+    <div class="rectangle"></div>
+    <div class="circle"></div>
+
+    <a href="https://localhost:44357/TrangChu/Index">
+        <p id="Tittle">LaptopNganNgo</p>
+        <img id="LetterL" width="70"
+             src="~/Images/royal-alphabet-crown-letter-english-l-512.png" />
+    </a>
+
+    <img id="User_icon" width="40"
+         src="~/Images/User.png" />
+
+    <a href="https://localhost:44357/DangNhap/Index">
+
+        <p id="Log_in">Đăng nhập</p>
+    </a>
+    <p id="text_1">hoặc Đăng ký</p>
+
+    <div>
+        <input id="Search_textbox" type="text"
+               placeholder="Tìm kiếm ở đây" />
+        <img src="~/Images/search.png"
+             width="19"
+             style="
+                 position: absolute;
+                 left: 445.37px;
+                 top: 139px;" />
+        <a href="https://localhost:44357/TimKiemSP/Index">
+            <button id="Search_button">Tìm</button>
+        </a>
+    </div>
+
+    <div>
+        <img id="Cart_image" src="~/Images/shopping-cart.png" width="39" />
+        <p id="Cart_number">0</p>
+        <a href="https://localhost:44357/GioHang/Index">
+            <p id="Cart_text">Giỏ hàng</p>
+        </a>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Danh mục sản phẩm</button>
+        <div class="dropdown-content">
+            <a href="#">Laptop Gaming  &emsp;&emsp;></a>
+            <div id="Laptop_Gaming_Content">
+                <p>
+                    <a href="#">Acer</a>
+                    <a href="#">Asus</a>
+                    <a href="#">MSI</a>
+                    <a href="#">Dell</a>
+                    <a href="#">HP</a>
+                    <a href="#">Lenovo</a>
+                </p>
+            </div>
+            <a href="#">Laptop văn phòng  &emsp;></a>
+            <div id="Laptop_VP_Content">
+                <p>
+                    <a href="#">Acer</a>
+                    <a href="#">Asus</a>
+                    <a href="#">MSI</a>
+                    <a href="#">Dell</a>
+                    <a href="#">HP</a>
+                    <a href="#">Lenovo</a>
+                </p>
+            </div>
+            <a href="#">Laptop sinh viên&emsp;&emsp;></a>
+            <div id="Laptop_SV_Content">
+                <p>
+                    <a href="#">Acer</a>
+                    <a href="#">Asus</a>
+                    <a href="#">MSI</a>
+                    <a href="#">Dell</a>
+                    <a href="#">HP</a>
+                    <a href="#">Lenovo</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="Menu_Bar">
+        <a id="Ban_Hang" href="#">&emsp;Chính sách bán hàng</a>
+        <a id="Bao_Hanh" href="#">&emsp;Chính sách bảo hành</a>
+        <a id="Van_Chuyen" href="#">&emsp;Chính sách vận chuyển</a>
+        <a id="Khuyen_Mai" href="#">&emsp;Khuyến mãi</a>
+        <a id="Cham_Soc" href="https://localhost:44357/CSKH/Index">&emsp;C.S Khách hàng</a>
+
+        <img src="~/Images/policy.png"
+             width="30"
+             style="
+            position:absolute;
+            left:323px;
+            top:215px;" />
+
+        <img src="~/Images/wrench.png"
+             width="30"
+             style="
+            position:absolute;
+            left:560px;
+            top:215px;" />
+
+        <img src="~/Images/truck.png"
+             width="30"
+             style="
+            position:absolute;
+            left:800px;
+            top:215px;" />
+
+        <img src="~/Images/promotion.png"
+             width="30"
+             style="
+            position:absolute;
+            left:1095px;
+            top:215px;" />
+
+        <img src="~/Images/support.png"
+             width="30"
+             style="
+            position:absolute;
+            left:1320px;
+            top:215px;" />
+    </div>
+
+</div>
+
+<div class="Footer">
+
+    <div id="logo_footer">
+        <img src="~/Images/royal-alphabet-crown-letter-english-l-512.png "
+             width="70" />
+    </div>
+    <p id="text1_ft">Sản Phẩm  </p>
+    <p id="text2_ft">Tiếp Xúc </p>
+    <p id="text3_ft">Theo Dõi  </p>
+    <p id="text4_ft">Đăng Ký </p>
+
+    <pre id="text5_ft">Đặc Trưng
+Quảng cáo  
+Tải Xuống</pre>
+
+    <pre id="text6_ft">Liên hệ
+FAQ  
+Trợ Giúp</pre>
+
+    <input id="Email_textbox" type="text"
+           placeholder="Nhập Email của bạn" />
+    <img id="FB_ft" src="~/Images/FB.png "
+         width="30" />
+    <img id="IG_ft" src="~/Images/IG.png "
+         width="30" />
+
+</div>
+
+<hr id="dk1" width="1450.97px" />
+
+<p id="TenSP">Tên Sản Phẩm</p>
+<p id="SL">Số lượng</p>
+<p id="GiaTG">Đơn Giá</p>
+<p id="GiaSG">Thành tiền</p>
+<p id="Xoa">Xóa</p>
+
+<div class="LoadSP_GH">
+    @foreach (var item in Model)
+    {
+        <div class="SP_GH">
+            <img id="N1" src="~/Images/haha.jpg " />
+            <img id="T1" src="~/Images/ArrowIcon.png" />
+            <img id="T2" src="~/Images/ArrowIcon.png" />
+            <img id="R1" src="~/Images/trash.png " />
+            <p id="pic1">@item.SanPham.TenSP</p>
+            <p id="Gia1">@item.DonGia @("đ")</p>
+
+            <p id="Gia2">@item.ThanhTien @("đ")</p>
+            <p id="s1">@item.SL</p>
+
+
+            <hr id="dk2" width="1200px" />
+        </div>
+
+    }
+</div>
+    <p id="Sum">Tổng Tiền</p>
+    <p id="Tien">42.470.000</p>
+    <p id="d7">đ</p>
+
+
+    <div id="button_BanCoVoucher">Bạn có Voucher</div>
+    <a href="https://localhost:44357/TT_DangNhap/Index"><div id="button_ThanhToan">Thanh toán</div></a>
+
