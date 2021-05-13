@@ -5,7 +5,7 @@
     Layout = "~/Views/_QT_DangSP.cshtml";
 }
 
-@using (Html.BeginForm("AddImage", "SanPhams", FormMethod.Post, new {enctype="multipart/form-data"}))
+@using (Html.BeginForm("Create", "SanPhams", FormMethod.Post, new {enctype="multipart/form-data"}))
 {
     @Html.AntiForgeryToken()
 

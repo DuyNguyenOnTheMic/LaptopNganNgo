@@ -8,99 +8,249 @@
 <h2>Edit</h2>
 
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("Edit", "SanPhams", FormMethod.Post, new { entype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>SanPham</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        @Html.HiddenFor(model => model.MaSP)
 
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.LabelFor(model => model.TenSP, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.TenSP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.TenSP, new
+           {
+               htmlAttributes = new
+               {
+                   @class = "form-control",
+                   placeholder = "Nhập tên sản phẩm",
+                   @id = "T3"
+
+               }
+           })
                 @Html.ValidationMessageFor(model => model.TenSP, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.DongSP, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.DongSP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.DongSP, new
+                {
+                    htmlAttributes = new
+           {
+               @class = "form-control",
+               placeholder = "Nhập dòng sản phẩm",
+               @id = "W5"
+           }
+                })
                 @Html.ValidationMessageFor(model => model.DongSP, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.MaHangSP, "MaHangSP", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("MaHangSP", null, htmlAttributes: new { @class = "form-control" })
+                @Html.DropDownList("MaHangSP", null, htmlAttributes: new
+           {
+               @class = "form-control",
+               @id = "W4"
+           })
                 @Html.ValidationMessageFor(model => model.MaHangSP, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.ThongTinChiTietSP, htmlAttributes: new { @class = "control-label col-md-2" })
+
             <div class="col-md-10">
-                @Html.EditorFor(model => model.ThongTinChiTietSP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.TextAreaFor(model => model.ThongTinChiTietSP, new { style = "max-width:100%", @id = "S4" })
                 @Html.ValidationMessageFor(model => model.ThongTinChiTietSP, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.HinhAnhSP, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.HinhAnhSP, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.HinhAnhSP, "", new { @class = "text-danger" })
+                <input type="button" id="loadFileXml" value="Thêm ảnh sản phẩm" onclick="document.getElementById('image1').click();" />
+                <input type="file" style="display:none;" id="image1" name="image1" accept="image/gif, image/jpeg, image/png" onchange="loadFile(event)" />
+                <img id="output" width="100" />
             </div>
         </div>
 
+        <script>
+            var loadFile = function (event) {
+                var image = document.getElementById('output');
+                image.src = URL.createObjectURL(event.target.files[0]);
+            };
+        </script>
+
+
         <div class="form-group">
-            @Html.LabelFor(model => model.TrangThaiSP, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.TrangThaiSP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.TrangThaiSP, new
+                {
+                    htmlAttributes = new
+           {
+               @class = "form-control",
+               placeholder = "Tình trạng sản phẩm",
+               @id = "W3"
+           }
+                })
                 @Html.ValidationMessageFor(model => model.TrangThaiSP, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.SL, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.SL, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.SL, new
+                {
+                    htmlAttributes = new
+           {
+               @class = "form-control",
+               placeholder = "Nhập số lượng sản phẩm",
+               @id = "T9",
+               @type = "number"
+           }
+                })
                 @Html.ValidationMessageFor(model => model.SL, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.DonGiaGoc, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.DonGiaGoc, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.DonGiaGoc, new
+           {
+               htmlAttributes = new
+               {
+                   @class = "form-control",
+                   @id = "W1",
+                   @type = "number",
+                   placeholder = "0đ"
+               }
+           })
                 @Html.ValidationMessageFor(model => model.DonGiaGoc, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.DonGiaKM, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.DonGiaKM, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.DonGiaKM, new
+           {
+               htmlAttributes = new
+               {
+                   @class = "form-control",
+                   placeholder = "0đ",
+                   @type = "number",
+                   @id = "txt_DonGiaKM"
+               }
+           })
                 @Html.ValidationMessageFor(model => model.DonGiaKM, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Lưu" id="myBtn" />
             </div>
         </div>
     </div>
 }
 
-<div>
-    @Html.ActionLink("Back to List", "Index")
+
+<div class="Header">
+
+    <a href="https://localhost:44357/QT_TrangChu/Index">
+        <img id="Logo_Header"
+             src="~/Images/bird.png"
+             width="99" />
+        <p id="Text_Header">LaptopNganNgo</p>
+    </a>
+
+    <p id="Product_SanPham">Sản phẩm</p>
+    <p id="Product_DonHang">Đơn hàng</p>
+    <p id="Product_KhachHang">Khách hàng</p>
+    <p id="Product_DoanhThu">Doanh thu</p>
+    <p id="Product_TaiKhoan">Tài khoản</p>
+
+    <span id="rectangle"></span>
 </div>
+<div class="Footer">
+    <p id="Footer_Text">
+        2021
+        <br />Powered by Squad Ngáo Ngơ
+    </p>
+</div>
+
+<p id="Text">Thêm sản phẩm</p>
+
+<div id="K1">
+
+    <p id="T1">Thông tin chung</p>
+
+    <p id="T2">
+        Tên sản phẩm <br /><br /><br /><br />
+    </p>
+
+    <p id="MT">Mô tả sản phẩm</p>
+
+</div>
+<div id="K2">
+    <p id="A1">
+        Hình ảnh sản phẩm
+    </p>
+
+
+</div>
+
+<div id="K3">
+    <p id="A2">
+        Giá tiền sản phẩm
+    </p>
+    <p id="Q1">
+        Giá bán
+    </p>
+    <p id="Label_GiaKM">
+        Giá khuyến mãi
+    </p>
+
+</div>
+
+<div id="K4">
+    <p id="A3">
+        Tình trạng sản phẩm
+    </p>
+    <p id="Q3">
+        Tình trạng
+    </p>
+    <p id="Q4">
+        Số lượng
+    </p>
+
+
+</div>
+
+<div id="K5">
+    <p id="A4">
+        Hãng sản phẩm
+    </p>
+
+</div>
+
+<div id="K6">
+    <p id="A5">
+        Dòng sản phẩm
+    </p>
+
+
+</div>
+
+<div id="K7">
+    <p id="A6">
+        Khuyến mãi
+    </p>
+    <input id="R" type="radio">
+    <p id="A7"> Không áp dụng khuyến mãi </p>
+
+</div>
+
+<a id="myBtn1" href="https://localhost:44357/QT_TrangChu/Index">Hủy</a>
+
+
 
 <script src="~/Scripts/jquery-3.4.1.min.js"></script>
 <script src="~/Scripts/jquery.validate.min.js"></script>

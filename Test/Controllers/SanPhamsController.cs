@@ -48,19 +48,29 @@ namespace Test.Controllers.Website_QuanTri
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MaSP,TenSP,DongSP,MaHangSP,ThongTinChiTietSP,HinhAnhSP,TrangThaiSP,SL,DonGiaGoc,DonGiaKM")] SanPham sanPham)
+        public ActionResult Create([Bind(Include = "MaSP,TenSP,DongSP,MaHangSP,ThongTinChiTietSP,HinhAnhSP,TrangThaiSP,SL,DonGiaGoc,DonGiaKM")] SanPham sanPham, HttpPostedFileBase image)
         {
-            if (ModelState.IsValid)
+            if (image != null && image.ContentLength>0) 
             {
-                db.SanPhams.Add(sanPham);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                sanPham.HinhAnhSP = new byte[image.ContentLength];
+                image.InputStream.Read(sanPham.HinhAnhSP, 0, image.ContentLength);
+                string filename = System.IO.Path.GetFileName(image.FileName);
+                string urlImage = Server.MapPath("~/Images/" + filename);
+                image.SaveAs(urlImage);
+                sanPham.URLHinhAnh = "~/Images/" + filename;
+
             }
+                if (ModelState.IsValid)
+                {
+                    db.SanPhams.Add(sanPham);
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
 
-            ViewBag.MaHangSP = new SelectList(db.HangSPs, "MaHang", "TenHang", sanPham.MaHangSP);
-            return View(sanPham);
-        }
-
+                ViewBag.MaHangSP = new SelectList(db.HangSPs, "MaHang", "TenHang", sanPham.MaHangSP);
+                return View(sanPham);
+            }
+        
         // GET: SanPhams/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -82,14 +92,29 @@ namespace Test.Controllers.Website_QuanTri
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "MaSP,TenSP,DongSP,MaHangSP,ThongTinChiTietSP,HinhAnhSP,TrangThaiSP,SL,DonGiaGoc,DonGiaKM")] SanPham sanPham)
+        public ActionResult Edit([Bind(Include = "MaSP,TenSP,DongSP,MaHangSP,ThongTinChiTietSP,HinhAnhSP,TrangThaiSP,SL,DonGiaGoc,DonGiaKM")] SanPham sanPham, HttpPostedFileBase editImage)
+
         {
             if (ModelState.IsValid)
             {
-                db.Entry(sanPham).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
+                SanPham modifyProduct = db.SanPhams.Find(sanPham.MaSP);
+                if (modifyProduct != null)
+                {
+                    if (editImage != null && editImage.ContentLength > 0)
+                    {
+                        modifyProduct.HinhAnhSP = new byte[editImage.ContentLength];
+                        editImage.InputStream.Read(modifyProduct.HinhAnhSP, 0, editImage.ContentLength);
+                        string filename = System.IO.Path.GetFileName(editImage.FileName);
+                        string urlImage = Server.MapPath("~/Images/" + filename);
+                        editImage.SaveAs(urlImage);
+                        modifyProduct.URLHinhAnh = "~/Images/" + filename;
+                    }
+                    }
+                    db.Entry(sanPham).State = EntityState.Modified;
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+            
             ViewBag.MaHangSP = new SelectList(db.HangSPs, "MaHang", "TenHang", sanPham.MaHangSP);
             return View(sanPham);
         }
@@ -129,25 +154,25 @@ namespace Test.Controllers.Website_QuanTri
             base.Dispose(disposing);
         }
 
-        public ActionResult AddImage()
-        {
-            SanPham sanpham = new SanPham();
-            return View(sanpham);
-        }
+        //public ActionResult AddImage()
+        //{
+          //  SanPham sanpham = new SanPham();
+            //return View(sanpham);
+        //}
 
         [HttpPost]
-        public ActionResult AddImage(SanPham model, HttpPostedFileBase image1)
-        {
-            var db = new CT25Team24Entities();
-            if (image1!=null)
-            {
-                model.HinhAnhSP = new byte[image1.ContentLength];
-                image1.InputStream.Read(model.HinhAnhSP, 0, image1.ContentLength);
-            }
-            db.SanPhams.Add(model);
-            db.SaveChanges();
-            return RedirectToAction("Index", "SanPhams");
-        }
+        //public ActionResult AddImage(SanPham model, HttpPostedFileBase image1)
+        //{
+          //  var db = new CT25Team24Entities();
+            //if (image1!=null)
+            //{
+              //  model.HinhAnhSP = new byte[image1.ContentLength];
+                //image1.InputStream.Read(model.HinhAnhSP, 0, image1.ContentLength);
+            //}
+            //db.SanPhams.Add(model);
+          //db.SaveChanges();
+            //return RedirectToAction("Index", "SanPhams");
+        //}
 
         public ActionResult Index1()
         {
