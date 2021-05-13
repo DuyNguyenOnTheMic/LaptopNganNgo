@@ -159,18 +159,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_SanPham_HangSP">
-    <End Role="HangSP" Type="Self.HangSP" Multiplicity="1" />
-    <End Role="SanPham" Type="Self.SanPham" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="HangSP">
-        <PropertyRef Name="MaHang" />
-      </Principal>
-      <Dependent Role="SanPham">
-        <PropertyRef Name="MaHangSP" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityContainer Name="CT25Team24ModelStoreContainer">
     <EntitySet Name="ChiTietGioHang" EntityType="Self.ChiTietGioHang" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="CTDH" EntityType="Self.CTDH" Schema="dbo" store:Type="Tables" />
@@ -203,10 +191,6 @@
     <AssociationSet Name="FK_GioHang_KhachHang" Association="Self.FK_GioHang_KhachHang">
       <End Role="KhachHang" EntitySet="KhachHang" />
       <End Role="GioHang" EntitySet="GioHang" />
-    </AssociationSet>
-    <AssociationSet Name="FK_SanPham_HangSP" Association="Self.FK_SanPham_HangSP">
-      <End Role="HangSP" EntitySet="HangSP" />
-      <End Role="SanPham" EntitySet="SanPham" />
     </AssociationSet>
   </EntityContainer>
 </Schema>
