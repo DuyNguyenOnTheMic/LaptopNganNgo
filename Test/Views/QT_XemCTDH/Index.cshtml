@@ -6,76 +6,98 @@
 
 <div class="Header">
 
-    <a href="https://localhost:44357/QT_TrangChu/Index">
-        <img id="Logo_Header"
-             src="~/Images/bird.png"
-             width="99" />
-        <p id="Text_Header">LaptopNganNgo</p>
-    </a>
+    <div class="Header">
+        <img src="~/Images/user_QT.png"
+             id="User_icon"
+             width="45" />
+        <a href="https://localhost:44357/QT_TrangChu/Index">
+            <img id="Logo_Header"
+                 src="~/Images/bird.png"
+                 width="99" />
+            <p id="Text_Header">LaptopNganNgo</p>
+        </a>
 
-    <p id="Product_SanPham">Sản phẩm</p>
-    <p id="Product_DonHang">Đơn hàng</p>
-    <p id="Product_KhachHang">Khách hàng</p>
-    <p id="Product_DoanhThu">Doanh thu</p>
-    <p id="Product_TaiKhoan">Tài khoản</p>
+        <a href="https://localhost:44357/QT_TrangChu/Index">
+            <p id="Product_SanPham">Sản phẩm</p>
+        </a>
+        <a href="https://localhost:44357/QT_DonHang/Index">
+            <p id="Product_DonHang">Đơn hàng</p>
+        </a>
+        <p id="Product_KhachHang">Khách hàng</p>
+        <p id="Product_DoanhThu">Doanh thu</p>
+        <p id="Product_TaiKhoan">Tài khoản</p>
 
-    <span id="rectangle"></span>
-</div>
-
-<div class="Body">
-
-    <img id="HD_Laptop"
-         src="~/Images/JP_Clipboard_Image.png" />
-    <a href="https://localhost:44357/QT_DonHang/Index">
-        <img id="Back"
-             src="~/Images/previous.png" />
-    </a>
-
-    <div id="CTDonHang">
-        <b>Mã đơn hàng: LT44456</b>
-        <br />
-        Ngày lập đơn: 27/10/2020
+        <span id="rectangle"></span>
     </div>
 
-    <p id="table_TenSP">Tên SP</p>
-    <p id="table_SoLuong">Số lượng</p>
-    <p id="table_DonGia">Đơn giá</p>
-    <p id="table_ChietKhau">Chiết khấu<br />(%)</p>
-    <p id="table_ThanhTien">Thành tiền</p>
+    <div class="Body">
 
-    <table id="table">
-        <tr>
-            <td id="text_TenSP">Laptop gaming MSI Bravo 15<br />A4DCR 270VN</td>
-            <td id="text_SL">1</td>
-            <td id="text_DonGia">24.990.000</td>
-            <td id="text_ChietKhau">25</td>
-            <td id="text_ThanhTien">18.742.500</td>
-        </tr>
-    </table>
+        <img id="HD_Laptop"
+             src="~/Images/JP_Clipboard_Image.png" />
+        <a href="https://localhost:44357/QT_DonHang/Index">
+            <img id="Back"
+                 src="~/Images/previous.png" />
+        </a>
 
-    <p id="TongTien">Tổng tiền: <span style="color:red">18.742.500₫</span></p>
+        <div id="CTDonHang">
+            <b>Mã đơn hàng: LT44456</b>
+            <br />
+            Ngày lập đơn: 27/10/2020
+        </div>
 
-    <pre id="text_TTKH">Thông tin khách hàng:
+        <p id="table_TenSP">Tên SP</p>
+        <p id="table_SoLuong">Số lượng</p>
+        <p id="table_DonGia">Đơn giá</p>
+        <p id="table_ChietKhau">Chiết khấu<br />(%)</p>
+        <p id="table_ThanhTien">Thành tiền</p>
+
+        <table id="table">
+            <tr>
+                <td id="text_TenSP">Laptop gaming MSI Bravo 15<br />A4DCR 270VN</td>
+                <td id="text_SL">1</td>
+                <td id="text_DonGia">24.990.000</td>
+                <td id="text_ChietKhau">25</td>
+                <td id="text_ThanhTien">18.742.500</td>
+            </tr>
+        </table>
+
+        <p id="TongTien">Tổng tiền: <span style="color:red">18.742.500₫</span></p>
+
+        <pre id="text_TTKH">Thông tin khách hàng:
 
 Người đặt mua:         Ngyễn Lê Trung Tường
 Số điện thoại:                              0945789456
 Địa chỉ:                     426 Dương Quảng Hàm</pre>
 
-    <div id="button_Delete">Xoá</div>
+        <div id="button_Delete">Xoá</div>
 
-    <select id="TinhTrangDH">
-        <option value="Xác nhận đơn hàng">Xác nhận đơn hàng</option>
-        <option value="Chờ lấy hàng">Chờ lấy hàng</option>
-        <option value="Đang giao">Đang giao</option>
-        <option value="Đã giao">Đã giao</option>
-    </select>
+        <select id="TinhTrangDH">
+            <option value="Xác nhận đơn hàng">Xác nhận đơn hàng</option>
+            <option value="Chờ lấy hàng">Chờ lấy hàng</option>
+            <option value="Đang giao">Đang giao</option>
+            <option value="Đã giao">Đã giao</option>
+        </select>
 
-</div>
+    </div>
 
-<div class="Footer">
-    <p id="Footer_Text">
-        2021
-    <br />Powered by Squad Ngáo Ngơ
-</p>
-</div>
+    <div>
+        @if (Session["HoTen"] != null)
+        {
+            <p id="Hello_Text">@Session["HoTen"].ToString()</p>
+            <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+        }
+        else if (Session["Email"] != null && Session["HoTen"] == null)
+        {
+            <p id="Hello_Text">Chào bạn,</p>
+            <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+        }
+
+    </div>
+
+    <div class="Footer">
+        <p id="Footer_Text">
+            2021
+            <br />Powered by Squad Ngáo Ngơ
+        </p>
+    </div>
 

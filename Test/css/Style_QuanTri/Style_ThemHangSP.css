@@ -1,13 +1,6 @@
 ﻿body {
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-
-body::after {
-  content: '';
-  display: block;
-  height: 103.99999999999955px; /* Set same as footer's height */
+    margin-top: -60px;
+    padding-top: 60px;
 }
 
 #Logo_Header {
@@ -136,21 +129,6 @@ body::after {
     top: 0px;
 }
 
-#Footer_Text { 
-    font-family: Arial;
-    font-size: 18.666668px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 28px;
-    color: #1EAAF1;
-    clear: both;
-    position: absolute;
-    top: 1500px;
-    bottom: 0px;
-    width: 100%;
-    height: 50px;
-}
-
 #rectangle {
     width: 1345px;
     height: 42.99999999999977px;
@@ -182,6 +160,9 @@ body::after {
     width: 347.0px;
     height: 36.0px;
     position: absolute;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 400;
     top: 400px;
     left: 127px;
 }
@@ -277,35 +258,41 @@ body::after {
 }
 
 #btn {
-    width: 120.8385416666672px;
-    height: 50.0px;
+    width: 120px;
+    height: 40px;
     font-family: Arial;
-    font-size: 14.0px;
+    font-size: 17px;
     font-weight: 400;
     text-align: center;
     color: #030303;
     background: linear-gradient(#FFFFFF,#E6E6E6);
     border: 1px solid #CDCDCD;
     position: absolute;
-    top: 945px;
+    top: 335px;
     left: 1345px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 #btn_Add {
-    width: 120.8385416666672px;
-    height: 50.0px;
+    width: 100px;
+    height: 40px;
     font-family: Arial;
-    font-size: 14.0px;
+    font-size: 17.0px;
     font-weight: 400;
     text-align: center;
     color: #030303;
-    background: linear-gradient(#FFFFFF,#E6E6E6);
+    background: linear-gradient(#8D9CF2,#FF8585);
     border: 1px solid #CDCDCD;
+    border-radius: 5px;
     position: absolute;
-    top: 345px;
-    left: 1190px;
+    top: 470px;
+    left: 127px;
     cursor: pointer;
+}
+
+#btn_Add:hover {
+    font-weight:600;
 }
 
 #Log_in {
@@ -366,17 +353,15 @@ body::after {
 }
 
 #button_EditHangSP {
-    height: 0px;
     position: relative;
     font-family: Arial;
     font-size: 21.333334px;
     font-weight: 400;
     left: 620px;
-    top: 400px;
+    top: 430.8px;
 }
 
 #button_DeleteHangSP {
-    height: 0px;
     position: relative;
     font-family: Arial;
     font-size: 21.333334px;
@@ -394,25 +379,98 @@ body::after {
     justify-content: center;
     text-decoration: none;
     color: black;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid black;
     position: absolute;
     top: 335px;
     left: 1180px;
     font-family: Arial;
-    font-size: 18px;
+    font-size: 17px;
     z-index: +1;
     cursor: pointer;
 }
 
 #button_Create:hover {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .Table_HangSP {
     display: block;
+    position: absolute;
+    left: 100px;
     width: 150px;
     height: 150px;
+}
+
+#btn:hover {
+    font-weight: 600;
+}
+
+#btn_back {
+    width: 100px;
+    height: 40px;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    color: #030303;
+    background: linear-gradient(#FFFFFF,#E6E6E6);
+    border: 1px solid #CDCDCD;
+    position: absolute;
+    top: 470px;
+    left: 257px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#btn_back:hover {
+    font-weight:600;
+}
+
+#Log_in {
+    width: 96.44140625px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 700;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 60px;
+}
+
+    #Log_in:hover {
+        color: #BC85A3;
+    }
+
+#Button_LogOut {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 95px;
+    text-decoration: none;
+}
+
+    #Button_LogOut:hover {
+        color: darkblue;
+    }
+
+#User_icon {
+    position: absolute;
+    left: 1300.43px;
+    top: 70px;
+}
+
+#Hello_Text {
+    font-family: Arial;
+    font-size: 16px;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 55px;
 }
 
 

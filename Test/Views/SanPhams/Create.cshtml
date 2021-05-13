@@ -151,106 +151,131 @@
 
 <div class="Header">
 
-    <a href="https://localhost:44357/QT_TrangChu/Index">
-        <img id="Logo_Header"
-             src="~/Images/bird.png"
-             width="99" />
-        <p id="Text_Header">LaptopNganNgo</p>
-    </a>
-
-    <p id="Product_SanPham">Sản phẩm</p>
-    <p id="Product_DonHang">Đơn hàng</p>
-    <p id="Product_KhachHang">Khách hàng</p>
-    <p id="Product_DoanhThu">Doanh thu</p>
-    <p id="Product_TaiKhoan">Tài khoản</p>
-
-    <span id="rectangle"></span>
-</div>
-<div class="Footer">
-    <p id="Footer_Text">
-        2021
-        <br />Powered by Squad Ngáo Ngơ
-    </p>
-</div>
-
-<p id="Text">Thêm sản phẩm</p>
-
-<div id="K1">
-
-    <p id="T1">Thông tin chung</p>
-
-    <p id="T2">
-        Tên sản phẩm <br /><br /><br /><br />
-    </p>
-
-    <p id="MT">Mô tả sản phẩm</p>
-    
-</div>
-<div id="K2">
-    <p id="A1">
-        Hình ảnh sản phẩm
-    </p>
+    <div class="Header">
+        <img src="~/Images/user_QT.png"
+             id="User_icon"
+             width="45" />
+        <a href="https://localhost:44357/QT_TrangChu/Index">
+            <img id="Logo_Header"
+                 src="~/Images/bird.png"
+                 width="99" />
+            <p id="Text_Header">LaptopNganNgo</p>
+        </a>
 
 
-</div>
+        <a href="https://localhost:44357/QT_TrangChu/Index">
+            <p id="Product_SanPham">Sản phẩm</p>
+        </a>
+        <a href="https://localhost:44357/QT_DonHang/Index">
+            <p id="Product_DonHang">Đơn hàng</p>
+        </a>
+        <p id="Product_KhachHang">Khách hàng</p>
+        <p id="Product_DoanhThu">Doanh thu</p>
+        <p id="Product_TaiKhoan">Tài khoản</p>
 
-<div id="K3">
-    <p id="A2">
-        Giá tiền sản phẩm
-    </p>
-    <p id="Q1">
-        Giá bán
-    </p>
-    <p id="Label_GiaKM">
-        Giá khuyến mãi
-    </p>
+        <span id="rectangle"></span>
+    </div>
 
-</div>
+    <div>
+        @if (Session["HoTen"] != null)
+        {
+            <p id="Hello_Text">@Session["HoTen"].ToString()</p>
+            <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+        }
+        else if (Session["Email"] != null && Session["HoTen"] == null)
+        {
+            <p id="Hello_Text">Chào bạn,</p>
+            <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+        }
 
-<div id="K4">
-    <p id="A3">
-        Tình trạng sản phẩm
-    </p>
-    <p id="Q3">
-        Tình trạng
-    </p>
-    <p id="Q4">
-        Số lượng
-    </p>
-
-
-</div>
-
-<div id="K5">
-    <p id="A4">
-        Hãng sản phẩm
-    </p>
-
-    <a href="https://localhost:44357/HangSPs/Create" id="button_ThemHangSP">Thêm hãng sản phẩm</a>
-
-</div>
-
-<div id="K6">
-    <p id="A5">
-        Dòng sản phẩm
-    </p>
+    </div>
 
 
-</div>
+    <div class="Footer">
+        <p id="Footer_Text">
+            2021
+            <br />Powered by Squad Ngáo Ngơ
+        </p>
+    </div>
 
-<div id="K7">
-    <p id="A6">
-        Khuyến mãi
-    </p>
-    <input id="R" type="radio">
-    <p id="A7"> Không áp dụng khuyến mãi </p>
+    <p id="Text">Thêm sản phẩm</p>
 
-</div>
+    <div id="K1">
 
-<a id="myBtn1" href="https://localhost:44357/QT_TrangChu/Index">Hủy</a>
+        <p id="T1">Thông tin chung</p>
+
+        <p id="T2">
+            Tên sản phẩm <br /><br /><br /><br />
+        </p>
+
+        <p id="MT">Mô tả sản phẩm</p>
+
+    </div>
+    <div id="K2">
+        <p id="A1">
+            Hình ảnh sản phẩm
+        </p>
+
+
+    </div>
+
+    <div id="K3">
+        <p id="A2">
+            Giá tiền sản phẩm
+        </p>
+        <p id="Q1">
+            Giá bán
+        </p>
+        <p id="Label_GiaKM">
+            Giá khuyến mãi
+        </p>
+
+    </div>
+
+    <div id="K4">
+        <p id="A3">
+            Tình trạng sản phẩm
+        </p>
+        <p id="Q3">
+            Tình trạng
+        </p>
+        <p id="Q4">
+            Số lượng
+        </p>
+
+
+    </div>
+
+    <div id="K5">
+        <p id="A4">
+            Hãng sản phẩm
+        </p>
+
+        <a href="https://localhost:44357/HangSPs/Create" id="button_ThemHangSP">Thêm hãng sản phẩm</a>
+
+    </div>
+
+    <div id="K6">
+        <p id="A5">
+            Dòng sản phẩm
+        </p>
+
+
+    </div>
+
+    <div id="K7">
+        <p id="A6">
+            Khuyến mãi
+        </p>
+        <input id="R" type="radio">
+        <p id="A7"> Không áp dụng khuyến mãi </p>
+
+    </div>
+
+    <a id="myBtn1" href="https://localhost:44357/QT_TrangChu/Index">Hủy</a>
 
 
 
-<script src="~/Scripts/jquery-3.4.1.min.js"></script>
-<script src="~/Scripts/jquery.validate.min.js"></script>
-<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>

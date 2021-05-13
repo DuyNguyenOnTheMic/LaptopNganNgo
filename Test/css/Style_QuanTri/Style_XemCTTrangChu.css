@@ -301,3 +301,51 @@
     left: 1378px;
     cursor: pointer;
 }
+
+#Log_in {
+    width: 96.44140625px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 700;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 60px;
+}
+
+    #Log_in:hover {
+        color: #BC85A3;
+    }
+
+#Button_LogOut {
+    width: 80px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 95px;
+    text-decoration: none;
+}
+
+    #Button_LogOut:hover {
+        color: darkblue;
+    }
+
+#User_icon {
+    position: absolute;
+    left: 1300.43px;
+    top: 70px;
+}
+
+#Hello_Text {
+    width: 300px;
+    font-family: Arial;
+    font-size: 16px;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 55px;
+}

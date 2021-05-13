@@ -945,8 +945,32 @@
         color: #BC85A3;
     }
 
+#Button_LogOut {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 95px;
+    text-decoration: none;
+}
+
+    #Button_LogOut:hover {
+        color: darkblue;
+    }
+
 #User_icon {
     position: absolute;
     left: 1300.43px;
     top: 70px;
+}
+
+#Hello_Text {
+    font-family: Arial;
+    font-size: 16px;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 55px;
 }

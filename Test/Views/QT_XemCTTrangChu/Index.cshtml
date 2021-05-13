@@ -6,20 +6,43 @@
 
 <div class="Header">
 
-    <a href="https://localhost:44357/QT_TrangChu/Index">
-        <img id="Logo_Header"
-             src="~/Images/bird.png"
-             width="99" />
-        <p id="Text_Header">LaptopNganNgo</p>
-    </a>
+    <div class="Header">
+        <img src="~/Images/user_QT.png"
+             id="User_icon"
+             width="45" />
+        <a href="https://localhost:44357/QT_TrangChu/Index">
+            <img id="Logo_Header"
+                 src="~/Images/bird.png"
+                 width="99" />
+            <p id="Text_Header">LaptopNganNgo</p>
+        </a>
 
-    <p id="Product_SanPham">Sản phẩm</p>
-    <p id="Product_DonHang">Đơn hàng</p>
-    <p id="Product_KhachHang">Khách hàng</p>
-    <p id="Product_DoanhThu">Doanh thu</p>
-    <p id="Product_TaiKhoan">Tài khoản</p>
 
-    <span id="rectangle"></span>
+        <a href="https://localhost:44357/QT_TrangChu/Index">
+            <p id="Product_SanPham">Sản phẩm</p>
+        </a>
+        <a href="https://localhost:44357/QT_DonHang/Index">
+            <p id="Product_DonHang">Đơn hàng</p>
+        </a>
+        <p id="Product_KhachHang">Khách hàng</p>
+        <p id="Product_DoanhThu">Doanh thu</p>
+        <p id="Product_TaiKhoan">Tài khoản</p>
+
+        <span id="rectangle"></span>
+
+    </div>
+
+<div>
+    @if (Session["HoTen"] != null)
+    {
+        <p id="Hello_Text">@Session["HoTen"].ToString()</p>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+    else if (Session["Email"] != null && Session["HoTen"] == null)
+    {
+        <p id="Hello_Text">Chào bạn,</p>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
 
 </div>
 

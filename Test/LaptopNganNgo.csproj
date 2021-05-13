@@ -217,12 +217,9 @@
     <Compile Include="Controllers\Website_BanHang\TT_ThanhCongController.cs" />
     <Compile Include="Controllers\Website_BanHang\XemSPController.cs" />
     <Compile Include="Controllers\KhachHangsController.cs" />
-    <Compile Include="Controllers\Website_QuanTri\QT_CapNhatSPController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_DangKyController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_DangNhapController.cs" />
-    <Compile Include="Controllers\Website_QuanTri\QT_DangSPController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_DonHangController.cs" />
-    <Compile Include="Controllers\Website_QuanTri\QT_ThemHangSPController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_TrangChuController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_XemCTDHController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_XemCTTrangChuController.cs" />
@@ -308,7 +305,6 @@
     <Content Include="Views\QT_DangKy.cshtml" />
     <Content Include="Views\_QT_TrangChu.cshtml" />
     <Content Include="Views\QT_TrangChu\Index.cshtml" />
-    <Content Include="Views\_QT_CapNhatSP.cshtml" />
     <Content Include="Views\_QT_DangSP.cshtml" />
     <Content Include="Views\_QT_XemCTDH.cshtml" />
     <Content Include="Views\QT_XemCTDH\Index.cshtml" />
@@ -320,7 +316,6 @@
     <Content Include="Views\QT_XemCTTrangChu\Index.cshtml" />
     <Content Include="Views\_QT_DonHang.cshtml" />
     <Content Include="Views\QT_DonHang\Index.cshtml" />
-    <Content Include="Views\QT_CapNhatSP\Index.cshtml" />
     <Content Include="Views\SanPhams\Delete.cshtml" />
     <Content Include="Views\SanPhams\Details.cshtml" />
     <Content Include="Views\SanPhams\Edit.cshtml" />
@@ -334,7 +329,6 @@
     <Content Include="Views\KhachHangs\Dky_TT_KH.cshtml" />
     <Content Include="Views\KhachHangs\CapNhat_TT_KH.cshtml" />
     <Content Include="Views\_QT_ThemHangSP.cshtml" />
-    <Content Include="Views\QT_ThemHangSP\Index.cshtml" />
     <Content Include="Views\HangSPs\Create.cshtml" />
     <Content Include="Views\HangSPs\Delete.cshtml" />
     <Content Include="Views\HangSPs\Edit.cshtml" />

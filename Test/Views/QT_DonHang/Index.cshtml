@@ -5,7 +5,9 @@
 }
 
 <div class="Header">
-
+    <img src="~/Images/user_QT.png"
+         id="User_icon"
+         width="45" />
     <a href="https://localhost:44357/QT_TrangChu/Index">
         <img id="Logo_Header"
              src="~/Images/bird.png"
@@ -16,12 +18,28 @@
     <a href="https://localhost:44357/QT_TrangChu/Index">
         <p id="Product_SanPham">Sản phẩm</p>
     </a>
-    <p id="Product_DonHang">Đơn hàng</p>
+    <a href="https://localhost:44357/QT_DonHang/Index">
+        <p id="Product_DonHang">Đơn hàng</p>
+    </a>
     <p id="Product_KhachHang">Khách hàng</p>
     <p id="Product_DoanhThu">Doanh thu</p>
     <p id="Product_TaiKhoan">Tài khoản</p>
 
     <span id="rectangle"></span>
+</div>
+
+<div>
+    @if (Session["HoTen"] != null)
+    {
+        <p id="Hello_Text">@Session["HoTen"].ToString()</p>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+    else if (Session["Email"] != null && Session["HoTen"] == null)
+    {
+        <p id="Hello_Text">Chào bạn,</p>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+
 </div>
 
 
@@ -55,14 +73,6 @@
              src="~/Images/next.png" />
     </div>
 
-    <div id="Dang_SP">
-        &nbsp;&nbsp;&nbsp;
-        &nbsp;&#160;&#160;Tạo đơn hàng
-    </div>
-
-    <img id="Create_img"
-         width="20"
-         src="~/Images/add.png" />
 
     <div id="rectangle_1">Đơn mới <br /> 45</div>
     <div id="rectangle_2">Đang xử lý <br /> 54</div>

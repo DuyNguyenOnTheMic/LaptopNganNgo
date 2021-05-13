@@ -18,12 +18,12 @@
                     </p>
                 </td>
                 <td>
-                    <div id="button_EditHangSP">
-                        @Html.ActionLink("Sửa", "Edit", new { id = item.MaHang })
-                    </div>
-                    <div id="button_DeleteHangSP">
-                        @Html.ActionLink("Xoá", "Delete", new { id = item.MaHang })
-                    </div>
+                    <a href="@Url.Action("Edit","HangSPs", new { id = item.MaHang })">
+                        <button id="button_EditHangSP">Sửa</button>
+                    </a>
+                    <a href="@Url.Action("Delete","HangSPs", new { id = item.MaHang })">
+                        <button id="button_DeleteHangSP">Xoá</button>
+                    </a>
                 </td>
             </tr>
 
@@ -32,39 +32,39 @@
 
     </table>
 
-    <a href="@Url.Action("Create","HangSPs")" >
-        <button id="button_Create">Thêm mới</button>
-    </a>
-
 </div>
+
+<a href="@Url.Action("Create","HangSPs")">
+    <button id="button_Create">Thêm mới</button>
+</a>
 
 
 
 <div class="Header">
 
-        <img src="~/Images/user_QT.png"
-             id="User_icon"
-             width="45" />
-        <a href="https://localhost:44357/QT_TrangChu/Index">
-            <img id="Logo_Header"
-                 src="~/Images/bird.png"
-                 width="99" />
-            <p id="Text_Header">LaptopNganNgo</p>
-        </a>
+    <img src="~/Images/user_QT.png"
+         id="User_icon"
+         width="45" />
+    <a href="https://localhost:44357/QT_TrangChu/Index">
+        <img id="Logo_Header"
+             src="~/Images/bird.png"
+             width="99" />
+        <p id="Text_Header">LaptopNganNgo</p>
+    </a>
 
 
-         <a href="https://localhost:44357/QT_TrangChu/Index">
-            <p id="Product_SanPham">Sản phẩm</p>
-        </a>
-        <a href="https://localhost:44357/QT_DonHang/Index">
-            <p id="Product_DonHang">Đơn hàng</p>
-        </a>
-        <p id="Product_KhachHang">Khách hàng</p>
-        <p id="Product_DoanhThu">Doanh thu</p>
-        <p id="Product_TaiKhoan">Tài khoản</p>
+    <a href="https://localhost:44357/QT_TrangChu/Index">
+        <p id="Product_SanPham">Sản phẩm</p>
+    </a>
+    <a href="https://localhost:44357/QT_DonHang/Index">
+        <p id="Product_DonHang">Đơn hàng</p>
+    </a>
+    <p id="Product_KhachHang">Khách hàng</p>
+    <p id="Product_DoanhThu">Doanh thu</p>
+    <p id="Product_TaiKhoan">Tài khoản</p>
 
-        <span id="rectangle"></span>
-    </div>
+    <span id="rectangle"></span>
+</div>
 
 <div>
     @if (Session["HoTen"] != null)
@@ -80,12 +80,7 @@
 
 </div>
 
-<div class="Footer">
-    <footer id="Footer_Text">
-        2021
-        <br />Powered by Squad Ngáo Ngơ
-    </footer>
-</div>
+
 
 <p id="Text">Thêm hãng sản phẩm</p>
 
@@ -93,6 +88,6 @@
 
 
 
-<a href="https://localhost:44357/QT_TrangChu/Index"><button id="btn">Quay về</button></a>
+<a href="https://localhost:44357/SanPhams/Create"><button id="btn">Quay về</button></a>
 
 
