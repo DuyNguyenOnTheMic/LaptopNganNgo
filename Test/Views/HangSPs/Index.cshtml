@@ -5,59 +5,81 @@
     Layout = "~/Views/_QT_ThemHangSP.cshtml";
 }
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+<div class="Table_HangSP">
 
-<table class="table">
-    <tr>
-        <th id="Table_Header">
-            Hãng sản phẩm
-        </th>
-        <th></th>
-    </tr>
+    <table class="table">
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                <p id="Name_HangSP">
-                    @Html.DisplayFor(modelItem => item.TenHang)
-                </p>
-            </td>
-            <td>
-                <div id="button_EditHangSP">
-                    @Html.ActionLink("Edit", "Edit", new { id = item.MaHang }) 
-                </div>
-                <div id="button_DeleteHangSP">
-                    @Html.ActionLink("Delete", "Delete", new { id = item.MaHang })
-                </div>
-            </td>
-        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <p id="Name_HangSP">
+                        @Html.DisplayFor(modelItem => item.TenHang)
+                    </p>
+                </td>
+                <td>
+                    <div id="button_EditHangSP">
+                        @Html.ActionLink("Sửa", "Edit", new { id = item.MaHang })
+                    </div>
+                    <div id="button_DeleteHangSP">
+                        @Html.ActionLink("Xoá", "Delete", new { id = item.MaHang })
+                    </div>
+                </td>
+            </tr>
 
-    }
 
-</table>
+        }
+
+    </table>
+
+    <a href="@Url.Action("Create","HangSPs")" >
+        <button id="button_Create">Thêm mới</button>
+    </a>
+
+</div>
 
 
 
 <div class="Header">
 
-    <a href="https://localhost:44357/QT_TrangChu/Index">
-        <img id="Logo_Header"
-             src="~/Images/bird.png"
-             width="99" />
-        <p id="Text_Header">LaptopNganNgo</p>
-    </a>
+        <img src="~/Images/user_QT.png"
+             id="User_icon"
+             width="45" />
+        <a href="https://localhost:44357/QT_TrangChu/Index">
+            <img id="Logo_Header"
+                 src="~/Images/bird.png"
+                 width="99" />
+            <p id="Text_Header">LaptopNganNgo</p>
+        </a>
 
-    <p id="Product_SanPham">Sản phẩm</p>
-    <p id="Product_DonHang">Đơn hàng</p>
-    <p id="Product_KhachHang">Khách hàng</p>
-    <p id="Product_DoanhThu">Doanh thu</p>
-    <p id="Product_TaiKhoan">Tài khoản</p>
 
-    <span id="rectangle"></span>
+         <a href="https://localhost:44357/QT_TrangChu/Index">
+            <p id="Product_SanPham">Sản phẩm</p>
+        </a>
+        <a href="https://localhost:44357/QT_DonHang/Index">
+            <p id="Product_DonHang">Đơn hàng</p>
+        </a>
+        <p id="Product_KhachHang">Khách hàng</p>
+        <p id="Product_DoanhThu">Doanh thu</p>
+        <p id="Product_TaiKhoan">Tài khoản</p>
+
+        <span id="rectangle"></span>
+    </div>
+
+<div>
+    @if (Session["HoTen"] != null)
+    {
+        <p id="Hello_Text">@Session["HoTen"].ToString()</p>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+    else if (Session["Email"] != null && Session["HoTen"] == null)
+    {
+        <p id="Hello_Text">Chào bạn,</p>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+
 </div>
+
 <div class="Footer">
     <footer id="Footer_Text">
         2021

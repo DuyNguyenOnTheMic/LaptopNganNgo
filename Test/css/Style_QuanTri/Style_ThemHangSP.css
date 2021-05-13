@@ -133,11 +133,10 @@ body::after {
 .Header {
     position:absolute;
     left: -15px;
+    top: 0px;
 }
 
-#Footer_Text {
-    width: 309.8372802734375px;
-    height: 103.99999999999955px;
+#Footer_Text { 
     font-family: Arial;
     font-size: 18.666668px;
     font-weight: 400;
@@ -146,7 +145,8 @@ body::after {
     color: #1EAAF1;
     clear: both;
     position: absolute;
-    bottom: 0;
+    top: 1500px;
+    bottom: 0px;
     width: 100%;
     height: 50px;
 }
@@ -287,7 +287,7 @@ body::after {
     background: linear-gradient(#FFFFFF,#E6E6E6);
     border: 1px solid #CDCDCD;
     position: absolute;
-    top: 345px;
+    top: 945px;
     left: 1345px;
     cursor: pointer;
 }
@@ -360,8 +360,8 @@ body::after {
     font-family: Arial;
     font-size: 21.333334px;
     font-weight: 400;
-    left: 99.86px;
-    top: 1000px;
+    left: 600px;
+    top: 400px;
     z-index: +1;
 }
 
@@ -371,8 +371,8 @@ body::after {
     font-family: Arial;
     font-size: 21.333334px;
     font-weight: 400;
-    left: 199.86px;
-    top: 1000px;
+    left: 620px;
+    top: 400px;
 }
 
 #button_DeleteHangSP {
@@ -381,16 +381,38 @@ body::after {
     font-family: Arial;
     font-size: 21.333334px;
     font-weight: 400;
-    left: 299.86px;
-    top: 1000px;
+    left: 700px;
+    top: 400px;
 }
 
-#Table_Header {
+#button_Create {
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(#8D9CF2,#FF8585);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: absolute;
+    top: 335px;
+    left: 1180px;
     font-family: Arial;
-    font-size: 25px;
-    position: relative;
-    left: 99.86px;
-    top: 950px;
+    font-size: 18px;
+    z-index: +1;
+    cursor: pointer;
+}
+
+#button_Create:hover {
+    font-weight: 700;
+}
+
+.Table_HangSP {
+    display: block;
+    width: 150px;
+    height: 150px;
 }
 
 
