@@ -231,6 +231,7 @@
 #T9 {
     width: 290px;
     height: 31.999999999999886px;
+    padding-left: 10px;
     font-family: Arial;
     font-size: 21.333334px;
     font-weight: 400;
@@ -429,6 +430,7 @@
 #W1 {
     width: 400.4875311720696px;
     height: 32.0px;
+    padding-left: 10px;
     font-family: Arial;
     font-size: 21.333334px;
     font-weight: 400;
@@ -491,10 +493,11 @@
 #W3 {
     width: 415.4875311720693px;
     height: 36.999999999999773px;
+    padding-left: 10px;
     font-family: Arial;
     font-size: 21.333334px;
     font-weight: 400;
-    color: gray;
+    color: #434343;
     background-color: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 0px;
@@ -708,6 +711,7 @@
 #txt_DonGiaKM {
     width: 400.4875311720696px;
     height: 32.0px;
+    padding-left: 10px;
     font-family: Arial;
     font-size: 21.333334px;
     font-weight: 400;

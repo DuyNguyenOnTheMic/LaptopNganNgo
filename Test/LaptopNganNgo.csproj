@@ -333,7 +333,6 @@
     <Content Include="Views\HangSPs\Delete.cshtml" />
     <Content Include="Views\HangSPs\Edit.cshtml" />
     <Content Include="Views\HangSPs\Index.cshtml" />
-    <Content Include="Views\SanPhams\View.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

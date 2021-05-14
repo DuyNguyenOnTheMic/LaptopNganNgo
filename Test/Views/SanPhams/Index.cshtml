@@ -13,6 +13,9 @@
 <table class="table">
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.MaSP)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.TenSP)
         </th>
         <th>
@@ -45,6 +48,9 @@
 @foreach (var item in Model) {
 <tr>
     <td>
+        @Html.DisplayFor(modelItem => item.MaSP)
+    </td>
+    <td>
         @Html.DisplayFor(modelItem => item.TenSP)
     </td>
     <td>
@@ -61,35 +67,35 @@
             if (item.HinhAnhSP != null)
             {
                 <img src="@Url.Content(item.HinhAnhSP)" width="80" height="80" class="img-rounded" />
+            }
+            else
+            {
+                <img src="~/Images/image.png"
+                     style="max-width:100px;max-height:100px" />
+            }
         }
-        else
-        {
-            <img src="~/Images/image.png"
-                 style="max-width:100px;max-height:100px" />
-        }
-        }
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TrangThaiSP)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.SL)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DonGiaGoc)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DonGiaKM)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.HangSP.TenHang)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.MaSP }) |
-            @Html.ActionLink("Details", "Details", new { id = item.MaSP }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.MaSP })
-        </td>
-    </tr>
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.TrangThaiSP)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SL)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.DonGiaGoc)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.DonGiaKM)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.HangSP.TenHang)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.MaSP }) |
+        @Html.ActionLink("Details", "Details", new { id = item.MaSP }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.MaSP })
+    </td>
+</tr>
 }
 
 </table>

@@ -64,7 +64,7 @@
         <div class="form-group">
             <div class="col-md-10">
                 <img width="100" height="100" id="output"/>
-                <input type="file" required="required" name="file" id="file" />
+                <input type="file" required="required" name="file" id="file" accept="image/x-png,image/gif,image/jpeg" onchange="loadFile(event)"/>
                 @Html.ValidationMessageFor(model => model.HinhAnhSP, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -118,11 +118,20 @@
                    @id = "W1",
                    @type = "number",
                    placeholder = "0đ"
+                   
                }
            })
                 @Html.ValidationMessageFor(model => model.DonGiaGoc, "", new { @class = "text-danger" })
             </div>
         </div>
+
+        <script>
+            function thousands_separators(num) {
+                var num_parts = num.toString().split(".");
+                num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                return num_parts.join(".");
+            }
+        </script>
 
         <div class="form-group">
             <div class="col-md-10">
