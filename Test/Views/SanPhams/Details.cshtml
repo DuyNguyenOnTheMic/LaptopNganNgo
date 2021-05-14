@@ -178,15 +178,47 @@ Trợ Giúp</pre>
 
 </div>
 
+
+
 <div class="ThongTin">
-    <p id="TenSP">@Model.TenSP</p>
-    <p id="GiaChuaGiam">
-        @Model.DonGiaGoc@("₫")
-    </p>
-    <p id="GiaSauGiam">
-        @Model.DonGiaKM@("₫")
-    </p>
-    <p id="TinhTrang">Tình trạng: <span style="color:green">@Model.TrangThaiSP</span></p>
+    <form action="@Url.Action("Create","CTDHs" )" method="post">
+        <input type="hidden" name="id" value="@Model.MaSP" />
+        <input type="hidden" name="sl" value="1" />
+        <input type="hidden" name="dongia" value="@Model.DonGiaKM" />
+        <p id="TenSP">@Model.TenSP</p>
+        <p id="GiaChuaGiam">
+            @Model.DonGiaGoc.ToString("N0")@("₫")
+        </p>
+        <p id="GiaSauGiam">
+            @Model.DonGiaKM.ToString("N0")@("₫")
+        </p>
+        <p id="TinhTrang">Tình trạng: <span style="color:green">@Model.TrangThaiSP</span></p>
+        <div class="KhuyenMai">
+            <div id="KM_square1"></div>
+            <div>
+                <input type="submit" id="KM_squar" value="THÊM VÀO GIỎ HÀNG" />
+            </div>
+            <div id="KM_square3">MUA NGAY</div>
+            <p id="KMvaQT">KHUYẾN MÃI VÀ QUÀ TẶNG:</p>
+            <pre id="test_KM">- Mua thêm Ram 8GB Bus 3200MHz chỉ 790.000đ.
+
+- Balo Predator SUV.
+
+- Bình nước Predator.
+
+- Chuột Gaming RGB VT200.
+
+- Túi chống sốc.
+
+- Hỗ trợ cân màu màn hình miễn phí 6 tháng/lần trong 2 năm.
+
+- Giảm giá 10% khi mua gaming gear.
+
+*Số lượng quà tặng có hạn</pre>
+
+        </div>
+    </form>
+    
     <p id="review">92 review(s)</p>
 
     <img id="star1" src="~/Images/star.png" />

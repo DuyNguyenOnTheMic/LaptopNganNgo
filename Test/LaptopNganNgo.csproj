@@ -202,6 +202,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CTDHs1Controller.cs" />
+    <Compile Include="Controllers\CTDHsController.cs" />
     <Compile Include="Controllers\Website_BanHang\CSKHController.cs" />
     <Compile Include="Controllers\Website_BanHang\DangKyController.cs" />
     <Compile Include="Controllers\Website_BanHang\DangNhapController.cs" />
@@ -328,6 +330,16 @@
     <Content Include="Views\SanPhams\Edit.cshtml" />
     <Content Include="Views\SanPhams\Index.cshtml" />
     <Content Include="Views\SanPhams\Index2.cshtml" />
+    <Content Include="Views\CTDHs\Create.cshtml" />
+    <Content Include="Views\CTDHs\Delete.cshtml" />
+    <Content Include="Views\CTDHs\Details.cshtml" />
+    <Content Include="Views\CTDHs\Edit.cshtml" />
+    <Content Include="Views\CTDHs\Index.cshtml" />
+    <Content Include="Views\CTDHs1\Create.cshtml" />
+    <Content Include="Views\CTDHs1\Delete.cshtml" />
+    <Content Include="Views\CTDHs1\Details.cshtml" />
+    <Content Include="Views\CTDHs1\Edit.cshtml" />
+    <Content Include="Views\CTDHs1\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

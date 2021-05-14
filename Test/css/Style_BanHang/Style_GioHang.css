@@ -437,7 +437,7 @@ body {
     color: #666666;
     position: absolute;
     top: 2108px;
-    left: 352px;
+    left: 332px;
 }
 
 #text2_ft {
@@ -551,7 +551,7 @@ body {
     color: #333333;
     position: absolute;
     top: 337px;
-    left: 838.16px;
+    left: 800px;
 }
 
 #GiaTG {
@@ -599,21 +599,21 @@ body {
     text-align: center;
     text-decoration: underline;
     color: #333333;
-    position: absolute;
-    top: 412.67px;
-    left: 375.13px;
+    position: relative;
+    top: -100px;
+    left: 250px;
 }
 
 #Gia1 {
-    width: 93.42447662353516px;
+    width: 150px;
     height: 21.0px;
     font-family: Arial;
     font-size: 18.666668px;
     font-weight: 400;
     color: #333333;
-    position: absolute;
-    top: 411.17px;
-    left: 985.33px;
+    position: relative;
+    top: -130px;
+    left: 900px;
 }
 
 #d1 {
@@ -630,15 +630,15 @@ body {
 }
 
 #Gia2 {
-    width: 93.42447662353516px;
+    width: 150px;
     height: 21.0px;
     font-family: Arial;
     font-size: 18.666668px;
     font-weight: 400;
     color: #333333;
-    position: absolute;
-    top: 411.17px;
-    left: 1173.63px;
+    position: relative;
+    top: -170px;
+    left: 1100px;
 }
 
 #d2 {
@@ -824,9 +824,8 @@ body {
 #N1 {
     width: 127.10841820577019px;
     height: 118.83766351314665px;
-    position: absolute;
-    top: 362.25px;
-    left: 212.8px;
+    position: relative;
+    
 }
 
 #N2 {
@@ -848,18 +847,18 @@ body {
 #T1 {
     width: 14.035324096679688px;
     height: 10.0px;
-    position: absolute;
-    top: 420px;
-    left: 877px;
+    position: relative;
+    top: -70px;
+    left: 610px;
     transform: rotate(270deg);
 }
 
 #T2 {
     width: 14.035324096679688px;
     height: 10.0px;
-    position: absolute;
-    top: 445px;
-    left: 877px;
+    position: relative;
+    top: -45px;
+    left: 592px;
     transform: rotate(90deg);
 }
 
@@ -902,9 +901,9 @@ body {
 #R1 {
     width: 23px;
     height: 19.610707028170964px;
-    position: absolute;
-    top: 423px;
-    left: 1359.85px;
+    position: relative;
+    top: -55px;
+    left: 1090px;
 }
 
 #R2 {
@@ -943,33 +942,9 @@ body {
     font-size: 18.666668px;
     font-weight: 400;
     color: #333333;
-    position: absolute;
-    top: 410px;
-    left: 850.9px;
-}
-
-#s2 {
-    width: 10.381510734558105px;
-    height: 21.0px;
-    font-family: Arial;
-    font-size: 18.666668px;
-    font-weight: 400;
-    color: #333333;
-    position: absolute;
-    top: 590px;
-    left: 850.9px;
-}
-
-#s3 {
-    width: 10.381510734558105px;
-    height: 21.0px;
-    font-family: Arial;
-    font-size: 18.666668px;
-    font-weight: 400;
-    color: #333333;
-    position: absolute;
-    top: 760px;
-    left: 850.9px;
+    position: relative;
+    top: -210px;
+    left: 720px;
 }
 
 
@@ -982,7 +957,7 @@ body {
     color: #333333;
     position: absolute;
     top: 527.16px;
-    left: 838.16px;
+    left: 700px;
 }
 
 #GiaTG1 {
@@ -1084,9 +1059,9 @@ body {
     height: 0.0px;
     opacity: 0.3;
     border-top: 2px solid #404040;
-    position: absolute;
-    top: 503px;
-    left: 212.8px;
+    position: relative;
+    top: -150px;
+    left: 62.45px;
 }
 
 #dk3 {
@@ -1140,4 +1115,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.LoadSP_GH {
+    list-style-type: none;
+    width: 1500px;
+    height: auto;
+    position: absolute;
+    left: 100px;
+    top: 430px;
+}
+
+.SanPham_GH {
+    float: left;
+    width: 1500px; /* bề rộng  */
+    height: 200px;
+    display: block;
+    
 }
