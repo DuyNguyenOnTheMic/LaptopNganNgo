@@ -214,6 +214,7 @@
 #T3 {
     width: 453.24609375000006px;
     height: 31.999999999999886px;
+    padding-left: 10px;
     font-family: Arial;
     font-size: 21.333334px;
     font-weight: 400;
@@ -544,10 +545,11 @@
 #W4 {
     width: 284.62582070215103px;
     height: 31.99999999999966px;
+    padding-left: 10px;
     font-family: Arial;
     font-size: 21.333334px;
     font-weight: 400;
-    color: gray;
+    color: #434343;
     background-color: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 0px;
@@ -595,10 +597,11 @@
 #W5 {
     width: 278.62582070215103px;
     height: 31.99999999999966px;
+    padding-left: 10px;
     font-family: Arial;
     font-size: 21.333334px;
     font-weight: 400;
-    color: gray;
+    color: #434343;
     background-color: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 0px;
@@ -732,9 +735,19 @@
     cursor: pointer;
 }
 
-#output {
+#file {
     position: absolute;
-    top: 1150px;
+    font-family: Arial;
+    font-size: 18px;
+    top: 1110px;
+    left: 320px;
+    z-index: +1;
+}
+
+#output {
+    border-style: dashed;
+    position: absolute;
+    top: 1080px;
     left: 176px;
     z-index: +1;
 }

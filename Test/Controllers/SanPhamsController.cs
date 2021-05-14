@@ -60,7 +60,7 @@ namespace Test.Controllers.Website_QuanTri
 
             if (extension.ToLower() == ".jpg" || extension.ToLower() == ".jpeg" || extension.ToLower() == ".png")
             {
-                if (file.ContentLength <= 1000000)
+                if (file.ContentLength <= 10000000)
                 {
                     db.SanPhams.Add(sanpham);
 
@@ -73,14 +73,13 @@ namespace Test.Controllers.Website_QuanTri
                 }
                 else
                 {
-                    ViewBag.msg = "File Size must be Equal or less than 1mb";
+                    ViewBag.msg = "File Size must be Equal or less than 10mb";
                 }
             }
             else
             {
                 ViewBag.msg = "Inavlid File Type";
             }
-            ViewBag.MaHangSP = new SelectList(db.HangSPs, "MaHang", "TenHang", sanpham.MaHangSP);
             return RedirectToAction("Index","SanPhams");
         }
 
@@ -118,7 +117,7 @@ namespace Test.Controllers.Website_QuanTri
 
                     if (extension.ToLower() == ".jpg" || extension.ToLower() == ".jpeg" || extension.ToLower() == ".png")
                     {
-                        if (file.ContentLength <= 1000000)
+                        if (file.ContentLength <= 10000000)
                         {
                             db.Entry(sanpham).State = EntityState.Modified;
                             string oldImgPath = Request.MapPath(Session["imgPath"].ToString());
@@ -136,7 +135,7 @@ namespace Test.Controllers.Website_QuanTri
                         }
                         else
                         {
-                            ViewBag.msg = "File Size must be Equal or less than 1mb";
+                            ViewBag.msg = "File Size must be Equal or less than 10mb";
                         }
                     }
                     else

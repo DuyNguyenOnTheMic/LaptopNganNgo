@@ -66,7 +66,7 @@
       <PropertyRef Name="MaSP" />
     </Key>
     <Property Name="MaSP" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="TenSP" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenSP" Type="nvarchar" MaxLength="200" Nullable="false" />
     <Property Name="DongSP" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="MaHangSP" Type="int" Nullable="false" />
     <Property Name="ThongTinChiTietSP" Type="nvarchar(max)" Nullable="false" />
