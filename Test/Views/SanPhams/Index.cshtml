@@ -43,35 +43,32 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.TenSP)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DongSP)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ThongTinChiTietSP)
-        </td>
-        @*<td>
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.TenSP)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.DongSP)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ThongTinChiTietSP)
+    </td>
+    @*<td>
             @Html.DisplayFor(modelItem => item.HinhAnhSP)
         </td>*@
     <td>
         @{
             if (item.HinhAnhSP != null)
             {
-                var base64 = Convert.ToBase64String(item.HinhAnhSP);
-                var imgsrc = string.Format("data:image/jpg;base64,{0}", base64);
-                <img src='@imgsrc'
-                     style="max-width:100px;max-height:100px" />
-            }
-            else
-            {
-                <img src="~/Images/image.png"
-                     style="max-width:100px;max-height:100px" />
-            }
+                <img src="@Url.Content(item.HinhAnhSP)" width="80" height="80" class="img-rounded" />
         }
-    </td>
+        else
+        {
+            <img src="~/Images/image.png"
+                 style="max-width:100px;max-height:100px" />
+        }
+        }
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.TrangThaiSP)
         </td>
@@ -88,9 +85,9 @@
             @Html.DisplayFor(modelItem => item.HangSP.TenHang)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.MaSP }) |
-            @Html.ActionLink("Details", "Details", new { id=item.MaSP }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.MaSP })
+            @Html.ActionLink("Edit", "Edit", new { id = item.MaSP }) |
+            @Html.ActionLink("Details", "Details", new { id = item.MaSP }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.MaSP })
         </td>
     </tr>
 }

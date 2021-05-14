@@ -81,8 +81,7 @@
     <Property Name="DongSP" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="MaHangSP" Type="Int32" Nullable="false" />
     <Property Name="ThongTinChiTietSP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="HinhAnhSP" Type="Binary" MaxLength="Max" FixedLength="false" />
-    <Property Name="URLHinhAnh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="HinhAnhSP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="TrangThaiSP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="SL" Type="Int32" Nullable="false" />
     <Property Name="DonGiaGoc" Type="Double" Nullable="false" />

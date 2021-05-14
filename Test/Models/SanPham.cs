@@ -26,8 +26,7 @@ namespace Test.Models
         public string DongSP { get; set; }
         public int MaHangSP { get; set; }
         public string ThongTinChiTietSP { get; set; }
-        public byte[] HinhAnhSP { get; set; }
-        public string URLHinhAnh { get; set; }
+        public string HinhAnhSP { get; set; }
         public string TrangThaiSP { get; set; }
         public int SL { get; set; }
         public double DonGiaGoc { get; set; }

@@ -75,7 +75,6 @@
           <ScalarProperty Name="MaHangSP" ColumnName="MaHangSP" />
           <ScalarProperty Name="ThongTinChiTietSP" ColumnName="ThongTinChiTietSP" />
           <ScalarProperty Name="HinhAnhSP" ColumnName="HinhAnhSP" />
-          <ScalarProperty Name="URLHinhAnh" ColumnName="URLHinhAnh" />
           <ScalarProperty Name="TrangThaiSP" ColumnName="TrangThaiSP" />
           <ScalarProperty Name="SL" ColumnName="SL" />
           <ScalarProperty Name="DonGiaGoc" ColumnName="DonGiaGoc" />

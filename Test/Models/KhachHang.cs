@@ -11,8 +11,7 @@ namespace Test.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class KhachHang
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -27,12 +26,8 @@ namespace Test.Models
         public string GioiTinh { get; set; }
         public string DienThoai { get; set; }
         public string DiaChi { get; set; }
-        [DataType(DataType.Date)]
-        public DateTime NgaySinh { get; set; }
-        [Required(ErrorMessage = "Email is required.")]
+        public Nullable<System.DateTime> NgaySinh { get; set; }
         public string Email { get; set; }
-        [Required(ErrorMessage = "Email is required.")]
-        [DataType(DataType.Password)]
         public string MatKhau { get; set; }
         public string VaiTro { get; set; }
     

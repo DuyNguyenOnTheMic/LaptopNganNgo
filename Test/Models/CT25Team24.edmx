@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="CT25Team24Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="CT25Team24Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="ChiTietGioHang">
           <Key>
             <PropertyRef Name="MaGH" />
@@ -75,8 +75,7 @@
           <Property Name="DongSP" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="MaHangSP" Type="int" Nullable="false" />
           <Property Name="ThongTinChiTietSP" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="HinhAnhSP" Type="varbinary(max)" />
-          <Property Name="URLHinhAnh" Type="nvarchar(max)" />
+          <Property Name="HinhAnhSP" Type="nvarchar(max)" />
           <Property Name="TrangThaiSP" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="SL" Type="int" Nullable="false" />
           <Property Name="DonGiaGoc" Type="float" Nullable="false" />
@@ -164,6 +163,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_SanPham_HangSP">
+          <End Role="HangSP" Type="Self.HangSP" Multiplicity="1" />
+          <End Role="SanPham" Type="Self.SanPham" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="HangSP">
+              <PropertyRef Name="MaHang" />
+            </Principal>
+            <Dependent Role="SanPham">
+              <PropertyRef Name="MaHangSP" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="CT25Team24ModelStoreContainer">
           <EntitySet Name="ChiTietGioHang" EntityType="Self.ChiTietGioHang" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CTDH" EntityType="Self.CTDH" Schema="dbo" store:Type="Tables" />
@@ -197,8 +208,13 @@
             <End Role="KhachHang" EntitySet="KhachHang" />
             <End Role="GioHang" EntitySet="GioHang" />
           </AssociationSet>
+          <AssociationSet Name="FK_SanPham_HangSP" Association="Self.FK_SanPham_HangSP">
+            <End Role="HangSP" EntitySet="HangSP" />
+            <End Role="SanPham" EntitySet="SanPham" />
+          </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="CT25Team24Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -283,8 +299,7 @@
           <Property Name="DongSP" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="MaHangSP" Type="Int32" Nullable="false" />
           <Property Name="ThongTinChiTietSP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="HinhAnhSP" Type="Binary" MaxLength="Max" FixedLength="false" />
-          <Property Name="URLHinhAnh" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="HinhAnhSP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="TrangThaiSP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="SL" Type="Int32" Nullable="false" />
           <Property Name="DonGiaGoc" Type="Double" Nullable="false" />
@@ -505,7 +520,6 @@
                 <ScalarProperty Name="MaHangSP" ColumnName="MaHangSP" />
                 <ScalarProperty Name="ThongTinChiTietSP" ColumnName="ThongTinChiTietSP" />
                 <ScalarProperty Name="HinhAnhSP" ColumnName="HinhAnhSP" />
-                <ScalarProperty Name="URLHinhAnh" ColumnName="URLHinhAnh" />
                 <ScalarProperty Name="TrangThaiSP" ColumnName="TrangThaiSP" />
                 <ScalarProperty Name="SL" ColumnName="SL" />
                 <ScalarProperty Name="DonGiaGoc" ColumnName="DonGiaGoc" />

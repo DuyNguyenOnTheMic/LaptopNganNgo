@@ -44,22 +44,44 @@ namespace Test.Controllers.Website_QuanTri
             return View();
         }
 
-        // POST: SanPhams/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MaSP,TenSP,DongSP,MaHangSP,ThongTinChiTietSP,HinhAnhSP,TrangThaiSP,SL,DonGiaGoc,DonGiaKM")] SanPham sanPham)
-        {
-            if (ModelState.IsValid)
-            {
-                db.SanPhams.Add(sanPham);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
 
-            ViewBag.MaHangSP = new SelectList(db.HangSPs, "MaHang", "TenHang", sanPham.MaHangSP);
-            return View(sanPham);
+        [HttpPost]
+        public ActionResult Create(HttpPostedFileBase file, SanPham sanpham)
+        {
+            string filename = Path.GetFileName(file.FileName);
+            string _filename = DateTime.Now.ToString("yymmssfff") + filename;
+
+            string extension = Path.GetExtension(file.FileName);
+
+            string path = Path.Combine(Server.MapPath("~/images/"), _filename);
+
+            sanpham.HinhAnhSP = "~/images/" + _filename;
+
+
+            if (extension.ToLower() == ".jpg" || extension.ToLower() == ".jpeg" || extension.ToLower() == ".png")
+            {
+                if (file.ContentLength <= 1000000)
+                {
+                    db.SanPhams.Add(sanpham);
+
+                    if (db.SaveChanges() > 0)
+                    {
+                        file.SaveAs(path);
+                        ViewBag.msg = "Employee Added";
+                        ModelState.Clear();
+                    }
+                }
+                else
+                {
+                    ViewBag.msg = "File Size must be Equal or less than 1mb";
+                }
+            }
+            else
+            {
+                ViewBag.msg = "Inavlid File Type";
+            }
+            ViewBag.MaHangSP = new SelectList(db.HangSPs, "MaHang", "TenHang", sanpham.MaHangSP);
+            return RedirectToAction("Index","SanPhams");
         }
 
         // GET: SanPhams/Edit/5
@@ -70,6 +92,7 @@ namespace Test.Controllers.Website_QuanTri
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             SanPham sanPham = db.SanPhams.Find(id);
+            Session["imgPath"] = sanPham.HinhAnhSP;
             if (sanPham == null)
             {
                 return HttpNotFound();
@@ -77,23 +100,63 @@ namespace Test.Controllers.Website_QuanTri
             ViewBag.MaHangSP = new SelectList(db.HangSPs, "MaHang", "TenHang", sanPham.MaHangSP);
             return View(sanPham);
         }
-
-        // POST: SanPhams/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "MaSP,TenSP,DongSP,MaHangSP,ThongTinChiTietSP,HinhAnhSP,TrangThaiSP,SL,DonGiaGoc,DonGiaKM")] SanPham sanPham)
+        public ActionResult Edit(HttpPostedFileBase file, SanPham sanpham)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(sanPham).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            ViewBag.MaHangSP = new SelectList(db.HangSPs, "MaHang", "TenHang", sanPham.MaHangSP);        
+                if (file != null)
+                {
+                    string filename = Path.GetFileName(file.FileName);
+                    string _filename = DateTime.Now.ToString("yymmssfff") + filename;
 
-            return View(sanPham);
+                    string extension = Path.GetExtension(file.FileName);
+
+                    string path = Path.Combine(Server.MapPath("~/images/"), _filename);
+
+                    sanpham.HinhAnhSP = "~/images/" + _filename;
+
+                    if (extension.ToLower() == ".jpg" || extension.ToLower() == ".jpeg" || extension.ToLower() == ".png")
+                    {
+                        if (file.ContentLength <= 1000000)
+                        {
+                            db.Entry(sanpham).State = EntityState.Modified;
+                            string oldImgPath = Request.MapPath(Session["imgPath"].ToString());
+
+                            if (db.SaveChanges() > 0)
+                            {
+                                file.SaveAs(path);
+                                if (System.IO.File.Exists(oldImgPath))
+                                {
+                                    System.IO.File.Delete(oldImgPath);
+                                }
+                                TempData["msg"] = "Data Updated";
+                                return RedirectToAction("Index");
+                            }
+                        }
+                        else
+                        {
+                            ViewBag.msg = "File Size must be Equal or less than 1mb";
+                        }
+                    }
+                    else
+                    {
+                        ViewBag.msg = "Inavlid File Type";
+                    }
+                }
+                else
+                {
+                    sanpham.HinhAnhSP = Session["imgPath"].ToString();
+                    db.Entry(sanpham).State = EntityState.Modified;
+                    if (db.SaveChanges() > 0)
+                    {
+                        TempData["msg"] = "Data Updated";
+                        return RedirectToAction("index");
+                    }
+
+                }
+            }
+            return View();
         }
 
         // GET: SanPhams/Delete/5
@@ -103,12 +166,26 @@ namespace Test.Controllers.Website_QuanTri
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            SanPham sanPham = db.SanPhams.Find(id);
-            if (sanPham == null)
+
+            var employee = db.SanPhams.Find(id);
+
+            if (employee == null)
             {
                 return HttpNotFound();
             }
-            return View(sanPham);
+            string currentImg = Request.MapPath(employee.HinhAnhSP);
+            db.Entry(employee).State = EntityState.Deleted;
+            if (db.SaveChanges() > 0)
+            {
+                if (System.IO.File.Exists(currentImg))
+                {
+                    System.IO.File.Delete(currentImg);
+                }
+                TempData["msg"] = "Data Deleted";
+                return RedirectToAction("Index");
+            }
+
+            return View();
         }
 
         // POST: SanPhams/Delete/5
@@ -129,34 +206,6 @@ namespace Test.Controllers.Website_QuanTri
                 db.Dispose();
             }
             base.Dispose(disposing);
-        }
-
-        public ActionResult AddImage()
-        {
-            SanPham sanpham = new SanPham();
-            return View(sanpham);
-        }
-
-        [HttpPost]
-        public ActionResult AddImage(SanPham model, HttpPostedFileBase image1)
-        {
-            var db = new CT25Team24Entities();
-            if (image1!=null)
-            {
-                model.HinhAnhSP = new byte[image1.ContentLength];
-                image1.InputStream.Read(model.HinhAnhSP, 0, image1.ContentLength);
-            }
-            db.SanPhams.Add(model);
-            db.SaveChanges();
-            return RedirectToAction("Index", "SanPhams");
-        }    
-
-        public ActionResult Index1()
-        {
-            CT25Team24Entities db = new CT25Team24Entities();
-            var item = (from d in db.SanPhams
-                        select d).ToList();
-            return View(item);
-        }
+        }   
     }
 }
