@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -90,7 +91,8 @@ namespace Test.Controllers.Website_QuanTri
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.MaHangSP = new SelectList(db.HangSPs, "MaHang", "TenHang", sanPham.MaHangSP);
+            ViewBag.MaHangSP = new SelectList(db.HangSPs, "MaHang", "TenHang", sanPham.MaHangSP);        
+
             return View(sanPham);
         }
 
@@ -147,7 +149,7 @@ namespace Test.Controllers.Website_QuanTri
             db.SanPhams.Add(model);
             db.SaveChanges();
             return RedirectToAction("Index", "SanPhams");
-        }
+        }    
 
         public ActionResult Index1()
         {
