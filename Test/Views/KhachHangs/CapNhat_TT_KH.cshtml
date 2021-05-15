@@ -84,7 +84,6 @@
                    @id = "NhapNgaysinh",
                    placeholder = "Nhập ngày sinh",
                    type = "text",
-                   @Value = Model.NgaySinh.ToString("dd-MM-yyyy")
                }
            })
                 @Html.ValidationMessageFor(model => model.NgaySinh, "", new { @class = "text-danger" })
