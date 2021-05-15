@@ -80,7 +80,7 @@ namespace Test.Controllers.Website_QuanTri
             {
                 ViewBag.msg = "Inavlid File Type";
             }
-            return RedirectToAction("Index","SanPhams");
+            return RedirectToAction("Index","QT_TrangChu");
         }
 
         // GET: SanPhams/Edit/5
@@ -150,7 +150,7 @@ namespace Test.Controllers.Website_QuanTri
                     if (db.SaveChanges() > 0)
                     {
                         TempData["msg"] = "Data Updated";
-                        return RedirectToAction("index");
+                        return RedirectToAction("Index", "QT_TrangChu");
                     }
 
                 }

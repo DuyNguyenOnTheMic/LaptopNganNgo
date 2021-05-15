@@ -36,7 +36,7 @@ namespace Test.Controllers.Website_BanHang
                     Session["Email"] = account.Email;
                     Session["MaKH"] = account.MaKH;
                     FormsAuthentication.SetAuthCookie(model.Email, false);
-                    return RedirectToAction("Index", "TrangChu");
+                    return RedirectToAction("Index", "SanPhams");
                 }
             }
             ModelState.AddModelError("", "Invalid email and password!!");
@@ -49,7 +49,7 @@ namespace Test.Controllers.Website_BanHang
             Session.Clear();
             FormsAuthentication.SignOut();
             Session.Abandon();
-            return RedirectToAction("Index", "TrangChu");
+            return RedirectToAction("Index", "SanPhams");
         }
     }
 }

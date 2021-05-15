@@ -2,90 +2,432 @@
 
 @{
     ViewBag.Title = "Details";
-    Layout = "~/Views/_QT_DangSP.cshtml";
+    Layout = "~/Views/_XemSP.cshtml";
 }
 
-<h2>Details</h2>
+@*<div>
+        <dl class="dl-horizontal">
 
-<div>
-    <h4>SanPham</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.TenSP)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.HinhAnhSP)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.TenSP)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.HinhAnhSP)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.DongSP)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.DongSP)
-        </dd>
+        </dl>
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ThongTinChiTietSP)
-        </dt>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.MaSP }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>*@
 
-        <dd>
-            @Html.DisplayFor(model => model.ThongTinChiTietSP)
-        </dd>
+<div id="header">
+    <div class="rectangle"></div>
+    <div class="circle"></div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.HinhAnhSP)
-        </dt>
+        <a href="https://localhost:44357/SanPhams/Index">
+            <p id="Tittle">LaptopNganNgo</p>
+            <img id="LetterL" width="70"
+                 src="~/Images/royal-alphabet-crown-letter-english-l-512.png" />
+        </a>
 
-        <dd>
-            @Html.DisplayFor(model => model.HinhAnhSP)
-        </dd>
+        <a href="">
+            <img id="User_icon" width="40"
+                 src="~/Images/User.png" />
+            <p id="Log_in">Đăng nhập</p>
+        </a>
+        <p id="text_1">hoặc Đăng ký</p>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TrangThaiSP)
-        </dt>
+        <div>
+            <input id="Search_textbox" type="text"
+                   placeholder="Tìm kiếm ở đây" />
+            <img src="~/Images/search.png"
+                 width="19"
+                 style="
+                 position: absolute;
+                 left: 445.37px;
+                 top: 139px;" />
+            <a href="https://localhost:44357/TimKiemSP/Index">
+                <button id="Search_button">Tìm</button>
+            </a>
+        </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.TrangThaiSP)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SL)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SL)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DonGiaGoc)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DonGiaGoc)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.DonGiaKM)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.DonGiaKM)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.HangSP.TenHang)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.HangSP.TenHang)
-        </dd>
-
-    </dl>
+        <div>
+            <img id="Cart_image" src="~/Images/shopping-cart.png" width="39" />
+            <p id="Cart_number">0</p>
+            <a href="">
+                <a href="https://localhost:44357/CTDHs">
+                    <p id="Cart_text">Giỏ hàng</p>
+                </a>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.MaSP }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+        <div class="dropdown">
+            <button class="dropbtn">Danh mục sản phẩm</button>
+            <div class="dropdown-content">
+                <a href="#">Laptop Gaming  &emsp;&emsp;></a>
+                <div id="Laptop_Gaming_Content">
+                    <p>
+                        <a href="#">Acer</a>
+                        <a href="#">Asus</a>
+                        <a href="#">MSI</a>
+                        <a href="#">Dell</a>
+                        <a href="#">HP</a>
+                        <a href="#">Lenovo</a>
+                    </p>
+                </div>
+                <a href="#">Laptop văn phòng  &emsp;></a>
+                <div id="Laptop_VP_Content">
+                    <p>
+                        <a href="#">Acer</a>
+                        <a href="#">Asus</a>
+                        <a href="#">MSI</a>
+                        <a href="#">Dell</a>
+                        <a href="#">HP</a>
+                        <a href="#">Lenovo</a>
+                    </p>
+                </div>
+                <a href="#">Laptop sinh viên&emsp;&emsp;></a>
+                <div id="Laptop_SV_Content">
+                    <p>
+                        <a href="#">Acer</a>
+                        <a href="#">Asus</a>
+                        <a href="#">MSI</a>
+                        <a href="#">Dell</a>
+                        <a href="#">HP</a>
+                        <a href="#">Lenovo</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Menu_Bar">
+            <a id="Ban_Hang" href="#">&emsp;Chính sách bán hàng</a>
+            <a id="Bao_Hanh" href="#">&emsp;Chính sách bảo hành</a>
+            <a id="Van_Chuyen" href="#">&emsp;Chính sách vận chuyển</a>
+            <a id="Khuyen_Mai" href="#">&emsp;Khuyến mãi</a>
+            <a id="Cham_Soc" href="https://localhost:44357/CSKH/Index">&emsp;C.S Khách hàng</a>
+
+            <img src="~/Images/policy.png"
+                 width="30"
+                 style="
+            position:absolute;
+            left:323px;
+            top:215px;" />
+
+            <img src="~/Images/wrench.png"
+                 width="30"
+                 style="
+            position:absolute;
+            left:560px;
+            top:215px;" />
+
+            <img src="~/Images/truck.png"
+                 width="30"
+                 style="
+            position:absolute;
+            left:800px;
+            top:215px;" />
+
+            <img src="~/Images/promotion.png"
+                 width="30"
+                 style="
+            position:absolute;
+            left:1095px;
+            top:215px;" />
+
+            <img src="~/Images/support.png"
+                 width="30"
+                 style="
+            position:absolute;
+            left:1320px;
+            top:215px;" />
+        </div>
+
+</div>
+
+<div class="Footer">
+
+    <div id="logo_footer">
+        <img src="~/Images/royal-alphabet-crown-letter-english-l-512.png "
+             width="70" />
+    </div>
+    <p id="text1_ft">Sản Phẩm  </p>
+    <p id="text2_ft">Tiếp Xúc </p>
+    <p id="text3_ft">Theo Dõi  </p>
+    <p id="text4_ft">Đăng Ký </p>
+
+    <pre id="text5_ft">Đặc Trưng
+Quảng cáo  
+Tải Xuống</pre>
+
+    <pre id="text6_ft">Liên hệ
+FAQ  
+Trợ Giúp</pre>
+
+    <input id="Email_textbox" type="text"
+           placeholder="Nhập Email của bạn" />
+    <img id="FB_ft" src="~/Images/FB.png "
+         width="30" />
+    <img id="IG_ft" src="~/Images/IG.png "
+         width="30" />
+
+</div>
+
+
+
+<div class="ThongTin">
+    <form action="@Url.Action("Create","CTDHs" )" method="post">
+        <input type="hidden" name="id" value="@Model.MaSP" />
+        <input type="hidden" name="sl" value="1" />
+        <input type="hidden" name="dongia" value="@Model.DonGiaKM" />
+        <p id="TenSP">@Model.TenSP</p>
+        <p id="GiaChuaGiam">
+            @Model.DonGiaGoc.ToString("N0")@("₫")
+        </p>
+        <p id="GiaSauGiam">
+            @Model.DonGiaKM.ToString("N0")@("₫")
+        </p>
+        <p id="TinhTrang">Tình trạng: <span style="color:green">@Model.TrangThaiSP</span></p>
+        <div class="KhuyenMai">
+            <div id="KM_square1"></div>
+            <div>
+                <input type="submit" id="KM_squar" value="THÊM VÀO GIỎ HÀNG" />
+            </div>
+            <div id="KM_square3">MUA NGAY</div>
+            <p id="KMvaQT">KHUYẾN MÃI VÀ QUÀ TẶNG:</p>
+            <pre id="test_KM">- Mua thêm Ram 8GB Bus 3200MHz chỉ 790.000đ.
+
+- Balo Predator SUV.
+
+- Bình nước Predator.
+
+- Chuột Gaming RGB VT200.
+
+- Túi chống sốc.
+
+- Hỗ trợ cân màu màn hình miễn phí 6 tháng/lần trong 2 năm.
+
+- Giảm giá 10% khi mua gaming gear.
+
+*Số lượng quà tặng có hạn</pre>
+
+        </div>
+    </form>
+
+    <p id="review">92 review(s)</p>
+
+    <img id="star1" src="~/Images/star.png" />
+    <img id="star2" src="~/Images/star.png" />
+    <img id="star3" src="~/Images/star.png" />
+    <img id="star4" src="~/Images/star.png" />
+    <img id="star5" src="~/Images/star.png" />
+</div>
+
+<div class="KhuyenMai">
+    <div id="KM_square1"></div>
+    <div id="KM_square2">THÊM VÀO GIỎ HÀNG</div>
+    <div id="KM_square3">MUA NGAY</div>
+    <p id="KMvaQT">KHUYẾN MÃI VÀ QUÀ TẶNG:</p>
+    <pre id="test_KM">- Mua thêm Ram 8GB Bus 3200MHz chỉ 790.000đ.
+
+- Balo Predator SUV.
+
+- Bình nước Predator.
+
+- Chuột Gaming RGB VT200.
+
+- Túi chống sốc.
+
+- Hỗ trợ cân màu màn hình miễn phí 6 tháng/lần trong 2 năm.
+
+- Giảm giá 10% khi mua gaming gear.
+
+*Số lượng quà tặng có hạn</pre>
+
+</div>
+
+<div class="HinhAnhSP">
+    <img id="pic0" src="~/Images/JP_Clipboard_Image.png" />
+    <img id="pic1" src="~/Images/JP_Clipboard_Image1.png" />
+    <img id="pic2" src="~/Images/JP_Clipboard_Image2.png" />
+    <img id="pic3" src="~/Images/JP_Clipboard_Image3.png" />
+    <img id="pic4" src="~/Images/JP_Clipboard_Image.png" />
+</div>
+
+<div class="UuDai">
+    <div id="UD_square1"></div>
+    <div id="UD_square2">ĐĂNG KÝ MUA TRẢ GÓP</div>
+    <p id="test_UD">Ưu đãi trả góp:</p>
+    <p id="test2_UD">ĐĂNG KÝ NGAY ĐỂ NHẬN TƯ VẤN TỪ CHUYÊN VIÊN</p>
+
+    <pre id="test3_UD">
+- Trả trước chỉ từ 10% giá trị máy.
+
+- Lãi suất thấp nhất thi trường.
+
+- Kì hạn 9-24 tháng.</pre>
+</div>
+
+<div class="ChiTietCauHinh">
+    <p id="CTCH_test1">CHI TIẾT CẤU HÌNH:</p>
+    <div id="CTCH_square">
+        <pre id="CTCH_test2">
+	CPU                          Intel Core i5 10300H
+
+	Hệ điều hành            Windows 10 SL 64 Bit
+
+	RAM                         DDR4 8GB (1 x 8GB) 3200MHz; 2 slots, up to 32GB
+
+	GPU                         Geforce GTX 1650 4GB
+
+	Màn hình                  15.6" FHD (1920×1080), IPS
+
+	Ổ cứng SSD             512GB SSD NVMe M.2 PCIe Gen 3 x 2
+
+	Ổ cứng HDD             1 slot HDD 2.5'
+
+	Ổ đĩa quang		  No ODD
+
+	Lan				  Gigabit Ethernet
+
+	Wireless Lan            Intel Wi-Fi 6 AX201(2*2 ax) + BT5
+
+	Các cổng kết nối     2x USB 2.0; 1x USB 3.0; 1x USB 3.1 Type C; 1x HDMI
+
+	Bàn phím		        Backlight Keyboard Multicolor
+
+	Pin				4 Cell , 48 Whr
+
+	Trọng lượng		2.45 kg</pre>
+    </div>
+
+</div>
+
+<div class="ChinhSach">
+    <div id="CS_square"></div>
+    <p id="test_CS">Chính sách bảo hành:</p>
+    <pre id="test2_CS">
+♦ Bảo hành chính hãng 12 tháng tại các TTBH
+  ACER trên toàn quốc.
+
+♦ Vệ sinh laptop miễn phí trong thời gian bảo hành.
+
+♦ Giảm giá 10% khi mua Gaming Gear.
+
+♦ Đổi mới trong 7 ngày nếu bị lỗi kĩ thuật.
+
+♦ Chính sách đảm bảo hài lòng. Chi tiết.
+
+♦ Linh kiện nâng cấp bảo hành theo tiêu chuẩn
+  nhà sản xuất.
+
+♦ Hỗ trợ cài đặt hệ điều hành và phần mềm</pre>
+</div>
+
+<div class="SPTT">
+    <div id="SPTT_square"></div>
+    <div id="SPTT_square1"></div>
+    <div id="SPTT_square2">Sản phẩm tương tự</div>
+
+    <img id="SPTT_pic0" src="~/Images/hihi.jpg" />
+    <img id="SPTT_pic1" src="~/Images/HAHA.jpg" />
+    <img id="SPTT_pic2" src="~/Images/HEHE.png" />
+    <img id="SPTT_pic3" src="~/Images/HUHU.png" />
+    <img id="SPTT_pic4" src="~/Images/HAHU.png" />
+</div>
+
+<div class="DanhGia">
+    <div id="DG_square"></div>
+    <div id="DG_square1"></div>
+    <div id="DG_square2"></div>
+
+    <div id="DG_square3">Đánh giá của khách hàng</div>
+    <div id="DG_square4">Bình luận</div>
+
+    <p id="NAM">5.0</p>
+    <img id="DG_star" src="~/Images/star.png" />
+    <img id="DG_star1" src="~/Images/star.png" />
+    <img id="DG_star2" src="~/Images/star.png" />
+    <img id="DG_star3" src="~/Images/star.png" />
+    <img id="DG_star4" src="~/Images/star.png" />
+    <img id="DG_star5" src="~/Images/star.png" />
+
+    <img id="DG_star6" src="~/Images/star.png" />
+    <img id="DG_star7" src="~/Images/star.png" />
+    <img id="DG_star8" src="~/Images/star.png" />
+    <img id="DG_star9" src="~/Images/star.png" />
+    <img id="DG_star10" src="~/Images/star.png" />
+
+    <img id="DG_star11" src="~/Images/star.png" />
+    <img id="DG_star12" src="~/Images/star.png" />
+    <img id="DG_star13" src="~/Images/star.png" />
+    <img id="DG_star14" src="~/Images/star.png" />
+    <img id="DG_star15" src="~/Images/star.png" />
+
+    <p id="DG_sosao">5 4 3 2 1</p>
+
+    <div id="DG_square_DG1"></div>
+    <div id="DG_square_DG2"></div>
+    <div id="DG_square_DG3"></div>
+    <div id="DG_square_DG4"></div>
+    <div id="DG_square_DG5"></div>
+
+    <p id="DG_testDG1">0 đánh giá</p>
+    <p id="DG_testDG2">0 đánh giá</p>
+    <p id="DG_testDG3">0 đánh giá</p>
+    <p id="DG_testDG4">0 đánh giá</p>
+    <p id="DG_testDG5">92 đánh giá</p>
+
+    <hr id="DG_line" />
+
+    <pre class="DG_cmt">
+Nguyễn Văn A     	<p id="DG_dm1">Đã mua hàng tại Laptopnganngo.com</p>
+						
+    <p id="DG_cmt1">Sản phẩm tốt. Giá cả hợp lý. Sẽ tiếp tục ủng hộ shop.</p>
+
+    <p id="DG_tl1">Thảo luận</p>	<p id="DG_hi1">♥ Hữu ích</p>
+Trần Thị B	 <p id="DG_dm2">Đã mua hàng tại Laptopnganngo.com</p>
+
+    <p id="DG_cmt2">Sản phẩm chất lượng. Nhân viên tư vấn nhiệt tình.</p>
+
+    <p id="DG_tl2">Thảo luận</p>	<p id="DG_hi2">♥ Hữu ích</p>
+</pre>
+    <div id="DG_square_AllDG">Xem tất cả đánh giá</div>
+
+    <div class="CMT">
+        <img id="DG_tich1" src="~/Images/tich.jpg" />
+        <img id="DG_tich2" src="~/Images/tich.jpg" />
+
+        <img id="BL_user" src="~/Images/user2.png" />
+        <p id="BL_account">My Account</p>
+        <p id="BL_dx">Đăng xuất</p>
+        <input id="comment_textbox" type="text"
+               placeholder="Nhập bình luận của bạn..." />
+
+        <div id="CMT_square_send">Gửi</div>
+
+    </div>
+    <hr id="DG_line2" />
+    <div id="CMT_circle1">C</div>
+    <div id="CMT_circle2">D</div>
+    <div id="CMT_circle3">E</div>
+
+    <pre id="CMT_Test">
+Đoàn Văn C		<p id="cmt_day1">--1/1/2020--</p>
+    <p id="CMT_cmt1">Khu vực Bình Dương có free ship không ạ ?</p>
+    <p id="CMT_reply1">Trả lời</p> 
+
+Lê Văn D			<p id="cmt_day2">--2/1/2020--</p>
+    <p id="CMT_cmt2">Khuyến mãi có áp dụng khi mua trực tiếp tại cửa hàng không ạ ? </p>
+    <p id="CMT_reply2">Trả lời</p>
+
+Nguyễn Thị E		<p id="cmt_day3">--3/1/2020--</p>
+    <p id="CMT_cmt3">Có kèm đầy đủ phụ kiện không ạ ?</p>
+    <p id="CMT_reply3">Trả lời</p></pre>
+
+    <div id="CMT_square_MoreCmt">Xem thêm bình luận</div>
+</div>

@@ -203,19 +203,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CTDHsController.cs" />
     <Compile Include="Controllers\HangSPsController.cs" />
     <Compile Include="Controllers\Website_BanHang\CSKHController.cs" />
     <Compile Include="Controllers\Website_BanHang\DangNhapController.cs" />
-    <Compile Include="Controllers\Website_BanHang\GioHangController.cs" />
     <Compile Include="Controllers\Website_BanHang\TimKiemSPController.cs" />
-    <Compile Include="Controllers\Website_BanHang\TrangChuController.cs" />
     <Compile Include="Controllers\Website_BanHang\TT_DangNhapController.cs" />
     <Compile Include="Controllers\Website_BanHang\TT_DatMuaController.cs" />
     <Compile Include="Controllers\Website_BanHang\TT_DiaChiController.cs" />
     <Compile Include="Controllers\Website_BanHang\TT_LoTrinhController.cs" />
     <Compile Include="Controllers\Website_BanHang\TT_SuaGioHangController.cs" />
     <Compile Include="Controllers\Website_BanHang\TT_ThanhCongController.cs" />
-    <Compile Include="Controllers\Website_BanHang\XemSPController.cs" />
     <Compile Include="Controllers\KhachHangsController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_DangKyController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_DangNhapController.cs" />
@@ -279,15 +277,12 @@
     </Content>
     <None Include="packages.config" />
     <Content Include="Views\_TrangChu.cshtml" />
-    <Content Include="Views\TrangChu\Index.cshtml" />
     <Content Include="Views\_CSKH.cshtml" />
     <Content Include="Views\CSKH\Index.cshtml" />
     <Content Include="Views\_DangNhap.cshtml" />
     <Content Include="Views\DangNhap\Index.cshtml" />
     <Content Include="Views\_XemSP.cshtml" />
-    <Content Include="Views\XemSP\Index.cshtml" />
     <Content Include="Views\_GioHang.cshtml" />
-    <Content Include="Views\GioHang\Index.cshtml" />
     <Content Include="Views\_TT_DangNhap.cshtml" />
     <Content Include="Views\TT_DangNhap\Index.cshtml" />
     <Content Include="Views\_TT_DangKy.cshtml" />
@@ -333,6 +328,11 @@
     <Content Include="Views\HangSPs\Delete.cshtml" />
     <Content Include="Views\HangSPs\Edit.cshtml" />
     <Content Include="Views\HangSPs\Index.cshtml" />
+    <Content Include="Views\CTDHs\Create.cshtml" />
+    <Content Include="Views\CTDHs\Delete.cshtml" />
+    <Content Include="Views\CTDHs\Details.cshtml" />
+    <Content Include="Views\CTDHs\Edit.cshtml" />
+    <Content Include="Views\CTDHs\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

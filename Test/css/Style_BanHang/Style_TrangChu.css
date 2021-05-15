@@ -67,7 +67,7 @@
     color: #000000;
     position: absolute;
     left: 1449.433px;
-    top:34px;
+    top: 34px;
 }
 
 #Search_textbox {
@@ -105,12 +105,12 @@
     border-radius: 0px;
     position: absolute;
     left: 932.37px;
-    top:125px;
+    top: 125px;
 }
 
-#Search_button:hover {
-    background-color: #444444;
-}
+    #Search_button:hover {
+        background-color: #444444;
+    }
 
 #Cart_image {
     width: 35.0px;
@@ -134,7 +134,7 @@
     position: absolute;
     left: 1455px;
     top: 105px;
-    border-radius: 50%;    
+    border-radius: 50%;
 }
 
 #Cart_text {
@@ -188,21 +188,21 @@
         display: block;
     }
 
-        .dropdown-content a:hover{
+        .dropdown-content a:hover {
             background-color: #f1f1f1;
         }
 
-        .dropdown-content a:hover + #Laptop_Gaming_Content{
-            display:block;
-        }
+            .dropdown-content a:hover + #Laptop_Gaming_Content {
+                display: block;
+            }
 
-         .dropdown-content a:hover + #Laptop_VP_Content{
-            display:block;
-        }
+            .dropdown-content a:hover + #Laptop_VP_Content {
+                display: block;
+            }
 
-         .dropdown-content a:hover + #Laptop_SV_Content{
-            display:block;
-        }
+            .dropdown-content a:hover + #Laptop_SV_Content {
+                display: block;
+            }
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -240,7 +240,7 @@
     }
 
     #Laptop_Gaming_Content:hover {
-        display:block;
+        display: block;
     }
 
 #Laptop_VP_Content {
@@ -283,13 +283,13 @@
     line-height: 1.6;
 }
 
-#Laptop_SV_Content a:hover {
-    background-color: #f1f1f1;
-}
+    #Laptop_SV_Content a:hover {
+        background-color: #f1f1f1;
+    }
 
-#Laptop_SV_Content:hover {
-    display: block;
-}
+    #Laptop_SV_Content:hover {
+        display: block;
+    }
 
 #Ban_Hang {
     text-decoration: none;
@@ -298,9 +298,9 @@
     font-family: Arial;
     font-size: 17.333334px;
     font-weight: 400;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #000000;
     background-color: #CBCBCB;
     border: 1px solid #0487D9;
@@ -309,9 +309,9 @@
     top: 204px;
 }
 
-#Ban_Hang:hover {
-    font-weight:bold;
-}
+    #Ban_Hang:hover {
+        font-weight: bold;
+    }
 
 #Bao_Hanh {
     text-decoration: none;
@@ -331,9 +331,9 @@
     top: 204px;
 }
 
-#Bao_Hanh:hover {
-    font-weight:bold;
-}
+    #Bao_Hanh:hover {
+        font-weight: bold;
+    }
 
 #Van_Chuyen {
     text-decoration: none;
@@ -353,9 +353,9 @@
     top: 204px;
 }
 
-#Van_Chuyen:hover {
-    font-weight: bold;
-}
+    #Van_Chuyen:hover {
+        font-weight: bold;
+    }
 
 #Khuyen_Mai {
     text-decoration: none;
@@ -375,9 +375,9 @@
     top: 204px;
 }
 
-#Khuyen_Mai:hover {
-    font-weight: bold;
-}
+    #Khuyen_Mai:hover {
+        font-weight: bold;
+    }
 
 #Cham_Soc {
     text-decoration: none;
@@ -397,9 +397,9 @@
     top: 204px;
 }
 
-#Cham_Soc:hover {
-    font-weight: bold;
-}
+    #Cham_Soc:hover {
+        font-weight: bold;
+    }
 
 #header {
     width: 100%;
@@ -434,9 +434,9 @@ body {
     top: 300px;
 }
 
-#Home_page_1:hover {
-    opacity: 0.5;
-}
+    #Home_page_1:hover {
+        opacity: 0.5;
+    }
 
 
 #Home_page_2 {
@@ -445,9 +445,9 @@ body {
     top: 901px;
 }
 
-#Home_page_2:hover {
-    opacity: 0.5;
-}
+    #Home_page_2:hover {
+        opacity: 0.5;
+    }
 
 #Home_page_3 {
     position: absolute;
@@ -455,9 +455,9 @@ body {
     top: 901px;
 }
 
-#Home_page_3:hover {
-    opacity: 0.5;
-}
+    #Home_page_3:hover {
+        opacity: 0.5;
+    }
 
 #Home_page_4 {
     position: absolute;
@@ -465,9 +465,9 @@ body {
     top: 901px;
 }
 
-#Home_page_4:hover {
-    opacity: 0.5;
-}
+    #Home_page_4:hover {
+        opacity: 0.5;
+    }
 
 
 #Home_page_5 {
@@ -476,15 +476,15 @@ body {
     top: 901px;
 }
 
-#Home_page_5:hover {
-    opacity: 0.5;
-}
+    #Home_page_5:hover {
+        opacity: 0.5;
+    }
 
 #Next_Image {
     position: absolute;
     left: 1440px;
-    top:526px;
-    filter:invert(1);
+    top: 526px;
+    filter: invert(1);
     cursor: pointer;
 }
 
@@ -530,295 +530,63 @@ body {
     top: 1209.49px;
 }
 
-#HotDeal1 {
-    width: 287.6119961179237px;
-    height: 313.76768575220353px;
-    position: absolute;
-    left: 99.86px;
-    top: 1357.99px;
-}
+
 
 #Star1_HotDeal1 {
     width: 16.899904572587218px;
     height: 17.65678619514688px;
-    position: absolute;
-    left: 106.97px;
-    top: 1706.04px;
 }
 
 #Star2_HotDeal1 {
     width: 16.89990457258719px;
     height: 17.65678619514688px;
-    position: absolute;
-    left: 133.27px;
-    top: 1706.04px;
+    position: relative;
+    left: 10px;
 }
 
 #Star3_HotDeal1 {
     width: 16.899904572587218px;
     height: 17.65678619514688px;
-    position: absolute;
-    left: 161.74px;
-    top: 1706.04px;
+    position: relative;
+    left: 20px;
 }
 
 #Star4_HotDeal1 {
     width: 16.899904572587218px;
     height: 17.65678619514688px;
-    position: absolute;
-    left: 191px;
-    top: 1706.04px;
+    position: relative;
+    left: 30px;
 }
 
 #Star5_HotDeal1 {
     width: 16.899904572587218px;
     height: 17.65678619514688px;
-    position: absolute;
-    left: 217.47px;
-    top: 1706.04px;
-}
-
-#HotDeal2 {
-    width: 287.6119961179237px;
-    height: 313.76768575220353px;
-    position: absolute;
-    left: 468.83px;
-    top: 1357.99px;
-}
-
-#Star1_HotDeal2 {
-    width: 16.899904572587218px;
-    height: 17.65678619514688px;
-    position: absolute;
-    left: 468.83px;
-    top: 1706.04px;
-}
-
-#Star2_HotDeal2 {
-    width: 16.899904572587218px;
-    height: 17.65678619514688px;
-    position: absolute;
-    left: 500.24px;
-    top: 1706.04px;
-}
-
-#Star3_HotDeal2 {
-    width: 16.899904572587218px;
-    height: 17.65678619514688px;
-    position: absolute;
-    left: 534.24px;
-    top: 1706.04px;
-}
-
-#Star4_HotDeal2 {
-    width: 16.899904572587218px;
-    height: 17.65678619514688px;
-    position: absolute;
-    left: 569.17px;
-    top: 1706.04px;
-}
-
-#Star5_HotDeal2 {
-    width: 16.899904572587218px;
-    height: 17.65678619514688px;
-    position: absolute;
-    left: 600.78px;
-    top: 1706.04px;
-}
-
-#HotDeal3 {
-    width: 287.6119961179237px;
-    height: 313.76768575220353px;
-    position: absolute;
-    left: 849.63px;
-    top: 1357.99px;
-}
-
-#Star1_HotDeal3 {
-    width: 16.899904572587218px;
-    height: 17.65678619514688px;
-    position: absolute;
-    left: 849.63px;
-    top: 1706.04px;
-}
-#Star2_HotDeal3 {
-    width: 16.899904572587218px;
-    height: 17.65678619514688px;
-    position: absolute;
-    left: 880.63px;
-    top: 1706.04px;
-}
-
-#Star3_HotDeal3 {
-    width: 16.899904572587218px;
-    height: 17.65678619514688px;
-    position: absolute;
-    left: 914.63px;
-    top: 1706.04px;
-}
-
-#Star4_HotDeal3 {
-    width: 16.899904572587218px;
-    height: 17.65678619514688px;
-    position: absolute;
-    left: 949.63px;
-    top: 1706.04px;
-}
-
-#Star5_HotDeal3 {
-    width: 16.899904572587218px;
-    height: 17.65678619514688px;
-    position: absolute;
-    left: 981.63px;
-    top: 1706.04px;
+    position: relative;
+    left: 40px;
 }
 
 
-#HotDeal4 {
-    width: 287.6119961179237px;
-    height: 313.76768575220353px;
-    position: absolute;
-    left: 1223.62px;
-    top: 1357.99px;
-}
-
-#Star1_HotDeal4 {
-    width: 16.899904572587218px;
-    height: 17.65678619514688px;
-    position: absolute;
-    left: 1230.73px;
-    top: 1706.04px;
-}
-
-#Star2_HotDeal4 {
-    width: 16.899904572587218px;
-    height: 17.65678619514688px;
-    position: absolute;
-    left: 1257.04px;
-    top: 1706.04px;
-}
-
-
-#Star3_HotDeal4 {
-    width: 16.899904572587218px;
-    height: 17.65678619514688px;
-    position: absolute;
-    left: 1285.51px;
-    top: 1706.04px;
-}
-
-
-#Star4_HotDeal4 {
-    width: 16.899904572587218px;
-    height: 17.65678619514688px;
-    position: absolute;
-    left: 1314.76px;
-    top: 1706.04px;
-}
-
-
-#Star5_HotDeal4 {
-    width: 16.899904572587218px;
-    height: 17.65678619514688px;
-    position: absolute;
-    left: 1341.23px;
-    top: 1706.04px;
-}
 
 #HotDeal1_Review {
     width: 130.69921875px;
     height: 27.0px;
     font-family: Arial;
     font-size: 20px;
-    font-weight: 400;
     color: #999999;
-    position: absolute;
-    left: 253.17px;
-    top: 1684px;
-}
-
-#HotDeal2_Review {
-    width: 130.69921875px;
-    height: 27.0px;
-    font-family: Arial;
-    font-size: 20px;
-    font-weight: 400;
-    color: #999999;
-    position: absolute;
-    left: 638.79px;
-    top: 1684px;
-}
-
-#HotDeal3_Review {
-    width: 144.046875px;
-    height: 27.0px;
-    font-family: Arial;
-    font-size: 20px;
-    font-weight: 400;
-    color: #999999;
-    position: absolute;
-    left: 1011.85px;
-    top: 1684px;
-}
-
-#HotDeal4_Review {
-    width: 130.69921875px;
-    height: 27.0px;
-    font-family: Arial;
-    font-size: 20px;
-    font-weight: 400;
-    color: #999999;
-    position: absolute;
-    left: 1376.93px;
-    top: 1684px;
+    position: relative;
+    left: 200px;
 }
 
 #HotDeal1_Text {
-    width: 237.1874542236328px;
+    width: 240px;
     height: 72.0px;
     font-family: Arial;
     font-size: 21.333334px;
     font-weight: 400;
     color: #333333;
-    position: absolute;
-    left: 120.5px;
-    top: 1730px;
-}
-
-#HotDeal2_Text {
-    width: 297.59375px;
-    height: 72.0px;
-    font-family: Arial;
-    font-size: 21.333334px;
-    font-weight: 400;
-    color: #333333;
-    position: absolute;
-    left: 471.5px;
-    top: 1730px;
-}
-
-#HotDeal3_Text {
-    width: 324.18756103515625px;
-    height: 72.0px;
-    font-family: Arial;
-    font-size: 21.333334px;
-    font-weight: 400;
-    color: #333333;
-    position: absolute;
-    left: 836.21px;
-    top: 1730px;
-}
-
-#HotDeal4_Text {
-    width: 272.69793701171875px;
-    height: 72.0px;
-    font-family: Arial;
-    font-size: 21.333334px;
-    font-weight: 400;
-    color: #333333;
-    position: absolute;
-    left: 1244.26px;
-    top: 1730px;
+    position: relative;
+    left: 70px;
+    top: -50px;
 }
 
 #HotDeal1_GiaChuaGiam {
@@ -830,9 +598,9 @@ body {
     text-decoration: line-through;
     color: #333333;
     background-color: #FFFFFF;
-    position: absolute;
-    left: 149.72px;
-    top: 1826.22px;
+    position: relative;
+    left: 120px;
+    top: -50px;
 }
 
 #HotDeal1_GiaDaGiam {
@@ -843,91 +611,11 @@ body {
     font-weight: 400;
     color: #FF0000;
     background-color: #FFFFFF;
-    position: absolute;
-    left: 149.72px;
-    top: 1859px;
+    position: relative;
+    left: 120px;
+    top: -90px;
 }
 
-#HotDeal2_GiaChuaGiam {
-    width: 147.14842224121094px;
-    height: 60.0px;
-    font-family: Arial;
-    font-size: 26.666668px;
-    font-weight: 400;
-    text-decoration: line-through;
-    color: #333333;
-    background-color: #FFFFFF;
-    position: absolute;
-    left: 536.05px;
-    top: 1826.22px;
-}
-
-#HotDeal2_GiaDaGiam {
-    width: 147.14842224121094px;
-    height: 60.0px;
-    font-family: Arial;
-    font-size: 26.666668px;
-    font-weight: 400;
-    color: #FF0000;
-    background-color: #FFFFFF;
-    position: absolute;
-    left: 536.05px;
-    top: 1859px;
-}
-
-#HotDeal3_GiaChuaGiam {
-    width: 147.14842224121094px;
-    height: 60.0px;
-    font-family: Arial;
-    font-size: 26.666668px;
-    font-weight: 400;
-    text-decoration: line-through;
-    color: #333333;
-    background-color: #FFFFFF;
-    position: absolute;
-    left: 919.86px;
-    top: 1826.22px;
-}
-
-#HotDeal3_GiaDaGiam {
-    width: 147.14842224121094px;
-    height: 60.0px;
-    font-family: Arial;
-    font-size: 26.666668px;
-    font-weight: 400;
-    color: #FF0000;
-    background-color: #FFFFFF;
-    position: absolute;
-    left: 919.86px;
-    top: 1859px;
-}
-
-#HotDeal4_GiaChuaGiam {
-    width: 147.14842224121094px;
-    height: 60.0px;
-    font-family: Arial;
-    font-size: 26.666668px;
-    font-weight: 400;
-    text-decoration: line-through;
-    color: #333333;
-    background-color: #FFFFFF;
-    position: absolute;
-    left: 1288.48px;
-    top: 1826.22px;
-}
-
-#HotDeal4_GiaDaGiam {
-    width: 147.14842224121094px;
-    height: 60.0px;
-    font-family: Arial;
-    font-size: 26.666668px;
-    font-weight: 400;
-    color: #FF0000;
-    background-color: #FFFFFF;
-    position: absolute;
-    left: 1288.48px;
-    top: 1859px;
-}
 
 #rectangle_HotDealLeft {
     width: 74.909472073752px;
@@ -944,10 +632,10 @@ body {
     top: 1343px;
 }
 
-#rectangle_HotDealLeft:hover {
-    opacity:0.5;
-    cursor:pointer;
-}
+    #rectangle_HotDealLeft:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
 
 #rectangle_HotDealRight {
     width: 74.90947207375211px;
@@ -964,11 +652,10 @@ body {
     top: 1343px;
 }
 
-#rectangle_HotDealRight:hover {
-    opacity: 0.5;
-    cursor:pointer;
-
-}
+    #rectangle_HotDealRight:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
 
 #text1_ft {
     width: 195.36803013185664px;
@@ -1072,16 +759,10 @@ body {
     left: 937px;
 }
 
-.HOT_DEAL {
-    position:absolute;
-    left: -18px;
-    top: 0px;
-}
-
 #Next_HotDeal {
     position: absolute;
     left: 15px;
-    top: 281.5px; 
+    top: 281.5px;
 }
 
 #Back_HotDeal {
@@ -1115,8 +796,40 @@ body {
         color: darkblue;
     }
 
+.LoadSP {
+    list-style-type: none;
+    width: 1500px;
+    height: auto;
+    position: absolute;
+    left: 99.86px;
+    top: 1357.99px;
+}
 
+.HOT_DEAL {
+    float: left;
+    width: 500px; /* bề rộng  */
+    display: block;
+    text-align: center;
+}
 
+#HotDeal1 {
+    width: 288px;
+    height: 314px;
+}
 
+.Footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Height of the footer */
+}
 
+.Star {
+    position: relative;
+    left: -150px;
+    top: -45px;
+}
 
+.link {
+    text-decoration: none;
+}
