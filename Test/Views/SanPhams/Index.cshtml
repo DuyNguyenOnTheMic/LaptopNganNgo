@@ -192,36 +192,38 @@
         @foreach (var item in Model)
         {
             <div class="HOT_DEAL">
-                @Html.ActionLink("Details", "Details", new { id = item.MaSP })
-                    @{
-                        if (item.HinhAnhSP != null)
-                        {
-                            <img src="@Url.Content(item.HinhAnhSP)" width="80" height="80" class="img-rounded" />
-                        }
-                        else
-                        {
-                            <img src="~/Images/image.png"
-                                 style="max-width:288px;max-height:314px" />
-                        }
+                @{
+                    if (item.HinhAnhSP != null)
+                    {
+                        <a href="https://localhost:44357/SanPhams/Details/@item.MaSP">
+                            <img src="@Url.Content(item.HinhAnhSP)" width="288px" height="303px" class="img-rounded" />
+                        </a>
                     }
-                    <p id="HotDeal1_Review">92 review(s)</p>
-                    <div class="Star">
-                        <img id="Star1_HotDeal1"
-                             src="~/Images/star.png" />
-                        <img id="Star2_HotDeal1"
-                             src="~/Images/star.png" />
-                        <img id="Star3_HotDeal1"
-                             src="~/Images/star.png" />
-                        <img id="Star4_HotDeal1"
-                             src="~/Images/star.png" />
-                        <img id="Star5_HotDeal1"
-                             src="~/Images/star.png" />
-                    </div>
-                    <p id="HotDeal1_Text">
-                        @item.TenSP
-                    </p>
-                    <p id="HotDeal1_GiaChuaGiam">@item.DonGiaGoc@("₫")</p>
-                    <p id="HotDeal1_GiaDaGiam">@item.DonGiaKM@("₫")</p>
+                    else
+                    {
+                        <img src="~/Images/image.png"
+                             style="max-width:288px;max-height:314px" />
+                    }
+                }
+                <p id="HotDeal1_Review">92 review(s)</p>
+                <div class="Star">
+                    <img id="Star1_HotDeal1"
+                         src="~/Images/star.png" />
+                    <img id="Star2_HotDeal1"
+                         src="~/Images/star.png" />
+                    <img id="Star3_HotDeal1"
+                         src="~/Images/star.png" />
+                    <img id="Star4_HotDeal1"
+                         src="~/Images/star.png" />
+                    <img id="Star5_HotDeal1"
+                         src="~/Images/star.png" />
+                </div>
+                <p id="HotDeal1_Text">
+                    @Html.ActionLink(@item.TenSP, "Details", new { id = item.MaSP }, new { style = "text-decoration:none; color:black;" })
+                </p>
+
+                <p id="HotDeal1_GiaChuaGiam">@item.DonGiaGoc@("₫")</p>
+                <p id="HotDeal1_GiaDaGiam">@item.DonGiaKM@("₫")</p>
             </div>
         }
     </div>

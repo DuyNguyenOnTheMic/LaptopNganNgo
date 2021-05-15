@@ -580,9 +580,9 @@ body {
 
 #HotDeal1_Text {
     width: 240px;
-    height: 72.0px;
+    height: 75px;
     font-family: Arial;
-    font-size: 21.333334px;
+    font-size: 18px;
     font-weight: 400;
     color: #333333;
     position: relative;
@@ -594,27 +594,27 @@ body {
     width: 147.14842224121094px;
     height: 60.0px;
     font-family: Arial;
-    font-size: 26.666668px;
+    font-size: 24px;
     font-weight: 400;
     text-decoration: line-through;
     color: #333333;
     background-color: #FFFFFF;
     position: relative;
     left: 120px;
-    top: -50px;
+    
 }
 
 #HotDeal1_GiaDaGiam {
     width: 147.14842224121094px;
     height: 60.0px;
     font-family: Arial;
-    font-size: 26.666668px;
+    font-size: 24px;
     font-weight: 400;
     color: #FF0000;
     background-color: #FFFFFF;
     position: relative;
     left: 120px;
-    top: -90px;
+    top: -50px;
 }
 
 
@@ -833,4 +833,9 @@ body {
 
 .link {
     text-decoration: none;
+}
+.img-rounded {
+    position: relative;
+    left: -65px;
+   
 }

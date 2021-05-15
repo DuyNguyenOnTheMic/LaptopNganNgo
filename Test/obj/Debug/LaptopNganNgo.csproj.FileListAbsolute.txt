@@ -598,3 +598,30 @@ C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\obj\Debug\LaptopNganNgo.csproj.Core
 C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\obj\Debug\LaptopNganNgo.csproj.CopyComplete
 C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\obj\Debug\Test.dll
 C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\obj\Debug\Test.pdb
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\Test.dll.config
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\Test.dll
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\Test.pdb
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\EntityFramework.dll
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\EntityFramework.SqlServer.dll
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\Microsoft.Web.Infrastructure.dll
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\System.Web.Helpers.dll
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\System.Web.Mvc.dll
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\System.Web.Razor.dll
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\System.Web.Webpages.Deployment.dll
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\System.Web.Webpages.dll
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\System.Web.Webpages.Razor.dll
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\EntityFramework.xml
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\EntityFramework.SqlServer.xml
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\System.Web.Razor.xml
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\System.Web.Webpages.xml
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\System.Web.Webpages.Deployment.xml
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\System.Web.Webpages.Razor.xml
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\System.Web.Helpers.xml
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\System.Web.Mvc.xml
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\obj\Debug\LaptopNganNgo.csprojAssemblyReference.cache
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\obj\Debug\LaptopNganNgo.csproj.CoreCompileInputs.cache
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\obj\Debug\LaptopNganNgo.csproj.CopyComplete
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\obj\Debug\Test.dll
+D:\LaptopNganNgo\New folder\LaptopNganNgo\Test\obj\Debug\Test.pdb
