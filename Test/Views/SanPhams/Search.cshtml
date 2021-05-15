@@ -1,7 +1,16 @@
-﻿@{
-    ViewBag.Title = "Tìm kiếm sản phẩm";
+﻿@model IEnumerable<Test.Models.SanPham>
+
+@{
+    ViewBag.Title = "Search";
     Layout = "~/Views/_TimKiemSP.cshtml";
 }
+
+
+@*@Html.ActionLink("Edit", "Edit", new { id = item.MaSP }) |
+@Html.ActionLink("Details", "Details", new { id = item.MaSP }) |
+@Html.ActionLink("Delete", "Delete", new { id = item.MaSP })*@
+
+
 <div id="header">
     <div class="rectangle"></div>
     <div class="circle"></div>
@@ -43,7 +52,7 @@
                  position: absolute;
                  left: 445.37px;
                  top: 139px;" />
-        <a href="https://localhost:44357/TimKiemSP/Index">
+        <a href="https://localhost:44357/SanPhams/Search">
             <button id="Search_button">Tìm</button>
         </a>
     </div>
@@ -139,137 +148,98 @@
     </div>
 
 </div>
+  
+@*<div>
+    <img id="Previous" src="~/Images/back_TimKiemSP.png" />
+    <p id="Page1">1 </p>
+    <p id="Page2">2 </p>
+    <p id="Page3">3 </p>
+    <p id="Page4">4 </p>
+    <p id="Page5">5 </p>
+    <p id="Page6">6 </p>
+    <img id="Next" src="~/Images/next_TimKiemSP.png" />
+</div>*@
 
-<a href="https://localhost:44357/XemSP/Index">
-    <div class="TimKiemSP">
-        <img id="ImgProduct1"
-             src="~/Images/HotDeal1.png" />
-        <img id="Start1_Pro_1"
-             src="~/Images/star.png" />
-        <img id="Start2_Pro_1"
-             src="~/Images/star.png" />
-        <img id="Start3_Pro_1"
-             src="~/Images/star.png" />
-        <img id="Start4_Pro_1"
-             src="~/Images/star.png" />
-        <img id="Start5_Pro_1"
-             src="~/Images/star.png" />
-
-        <img id="ImgProduct2"
-             src="~/Images/HotDeal2.png" />
-        <img id="Start1_Pro_2"
-             src="~/Images/star.png" />
-        <img id="Start2_Pro_2"
-             src="~/Images/star.png" />
-        <img id="Start3_Pro_2"
-             src="~/Images/star.png" />
-        <img id="Start4_Pro_2"
-             src="~/Images/star.png" />
-        <img id="Start5_Pro_2"
-             src="~/Images/star.png" />
-
-        <img id="ImgProduct3"
-             src="~/Images/HotDeal3.png" />
-        <img id="Start1_Pro_3"
-             src="~/Images/star.png" />
-        <img id="Start2_Pro_3"
-             src="~/Images/star.png" />
-        <img id="Start3_Pro_3"
-             src="~/Images/star.png" />
-        <img id="Start4_Pro_3"
-             src="~/Images/star.png" />
-        <img id="Start5_Pro_3"
-             src="~/Images/star.png" />
-
-        <p id="Review1">92 review(s) </p>
-        <p id="Review2">67 review(s) </p>
-        <p id="Review3">167 review(s) </p>
-
+<div class="LoadSP">
+    @foreach (var item in Model)
+    {
+    <div class="DS_TimKiem">
+        @{
+            if (item.HinhAnhSP != null)
+            {
+                <a href="https://localhost:44357/SanPhams/Details/@item.MaSP">
+                    <img src="@Url.Content(item.HinhAnhSP)" class="img-rounded" id="ImgProduct1" />
+                </a>
+            }
+            else
+            {
+                <img src="~/Images/image.png"
+                     style="max-width:288px;max-height:314px" />
+            }
+        }
+        <p id="Review1">92 review(s)</p>
+        <div class="Star">
+            <img id="Start1_Pro_1"
+                 src="~/Images/star.png" />
+            <img id="Start1_Pro_1"
+                 src="~/Images/star.png" />
+            <img id="Start1_Pro_1"
+                 src="~/Images/star.png" />
+            <img id="Start1_Pro_1"
+                 src="~/Images/star.png" />
+            <img id="Start1_Pro_1"
+                 src="~/Images/star.png" />
+        </div>
         <p id="Product1_text">
-            Laptop Acer Nitro 5 2020    <br />
-            AN515-55-5923 Geforce       <br />
-            GTX 1650Ti 4GB Intel...     <br />
+            @Html.ActionLink(@item.TenSP, "Details", new { id = item.MaSP }, new { style = "text-decoration:none; color:black;" })
         </p>
-
-        <p id="Product2_text">
-            LAPTOP GAMING MSI GF75      <br />
-            THIN 10SCXR 248VN GEFOR     <br />
-            GTX1650 4GB INTEL CORE I7   <br />
-        </p>
-
-        <p id="Product3_text">
-            Laptop Gaming Asus TUF A15      <br />
-            FA506IH-AL018T GTX 1650 4GB     <br />
-            Ryzen 5-4600H 8GB 512GB 15.6″   <br />
-        </p>
-
-        <p id="Price_new1">
-            <del> 23.990.000đ </del>
-        </p>
-        <p id="Price_old1">14.490.000đ </p>
-
-        <p id="Price_new2">
-            <del> 26.990.000đ </del>
-        </p>
-        <p id="Price_old2">15.490.000đ </p>
-
-        <p id="Price_new3">
-            <del> 20.990.000đ </del>
-        </p>
-        <p id="Price_old3">12.490.000đ </p>
-
-        <img id="Previous" src="~/Images/back_TimKiemSP.png" />
-        <p id="Page1">1 </p>
-        <p id="Page2">2 </p>
-        <p id="Page3">3 </p>
-        <p id="Page4">4 </p>
-        <p id="Page5">5 </p>
-        <p id="Page6">6 </p>
-        <img id="Next" src="~/Images/next_TimKiemSP.png" />
+        <p id="Price_new1">@item.DonGiaGoc@("₫")</p>
+        <p id="Price_old1">@item.DonGiaKM@("₫")</p>
     </div>
-</a>
+    }
+</div>
 
 <div class="CheckBox_TimKiemSP">
-<form>
-    <input type="checkbox"
-           style="
+    <form>
+        <input type="checkbox"
+               style="
                       width: 22.0px;
                       height: 22.0px;
                       position:absolute;
                       left:40px;
                       top:280px;" />
 
-    <input type="checkbox"
-           style="
+        <input type="checkbox"
+               style="
                       width: 22.0px;
                       height: 22.0px;
                       position:absolute;
                       left:40px;
                       top:320px;" />
 
-    <input type="checkbox"
-           style="
+        <input type="checkbox"
+               style="
                       width: 22.0px;
                       height: 22.0px;
                       position:absolute;
                       left:40px;
                       top:360px;" />
 
-    <input type="checkbox"
-           style="
+        <input type="checkbox"
+               style="
                       width: 22.0px;
                       height: 22.0px;
                       position:absolute;
                       left:40px;
                       top:400px;" />
-</form>
-<p id="Price1">Dưới 10 triệu </p>
-<p id="Price2">Từ 10 triệu - 15 triệu </p>
-<p id="Price3">Từ 15 triệu - 20 triệu </p>
-<p id="Price4">Trên 20 triệu </p>
+    </form>
+    <p id="Price1">Dưới 10 triệu </p>
+    <p id="Price2">Từ 10 triệu - 15 triệu </p>
+    <p id="Price3">Từ 15 triệu - 20 triệu </p>
+    <p id="Price4">Trên 20 triệu </p>
 </div>
 
-<div class="Footer">
+@*<div class="Footer">
 
     <div id="logo_footer">
         <img src="~/Images/royal-alphabet-crown-letter-english-l-512.png "
@@ -295,5 +265,4 @@ Trợ Giúp</pre>
     <img id="IG_ft" src="~/Images/IG.png "
          width="30" />
 
-</div>
-
+</div>*@

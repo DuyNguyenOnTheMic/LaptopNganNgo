@@ -207,7 +207,6 @@
     <Compile Include="Controllers\HangSPsController.cs" />
     <Compile Include="Controllers\Website_BanHang\CSKHController.cs" />
     <Compile Include="Controllers\Website_BanHang\DangNhapController.cs" />
-    <Compile Include="Controllers\Website_BanHang\TimKiemSPController.cs" />
     <Compile Include="Controllers\Website_BanHang\TT_DangNhapController.cs" />
     <Compile Include="Controllers\Website_BanHang\TT_DatMuaController.cs" />
     <Compile Include="Controllers\Website_BanHang\TT_DiaChiController.cs" />
@@ -304,7 +303,6 @@
     <Content Include="Views\_QT_XemCTDH.cshtml" />
     <Content Include="Views\QT_XemCTDH\Index.cshtml" />
     <Content Include="Views\_TimKiemSP.cshtml" />
-    <Content Include="Views\TimKiemSP\Index.cshtml" />
     <Content Include="Views\_TT_SuaGioHang.cshtml" />
     <Content Include="Views\TT_SuaGioHang\Index.cshtml" />
     <Content Include="Views\_QT_XemCTTrangChu.cshtml" />
@@ -333,6 +331,7 @@
     <Content Include="Views\CTDHs\Details.cshtml" />
     <Content Include="Views\CTDHs\Edit.cshtml" />
     <Content Include="Views\CTDHs\Index.cshtml" />
+    <Content Include="Views\SanPhams\Search.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

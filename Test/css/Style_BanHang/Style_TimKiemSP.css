@@ -109,6 +109,7 @@
 }
 
     #Search_button:hover {
+        cursor: pointer;
         background-color: #444444;
     }
 
@@ -527,31 +528,15 @@ body {
 #ImgProduct1{
 width: 283.0580959134119px;
 height: 303.5170789858498px;
-position:absolute;
+position:relative;
 left:270px;
-top:280px;
-}
-
-#ImgProduct2{
-width: 283.0580959134119px;
-height: 303.5170789858498px;
-position:absolute;
-left:690px;
-top:280px;
-}
-
-#ImgProduct3{
-width: 283.0580959134119px;
-height: 303.5170789858498px;
-position:absolute;
-left:1130px;
-top:280px;
+top:240px;
 }
 
 #Start1_Pro_1{
 width: 16.632320188319113px;
 height: 17.07994931785595px;
-position:absolute;
+position:relative;
 left:280px;
 top:600px;
 }
@@ -559,7 +544,7 @@ top:600px;
 #Start2_Pro_1{
 width: 16.632320188319113px;
 height: 17.07994931785595px;
-position:absolute;
+position:relative;
 left:320px;
 top:600px;
 }
@@ -567,7 +552,7 @@ top:600px;
 #Start3_Pro_1{
 width: 16.632320188319113px;
 height: 17.07994931785595px;
-position:absolute;
+position:relative;
 left:360px;
 top:600px;
 }
@@ -575,7 +560,7 @@ top:600px;
 #Start4_Pro_1{
 width: 16.632320188319113px;
 height: 17.07994931785595px;
-position:absolute;
+position:relative;
 left:400px;
 top:600px;
 }
@@ -583,88 +568,8 @@ top:600px;
 #Start5_Pro_1{
 width: 16.632320188319113px;
 height: 17.07994931785595px;
-position:absolute;
+position:relative;
 left:440px;
-top:600px;
-}
-
-#Start1_Pro_2{
-width: 16.632320188319113px;
-height: 17.07994931785595px;
-position:absolute;
-left:700px;
-top:600px;
-}
-
-#Start2_Pro_2{
-width: 16.632320188319113px;
-height: 17.07994931785595px;
-position:absolute;
-left:740px;
-top:600px;
-}
-
-#Start3_Pro_2{
-width: 16.632320188319113px;
-height: 17.07994931785595px;
-position:absolute;
-left:780px;
-top:600px;
-}
-
-#Start4_Pro_2{
-width: 16.632320188319113px;
-height: 17.07994931785595px;
-position:absolute;
-left:820px;
-top:600px;
-}
-
-#Start5_Pro_2{
-width: 16.632320188319113px;
-height: 17.07994931785595px;
-position:absolute;
-left:860px;
-top:600px;
-}
-
-#Start1_Pro_3{
-width: 16.632320188319113px;
-height: 17.07994931785595px;
-position:absolute;
-left:1140px;
-top:600px;
-}
-
-#Start2_Pro_3{
-width: 16.632320188319113px;
-height: 17.07994931785595px;
-position:absolute;
-left:1180px;
-top:600px;
-}
-
-#Start3_Pro_3{
-width: 16.632320188319113px;
-height: 17.07994931785595px;
-position:absolute;
-left:1220px;
-top:600px;
-}
-
-#Start4_Pro_3{
-width: 16.632320188319113px;
-height: 17.07994931785595px;
-position:absolute;
-left:1260px;
-top:600px;
-}
-
-#Start5_Pro_3{
-width: 16.632320188319113px;
-height: 17.07994931785595px;
-position:absolute;
-left:1300px;
 top:600px;
 }
 
@@ -672,36 +577,12 @@ top:600px;
 width: 130.69921875px;
 height: 27.0px;
 font-family: Arial;
-font-size: 24.0px;
+font-size: 18.0px;
 font-weight: 400;
 color: #999999;
-position:absolute;
-left:480px;
-top:573px;
-}
-
-#Review2{
-width: 130.69921875px;
-height: 27.0px;
-font-family: Arial;
-font-size: 24.0px;
-font-weight: 400;
-color: #999999;
-position:absolute;
-left:900px;
-top:573px;
-}
-
-#Review3{
-width: 144.046875px;
-height: 27.0px;
-font-family: Arial;
-font-size: 24.0px;
-font-weight: 400;
-color: #999999;
-position:absolute;
-left:1340px;
-top:573px;
+position:relative;
+left:490px;
+top:225px;
 }
 
 
@@ -709,36 +590,13 @@ top:573px;
 width: 266.8359375px;
 height: 108.0px;
 font-family: Arial;
-font-size: 24.0px;
+font-size: 20.0px;
 font-weight: 400;
+text-align: left;
 color: #333333;
-position:absolute;
-left: 280px;
-top:620px;
-}
-
-#Product2_text{
-width: 334.79296875px;
-height: 108.0px;
-font-family: Arial;
-font-size: 24.0px;
-font-weight: 400;
-color: #333333;
-position:absolute;
-left: 700px;
-top:620px;
-}
-
-#Product3_text{
-width: 364.7109375px;
-height: 81.0px;
-font-family: Arial;
-font-size: 24.0px;
-font-weight: 400;
-color: #333333;
-position:absolute;
-left: 1140px;
-top:620px;
+position:relative;
+left: 360px;
+top:170px;
 }
 
 #Price_new1{
@@ -750,9 +608,9 @@ font-weight: 400;
 text-decoration: line-through;
 color: #333333;
 background-color: #FFFFFF;
-position:absolute;
-left: 330px;
-top:720px;
+position:relative;
+left: 380px;
+top:170px;
 }
 
 #Price_old1{
@@ -763,63 +621,9 @@ font-size: 26.666668px;
 font-weight: 400;
 color: #FF0000;
 background-color: #FFFFFF;
-position:absolute;
-left: 330px;
-top:750px;
-}
-
-#Price_new2{
-width: 147.14842224121094px;
-height: 90.0px;
-font-family: Arial;
-font-size: 26.666668px;
-font-weight: 400;
-text-decoration: line-through;
-color: #333333;
-background-color: #FFFFFF;
-position:absolute;
-left: 780px;
-top:720px;
-}
-
-#Price_old2{
-width: 147.14842224121094px;
-height: 90.0px;
-font-family: Arial;
-font-size: 26.666668px;
-font-weight: 400;
-color: #FF0000;
-background-color: #FFFFFF;
-position:absolute;
-left: 780px;
-top:750px;
-}
-
-#Price_new3{
-width: 147.14842224121094px;
-height: 90.0px;
-font-family: Arial;
-font-size: 26.666668px;
-font-weight: 400;
-text-decoration: line-through;
-color: #333333;
-background-color: #FFFFFF;
-position:absolute;
-left: 1230px;
-top:720px;
-}
-
-#Price_old3{
-width: 147.14842224121094px;
-height: 90.0px;
-font-family: Arial;
-font-size: 26.666668px;
-font-weight: 400;
-color: #FF0000;
-background-color: #FFFFFF;
-position:absolute;
-left: 1230px;
-top:750px;
+position:relative;
+left: 380px;
+top:90px;
 }
 
 #Previous{
@@ -999,5 +803,20 @@ top:-1100px;
     #Button_LogOut:hover {
         color: darkblue;
     }
+
+.DS_TimKiem {
+    float: left;
+    width: 400px; /* bề rộng  */
+    height: 600px;
+    display: block;
+    text-align: center;
+}
+
+.Star {
+    position: relative;
+    left: -60px;
+    top: -420px;
+}
+
 
 

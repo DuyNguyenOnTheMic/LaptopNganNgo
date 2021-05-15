@@ -22,6 +22,12 @@ namespace Test.Controllers.Website_QuanTri
             return View(sanPhams.ToList());
         }
 
+        public ActionResult Search()
+        {
+            var sanPhams = db.SanPhams.Include(s => s.HangSP);
+            return View(sanPhams.ToList());
+        }
+
         // GET: SanPhams/Details/5
         public ActionResult Details(int? id)
         {
