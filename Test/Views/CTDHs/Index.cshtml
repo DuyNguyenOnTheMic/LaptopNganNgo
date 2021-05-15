@@ -193,7 +193,9 @@ Trợ Giúp</pre>
             <img id="T1" src="~/Images/ArrowIcon.png" />
             <img id="T2" src="~/Images/ArrowIcon.png" />
             <img id="R1" src="~/Images/trash.png " />
-            <p id="pic1"> @item.SanPham.TenSP</p>
+            <p id="pic1">
+            <a style="text-decoration: none; color:black;" href="@Url.Action("Details", "SanPhams",new { id = item.SanPham.MaSP })"> @item.SanPham.TenSP</a>
+                </p>
             <p id="Gia1">@item.DonGia.ToString("N0") @("đ")</p>
             <p id="Gia2">@((item.DonGia*item.SL).ToString("N0")) @("đ")</p>
             <p id="s1">@item.SL</p>

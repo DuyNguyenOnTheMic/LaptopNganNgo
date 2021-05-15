@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -33,7 +34,23 @@ namespace Test.Controllers
         // GET: CTDHs
         public ActionResult Index()
         {
-
+            var hashtable = new Hashtable();
+            foreach (var item in ShoppingCart)
+            {
+                if (hashtable[item.SanPham.MaSP] != null)
+                {
+                    (hashtable[item.SanPham.MaSP] as CTDH).SL += item.SL;
+                }
+                else
+                {
+                    hashtable[item.SanPham.MaSP] = item;
+                }
+            }
+            ShoppingCart.Clear();
+            foreach (CTDH cthd in hashtable.Values)
+            {
+                ShoppingCart.Add(cthd);
+            }
             return View(ShoppingCart);
         }
 
