@@ -409,8 +409,9 @@
 
 body {
     width: 1579px;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 #logo_footer {
@@ -580,27 +581,35 @@ body {
 
 #HotDeal1_Text {
     width: 240px;
-    height: 72.0px;
+    height: 80px;
     font-family: Arial;
-    font-size: 21.333334px;
+    font-size: 20px;
     font-weight: 400;
     color: #333333;
     position: relative;
-    left: 70px;
+    left: 40px;
     top: -50px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-height: 20px;
+    max-height: 80px;
 }
 
 #HotDeal1_GiaChuaGiam {
     width: 147.14842224121094px;
     height: 60.0px;
     font-family: Arial;
-    font-size: 26.666668px;
+    font-size: 24px;
     font-weight: 400;
     text-decoration: line-through;
     color: #333333;
     background-color: #FFFFFF;
     position: relative;
-    left: 120px;
+    left: 80px;
     top: -50px;
 }
 
@@ -608,12 +617,12 @@ body {
     width: 147.14842224121094px;
     height: 60.0px;
     font-family: Arial;
-    font-size: 26.666668px;
+    font-size: 24px;
     font-weight: 400;
     color: #FF0000;
     background-color: #FFFFFF;
     position: relative;
-    left: 120px;
+    left: 80px;
     top: -90px;
 }
 
@@ -799,7 +808,7 @@ body {
 
 .LoadSP {
     list-style-type: none;
-    width: 1500px;
+    width: 1479px;
     height: auto;
     position: absolute;
     left: 99.86px;
@@ -808,7 +817,8 @@ body {
 
 .HOT_DEAL {
     float: left;
-    width: 500px; /* bề rộng  */
+    width: 460px; /* bề rộng  */
+    height: 600px;
     display: block;
     text-align: center;
 }
@@ -820,10 +830,11 @@ body {
 
 .Footer {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px; /* Height of the footer */
+    bottom: -150px;
+    /* Height of the footer*/
+    height: 60px;
 }
+
 
 .Star {
     position: relative;
@@ -833,4 +844,9 @@ body {
 
 .link {
     text-decoration: none;
+}
+
+.img-rounded {
+    position: relative;
+    left: -65px;
 }

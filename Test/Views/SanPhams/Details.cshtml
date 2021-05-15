@@ -29,123 +29,123 @@
     <div class="rectangle"></div>
     <div class="circle"></div>
 
-        <a href="https://localhost:44357/SanPhams/Index">
-            <p id="Tittle">LaptopNganNgo</p>
-            <img id="LetterL" width="70"
-                 src="~/Images/royal-alphabet-crown-letter-english-l-512.png" />
-        </a>
+    <a href="https://localhost:44357/SanPhams/Index">
+        <p id="Tittle">LaptopNganNgo</p>
+        <img id="LetterL" width="70"
+             src="~/Images/royal-alphabet-crown-letter-english-l-512.png" />
+    </a>
 
-        <a href="">
-            <img id="User_icon" width="40"
-                 src="~/Images/User.png" />
-            <p id="Log_in">Đăng nhập</p>
-        </a>
-        <p id="text_1">hoặc Đăng ký</p>
+    <a href="">
+        <img id="User_icon" width="40"
+             src="~/Images/User.png" />
+        <p id="Log_in">Đăng nhập</p>
+    </a>
+    <p id="text_1">hoặc Đăng ký</p>
 
-        <div>
-            <input id="Search_textbox" type="text"
-                   placeholder="Tìm kiếm ở đây" />
-            <img src="~/Images/search.png"
-                 width="19"
-                 style="
+    <form action="@Url.Action("Search","SanPhams")" method="get">
+        <input id="Search_textbox" type="text"
+               placeholder="Tìm kiếm ở đây" name="keyword" />
+        <img src="~/Images/search.png"
+             width="19"
+             style="
                  position: absolute;
                  left: 445.37px;
                  top: 139px;" />
-            <a href="https://localhost:44357/SanPhams/Search">
-                <button id="Search_button">Tìm</button>
+        <a href="https://localhost:44357/SanPhams/Search">
+            <button id="Search_button" type="submit">Tìm</button>
+        </a>
+    </form>
+
+    <div>
+        <img id="Cart_image" src="~/Images/shopping-cart.png" width="39" />
+        <p id="Cart_number">0</p>
+        <a href="">
+            <a href="https://localhost:44357/CTDHs">
+                <p id="Cart_text">Giỏ hàng</p>
             </a>
-        </div>
+    </div>
 
-        <div>
-            <img id="Cart_image" src="~/Images/shopping-cart.png" width="39" />
-            <p id="Cart_number">0</p>
-            <a href="">
-                <a href="https://localhost:44357/CTDHs">
-                    <p id="Cart_text">Giỏ hàng</p>
-                </a>
-</div>
-
-        <div class="dropdown">
-            <button class="dropbtn">Danh mục sản phẩm</button>
-            <div class="dropdown-content">
-                <a href="#">Laptop Gaming  &emsp;&emsp;></a>
-                <div id="Laptop_Gaming_Content">
-                    <p>
-                        <a href="#">Acer</a>
-                        <a href="#">Asus</a>
-                        <a href="#">MSI</a>
-                        <a href="#">Dell</a>
-                        <a href="#">HP</a>
-                        <a href="#">Lenovo</a>
-                    </p>
-                </div>
-                <a href="#">Laptop văn phòng  &emsp;></a>
-                <div id="Laptop_VP_Content">
-                    <p>
-                        <a href="#">Acer</a>
-                        <a href="#">Asus</a>
-                        <a href="#">MSI</a>
-                        <a href="#">Dell</a>
-                        <a href="#">HP</a>
-                        <a href="#">Lenovo</a>
-                    </p>
-                </div>
-                <a href="#">Laptop sinh viên&emsp;&emsp;></a>
-                <div id="Laptop_SV_Content">
-                    <p>
-                        <a href="#">Acer</a>
-                        <a href="#">Asus</a>
-                        <a href="#">MSI</a>
-                        <a href="#">Dell</a>
-                        <a href="#">HP</a>
-                        <a href="#">Lenovo</a>
-                    </p>
-                </div>
+    <div class="dropdown">
+        <button class="dropbtn">Danh mục sản phẩm</button>
+        <div class="dropdown-content">
+            <a href="#">Laptop Gaming  &emsp;&emsp;></a>
+            <div id="Laptop_Gaming_Content">
+                <p>
+                    <a href="#">Acer</a>
+                    <a href="#">Asus</a>
+                    <a href="#">MSI</a>
+                    <a href="#">Dell</a>
+                    <a href="#">HP</a>
+                    <a href="#">Lenovo</a>
+                </p>
+            </div>
+            <a href="#">Laptop văn phòng  &emsp;></a>
+            <div id="Laptop_VP_Content">
+                <p>
+                    <a href="#">Acer</a>
+                    <a href="#">Asus</a>
+                    <a href="#">MSI</a>
+                    <a href="#">Dell</a>
+                    <a href="#">HP</a>
+                    <a href="#">Lenovo</a>
+                </p>
+            </div>
+            <a href="#">Laptop sinh viên&emsp;&emsp;></a>
+            <div id="Laptop_SV_Content">
+                <p>
+                    <a href="#">Acer</a>
+                    <a href="#">Asus</a>
+                    <a href="#">MSI</a>
+                    <a href="#">Dell</a>
+                    <a href="#">HP</a>
+                    <a href="#">Lenovo</a>
+                </p>
             </div>
         </div>
+    </div>
 
-        <div class="Menu_Bar">
-            <a id="Ban_Hang" href="#">&emsp;Chính sách bán hàng</a>
-            <a id="Bao_Hanh" href="#">&emsp;Chính sách bảo hành</a>
-            <a id="Van_Chuyen" href="#">&emsp;Chính sách vận chuyển</a>
-            <a id="Khuyen_Mai" href="#">&emsp;Khuyến mãi</a>
-            <a id="Cham_Soc" href="https://localhost:44357/CSKH/Index">&emsp;C.S Khách hàng</a>
+    <div class="Menu_Bar">
+        <a id="Ban_Hang" href="#">&emsp;Chính sách bán hàng</a>
+        <a id="Bao_Hanh" href="#">&emsp;Chính sách bảo hành</a>
+        <a id="Van_Chuyen" href="#">&emsp;Chính sách vận chuyển</a>
+        <a id="Khuyen_Mai" href="#">&emsp;Khuyến mãi</a>
+        <a id="Cham_Soc" href="https://localhost:44357/CSKH/Index">&emsp;C.S Khách hàng</a>
 
-            <img src="~/Images/policy.png"
-                 width="30"
-                 style="
+        <img src="~/Images/policy.png"
+             width="30"
+             style="
             position:absolute;
             left:323px;
             top:215px;" />
 
-            <img src="~/Images/wrench.png"
-                 width="30"
-                 style="
+        <img src="~/Images/wrench.png"
+             width="30"
+             style="
             position:absolute;
             left:560px;
             top:215px;" />
 
-            <img src="~/Images/truck.png"
-                 width="30"
-                 style="
+        <img src="~/Images/truck.png"
+             width="30"
+             style="
             position:absolute;
             left:800px;
             top:215px;" />
 
-            <img src="~/Images/promotion.png"
-                 width="30"
-                 style="
+        <img src="~/Images/promotion.png"
+             width="30"
+             style="
             position:absolute;
             left:1095px;
             top:215px;" />
 
-            <img src="~/Images/support.png"
-                 width="30"
-                 style="
+        <img src="~/Images/support.png"
+             width="30"
+             style="
             position:absolute;
             left:1320px;
             top:215px;" />
-        </div>
+    </div>
 
 </div>
 
@@ -195,7 +195,7 @@ Trợ Giúp</pre>
         <div class="KhuyenMai">
             <div id="KM_square1"></div>
             <div>
-                <input type="submit" id="KM_squar" value="THÊM VÀO GIỎ HÀNG" />
+                <input type="submit" id="KM_square2" value="THÊM VÀO GIỎ HÀNG" />
             </div>
             <div id="KM_square3">MUA NGAY</div>
             <p id="KMvaQT">KHUYẾN MÃI VÀ QUÀ TẶNG:</p>
@@ -229,7 +229,6 @@ Trợ Giúp</pre>
 
 <div class="KhuyenMai">
     <div id="KM_square1"></div>
-    <div id="KM_square2">THÊM VÀO GIỎ HÀNG</div>
     <div id="KM_square3">MUA NGAY</div>
     <p id="KMvaQT">KHUYẾN MÃI VÀ QUÀ TẶNG:</p>
     <pre id="test_KM">- Mua thêm Ram 8GB Bus 3200MHz chỉ 790.000đ.
@@ -251,11 +250,7 @@ Trợ Giúp</pre>
 </div>
 
 <div class="HinhAnhSP">
-    <img id="pic0" src="~/Images/JP_Clipboard_Image.png" />
-    <img id="pic1" src="~/Images/JP_Clipboard_Image1.png" />
-    <img id="pic2" src="~/Images/JP_Clipboard_Image2.png" />
-    <img id="pic3" src="~/Images/JP_Clipboard_Image3.png" />
-    <img id="pic4" src="~/Images/JP_Clipboard_Image.png" />
+    <img id="pic0" src="@Url.Content(Model.HinhAnhSP)" />
 </div>
 
 <div class="UuDai">
@@ -275,34 +270,10 @@ Trợ Giúp</pre>
 <div class="ChiTietCauHinh">
     <p id="CTCH_test1">CHI TIẾT CẤU HÌNH:</p>
     <div id="CTCH_square">
+        
         <pre id="CTCH_test2">
-	CPU                          Intel Core i5 10300H
-
-	Hệ điều hành            Windows 10 SL 64 Bit
-
-	RAM                         DDR4 8GB (1 x 8GB) 3200MHz; 2 slots, up to 32GB
-
-	GPU                         Geforce GTX 1650 4GB
-
-	Màn hình                  15.6" FHD (1920×1080), IPS
-
-	Ổ cứng SSD             512GB SSD NVMe M.2 PCIe Gen 3 x 2
-
-	Ổ cứng HDD             1 slot HDD 2.5'
-
-	Ổ đĩa quang		  No ODD
-
-	Lan				  Gigabit Ethernet
-
-	Wireless Lan            Intel Wi-Fi 6 AX201(2*2 ax) + BT5
-
-	Các cổng kết nối     2x USB 2.0; 1x USB 3.0; 1x USB 3.1 Type C; 1x HDMI
-
-	Bàn phím		        Backlight Keyboard Multicolor
-
-	Pin				4 Cell , 48 Whr
-
-	Trọng lượng		2.45 kg</pre>
+@Model.ThongTinChiTietSP.TrimStart()
+	</pre>
     </div>
 
 </div>

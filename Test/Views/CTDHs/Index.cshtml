@@ -41,19 +41,19 @@
         <p id="text_1">hoặc Đăng ký</p>
     }
 
-<div>
-    <input id="Search_textbox" type="text"
-           placeholder="Tìm kiếm ở đây" />
-    <img src="~/Images/search.png"
-         width="19"
-         style="
+    <form action="@Url.Action("Search","SanPhams")" method="get">
+        <input id="Search_textbox" type="text"
+               placeholder="Tìm kiếm ở đây" name="keyword" />
+        <img src="~/Images/search.png"
+             width="19"
+             style="
                  position: absolute;
                  left: 445.37px;
                  top: 139px;" />
-    <a href="https://localhost:44357/SanPhams/Search">
-        <button id="Search_button">Tìm</button>
-    </a>
-</div>
+        <a href="https://localhost:44357/SanPhams/Search">
+            <button id="Search_button" type="submit">Tìm</button>
+        </a>
+    </form>
 
     <div>
         <img id="Cart_image" src="~/Images/shopping-cart.png" width="39" />
@@ -188,19 +188,21 @@ Trợ Giúp</pre>
 
     @foreach (var item in Model)
     {
-        <div class="SanPham_GH">
-            <img src="@Url.Content(item.SanPham.HinhAnhSP)" width="80" height="80" id="N1" />
-            <img id="T1" src="~/Images/ArrowIcon.png" />
-            <img id="T2" src="~/Images/ArrowIcon.png" />
-            <img id="R1" src="~/Images/trash.png " />
-            <p id="pic1"> @item.SanPham.TenSP</p>
-            <p id="Gia1">@item.DonGia.ToString("N0") @("đ")</p>
-            <p id="Gia2">@((item.DonGia*item.SL).ToString("N0")) @("đ")</p>
-            <p id="s1">@item.SL</p>
-            <hr id="dk2" width="1200px" />
+    <div class="SanPham_GH">
+        <img src="@Url.Content(item.SanPham.HinhAnhSP)" width="80" height="80" id="N1" />
+        <img id="T1" src="~/Images/ArrowIcon.png" />
+        <img id="T2" src="~/Images/ArrowIcon.png" />
+        <img id="R1" src="~/Images/trash.png " />
+        <p id="pic1">
+            <a style="text-decoration: none; color:black;" href="@Url.Action("Details", "SanPhams",new { id = item.SanPham.MaSP })"> @item.SanPham.TenSP</a>
+        </p>
+        <p id="Gia1">@item.DonGia.ToString("N0") @("đ")</p>
+        <p id="Gia2">@((item.DonGia*item.SL).ToString("N0")) @("đ")</p>
+        <p id="s1">@item.SL</p>
+        <hr id="dk2" width="1200px" />
 
 
-        </div>
+    </div>
     }
 </div>
 

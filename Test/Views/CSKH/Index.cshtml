@@ -38,19 +38,19 @@
         <p id="text_1">hoặc Đăng ký</p>
     }
 
-<div>
-    <input id="Search_textbox" type="text"
-           placeholder="Tìm kiếm ở đây" />
-    <img src="~/Images/search.png"
-         width="19"
-         style="
+    <form action="@Url.Action("Search","SanPhams")" method="get">
+        <input id="Search_textbox" type="text"
+               placeholder="Tìm kiếm ở đây" name="keyword" />
+        <img src="~/Images/search.png"
+             width="19"
+             style="
                  position: absolute;
                  left: 445.37px;
                  top: 139px;" />
-    <a href="https://localhost:44357/SanPhams/Search">
-        <button id="Search_button">Tìm</button>
-    </a>
-</div>
+        <a href="https://localhost:44357/SanPhams/Search">
+            <button id="Search_button" type="submit">Tìm</button>
+        </a>
+    </form>
 
     <div>
         <img id="Cart_image" src="~/Images/shopping-cart.png" width="39" />

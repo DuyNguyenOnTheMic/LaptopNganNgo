@@ -43,19 +43,19 @@
         <p id="text_1">hoặc Đăng ký</p>
     }
 
-    <div>
-        <input id="Search_textbox" type="text"
-               placeholder="Tìm kiếm ở đây" />
-        <img src="~/Images/search.png"
-             width="19"
-             style="
+<form action="@Url.Action("Search","SanPhams")" method="get">
+    <input id="Search_textbox" type="text"
+           placeholder="Tìm kiếm ở đây" name="keyword" />
+    <img src="~/Images/search.png"
+         width="19"
+         style="
                  position: absolute;
                  left: 445.37px;
                  top: 139px;" />
-        <a href="https://localhost:44357/SanPhams/Search">
-            <button id="Search_button">Tìm</button>
-        </a>
-    </div>
+    <a href="https://localhost:44357/SanPhams/Search">
+        <button id="Search_button" type="submit">Tìm</button>
+    </a>
+</form>
 
     <div>
         <img id="Cart_image" src="~/Images/shopping-cart.png" width="39" />
@@ -179,15 +179,15 @@
         }
         <p id="Review1">92 review(s)</p>
         <div class="Star">
-            <img id="Start1_Pro_1"
+            <img id="Star_Product"
                  src="~/Images/star.png" />
-            <img id="Start1_Pro_1"
+            <img id="Star_Product"
                  src="~/Images/star.png" />
-            <img id="Start1_Pro_1"
+            <img id="Star_Product"
                  src="~/Images/star.png" />
-            <img id="Start1_Pro_1"
+            <img id="Star_Product"
                  src="~/Images/star.png" />
-            <img id="Start1_Pro_1"
+            <img id="Star_Product"
                  src="~/Images/star.png" />
         </div>
         <p id="Product1_text">
@@ -200,39 +200,50 @@
 </div>
 
 <div class="CheckBox_TimKiemSP">
-    <form>
-        <input type="checkbox"
-               style="
+
+
+    @if (ViewBag.keyword != "")
+    {
+        <p id="Search_Result">Bạn đã tìm kiếm: <b>@ViewBag.keyword</b></p>
+    }
+    else
+    {
+        <p id="Search_Result"><b>Tất cả sản phẩm</b></p>
+
+    }
+
+
+    <input type="checkbox"
+           style="
                       width: 22.0px;
                       height: 22.0px;
                       position:absolute;
                       left:40px;
                       top:280px;" />
 
-        <input type="checkbox"
-               style="
+    <input type="checkbox"
+           style="
                       width: 22.0px;
                       height: 22.0px;
                       position:absolute;
                       left:40px;
                       top:320px;" />
 
-        <input type="checkbox"
-               style="
+    <input type="checkbox"
+           style="
                       width: 22.0px;
                       height: 22.0px;
                       position:absolute;
                       left:40px;
                       top:360px;" />
 
-        <input type="checkbox"
-               style="
+    <input type="checkbox"
+           style="
                       width: 22.0px;
                       height: 22.0px;
                       position:absolute;
                       left:40px;
                       top:400px;" />
-    </form>
     <p id="Price1">Dưới 10 triệu </p>
     <p id="Price2">Từ 10 triệu - 15 triệu </p>
     <p id="Price3">Từ 15 triệu - 20 triệu </p>
