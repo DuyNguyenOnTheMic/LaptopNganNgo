@@ -533,7 +533,8 @@ body {
     color: #FF0000;
     position: absolute;
     left: 98px;
-    top: 270px;
+    top: 300px;
+
 }
 
 #GiaChuaGiam {
@@ -705,44 +706,11 @@ body {
 /*---------------HÌNH ẢNH SẢN PHẢM----------------------------------------*/
 #pic0 {
     width: 566.0px;
-    height: 566.0px;
+    height: 600.0px;
     border: 1px solid #000000;
     position: absolute;
     left: 96px;
-    top: 347px;
-}
-#pic1 {
-    width: 128.0px;
-    height: 163.0px;
-    border: 1px solid #000000;
-    position: absolute;
-    left: 88.5px;
-    top: 928px;
-}
-
-#pic2 {
-    width: 127.99999999999989px;
-    height: 162.9999999999999px;
-    border: 1px solid #000000;
-    position: absolute;
-    left: 242.11px;
-    top: 928px;
-}
-#pic3 {
-    width: 128.0px;
-    height: 163.0px;
-    border: 1px solid #000000;
-    position: absolute;
-    left: 388.63px;
-    top: 928px;
-}
-#pic4 {
-    width: 128.0px;
-    height: 163.0px;
-    border: 1px solid #000000;
-    position: absolute;
-    left: 536px;
-    top: 928px;
+    top: 450px;
 }
 
 /*---------------------------ƯU ĐÃI-------------------------------------*/
