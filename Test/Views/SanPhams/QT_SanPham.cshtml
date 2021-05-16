@@ -1,0 +1,123 @@
+﻿@model PagedList.IPagedList<Test.Models.SanPham>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Quản trị - Sản phẩm";
+    Layout = "~/Views/_QT_TrangChu.cshtml";
+}
+
+<p id="Header_TenSP">Tên sản phẩm</p>
+<p id="Header_TenHang">Tên hãng</p>
+<p id="Header_DongSP">Dòng sản phẩm</p>
+<p id="Header_TrangThai">Trạng thái sản phẩm</p>
+<p id="Header_SL">Số lượng</p>
+
+<div class="LoadSP_QuanTri">
+    @foreach (var item in Model)
+    {
+        <div class="SP_QuanTri">
+            <div id="HinhAnhSP">
+                @if (item.HinhAnhSP != null)
+                {
+                    <a href="~/SanPhams/Edit/@item.MaSP">
+                        <img src="@Url.Content(item.HinhAnhSP)" width="90" height="90" />
+                    </a>
+                }
+                else
+                {
+                    <img src="~/Images/image.png"
+                         style="max-width:50px;max-height:50px" />
+                }
+            </div>
+            <p id="TenSP">@Html.ActionLink(item.TenSP, "Edit", new { id = item.MaSP }, new { @class = "myActionlink" })</p>
+            <p id="TenHangSP">@Html.DisplayFor(modelItem => item.HangSP.TenHang)</p>
+            <p id="DongSP">@Html.DisplayFor(modelItem => item.DongSP)</p>
+            <p id="TrangThaiSP">@Html.DisplayFor(modelItem => item.TrangThaiSP)</p>
+            <p id="SL">@Html.DisplayFor(modelItem => item.SL)</p>
+            <hr id="dk2" width="1345px" />
+        </div>
+    }
+</div>
+
+
+
+<div class="Header">
+    <img src="~/Images/user_QT.png"
+         id="User_icon"
+         width="45" />
+    <a href="~/SanPhams/QT_SanPham">
+        <img id="Logo_Header"
+             src="~/Images/bird.png"
+             width="99" />
+        <p id="Text_Header">LaptopNganNgo</p>
+    </a>
+
+    <a href="~/SanPhams/QT_SanPham">
+        <p id="Product_SanPham">Sản phẩm</p>
+    </a>
+    <a href="~/QT_DonHang/Index">
+        <p id="Product_DonHang">Đơn hàng</p>
+    </a>
+    <p id="Product_KhachHang">Khách hàng</p>
+    <p id="Product_DoanhThu">Doanh thu</p>
+    <p id="Product_TaiKhoan">Tài khoản</p>
+
+    <span id="rectangle"></span>
+
+</div>
+<div>
+    @if (Session["HoTen"] != null)
+    {
+        <p id="Hello_Text">@Session["HoTen"].ToString()</p>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+    else if (Session["Email"] != null && Session["HoTen"] == null)
+    {
+        <p id="Hello_Text">Chào bạn,</p>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+
+</div>
+
+@*<div class="Footer">
+        <p id="Footer_Text">
+            2021
+            <br />Powered by Squad Ngáo Ngơ
+        </p>
+    </div>*@
+
+<form action="@Url.Action("QT_SanPham","SanPhams")" method="get">
+    <input id="search_bar" type="text"
+           placeholder="Tìm kiếm" name="keyword" />         
+    <input type="image"
+           src="~/Images/search.png"
+           width="19"
+           id="seach_icon"
+           alt="Submit"/>
+</form>
+
+@*<div class="Filter_bar">
+        <div id="Filter">
+            Từ trước tới nay
+        </div>
+        <img id="Arrow_icon_up"
+             width="13"
+             src="~/Images/next.png" />
+        <img id="Arrow_icon_down"
+             width="13"
+             src="~/Images/next.png" />
+    </div>*@
+
+<a id="Dang_SP" href="@Url.Action("Create", "SanPhams")">
+    Tạo sản phẩm
+</a>
+
+
+<br />
+<div class="pagination">
+    <div id="Page_Count">
+        Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+    </div>
+    @Html.PagedListPager(Model, page => Url.Action("QT_SanPham",
+        new { page, keyword = Request.QueryString["keyword"] }))
+</div>

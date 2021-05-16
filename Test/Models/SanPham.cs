@@ -30,9 +30,9 @@ namespace Test.Models
         public string HinhAnhSP { get; set; }
         public string TrangThaiSP { get; set; }
         public int SL { get; set; }
-        [DisplayFormat(DataFormatString = "{0:#,##0}", ApplyFormatInEditMode = true)]
+        //[DisplayFormat(DataFormatString = "{0:#,##0}", ApplyFormatInEditMode = true)]
         public double DonGiaGoc { get; set; }
-        [DisplayFormat(DataFormatString = "{0:#,##0}", ApplyFormatInEditMode = true)]
+        //[DisplayFormat(DataFormatString = "{0:#,##0}", ApplyFormatInEditMode = true)]
         public double DonGiaKM { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

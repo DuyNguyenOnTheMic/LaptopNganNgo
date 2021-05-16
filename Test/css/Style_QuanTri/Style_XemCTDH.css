@@ -14,7 +14,7 @@
 #Text_Header {
     width: 466.15625px;
     height: 73.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 64.0px;
     font-weight: 400;
     color: #000000;
@@ -26,7 +26,7 @@
 #Product_SanPham {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -46,7 +46,7 @@
 #Product_DonHang {
     width: 268.1745635910226px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -66,7 +66,7 @@
 #Product_KhachHang {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -86,7 +86,7 @@
 #Product_DoanhThu {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -106,7 +106,7 @@
 #Product_TaiKhoan {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -131,7 +131,7 @@
 #Footer_Text {
     width: 309.8372802734375px;
     height: 103.99999999999955px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 18.666668px;
     font-weight: 400;
     text-align: center;
@@ -145,7 +145,7 @@
 #rectangle {
     width: 1345px;
     height: 42.99999999999977px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -175,7 +175,7 @@
 #CTDonHang{
     width: 536.14453125px;
     height: 513.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 24.0px;
     position: absolute;
     top: 320px;
@@ -185,7 +185,7 @@
 #table_TenSP {
     width: 71.14583587646484px;
     height: 24.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #333333;
@@ -197,7 +197,7 @@
 #table_SoLuong {
     width: 88.76042175292969px;
     height: 24.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #333333;
@@ -209,7 +209,7 @@
 #table_DonGia {
     width: 75.65625px;
     height: 24.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #333333;
@@ -221,7 +221,7 @@
 #table_ChietKhau {
     width: 101.98958587646484px;
     height: 48.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #333333;
@@ -233,7 +233,7 @@
 #table_ThanhTien {
     width: 100.81251525878906px;
     height: 24.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #333333;
@@ -256,7 +256,7 @@
 #text_TenSP {
     width: 35.91904055632212%;
     height: 100.00000000000011%;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 18.666668px;
     font-weight: 400;
     color: #000000;
@@ -268,7 +268,7 @@
 #text_SL {
     width: 13.136674884050981%;
     height: 100.00000000000011%;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -281,7 +281,7 @@
 #text_DonGia {
     width: 18.528661485475695%;
     height: 100.00000000000011%;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 18.666668px;
     font-weight: 400;
     text-align: center;
@@ -294,7 +294,7 @@
 #text_ChietKhau {
     width: 13.886961588675515%;
     height: 100.00000000000011%;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 18.666668px;
     font-weight: 400;
     text-align: center;
@@ -307,7 +307,7 @@
 #text_ThanhTien {
     width: 18.528661485475695%;
     height: 100.00000000000011%;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 18.666668px;
     font-weight: 400;
     text-align: center;
@@ -318,7 +318,7 @@
 }
 
 #TongTien {
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 24.0px;
     font-weight: 400;
     color: #000000;
@@ -330,7 +330,7 @@
 #text_TTKH {
     width: 480.29296875px;
     height: 135.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 24.0px;
     font-weight: 400;
     color: #000000;
@@ -342,7 +342,7 @@
 #button_Delete {
     width: 145.93363596217773px;
     height: 55.304347826086996px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -369,7 +369,7 @@
 #Log_in {
     width: 96.44140625px;
     height: 21.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 18.666668px;
     font-weight: 700;
     color: #000000;
@@ -383,8 +383,8 @@
     }
 
 #Button_LogOut {
-    width: 80px;
-    font-family: Arial;
+    width: 88px;
+    font-family: 'UTM Avo';
     font-size: 16px;
     font-weight: 600;
     color: #000000;
@@ -405,11 +405,17 @@
 }
 
 #Hello_Text {
-    width: 300px;
-    font-family: Arial;
+    width: 200px;
+    font-family: 'UTM Avo';
     font-size: 16px;
     color: #000000;
     position: absolute;
     left: 1360px;
     top: 55px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
 }
+

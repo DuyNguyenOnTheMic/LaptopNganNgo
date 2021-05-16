@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PagedList;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -22,6 +23,13 @@ namespace Test.Controllers.Website_QuanTri
             return View(sanPhams.ToList());
         }
 
+        public ActionResult QT_SanPham(string keyword, int? page)
+        {
+            db = new CT25Team24Entities();
+            List<SanPham> listSP = db.SanPhams.ToList();
+            return View(db.SanPhams.Where(x => x.TenSP.ToLower().Contains(keyword.ToLower()) || keyword==null).ToList().ToPagedList(page ?? 1, 4));
+        }
+
         public ActionResult Search(string keyword)
         {
             var sanPhams = db.SanPhams.ToList();
@@ -29,6 +37,7 @@ namespace Test.Controllers.Website_QuanTri
             ViewBag.keyword = keyword;
             return View(sanPhams);
         }
+     
 
         // GET: SanPhams/Details/5
         public ActionResult Details(int? id)
@@ -88,7 +97,7 @@ namespace Test.Controllers.Website_QuanTri
             {
                 ViewBag.msg = "Inavlid File Type";
             }
-            return RedirectToAction("Index","QT_TrangChu");
+            return RedirectToAction("QT_SanPham","SanPhams");
         }
 
         // GET: SanPhams/Edit/5
@@ -158,7 +167,7 @@ namespace Test.Controllers.Website_QuanTri
                     if (db.SaveChanges() > 0)
                     {
                         TempData["msg"] = "Data Updated";
-                        return RedirectToAction("Index", "QT_TrangChu");
+                        return RedirectToAction("QT_SanPham", "SanPhams");
                     }
 
                 }

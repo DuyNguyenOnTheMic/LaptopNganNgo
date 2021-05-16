@@ -14,7 +14,7 @@
 #Text_Header {
     width: 466.15625px;
     height: 73.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 64.0px;
     font-weight: 400;
     color: #000000;
@@ -26,7 +26,7 @@
 #Product_SanPham {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -46,7 +46,7 @@
 #Product_DonHang {
     width: 268.1745635910226px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -66,7 +66,7 @@
 #Product_KhachHang {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -86,7 +86,7 @@
 #Product_DoanhThu {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -106,7 +106,7 @@
 #Product_TaiKhoan {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -125,13 +125,13 @@
 
 .Header {
     position:absolute;
-    left: -15px;
+    left: -7.5px;
 }
 
 #Footer_Text {
     width: 309.8372802734375px;
     height: 103.99999999999955px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 18.666668px;
     font-weight: 400;
     text-align: center;
@@ -145,7 +145,7 @@
 #rectangle {
     width: 1345px;
     height: 42.99999999999977px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -162,9 +162,9 @@
 }
 
 #Text {
-    width: 220.99999999999994px;
+    width: auto;
     height: 41.00000000000006px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 29.333334px;
     font-weight: 400;
     color: #333333;
@@ -176,7 +176,7 @@
 #K1 {
     width: 1009.3808593749998px;
     height: 609.0000000000001px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -188,34 +188,34 @@
 }
 
 #T1 {
-    width: 175.5px;
+    width: auto;
     height: 27.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 24.0px;
     font-weight: 400;
     color: #191B7D;
     position: absolute;
     top: 0px;
-    left: 26px;
+    left: 20px;
 }
 
 #T2 {
     width: 148.0px;
     height: 24.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #333333;
     position: absolute;
     top: 66px;
-    left: 40px;
+    left: 48px;
 }
 
 #T3 {
-    width: 453.24609375000006px;
+    width: 895.2414374220707px;
     height: 31.999999999999886px;
     padding-left: 10px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #434343;
@@ -232,7 +232,7 @@
     width: 290px;
     height: 31.999999999999886px;
     padding-left: 10px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #434343;
@@ -248,7 +248,7 @@
 #T4 {
     width: 453.24609375000006px;
     height: 31.999999999999886px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #434343;
@@ -266,7 +266,7 @@
 #S1 {
     width: 360.48753117206934px;
     height: 31.999999999999886px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #434343;
@@ -284,7 +284,7 @@
 #S2 {
     width: 359.3338853387354px;
     height: 31.999999999999773px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #434343;
@@ -302,7 +302,7 @@
 #S3 {
     width: 359.33388533873494px;
     height: 31.999999999999773px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #434343;
@@ -321,7 +321,7 @@
 #T5 {
     width: 148.0px;
     height: 24.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #333333;
@@ -332,18 +332,18 @@
 #MT {
     width: 230.0px;
     height: 48.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #333333;
     position: absolute;
     top: 170px;
-    left: 12px;
+    left: 18px;
 }
 #S4 {
     width: 895.2414374220707px;
     height: 300.00000000000023px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #434343;
@@ -360,7 +360,7 @@
 #K2 {
     width: 1010.0000000000005px;
     height: 185.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -375,7 +375,7 @@
     width: 895.2414374220707px;
     height: 109.00000000000023px;
     color: #434343;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     background-color: #FFFFFF;
     border: 1px solid #000000;
@@ -408,7 +408,7 @@
 #A1 {
     width: 267.0px;
     height: 53.99999999999977px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 24.0px;
     font-weight: 400;
     color: #191B7D;
@@ -419,7 +419,7 @@
 #Q1 {
     width: 230.0px;
     height: 48.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #333333;
@@ -431,7 +431,7 @@
     width: 400.4875311720696px;
     height: 32.0px;
     padding-left: 10px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #434343;
@@ -447,7 +447,7 @@
 #K3 {
     width: 1010.0px;
     height: 166.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -460,41 +460,41 @@
 #A2 {
     width: 267.0px;
     height: 53.99999999999977px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 24.0px;
     font-weight: 400;
     color: #191B7D;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: -5px;
 }
 #Q3 {
     width: 230.0px;
     height: 48.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #333333;
     position: absolute;
     top: 50px;
-    left: -12px;
+    left: -16px;
 }
 #Q4 {
     width: 230.0px;
     height: 48.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #333333;
     position: absolute;
     top: 50px;
-    left: 472px;
+    left: 468px;
 }
 #W3 {
     width: 415.4875311720693px;
     height: 36.999999999999773px;
     padding-left: 10px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #434343;
@@ -510,7 +510,7 @@
 #K4 {
     width: 1010.0000000000002px;
     height: 165.00000000000023px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -523,19 +523,19 @@
 #A3 {
     width: 267.0px;
     height: 53.99999999999977px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 24.0px;
     font-weight: 400;
     color: #191B7D;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 6px;
 }
 
 #K5 {
     width: 319.00000000000136px;
     height: 174.99999999999977px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -549,7 +549,7 @@
     width: 284.62582070215103px;
     height: 31.99999999999966px;
     padding-left: 10px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #434343;
@@ -562,9 +562,9 @@
     z-index: +1;
 }
 #A4 {
-    width: 175.5px;
+    width: auto;
     height: 27.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 24.0px;
     font-weight: 400;
     color: #191B7D;
@@ -575,8 +575,8 @@
 
 #K6 {
     width: 319.00000000000136px;
-    height: 104.99999999999977px;
-    font-family: Arial;
+    height: 124.99999999999977px;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -587,9 +587,9 @@
     left: 1150px;
 }
 #A5 {
-    width: 175.5px;
+    width: auto;
     height: 27.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 24.0px;
     font-weight: 400;
     color: #191B7D;
@@ -601,7 +601,7 @@
     width: 278.62582070215103px;
     height: 31.99999999999966px;
     padding-left: 10px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #434343;
@@ -617,7 +617,7 @@
 #K7 {
     width: 319.00000000000136px;
     height: 91.99999999999966px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -630,7 +630,7 @@
 #A6 {
     width: 175.5px;
     height: 27.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 24.0px;
     font-weight: 400;
     color: #191B7D;
@@ -641,7 +641,7 @@
 #A7 {
     width: 272.12582070214967px;
     height: 48.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #333333;
@@ -661,58 +661,67 @@
 #myBtn {
     width: 150px;
     height: 50px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 24.0px;
     font-weight: 400;
     text-align: center;
     color: #030303;
-    background: linear-gradient(#8D9CF2,#FF8585);
-    border: 1px solid #CDCDCD;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid grey;
     position: absolute;
-    top: 1592.43px;
-    left: 1219.78px;
+    top: 1610.43px;
+    left: 800.78px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+#myBtn:hover {
+    background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
 }
 
 #myBtn1 {
     width: 150px;
     height: 50px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 24.0px;
     font-weight: 400;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #030303;
-    background: #CDCDCD;
-    border: 1px solid #CDCDCD;
     position: absolute;
-    top: 1592.43px;
-    left: 1400.78px;
+    top: 1610.43px;
+    left: 985.78px;
+    border-radius: 5px;
+    text-decoration: none;   
+    color: #030303;
+    background: linear-gradient(#FFFFFF,#E6E6E6);
+    border: 1px solid grey;  
     cursor: pointer;
     border-radius: 5px;
-    text-decoration: none;
+}
+
+#myBtn1:hover {
+    background: #DDD;
 }
 
 #Label_GiaKM {
     width: 230.0px;
     height: 48.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #333333;
     position: absolute;
     top: 50px;
-    left: 500px;
+    left: 504px;
 }
 
 #txt_DonGiaKM {
     width: 400.4875311720696px;
     height: 32.0px;
     padding-left: 10px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     color: #434343;
@@ -730,7 +739,7 @@
     position: absolute;
     top: 1118px;
     left: 176px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16px;
     z-index: +1;
 }
@@ -741,7 +750,7 @@
 
 #file {
     position: absolute;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 18px;
     top: 1110px;
     left: 320px;
@@ -757,9 +766,10 @@
 }
 
 #button_ThemHangSP {
-    width: 180px;
+    width: 200px;
     height: 40px;
-    background: linear-gradient(#8D9CF2,#FF8585);
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid grey;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -768,20 +778,20 @@
     border-radius: 10px;
     position: absolute;
     top: 120px;
-    left: 70px;
-    font-family: Arial;
+    left: 60px;
+    font-family: 'UTM Avo';
     font-size: 16px;
     z-index: +1;
 }
 
-#button_ThemHangSP:hover {
-    font-weight:600;
-}
+    #button_ThemHangSP:hover {
+        background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    }
 
 #Log_in {
     width: 96.44140625px;
     height: 21.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 18.666668px;
     font-weight: 700;
     color: #000000;
@@ -795,8 +805,8 @@
     }
 
 #Button_LogOut {
-    width: 80px;
-    font-family: Arial;
+    width: auto;
+    font-family: 'UTM Avo';
     font-size: 16px;
     font-weight: 600;
     color: #000000;
@@ -817,14 +827,20 @@
 }
 
 #Hello_Text {
-    width: 300px;
-    font-family: Arial;
+    width: 200px;
+    font-family: 'UTM Avo';
     font-size: 16px;
     color: #000000;
     position: absolute;
     left: 1360px;
     top: 55px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
 }
+
 
 
 

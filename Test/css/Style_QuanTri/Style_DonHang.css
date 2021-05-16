@@ -14,7 +14,7 @@
 #Text_Header {
     width: 466.15625px;
     height: 73.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 64.0px;
     font-weight: 400;
     color: #000000;
@@ -26,7 +26,7 @@
 #Product_SanPham {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -46,7 +46,7 @@
 #Product_DonHang {
     width: 268.1745635910226px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -66,7 +66,7 @@
 #Product_KhachHang {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -86,7 +86,7 @@
 #Product_DoanhThu {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -106,7 +106,7 @@
 #Product_TaiKhoan {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -131,7 +131,7 @@
 #Footer_Text {
     width: 309.8372802734375px;
     height: 103.99999999999955px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 18.666668px;
     font-weight: 400;
     text-align: center;
@@ -145,7 +145,7 @@
 #rectangle {
     width: 1345px;
     height: 42.99999999999977px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -159,7 +159,7 @@
 #search_bar {
     width: 269.9999999999997px;
     height: 40.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16px;
     color: #666666;
     background-color: #FFFFFF;
@@ -189,7 +189,7 @@
 #Filter {
     width: 210px;
     height: 40.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
     color: #333333;
@@ -233,7 +233,7 @@
 #Dang_SP {
     width: 191.99999999999955px;
     height: 58.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
     color: #000000;
@@ -259,7 +259,7 @@
 #rectangle_1 {
     width: 122.00000000000017px;
     height: 45.00000000000006px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
     text-align: center;
@@ -278,7 +278,7 @@
 #rectangle_2 {
     width: 122.00000000000017px;
     height: 45.00000000000006px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
     text-align: center;
@@ -297,7 +297,7 @@
 #rectangle_3 {
     width: 122.00000000000017px;
     height: 45.00000000000006px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
     text-align: center;
@@ -316,7 +316,7 @@
 #rectangle_4 {
     width: 122.00000000000017px;
     height: 45.00000000000006px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
     text-align: center;
@@ -335,7 +335,7 @@
 #rectangle_SP1 {
     width: 388px;
     height: 188.9999999999999px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -349,7 +349,7 @@
 #rectangle_SP2 {
     width: 388px;
     height: 188.9999999999999px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -363,7 +363,7 @@
 #rectangle_SP3 {
     width: 388px;
     height: 188.9999999999999px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -377,7 +377,7 @@
 #rectangle_SP4 {
     width: 388px;
     height: 188.9999999999999px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -391,7 +391,7 @@
 #rectangle_SP5 {
     width: 388px;
     height: 188.9999999999999px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -405,7 +405,7 @@
 #rectangle_SP6 {
     width: 388px;
     height: 188.9999999999999px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -466,7 +466,7 @@
 #Page_1 {
     width: 41.000000000000114px;
     height: 38.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -489,7 +489,7 @@
 #Page_2 {
     width: 41.000000000000114px;
     height: 38.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -512,7 +512,7 @@
 #Page_3 {
     width: 41.000000000000114px;
     height: 38.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -535,7 +535,7 @@
 #Page_dot {
     width: 41.000000000000114px;
     height: 38.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -557,7 +557,7 @@
 #Page_25 {
     width: 41.000000000000114px;
     height: 38.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -584,7 +584,7 @@
 #Text_SP1 {
     width: 183.0703125px;
     height: 90.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
     color: #333333;
@@ -596,7 +596,7 @@
 #Text_SP2 {
     width: 183.0703125px;
     height: 90.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
     color: #333333;
@@ -608,7 +608,7 @@
 #Text_SP3 {
     width: 183.0703125px;
     height: 90.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
     color: #333333;
@@ -620,7 +620,7 @@
 #Text_SP4 {
     width: 183.0703125px;
     height: 90.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
     color: #333333;
@@ -632,7 +632,7 @@
 #Text_SP5 {
     width: 183.0703125px;
     height: 90.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
     color: #333333;
@@ -644,7 +644,7 @@
 #Text_SP6 {
     width: 183.0703125px;
     height: 90.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
     color: #333333;
@@ -656,7 +656,7 @@
 #Button_Xem_SP1 {
     width: 135.05085963504814px;
     height: 28.99999999999943px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -679,7 +679,7 @@
 #Button_Xoa_SP1 {
     width: 135.05085963504814px;
     height: 28.99999999999943px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -702,7 +702,7 @@
 #Button_Xem_SP2 {
     width: 135.05085963504814px;
     height: 28.99999999999943px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -725,7 +725,7 @@
 #Button_Xoa_SP2 {
     width: 135.05085963504814px;
     height: 28.99999999999943px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -748,7 +748,7 @@
 #Button_Xem_SP3 {
     width: 135.05085963504814px;
     height: 28.99999999999943px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -771,7 +771,7 @@
 #Button_Xoa_SP3 {
     width: 135.05085963504814px;
     height: 28.99999999999943px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -794,7 +794,7 @@
 #Button_Xem_SP4 {
     width: 135.05085963504814px;
     height: 28.99999999999943px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -817,7 +817,7 @@
 #Button_Xoa_SP4 {
     width: 135.05085963504814px;
     height: 28.99999999999943px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -840,7 +840,7 @@
 #Button_Xem_SP5 {
     width: 135.05085963504814px;
     height: 28.99999999999943px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -863,7 +863,7 @@
 #Button_Xoa_SP5 {
     width: 135.05085963504814px;
     height: 28.99999999999943px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -886,7 +886,7 @@
 #Button_Xem_SP6 {
     width: 135.05085963504814px;
     height: 28.99999999999943px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -909,7 +909,7 @@
 #Button_Xoa_SP6 {
     width: 135.05085963504814px;
     height: 28.99999999999943px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -932,7 +932,7 @@
 #Log_in {
     width: 96.44140625px;
     height: 21.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 18.666668px;
     font-weight: 700;
     color: #000000;
@@ -946,7 +946,7 @@
     }
 
 #Button_LogOut {
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16px;
     font-weight: 600;
     color: #000000;
@@ -967,10 +967,16 @@
 }
 
 #Hello_Text {
-    font-family: Arial;
+    width: 200px;
+    font-family: 'UTM Avo';
     font-size: 16px;
     color: #000000;
     position: absolute;
     left: 1360px;
     top: 55px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
 }

@@ -14,7 +14,7 @@
 #Text_Header {
     width: 466.15625px;
     height: 73.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 64.0px;
     font-weight: 400;
     color: #000000;
@@ -23,10 +23,24 @@
     left: 638.88px;
 }
 
+#Footer_Text {
+    width: 309.8372802734375px;
+    height: 103.99999999999955px;
+    font-family: 'UTM Avo';
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 28px;
+    color: #1EAAF1;
+    position: absolute;
+    left: 645.08px;
+    top: 630px;
+}
+
 #Product_SanPham {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -46,7 +60,7 @@
 #Product_DonHang {
     width: 268.1745635910226px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -66,7 +80,7 @@
 #Product_KhachHang {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -86,7 +100,7 @@
 #Product_DoanhThu {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -106,7 +120,7 @@
 #Product_TaiKhoan {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -132,7 +146,7 @@
 #rectangle {
     width: 1345px;
     height: 42.99999999999977px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -145,9 +159,7 @@
 
 
 #Text {
-    width: 290.99999999999994px;
-    height: 60.00000000000006px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 29.333334px;
     font-weight: 400;
     color: #333333;
@@ -160,7 +172,7 @@
     width: 347.0px;
     height: 36.0px;
     position: absolute;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 18px;
     font-weight: 400;
     top: 400px;
@@ -260,13 +272,13 @@
 #btn {
     width: 120px;
     height: 40px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 17px;
     font-weight: 400;
     text-align: center;
     color: #030303;
     background: linear-gradient(#FFFFFF,#E6E6E6);
-    border: 1px solid #CDCDCD;
+    border: 1px solid grey;
     position: absolute;
     top: 335px;
     left: 1345px;
@@ -277,13 +289,13 @@
 #btn_Add {
     width: 100px;
     height: 40px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 17.0px;
     font-weight: 400;
     text-align: center;
     color: #030303;
-    background: linear-gradient(#8D9CF2,#FF8585);
-    border: 1px solid #CDCDCD;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid grey;
     border-radius: 5px;
     position: absolute;
     top: 470px;
@@ -291,14 +303,14 @@
     cursor: pointer;
 }
 
-#btn_Add:hover {
-    font-weight:600;
-}
+    #btn_Add:hover {
+        background-image: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    }
 
 #Log_in {
     width: 96.44140625px;
     height: 21.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 18.666668px;
     font-weight: 700;
     color: #000000;
@@ -312,7 +324,7 @@
     }
 
 #Button_LogOut {
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16px;
     font-weight: 600;
     color: #000000;
@@ -333,18 +345,24 @@
 }
 
 #Hello_Text {
-    font-family: Arial;
+    width: 200px;
+    font-family: 'UTM Avo';
     font-size: 16px;
     color: #000000;
     position: absolute;
     left: 1360px;
     top: 55px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
 }
 
 #Name_HangSP {
     height: 0px;
     position: relative;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     left: 600px;
@@ -354,7 +372,7 @@
 
 #button_EditHangSP {
     position: relative;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     left: 620px;
@@ -363,36 +381,36 @@
 
 #button_DeleteHangSP {
     position: relative;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     left: 700px;
-    top: 400px;
+    top: 395.4px;
 }
 
 #button_Create {
     width: 150px;
     height: 40px;
-    background: linear-gradient(#8D9CF2,#FF8585);
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     color: black;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid grey;
     position: absolute;
     top: 335px;
     left: 1180px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 17px;
     z-index: +1;
     cursor: pointer;
 }
 
-#button_Create:hover {
-    font-weight: 600;
-}
+    #button_Create:hover {
+        background-image: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    }
 
 .Table_HangSP {
     display: block;
@@ -403,19 +421,19 @@
 }
 
 #btn:hover {
-    font-weight: 600;
+    background: #DDD;
 }
 
 #btn_back {
     width: 100px;
     height: 40px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 17px;
     font-weight: 400;
     text-align: center;
     color: #030303;
     background: linear-gradient(#FFFFFF,#E6E6E6);
-    border: 1px solid #CDCDCD;
+    border: 1px solid grey;
     position: absolute;
     top: 470px;
     left: 257px;
@@ -423,14 +441,14 @@
     border-radius: 5px;
 }
 
-#btn_back:hover {
-    font-weight:600;
-}
+    #btn_back:hover {
+        background: #DDD;
+    }
 
 #Log_in {
     width: 96.44140625px;
     height: 21.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 18.666668px;
     font-weight: 700;
     color: #000000;
@@ -444,7 +462,7 @@
     }
 
 #Button_LogOut {
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16px;
     font-weight: 600;
     color: #000000;
@@ -465,7 +483,7 @@
 }
 
 #Hello_Text {
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16px;
     color: #000000;
     position: absolute;

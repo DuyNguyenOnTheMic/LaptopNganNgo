@@ -16,7 +16,7 @@
         <div class="rectangle"></div>
         <div class="circle"></div>
 
-        <a href="https://localhost:44357/SanPhams/Index">
+        <a href="~/SanPhams/Index">
             <p id="Tittle">LaptopNganNgo</p>
             <img id="LetterL" width="70"
                  src="~/Images/royal-alphabet-crown-letter-english-l-512.png" />
@@ -37,7 +37,7 @@
             }
             else
             {
-                <a href="https://localhost:44357/DangNhap/Index">
+                <a href="~/DangNhap/Index">
 
                     <p id="Log_in">Đăng nhập</p>
                 </a>
@@ -53,7 +53,7 @@
                  position: absolute;
                  left: 445.37px;
                  top: 139px;" />
-            <a href="https://localhost:44357/SanPhams/Search">
+            <a href="~/SanPhams/Search">
                 <button id="Search_button" type="submit">Tìm</button>
             </a>
         </form>
@@ -61,7 +61,7 @@
         <div>
             <img id="Cart_image" src="~/Images/shopping-cart.png" width="39" />
             <p id="Cart_number">0</p>
-            <a href="https://localhost:44357/CTDHs">
+            <a href="~/CTDHs">
                 <p id="Cart_text">Giỏ hàng</p>
             </a>
         </div>
@@ -110,7 +110,7 @@
             <a id="Bao_Hanh" href="#">&emsp;Chính sách bảo hành</a>
             <a id="Van_Chuyen" href="#">&emsp;Chính sách vận chuyển</a>
             <a id="Khuyen_Mai" href="#">&emsp;Khuyến mãi</a>
-            <a id="Cham_Soc" href="https://localhost:44357/CSKH/Index">&emsp;C.S Khách hàng</a>
+            <a id="Cham_Soc" href="~/CSKH/Index">&emsp;C.S Khách hàng</a>
 
 
 
@@ -195,8 +195,8 @@
                     @{
                         if (item.HinhAnhSP != null)
                         {
-                            <a href="https://localhost:44357/SanPhams/Details/@item.MaSP">
-                                <img src="@Url.Content(item.HinhAnhSP)" width="288px" height="303px" class="img-rounded" />
+                            <a href="~/SanPhams/Details/@item.MaSP">
+                                <img src="@Url.Content(item.HinhAnhSP)" width="288" height="303" class="img-rounded" />
                             </a>
                         }
                         else

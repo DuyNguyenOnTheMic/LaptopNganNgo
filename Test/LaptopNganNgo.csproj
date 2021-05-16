@@ -1,5 +1,4 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -49,7 +48,16 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
@@ -91,11 +99,9 @@
     <Reference Include="System.Web.Mvc">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\PagedList.css" />
     <Content Include="css\Style_BanHang\Style_TT_SuaGioHang.css" />
     <Content Include="css\Style_BanHang\Style_TimKiemSP.css" />
     <Content Include="css\Style_BanHang\Style_TT_DiaChi.css" />
@@ -120,7 +126,6 @@
     <Content Include="css\Style_QuanTri\Style_DangNhap.css" />
     <Content Include="Global.asax" />
     <Content Include="Images\0257_270px-Black_triangle.svg.jpg" />
-    <Content Include="Images\add.png" />
     <Content Include="Images\ahihi.png" />
     <Content Include="Images\back_TimKiemSP.png" />
     <Content Include="Images\bird.png" />
@@ -214,10 +219,8 @@
     <Compile Include="Controllers\Website_BanHang\TT_SuaGioHangController.cs" />
     <Compile Include="Controllers\Website_BanHang\TT_ThanhCongController.cs" />
     <Compile Include="Controllers\KhachHangsController.cs" />
-    <Compile Include="Controllers\Website_QuanTri\QT_DangKyController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_DangNhapController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_DonHangController.cs" />
-    <Compile Include="Controllers\Website_QuanTri\QT_TrangChuController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_XemCTDHController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_XemCTTrangChuController.cs" />
     <Compile Include="Controllers\SanPhamsController.cs" />
@@ -298,7 +301,6 @@
     <Content Include="Views\QT_DangNhap\Index.cshtml" />
     <Content Include="Views\QT_DangKy.cshtml" />
     <Content Include="Views\_QT_TrangChu.cshtml" />
-    <Content Include="Views\QT_TrangChu\Index.cshtml" />
     <Content Include="Views\_QT_DangSP.cshtml" />
     <Content Include="Views\_QT_XemCTDH.cshtml" />
     <Content Include="Views\QT_XemCTDH\Index.cshtml" />
@@ -332,6 +334,8 @@
     <Content Include="Views\CTDHs\Edit.cshtml" />
     <Content Include="Views\CTDHs\Index.cshtml" />
     <Content Include="Views\SanPhams\Search.cshtml" />
+    <Content Include="Views\SanPhams\QT_SanPham.cshtml" />
+    <Content Include="Views\_QT_CapNhatSP.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -374,8 +378,9 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
   </Target>
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net472\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

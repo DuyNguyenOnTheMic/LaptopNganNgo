@@ -14,7 +14,7 @@
 #Text_Header {
     width: 466.15625px;
     height: 73.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 64.0px;
     font-weight: 400;
     color: #000000;
@@ -26,7 +26,7 @@
 #Product_SanPham {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -46,7 +46,7 @@
 #Product_DonHang {
     width: 268.1745635910226px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -66,7 +66,7 @@
 #Product_KhachHang {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -86,7 +86,7 @@
 #Product_DoanhThu {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -106,7 +106,7 @@
 #Product_TaiKhoan {
     width: 268.17456359102243px;
     height: 64.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 21.333334px;
     font-weight: 400;
     text-align: center;
@@ -131,7 +131,7 @@
 #Footer_Text {
     width: 309.8372802734375px;
     height: 103.99999999999955px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 18.666668px;
     font-weight: 400;
     text-align: center;
@@ -145,7 +145,7 @@
 #rectangle {
     width: 1345px;
     height: 42.99999999999977px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
     text-align: center;
@@ -159,7 +159,7 @@
 #C1 {
     width: 605.6015625px;
     height: 100px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 24.0px;
     font-weight: 400;
     color: #000000;
@@ -171,7 +171,7 @@
 #C2 {
     width: 605.6015625px;
     height: 100px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 24.0px;
     font-weight: 400;
     color: #333333;
@@ -183,7 +183,7 @@
 #C3 {
     width: 605.6015625px;
     height: 100px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 24.0px;
     font-weight: 400;
     color: red;
@@ -195,7 +195,7 @@
 #C4 {
     width: 605.6015625px;
     height: 100px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 24.0px;
     font-weight: 400;
     color: #333333;
@@ -207,7 +207,7 @@
 #C5 {
     width: 100px;
     height: 100px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 24.0px;
     font-weight: 400;
     color: red;
@@ -219,7 +219,7 @@
 #B1 {
     width: 132.0108506944437px;
     height: 60.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
     text-align: center;
@@ -233,7 +233,7 @@
 #B2 {
     width: 146.0px;
     height: 50.99999999999968px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
     text-align: center;
@@ -248,7 +248,7 @@
 #B3 {
     width: 103.01085069444412px;
     height: 50.99999999999966px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
     text-align: center;
@@ -305,7 +305,7 @@
 #Log_in {
     width: 96.44140625px;
     height: 21.0px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 18.666668px;
     font-weight: 700;
     color: #000000;
@@ -320,7 +320,7 @@
 
 #Button_LogOut {
     width: 80px;
-    font-family: Arial;
+    font-family: 'UTM Avo';
     font-size: 16px;
     font-weight: 600;
     color: #000000;
@@ -341,11 +341,16 @@
 }
 
 #Hello_Text {
-    width: 300px;
-    font-family: Arial;
+    width: 200px;
+    font-family: 'UTM Avo';
     font-size: 16px;
     color: #000000;
     position: absolute;
     left: 1360px;
     top: 55px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
 }
