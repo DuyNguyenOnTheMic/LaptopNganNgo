@@ -537,34 +537,36 @@ body {
 #Star1_HotDeal1 {
     width: 16.899904572587218px;
     height: 17.65678619514688px;
+    position: relative;
+    left: 40px;
 }
 
 #Star2_HotDeal1 {
     width: 16.89990457258719px;
     height: 17.65678619514688px;
     position: relative;
-    left: 10px;
+    left: 50px;
 }
 
 #Star3_HotDeal1 {
     width: 16.899904572587218px;
     height: 17.65678619514688px;
     position: relative;
-    left: 20px;
+    left: 60px;
 }
 
 #Star4_HotDeal1 {
     width: 16.899904572587218px;
     height: 17.65678619514688px;
     position: relative;
-    left: 30px;
+    left: 70px;
 }
 
 #Star5_HotDeal1 {
     width: 16.899904572587218px;
     height: 17.65678619514688px;
     position: relative;
-    left: 40px;
+    left: 80px;
 }
 
 
@@ -576,18 +578,18 @@ body {
     font-size: 20px;
     color: #999999;
     position: relative;
-    left: 200px;
+    left: 240px;
 }
 
 #HotDeal1_Text {
-    width: 240px;
+    width: 288px;
     height: 80px;
     font-family: Arial;
     font-size: 20px;
     font-weight: 400;
     color: #333333;
     position: relative;
-    left: 40px;
+    left: 70px;
     top: -50px;
     text-align: left;
     overflow: hidden;
@@ -609,7 +611,7 @@ body {
     color: #333333;
     background-color: #FFFFFF;
     position: relative;
-    left: 80px;
+    left: 120px;
     top: -50px;
 }
 
@@ -622,7 +624,7 @@ body {
     color: #FF0000;
     background-color: #FFFFFF;
     position: relative;
-    left: 80px;
+    left: 120px;
     top: -90px;
 }
 
@@ -848,5 +850,5 @@ body {
 
 .img-rounded {
     position: relative;
-    left: -65px;
+    left: -25px;
 }
