@@ -117,21 +117,20 @@
                    @class = "form-control",
                    @id = "W1",
                    @type = "number",
-                   placeholder = "0đ"
-                   
+                   placeholder = "0đ"                 
                }
            })
                 @Html.ValidationMessageFor(model => model.DonGiaGoc, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        <script>
+        @*<script>
             function thousands_separators(num) {
                 var num_parts = num.toString().split(".");
                 num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 return num_parts.join(".");
             }
-        </script>
+        </script>*@
 
         <div class="form-group">
             <div class="col-md-10">

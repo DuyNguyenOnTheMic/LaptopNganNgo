@@ -227,7 +227,7 @@
                              src="~/Images/star.png" />
                     </div>
                     <p id="HotDeal1_Text">
-                        @Html.ActionLink(@item.TenSP, "Details", new { id = item.MaSP }, new { style = "text-decoration:none; color:black;" })
+                        @Html.ActionLink(@item.TenSP, "Details", new { id = item.MaSP }, new { @class = "myActionlink"})
                     </p>
 
                     <p id="HotDeal1_GiaChuaGiam">@item.DonGiaGoc.ToString("N0")@("₫")</p>

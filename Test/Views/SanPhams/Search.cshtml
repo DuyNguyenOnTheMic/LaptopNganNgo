@@ -174,19 +174,21 @@
     @foreach (var item in Model)
     {
         <div class="DS_TimKiem">
-            @{
-                if (item.HinhAnhSP != null)
-                {
-                    <a href="~/SanPhams/Details/@item.MaSP">
-                        <img src="@Url.Content(item.HinhAnhSP)" class="img-rounded" id="ImgProduct1" />
-                    </a>
+            <div>
+                @{
+                    if (item.HinhAnhSP != null)
+                    {
+                        <a href="~/SanPhams/Details/@item.MaSP">
+                            <img src="@Url.Content(item.HinhAnhSP)" class="img-rounded" id="ImgProduct1" />
+                        </a>
+                    }
+                    else
+                    {
+                        <img src="~/Images/image.png"
+                             style="max-width:288px;max-height:314px" />
+                    }
                 }
-                else
-                {
-                    <img src="~/Images/image.png"
-                         style="max-width:288px;max-height:314px" />
-                }
-            }
+            </div>
             <p id="Review1">92 review(s)</p>
             <div class="Star">
                 <img id="Star_Product"
@@ -201,7 +203,7 @@
                      src="~/Images/star.png" />
             </div>
             <p id="Product1_text">
-                @Html.ActionLink(@item.TenSP, "Details", new { id = item.MaSP }, new { style = "text-decoration:none; color:black;" })
+                @Html.ActionLink(@item.TenSP, "Details", new { id = item.MaSP }, new { @class = "myActionlink"})
             </p>
             <p id="Price_new1">@item.DonGiaGoc.ToString("N0")@("₫")</p>
             <p id="Price_old1">@item.DonGiaKM.ToString("N0")@("₫")</p>

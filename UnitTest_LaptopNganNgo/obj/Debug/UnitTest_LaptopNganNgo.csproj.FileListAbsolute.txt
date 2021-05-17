@@ -33,3 +33,8 @@ E:\LaptopNganNgo\UnitTest_LaptopNganNgo\bin\Debug\System.Web.Helpers.xml
 E:\LaptopNganNgo\UnitTest_LaptopNganNgo\bin\Debug\UnitTest_LaptopNganNgo.dll.config
 E:\LaptopNganNgo\UnitTest_LaptopNganNgo\bin\Debug\EntityFramework.SqlServer.dll
 E:\LaptopNganNgo\UnitTest_LaptopNganNgo\bin\Debug\EntityFramework.SqlServer.xml
+E:\LaptopNganNgo\UnitTest_LaptopNganNgo\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+E:\LaptopNganNgo\UnitTest_LaptopNganNgo\bin\Debug\PagedList.dll
+E:\LaptopNganNgo\UnitTest_LaptopNganNgo\bin\Debug\PagedList.Mvc.dll
+E:\LaptopNganNgo\UnitTest_LaptopNganNgo\bin\Debug\PagedList.xml
+E:\LaptopNganNgo\UnitTest_LaptopNganNgo\bin\Debug\PagedList.Mvc.xml

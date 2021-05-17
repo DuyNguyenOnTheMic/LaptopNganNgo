@@ -601,6 +601,15 @@ body {
     max-height: 80px;
 }
 
+.myActionlink {
+    text-decoration: none;
+    color: black;
+}
+
+    .myActionlink:hover {
+        color: blue;
+    }
+
 #HotDeal1_GiaChuaGiam {
     width: 147.14842224121094px;
     height: 60.0px;
@@ -851,4 +860,8 @@ body {
 .img-rounded {
     position: relative;
     left: -25px;
+}
+
+.img-rounded:hover {
+    opacity: 0.7;
 }
