@@ -33,7 +33,11 @@ namespace Test.Controllers
         // GET: CTDHs
         public ActionResult Index()
         {
-
+            var hashtable = new Hashtable();
+            foreach(var CTHD in ShoppingCart)
+            {
+                if (hashtable[CTHD].San                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        )
+            }
             return View(ShoppingCart);
         }
 
