@@ -30,12 +30,12 @@ namespace Test.Controllers.Website_QuanTri
             return View(db.SanPhams.Where(x => x.TenSP.ToLower().Contains(keyword.ToLower()) || keyword==null).ToList().ToPagedList(page ?? 1, 4));
         }
 
-        public ActionResult Search(string keyword)
-        {
-            var sanPhams = db.SanPhams.ToList();
-            sanPhams = sanPhams.Where(p => p.TenSP.ToLower().Contains(keyword.ToLower())).ToList();          
-            ViewBag.keyword = keyword;
-            return View(sanPhams);
+        public ActionResult Search(string keyword, int? page)
+        {           
+            db = new CT25Team24Entities();
+            List<SanPham> listSP = db.SanPhams.ToList();
+            ViewBag.keyword = keyword;            
+            return View(db.SanPhams.Where(x => x.TenSP.ToLower().Contains(keyword.ToLower()) || keyword == null).ToList().ToPagedList(page ?? 1, 6));
         }
      
 

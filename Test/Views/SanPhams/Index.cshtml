@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Test.Models.SanPham>
+﻿@using Test.Models;
+@model IEnumerable<Test.Models.SanPham>
 
 @{
     ViewBag.Title = "LaptopNganNgo - Trang chủ";
@@ -59,11 +60,11 @@
         </form>
 
         <div>
-            <img id="Cart_image" src="~/Images/shopping-cart.png" width="39" />
-            <p id="Cart_number">0</p>
-            <a href="~/CTDHs">
-                <p id="Cart_text">Giỏ hàng</p>
+            <a href="@Url.Action("Index", "CTDHs")">
+                <img id="Cart_image" src="~/Images/shopping-cart.png" width="39" />
+                <p id="Cart_text">Giỏ hàng<p>
             </a>
+            <p id="Cart_number">@((Session["ShoppingCart"] as List<CTDH>)?.Count)</p>
         </div>
 
         <div class="dropdown">
@@ -222,8 +223,8 @@
                         @Html.ActionLink(@item.TenSP, "Details", new { id = item.MaSP }, new { style = "text-decoration:none; color:black;" })
                     </p>
 
-                    <p id="HotDeal1_GiaChuaGiam">@item.DonGiaGoc@("₫")</p>
-                    <p id="HotDeal1_GiaDaGiam">@item.DonGiaKM@("₫")</p>
+                    <p id="HotDeal1_GiaChuaGiam">@item.DonGiaGoc.ToString("N0")@("₫")</p>
+                    <p id="HotDeal1_GiaDaGiam">@item.DonGiaKM.ToString("N0")@("₫")</p>
 
                 </div>
             }

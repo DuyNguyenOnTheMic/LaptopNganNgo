@@ -1,4 +1,5 @@
-﻿@model Test.Models.SanPham
+﻿@using Test.Models;
+@model Test.Models.SanPham
 
 @{
     ViewBag.Title = "Details";
@@ -57,12 +58,11 @@
     </form>
 
     <div>
-        <img id="Cart_image" src="~/Images/shopping-cart.png" width="39" />
-        <p id="Cart_number">0</p>
-        <a href="">
-            <a href="~/CTDHs">
-                <p id="Cart_text">Giỏ hàng</p>
-            </a>
+        <a href="@Url.Action("Index", "CTDHs")">
+            <img id="Cart_image" src="~/Images/shopping-cart.png" width="39" />
+            <p id="Cart_text">Giỏ hàng<p>
+        </a>
+        <p id="Cart_number">@((Session["ShoppingCart"] as List<CTDH>)?.Count)</p>
     </div>
 
     <div class="dropdown">

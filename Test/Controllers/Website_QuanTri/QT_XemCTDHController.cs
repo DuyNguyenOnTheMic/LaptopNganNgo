@@ -13,7 +13,7 @@ namespace Test.Controllers.Website_QuanTri
         {
             if (!User.Identity.IsAuthenticated)
             {
-                return Redirect("https://localhost:44357/QT_DangNhap/Index");
+                return Redirect("~/QT_DangNhap/Index");
             }
             return View();
         }
