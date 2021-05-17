@@ -64,7 +64,14 @@
                 <img id="Cart_image" src="~/Images/shopping-cart.png" width="39" />
                 <p id="Cart_text">Giỏ hàng<p>
             </a>
-            <p id="Cart_number">@((Session["ShoppingCart"] as List<CTDH>)?.Count)</p>
+            @if ((Session["ShoppingCart"] as List<CTDH>)?.Count == null)
+            {
+                <p id="Cart_number">0</p>
+            }
+            else
+            {
+                <p id="Cart_number">@((Session["ShoppingCart"] as List<CTDH>)?.Count)</p>
+            }
         </div>
 
         <div class="dropdown">
