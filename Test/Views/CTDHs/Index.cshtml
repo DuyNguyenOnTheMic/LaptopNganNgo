@@ -4,6 +4,7 @@
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/_GioHang.cshtml";
+    double TongTien = 0;
 }
 
 
@@ -197,13 +198,14 @@ Trợ Giúp</pre>
 
     @foreach (var item in Model)
     {
+        TongTien += item.DonGia * item.SL;
     <div class="SanPham_GH">
         <img src="@Url.Content(item.SanPham.HinhAnhSP)" width="80" height="80" id="N1" />
         <img id="T1" src="~/Images/ArrowIcon.png" />
         <img id="T2" src="~/Images/ArrowIcon.png" />
         <img id="R1" src="~/Images/trash.png " />
         <p id="pic1">
-            <a style="text-decoration: none; color:black;" href="@Url.Action("Details", "SanPhams",new { id = item.SanPham.MaSP })"> @item.SanPham.TenSP</a>
+            @Html.ActionLink(item.SanPham.TenSP, "Details", "SanPhams", new { id = item.SanPham.MaSP }, new { @class = "myActionlink" })
         </p>
         <p id="Gia1">@item.DonGia.ToString("N0") @("đ")</p>
         <p id="Gia2">@((item.DonGia*item.SL).ToString("N0")) @("đ")</p>
@@ -216,8 +218,8 @@ Trợ Giúp</pre>
 </div>
 
 <div class="TongTien">
-    <p id="Sum">Tổng Tiền</p>
-    <p id="Tien">42.470.000</p>
+    <p id="Sum">Tổng Tiền: </p>
+    <p id="Tien">@TongTien.ToString("N0") @("đ")</p>
 </div>
 
 

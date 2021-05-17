@@ -784,7 +784,6 @@ body {
 
 
 #Sum {
-    width: 94.87500762939453px;
     height: 24.0px;
     font-family: Arial;
     font-size: 21.333334px;
@@ -797,7 +796,7 @@ body {
 }
 
 #Tien {
-    width: 106.7708511352539px;
+    width: auto;
     height: 24.0px;
     font-family: Arial;
     font-size: 21.333334px;
@@ -1156,4 +1155,13 @@ body {
 
     #Button_LogOut:hover {
         color: darkblue;
+    }
+
+.myActionlink {
+    text-decoration: none;
+    color: black;
+}
+
+    .myActionlink:hover {
+        color: blue;
     }
