@@ -4,7 +4,7 @@
 
 @{
     ViewBag.Title = "Search";
-    Layout = "~/Views/_TimKiemSP.cshtml";
+    Layout = "~/Views/_TimKiemSP_NotFound.cshtml";
 }
 
 
@@ -157,103 +157,10 @@
 
 </div>
 
-@*<div>
-        <img id="Previous" src="~/Images/back_TimKiemSP.png" />
-        <p id="Page1">1 </p>
-        <p id="Page2">2 </p>
-        <p id="Page3">3 </p>
-        <p id="Page4">4 </p>
-        <p id="Page5">5 </p>
-        <p id="Page6">6 </p>
-        <img id="Next" src="~/Images/next_TimKiemSP.png" />
-    </div>*@
 
-<div class="LoadSP">
-    @foreach (var item in Model)
-    {
-        <div class="DS_TimKiem">
-            <div>
-                @{
-                    if (item.HinhAnhSP != null)
-                    {
-                        <a href="~/SanPhams/Details/@item.MaSP">
-                            <img src="@Url.Content(item.HinhAnhSP)" class="img-rounded" id="ImgProduct1" />
-                        </a>
-                    }
-                    else
-                    {
-                        <img src="~/Images/image.png"
-                             style="max-width:288px;max-height:314px" />
-                    }
-                }
-            </div>
-            <p id="Review1">92 review(s)</p>
-            <div class="Star">
-                <img id="Star_Product"
-                     src="~/Images/star.png" />
-                <img id="Star_Product"
-                     src="~/Images/star.png" />
-                <img id="Star_Product"
-                     src="~/Images/star.png" />
-                <img id="Star_Product"
-                     src="~/Images/star.png" />
-                <img id="Star_Product"
-                     src="~/Images/star.png" />
-            </div>
-            <p id="Product1_text">
-                @Html.ActionLink(@item.TenSP, "Details", new { id = item.MaSP }, new { @class = "myActionlink" })
-            </p>
-            <p id="Price_new1">@item.DonGiaGoc.ToString("N0")@("₫")</p>
-            <p id="Price_old1">@item.DonGiaKM.ToString("N0")@("₫")</p>
-        </div>
-    }
-</div>
+<p id="Search_Result_NotFound"><b>Không tìm thấy sản phẩm bạn cần tìm</b></p>
 
-<div class="CheckBox_TimKiemSP">
-
-
-    @if (ViewBag.keyword != "")
-    {
-        <p id="Search_Result">Bạn đã tìm kiếm: <b>@ViewBag.keyword</b></p>
-    }
-
-
-    <input type="checkbox"
-           style="
-                      width: 22.0px;
-                      height: 22.0px;
-                      position:absolute;
-                      left:40px;
-                      top:280px;" />
-
-    <input type="checkbox"
-           style="
-                      width: 22.0px;
-                      height: 22.0px;
-                      position:absolute;
-                      left:40px;
-                      top:320px;" />
-
-    <input type="checkbox"
-           style="
-                      width: 22.0px;
-                      height: 22.0px;
-                      position:absolute;
-                      left:40px;
-                      top:360px;" />
-
-    <input type="checkbox"
-           style="
-                      width: 22.0px;
-                      height: 22.0px;
-                      position:absolute;
-                      left:40px;
-                      top:400px;" />
-    <p id="Price1">Dưới 10 triệu </p>
-    <p id="Price2">Từ 10 triệu - 15 triệu </p>
-    <p id="Price3">Từ 15 triệu - 20 triệu </p>
-    <p id="Price4">Trên 20 triệu </p>
-</div>
+<img id="Sad_icon" src="~/Images/sad.png"/>
 
 <div class="Footer">
 
@@ -284,16 +191,5 @@
 </div>
 
 
-@if (ViewBag.keyword != "")
-{
-    <br />
-    <div class="pagination">
-        <div id="Page_Count">
-            Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
-        </div>
-        @Html.PagedListPager(Model, page => Url.Action("Search",
-            new { page, keyword = Request.QueryString["keyword"] }))
-    </div>
-}
 
 

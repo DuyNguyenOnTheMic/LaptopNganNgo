@@ -102,6 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\PagedList.css" />
+    <Content Include="css\Style_BanHang\Style_TImKiemSP_NotFound.css" />
     <Content Include="css\Style_BanHang\Style_TT_SuaGioHang.css" />
     <Content Include="css\Style_BanHang\Style_TimKiemSP.css" />
     <Content Include="css\Style_BanHang\Style_TT_DiaChi.css" />
@@ -172,6 +173,7 @@
     <Content Include="Images\previous.png" />
     <Content Include="Images\promotion.png" />
     <Content Include="Images\royal-alphabet-crown-letter-english-l-512.png" />
+    <Content Include="Images\sad.png" />
     <Content Include="Images\search.png" />
     <Content Include="Images\send.png" />
     <Content Include="Images\shopping-cart.png" />
@@ -336,6 +338,8 @@
     <Content Include="Views\SanPhams\Search.cshtml" />
     <Content Include="Views\SanPhams\QT_SanPham.cshtml" />
     <Content Include="Views\_QT_CapNhatSP.cshtml" />
+    <Content Include="Views\SanPhams\Search_NotFound.cshtml" />
+    <Content Include="Views\_TimKiemSP_NotFound.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

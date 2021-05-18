@@ -33,9 +33,19 @@ namespace Test.Controllers.Website_QuanTri
         public ActionResult Search(string keyword, int? page)
         {           
             db = new CT25Team24Entities();
-            List<SanPham> listSP = db.SanPhams.ToList();
-            ViewBag.keyword = keyword;            
+            List<SanPham> listSP = db.SanPhams.ToList();          
+            ViewBag.keyword = keyword;
+            bool notfound = db.SanPhams.Any(x => x.TenSP.ToLower().Contains(keyword.ToLower()));
+            if (!notfound)
+            {
+                return View("Search_NotFound");
+            }           
             return View(db.SanPhams.Where(x => x.TenSP.ToLower().Contains(keyword.ToLower()) || keyword == null).ToList().ToPagedList(page ?? 1, 6));
+        }
+
+        public ActionResult Search_NotFound()
+        {
+            return View();
         }
      
 
