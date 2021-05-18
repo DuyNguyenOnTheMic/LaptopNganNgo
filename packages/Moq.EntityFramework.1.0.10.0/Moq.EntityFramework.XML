@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Moq.EntityFramework</name>
+    </assembly>
+    <members>
+        <member name="T:Moq.EntityFramework.DbContextMockFactory">
+            <summary>
+            Provides factory method for creating DbContextMocks.
+            </summary>
+        </member>
+        <member name="M:Moq.EntityFramework.DbContextMockFactory.Create``1">
+            <summary>
+            Creates a DbContextMock with the specified DbContext type.
+            </summary>
+            <typeparam name="T">The type of the DbContext you want to create a mock for.</typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:Moq.EntityFramework.DbContextMock`1">
+            <summary>
+            Represents a mocked DbContext.
+            </summary>
+            <typeparam name="TContext">The type of the context.</typeparam>
+            <seealso cref="T:Moq.Mock`1" />
+        </member>
+        <member name="M:Moq.EntityFramework.DbContextMock`1.MockAllSets">
+            <summary>
+            Mocks all sets in a mocked DbContext.
+            </summary>
+            <returns>Returns the MockDbContext.</returns>
+            <remarks>For larger DbContexts, consider mocking each set individually, as using this method might significantly slow down your unit tests.</remarks>
+        </member>
+        <member name="M:Moq.EntityFramework.DbContextMock`1.MockSetFor``1(``0[])">
+            <summary>
+            Mocks the set for a given type.
+            </summary>
+            <typeparam name="TEntity">The type of the entity whose set should be mocked. If the set has already been mocked, returns the previously mocked set.</typeparam>
+            <param name="entities">The entities you would like added to the DbSet.</param>
+            <returns>Returns the MockDbContext.</returns>
+        </member>
+        <member name="M:Moq.EntityFramework.DbContextMock`1.MockSetFor``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Mocks the set for a given type.
+            </summary>
+            <typeparam name="TEntity">The type of the entity whose set should be mocked. If the set has already been mocked, returns the previously mocked set.</typeparam>
+            <param name="entities">The entities you would like added to the DbSet.</param>
+            <returns>Returns the MockDbContext.</returns>
+        </member>
+        <member name="M:Moq.EntityFramework.DbContextMock`1.MockedSet``1">
+            <summary>
+            Gets the mocked set for a given entity type
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+    </members>
+</doc>

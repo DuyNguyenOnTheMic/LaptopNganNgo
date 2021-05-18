@@ -17,23 +17,23 @@ namespace Test.Controllers
 
         private List<CTDH> ShoppingCart = null;
 
-        public CTDHsController()
+        private void GetCTDHsController()
         {
-            var session = System.Web.HttpContext.Current.Session;
-            if (session["ShoppingCart"] != null)
+            if (Session["ShoppingCart"] != null)
             {
-                ShoppingCart = session["ShoppingCart"] as List<CTDH>;
+                ShoppingCart = Session["ShoppingCart"] as List<CTDH>;
             }
             else
             {
                 ShoppingCart = new List<CTDH>();
-                session["ShoppingCart"] = ShoppingCart;
+                Session["ShoppingCart"] = ShoppingCart;
             }
         }
 
         // GET: CTDHs
         public ActionResult Index()
         {
+            GetCTDHsController();
             var hashtable = new Hashtable();
             foreach (var item in ShoppingCart)
             {
@@ -60,6 +60,7 @@ namespace Test.Controllers
         [HttpPost]
         public ActionResult Create(int id, int sl, int dongia)
         {
+            GetCTDHsController();
             var ID = db.SanPhams.Find(id);
             ShoppingCart.Add(new CTDH
             {
