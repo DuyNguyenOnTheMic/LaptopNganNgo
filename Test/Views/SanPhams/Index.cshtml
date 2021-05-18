@@ -1,5 +1,6 @@
 ﻿@using Test.Models;
-@model IEnumerable<Test.Models.SanPham>
+@model PagedList.IPagedList<Test.Models.SanPham>
+@using PagedList.Mvc;
 
 @{
     ViewBag.Title = "LaptopNganNgo - Trang chủ";
@@ -225,7 +226,7 @@
                              src="~/Images/star.png" />
                     </div>
                     <p id="HotDeal1_Text">
-                        @Html.ActionLink(@item.TenSP, "Details", new { id = item.MaSP }, new { @class = "myActionlink"})
+                        @Html.ActionLink(@item.TenSP, "Details", new { id = item.MaSP }, new { @class = "myActionlink" })
                     </p>
 
                     <p id="HotDeal1_GiaChuaGiam">@item.DonGiaGoc.ToString("N0")@("₫")</p>
@@ -234,6 +235,11 @@
                 </div>
             }
         </div>
+
+
+
+
+
 
 
 
@@ -264,4 +270,15 @@ Trợ Giúp</pre>
 
         </div>
     </div>
+
+
+    <div class="pagination">
+        <div id="Page_Count">
+            Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+        </div>
+        @Html.PagedListPager(Model, page => Url.Action("Index",
+            new { page, keyword = Request.QueryString["keyword"] }))
+    </div>
+
+
 </div>

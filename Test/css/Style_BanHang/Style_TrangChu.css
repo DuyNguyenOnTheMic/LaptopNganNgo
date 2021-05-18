@@ -841,7 +841,7 @@ body {
 
 .Footer {
     position: absolute;
-    bottom: -150px;
+    top: 550px;
     /* Height of the footer*/
     height: 60px;
 }
@@ -864,4 +864,48 @@ body {
 
 .img-rounded:hover {
     opacity: 0.7;
+}
+
+.ul.pagination {
+    display: inline-block;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+    ul.pagination li a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+    }
+
+        ul.pagination li a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        ul.pagination li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+.pagination {
+    font-family: Arial;
+    font-size: 16px;
+    width: 700px;
+    position: relative;
+    top: 1230px;
+    left: 330px;
+    z-index: +1;
+}
+
+#Page_Count {
+    position: relative;
+    top: 1225px;
+    left: 380px;
 }

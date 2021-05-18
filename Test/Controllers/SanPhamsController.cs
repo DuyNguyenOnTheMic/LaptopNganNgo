@@ -17,10 +17,17 @@ namespace Test.Controllers.Website_QuanTri
         private CT25Team24Entities db = new CT25Team24Entities();
 
         // GET: SanPhams
-        public ActionResult Index()
-        {
-            var sanPhams = db.SanPhams.Include(s => s.HangSP);
-            return View(sanPhams.ToList());
+        public ActionResult Index(int? page)
+        {         
+            if (page == null) page = 1;
+            var links = (from l in db.SanPhams
+                         select l).OrderBy(x => x.MaSP);
+
+            int pageSize = 6;
+          
+            int pageNumber = (page ?? 1);
+
+            return View(links.ToPagedList(pageNumber, pageSize));
         }
 
         public ActionResult QT_SanPham(string keyword, int? page)

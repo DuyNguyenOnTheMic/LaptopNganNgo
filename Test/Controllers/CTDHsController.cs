@@ -33,8 +33,8 @@ namespace Test.Controllers
 
         // GET: CTDHs
         public ActionResult Index()
-        {
-            var hashtable = new Hashtable();
+        {       
+                var hashtable = new Hashtable();
             foreach (var item in ShoppingCart)
             {
                 if (hashtable[item.SanPham.MaSP] != null)
