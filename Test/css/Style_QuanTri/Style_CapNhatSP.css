@@ -859,7 +859,7 @@
     -webkit-box-orient: vertical;
 }
 
-#button_Delete {
+.button_Delete {
     width: 150px;
     height: 50px;
     align-items: center;
@@ -880,6 +880,6 @@
     text-decoration: none;
 }
 
-    #button_Delete:hover {
+    .button_Delete:hover {
         background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
     }

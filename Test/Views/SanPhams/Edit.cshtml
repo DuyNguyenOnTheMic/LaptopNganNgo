@@ -146,9 +146,11 @@
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <input type="submit" value="Lưu" id="myBtn" />
-            <a id="button_Delete" href="@Html.ActionLink("Xoá", "Delete", new { id = Model.MaSP }, new { onclick = 
-                                       "return confirm('Bạn có chắc muốn xoá sản phẩm?')" })">
-            </a>
+                @Html.ActionLink("Xoá", "Delete", new { id = Model.MaSP }, new
+                {
+                    onclick = "return confirm('Bạn có chắc muốn xoá sản phẩm?')",
+                    @class = "button_Delete"
+                })
         </div>
     </div>
 </div>
