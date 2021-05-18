@@ -25,6 +25,10 @@ namespace Test.Controllers.Website_QuanTri
 
         public ActionResult QT_SanPham(string keyword, int? page)
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Redirect("~/QT_DangNhap/Index");
+            }
             db = new CT25Team24Entities();
             List<SanPham> listSP = db.SanPhams.ToList();
             return View(db.SanPhams.Where(x => x.TenSP.ToLower().Contains(keyword.ToLower()) || keyword==null).ToList().ToPagedList(page ?? 1, 4));
@@ -67,6 +71,10 @@ namespace Test.Controllers.Website_QuanTri
         // GET: SanPhams/Create
         public ActionResult Create()
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Redirect("~/QT_DangNhap/Index");
+            }
             ViewBag.MaHangSP = new SelectList(db.HangSPs, "MaHang", "TenHang");
             return View();
         }
@@ -94,7 +102,7 @@ namespace Test.Controllers.Website_QuanTri
                     if (db.SaveChanges() > 0)
                     {
                         file.SaveAs(path);
-                        ViewBag.msg = "Employee Added";
+                        ViewBag.msg = "sanpham Added";
                         ModelState.Clear();
                     }
                 }
@@ -113,6 +121,10 @@ namespace Test.Controllers.Website_QuanTri
         // GET: SanPhams/Edit/5
         public ActionResult Edit(int? id)
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Redirect("~/QT_DangNhap/Index");
+            } else
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -188,19 +200,23 @@ namespace Test.Controllers.Website_QuanTri
         // GET: SanPhams/Delete/5
         public ActionResult Delete(int? id)
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Redirect("~/QT_DangNhap/Index");
+            } else
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
 
-            var employee = db.SanPhams.Find(id);
+            var sanpham = db.SanPhams.Find(id);
 
-            if (employee == null)
+            if (sanpham == null)
             {
                 return HttpNotFound();
             }
-            string currentImg = Request.MapPath(employee.HinhAnhSP);
-            db.Entry(employee).State = EntityState.Deleted;
+            string currentImg = Request.MapPath(sanpham.HinhAnhSP);
+            db.Entry(sanpham).State = EntityState.Deleted;
             if (db.SaveChanges() > 0)
             {
                 if (System.IO.File.Exists(currentImg))
@@ -208,7 +224,7 @@ namespace Test.Controllers.Website_QuanTri
                     System.IO.File.Delete(currentImg);
                 }
                 TempData["msg"] = "Data Deleted";
-                return RedirectToAction("Index");
+                return RedirectToAction("QT_SanPham");
             }
 
             return View();
@@ -222,7 +238,7 @@ namespace Test.Controllers.Website_QuanTri
             SanPham sanPham = db.SanPhams.Find(id);
             db.SanPhams.Remove(sanPham);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("QT_SanPham");
         }
 
         protected override void Dispose(bool disposing)
