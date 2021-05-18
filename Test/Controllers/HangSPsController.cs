@@ -19,7 +19,7 @@ namespace Test.Controllers
         {
             if (!User.Identity.IsAuthenticated)
             {
-                return Redirect("https://localhost:44357/QT_DangNhap/Index");
+                return Redirect("~/QT_DangNhap/Index");
             }
             return View(db.HangSPs.ToList());
         }
@@ -29,7 +29,7 @@ namespace Test.Controllers
         {
             if (!User.Identity.IsAuthenticated)
             {
-                return Redirect("https://localhost:44357/QT_DangNhap/Index");
+                return Redirect("~/QT_DangNhap/Index");
             }
             else if (id == null)
             {
@@ -48,7 +48,7 @@ namespace Test.Controllers
         {
              if (!User.Identity.IsAuthenticated)
             {
-                return Redirect("https://localhost:44357/QT_DangNhap/Index");
+                return Redirect("~/QT_DangNhap/Index");
             }
             return View();
         }
@@ -62,7 +62,7 @@ namespace Test.Controllers
         {
             if (!User.Identity.IsAuthenticated)
             {
-                return Redirect("https://localhost:44357/QT_DangNhap/Index");
+                return Redirect("~/QT_DangNhap/Index");
             }
             else if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace Test.Controllers
         {
             if (!User.Identity.IsAuthenticated)
             {
-                return Redirect("https://localhost:44357/QT_DangNhap/Index");
+                return Redirect("~/QT_DangNhap/Index");
             }
             else if (id == null)
             {
@@ -102,7 +102,7 @@ namespace Test.Controllers
         {
             if (!User.Identity.IsAuthenticated)
             {
-                return Redirect("https://localhost:44357/QT_DangNhap/Index");
+                return Redirect("~/QT_DangNhap/Index");
             }
             else if (ModelState.IsValid)
             {
@@ -118,7 +118,7 @@ namespace Test.Controllers
         {
             if (!User.Identity.IsAuthenticated)
             {
-                return Redirect("https://localhost:44357/QT_DangNhap/Index");
+                return Redirect("~/QT_DangNhap/Index");
             }
             else if (id == null)
             {

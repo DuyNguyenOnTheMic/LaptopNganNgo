@@ -40,7 +40,7 @@ namespace Test.Controllers
                     Session["MaKH"] = account.MaKH;
                     FormsAuthentication.SetAuthCookie(model.Email, false);
 
-                    return Redirect("https://localhost:44357/KhachHangs/CapNhat_TT_KH/" + Session["MaKH"].ToString());
+                    return Redirect("~/KhachHangs/CapNhat_TT_KH/" + Session["MaKH"].ToString());
 
                 }
             }
