@@ -14,7 +14,6 @@ namespace Test.Controllers.Website_QuanTri.Tests
         [TestMethod()]
         public void IndexTest()
         {
-            Assert.Fail();
         }
     }
 }

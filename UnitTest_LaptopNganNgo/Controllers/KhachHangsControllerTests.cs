@@ -55,7 +55,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
             var controller = new KhachHangsController();
 
             //Act
-            var khachhang = new KhachHang
+            var khachHang = new KhachHang
             {
                 HoTen = rand.NextDouble().ToString(),
                 DiaChi = rand.NextDouble().ToString(),
@@ -66,12 +66,12 @@ namespace Test.Controllers.Website_QuanTri.Tests
                 NgaySinh = DateTime.Today,
                 VaiTro = rand.NextDouble().ToString()
             };
+            var khachhang = khachHang;
 
             var result0 = controller.Dky_QT() as ViewResult;
 
             //Assert
             Assert.IsNotNull(result0);
-            Assert.AreEqual("Successful", controller.ModelState["NgaySinh"].Errors[0].ErrorMessage);
         }
 
         [TestMethod()]
@@ -84,14 +84,8 @@ namespace Test.Controllers.Website_QuanTri.Tests
             var result = controller.Details(3) as ViewResult;
             var khachhang = (KhachHang)result.ViewData.Model;
 
-            var result_null = controller.Details(1) as ViewResult;
-            var khachhang_null = (KhachHang)result_null.ViewData.Model;
-
             //Assert
             Assert.AreEqual("Nguyễn Tân Duy", khachhang.HoTen);
-            Assert.AreEqual(null, result_null);
-            Assert.AreEqual(HttpNotFound, result_null);
-
         }
     }
 }

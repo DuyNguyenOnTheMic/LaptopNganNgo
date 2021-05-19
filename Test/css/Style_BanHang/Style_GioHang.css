@@ -791,8 +791,8 @@ body {
     text-align: center;
     color: #333333;
     position: absolute;
-    top: 841px;
-    left: 705.22px;
+    top: 846px;
+    left: 935.22px;
 }
 
 #Tien {
@@ -804,8 +804,8 @@ body {
     text-align: center;
     color: #FF0000;
     position: absolute;
-    top: 841px;
-    left: 827.87px;
+    top: 846px;
+    left: 1057.87px;
 }
 
 #d5 {
@@ -1103,7 +1103,6 @@ body {
     height: 50.0px;
     font-family: Arial;
     font-size: 18.666668px;
-    font-weight: 600;
     text-align: center;
     color: #030303;
     background: linear-gradient(#5099C6,#FF8585);
@@ -1116,6 +1115,10 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+    #button_ThanhToan:hover {
+        font-weight: 600;
+    }
 
 .LoadSP_GH {
     list-style-type: none;
