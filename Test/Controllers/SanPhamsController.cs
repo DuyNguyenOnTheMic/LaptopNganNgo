@@ -38,7 +38,7 @@ namespace Test.Controllers.Website_QuanTri
             }
             db = new CT25Team24Entities();
             List<SanPham> listSP = db.SanPhams.ToList();
-            return View(db.SanPhams.Where(x => x.TenSP.ToLower().Contains(keyword.ToLower()) || keyword==null).ToList().ToPagedList(page ?? 1, 4));
+            return View(db.SanPhams.Where(x => x.TenSP.ToLower().Contains(keyword.ToLower()) || keyword==null).ToList().OrderByDescending(x => x.MaSP).ToPagedList(page ?? 1, 4));
         }
 
         public ActionResult Search(string keyword, int? page)
