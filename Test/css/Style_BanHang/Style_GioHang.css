@@ -792,7 +792,7 @@ body {
     color: #333333;
     position: absolute;
     top: 846px;
-    left: 935.22px;
+    left: 735.22px;
 }
 
 #Tien {
@@ -805,7 +805,7 @@ body {
     color: #FF0000;
     position: absolute;
     top: 846px;
-    left: 1057.87px;
+    left: 857.87px;
 }
 
 #d5 {
@@ -1079,7 +1079,7 @@ body {
     top: -1150px;
 }
 
-#button_BanCoVoucher {
+#button_CapNhatGioHang {
     width: 174.99999999999977px;
     height: 50.0px;
     font-family: Arial;
@@ -1092,10 +1092,15 @@ body {
     border-radius: 20px;
     position: absolute;
     top: 850px;
-    left: 1011.19px;
+    left: 1041.19px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+#button_CapNhatGioHang:hover {
+    font-weight: 600;
 }
 
 #button_ThanhToan {
