@@ -32,6 +32,17 @@
 
     <div class="form-group">
         <div class="col-md-10">
+            @Html.DropDownList("MaHangSP", null, htmlAttributes: new
+       {
+           @class = "form-control",
+           @id = "W4"
+       })
+            @Html.ValidationMessageFor(model => model.MaHangSP, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
             @Html.EditorFor(model => model.DongSP, new
             {
                 htmlAttributes = new
@@ -46,17 +57,6 @@
     </div>
 
     <div class="form-group">
-        <div class="col-md-10">
-            @Html.DropDownList("MaHangSP", null, htmlAttributes: new
-       {
-           @class = "form-control",
-           @id = "W4"
-       })
-            @Html.ValidationMessageFor(model => model.MaHangSP, "", new { @class = "text-danger" })
-        </div>
-    </div>
-
-    <div class="form-group">
 
         <div class="col-md-10">
             @Html.TextAreaFor(model => model.ThongTinChiTietSP, new { style = "max-width:100%", @id = "S4" })
@@ -67,7 +67,7 @@
     <div class="form-group">
         <div class="col-md-10">
             <img src="@Url.Content(Session["imgPath"].ToString())" height="100" width="100" id="output" />
-            <input type="file" name="file" id="file" accept="image/x-png,image/gif,image/jpeg" onchange="loadFile(event)"/>
+            <input type="file" name="file" id="file" accept="image/x-png,image/gif,image/jpeg" onchange="loadFile(event)" />
             @Html.ValidationMessageFor(model => model.HinhAnhSP, "", new { @class = "text-danger" })
         </div>
     </div>
@@ -78,37 +78,6 @@
             image.src = URL.createObjectURL(event.target.files[0]);
         };
     </script>
-
-    <div class="form-group">
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.TrangThaiSP, new
-            {
-                htmlAttributes = new
-       {
-           @class = "form-control",
-           placeholder = "Tình trạng sản phẩm",
-           @id = "W3"
-       }
-            })
-            @Html.ValidationMessageFor(model => model.TrangThaiSP, "", new { @class = "text-danger" })
-        </div>
-    </div>
-
-    <div class="form-group">
-        <div class="col-md-10">
-            @Html.EditorFor(model => model.SL, new
-            {
-                htmlAttributes = new
-       {
-           @class = "form-control",
-           placeholder = "Nhập số lượng sản phẩm",
-           @id = "T9",
-           @type = "number"
-       }
-            })
-            @Html.ValidationMessageFor(model => model.SL, "", new { @class = "text-danger" })
-        </div>
-    </div>
 
     <div class="form-group">
         <div class="col-md-10">
@@ -142,15 +111,46 @@
         </div>
     </div>
 
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TrangThaiSP, new
+            {
+                htmlAttributes = new
+       {
+           @class = "form-control",
+           placeholder = "Tình trạng sản phẩm",
+           @id = "W3"
+       }
+            })
+            @Html.ValidationMessageFor(model => model.TrangThaiSP, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.SL, new
+            {
+                htmlAttributes = new
+       {
+           @class = "form-control",
+           placeholder = "Nhập số lượng sản phẩm",
+           @id = "T9",
+           @type = "number"
+       }
+            })
+            @Html.ValidationMessageFor(model => model.SL, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
 
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <input type="submit" value="Lưu" id="myBtn" />
-                @Html.ActionLink("Xoá", "Delete", new { id = Model.MaSP }, new
-                {
-                    onclick = "return confirm('Bạn có chắc muốn xoá sản phẩm?')",
-                    @class = "button_Delete"
-                })
+            @Html.ActionLink("Xoá", "Delete", new { id = Model.MaSP }, new
+            {
+                onclick = "return confirm('Bạn có chắc muốn xoá sản phẩm?')",
+                @class = "button_Delete"
+            })
         </div>
     </div>
 </div>
