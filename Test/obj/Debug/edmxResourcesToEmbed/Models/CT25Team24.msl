@@ -1,17 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="CT25Team24ModelStoreContainer" CdmEntityContainer="CT25Team24Entities">
-    <EntitySetMapping Name="ChiTietGioHangs">
-      <EntityTypeMapping TypeName="CT25Team24Model.ChiTietGioHang">
-        <MappingFragment StoreEntitySet="ChiTietGioHang">
-          <ScalarProperty Name="MaGH" ColumnName="MaGH" />
-          <ScalarProperty Name="MaSP" ColumnName="MaSP" />
-          <ScalarProperty Name="SL" ColumnName="SL" />
-          <ScalarProperty Name="DonGia" ColumnName="DonGia" />
-          <ScalarProperty Name="ThanhTien" ColumnName="ThanhTien" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="CTDHs">
       <EntityTypeMapping TypeName="CT25Team24Model.CTDH">
         <MappingFragment StoreEntitySet="CTDH">
@@ -31,15 +20,7 @@
           <ScalarProperty Name="NgayBan" ColumnName="NgayBan" />
           <ScalarProperty Name="MaKH" ColumnName="MaKH" />
           <ScalarProperty Name="TongTien" ColumnName="TongTien" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="GioHangs">
-      <EntityTypeMapping TypeName="CT25Team24Model.GioHang">
-        <MappingFragment StoreEntitySet="GioHang">
-          <ScalarProperty Name="MaGH" ColumnName="MaGH" />
-          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
-          <ScalarProperty Name="TongTien" ColumnName="TongTien" />
+          <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

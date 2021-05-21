@@ -133,6 +133,7 @@
     <Content Include="Images\down-arrow.png" />
     <Content Include="Images\facebook.png" />
     <Content Include="Images\FB.png" />
+    <Content Include="Images\female.png" />
     <Content Include="Images\google.png" />
     <Content Include="Images\H1.png" />
     <Content Include="Images\H2.png" />
@@ -165,6 +166,7 @@
     <Content Include="Images\JP_Clipboard_Image3.png" />
     <Content Include="Images\JP_Clipboard_Image4.png" />
     <Content Include="Images\key.png" />
+    <Content Include="Images\male.png" />
     <Content Include="Images\next.png" />
     <Content Include="Images\next_TimKiemSP.png" />
     <Content Include="Images\password-icon-28.png" />
@@ -172,6 +174,7 @@
     <Content Include="Images\policy.png" />
     <Content Include="Images\previous.png" />
     <Content Include="Images\promotion.png" />
+    <Content Include="Images\rainbow-flag.png" />
     <Content Include="Images\royal-alphabet-crown-letter-english-l-512.png" />
     <Content Include="Images\sad.png" />
     <Content Include="Images\search.png" />
@@ -211,6 +214,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CTDHsController.cs" />
+    <Compile Include="Controllers\DonHangsController.cs" />
     <Compile Include="Controllers\HangSPsController.cs" />
     <Compile Include="Controllers\Website_BanHang\CSKHController.cs" />
     <Compile Include="Controllers\Website_BanHang\DangNhapController.cs" />
@@ -222,15 +226,11 @@
     <Compile Include="Controllers\Website_BanHang\TT_ThanhCongController.cs" />
     <Compile Include="Controllers\KhachHangsController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_DangNhapController.cs" />
-    <Compile Include="Controllers\Website_QuanTri\QT_DonHangController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_XemCTDHController.cs" />
     <Compile Include="Controllers\Website_QuanTri\QT_XemCTTrangChuController.cs" />
     <Compile Include="Controllers\SanPhamsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ChiTietGioHang.cs">
-      <DependentUpon>CT25Team24.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\CT25Team24.Context.cs">
       <AutoGen>True</AutoGen>
@@ -251,9 +251,6 @@
       <DependentUpon>CT25Team24.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DonHang.cs">
-      <DependentUpon>CT25Team24.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\GioHang.cs">
       <DependentUpon>CT25Team24.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\HangSP.cs">
@@ -312,7 +309,6 @@
     <Content Include="Views\_QT_XemCTTrangChu.cshtml" />
     <Content Include="Views\QT_XemCTTrangChu\Index.cshtml" />
     <Content Include="Views\_QT_DonHang.cshtml" />
-    <Content Include="Views\QT_DonHang\Index.cshtml" />
     <Content Include="Views\SanPhams\Delete.cshtml" />
     <Content Include="Views\SanPhams\Details.cshtml" />
     <Content Include="Views\SanPhams\Edit.cshtml" />
@@ -340,6 +336,11 @@
     <Content Include="Views\_QT_CapNhatSP.cshtml" />
     <Content Include="Views\SanPhams\Search_NotFound.cshtml" />
     <Content Include="Views\_TimKiemSP_NotFound.cshtml" />
+    <Content Include="Views\DonHangs\Create.cshtml" />
+    <Content Include="Views\DonHangs\Delete.cshtml" />
+    <Content Include="Views\DonHangs\Details.cshtml" />
+    <Content Include="Views\DonHangs\Edit.cshtml" />
+    <Content Include="Views\DonHangs\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

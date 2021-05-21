@@ -126,6 +126,7 @@
 .Header {
     position:absolute;
     left: -15px;
+    top: 0px;
 }
 
 #Footer_Text {
@@ -156,9 +157,9 @@
     left: 136.35px;
 }
 
-#HD_Laptop{
-    width: 461.05085963504837px;
-    height: 376.49999999999955px;
+#Img_DH {  
+    width: 200px;
+    height: 200px;
     position: absolute;
     top: 320px;
     left: 136.35px;
@@ -172,85 +173,58 @@
     left: 1038.93px;
 }
 
-#CTDonHang{
-    width: 536.14453125px;
-    height: 513.0px;
+#CTDonHang {
     font-family: 'UTM Avo';
-    font-size: 24.0px;
+    font-size: 18.0px;
     position: absolute;
-    top: 320px;
-    left: 680px;
+    top: 350px;
+    left: 900px;
 }
 
-#table_TenSP {
-    width: 71.14583587646484px;
-    height: 24.0px;
+#text_TTKH {
+    width: 480.29296875px;
+    height: 135.0px;
     font-family: 'UTM Avo';
-    font-size: 21.333334px;
+    font-size: 18.0px;
     font-weight: 400;
-    color: #333333;
+    color: #000000;
     position: absolute;
-    top: 417px;
-    left: 793px;
+    top: 350px;
+    left: 459.69px;
 }
 
-#table_SoLuong {
-    width: 88.76042175292969px;
-    height: 24.0px;
+#txt_TenSP {
+    width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    white-space: nowrap
+}
+
+html {
     font-family: 'UTM Avo';
-    font-size: 21.333334px;
-    font-weight: 400;
-    color: #333333;
-    position: absolute;
-    top: 417px;
-    left: 972px;
 }
 
-#table_DonGia {
-    width: 75.65625px;
-    height: 24.0px;
-    font-family: 'UTM Avo';
-    font-size: 21.333334px;
-    font-weight: 400;
-    color: #333333;
-    position: absolute;
-    top: 417px;
-    left: 1107.77px;
+
+table {
+    position: relative;
+    top: 600px;
+    left: 240px;
+    font-size: 18px;
+    table-layout: fixed;
+    border-collapse: collapse;
 }
 
-#table_ChietKhau {
-    width: 101.98958587646484px;
-    height: 48.0px;
-    font-family: 'UTM Avo';
-    font-size: 21.333334px;
-    font-weight: 400;
-    color: #333333;
-    position: absolute;
-    top: 417px;
-    left: 1220.42px;
+tr:nth-child(even) {
+    background-color: #f2f2f2
 }
 
-#table_ThanhTien {
-    width: 100.81251525878906px;
-    height: 24.0px;
-    font-family: 'UTM Avo';
-    font-size: 21.333334px;
-    font-weight: 400;
-    color: #333333;
-    position: absolute;
-    top: 417px;
-    left: 1359.23px;
-}
 
-#table {
-    width: 797.0340991051086px;
-    height: 79.64503733786444px;
-    background-color: #EDEDED;
-    border-top: 1px solid #DDDDDD;
-    border-left: 1px solid #DDDDDD;
-    position: absolute;
-    top: 500px;
-    left: 679.69px;
+th {
+    background-color: #FEADB9;
+    color: white;
 }
 
 #text_TenSP {
@@ -323,20 +297,8 @@
     font-weight: 400;
     color: #000000;
     position: absolute;
-    top: 617px;
-    left: 1232.89px;
-}
-
-#text_TTKH {
-    width: 480.29296875px;
-    height: 135.0px;
-    font-family: 'UTM Avo';
-    font-size: 24.0px;
-    font-weight: 400;
-    color: #000000;
-    position: absolute;
-    top: 688px;
-    left: 679.69px;
+    top: 717px;
+    left: 1092.89px;
 }
 
 #button_Delete {
@@ -419,3 +381,6 @@
     -webkit-box-orient: vertical;
 }
 
+#txt_MaSP {
+    text-align: center;
+}

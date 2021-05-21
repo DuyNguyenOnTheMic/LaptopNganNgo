@@ -1,0 +1,159 @@
+﻿@model Test.Models.DonHang
+
+@{
+    ViewBag.Title = "Chi tiết đơn hàng";
+    Layout = "~/Views/_QT_XemCTDH.cshtml";
+    double TongTien = 0;
+}
+
+<table class="table">
+    <tr>
+        <th>Mã sản phẩm</th>
+        <th>Tên sản phẩm</th>
+        <th>Số lượng</th>
+        <th>Đơn giá</th>
+        <th>Chiết khấu</th>
+        <th>Tổng</th>
+        <th>Xoá</th>
+    </tr>
+
+    @foreach (var item in Model.CTDHs)
+    {
+        TongTien += item.DonGia * item.SL;
+
+        <tr>
+            <td id="txt_MaSP">@item.MaSP</td>
+            <td>
+                <div id="txt_TenSP">
+                    @item.SanPham.TenSP
+                </div>
+            </td>
+            <td>@item.SL</td>
+            <td>@item.DonGia.ToString("N0")</td>
+            <td>@item.ChietKhau</td>
+            <td>@((item.DonGia*item.SL).ToString("N0"))</td>
+            <td>
+                <img src="~/Images/trash.png" width="15" />
+            </td>
+
+        </tr>
+
+
+    }
+
+</table>
+
+<p id="TongTien">Tổng tiền: <span style="color:red">@(TongTien.ToString("N0")) @("đ")</span></p>
+
+
+
+<div class="Header">
+    <img src="~/Images/user_QT.png"
+         id="User_icon"
+         width="45" />
+    <a href="~/SanPhams/QT_SanPham">
+        <img id="Logo_Header"
+             src="~/Images/bird.png"
+             width="99" />
+        <p id="Text_Header">LaptopNganNgo</p>
+    </a>
+
+    <a href="~/SanPhams/QT_SanPham">
+        <p id="Product_SanPham">Sản phẩm</p>
+    </a>
+    <a href="~/QT_DonHang/Index">
+        <p id="Product_DonHang">Đơn hàng</p>
+    </a>
+    <p id="Product_KhachHang">Khách hàng</p>
+    <p id="Product_DoanhThu">Doanh thu</p>
+    <p id="Product_TaiKhoan">Tài khoản</p>
+
+    <span id="rectangle"></span>
+</div>
+
+<div class="Body">
+
+    <a href="~/DonHangs/Index">
+        <img id="Back"
+             src="~/Images/previous.png" />
+    </a>
+
+
+    @if (Model.KhachHang.GioiTinh == "Nam")
+    {
+        <img id="Img_DH"
+             width="101"
+             height="101"
+             src="~/Images/male.png" />
+    }
+    else if (Model.KhachHang.GioiTinh == "Nữ")
+    {
+        <img id="Img_DH"
+             width="101"
+             height="101"
+             src="~/Images/female.png" />
+    }
+    else
+    {
+        <img id="Img_DH"
+             width="101"
+             height="101"
+             src="~/Images/rainbow-flag.png" />
+    }
+
+<div id="text_TTKH">
+
+    <b>Thông tin khách hàng:</b>
+
+    <br /> <br />
+
+        Khách hàng: @Html.DisplayFor(model => model.KhachHang.HoTen)
+        <br />
+        Số điện thoại: @Html.DisplayFor(model => model.KhachHang.DienThoai)
+        <br />
+        Email: @Html.DisplayFor(model => model.KhachHang.Email)
+        <br />
+        Địa chỉ: @Html.DisplayFor(model => model.KhachHang.DiaChi)
+
+</div>
+
+
+    <div id="CTDonHang">
+        <b>
+            Mã đơn hàng: <span style="font-size: 24px;">
+                @Html.DisplayFor(model => model.MaDH)
+            </span>
+        </b>
+        <br /> <br />
+        Ngày lập đơn: @Html.DisplayFor(model => model.NgayBan)
+        <br />
+        Trạng thái: @Html.DisplayFor(model => model.TinhTrang)
+    </div>
+
+
+    <div id="button_Delete">Huỷ đơn</div>
+
+</div>
+
+<div>
+    @if (Session["HoTen"] != null)
+    {
+        <p id="Hello_Text">@Session["HoTen"].ToString()</p>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+    else if (Session["Email"] != null && Session["HoTen"] == null)
+    {
+        <p id="Hello_Text">Chào bạn,</p>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+
+</div>
+
+<div class="Footer">
+    <p id="Footer_Text">
+        2021
+        <br />Powered by Squad Ngáo Ngơ
+    </p>
+</div>
+
+

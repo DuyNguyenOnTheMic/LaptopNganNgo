@@ -4,21 +4,16 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="c8f78d4865d6443a8c00adc22f146d88" Name="Diagram1">
-        <EntityTypeShape EntityType="CT25Team24Model.ChiTietGioHang" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="CT25Team24Model.CTDH" Width="1.5" PointX="8.25" PointY="2.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="CT25Team24Model.DonHang" Width="1.5" PointX="6" PointY="7.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="CT25Team24Model.GioHang" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
-        <EntityTypeShape EntityType="CT25Team24Model.HangSP" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="CT25Team24Model.KhachHang" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="CT25Team24Model.SanPham" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="CT25Team24Model.sysdiagram" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
-        <AssociationConnector Association="CT25Team24Model.FK_ChiTietGioHang_GioHang" ManuallyRouted="false" />
-        <AssociationConnector Association="CT25Team24Model.FK_ChiTietGioHang_SanPham" ManuallyRouted="false" />
+      <Diagram DiagramId="bfd70a0f2379411f8974bb70f147e4df" Name="Diagram1">
+        <EntityTypeShape EntityType="CT25Team24Model.CTDH" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team24Model.DonHang" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team24Model.HangSP" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team24Model.KhachHang" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team24Model.SanPham" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CT25Team24Model.sysdiagram" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
         <AssociationConnector Association="CT25Team24Model.FK_CTDH_DonHang" ManuallyRouted="false" />
         <AssociationConnector Association="CT25Team24Model.FK_CTDH_SanPham" ManuallyRouted="false" />
         <AssociationConnector Association="CT25Team24Model.FK_DonHang_KhachHang" ManuallyRouted="false" />
-        <AssociationConnector Association="CT25Team24Model.FK_GioHang_KhachHang" ManuallyRouted="false" />
         <AssociationConnector Association="CT25Team24Model.FK_SanPham_HangSP" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

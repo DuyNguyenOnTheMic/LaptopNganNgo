@@ -19,9 +19,8 @@ namespace Test.Models
         public KhachHang()
         {
             this.DonHangs = new HashSet<DonHang>();
-            this.GioHangs = new HashSet<GioHang>();
         }
-
+    
         public int MaKH { get; set; }
         public string HoTen { get; set; }
         public string GioiTinh { get; set; }
@@ -31,14 +30,12 @@ namespace Test.Models
         public Nullable<System.DateTime> NgaySinh { get; set; }
         [Required(ErrorMessage = "Email is required.")]
         public string Email { get; set; }
-        [Required(ErrorMessage = "Email is required.")]
         [DataType(DataType.Password)]
+        [Required(ErrorMessage = "Password is required.")]
         public string MatKhau { get; set; }
         public string VaiTro { get; set; }
-
+    
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DonHang> DonHangs { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<GioHang> GioHangs { get; set; }
     }
 }

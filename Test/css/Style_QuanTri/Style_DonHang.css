@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 #Logo_Header {
     width: 99.00000000000011px;
     height: 73.99999999999989px;
@@ -332,7 +333,7 @@
     cursor: pointer;
 }
 
-#rectangle_SP1 {
+#rectangle_SP {
     width: 388px;
     height: 188.9999999999999px;
     font-family: 'UTM Avo';
@@ -341,316 +342,49 @@
     text-align: center;
     color: #333333;
     background-color: #EFEFEF;
-    position: absolute;
-    top: 490px;
-    left: 194px;
+    position: relative;
+    top: 290px;
+    left: 100px;
+    z-index: -1;
 }
 
-#rectangle_SP2 {
-    width: 388px;
-    height: 188.9999999999999px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #EFEFEF;
-    position: absolute;
-    top: 490px;
-    left: 620px;
-}
-
-#rectangle_SP3 {
-    width: 388px;
-    height: 188.9999999999999px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #EFEFEF;
-    position: absolute;
-    top: 490px;
-    left: 1046px;
-}
-
-#rectangle_SP4 {
-    width: 388px;
-    height: 188.9999999999999px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #EFEFEF;
-    position: absolute;
-    top: 700px;
-    left: 194px;
-}
-
-#rectangle_SP5 {
-    width: 388px;
-    height: 188.9999999999999px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #EFEFEF;
-    position: absolute;
-    top: 700px;
-    left: 620px;
-}
-
-#rectangle_SP6 {
-    width: 388px;
-    height: 188.9999999999999px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #EFEFEF;
-    position: absolute;
-    top: 700px;
-    left: 1046px;
-}
 
 .Hoa_Don_Ban_Hang {
     position: absolute;
     left: -15px;
 }
 
-#Img_SP1 {
+#Img_SP {
     position: absolute;
     top: 510px;
     left: 213px;
     cursor: pointer;
 }
 
-#Img_SP2 {
-    position: absolute;
-    top: 510px;
-    left: 639px;
-    cursor: pointer;
-}
 
-#Img_SP3 {
-    position: absolute;
-    top: 510px;
-    left: 1065px;
-    cursor: pointer;
-}
-
-#Img_SP4 {
-    position: absolute;
-    top: 718px;
-    left: 639px;
-    cursor: pointer;
-}
-
-#Img_SP5 {
-    position: absolute;
-    top: 718px;
-    left: 213.11px;
-    cursor: pointer;
-}
-
-#Img_SP6 {
-    position: absolute;
-    top: 718px;
-    left: 1065px;
-    cursor: pointer;
-}
-
-#Page_1 {
-    width: 41.000000000000114px;
-    height: 38.0px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #A9A9A9;
-    position: absolute;
-    top: 887px;
-    left: 652px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-    #Page_1:hover {
-        font-weight: 700;
-    }
-
-
-#Page_2 {
-    width: 41.000000000000114px;
-    height: 38.0px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #D9D9D9;
-    position: absolute;
-    top: 887px;
-    left: 716px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-    #Page_2:hover {
-        font-weight: 700;
-    }
-
-
-#Page_3 {
-    width: 41.000000000000114px;
-    height: 38.0px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #D9D9D9;
-    position: absolute;
-    top: 887px;
-    left: 779.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-    #Page_3:hover {
-        font-weight: 700;
-    }
-
-
-#Page_dot {
-    width: 41.000000000000114px;
-    height: 38.0px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #D9D9D9;
-    position: absolute;
-    top: 887px;
-    left: 843px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-    #Page_dot:hover {
-        font-weight: 700;
-    }
-
-#Page_25 {
-    width: 41.000000000000114px;
-    height: 38.0px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #D9D9D9;
-    position: absolute;
-    top: 887px;
-    left: 907px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-    #Page_25:hover {
-        font-weight: 700;
-    }
-
-.Page_Number {
-    position: absolute;
-    top: 25px;
-}
-
-#Text_SP1 {
+#Text_SP {
     width: 183.0703125px;
     height: 90.0px;
     font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
     color: #333333;
-    position: absolute;
-    top: 495px;
-    left: 358px;
+    position: relative;
+    top: 115px;
+    left: 238px;
 }
 
-#Text_SP2 {
+#Text_DonHang {
     width: 183.0703125px;
     height: 90.0px;
     font-family: 'UTM Avo';
     font-size: 16.0px;
     font-weight: 400;
+    text-align: right;
     color: #333333;
-    position: absolute;
-    top: 495px;
-    left: 780px;
-}
-
-#Text_SP3 {
-    width: 183.0703125px;
-    height: 90.0px;
-    font-family: 'UTM Avo';
-    font-size: 16.0px;
-    font-weight: 400;
-    color: #333333;
-    position: absolute;
-    top: 495px;
-    left: 1205px;
-}
-
-#Text_SP4 {
-    width: 183.0703125px;
-    height: 90.0px;
-    font-family: 'UTM Avo';
-    font-size: 16.0px;
-    font-weight: 400;
-    color: #333333;
-    position: absolute;
-    top: 705px;
-    left: 358px;
-}
-
-#Text_SP5 {
-    width: 183.0703125px;
-    height: 90.0px;
-    font-family: 'UTM Avo';
-    font-size: 16.0px;
-    font-weight: 400;
-    color: #333333;
-    position: absolute;
-    top: 705px;
-    left: 780px;
-}
-
-#Text_SP6 {
-    width: 183.0703125px;
-    height: 90.0px;
-    font-family: 'UTM Avo';
-    font-size: 16.0px;
-    font-weight: 400;
-    color: #333333;
-    position: absolute;
-    top: 705px;
-    left: 1205px;
+    position: relative;
+    top: 7px;
+    left: 288px;
 }
 
 #Button_Xem_SP1 {
@@ -662,9 +396,9 @@
     text-align: center;
     color: #333333;
     background-color: #D9D9D9;
-    position: absolute;
-    top: 630px;
-    left: 200px;
+    position: relative;
+    top: 15px;
+    left: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -685,9 +419,9 @@
     text-align: center;
     color: #333333;
     background-color: #D9D9D9;
-    position: absolute;
-    top: 630px;
-    left: 360px;
+    position: relative;
+    top: -14px;
+    left: 310px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -695,236 +429,6 @@
 }
 
     #Button_Xoa_SP1:hover {
-        background-color: #A9A9A9;
-        cursor: pointer;
-    }
-
-#Button_Xem_SP2 {
-    width: 135.05085963504814px;
-    height: 28.99999999999943px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #D9D9D9;
-    position: absolute;
-    top: 630px;
-    left: 629px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-}
-
-    #Button_Xem_SP2:hover {
-        background-color: #A9A9A9;
-        cursor: pointer;
-    }
-
-#Button_Xoa_SP2 {
-    width: 135.05085963504814px;
-    height: 28.99999999999943px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #D9D9D9;
-    position: absolute;
-    top: 630px;
-    left: 789px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-}
-
-    #Button_Xoa_SP2:hover {
-        background-color: #A9A9A9;
-        cursor: pointer;
-    }
-
-#Button_Xem_SP3 {
-    width: 135.05085963504814px;
-    height: 28.99999999999943px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #D9D9D9;
-    position: absolute;
-    top: 630px;
-    left: 1055px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-}
-
-    #Button_Xem_SP3:hover {
-        background-color: #A9A9A9;
-        cursor: pointer;
-    }
-
-#Button_Xoa_SP3 {
-    width: 135.05085963504814px;
-    height: 28.99999999999943px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #D9D9D9;
-    position: absolute;
-    top: 630px;
-    left: 1215px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-}
-
-    #Button_Xoa_SP3:hover {
-        background-color: #A9A9A9;
-        cursor: pointer;
-    }
-
-#Button_Xem_SP4 {
-    width: 135.05085963504814px;
-    height: 28.99999999999943px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #D9D9D9;
-    position: absolute;
-    top: 838px;
-    left: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-}
-
-    #Button_Xem_SP4:hover {
-        background-color: #A9A9A9;
-        cursor: pointer;
-    }
-
-#Button_Xoa_SP4 {
-    width: 135.05085963504814px;
-    height: 28.99999999999943px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #D9D9D9;
-    position: absolute;
-    top: 838px;
-    left: 360px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-}
-
-    #Button_Xoa_SP4:hover {
-        background-color: #A9A9A9;
-        cursor: pointer;
-    }
-
-#Button_Xem_SP5 {
-    width: 135.05085963504814px;
-    height: 28.99999999999943px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #D9D9D9;
-    position: absolute;
-    top: 838px;
-    left: 629px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-}
-
-    #Button_Xem_SP5:hover {
-        background-color: #A9A9A9;
-        cursor: pointer;
-    }
-
-#Button_Xoa_SP5 {
-    width: 135.05085963504814px;
-    height: 28.99999999999943px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #D9D9D9;
-    position: absolute;
-    top: 838px;
-    left: 789px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-}
-
-    #Button_Xoa_SP5:hover {
-        background-color: #A9A9A9;
-        cursor: pointer;
-    }
-
-#Button_Xem_SP6 {
-    width: 135.05085963504814px;
-    height: 28.99999999999943px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #D9D9D9;
-    position: absolute;
-    top: 838px;
-    left: 1055px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-}
-
-    #Button_Xem_SP6:hover {
-        background-color: #A9A9A9;
-        cursor: pointer;
-    }
-
-#Button_Xoa_SP6 {
-    width: 135.05085963504814px;
-    height: 28.99999999999943px;
-    font-family: 'UTM Avo';
-    font-size: 13.333334px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
-    background-color: #D9D9D9;
-    position: absolute;
-    top: 838px;
-    left: 1215px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-}
-
-    #Button_Xoa_SP6:hover {
         background-color: #A9A9A9;
         cursor: pointer;
     }
@@ -979,4 +483,72 @@
     display: -webkit-box;
     -webkit-line-clamp: 1; /* number of lines to show */
     -webkit-box-orient: vertical;
+}
+
+.Text_SanPham {
+    float: left;
+    width: 400px; /* bề rộng  */
+    height: 200px;
+    display: block;
+    top: 600px;
+    left: 121px;
+}
+
+.Load_DonHang {
+    list-style-type: none;
+    width: 1458px;
+    height: auto;
+    position: absolute;
+    left: 121px;
+    top: 90px;
+    z-index: -1;
+}
+
+#Img_SP1 {
+    position: relative;
+    top: 420px;
+    left: 120px;
+}
+
+.ul.pagination {
+    display: inline-block;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+    ul.pagination li a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+    }
+
+        ul.pagination li a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        ul.pagination li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+.pagination {
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    width: 700px;
+    position: relative;
+    top: 450px;
+    left: 350px;
+}
+
+#Page_Count {
+    position: relative;
+    top: 450px;
+    left: 400px;
 }
