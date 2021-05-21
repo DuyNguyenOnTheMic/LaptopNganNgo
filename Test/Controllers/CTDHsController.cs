@@ -75,57 +75,38 @@ namespace Test.Controllers
 
 
         // GET: CTDHs/Edit/5
-        public ActionResult Edit(int? id)
+        [HttpPost]
+        public ActionResult Edit(int[] id, int[] sl, double[] dongia)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            CTDH cTDH = db.CTDHs.Find(id);
-            if (cTDH == null)
-            {
-                return HttpNotFound();
-            }
-            ViewBag.MaDH = new SelectList(db.DonHangs, "MaDH", "MaDH", cTDH.MaDH);
-            ViewBag.MaSP = new SelectList(db.SanPhams, "MaSP", "TenSP", cTDH.MaSP);
-            return View(cTDH);
+            var session = System.Web.HttpContext.Current.Session;
+            ShoppingCart.Clear();
+            if (id != null) {            
+                for (int i = 0; i < id.Length; i++)
+                {
+                    var SP = db.SanPhams.Find(id[i]);
+                    ShoppingCart.Add(new CTDH
+                    {
+                        SanPham = SP,
+                        SL = sl[i],
+                        DonGia = dongia[i]
+                    });
+                }}
+                session["ShoppingCart"] = ShoppingCart;
+            
+            return RedirectToAction("Index");
         }
 
 
 
         // GET: CTDHs/Delete/5
-        public ActionResult Delete(int? id)
+        [HttpPost]
+        public ActionResult Delete(int id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            CTDH cTDH = db.CTDHs.Find(id);
-            if (cTDH == null)
-            {
-                return HttpNotFound();
-            }
-            return View(cTDH);
-        }
-
-        // POST: CTDHs/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            CTDH cTDH = db.CTDHs.Find(id);
-            db.CTDHs.Remove(cTDH);
-            db.SaveChanges();
+            var session = System.Web.HttpContext.Current.Session;
+            ShoppingCart.RemoveAll(x => x.SanPham.MaSP == id);
+            session["ShoppingCart"] = ShoppingCart;
             return RedirectToAction("Index");
         }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+        
     }
 }
