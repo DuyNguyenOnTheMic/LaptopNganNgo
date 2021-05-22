@@ -12,23 +12,18 @@ namespace Test.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class DonHang
+    public partial class TrangThaiDH
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public DonHang()
+        public TrangThaiDH()
         {
-            this.CTDHs = new HashSet<CTDH>();
+            this.DonHangs = new HashSet<DonHang>();
         }
     
-        public int MaDH { get; set; }
-        public System.DateTime NgayBan { get; set; }
-        public int MaKH { get; set; }
-        public double TongTien { get; set; }
-        public Nullable<int> TrangThai { get; set; }
+        public int MaTrangThai { get; set; }
+        public string TrangThai { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CTDH> CTDHs { get; set; }
-        public virtual KhachHang KhachHang { get; set; }
-        public virtual TrangThaiDH TrangThaiDH { get; set; }
+        public virtual ICollection<DonHang> DonHangs { get; set; }
     }
 }

@@ -31,5 +31,6 @@ namespace Test.Models
         public virtual DbSet<KhachHang> KhachHangs { get; set; }
         public virtual DbSet<SanPham> SanPhams { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<TrangThaiDH> TrangThaiDHs { get; set; }
     }
 }

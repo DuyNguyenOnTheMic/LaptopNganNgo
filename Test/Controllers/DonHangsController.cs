@@ -16,15 +16,23 @@ namespace Test.Controllers
         private CT25Team24Entities db = new CT25Team24Entities();
 
         // GET: DonHangs
-        public ActionResult Index(int? keyword, int? page)
+
+        public PartialViewResult Index(int? keyword, int? page, int? category)
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Redirect("~/QT_DangNhap/Index");
-            }
             db = new CT25Team24Entities();
-            List<DonHang> listDH = db.DonHangs.ToList();
-            return View(db.DonHangs.Where(x => x.MaDH.ToString().Contains(keyword.ToString()) || keyword == null).ToList().OrderByDescending(x => x.MaDH).ToPagedList(page ?? 1, 6));
+
+
+            if (category != null)
+            {
+                ViewBag.category = category;
+                return PartialView(db.DonHangs.Where(x => x.MaDH.ToString().Contains(keyword.ToString()) || keyword == null)
+                .Where(x => x.TrangThai == category).ToList().OrderByDescending(x => x.MaDH).ToPagedList(page ?? 1, 6));
+            }
+            else
+            {
+                return PartialView(db.DonHangs.Where(x => x.MaDH.ToString().Contains(keyword.ToString()) || keyword == null)
+                .ToList().OrderByDescending(x => x.MaDH).ToPagedList(page ?? 1, 6));
+            }
         }
 
         // GET: DonHangs/Details/5

@@ -263,6 +263,9 @@
     <Compile Include="Models\sysdiagram.cs">
       <DependentUpon>CT25Team24.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\TrangThaiDH.cs">
+      <DependentUpon>CT25Team24.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

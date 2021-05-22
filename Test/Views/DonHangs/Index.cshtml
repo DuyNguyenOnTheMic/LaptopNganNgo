@@ -80,12 +80,44 @@
              src="~/Images/next.png" />
     </div>
 
+    <div id="myDIV">
+        <a class="btn active" href="@Url.Action("Index", "DonHangs")">
+            Tất cả
+        </a>
+        <a class="btn"
+           href="@Url.Action("Index", "DonHangs",
+        new { page = 1, category = 1 }, null)">
+            Đơn mới
+        </a>
+        <a class="btn"
+           href="@Url.Action("Index", "DonHangs",
+        new { page = 1, category = 2}, null)">
+            Đang xử lý
+        </a>
+        <a class="btn"
+           href="@Url.Action("Index", "DonHangs",
+        new { page = 1, category = 3 }, null)">
+            Đang xử lý
+        </a>
+        <a class="btn"
+           href="@Url.Action("Index", "DonHangs",
+        new { page = 1, category = 4 }, null)">
+            Đang xử lý
+        </a>
+    </div>
 
-    <div id="rectangle_1">Đơn mới <br /> 45</div>
-        <div id="rectangle_2">Đang xử lý <br /> 54</div>
-        <div id="rectangle_3">Hoàn thành <br /> 65</div>
-        <div id="rectangle_4">Đã huỷ <br /> 11</div>
-
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
 
 
     <div class="Load_DonHang">
