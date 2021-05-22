@@ -82,9 +82,10 @@
 
 
     <div id="rectangle_1">Đơn mới <br /> 45</div>
-    <div id="rectangle_2">Đang xử lý <br /> 54</div>
-    <div id="rectangle_3">Hoàn thành <br /> 65</div>
-    <div id="rectangle_4">Đã huỷ <br /> 11</div>
+        <div id="rectangle_2">Đang xử lý <br /> 54</div>
+        <div id="rectangle_3">Hoàn thành <br /> 65</div>
+        <div id="rectangle_4">Đã huỷ <br /> 11</div>
+
 
 
     <div class="Load_DonHang">
@@ -135,7 +136,10 @@
                     </span>
                 </p>
 
-                <div id="Button_Xem_SP1">Xem chi tiết</div>
+                <a id="Button_Xem_SP1" href="~/DonHangs/Details/@item.MaDH">
+                    <div>Xem chi tiết</div>
+                </a>
+
                 <div id="Button_Xoa_SP1">Huỷ đơn hàng</div>
 
 
@@ -148,7 +152,7 @@
             Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
         </div>
         @Html.PagedListPager(Model, page => Url.Action("Index",
-            new { page, keyword = Request.QueryString["keyword"] }))
+            new { page, category = ViewBag.category, keyword = Request.QueryString["keyword"] }))
     </div>
 
 

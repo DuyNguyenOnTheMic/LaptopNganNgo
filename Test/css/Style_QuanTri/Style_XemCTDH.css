@@ -297,29 +297,10 @@ th {
     font-weight: 400;
     color: #000000;
     position: absolute;
-    top: 717px;
+    top: 757px;
     left: 1092.89px;
 }
 
-#button_Delete {
-    width: 145.93363596217773px;
-    height: 55.304347826086996px;
-    font-family: 'UTM Avo';
-    font-size: 21.333334px;
-    font-weight: 400;
-    text-align: center;
-    line-height: 18px;
-    color: #333333;
-    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
-    border: 1px solid #000000;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 900px;
-    left: 725.03px;
-}
 
 #TinhTrangDH {
 
@@ -384,3 +365,58 @@ th {
 #txt_MaSP {
     text-align: center;
 }
+
+#txt_SL {
+    text-align: center;
+}
+
+#txt_ChietKhau {
+    text-align: center;
+}
+
+#button_Edit {
+    width: 145.93363596217773px;
+    height: 55.304347826086996px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    border-radius: 20px;
+    position: absolute;
+    top: 900px;
+    left: 136.35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+    #button_Edit:hover {
+        background-image: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    }
+
+
+#button_Delete {
+    width: 145.93363596217773px;
+    height: 55.304347826086996px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 900px;
+    left: 1292.89px;
+    cursor: pointer;
+}
+
+    #button_Delete:hover {
+        background-image: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    }

@@ -30,6 +30,10 @@ namespace Test.Controllers
         // GET: DonHangs/Details/5
         public ActionResult Details(int? id)
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Redirect("~/QT_DangNhap/Index");
+            }
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);

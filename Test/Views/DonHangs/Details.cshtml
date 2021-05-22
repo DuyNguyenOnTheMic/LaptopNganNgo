@@ -14,7 +14,7 @@
         <th>Đơn giá</th>
         <th>Chiết khấu</th>
         <th>Tổng</th>
-        <th>Xoá</th>
+        @*<th>Xoá</th>*@
     </tr>
 
     @foreach (var item in Model.CTDHs)
@@ -28,9 +28,9 @@
                     @item.SanPham.TenSP
                 </div>
             </td>
-            <td>@item.SL</td>
+            <td id="txt_SL">@item.SL</td>
             <td>@item.DonGia.ToString("N0")</td>
-            <td>@item.ChietKhau</td>
+            <td id="txt_ChietKhau">@item.ChietKhau</td>
             <td>@((item.DonGia*item.SL).ToString("N0"))</td>
             @*<td>
                 <img src="~/Images/trash.png" width="15" />
@@ -73,10 +73,10 @@
 
 <div class="Body">
 
-    <a href="~/DonHangs/Index">
+    @*<a href="~/DonHangs/Index">
         <img id="Back"
              src="~/Images/previous.png" />
-    </a>
+    </a>*@
 
 
     @if (Model.KhachHang.GioiTinh == "Nam")
@@ -101,11 +101,11 @@
              src="~/Images/rainbow-flag.png" />
     }
 
-<div id="text_TTKH">
+    <div id="text_TTKH">
 
-    <b>Thông tin khách hàng:</b>
+        <b>Thông tin khách hàng:</b>
 
-    <br /> <br />
+        <br /> <br />
 
         Khách hàng: @Html.DisplayFor(model => model.KhachHang.HoTen)
         <br />
@@ -115,7 +115,7 @@
         <br />
         Địa chỉ: @Html.DisplayFor(model => model.KhachHang.DiaChi)
 
-</div>
+    </div>
 
 
     <div id="CTDonHang">
@@ -130,6 +130,10 @@
         Trạng thái: @Html.DisplayFor(model => model.TinhTrang)
     </div>
 
+
+    <a id="button_Edit" href="@Url.Action("Edit", "DonHangs", new {id = Model.MaDH })">
+        Sửa
+    </a>
 
     <div id="button_Delete">Huỷ đơn</div>
 
