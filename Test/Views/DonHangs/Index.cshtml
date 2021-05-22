@@ -81,43 +81,36 @@
     </div>
 
     <div id="myDIV">
-        <a class="btn active" href="@Url.Action("Index", "DonHangs")">
-            Tất cả
-        </a>
-        <a class="btn"
+            <a class="@(ViewBag.category == null ? "active" : "")"
+               href="@Url.Action("Index", "DonHangs")" 
+               id="btn_TatCa">
+                Tất cả
+            </a>
+        <a class="@(ViewBag.category == 1 ? "active" : "")"
            href="@Url.Action("Index", "DonHangs",
-        new { page = 1, category = 1 }, null)">
+           new { page = 1, category = 1 }, null)"
+           id="btn_DonMoi">
             Đơn mới
         </a>
-        <a class="btn"
+        <a class="@(ViewBag.category == 2 ? "active" : "")"
            href="@Url.Action("Index", "DonHangs",
-        new { page = 1, category = 2}, null)">
+           new { page = 1, category = 2}, null)"
+           id="btn_DangXuLy">
             Đang xử lý
         </a>
-        <a class="btn"
+        <a class="@(ViewBag.category == 3 ? "active" : "")"
            href="@Url.Action("Index", "DonHangs",
-        new { page = 1, category = 3 }, null)">
-            Đang xử lý
+           new { page = 1, category = 3 }, null)"
+           id="btn_HoanThanh" >
+            Hoàn thành
         </a>
-        <a class="btn"
+        <a class="@(ViewBag.category == 4 ? "active" : "")"
            href="@Url.Action("Index", "DonHangs",
-        new { page = 1, category = 4 }, null)">
-            Đang xử lý
+           new { page = 1, category = 4 }, null)"
+           id="btn_DaHuy"  >
+            Đã huỷ
         </a>
     </div>
-
-    <script>
-        // Add active class to the current button (highlight it)
-        var header = document.getElementById("myDIV");
-        var btns = header.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-            });
-        }
-    </script>
 
 
     <div class="Load_DonHang">

@@ -568,7 +568,89 @@ ul.pagination li {
 }
 
     /* Style the active class, and buttons on mouse-over */
-    .active, .btn:hover {
-        background-color: #666;
-        color: white;
+.active {
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+}
+
+#myDIV {
+    font-family: 'UTM Avo';
+    position: absolute;
+    top: 410px;
+    left: 121.35px;
+}
+
+#btn_TatCa {
+    color: black;
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+    #btn_TatCa:hover {
+        background: white;
+    }
+
+#btn_DonMoi {
+    color: black;
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #EFEFEF;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+    #btn_DonMoi:hover {
+        background: white;
+    }
+
+#btn_DangXuLy {
+    color: black;
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #EFEFEF;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+    #btn_DangXuLy:hover {
+        background: white;
+    }
+
+
+#btn_HoanThanh {
+    color: black;
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #EFEFEF;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+    #btn_HoanThanh:hover {
+        background: white;
+    }
+
+#btn_DaHuy {
+    color: black;
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #EFEFEF;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+    #btn_DaHuy:hover {
+        background: white;
     }
