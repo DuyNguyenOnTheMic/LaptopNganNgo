@@ -32,9 +32,9 @@
             <td>@item.DonGia.ToString("N0")</td>
             <td>@item.ChietKhau</td>
             <td>@((item.DonGia*item.SL).ToString("N0"))</td>
-            <td>
+            @*<td>
                 <img src="~/Images/trash.png" width="15" />
-            </td>
+            </td>*@
 
         </tr>
 
@@ -61,7 +61,7 @@
     <a href="~/SanPhams/QT_SanPham">
         <p id="Product_SanPham">Sản phẩm</p>
     </a>
-    <a href="~/QT_DonHang/Index">
+    <a href="~/DonHangs/Index">
         <p id="Product_DonHang">Đơn hàng</p>
     </a>
     <p id="Product_KhachHang">Khách hàng</p>
