@@ -590,10 +590,6 @@ ul.pagination li {
     text-decoration: none;
 }
 
-    #btn_TatCa:hover {
-        background: white;
-    }
-
 #btn_DonMoi {
     color: black;
     border: none;
@@ -605,10 +601,6 @@ ul.pagination li {
     text-decoration: none;
 }
 
-    #btn_DonMoi:hover {
-        background: white;
-    }
-
 #btn_DangXuLy {
     color: black;
     border: none;
@@ -619,10 +611,6 @@ ul.pagination li {
     font-size: 18px;
     text-decoration: none;
 }
-
-    #btn_DangXuLy:hover {
-        background: white;
-    }
 
 
 #btn_HoanThanh {
@@ -636,10 +624,6 @@ ul.pagination li {
     text-decoration: none;
 }
 
-    #btn_HoanThanh:hover {
-        background: white;
-    }
-
 #btn_DaHuy {
     color: black;
     border: none;
@@ -650,7 +634,3 @@ ul.pagination li {
     font-size: 18px;
     text-decoration: none;
 }
-
-    #btn_DaHuy:hover {
-        background: white;
-    }
