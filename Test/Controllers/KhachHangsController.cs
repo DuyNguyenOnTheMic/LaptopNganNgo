@@ -46,7 +46,7 @@ namespace Test.Controllers.Website_QuanTri
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Dky_QT([Bind(Include = "MaKH,HoTen,GioiTinh,DienThoai,DiaChi,NgaySinh,Email,MatKhau,VaiTro")] KhachHang khachHang)
+        public ActionResult Dky_QT([Bind(Include = "MaKH,HoTen,GioiTinh,DienThoai,DiaChi,NgaySinh,Email,MatKhau,VaiTro,XacNhanMK")] KhachHang khachHang)
         {
             if (ModelState.IsValid)
             {
@@ -70,7 +70,7 @@ namespace Test.Controllers.Website_QuanTri
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Dky_KH([Bind(Include = "MaKH,HoTen,GioiTinh,DienThoai,DiaChi,NgaySinh,Email,MatKhau,VaiTro")] KhachHang khachHang)
+        public ActionResult Dky_KH([Bind(Include = "MaKH,HoTen,GioiTinh,DienThoai,DiaChi,NgaySinh,Email,MatKhau,VaiTro,XacNhanMK")] KhachHang khachHang)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,6 @@ namespace Test.Controllers.Website_QuanTri
                 db.SaveChanges();
                 return RedirectToAction("Index", "DangNhap");
             }
-
             return View(khachHang);
         }
 

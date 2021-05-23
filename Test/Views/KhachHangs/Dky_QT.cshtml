@@ -41,6 +41,18 @@
 
     <div class="form-group">
         <div class="col-md-10">
+            @Html.PasswordFor(model => model.XacNhanMK, new
+       {
+           @class = "form-control",
+           placeholder = "Mật khẩu",
+           @id = "NLMK"
+       })
+            @Html.ValidationMessageFor(model => model.XacNhanMK, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
             @Html.TextBoxFor(model => model.VaiTro, new
        {
            @class = "form-control",
@@ -51,27 +63,12 @@
         </div>
     </div>
 
-
-    <input type="password" id="NLMK" placeholder="Xác nhận mật khẩu" />
-
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <input id="B1" type="submit" value="Đăng ký" class="btn btn-default" onclick="return validate();" />
         </div>
     </div>
 </div>
-
-    <script>
-        function validate() {
-
-            var a = document.getElementById("MK").value;
-            var b = document.getElementById("NLMK").value;
-            if (a != b) {
-                alert("Passwords do no match");
-                return false;
-            }
-        }
-    </script>
 
 }
 

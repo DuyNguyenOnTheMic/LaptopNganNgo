@@ -28,7 +28,7 @@ namespace Test.Controllers.Website_QuanTri
                 var account = context.KhachHangs.Where(acc => acc.Email == model.Email 
                                 && acc.MatKhau == model.MatKhau ).FirstOrDefault();
                 bool isValid = context.KhachHangs.Any(x => x.Email == model.Email
-                                && x.MatKhau == model.MatKhau );
+                                && x.MatKhau == model.MatKhau && x.VaiTro == "Admin");
                 if (isValid)
                 {
                     Session["HoTen"] = account.HoTen;

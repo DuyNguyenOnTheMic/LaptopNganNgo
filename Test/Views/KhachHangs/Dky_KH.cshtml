@@ -10,71 +10,66 @@
 {
     @Html.AntiForgeryToken()
 
-    <div class="form-horizontal">
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+<div class="form-horizontal">
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-        <div class="form-group">
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Email, new
-           {
-               htmlAttributes = new
-               {
-                   @class = "form-control",
-                   @id = "DiaChi"
-               }
-           })
-                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-10">
-                @Html.PasswordFor(model => model.MatKhau, new
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Email, new
+       {
+           htmlAttributes = new
            {
                @class = "form-control",
-               @id = "MatKhau"
-           })
-                @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-10">
-                @Html.TextBoxFor(model => model.VaiTro, new
-           {
-               @class = "form-control",
-               @Value = "Khách lẻ",
-               @type = "hidden"
-           })
-                @Html.ValidationMessageFor(model => model.VaiTro, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <input type="password" id="XacNhan"/>
-
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input id="myBtn" type="submit" value="Đăng ký" class="btn btn-default" onclick="return validate_KH();" />
-            </div>
+               @id = "DiaChi"
+           }
+       })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
         </div>
     </div>
 
-    <script>
-        function validate_KH() {
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.PasswordFor(model => model.MatKhau, new
+       {
+           @class = "form-control",
+           @id = "MatKhau"
+       })
+            @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+        </div>
+    </div>
 
-            var a = document.getElementById("MatKhau").value;
-            var b = document.getElementById("XacNhan").value;
-            if (a != b) {
-                alert("Passwords do no match");
-                return false;
-            } else {
-                alert("Đăng ký thành công!!");
-            }
-        }
-    </script>
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.PasswordFor(model => model.XacNhanMK, new
+       {
+           @class = "form-control",
+           @id = "XacNhan"
+       })
+            @Html.ValidationMessageFor(model => model.XacNhanMK, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.VaiTro, new
+       {
+           @class = "form-control",
+           @Value = "Khách lẻ",
+           @type = "hidden"
+       })
+            @Html.ValidationMessageFor(model => model.VaiTro, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input id="myBtn" type="submit" value="Đăng ký" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+
 }
-
 
 <div id="header">
     <div class="rectangle"></div>
