@@ -11,14 +11,12 @@ namespace Test.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class SanPham
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public SanPham()
         {
-            this.ChiTietGioHangs = new HashSet<ChiTietGioHang>();
             this.CTDHs = new HashSet<CTDH>();
         }
     
@@ -30,13 +28,9 @@ namespace Test.Models
         public string HinhAnhSP { get; set; }
         public string TrangThaiSP { get; set; }
         public int SL { get; set; }
-        //[DisplayFormat(DataFormatString = "{0:#,##0}", ApplyFormatInEditMode = true)]
         public double DonGiaGoc { get; set; }
-        //[DisplayFormat(DataFormatString = "{0:#,##0}", ApplyFormatInEditMode = true)]
         public double DonGiaKM { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChiTietGioHang> ChiTietGioHangs { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CTDH> CTDHs { get; set; }
         public virtual HangSP HangSP { get; set; }

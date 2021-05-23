@@ -60,6 +60,7 @@ namespace Test.Controllers
         [HttpPost]
         public ActionResult Create(int id, int sl, int dongia)
         {
+            
             var ID = db.SanPhams.Find(id);
             ShoppingCart.Add(new CTDH
             {
@@ -78,6 +79,7 @@ namespace Test.Controllers
         [HttpPost]
         public ActionResult Edit(int[] id, int[] sl, double[] dongia)
         {
+            
             var session = System.Web.HttpContext.Current.Session;
             ShoppingCart.Clear();
             if (id != null) {            
@@ -102,6 +104,7 @@ namespace Test.Controllers
         [HttpPost]
         public ActionResult Delete(int id)
         {
+            
             var session = System.Web.HttpContext.Current.Session;
             ShoppingCart.RemoveAll(x => x.SanPham.MaSP == id);
             session["ShoppingCart"] = ShoppingCart;

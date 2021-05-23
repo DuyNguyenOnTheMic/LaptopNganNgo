@@ -16,7 +16,7 @@ namespace Test.Models
     public partial class CT25Team24Entities : DbContext
     {
         public CT25Team24Entities()
-            : base("name=CT25Team24Entities")
+            : base("name=CT25Team24Entities1")
         {
         }
     
@@ -25,13 +25,12 @@ namespace Test.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<ChiTietGioHang> ChiTietGioHangs { get; set; }
         public virtual DbSet<CTDH> CTDHs { get; set; }
         public virtual DbSet<DonHang> DonHangs { get; set; }
-        public virtual DbSet<GioHang> GioHangs { get; set; }
         public virtual DbSet<HangSP> HangSPs { get; set; }
         public virtual DbSet<KhachHang> KhachHangs { get; set; }
         public virtual DbSet<SanPham> SanPhams { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<TrangThaiDH> TrangThaiDHs { get; set; }
     }
 }

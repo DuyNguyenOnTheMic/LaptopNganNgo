@@ -102,6 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\PagedList.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="css\Style_BanHang\Style_TImKiemSP_NotFound.css" />
     <Content Include="css\Style_BanHang\Style_TT_SuaGioHang.css" />
     <Content Include="css\Style_BanHang\Style_TimKiemSP.css" />
@@ -196,15 +197,15 @@
     <Content Include="Images\user_QT.png" />
     <Content Include="Images\wrench.png" />
     <Content Include="css\Style_BanHang\Style_TrangChu.css" />
-    <Content Include="Models\CT25Team24.Context.tt">
+    <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CT25Team24.edmx</DependentUpon>
-      <LastGenOutput>CT25Team24.Context.cs</LastGenOutput>
+      <DependentUpon>CT25Team24Entities.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\CT25Team24.tt">
+    <Content Include="Models\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CT25Team24.edmx</DependentUpon>
-      <LastGenOutput>CT25Team24.cs</LastGenOutput>
+      <DependentUpon>CT25Team24Entities.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
     <Content Include="Web.config" />
   </ItemGroup>
@@ -212,6 +213,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CTDHsController.cs" />
     <Compile Include="Controllers\HangSPsController.cs" />
+    <Compile Include="Controllers\HoaDonController.cs" />
     <Compile Include="Controllers\Website_BanHang\CSKHController.cs" />
     <Compile Include="Controllers\Website_BanHang\DangNhapController.cs" />
     <Compile Include="Controllers\Website_BanHang\TT_DangNhapController.cs" />
@@ -229,55 +231,52 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ChiTietGioHang.cs">
-      <DependentUpon>CT25Team24.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CT25Team24.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CT25Team24.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CT25Team24.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CT25Team24.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\CT25Team24.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CT25Team24.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Models\CTDH.cs">
-      <DependentUpon>CT25Team24.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\DonHang.cs">
-      <DependentUpon>CT25Team24.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\GioHang.cs">
-      <DependentUpon>CT25Team24.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\HangSP.cs">
-      <DependentUpon>CT25Team24.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\KhachHang.cs">
-      <DependentUpon>CT25Team24.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CT25Team24Entities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CT25Team24Entities.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\SanPham.cs">
-      <DependentUpon>CT25Team24.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>CT25Team24.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TrangThaiDH.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <EntityDeploy Include="Models\CT25Team24.edmx">
+    <EntityDeploy Include="Models\CT25Team24Entities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CT25Team24.Designer.cs</LastGenOutput>
+      <LastGenOutput>CT25Team24Entities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\CT25Team24.edmx.diagram">
-      <DependentUpon>CT25Team24.edmx</DependentUpon>
+    <Content Include="Models\CT25Team24Entities.edmx.diagram">
+      <DependentUpon>CT25Team24Entities.edmx</DependentUpon>
     </Content>
     <None Include="packages.config" />
     <Content Include="Views\_TrangChu.cshtml" />
@@ -340,6 +339,11 @@
     <Content Include="Views\_QT_CapNhatSP.cshtml" />
     <Content Include="Views\SanPhams\Search_NotFound.cshtml" />
     <Content Include="Views\_TimKiemSP_NotFound.cshtml" />
+    <Content Include="Views\CTDHs\Index - Copy.cshtml" />
+    <Content Include="Views\HoaDon\Create.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\HoaDon\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
