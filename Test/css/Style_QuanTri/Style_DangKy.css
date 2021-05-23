@@ -97,7 +97,7 @@
     padding-left: 11px;
     position: absolute;
     left: 580px;
-    top: 499px;
+    top: 479px;
     z-index: +1;
 }
 
@@ -135,7 +135,7 @@
     padding-left: 11px;
     position: absolute;
     left: 580px;
-    top: 661px;
+    top: 681px;
     z-index: +1;
 }
 
@@ -153,7 +153,39 @@
     border-radius: 12px;
     position: absolute;
     left: 690px;
-    top: 780px;
+    top: 800px;
     cursor: pointer;
     z-index: +1;
 }
+
+
+.text-danger_MK {
+    font-family: 'UTM Avo';
+    font-size: 15.0px;
+    position: absolute;
+    top: 636px;
+    left: 580px;
+    color: red;
+    z-index: +1;
+}
+
+.text-danger_XNMK {
+    font-family: 'UTM Avo';
+    font-size: 15.0px;
+    position: absolute;
+    top: 740px;
+    left: 580px;
+    color: red;
+    z-index: +1;
+}
+
+.text-danger_Email {
+    font-family: 'UTM Avo';
+    font-size: 15.0px;
+    position: absolute;
+    top: 536px;
+    left: 580px;
+    color: red;
+    z-index: +1;
+}
+

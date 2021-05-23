@@ -455,4 +455,35 @@ label {
     z-index: +1;
 }
 
+.text-danger_MK {
+    font-family: Arial;
+    font-size: 15.0px;
+    position: absolute;
+    top: 536px;
+    left: 578px;
+    color: red;
+    z-index: +1;
+}
+
+.text-danger_XNMK {
+    font-family: Arial;
+    font-size: 15.0px;
+    position: absolute;
+    top: 656px;
+    left: 578px;
+    color: red;
+    z-index: +1;
+}
+
+.text-danger_Email {
+    font-family: Arial;
+    font-size: 15.0px;
+    position: absolute;
+    top: 415px;
+    left: 578px;
+    color: red;
+    z-index: +1;
+}
+
+
 

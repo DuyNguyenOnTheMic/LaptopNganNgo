@@ -10,7 +10,6 @@
     @Html.AntiForgeryToken()
 
 <div class="form-horizontal">
-    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
     <div class="form-group">
         <div class="col-md-10">
@@ -22,7 +21,7 @@
                @id = "DiaChi"
            }
        })
-            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger_Email" })
         </div>
     </div>
 
@@ -33,7 +32,18 @@
            @class = "form-control",
            @id = "MatKhau"
        })
-            @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger_MK" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.PasswordFor(model => model.XacNhanMK, new
+       {
+           @class = "form-control",
+           @id = "XacNhan"
+       })
+            @Html.ValidationMessageFor(model => model.XacNhanMK, "", new { @class = "text-danger_XNMK" })
         </div>
     </div>
 
@@ -49,29 +59,15 @@
         </div>
     </div>
 
-    <input type="password" id="XacNhan"/>
 
 
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
-            <input id="myBtn" type="submit" value="Đăng ký" class="btn btn-default" onclick="return validate_TT_KH();" />
+            <input id="myBtn" type="submit" value="Đăng ký" class="btn btn-default" />
         </div>
     </div>
 </div>
 
- <script>
-        function validate_TT_KH() {
-
-            var a = document.getElementById("MatKhau").value;
-            var b = document.getElementById("XacNhan").value;
-            if (a != b) {
-                alert("Passwords do no match");
-                return false;
-            } else {
-                alert("Đăng ký thành công!!");
-            }
-        }
-    </script>
 
 }
 

@@ -23,7 +23,7 @@
                @id = "text"
            }
        })
-            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger_Email" })
         </div>
     </div>
 
@@ -35,7 +35,7 @@
            placeholder = "Mật khẩu",
            @id = "MK"
        })
-            @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger_MK" })
         </div>
     </div>
 
@@ -44,10 +44,10 @@
             @Html.PasswordFor(model => model.XacNhanMK, new
        {
            @class = "form-control",
-           placeholder = "Mật khẩu",
+           placeholder = "Xác nhận mật khẩu",
            @id = "NLMK"
        })
-            @Html.ValidationMessageFor(model => model.XacNhanMK, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.XacNhanMK, "", new { @class = "text-danger_XNMK" })
         </div>
     </div>
 

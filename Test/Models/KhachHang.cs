@@ -30,17 +30,18 @@ namespace Test.Models
         public string DiaChi { get; set; }
         [DataType(DataType.Date)]
         public Nullable<System.DateTime> NgaySinh { get; set; }
-        [Required(ErrorMessage = "Email is required.")]
+        [Required(ErrorMessage = "Bạn chưa nhập Email")]
         [RegularExpression("^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$", ErrorMessage = "E-mail không đúng định dạng!")]
         public string Email { get; set; }
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [StringLength(100, ErrorMessage = "{0} phải dài ít nhất {2} kí tự!", MinimumLength = 12)]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Mật khẩu")]
+        [Required(ErrorMessage = "Bạn chưa nhập mật khẩu")]
         public string MatKhau { get; set; }
         [NotMapped] // Does not effect with your database
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
-        [Compare("MatKhau", ErrorMessage = "The password and confirmation password do not match.")]
+        [Compare("MatKhau", ErrorMessage = "Xác nhận mật khẩu không trùng!")]
         public string XacNhanMK { get; set; }
         public string VaiTro { get; set; }
     
