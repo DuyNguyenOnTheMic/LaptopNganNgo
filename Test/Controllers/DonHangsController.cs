@@ -95,6 +95,7 @@ namespace Test.Controllers
                 return HttpNotFound();
             }
             ViewBag.MaKH = new SelectList(db.KhachHangs, "MaKH", "HoTen", donHang.MaKH);
+            ViewBag.TrangThai = new SelectList(db.TrangThaiDHs, "MaTrangThai", "TrangThai", donHang.TrangThai);
             return View(donHang);
         }
 
@@ -103,17 +104,19 @@ namespace Test.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "MaDH,NgayBan,MaKH,TongTien")] DonHang donHang)
+        public ActionResult Edit([Bind(Include = "MaDH,NgayBan,MaKH,TongTien,TrangThai")] DonHang donHang)
         {
             if (ModelState.IsValid)
             {
                 db.Entry(donHang).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Details", "DonHangs", new { id = donHang.MaDH });
             }
             ViewBag.MaKH = new SelectList(db.KhachHangs, "MaKH", "HoTen", donHang.MaKH);
+            ViewBag.TrangThai = new SelectList(db.TrangThaiDHs, "MaTrangThai", "TrangThai", donHang.TrangThai);
             return View(donHang);
         }
+
 
         // GET: DonHangs/Delete/5
         public ActionResult Delete(int? id)

@@ -181,6 +181,11 @@
     left: 900px;
 }
 
+#drop_TT {
+    font-family: 'UTM Avo';
+    font-size: 18.0px;  
+}
+
 #text_TTKH {
     width: 480.29296875px;
     height: 135.0px;
