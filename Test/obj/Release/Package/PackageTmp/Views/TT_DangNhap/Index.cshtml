@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewBag.Title = "Thanh toán - Đăng nhập";
+    Layout = "~/Views/_TT_DangNhap.cshtml";
+}
+
+<div id="header">
+    <div class="rectangle"></div>
+    <div class="circle"></div>
+
+    <a href="~/SanPhams/Index">
+        <p id="Tittle">LaptopNganNgo</p>
+        <img id="LetterL" width="70"
+             src="~/Images/royal-alphabet-crown-letter-english-l-512.png" />
+    </a>
+
+</div>
+
+
+<div class="Footer">
+
+    <div id="logo_footer">
+        <img src="~/Images/royal-alphabet-crown-letter-english-l-512.png "
+             width="70" />
+    </div>
+    <p id="text1_ft">Sản Phẩm  </p>
+    <p id="text2_ft">Tiếp Xúc </p>
+    <p id="text3_ft">Theo Dõi  </p>
+    <p id="text4_ft">Đăng Ký </p>
+
+    <pre id="text5_ft">Đặc Trưng
+Quảng cáo  
+Tải Xuống</pre>
+
+    <pre id="text6_ft">Liên hệ
+FAQ  
+Trợ Giúp</pre>
+
+    <input id="Email_textbox" type="text"
+           placeholder="Nhập Email của bạn" />
+    <img id="FB_ft" src="~/Images/FB.png "
+         width="30" />
+    <img id="IG_ft" src="~/Images/IG.png "
+         width="30" />
+
+</div>
+
+<div class="LogIn">
+
+    @if (Session["Message"] != null)
+    {
+        <div id="Failed_Message">@Session["Message"].ToString()</div>
+    }
+
+
+
+    <img id="Google"
+         src="~/Images/google.png" />
+    <img id="Facebook"
+         src="~/Images/facebook.png" />
+    <img id="Twitter"
+         src="~/Images/twitter.png" />
+
+
+    <label><b>Lấy lại mật khẩu?</b></label>
+    <a href="~/KhachHangs/Dky_TT_KH">
+        <button id="DK"><b>Đăng ký</b></button>
+    </a>
+
+    <label id="DN"><b>Đăng nhập</b></label>
+    <img id="iconDN" src="~/Images/img_227643.png" />
+    <img id="iconMK"
+         src="~/Images/password-icon-28.png" />
+
+
+
+    @using (Html.BeginForm("Index", "TT_DangNhap", FormMethod.Post))
+    {
+        <form action="Index" method="post">
+            <input name="Email" type="text" placeholder="Địa chỉ email" id="txt_TenDangNhap">
+            <input name="MatKhau" type="password" placeholder="Mật khẩu" id="txt_MatKhau">
+
+            <button id="myBtn">Đăng nhập</button>
+        </form>
+    }
+
+
+</div>
+
+<button class="button1">1</button>
+<button class="button2">2</button>
+<button class="button3">3</button>
+
+<label id="bt1"><p>Đăng nhập</p></label>
+<label id="bt2"><p>Địa chỉ giao hàng</p></label>
+<label id="bt3"><p>Thanh toán và đặt mua</p></label>
+
+<button class="btn1"></button>
+<button class="btn2"></button>
+
+
+

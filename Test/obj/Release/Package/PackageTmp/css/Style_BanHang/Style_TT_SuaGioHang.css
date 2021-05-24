@@ -1,0 +1,969 @@
+﻿.rectangle {
+    width: auto;
+    height: 95.01320904643597px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#8D9CF2,#FF8585);
+}
+
+.circle {
+    width: 82.00000000000011px;
+    height: 74.51294025289904px;
+    position: absolute;
+    left: 528px;
+    top: 8px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #B2B2B2;
+    border: 2px dashed #000000;
+    border-radius: 50%;
+}
+
+#LetterL {
+    position: absolute;
+    left: 535px;
+    top: 10px;
+}
+
+
+#Tittle {
+    position: absolute;
+    font-family: Arial;
+    font-size: 45px;
+    top: -20px;
+    left: 630.05px;
+    color: #333333;
+}
+
+#Laptop_Gaming_Content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#Laptop_Gaming_Content {
+    text-decoration: none;
+    left: 245px;
+    top: 0px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 112px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    line-height: 1.6;
+}
+
+    #Laptop_Gaming_Content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    #Laptop_Gaming_Content:hover {
+        display: block;
+    }
+
+#Laptop_VP_Content {
+    text-decoration: none;
+    left: 245px;
+    top: 44px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 112px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    line-height: 1.6;
+}
+
+    #Laptop_VP_Content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    #Laptop_VP_Content:hover {
+        display: block;
+    }
+
+#Laptop_SV_Content {
+    text-decoration: none;
+    left: 245px;
+    top: 88px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 112px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    line-height: 1.6;
+}
+
+    #Laptop_SV_Content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    #Laptop_SV_Content:hover {
+        display: block;
+    }
+
+#Ban_Hang {
+    text-decoration: none;
+    width: 242.03796469648415px;
+    height: 58px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #CBCBCB;
+    border: 1px solid #0487D9;
+    position: absolute;
+    left: 308px;
+    top: 204px;
+}
+
+    #Ban_Hang:hover {
+        font-weight: bold;
+    }
+
+#Bao_Hanh {
+    text-decoration: none;
+    width: 242.03796469648415px;
+    height: 58px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #CBCBCB;
+    border: 1px solid #0487D9;
+    position: absolute;
+    left: 552.7px;
+    top: 204px;
+}
+
+    #Bao_Hanh:hover {
+        font-weight: bold;
+    }
+
+#Van_Chuyen {
+    text-decoration: none;
+    width: 242.03796469648415px;
+    height: 58px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #CBCBCB;
+    border: 1px solid #0487D9;
+    position: absolute;
+    left: 797.23px;
+    top: 204px;
+}
+
+    #Van_Chuyen:hover {
+        font-weight: bold;
+    }
+
+#Khuyen_Mai {
+    text-decoration: none;
+    width: 242.03796469648415px;
+    height: 58px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #CBCBCB;
+    border: 1px solid #0487D9;
+    position: absolute;
+    left: 1041.9px;
+    top: 204px;
+}
+
+    #Khuyen_Mai:hover {
+        font-weight: bold;
+    }
+
+#Cham_Soc {
+    text-decoration: none;
+    width: 242.03796469648415px;
+    height: 58px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #CBCBCB;
+    border: 1px solid #0487D9;
+    position: absolute;
+    left: 1287px;
+    top: 204px;
+}
+
+    #Cham_Soc:hover {
+        font-weight: bold;
+    }
+
+#header {
+    width: 100%;
+    background: #f00;
+}
+
+body {
+    width: 1579px;
+    padding: 0;
+    margin: 0;
+}
+
+#logo_footer {
+    width: 82.00000000000011px;
+    height: 74.51294025289904px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #B2B2B2;
+    border: 2px dashed #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 2120px;
+    left: 111.5px;
+}
+
+#text1_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 352px;
+}
+
+#text2_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 617px;
+}
+
+#text3_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 887px;
+}
+
+#text4_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 1186px;
+}
+
+#text5_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 352px;
+}
+
+#text6_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 617px;
+}
+
+#Email_textbox {
+    width: 346.2918966478908px;
+    height: 29.999999999999545px;
+    font-family: Arial;
+    font-size: 12.0px;
+    color: #B2B2B2;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    left: 1186px;
+    top: 2150px;
+}
+
+#FB_ft {
+    position: absolute;
+    top: 2150px;
+    left: 887px;
+}
+
+#IG_ft {
+    position: absolute;
+    top: 2150px;
+    left: 937px;
+}
+
+#TenSP {
+    width: 126.78385925292969px;
+    height: 25.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    top: 337.25px;
+    left: 457.31px;
+}
+
+#SL {
+    width: 79.26042175292969px;
+    height: 25.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    top: 337px;
+    left: 838.16px;
+}
+
+#GiaTG {
+    width: 135px;
+    height: 25.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    top: 337.25px;
+    left: 979px;
+}
+
+#GiaSG {
+    width: 120px;
+    height: 25.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    top: 337.25px;
+    left: 1171.7px;
+}
+
+#Xoa {
+    width: 33.84244918823242px;
+    height: 25.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    top: 337.25px;
+    left: 1355.43px;
+}
+
+#pic1 {
+    width: 343.328125px;
+    height: 18.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline;
+    color: #333333;
+    position: absolute;
+    top: 412.67px;
+    left: 375.13px;
+}
+
+#Gia1 {
+    width: 93.42447662353516px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 411.17px;
+    left: 985.33px;
+}
+
+#d1 {
+    width: 10.09375px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    text-align: center;
+    text-decoration: underline;
+    color: #333333;
+    position: absolute;
+    top: 411.17px;
+    left: 1096.05px;
+}
+
+#Gia2 {
+    width: 93.42447662353516px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 411.17px;
+    left: 1173.63px;
+}
+
+#d2 {
+    width: 10.09375px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    text-align: center;
+    text-decoration: underline;
+    color: #333333;
+    position: absolute;
+    top: 411.17px;
+    left: 1287px;
+}
+
+#pic2 {
+    width: 384.9921875px;
+    height: 18.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #333333;
+    position: absolute;
+    top: 566.25px;
+    left: 375.13px;
+}
+
+#Gia3 {
+    width: 93.42447662353516px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 591.33px;
+    left: 985.33px;
+}
+
+#d3 {
+    width: 10.09375px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    text-align: center;
+    text-decoration: underline;
+    color: #333333;
+    position: absolute;
+    top: 591.33px;
+    left: 1096.05px;
+}
+
+#Gia4 {
+    width: 93.42447662353516px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 591.33px;
+    left: 1173.63px;
+}
+
+#d4 {
+    width: 10.09375px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    text-align: center;
+    text-decoration: underline;
+    color: #333333;
+    position: absolute;
+    top: 591.33px;
+    left: 1287px;
+}
+
+#pic3 {
+    width: 360.171875px;
+    height: 18.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #000000;
+    position: absolute;
+    top: 723px;
+    left: 375.13px;
+}
+
+#Gia6 {
+    width: 93.42447662353516px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 765.83px;
+    left: 1173.63px;
+}
+
+#d6 {
+    width: 10.09375px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    text-align: center;
+    text-decoration: underline;
+    color: #333333;
+    position: absolute;
+    top: 765.83px;
+    left: 1287px;
+}
+
+#Gia5 {
+    width: 93.42447662353516px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 765.83px;
+    left: 985.33px;
+}
+
+#d5 {
+    width: 10.09375px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    text-align: center;
+    text-decoration: underline;
+    color: #333333;
+    position: absolute;
+    top: 765.83px;
+    left: 1096.05px;
+}
+
+
+#Sum {
+    width: 94.87500762939453px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    top: 841px;
+    left: 705.22px;
+}
+
+#Tien {
+    width: 106.7708511352539px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #FF0000;
+    position: absolute;
+    top: 841px;
+    left: 827.87px;
+}
+
+#d5 {
+    width: 11.864583969116211px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline;
+    color: #FF0000;
+    position: absolute;
+    top: 841px;
+    left: 959.23px;
+}
+
+#N1 {
+    width: 127.10841820577019px;
+    height: 118.83766351314665px;
+    position: absolute;
+    top: 362.25px;
+    left: 212.8px;
+}
+
+#N2 {
+    width: 127.10841820577022px;
+    height: 120.33766351314671px;
+    position: absolute;
+    top: 524.08px;
+    left: 212.8px;
+}
+
+#N3 {
+    width: 127.10841820577008px;
+    height: 118.8376635131466px;
+    position: absolute;
+    top: 680.33px;
+    left: 212.8px;
+}
+
+#T1 {
+    width: 14.035324096679688px;
+    height: 10.0px;
+    position: absolute;
+    top: 420px;
+    left: 877px;
+    transform: rotate(270deg);
+}
+
+#T2 {
+    width: 14.035324096679688px;
+    height: 10.0px;
+    position: absolute;
+    top: 445px;
+    left: 877px;
+    transform: rotate(90deg);
+}
+
+#T3 {
+    width: 14.035324096679688px;
+    height: 10.0px;
+    position: absolute;
+    top: 600px;
+    left: 877px;
+    transform: rotate(270deg);
+}
+
+#T4 {
+    width: 14.035324096679688px;
+    height: 10.0px;
+    position: absolute;
+    top: 625px;
+    left: 877px;
+    transform: rotate(90deg);
+}
+
+#T5 {
+    width: 14.035324096679688px;
+    height: 10.0px;
+    position: absolute;
+    top: 772px;
+    left: 877px;
+    transform: rotate(270deg);
+}
+
+#T6 {
+    width: 14.035324096679688px;
+    height: 10.0px;
+    position: absolute;
+    top: 797px;
+    left: 877px;
+    transform: rotate(90deg);
+}
+
+#R1 {
+    width: 23px;
+    height: 19.610707028170964px;
+    position: absolute;
+    top: 423px;
+    left: 1359.85px;
+}
+
+#R2 {
+    width: 23px;
+    height: 19.610707028170964px;
+    position: absolute;
+    top: 605px;
+    left: 1359.85px;
+}
+
+#R3 {
+    width: 23px;
+    height: 19.610707028170964px;
+    position: absolute;
+    top: 776.52px;
+    left: 1359.85px;
+}
+
+#d7 {
+    width: 10.09375px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 16.0px;
+    text-align: center;
+    text-decoration: underline;
+    color: #333333;
+    position: absolute;
+    top: 765.83px;
+    left: 1096.05px;
+}
+
+#s1 {
+    width: 10.381510734558105px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 410px;
+    left: 850.9px;
+}
+
+#s2 {
+    width: 10.381510734558105px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 590px;
+    left: 850.9px;
+}
+
+#s3 {
+    width: 10.381510734558105px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 760px;
+    left: 850.9px;
+}
+
+
+#SL1 {
+    width: 79.26042175292969px;
+    height: 25.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    top: 527.16px;
+    left: 838.16px;
+}
+
+#GiaTG1 {
+    width: 135px;
+    height: 25.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    top: 527.41px;
+    left: 979px;
+}
+
+#GiaSG1 {
+    width: 120px;
+    height: 25.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    top: 527.41px;
+    left: 1171.7px;
+}
+
+#Xoa1 {
+    width: 33.84244918823242px;
+    height: 25.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    top: 527.41px;
+    left: 1355.43px;
+}
+
+#SL3 {
+    width: 79.26042175292969px;
+    height: 25.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    top: 691.66px;
+    left: 838.16px;
+}
+
+#GiaTG3 {
+    width: 135px;
+    height: 25.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    top: 691.91px;
+    left: 979px;
+}
+
+#GiaSG3 {
+    width: 120px;
+    height: 25.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    top: 691.91px;
+    left: 1171.7px;
+}
+
+#Xoa3 {
+    width: 33.84244918823242px;
+    height: 25.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    top: 691.91px;
+    left: 1355.43px;
+}
+
+
+#dk2 {
+    width: 1200.0px;
+    height: 0.0px;
+    opacity: 0.3;
+    border-top: 2px solid #404040;
+    position: absolute;
+    top: 503px;
+    left: 212.8px;
+}
+
+#dk3 {
+    width: 1217.2018969707617px;
+    height: 0.0px;
+    opacity: 0.3;
+    border-top: 2px solid #404040;
+    position: absolute;
+    top: 663px;
+    left: 212.8px;
+}
+
+.Footer {
+    position: absolute;
+    top: -1350px;
+}
+
+#button_BanCoVoucher {
+    width: 174.99999999999977px;
+    height: 50.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    color: #030303;
+    background: linear-gradient(#5099C6,#FF8585);
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    position: absolute;
+    top: 830px;
+    left: 1011.19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button_ThanhToan {
+    width: 143.0px;
+    height: 50.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 600;
+    text-align: center;
+    color: #030303;
+    background: linear-gradient(#5099C6,#FF8585);
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    position: absolute;
+    top: 830px;
+    left: 1239.88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TT_SuaGioHang {
+    position: absolute;
+    top: -200px;
+}

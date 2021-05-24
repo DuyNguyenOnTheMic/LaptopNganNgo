@@ -176,7 +176,7 @@ namespace Test.Controllers.Website_QuanTri
                                     System.IO.File.Delete(oldImgPath);
                                 }
                                 TempData["msg"] = "Data Updated";
-                                return RedirectToAction("Index");
+                                return RedirectToAction("QT_SanPham");
                             }
                         }
                         else

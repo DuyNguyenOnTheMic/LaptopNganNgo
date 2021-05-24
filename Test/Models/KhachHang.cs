@@ -33,7 +33,7 @@ namespace Test.Models
         [Required(ErrorMessage = "Bạn chưa nhập Email")]
         [RegularExpression("^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$", ErrorMessage = "E-mail không đúng định dạng!")]
         public string Email { get; set; }
-        [StringLength(100, ErrorMessage = "{0} phải dài ít nhất {2} kí tự!", MinimumLength = 12)]
+        [StringLength(100, ErrorMessage = "{0} phải dài ít nhất {2} kí tự!", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "Mật khẩu")]
         [Required(ErrorMessage = "Bạn chưa nhập mật khẩu")]

@@ -1,0 +1,848 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+#Logo_Header {
+    width: 99.00000000000011px;
+    height: 73.99999999999989px;
+    position: absolute;
+    top: 49px;
+    left: 513px;
+}
+
+#Text_Header {
+    width: 466.15625px;
+    height: 73.0px;
+    font-family: 'UTM Avo';
+    font-size: 64.0px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: -15px;
+    left: 638.88px;
+}
+
+#Product_SanPham {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    top: 136px;
+    left: 136.35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_DonHang {
+    width: 268.1745635910226px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 406px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+#Product_KhachHang {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 675px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_DoanhThu {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 944px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_TaiKhoan {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 1213px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Header {
+    position:absolute;
+    left: -7.5px;
+}
+
+#Footer_Text {
+    width: 309.8372802734375px;
+    height: 103.99999999999955px;
+    font-family: 'UTM Avo';
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 28px;
+    color: #1EAAF1;
+    position: absolute;
+    left: 645.08px;
+    top: 690px;
+}
+
+#rectangle {
+    width: 1345px;
+    height: 42.99999999999977px;
+    font-family: 'UTM Avo';
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background: linear-gradient(#F9E1E0,#FFFFFF);
+    position: absolute;
+    top: 265px;
+    left: 136.35px;
+}
+
+.Footer {
+    position: absolute;
+    top: 1000px;
+}
+
+#Text {
+    width: auto;
+    height: 41.00000000000006px;
+    font-family: 'UTM Avo';
+    font-size: 29.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 308px;
+    left: 127px;
+}
+
+#K1 {
+    width: 1009.3808593749998px;
+    height: 609.0000000000001px;
+    font-family: 'UTM Avo';
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #EFEFEF;
+    position: absolute;
+    top: 385px;
+    left: 127px;
+}
+
+#T1 {
+    width: auto;
+    height: 27.0px;
+    font-family: 'UTM Avo';
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #191B7D;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+#T2 {
+    width: 148.0px;
+    height: 24.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 66px;
+    left: 48px;
+}
+
+#T3 {
+    width: 895.2414374220707px;
+    height: 31.999999999999886px;
+    padding-left: 10px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    position: absolute;
+    top: 510px;
+    left: 176px;
+    z-index: +1;
+}
+
+#T9 {
+    width: 290px;
+    height: 31.999999999999886px;
+    padding-left: 10px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    position: absolute;
+    top: 1520px;
+    left: 665px;
+    z-index: +1;
+}
+
+#T4 {
+    width: 453.24609375000006px;
+    height: 31.999999999999886px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    top: 220px;
+    left: 47px;
+}
+#S1 {
+    width: 360.48753117206934px;
+    height: 31.999999999999886px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    top: 120px;
+    left: 582px;
+}
+#S2 {
+    width: 359.3338853387354px;
+    height: 31.999999999999773px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    top: 220px;
+    left: 582px;
+}
+#S3 {
+    width: 359.33388533873494px;
+    height: 31.999999999999773px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    top: 320px;
+    left: 582px;
+}
+
+#T5 {
+    width: 148.0px;
+    height: 24.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 66px;
+    left: 550px;
+}
+#MT {
+    width: 230.0px;
+    height: 48.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 170px;
+    left: 18px;
+}
+#S4 {
+    width: 895.2414374220707px;
+    height: 300.00000000000023px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    position: absolute;
+    top: 630px;
+    left: 176px;
+    z-index: +1;
+    resize: none;
+}
+
+#K2 {
+    width: 1010.0000000000005px;
+    height: 185.0px;
+    font-family: 'UTM Avo';
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #EFEFEF;
+    position: absolute;
+    top: 1017px;
+    left: 127px;
+}
+
+#Khung {
+    width: 895.2414374220707px;
+    height: 109.00000000000023px;
+    color: #434343;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    position: absolute;
+    top: 1075px;
+    left: 176px;
+    z-index: +1;
+}
+
+#iconDN {
+    width: 58.0px;
+    height: 60.0px;
+    position: absolute;
+    top: 500px;
+    left: 420px;
+    cursor: pointer;
+    z-index: +1;
+}
+
+#add {
+    width: 100.0px;
+    height: 80.0px;
+    position: absolute;
+    top: 58px;
+    left: 403px;
+    cursor: pointer;
+}
+
+#A1 {
+    width: 267.0px;
+    height: 53.99999999999977px;
+    font-family: 'UTM Avo';
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #191B7D;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#Q1 {
+    width: 230.0px;
+    height: 48.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 50px;
+    left: -25px;
+}
+#W1 {
+    width: 400.4875311720696px;
+    height: 32.0px;
+    padding-left: 10px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    position: absolute;
+    top: 1330px;
+    left: 176px;
+    z-index: +1;
+}
+
+#K3 {
+    width: 1010.0px;
+    height: 166.0px;
+    font-family: 'UTM Avo';
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #EFEFEF;
+    position: absolute;
+    top: 1224px;
+    left: 127px;
+}
+#A2 {
+    width: 267.0px;
+    height: 53.99999999999977px;
+    font-family: 'UTM Avo';
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #191B7D;
+    position: absolute;
+    top: 0px;
+    left: -5px;
+}
+#Q3 {
+    width: 230.0px;
+    height: 48.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 50px;
+    left: -16px;
+}
+#Q4 {
+    width: 230.0px;
+    height: 48.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 50px;
+    left: 468px;
+}
+#W3 {
+    width: 415.4875311720693px;
+    height: 36.999999999999773px;
+    padding-left: 10px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    position: absolute;
+    top: 1520px;
+    left: 176px;
+    z-index: +1;
+}
+
+#K4 {
+    width: 1010.0000000000002px;
+    height: 165.00000000000023px;
+    font-family: 'UTM Avo';
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #EFEFEF;
+    position: absolute;
+    top: 1414px;
+    left: 127px;
+}
+#A3 {
+    width: 267.0px;
+    height: 53.99999999999977px;
+    font-family: 'UTM Avo';
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #191B7D;
+    position: absolute;
+    top: 0px;
+    left: 6px;
+}
+
+#K5 {
+    width: 319.00000000000136px;
+    height: 174.99999999999977px;
+    font-family: 'UTM Avo';
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #EFEFEF;
+    position: absolute;
+    top: 385px;
+    left: 1150px;
+}
+#W4 {
+    width: 284.62582070215103px;
+    height: 31.99999999999966px;
+    padding-left: 10px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    position: absolute;
+    top: 445px;
+    left: 1168px;
+    z-index: +1;
+}
+#A4 {
+    width: auto;
+    height: 27.0px;
+    font-family: 'UTM Avo';
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #191B7D;
+    position: absolute;
+    top: -8px;
+    left: 16px;
+}
+
+#K6 {
+    width: 319.00000000000136px;
+    height: 124.99999999999977px;
+    font-family: 'UTM Avo';
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #EFEFEF;
+    position: absolute;
+    top: 580px;
+    left: 1150px;
+}
+#A5 {
+    width: auto;
+    height: 27.0px;
+    font-family: 'UTM Avo';
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #191B7D;
+    position: absolute;
+    top: -8px;
+    left: 16px;
+}
+#W5 {
+    width: 278.62582070215103px;
+    height: 31.99999999999966px;
+    padding-left: 10px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    position: absolute;
+    top: 640px;
+    left: 1168px;
+    z-index: +1;
+}
+
+#K7 {
+    width: 319.00000000000136px;
+    height: 91.99999999999966px;
+    font-family: 'UTM Avo';
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #EFEFEF;
+    position: absolute;
+    top: 709px;
+    left: 1150px;
+}
+#A6 {
+    width: 175.5px;
+    height: 27.0px;
+    font-family: 'UTM Avo';
+    font-size: 24.0px;
+    font-weight: 400;
+    color: #191B7D;
+    position: absolute;
+    top: -8px;
+    left: 1px;
+}
+#A7 {
+    width: 272.12582070214967px;
+    height: 48.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 35px;
+    left: 38px;
+}
+
+#R {
+    width: 20.12582070214967px;
+    height: 20.0px;
+    position: absolute;
+    top: 55px;
+    left: 10px;
+}
+
+#myBtn {
+    width: 150px;
+    height: 50px;
+    font-family: 'UTM Avo';
+    font-size: 24.0px;
+    font-weight: 400;
+    text-align: center;
+    color: #030303;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid grey;
+    position: absolute;
+    top: 1610.43px;
+    left: 800.78px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#myBtn:hover {
+    background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+}
+
+#myBtn1 {
+    width: 150px;
+    height: 50px;
+    font-family: 'UTM Avo';
+    font-size: 24.0px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 1610.43px;
+    left: 985.78px;
+    border-radius: 5px;
+    text-decoration: none;   
+    color: #030303;
+    background: linear-gradient(#FFFFFF,#E6E6E6);
+    border: 1px solid grey;  
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#myBtn1:hover {
+    background: #DDD;
+}
+
+#Label_GiaKM {
+    width: 230.0px;
+    height: 48.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 50px;
+    left: 504px;
+}
+
+#txt_DonGiaKM {
+    width: 400.4875311720696px;
+    height: 32.0px;
+    padding-left: 10px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    position: absolute;
+    top: 1330px;
+    left: 665px;
+    z-index: +1;
+}
+
+#loadFileXml {
+    background: linear-gradient(#8D9CF2,#FF8585);
+    position: absolute;
+    top: 1118px;
+    left: 176px;
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    z-index: +1;
+}
+
+#loadFileXml:hover {
+    cursor: pointer;
+}
+
+#file {
+    position: absolute;
+    font-family: 'UTM Avo';
+    font-size: 18px;
+    top: 1110px;
+    left: 320px;
+    z-index: +1;
+}
+
+#output {
+    border-style: dashed;
+    position: absolute;
+    top: 1080px;
+    left: 176px;
+    z-index: +1;
+}
+
+#button_ThemHangSP {
+    width: 200px;
+    height: 40px;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    z-index: +1;
+}
+
+    #button_ThemHangSP:hover {
+        background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    }
+
+#Log_in {
+    width: 96.44140625px;
+    height: 21.0px;
+    font-family: 'UTM Avo';
+    font-size: 18.666668px;
+    font-weight: 700;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 60px;
+}
+
+    #Log_in:hover {
+        color: #BC85A3;
+    }
+
+#Button_LogOut {
+    width: auto;
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 95px;
+    text-decoration: none;
+}
+
+    #Button_LogOut:hover {
+        color: darkblue;
+    }
+
+#User_icon {
+    position: absolute;
+    left: 1300.43px;
+    top: 70px;
+}
+
+#Hello_Text {
+    width: 200px;
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 55px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+
+
+
+
+

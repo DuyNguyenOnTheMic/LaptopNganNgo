@@ -1,0 +1,535 @@
+﻿.rectangle {
+    width: auto;
+    height: 95.01320904643597px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#8D9CF2,#FF8585);
+}
+
+.circle {
+    width: 82.00000000000011px;
+    height: 74.51294025289904px;
+    position: absolute;
+    left: 528px;
+    top: 8px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #B2B2B2;
+    border: 2px dashed #000000;
+    border-radius: 50%;
+}
+
+#LetterL {
+    position: absolute;
+    left: 535px;
+    top: 10px;
+}
+
+#Tittle {
+    position: absolute;
+    font-family: Arial;
+    font-size: 45px;
+    top: -20px;
+    left: 630.05px;
+    color: #333333;
+}
+
+
+.dropbtn {
+    width: 242.78373603646534px;
+    height: 59.999999999999886px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #282828;
+    border: 0px solid #404040;
+    border-radius: 0px;
+}
+
+
+#header {
+    width: 100%;
+    background: #f00;
+}
+
+body {
+    width: 1579px;
+    padding: 0;
+    margin: 0;
+}
+
+#logo_footer {
+    width: 82.00000000000011px;
+    height: 74.51294025289904px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #B2B2B2;
+    border: 2px dashed #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 2120px;
+    left: 111.5px;
+}
+
+#text1_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 352px;
+}
+#text2_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 617px;
+}
+#text3_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 887px;
+}
+#text4_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 1186px;
+}
+#text5_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 352px;
+}
+#text6_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 617px;
+}
+#Email_textbox {
+    width: 346.2918966478908px;
+    height: 29.999999999999545px;
+    font-family: Arial;
+    font-size: 12.0px;
+    color: #B2B2B2;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    left: 1186px;
+    top: 2150px;
+}
+
+#FB_ft {
+    position: absolute;
+    top: 2150px;
+    left: 887px;
+}
+
+#IG_ft {
+    position: absolute;
+    top: 2150px;
+    left: 937px;
+}
+
+.Footer {
+    position:absolute;
+    top: -800px;
+}
+
+.LogIn {
+    width: 566.7180392064802px;
+    height: 818.5000000000002px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background-color: #F2F2F2;
+    position: absolute;
+    top: 330px;
+    left: 500px;
+}
+
+#Google {
+    width: 61.83989563401019px;
+    height: 58.99720810521967px;
+    position: absolute;
+    left: 130px;
+    top: 700px;
+    cursor: pointer;
+}
+
+#Facebook {
+    width: 61.83989563401019px;
+    height: 58.99720810521967px;
+    position: absolute;
+    left: 252px;
+    top: 700px;
+    cursor: pointer;
+}
+
+
+#DiaChi {
+    width: 410px;
+    height: 43.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 1px;
+    padding-top: 3px;
+    padding-right: 7px;
+    padding-bottom: 2px;
+    padding-left: 12px;
+    position: absolute;
+    top: 540px;
+    left: 578px;
+    z-index: +1;
+}
+
+#DC {
+    width: 114.482421875px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #282828;
+    position: absolute;
+    top: 145px;
+    left: 80px;
+    bottom: 601px;
+}
+
+#MatKhau {
+    width: 410px;
+    height: 43.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 1px;
+    padding-top: 3px;
+    padding-right: 7px;
+    padding-bottom: 2px;
+    padding-left: 12px;
+    position: absolute;
+    top: 660px;
+    left: 578px;
+    z-index: +1;
+}
+
+
+#MK {
+    width: 94.265625px;
+    height: 27.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #282828;
+    position: absolute;
+    top: 266px;
+    left: 73px;
+    bottom: 474px;
+}
+
+#XacNhan {
+    width: 410px;
+    height: 43.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 1px;
+    padding-top: 3px;
+    padding-right: 7px;
+    padding-bottom: 2px;
+    padding-left: 12px;
+    position: absolute;
+    top: 780px;
+    left: 578px;
+    bottom: 293px;
+    z-index: +1;
+}
+#XNMK {
+    width: 180px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #282828;
+    position: absolute;
+    top: 383px;
+    left: 73px;
+    bottom: 353px;
+}
+
+label {
+    width: 177.900390625px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 630px;
+    left: 194px;
+    right: 194px;
+    cursor: pointer;
+}
+
+#DK {
+    width: 165.328125px;
+    height: 36.0px;
+    font-family: Arial;
+    font-size: 26.666668px;
+    font-weight: 700;
+    color: #000000;
+    top: 15px;
+    left: 65px;
+    bottom: 780px;
+    cursor: pointer;
+}
+
+#DN {
+    width: 283.3590196032401px;
+    height: 99.40236686390548px;
+    font-family: Arial;
+    font-size: 26.666668px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#8D9CF2,#FF8585);
+    position: absolute;
+    top: 0px;
+    left: 283px;
+    bottom: 780px;
+    cursor: pointer;
+}
+
+.button1 {
+    width: 56.0px;
+    height: 49.00000000000006px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: rgba(255,133,133,0.6);
+    position: absolute;
+    top: 163px;
+    left: 360px;
+    border-radius: 50%;
+}
+
+.button2 {
+    width: 56.0px;
+    height: 49.00000000000006px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: #CCCCCC;
+    position: absolute;
+    top: 163px;
+    left: 740px;
+    border-radius: 50%;
+}
+
+.button3 {
+    width: 56.0px;
+    height: 49.00000000000006px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: #CCCCCC;
+    position: absolute;
+    top: 163px;
+    left: 1119px;
+    border-radius: 50%;
+}
+
+#bt1 {
+    width: 97.861328125px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 210px;
+    left: 340px;
+}
+
+#bt2 {
+    width: 200px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 210px;
+    left: 701px;
+}
+
+#bt3 {
+    width: 250px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 210px;
+    left: 1044px;
+}
+
+.btn1 {
+    width: 322.9999999999996px;
+    height: 18.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: #CCCCCC;
+    position: absolute;
+    top: 178px;
+    left: 417px;  
+}
+
+.btn2 {
+    width: 322.9999999999996px;
+    height: 18.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: #CCCCCC;
+    position: absolute;
+    top: 178px;
+    left: 796px;
+}
+
+#Twitter {
+    width: 61.83989563401019px;
+    height: 58.99720810521967px;
+    position: absolute;
+    left: 374px;
+    top: 700px;
+    cursor: pointer;
+}
+
+
+#myBtn {
+    width: 160.0px;
+    height: 43.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #282828;
+    border: 0px solid #404040;
+    border-radius: 0px;
+    position: absolute;
+    left: 710px;
+    top: 890px;
+    cursor: pointer;
+    z-index: +1;
+}
+
+
+.text-danger_MK {
+    font-family: Arial;
+    font-size: 15.0px;
+    position: absolute;
+    top: 713px;
+    left: 578px;
+    color: red;
+    z-index: +1;
+}
+
+.text-danger_XNMK {
+    font-family: Arial;
+    font-size: 15.0px;
+    position: absolute;
+    top: 835px;
+    left: 578px;
+    color: red;
+    z-index: +1;
+}
+
+.text-danger_Email {
+    font-family: Arial;
+    font-size: 15.0px;
+    position: absolute;
+    top: 594px;
+    left: 578px;
+    color: red;
+    z-index: +1;
+}
+
+
+
+
+

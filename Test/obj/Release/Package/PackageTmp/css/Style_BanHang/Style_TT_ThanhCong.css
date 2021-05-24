@@ -1,0 +1,283 @@
+﻿.rectangle {
+    width: auto;
+    height: 95.01320904643597px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#8D9CF2,#FF8585);
+}
+
+.circle {
+    width: 82.00000000000011px;
+    height: 74.51294025289904px;
+    position: absolute;
+    left: 528px;
+    top: 8px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #B2B2B2;
+    border: 2px dashed #000000;
+    border-radius: 50%;
+}
+
+#LetterL {
+    position: absolute;
+    left: 535px;
+    top: 10px;
+}
+
+#Tittle {
+    position: absolute;
+    font-family: Arial;
+    font-size: 45px;
+    top: -20px;
+    left: 630.05px;
+    color: #333333;
+}
+
+
+.dropbtn {
+    width: 242.78373603646534px;
+    height: 59.999999999999886px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #282828;
+    border: 0px solid #404040;
+    border-radius: 0px;
+}
+
+
+#header {
+    width: 100%;
+    background: #f00;
+}
+
+body {
+    width: 1579px;
+    padding: 0;
+    margin: 0;
+}
+
+#logo_footer {
+    width: 82.00000000000011px;
+    height: 74.51294025289904px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #B2B2B2;
+    border: 2px dashed #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 2120px;
+    left: 111.5px;
+}
+
+#text1_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 352px;
+}
+#text2_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 617px;
+}
+#text3_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 887px;
+}
+#text4_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 1186px;
+}
+#text5_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 352px;
+}
+#text6_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 617px;
+}
+#Email_textbox {
+    width: 346.2918966478908px;
+    height: 29.999999999999545px;
+    font-family: Arial;
+    font-size: 12.0px;
+    color: #B2B2B2;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    left: 1186px;
+    top: 2150px;
+}
+
+#FB_ft {
+    position: absolute;
+    top: 2150px;
+    left: 887px;
+}
+
+#IG_ft {
+    position: absolute;
+    top: 2150px;
+    left: 937px;
+}
+
+.Footer {
+    position:absolute;
+    top: -1450px;
+}
+
+#Tym {
+    width: 195.00000000000014px;
+    height: 182.99999999999994px;
+    position: absolute;
+    top: 293px;
+    left: 309px;
+}
+#Thanks {
+    width: 530.40234375px;
+    height: 27.0px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 700;
+    color: #333333;
+    position: absolute;
+    top: 195px;
+    left: 677px;
+}
+
+#SDH {
+    width: 227.71484375px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 238px;
+    left: 677px;
+}
+#bt1 {
+    width: 220.7148437499999px;
+    height: 71.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: #FD8490;
+    position: absolute;
+    top: 320px;
+    left: 677px;
+}
+
+#lb1 {
+    width: 356.69921875px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 415px;
+    left: 677px;
+}
+
+#lb2 {
+    width: 32.24609375px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #1E40C2;
+    position: absolute;
+    top: 415px;
+    left: 1042px;
+    cursor: pointer;
+}
+
+#H {
+    width: 40.0px;
+    height: 41.0px;
+    position: absolute;
+    top: 486px;
+    left: 677px;
+}
+
+#lb3 {
+    width: 551.337890625px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 476px;
+    left: 740px;
+}
+
+
+
+
+
+
+
+
+

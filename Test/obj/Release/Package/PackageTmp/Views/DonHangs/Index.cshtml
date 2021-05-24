@@ -1,0 +1,187 @@
+﻿@using Test.Models;
+@model PagedList.IPagedList<Test.Models.DonHang>
+@using PagedList.Mvc;
+
+
+@{
+    ViewBag.Title = "Đơn hàng";
+    Layout = "~/Views/_QT_DonHang.cshtml";
+}
+
+<div class="Header">
+    <img src="~/Images/user_QT.png"
+         id="User_icon"
+         width="45" />
+    <a href="~/SanPhams/QT_SanPham">
+        <img id="Logo_Header"
+             src="~/Images/bird.png"
+             width="99" />
+        <p id="Text_Header">LaptopNganNgo</p>
+    </a>
+
+    <a href="~/SanPhams/QT_SanPham">
+        <p id="Product_SanPham">Sản phẩm</p>
+    </a>
+    <a href="~/DonHangs/Index">
+        <p id="Product_DonHang">Đơn hàng</p>
+    </a>
+    <p id="Product_KhachHang">Khách hàng</p>
+    <p id="Product_DoanhThu">Doanh thu</p>
+    <p id="Product_TaiKhoan">Tài khoản</p>
+
+    <span id="rectangle"></span>
+</div>
+
+<div>
+    @if (Session["HoTen"] != null)
+    {
+        <p id="Hello_Text">@Session["HoTen"].ToString()</p>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+    else if (Session["Email"] != null && Session["HoTen"] == null)
+    {
+        <p id="Hello_Text">Chào bạn,</p>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+
+</div>
+
+
+<div class="Footer">
+    <p id="Footer_Text">
+        2021
+        <br />Powered by Squad Ngáo Ngơ
+    </p>
+</div>
+
+
+<div class="HoaDon">
+
+
+    <form action="@Url.Action("Index","DonHangs")" method="get">
+        <input id="search_bar" type="search"
+               placeholder="Tìm kiếm" name="keyword" />
+        <input type="image"
+               src="~/Images/search.png"
+               width="19"
+               id="seach_icon"
+               alt="Submit" />
+    </form>
+
+    <div class="Filter_bar">
+        <div id="Filter">
+            Tháng này
+        </div>
+        <img id="Arrow_icon_up"
+             width="13"
+             src="~/Images/next.png" />
+        <img id="Arrow_icon_down"
+             width="13"
+             src="~/Images/next.png" />
+    </div>
+
+    <div id="myDIV">
+            <a class="@(ViewBag.category == null ? "active" : "")"
+               href="@Url.Action("Index", "DonHangs")" 
+               id="btn_TatCa">
+                Tất cả
+            </a>
+        <a class="@(ViewBag.category == 1 ? "active" : "")"
+           href="@Url.Action("Index", "DonHangs",
+           new { page = 1, category = 1 }, null)"
+           id="btn_DonMoi">
+            Đơn mới
+        </a>
+        <a class="@(ViewBag.category == 2 ? "active" : "")"
+           href="@Url.Action("Index", "DonHangs",
+           new { page = 1, category = 2}, null)"
+           id="btn_DangXuLy">
+            Đang xử lý
+        </a>
+        <a class="@(ViewBag.category == 3 ? "active" : "")"
+           href="@Url.Action("Index", "DonHangs",
+           new { page = 1, category = 3 }, null)"
+           id="btn_HoanThanh" >
+            Hoàn thành
+        </a>
+        <a class="@(ViewBag.category == 4 ? "active" : "")"
+           href="@Url.Action("Index", "DonHangs",
+           new { page = 1, category = 4 }, null)"
+           id="btn_DaHuy"  >
+            Đã huỷ
+        </a>
+    </div>
+
+
+    <div class="Load_DonHang">
+        @foreach (var item in Model)
+        {
+
+
+            <div class="Text_SanPham">
+
+
+                @if (item.KhachHang.GioiTinh == "Nam")
+                {
+                    <img id="Img_SP1"
+                         width="101"
+                         height="101"
+                         src="~/Images/male.png" />
+                }
+                else if (item.KhachHang.GioiTinh == "Nữ")
+                {
+                    <img id="Img_SP1"
+                         width="101"
+                         height="101"
+                         src="~/Images/female.png" />
+                }
+                else
+                {
+                    <img id="Img_SP1"
+                         width="101"
+                         height="101"
+                         src="~/Images/rainbow-flag.png" />
+                }
+
+                <div id="rectangle_SP"></div>
+
+                <p id="Text_SP">
+                    Mã đơn hàng:     <br />
+                    Thời gian tạo:   <br />
+                    Khách hàng:      <br />
+                    Tổng tiền:
+                </p>
+
+                <p id="Text_DonHang">
+                    <strong>#@item.MaDH</strong>                 <br />
+                    @item.NgayBan.ToString("dd/MM/yyyy")        <br />
+                    @item.KhachHang.HoTen                       <br />
+                    <span style="color: red">
+                        @item.TongTien.ToString("N0")@("₫")
+                    </span>
+                </p>
+
+                <a id="Button_Xem_SP1" href="~/DonHangs/Details/@item.MaDH">
+                    <div>Xem chi tiết</div>
+                </a>
+
+                <div id="Button_Xoa_SP1">Huỷ đơn hàng</div>
+
+
+            </div>
+        }
+
+    </div>
+    <div class="pagination">
+        <div id="Page_Count">
+            Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+        </div>
+        @Html.PagedListPager(Model, page => Url.Action("Index",
+            new { page, category = ViewBag.category, keyword = Request.QueryString["keyword"] }))
+    </div>
+
+
+</div>
+
+
+

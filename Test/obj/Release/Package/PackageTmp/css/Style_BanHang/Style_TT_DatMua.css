@@ -1,0 +1,666 @@
+﻿.rectangle {
+    width: auto;
+    height: 95.01320904643597px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#8D9CF2,#FF8585);
+}
+
+.circle {
+    width: 82.00000000000011px;
+    height: 74.51294025289904px;
+    position: absolute;
+    left: 528px;
+    top: 8px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #B2B2B2;
+    border: 2px dashed #000000;
+    border-radius: 50%;
+}
+
+#LetterL {
+    position: absolute;
+    left: 535px;
+    top: 10px;
+}
+
+#Tittle {
+    position: absolute;
+    font-family: Arial;
+    font-size: 45px;
+    top: -20px;
+    left: 630.05px;
+    color: #333333;
+}
+
+
+.dropbtn {
+    width: 242.78373603646534px;
+    height: 59.999999999999886px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #282828;
+    border: 0px solid #404040;
+    border-radius: 0px;
+}
+
+
+#header {
+    width: 100%;
+    background: #f00;
+}
+
+body {
+    width: 1579px;
+    padding: 0;
+    margin: 0;
+}
+
+#logo_footer {
+    width: 82.00000000000011px;
+    height: 74.51294025289904px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #B2B2B2;
+    border: 2px dashed #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 2120px;
+    left: 111.5px;
+}
+
+#text1_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 352px;
+}
+#text2_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 617px;
+}
+#text3_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 887px;
+}
+#text4_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 1186px;
+}
+#text5_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 352px;
+}
+#text6_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 617px;
+}
+#Email_textbox {
+    width: 346.2918966478908px;
+    height: 29.999999999999545px;
+    font-family: Arial;
+    font-size: 12.0px;
+    color: #B2B2B2;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    left: 1186px;
+    top: 2150px;
+}
+
+#FB_ft {
+    position: absolute;
+    top: 2150px;
+    left: 887px;
+}
+
+#IG_ft {
+    position: absolute;
+    top: 2150px;
+    left: 937px;
+}
+
+.Footer {
+    position:absolute;
+    top: -1100px;
+}
+
+
+#label1 {
+    width: 307.9921875px;
+    height: 27.0px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 700;
+    color: #333333;
+    position: absolute;
+    top: 321px;
+    left: 323px;
+}
+
+#label2 {
+    width: 307.9921875px;
+    height: 27.0px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 700;
+    color: #333333;
+    position: absolute;
+    top: 569px;
+    left: 359px;
+}
+.dm {
+    width: 174.99999999999977px;
+    height: 50.0px;
+    font-family: Arial;
+    font-size: 24.0px;
+    font-weight: 400;
+    text-align: center;
+    color: #030303;
+    background: linear-gradient(#5099C6,#FF8585);
+    border: 1px solid #FFFFFF;
+    border-radius: 12px;
+    position: absolute;
+    top: 865px;
+    left: 710px;
+    cursor: pointer;
+}
+
+.rec1 {
+    width: 543.7180392064803px;
+    height: 145.00000000000074px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background-color: #F2F2F2;
+    position: absolute;
+    top: 393px;
+    left: 204px;
+}
+
+#Tien {
+    width: 94.208984375px;
+    height: 18.0px;
+    color: #333333;
+    position: absolute;
+    top: 32px;
+    left: 30px;
+}
+
+#lbt {
+    position: absolute;
+    top: 35px;
+    left: 120px;
+}
+
+#The {
+    width: 94.208984375px;
+    height: 18.0px;
+    color: #333333;
+    position: absolute;
+    top: 82px;
+    left: 30px;
+}
+
+#lbth {
+    position: absolute;
+    top: 85px;
+    left: 120px;
+}
+
+.rec2 {
+    width: 543.7180392064803px;
+    height: 145.00000000000074px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background-color: #F2F2F2;
+    position: absolute;
+    top: 643px;
+    left: 204px;
+}
+
+#HoTen {
+    width: 94.208984375px;
+    height: 18.0px;
+    color: #333333;
+    position: absolute;
+    top: 32px;
+    left: 30px;
+}
+
+#HoaDon {
+    width: 94.208984375px;
+    height: 18.0px;
+    color: #333333;
+    position: absolute;
+    top: 82px;
+    left: 30px;
+}
+
+#lbht {
+    position: absolute;
+    top: 35px;
+    left: 120px;
+}
+
+#lbhd {
+    position: absolute;
+    top: 85px;
+    left: 120px;
+}
+
+.rec3 {
+    width: 372.00000000000034px;
+    height: 438.00000000000074px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    position: absolute;
+    top: 351px;
+    left: 989px;
+}
+
+#dk1 {
+    width: 326.6044921875002px;
+    height: 0.0px;
+    border-top: 1px solid #404040;
+    position: absolute;
+    top: 73px;
+    left: 20px;
+}
+
+#dk2 {
+    width: 326.6044921875002px;
+    height: 0.0px;
+    border-top: 1px solid #404040;
+    position: absolute;
+    top: 309px;
+    left: 20px;
+}
+
+#dh {
+    width: 94.208984375px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    color: #333333;
+    position: absolute;
+    top: 10px;
+    left: 29px;
+    right: 249px;
+}
+
+#sp {
+    width: 117.83203125px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 30px;
+    left: 132px;
+}
+.btS {
+    width: 85.0px;
+    height: 45.023529411764684px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #282828;
+    border: 0px solid #404040;
+    border-radius: 0px;
+    position: absolute;
+    top: 10px;
+    left: 271px;
+    cursor: pointer;
+}
+
+#lb1 {
+    width: 90.029296875px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 113px;
+    left: 29px;
+}
+
+#lb2 {
+    width: 90.029296875px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 175px;
+    left: 29px;
+}
+
+#lb3 {
+    width: 90.029296875px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 245px;
+    left: 29px;
+}
+
+#lb4 {
+    width: 106.7708511352539px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    position: absolute;
+    top: 113px;
+    left: 147px;
+}
+
+#lb5 {
+    width: 106.7708511352539px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    position: absolute;
+    top: 175px;
+    left: 147px;
+}
+
+#lb6 {
+    width: 106.7708511352539px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    position: absolute;
+    top: 245px;
+    left: 197px;
+}
+
+#lb7 {
+    width: 107.763671875px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    color: #333333;
+    position: absolute;
+    top: 352px;
+    left: 29px;
+}
+
+#lb8 {
+    width: 106.7708511352539px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #FF0000;
+    position: absolute;
+    top: 352px;
+    left: 188px;
+}
+
+#lb9 {
+    width: 177.841796875px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    font-style: italic;
+    color: #333333;
+    position: absolute;
+    top: 392px;
+    left: 156px;
+}
+
+#lbd1 {
+    width: 11.864583969116211px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    position: absolute;
+    top: 113px;
+    left: 274px;
+}
+
+#lbd2 {
+    width: 11.864583969116211px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    position: absolute;
+    top: 175px;
+    left: 274px;
+}
+
+#lbd3 {
+    width: 11.864583969116211px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    position: absolute;
+    top: 245px;
+    left: 274px;
+}
+
+#lbd4 {
+    width: 11.864583969116211px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #FF0000;
+    position: absolute;
+    top: 352px;
+    left: 314px;
+}
+
+.button1 {
+    width: 56.0px;
+    height: 49.00000000000006px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: rgba(255,133,133,0.6);
+    position: absolute;
+    top: 163px;
+    left: 360px;
+    border-radius: 50%;
+}
+
+.button2 {
+    width: 56.0px;
+    height: 49.00000000000006px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: rgba(255,133,133,0.6);
+    position: absolute;
+    top: 163px;
+    left: 740px;
+    border-radius: 50%;
+}
+
+.button3 {
+    width: 56.0px;
+    height: 49.00000000000006px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: rgba(255,133,133,0.6);
+    position: absolute;
+    top: 163px;
+    left: 1119px;
+    border-radius: 50%;
+}
+
+#bt1 {
+    width: 97.861328125px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 210px;
+    left: 340px;
+}
+
+#bt2 {
+    width: 200px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 210px;
+    left: 701px;
+}
+
+#bt3 {
+    width: 250px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 210px;
+    left: 1044px;
+}
+
+.btn1 {
+    width: 322.9999999999996px;
+    height: 18.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: rgba(255,133,133,0.6);
+    position: absolute;
+    top: 178px;
+    left: 417px;
+}
+
+.btn2 {
+    width: 322.9999999999996px;
+    height: 18.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: rgba(255,133,133,0.6);
+    position: absolute;
+    top: 178px;
+    left: 796px;
+}
+
+

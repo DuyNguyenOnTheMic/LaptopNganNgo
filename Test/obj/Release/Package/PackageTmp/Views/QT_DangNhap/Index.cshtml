@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Đăng nhập";
+    Layout = "~/Views/QT_DangNhap.cshtml";
+}
+
+<div class="Header">
+
+    <img id="Logo_Header"
+         src="~/Images/bird.png"
+         width="99" />
+    <p id="Text_Header">LaptopNganNgo</p>
+
+</div>
+
+<div class="Footer">
+    <p id="Footer_Text">
+        2021
+    <br />Powered by Squad Ngáo Ngơ
+</p>
+</div>
+
+<div id="Khung">
+
+    <label id="C1">LaptopNganNgo</label>
+    <label id="C2">Đam mê - Trách nhiệm</label>
+    <img id="H1" src="~/Images/user_QT.png" />
+    <img id="H2" src="~/Images/key.png" />
+
+    @if (Session["Message"] != null)
+    {
+        <div id="Failed_Message">@Session["Message"].ToString()</div>
+    }
+    @using (Html.BeginForm("Index", "QT_DangNhap", FormMethod.Post))
+    {
+        <form action="Index" method="post">
+            <input name="Email" type="text" placeholder="Địa chỉ email" id="txt_TenDangNhap">
+            <input name="MatKhau" type="password" placeholder="Mật khẩu" id="txt_MatKhau">
+
+            <button id="B1">Đăng nhập</button>
+        </form>
+    }
+</div>

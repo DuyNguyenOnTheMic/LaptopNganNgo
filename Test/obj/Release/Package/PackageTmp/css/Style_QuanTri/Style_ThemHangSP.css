@@ -1,0 +1,494 @@
+﻿body {
+    margin-top: -60px;
+    padding-top: 60px;
+}
+
+#Logo_Header {
+    width: 99.00000000000011px;
+    height: 73.99999999999989px;
+    position: absolute;
+    top: 49px;
+    left: 513px;
+}
+
+#Text_Header {
+    width: 466.15625px;
+    height: 73.0px;
+    font-family: 'UTM Avo';
+    font-size: 64.0px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: -15px;
+    left: 638.88px;
+}
+
+#Footer_Text {
+    width: 309.8372802734375px;
+    height: 103.99999999999955px;
+    font-family: 'UTM Avo';
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 28px;
+    color: #1EAAF1;
+    position: absolute;
+    left: 645.08px;
+    top: 630px;
+}
+
+#Product_SanPham {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    top: 136px;
+    left: 136.35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_DonHang {
+    width: 268.1745635910226px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 406px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+#Product_KhachHang {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 675px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_DoanhThu {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 944px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_TaiKhoan {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 1213px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Header {
+    position:absolute;
+    left: -15px;
+    top: 0px;
+}
+
+#rectangle {
+    width: 1345px;
+    height: 42.99999999999977px;
+    font-family: 'UTM Avo';
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background: linear-gradient(#F9E1E0,#FFFFFF);
+    position: absolute;
+    top: 265px;
+    left: 136.35px;
+}
+
+
+#Text {
+    font-family: 'UTM Avo';
+    font-size: 29.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 308px;
+    left: 127px;
+}
+
+#Add {
+    width: 347.0px;
+    height: 36.0px;
+    position: absolute;
+    font-family: 'UTM Avo';
+    font-size: 18px;
+    font-weight: 400;
+    top: 400px;
+    left: 127px;
+}
+
+#hp {
+    width: 171.9999999999999px;
+    height: 152.0px;
+    position: absolute;
+    top: 530px;
+    left: 300px;
+    cursor: pointer;
+}
+
+#dell {
+    width: 171.9999999999999px;
+    height: 152.0px;
+    position: absolute;
+    top: 530px;
+    left: 560px;
+    cursor: pointer;
+}
+
+#msi {
+    width: 171.9999999999999px;
+    height: 152.0px;
+    position: absolute;
+    top: 530px;
+    left: 840px;
+    cursor: pointer;
+}
+
+#apple {
+    width: 171.9999999999999px;
+    height: 152.0px;
+    position: absolute;
+    top: 530px;
+    left: 1110px;
+    cursor: pointer;
+}
+
+#asus {
+    width: 171.9999999999999px;
+    height: 152.0px;
+    position: absolute;
+    top: 730px;
+    left: 300px;
+    cursor: pointer;
+}
+
+#acer {
+    width: 171.9999999999999px;
+    height: 152.0px;
+    position: absolute;
+    top: 730px;
+    left: 560px;
+    cursor: pointer;
+}
+
+#lenovo {
+    width: 171.9999999999999px;
+    height: 152.0px;
+    position: absolute;
+    top: 730px;
+    left: 840px;
+    cursor: pointer;
+}
+
+#razer {
+    width: 171.9999999999999px;
+    height: 152.0px;
+    position: absolute;
+    top: 730px;
+    left: 1110px;
+    cursor: pointer;
+}
+
+#left-ar {
+    width: 61.9999999999996px;
+    height: 125.0px;
+    position: absolute;
+    top: 644px;
+    left: 128px;
+    cursor: pointer;
+}
+
+#right-ar {
+    width: 61.9999999999996px;
+    height: 125.0px;
+    position: absolute;
+    top: 644px;
+    left: 1400px;
+    cursor: pointer;
+}
+
+#btn {
+    width: 120px;
+    height: 40px;
+    font-family: 'UTM Avo';
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    color: #030303;
+    background: linear-gradient(#FFFFFF,#E6E6E6);
+    border: 1px solid grey;
+    position: absolute;
+    top: 335px;
+    left: 1345px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#btn_Add {
+    width: 100px;
+    height: 40px;
+    font-family: 'UTM Avo';
+    font-size: 17.0px;
+    font-weight: 400;
+    text-align: center;
+    color: #030303;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid grey;
+    border-radius: 5px;
+    position: absolute;
+    top: 470px;
+    left: 127px;
+    cursor: pointer;
+}
+
+    #btn_Add:hover {
+        background-image: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    }
+
+#Log_in {
+    width: 96.44140625px;
+    height: 21.0px;
+    font-family: 'UTM Avo';
+    font-size: 18.666668px;
+    font-weight: 700;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 60px;
+}
+
+    #Log_in:hover {
+        color: #BC85A3;
+    }
+
+#Button_LogOut {
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 95px;
+    text-decoration: none;
+}
+
+    #Button_LogOut:hover {
+        color: darkblue;
+    }
+
+#User_icon {
+    position: absolute;
+    left: 1300.43px;
+    top: 70px;
+}
+
+#Hello_Text {
+    width: 200px;
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 55px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+#Name_HangSP {
+    height: 0px;
+    position: relative;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    left: 600px;
+    top: 400px;
+    z-index: +1;
+}
+
+#button_EditHangSP {
+    position: relative;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    left: 620px;
+    top: 430.8px;
+}
+
+#button_DeleteHangSP {
+    position: relative;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    left: 700px;
+    top: 395.4px;
+}
+
+#button_Create {
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid grey;
+    position: absolute;
+    top: 335px;
+    left: 1180px;
+    font-family: 'UTM Avo';
+    font-size: 17px;
+    z-index: +1;
+    cursor: pointer;
+}
+
+    #button_Create:hover {
+        background-image: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    }
+
+.Table_HangSP {
+    display: block;
+    position: absolute;
+    left: 100px;
+    width: 150px;
+    height: 150px;
+}
+
+#btn:hover {
+    background: #DDD;
+}
+
+#btn_back {
+    width: 100px;
+    height: 40px;
+    font-family: 'UTM Avo';
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    color: #030303;
+    background: linear-gradient(#FFFFFF,#E6E6E6);
+    border: 1px solid grey;
+    position: absolute;
+    top: 470px;
+    left: 257px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+    #btn_back:hover {
+        background: #DDD;
+    }
+
+#Log_in {
+    width: 96.44140625px;
+    height: 21.0px;
+    font-family: 'UTM Avo';
+    font-size: 18.666668px;
+    font-weight: 700;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 60px;
+}
+
+    #Log_in:hover {
+        color: #BC85A3;
+    }
+
+#Button_LogOut {
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 95px;
+    text-decoration: none;
+}
+
+    #Button_LogOut:hover {
+        color: darkblue;
+    }
+
+#User_icon {
+    position: absolute;
+    left: 1300.43px;
+    top: 70px;
+}
+
+#Hello_Text {
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 55px;
+}
+
+

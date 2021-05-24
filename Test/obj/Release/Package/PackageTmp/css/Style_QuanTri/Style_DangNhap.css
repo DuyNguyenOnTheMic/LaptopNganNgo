@@ -1,0 +1,181 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+#Logo_Header {
+    width: 99.00000000000011px;
+    height: 73.99999999999989px;
+    position: absolute;
+    top: 59px;
+    left: 500px;
+}
+
+#Text_Header {
+    width: 466.15625px;
+    height: 73.0px;
+    font-family: 'UTM Avo';
+    font-size: 64.0px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: -15px;
+    left: 625.88px;
+}
+
+
+.Header {
+    position:absolute;
+    left: -15px;
+}
+
+#Footer_Text {
+    width: 309.8372802734375px;
+    height: 103.99999999999955px;
+    font-family: 'UTM Avo';
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 28px;
+    color: #1EAAF1;
+    position: absolute;
+    left: 645.08px;
+    top: 992px;
+}
+
+#Khung {
+    width: 606.9999999999994px;
+    height: 731.9999999999998px;
+    font-family: 'UTM Avo';
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background: linear-gradient(#F3DCDC,#FFFFFF);
+    position: absolute;
+    left: 503px;
+    top: 200px;
+}
+
+#C1 {
+    width: 381.1875px;
+    height: 42.0px;
+    font-family:'UTM Avo';
+    font-size: 48.0px;
+    font-weight: 400;
+    font-style: italic;
+    color: #333333;
+    position: absolute;
+    left: 100px;
+    top: 112px;
+}
+
+#C2 {
+    width: 190px;
+    height: 18.0px;
+    font-family: 'UTM Avo';
+    font-size: 16.0px;
+    font-weight: 400;
+    color: #999999;
+    position: absolute;
+    left: 200px;
+    top: 202px;
+}
+
+input[type=text] {
+    width: 402.10223380797237px;
+    height: 56.99999999999977px;
+    font-family: 'UTM Avo';
+    font-size: 18.666668px;
+    color: #434343;
+    background: linear-gradient(rgba(254,173,185,0.6),rgba(188,133,163,0.5));
+    border: 1px dotted #D9D9D9;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    left: 127px;
+    top: 313px;
+}
+
+input[type=password] {
+    width: 402.10223380797237px;
+    height: 58.25px;
+    font-family: 'UTM Avo';
+    font-size: 18.666668px;
+    color: #434343;
+    background: linear-gradient(rgba(254,173,185,0.6),rgba(188,133,163,0.5));
+    border: 1px dotted #D9D9D9;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    left: 127px;
+    top: 410px;
+}
+
+#H1 {
+    width: 51.19791666666674px;
+    height: 50.99999999999994px;
+    border: 1px solid #CE8D8D;
+    position: absolute;
+    left: 45px;
+    top: 317px;
+}
+
+#H2 {
+    width: 53.19791666666674px;
+    height: 50.499999999999886px;
+    border: 1px solid #CE8D8D;
+    position: absolute;
+    left: 45px;
+    top: 415px;
+}
+
+#B1 {
+    width: 230.0px;
+    height: 57.0px;
+    font-family: 'UTM Avo';
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(rgba(188,133,163,0.6),rgba(151,153,186,0.5));
+    border: 1px solid #DDDDDD;
+    border-radius: 12px;
+    position: absolute;
+    left: 215px;
+    top: 556px;
+    cursor: pointer;
+}
+
+#B2 {
+    width: 230.0px;
+    height: 57.0px;
+    font-family: 'UTM Avo';
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(rgba(188,133,163,0.6),rgba(151,153,186,0.5));
+    border: 1px solid #DDDDDD;
+    border-radius: 12px;
+    position: absolute;
+    left: 215px;
+    top: 638px;
+    cursor: pointer;
+}
+#Failed_Message {
+    font-family: 'UTM Avo';
+    font-size: 20.0px;
+    position: absolute;
+    top: 480px;
+    left: 128px;
+    color: red;
+}

@@ -1,0 +1,446 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+#Logo_Header {
+    width: 99.00000000000011px;
+    height: 73.99999999999989px;
+    position: absolute;
+    top: 49px;
+    left: 513px;
+}
+
+#Text_Header {
+    width: 466.15625px;
+    height: 73.0px;
+    font-family: 'UTM Avo';
+    font-size: 64.0px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: -15px;
+    left: 638.88px;
+}
+
+#Product_SanPham {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    top: 136px;
+    left: 136.35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_DonHang {
+    width: 268.1745635910226px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 406px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+#Product_KhachHang {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 675px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_DoanhThu {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 944px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_TaiKhoan {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 1213px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Header {
+    position:absolute;
+    left: -15px;
+}
+
+#Footer_Text {
+    width: 309.8372802734375px;
+    height: 103.99999999999955px;
+    font-family: 'UTM Avo';
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 28px;
+    color: #1EAAF1;
+    position: absolute;
+    left: 645.08px;
+    top: 1202px;
+}
+
+#rectangle {
+    width: 1345px;
+    height: 42.99999999999977px;
+    font-family: 'UTM Avo';
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background: linear-gradient(#F9E1E0,#FFFFFF);
+    position: absolute;
+    top: 265px;
+    left: 136.35px;
+}
+
+#search_bar {
+    width: 269.9999999999997px;
+    height: 40.0px;
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    color: black;
+    background-color: #FFFFFF;
+    border: 1px solid grey;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 41px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    top: 334px;
+    left: 121.35px;
+}
+
+#seach_icon {
+    position: absolute;
+    top: 344px;
+    left: 400px;
+    opacity: 0.5;
+}
+
+#seach_icon:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+#Dang_SP {
+    width: 150px;
+    height: 58.0px;
+    padding-left: 30px;
+    font-family: 'UTM Avo';
+    font-size: 16.0px;
+    font-weight: 600;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid grey;
+    position: absolute;
+    left: 1284px;
+    top: 334px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+    #Dang_SP:hover {
+        background-image: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    }
+
+#Log_in {
+    width: 96.44140625px;
+    height: 21.0px;
+    font-family: 'UTM Avo';
+    font-size: 18.666668px;
+    font-weight: 700;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 60px;
+}
+
+    #Log_in:hover {
+        color: #BC85A3;
+    }
+
+#Button_LogOut {
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 95px;
+    text-decoration: none;
+}
+
+    #Button_LogOut:hover {
+        color: darkblue;
+    }
+#User_icon {
+    position: absolute;
+    left: 1300.43px;
+    top: 70px;
+}
+
+#Hello_Text {
+    width: 200px;
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 55px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+
+.ul.pagination {
+    display: inline-block;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+    ul.pagination li a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+    }
+
+        ul.pagination li a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        ul.pagination li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+.pagination {
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    width: 700px;
+    position: relative;
+    top: 540px;
+    left: 350px;
+}
+
+#Page_Count {
+    position: relative;
+    top: 540px;
+    left: 400px;
+}
+
+#Header_TenSP {
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    left: 121.35px;
+    top: 420px;
+}
+
+#Header_TenHang {
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    left: 670.35px;
+    top: 420px;
+}
+
+#Header_DongSP {
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    left: 830px;
+    top: 420px;
+}
+
+#Header_TrangThai {
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    left: 1040px;
+    top: 420px;
+}
+
+#Header_SL {
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    left: 1300px;
+    top: 420px;
+}
+
+#TenSP {
+    max-width: 370px;
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    position: relative;
+    left: 231.35px;
+    top: 410px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.myActionlink:hover {
+    color:blue;
+}
+
+.myActionlink {
+    text-decoration: none;
+    color: black;
+}
+
+#HinhAnhSP {
+    border: grey;
+    position: relative;
+    top: 480px;
+    left: 121.35px;
+}
+
+#TenHangSP {
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    position: relative;
+    left: 670.35px;
+    top: 373px;
+}
+
+#DongSP {
+    max-width: 150px;
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    position: relative;
+    left: 830px;
+    top: 336px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+#TrangThaiSP {
+    max-width: 80px;
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    position: relative;
+    left: 1080px;
+    top: 300px;
+}
+
+#SL {
+    max-width: 50px;
+    max-block-size: 50px;
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    position: relative;
+    left: 1330px;
+    top: 264px;
+}
+
+#dk2 {
+    position: relative;
+    top: 300px;
+    left: 121.35px;
+}
+
+.LoadSP_QuanTri {
+    list-style-type: none;
+    width: 1479px;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+.SP_QuanTri {
+    float: left;
+    width: 860px; /* bề rộng  */
+    height: 150px;
+    display: block;
+    top: 600px;
+    left: 121px;
+}
+
+

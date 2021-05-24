@@ -1,0 +1,339 @@
+﻿.rectangle {
+    width: auto;
+    height: 95.01320904643597px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#8D9CF2,#FF8585);
+}
+
+.circle {
+    width: 82.00000000000011px;
+    height: 74.51294025289904px;
+    position: absolute;
+    left: 528px;
+    top: 8px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #B2B2B2;
+    border: 2px dashed #000000;
+    border-radius: 50%;
+}
+
+#LetterL {
+    position: absolute;
+    left: 535px;
+    top: 10px;
+}
+
+
+#Tittle {
+    position: absolute;
+    font-family: Arial;
+    font-size: 45px;
+    top: -20px;
+    left: 630.05px;
+    color: #333333;
+}
+
+#header {
+    width: 100%;
+    background: #f00;
+}
+
+body {
+    width: 1579px;
+    padding: 0;
+    margin: 0;
+}
+
+#logo_footer {
+    width: 82.00000000000011px;
+    height: 74.51294025289904px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #B2B2B2;
+    border: 2px dashed #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 2120px;
+    left: 111.5px;
+}
+
+#text1_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 352px;
+}
+#text2_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 617px;
+}
+#text3_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 887px;
+}
+#text4_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 1186px;
+}
+#text5_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 352px;
+}
+#text6_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 617px;
+}
+#Email_textbox {
+    width: 346.2918966478908px;
+    height: 29.999999999999545px;
+    font-family: Arial;
+    font-size: 12.0px;
+    color: #B2B2B2;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    left: 1186px;
+    top: 2150px;
+}
+
+#FB_ft {
+    position: absolute;
+    top: 2150px;
+    left: 887px;
+}
+
+#IG_ft {
+    position: absolute;
+    top: 2150px;
+    left: 937px;
+}
+
+.Footer {
+    position: absolute;
+    top: -1280px;
+}
+
+.LogIn {
+    width: 566.7180392064805px;
+    height: 628.0000000000007px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background-color: #F2F2F2;
+    position: absolute;
+    top: 160px;
+    left: 500px;
+}
+
+#Google {
+    width: 61.83989563401019px;
+    height: 58.99720810521967px;
+    position: absolute;
+    left: 100px;
+    top: 133px;
+    cursor: pointer;
+}
+
+#Facebook {
+    width: 61.83989563401019px;
+    height: 58.99720810521967px;
+    position: absolute;
+    left: 251px;
+    top: 133px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    width: 300.6961088692907px;
+    height: 54.45706371191147px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    position: absolute;
+    top: 262px;
+    padding-right: 6px;
+    right: 90px;
+    padding-bottom: 1px;
+    bottom: 155px;
+    padding-left: 11px;
+    left: 155px;
+}
+
+input[type=password] {
+    width: 300.6961088692908px;
+    height: 54.45706371191136px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    position: absolute;
+    padding-top: 1px;
+    top: 385px;
+    padding-right: 6px;
+    right: 90px;
+    padding-bottom: 1px;
+    bottom: 182px;
+    padding-left: 11px;
+    left: 155px;
+}
+
+label {
+    width: 167.2083282470703px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: 400;
+    color: #1EAAF1;
+    position: absolute;
+    top: 478px;
+    bottom: 117px;
+    left: 337px;
+    right: 62px;
+    cursor: pointer;
+}
+
+#DK {
+    width: 283.3590196032401px;
+    height: 99.40236686390548px;
+    font-family: Arial;
+    font-size: 26.666668px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#8D9CF2,#FF8585);
+    position: absolute;
+    right: 283px;
+    bottom: 528px;
+    cursor: pointer;
+}
+
+#DN {
+    width: 165.328125px;
+    height: 36.0px;
+    font-family: Arial;
+    font-size: 26.666668px;
+    font-weight: 700;
+    color: #000000;
+    position: absolute;
+    top: 45px;
+    right: 29px;
+    cursor: pointer;
+}
+
+#iconDN {
+    width: 42.7827674622597px;
+    height: 44.1336565096953px;
+    position: absolute;
+    top: 270px;
+    left: 80px;
+}
+
+#iconMK {
+    width: 42.7827674622597px;
+    height: 44.1336565096953px;
+    position: absolute;
+    top: 390px;
+    left: 80px;
+}
+
+#Twitter {
+    width: 61.83989563401019px;
+    height: 58.99720810521967px;
+    position: absolute;
+    right: 101px;
+    top: 133px;
+    cursor: pointer;
+}
+
+#myBtn {
+    width: 160.0px;
+    height: 43.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #282828;
+    border: 0px solid #000000;
+    border-radius: 0px;
+    position: absolute;
+    left: 202px;
+    bottom: 56px;
+    cursor: pointer;
+}
+
+#Failed_Message {
+    font-family: Arial;
+    font-size: 15.0px;
+    position: absolute;
+    top: 450px;
+    left: 155px;
+    color: red;
+}
+

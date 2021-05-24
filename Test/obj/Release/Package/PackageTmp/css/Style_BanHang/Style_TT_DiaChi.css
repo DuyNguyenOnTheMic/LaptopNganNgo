@@ -1,0 +1,1129 @@
+﻿.rectangle {
+    width: auto;
+    height: 95.01320904643597px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#8D9CF2,#FF8585);
+}
+
+.circle {
+    width: 82.00000000000011px;
+    height: 74.51294025289904px;
+    position: absolute;
+    left: 528px;
+    top: 8px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #B2B2B2;
+    border: 2px dashed #000000;
+    border-radius: 50%;
+}
+
+#LetterL {
+    position: absolute;
+    left: 535px;
+    top: 10px;
+}
+
+#User_icon {
+    position: absolute;
+    left: 1330px;
+    top: 30px;
+}
+
+#Tittle {
+    position: absolute;
+    font-family: Arial;
+    font-size: 45px;
+    top: -20px;
+    left: 630.05px;
+    color: #333333;
+}
+
+#text_1 {
+    width: 200.44140625px;
+    height: 21.0px;
+    font-family: Arial;
+    font-size: 18.666668px;
+    font-weight: 700;
+    color: #000000;
+    position: absolute;
+    left: 1390.433px;
+    top: 6px;
+}
+
+#Log_out {
+    width: 200.44140625px;
+    height: 21.0px;
+    font-family: Arial;
+    font-weight: 100;
+    font-size: 18.666668px;
+    color: #000000;
+    position: absolute;
+    left: 1470px;
+    top: 60px;
+}
+
+    #Log_out:hover {
+        cursor: pointer;
+        font-weight: 700;
+    }
+
+#Search_textbox {
+    width: 462.2120465041146px;
+    height: 47.0px;
+    font-family: Arial;
+    font-size: 18px;
+    color: #666666;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 16px;
+    padding-bottom: 1px;
+    padding-left: 41px;
+    position: absolute;
+    left: 430px;
+    top: 125px;
+}
+
+::-webkit-input-placeholder {
+    color: #B4B4B4;
+}
+
+#Search_button {
+    width: 241.2505113563641px;
+    height: 51px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #282828;
+    border: 0px solid #404040;
+    border-radius: 0px;
+    position: absolute;
+    left: 932.37px;
+    top: 125px;
+}
+
+    #Search_button:hover {
+        background-color: #444444;
+    }
+
+#Cart_image {
+    width: 35.0px;
+    height: 36.00000000000006px;
+    border: 1px solid #000000;
+    position: absolute;
+    left: 1439.43px;
+    top: 131px;
+}
+
+#Cart_number {
+    width: 25px;
+    height: 20px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #FFFFFF;
+    background-color: #FF0000;
+    position: absolute;
+    left: 1455px;
+    top: 105px;
+    border-radius: 50%;
+}
+
+#Cart_text {
+    width: 63.550785064697266px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.666667px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #FFFFFF;
+    position: absolute;
+    left: 1493.72px;
+    top: 126px;
+}
+
+.dropbtn {
+    width: 242.78373603646534px;
+    height: 59.999999999999886px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #282828;
+    border: 0px solid #404040;
+    border-radius: 0px;
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    left: 64.32px;
+    top: 204px;
+}
+
+.dropdown-content {
+    font-family: Arial;
+    font-size: 17.333334px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 242.78373603646534px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+            .dropdown-content a:hover + #Laptop_Gaming_Content {
+                display: block;
+            }
+
+            .dropdown-content a:hover + #Laptop_VP_Content {
+                display: block;
+            }
+
+            .dropdown-content a:hover + #Laptop_SV_Content {
+                display: block;
+            }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #444444;
+}
+
+#header {
+    width: 100%;
+    background: #f00;
+}
+
+body {
+    width: 1579px;
+    padding: 0;
+    margin: 0;
+}
+
+#Laptop_Gaming_Content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#Laptop_Gaming_Content {
+    text-decoration: none;
+    left: 245px;
+    top: 0px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 112px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    line-height: 1.6;
+}
+
+    #Laptop_Gaming_Content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    #Laptop_Gaming_Content:hover {
+        display: block;
+    }
+
+#Laptop_VP_Content {
+    text-decoration: none;
+    left: 245px;
+    top: 44px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 112px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    line-height: 1.6;
+}
+
+    #Laptop_VP_Content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    #Laptop_VP_Content:hover {
+        display: block;
+    }
+
+#Laptop_SV_Content {
+    text-decoration: none;
+    left: 245px;
+    top: 88px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 112px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    line-height: 1.6;
+}
+
+    #Laptop_SV_Content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    #Laptop_SV_Content:hover {
+        display: block;
+    }
+
+#Ban_Hang {
+    text-decoration: none;
+    width: 242.03796469648415px;
+    height: 58px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #CBCBCB;
+    border: 1px solid #0487D9;
+    position: absolute;
+    left: 308px;
+    top: 204px;
+}
+
+    #Ban_Hang:hover {
+        font-weight: bold;
+    }
+
+#Bao_Hanh {
+    text-decoration: none;
+    width: 242.03796469648415px;
+    height: 58px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #CBCBCB;
+    border: 1px solid #0487D9;
+    position: absolute;
+    left: 552.7px;
+    top: 204px;
+}
+
+    #Bao_Hanh:hover {
+        font-weight: bold;
+    }
+
+#Van_Chuyen {
+    text-decoration: none;
+    width: 242.03796469648415px;
+    height: 58px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #CBCBCB;
+    border: 1px solid #0487D9;
+    position: absolute;
+    left: 797.23px;
+    top: 204px;
+}
+
+    #Van_Chuyen:hover {
+        font-weight: bold;
+    }
+
+#Khuyen_Mai {
+    text-decoration: none;
+    width: 242.03796469648415px;
+    height: 58px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #CBCBCB;
+    border: 1px solid #0487D9;
+    position: absolute;
+    left: 1041.9px;
+    top: 204px;
+}
+
+    #Khuyen_Mai:hover {
+        font-weight: bold;
+    }
+
+#Cham_Soc {
+    text-decoration: none;
+    width: 242.03796469648415px;
+    height: 58px;
+    font-family: Arial;
+    font-size: 17.333334px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color: #CBCBCB;
+    border: 1px solid #0487D9;
+    position: absolute;
+    left: 1287px;
+    top: 204px;
+}
+
+    #Cham_Soc:hover {
+        font-weight: bold;
+    }
+
+#logo_footer {
+    width: 82.00000000000011px;
+    height: 74.51294025289904px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #B2B2B2;
+    border: 2px dashed #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 2120px;
+    left: 111.5px;
+}
+
+#Home_page_1 {
+    position: absolute;
+    left: 64.32px;
+    top: 300px;
+}
+
+#rectangle2 {
+    width: 562.8338238075347px;
+    height: 95.0132090464358px;
+    font-family: Arial;
+    font-size: 26.666668px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#8D9CF2,#FF8585);
+    position: absolute;
+    left: 0px;
+    top: 1209.49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rectangle3 {
+    width: 1016px;
+    height: 95.0132090464358px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background-color: #CBCBCB;
+    position: absolute;
+    left: 562.83px;
+    top: 1209.49px;
+}
+
+#rectangle_HotDealLeft {
+    width: 74.909472073752px;
+    height: 563.2175743560274px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background-color: #F2F2F2;
+    position: absolute;
+    left: 0px;
+    top: 1343px;
+}
+
+    #rectangle_HotDealLeft:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+#rectangle_HotDealRight {
+    width: 74.90947207375211px;
+    height: 563.2175540574563px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background-color: #F2F2F2;
+    position: absolute;
+    left: 1504.09px;
+    top: 1343px;
+}
+
+    #rectangle_HotDealRight:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+#text1_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 352px;
+}
+
+#text2_ft {
+    width: 195.36803013185664px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 617px;
+}
+
+#text3_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 887px;
+}
+
+#text4_ft {
+    width: 195.36803013185624px;
+    height: 16.0px;
+    font-family: Arial;
+    font-size: 14.0px;
+    font-weight: 500;
+    color: #666666;
+    position: absolute;
+    top: 2108px;
+    left: 1186px;
+}
+
+#text5_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 352px;
+}
+
+#text6_ft {
+    width: 173.48681075708856px;
+    height: 91.99999999999955px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    line-height: 22px;
+    color: #B2B2B2;
+    position: absolute;
+    top: 2132px;
+    left: 617px;
+}
+
+#Email_textbox {
+    width: 346.2918966478908px;
+    height: 29.999999999999545px;
+    font-family: Arial;
+    font-size: 12.0px;
+    color: #B2B2B2;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    left: 1186px;
+    top: 2150px;
+}
+
+#FB_ft {
+    position: absolute;
+    top: 2150px;
+    left: 887px;
+}
+
+#IG_ft {
+    position: absolute;
+    top: 2150px;
+    left: 937px;
+}
+
+.rectangle_form {
+    width: 651.7180392064809px;
+    height: 610.5000000000009px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background-color: #F2F2F2;
+    z-index: -1;
+    position: absolute;
+    top: 295px;
+    left: 520px;
+}
+
+#Hoten {
+    width: 62.85417175292969px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 320px;
+    left: 600px;
+}
+
+#Gioitinh {
+    width: 81.85417175292969px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 400px;
+    left: 600px;
+}
+
+#SDT {
+    width: 81.85417175292969px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 480px;
+    left: 600px;
+}
+
+#Ngaysinh {
+    width: 94.86459350585938px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 560px;
+    left: 600px;
+}
+
+#Diachi {
+    width: 94.86459350585938px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 640px;
+    left: 600px;
+}
+
+#NhapHoten {
+    width: 324.0px;
+    height: 40.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    top: 330px;
+    left: 680px;
+}
+
+#HoTen_Constraint {
+    width: 266.73822021484375px;
+    height: 15.0px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    color: #FF0000;
+    position: absolute;
+    top: 364px;
+    left: 770px;
+}
+
+
+#GT_Nam {
+    width: 45.04166793823242px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 410px;
+    left: 680px;
+}
+
+#lb_nam {
+    width: 45.04166793823242px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 415px;
+    left: 730px;
+}
+
+#lb_nu {
+    width: 45.04166793823242px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 415px;
+    left: 830px;
+}
+
+#lb_khac {
+    width: 45.04166793823242px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 415px;
+    left: 930px;
+}
+
+#GT_Nu {
+    width: 45.04166793823242px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 410px;
+    left: 780px;
+}
+
+#GT_Khac {
+    width: 45.04166793823242px;
+    height: 24.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 410px;
+    left: 880px;
+}
+
+.Radio_Buttons {
+    position: absolute;
+    top: 10px;
+}
+
+#NhapSDT {
+    width: 324.0px;
+    height: 40.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    top: 490px;
+    left: 680px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#SĐT_Constraint {
+    width: 266.73822021484375px;
+    height: 15.0px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    color: #FF0000;
+    position: absolute;
+    top: 522px;
+    left: 770px;
+}
+
+#NhapNgaysinh {
+    width: 324.0px;
+    height: 40.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    top: 570px;
+    left: 680px;
+}
+
+#NhapDiachi {
+    width: 324.0000000000001px;
+    height: 85.0px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    color: #434343;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0px;
+    padding-top: 1px;
+    padding-right: 6px;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    position: absolute;
+    top: 650px;
+    left: 680px;
+    resize: none;
+}
+
+#Btn_CapNhat {
+    width: 133.0px;
+    height: 61.999999999999545px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #282828;
+    border: 0px solid #404040;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 800px;
+    left: 890px;
+    cursor: pointer;
+}
+
+#Btn_Huy {
+    width: 133.0px;
+    height: 61.999999999999545px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 0px solid #404040;
+    border-radius: 0px;
+    position: absolute;
+    top: 800px;
+    left: 800px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Btn_TaiKhoan {
+    width: 242.1438536321208px;
+    height: 70.49999999999989px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 1px solid #A4A4A4;
+    position: absolute;
+    top: 300px;
+    left: 80px;
+}
+
+#Btn_DonHang {
+    width: 242.1438536321208px;
+    height: 70.49999999999989px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 1px solid #A4A4A4;
+    position: absolute;
+    top: 370px;
+    left: 80px;
+}
+
+#Btn_Thoat {
+    width: 242.1438536321208px;
+    height: 70.49999999999989px;
+    font-family: Arial;
+    font-size: 21.333334px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 1px solid #A4A4A4;
+    position: absolute;
+    top: 440px;
+    left: 80px;
+}
+
+.Button_CNTT {
+    position: absolute;
+    top: 10px;
+    left: -20px;
+}
+
+.Form_CNTT {
+    position: absolute;
+    top: 0px;
+    left: -85px;
+}
+
+.Footer {
+    position: absolute;
+    top: -1100px;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 350px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+.button1 {
+    width: 56.0px;
+    height: 49.00000000000006px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: rgba(255,133,133,0.6);
+    position: absolute;
+    top: 163px;
+    left: 360px;
+    border-radius: 50%;
+}
+
+.button2 {
+    width: 56.0px;
+    height: 49.00000000000006px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: rgba(255,133,133,0.6);
+    position: absolute;
+    top: 163px;
+    left: 740px;
+    border-radius: 50%;
+}
+
+.button3 {
+    width: 56.0px;
+    height: 49.00000000000006px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: #CCCCCC;
+    position: absolute;
+    top: 163px;
+    left: 1119px;
+    border-radius: 50%;
+}
+
+#bt1 {
+    width: 97.861328125px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 210px;
+    left: 340px;
+}
+
+#bt2 {
+    width: 200px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 210px;
+    left: 701px;
+}
+
+#bt3 {
+    width: 250px;
+    height: 22.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 400;
+    color: #333333;
+    position: absolute;
+    top: 210px;
+    left: 1044px;
+}
+
+.btn1 {
+    width: 322.9999999999996px;
+    height: 18.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: rgba(255,133,133,0.6);
+    position: absolute;
+    top: 178px;
+    left: 417px;
+}
+
+.btn2 {
+    width: 322.9999999999996px;
+    height: 18.0px;
+    font-family: Arial;
+    font-size: 20.0px;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+    background-color: #CCCCCC;
+    position: absolute;
+    top: 178px;
+    left: 796px;
+}

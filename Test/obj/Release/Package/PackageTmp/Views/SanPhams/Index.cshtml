@@ -1,0 +1,284 @@
+﻿@using Test.Models;
+@model PagedList.IPagedList<Test.Models.SanPham>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "LaptopNganNgo - Trang chủ";
+    Layout = "~/Views/_TrangChu.cshtml";
+}
+
+
+@*<td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.MaSP }) |
+        @Html.ActionLink("Details", "Details", new { id = item.MaSP }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.MaSP })
+    </td>*@
+<div id="container">
+    <div id="header">
+        <div class="rectangle"></div>
+        <div class="circle"></div>
+
+        <a href="~/SanPhams/Index">
+            <p id="Tittle">LaptopNganNgo</p>
+            <img id="LetterL" width="70"
+                 src="~/Images/royal-alphabet-crown-letter-english-l-512.png" />
+        </a>
+
+        <div>
+            <img id="User_icon" width="40"
+                 src="~/Images/User.png" />
+            @if (Session["HoTen"] != null)
+            {
+                <p id="Hello_Text">@Session["HoTen"].ToString()</p>
+                <a href="@Url.Action("LogOut", "DangNhap")" id="Button_LogOut">Đăng xuất</a>
+            }
+            else if (Session["Email"] != null && Session["HoTen"] == null)
+            {
+                <p id="Hello_Text">Chào bạn,</p>
+                <a href="@Url.Action("LogOut", "DangNhap")" id="Button_LogOut">Đăng xuất</a>
+            }
+            else
+            {
+                <a href="~/DangNhap/Index">
+
+                    <p id="Log_in">Đăng nhập</p>
+                </a>
+                <p id="text_1">hoặc Đăng ký</p>
+            }
+        </div>
+        <form action="@Url.Action("Search","SanPhams")" method="get">
+            <input id="Search_textbox" type="text"
+                   placeholder="Tìm kiếm ở đây" name="keyword" />
+            <img src="~/Images/search.png"
+                 width="19"
+                 style="
+                 position: absolute;
+                 left: 445.37px;
+                 top: 139px;" />
+            <button id="Search_button" type="submit" onclick="@Url.Action("Search", "SanPhams")">Tìm</button>
+        </form>
+
+        <div>
+            <a href="@Url.Action("Index", "CTDHs")">
+                <img id="Cart_image" src="~/Images/shopping-cart.png" width="39" />
+                <p id="Cart_text">Giỏ hàng<p>
+            </a>
+            @if ((Session["ShoppingCart"] as List<CTDH>)?.Count == null)
+            {
+                <p id="Cart_number">0</p>
+            }
+            else
+            {
+                <p id="Cart_number">@((Session["ShoppingCart"] as List<CTDH>)?.Count)</p>
+            }
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Danh mục sản phẩm</button>
+            <div class="dropdown-content">
+                <a href="#">Laptop Gaming  &emsp;&emsp;></a>
+                <div id="Laptop_Gaming_Content">
+                    <p>
+                        <a href="#">Acer</a>
+                        <a href="#">Asus</a>
+                        <a href="#">MSI</a>
+                        <a href="#">Dell</a>
+                        <a href="#">HP</a>
+                        <a href="#">Lenovo</a>
+                    </p>
+                </div>
+                <a href="#">Laptop văn phòng  &emsp;></a>
+                <div id="Laptop_VP_Content">
+                    <p>
+                        <a href="#">Acer</a>
+                        <a href="#">Asus</a>
+                        <a href="#">MSI</a>
+                        <a href="#">Dell</a>
+                        <a href="#">HP</a>
+                        <a href="#">Lenovo</a>
+                    </p>
+                </div>
+                <a href="#">Laptop sinh viên&emsp;&emsp;></a>
+                <div id="Laptop_SV_Content">
+                    <p>
+                        <a href="#">Acer</a>
+                        <a href="#">Asus</a>
+                        <a href="#">MSI</a>
+                        <a href="#">Dell</a>
+                        <a href="#">HP</a>
+                        <a href="#">Lenovo</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Menu_Bar">
+            <a id="Ban_Hang" href="#">&emsp;Chính sách bán hàng</a>
+            <a id="Bao_Hanh" href="#">&emsp;Chính sách bảo hành</a>
+            <a id="Van_Chuyen" href="#">&emsp;Chính sách vận chuyển</a>
+            <a id="Khuyen_Mai" href="#">&emsp;Khuyến mãi</a>
+            <a id="Cham_Soc" href="~/CSKH/Index">&emsp;C.S Khách hàng</a>
+
+
+
+            <img src="~/Images/policy.png"
+                 width="30"
+                 style="
+            position:absolute;
+            left:323px;
+            top:215px;" />
+
+            <img src="~/Images/wrench.png"
+                 width="30"
+                 style="
+            position:absolute;
+            left:560px;
+            top:215px;" />
+
+            <img src="~/Images/truck.png"
+                 width="30"
+                 style="
+            position:absolute;
+            left:800px;
+            top:215px;" />
+
+            <img src="~/Images/promotion.png"
+                 width="30"
+                 style="
+            position:absolute;
+            left:1095px;
+            top:215px;" />
+
+            <img src="~/Images/support.png"
+                 width="30"
+                 style="
+            position:absolute;
+            left:1320px;
+            top:215px;" />
+
+
+
+        </div>
+
+
+
+        <div class="HomePage_Images">
+            <img id="Home_page_1"
+                 src="~/Images/Home_page_1.png"
+                 width="1466"
+                 height="553" />
+
+            <img id="Home_page_2"
+                 src="~/Images/Home_page_2.png"
+                 width="332"
+                 height="242" />
+
+            <img id="Home_page_3"
+                 src="~/Images/Home_page_3.png"
+                 width="332"
+                 height="242" />
+
+            <img id="Home_page_4"
+                 src="~/Images/Home_page_4.png"
+                 width="332"
+                 height="242" />
+
+            <img id="Home_page_5"
+                 src="~/Images/Home_page_5.png"
+                 width="332"
+                 height="242" />
+        </div>
+
+        <div id="rectangle2">
+            HOT DEAL TRONG THÁNG!
+        </div>
+        <div id="rectangle3">
+        </div>
+
+        <div class="LoadSP">
+            @foreach (var item in Model)
+            {
+                <div class="HOT_DEAL">
+                    @{
+                        if (item.HinhAnhSP != null)
+                        {
+                            <a href="~/SanPhams/Details/@item.MaSP">
+                                <img src="@Url.Content(item.HinhAnhSP)" width="288" height="303" class="img-rounded" />
+                            </a>
+                        }
+                        else
+                        {
+                            <img src="~/Images/image.png"
+                                 style="max-width:288px;max-height:314px" />
+                        }
+                    }
+                    <p id="HotDeal1_Review">92 review(s)</p>
+                    <div class="Star">
+                        <img id="Star1_HotDeal1"
+                             src="~/Images/star.png" />
+                        <img id="Star2_HotDeal1"
+                             src="~/Images/star.png" />
+                        <img id="Star3_HotDeal1"
+                             src="~/Images/star.png" />
+                        <img id="Star4_HotDeal1"
+                             src="~/Images/star.png" />
+                        <img id="Star5_HotDeal1"
+                             src="~/Images/star.png" />
+                    </div>
+                    <p id="HotDeal1_Text">
+                        @Html.ActionLink(@item.TenSP, "Details", new { id = item.MaSP }, new { @class = "myActionlink" })
+                    </p>
+
+                    <p id="HotDeal1_GiaChuaGiam">@item.DonGiaGoc.ToString("N0")@("₫")</p>
+                    <p id="HotDeal1_GiaDaGiam">@item.DonGiaKM.ToString("N0")@("₫")</p>
+
+                </div>
+            }
+        </div>
+
+
+
+
+
+
+
+
+        <div class="Footer">
+            <div id="logo_footer">
+                <img src="~/Images/royal-alphabet-crown-letter-english-l-512.png"
+                     width="70" />
+            </div>
+            <p id="text1_ft">Sản Phẩm  </p>
+            <p id="text2_ft">Tiếp Xúc </p>
+            <p id="text3_ft">Theo Dõi  </p>
+            <p id="text4_ft">Đăng Ký </p>
+
+            <pre id="text5_ft">Đặc Trưng
+Quảng cáo  
+Tải Xuống</pre>
+
+            <pre id="text6_ft">Liên hệ
+FAQ  
+Trợ Giúp</pre>
+
+            <input id="Email_textbox" type="text"
+                   placeholder="Nhập Email của bạn" />
+            <img id="FB_ft" src="~/Images/FB.png "
+                 width="30" />
+            <img id="IG_ft" src="~/Images/IG.png "
+                 width="30" />
+
+        </div>
+    </div>
+
+
+    <div class="pagination">
+        <div id="Page_Count">
+            Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+        </div>
+        @Html.PagedListPager(Model, page => Url.Action("Index",
+            new { page, keyword = Request.QueryString["keyword"] }))
+    </div>
+
+
+</div>

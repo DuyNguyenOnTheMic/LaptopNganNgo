@@ -1,0 +1,86 @@
+﻿@model Test.Models.HangSP
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/_QT_ThemHangSP.cshtml";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+      
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.MaHang)
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TenHang, new { htmlAttributes = new { @class = "form-control", @id = "Add", placeholder = "Tên hãng sản phẩm" } })
+                @Html.ValidationMessageFor(model => model.TenHang, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Sửa" id="btn_Add" />
+            </div>
+        </div>
+    </div>
+}
+
+@*<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>*@
+
+<div class="Header">
+    <img src="~/Images/user_QT.png"
+         id="User_icon"
+         width="45" />
+    <a href="~/SanPhams/QT_SanPham">
+        <img id="Logo_Header"
+             src="~/Images/bird.png"
+             width="99" />
+        <p id="Text_Header">LaptopNganNgo</p>
+    </a>
+
+    <a href="~/SanPhams/QT_SanPham">
+        <p id="Product_SanPham">Sản phẩm</p>
+    </a>
+    <a href="~/DonHangs/Index">
+        <p id="Product_DonHang">Đơn hàng</p>
+    </a>
+    <p id="Product_KhachHang">Khách hàng</p>
+    <p id="Product_DoanhThu">Doanh thu</p>
+    <p id="Product_TaiKhoan">Tài khoản</p>
+
+    <span id="rectangle"></span>
+</div>
+
+<div>
+    @if (Session["HoTen"] != null)
+    {
+        <p id="Hello_Text">@Session["HoTen"].ToString()</p>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+    else if (Session["Email"] != null && Session["HoTen"] == null)
+    {
+        <p id="Hello_Text">Chào bạn,</p>
+        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+    }
+
+</div>
+
+<div class="Footer">
+    <p id="Footer_Text">
+        2021
+        <br />Powered by Squad Ngáo Ngơ
+    </p>
+</div>
+
+<p id="Text">Sửa hãng sản phẩm</p>
+
+
+
+<a href="~/QT_TrangChu/Index"><button id="btn">Quay về</button></a>
