@@ -7,7 +7,7 @@ using Test.Models;
 
 namespace Test.Controllers
 {
-    public class HoaDonController : Controller
+    public class DonHangsController : Controller
     {
         private CT25Team24Entities db = new CT25Team24Entities();
 
@@ -32,7 +32,7 @@ namespace Test.Controllers
             return View(model);
         }
 
-        public ActionResult TT_ThanhCong( DonHang model)
+        public ActionResult TT_ThanhCong( )
         {
             
             return View();
@@ -76,7 +76,7 @@ namespace Test.Controllers
                 db.SaveChanges();
                 session["ShoppingCart"] = null;
 
-                return RedirectToAction("TT_ThanhCong", "HoaDon");
+                return RedirectToAction("TT_ThanhCong", "DonHangs");
             }
             ViewBag.Cart = ShoppingCart;
             return View();

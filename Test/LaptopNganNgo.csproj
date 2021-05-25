@@ -213,7 +213,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CTDHsController.cs" />
     <Compile Include="Controllers\HangSPsController.cs" />
-    <Compile Include="Controllers\HoaDonController.cs" />
+    <Compile Include="Controllers\DonHangsController.cs" />
     <Compile Include="Controllers\Website_BanHang\CSKHController.cs" />
     <Compile Include="Controllers\Website_BanHang\DangNhapController.cs" />
     <Compile Include="Controllers\Website_BanHang\TT_DangNhapController.cs" />
@@ -338,10 +338,11 @@
     <Content Include="Views\_QT_CapNhatSP.cshtml" />
     <Content Include="Views\SanPhams\Search_NotFound.cshtml" />
     <Content Include="Views\_TimKiemSP_NotFound.cshtml" />
-    <Content Include="Views\HoaDon\Create.cshtml" />
+    <Content Include="Views\DonHangs\Create.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\HoaDon\Index.cshtml" />
+    <Content Include="Views\DonHangs\Index.cshtml" />
+    <Content Include="Views\DonHangs\TT_ThanhCong.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
