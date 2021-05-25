@@ -108,26 +108,7 @@ namespace Test.Controllers
             ShoppingCart.RemoveAll(x => x.SanPham.MaSP == id);
             session["ShoppingCart"] = ShoppingCart;
             return RedirectToAction("Index");
-        }
-
-        // POST: CTDHs/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            CTDH cTDH = db.CTDHs.Find(id);
-            db.CTDHs.Remove(cTDH);
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
+        
         }
     }
 }

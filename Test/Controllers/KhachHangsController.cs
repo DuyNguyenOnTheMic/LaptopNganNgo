@@ -131,7 +131,7 @@ namespace Test.Controllers.Website_QuanTri
             {
                 db.Entry(khachHang).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Create", "HoaDon");
+                return RedirectToAction("Create", "DonHangs");
             }
             return View(khachHang);
         }

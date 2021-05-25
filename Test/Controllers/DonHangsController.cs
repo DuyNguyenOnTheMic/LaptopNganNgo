@@ -86,9 +86,7 @@ namespace Test.Controllers
             return View();
         }
 
-        // POST: DonHangs/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+
         [HttpPost]
         public ActionResult Create1(int maKH, double Tongtien)
         {
@@ -120,7 +118,7 @@ namespace Test.Controllers
                 db.SaveChanges();
                 session["ShoppingCart"] = null;
 
-                return RedirectToAction("TT_ThanhCong", "HoaDon");
+                return RedirectToAction("TT_ThanhCong", "DonHangs");
             }
             ViewBag.Cart = ShoppingCart;
             return View();
