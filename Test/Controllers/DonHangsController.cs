@@ -15,6 +15,27 @@ namespace Test.Controllers
     {
         private CT25Team24Entities db = new CT25Team24Entities();
 
+        private List<CTDH> ShoppingCart = null;
+        public void GetShoppingCart()
+        {
+            var session = System.Web.HttpContext.Current.Session;
+            if (session["ShoppingCart"] != null)
+            {
+                ShoppingCart = session["ShoppingCart"] as List<CTDH>;
+            }
+            else
+            {
+                ShoppingCart = new List<CTDH>();
+                session["ShoppingCart"] = ShoppingCart;
+            }
+        }
+
+        public ActionResult TT_ThanhCong(DonHang model)
+        {
+
+            return View();
+        }
+
         // GET: DonHangs
 
         public ActionResult Index(int? keyword, int? page, int? category)
@@ -60,7 +81,8 @@ namespace Test.Controllers
         // GET: DonHangs/Create
         public ActionResult Create()
         {
-            ViewBag.MaKH = new SelectList(db.KhachHangs, "MaKH", "HoTen");
+            GetShoppingCart();
+            ViewBag.Cart = ShoppingCart;
             return View();
         }
 
@@ -68,19 +90,50 @@ namespace Test.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "MaDH,NgayBan,MaKH,TongTien")] DonHang donHang)
+        public ActionResult Create1(int maKH, double Tongtien)
         {
+            var session = System.Web.HttpContext.Current.Session;
+            GetShoppingCart();
             if (ModelState.IsValid)
             {
-                db.DonHangs.Add(donHang);
+                var model = new Test.Models.DonHang()
+                {
+                    NgayBan = DateTime.Now,
+                    MaKH = maKH,
+                    TongTien = Tongtien,
+                    TrangThai = 1,
+                };
+                db.DonHangs.Add(model);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+
+                foreach (var item in ShoppingCart)
+                {
+                    db.CTDHs.Add(new CTDH
+                    {
+                        MaDH = model.MaDH,
+                        MaSP = item.SanPham.MaSP,
+                        DonGia = item.DonGia,
+                        SL = item.SL,
+                        ThanhTien = item.DonGia * item.SL
+                    });
+                }
+                db.SaveChanges();
+                session["ShoppingCart"] = null;
+
+                return RedirectToAction("TT_ThanhCong", "HoaDon");
+            }
+            ViewBag.Cart = ShoppingCart;
+            return View();
+        }
+        private void ValidataDonHang(DonHang model)
+        {
+            GetShoppingCart();
+            if (ShoppingCart.Count == 0)
+            {
+                ModelState.AddModelError("", "Không có sản phẩm trong giỏ hàng!!!");
             }
 
-            ViewBag.MaKH = new SelectList(db.KhachHangs, "MaKH", "HoTen", donHang.MaKH);
-            return View(donHang);
-        }
+        }   
 
         // GET: DonHangs/Edit/5
         public ActionResult Edit(int? id)

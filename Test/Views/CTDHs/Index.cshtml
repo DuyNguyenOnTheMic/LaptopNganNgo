@@ -43,17 +43,17 @@
         <p id="text_1">hoặc Đăng ký</p>
     }
 
-<form action="@Url.Action("Search","SanPhams")" method="get">
-    <input id="Search_textbox" type="text"
-           placeholder="Tìm kiếm ở đây" name="keyword" />
-    <img src="~/Images/search.png"
-         width="19"
-         style="
+    <form action="@Url.Action("Search","SanPhams")" method="get">
+        <input id="Search_textbox" type="text"
+               placeholder="Tìm kiếm ở đây" name="keyword" />
+        <img src="~/Images/search.png"
+             width="19"
+             style="
                  position: absolute;
                  left: 445.37px;
                  top: 139px;" />
-    <button id="Search_button" type="submit" onclick="@Url.Action("Search", "SanPhams")">Tìm</button>
-</form>
+        <button id="Search_button" type="submit" onclick="@Url.Action("Search", "SanPhams")">Tìm</button>
+    </form>
 
 
     <div>
@@ -191,29 +191,46 @@ Trợ Giúp</pre>
 <p id="Xoa">Xóa</p>
 <hr id="dk1" width="1450.97px" />
 
-<div class="LoadSP_GH">
 
 
-    @foreach (var item in Model)
-    {
-        TongTien += item.DonGia * item.SL;
-    <div class="SanPham_GH">
-        <img src="@Url.Content(item.SanPham.HinhAnhSP)" width="80" height="80" id="N1" />
-        <img id="T1" src="~/Images/ArrowIcon.png" />
-        <img id="T2" src="~/Images/ArrowIcon.png" />
-        <img id="R1" src="~/Images/trash.png " />
-        <p id="pic1">
-            @Html.ActionLink(item.SanPham.TenSP, "Details", "SanPhams", new { id = item.SanPham.MaSP }, new { @class = "myActionlink" })
-        </p>
-        <p id="Gia1">@item.DonGia.ToString("N0") @("đ")</p>
-        <p id="Gia2">@((item.DonGia*item.SL).ToString("N0")) @("đ")</p>
-        <p id="s1">@item.SL</p>
-        <hr id="dk2" width="1200px" />
+@using (Html.BeginForm("Edit", "CTDHs"))
+{
+    @*<form action="@Url.Action("Edit","CTDHs" )" method="post">*@
+    <input type="submit" id="button_CapNhatGioHang" value="Cập nhật giỏ hàng" />
+    @*</form>*@
+    <div class="LoadSP_GH">
 
+        @foreach (var item in Model)
+        {
+            TongTien += item.DonGia * item.SL;
+            <div class="SanPham_GH">
+                <img src="@Url.Content(item.SanPham.HinhAnhSP)" width="80" height="80" id="N1" />
+                <div id="SanPham_ViTri">
+                    @Html.Hidden("id", item.SanPham.MaSP)
+                    @Html.Hidden("dongia", item.DonGia)
+                    <input id="s1" max="@item.SanPham.SL" min="1" type="number" value="@item.SL" name="sl">
+
+                    <form action="@Url.Action("Delete","CTDHs" )" method="post">
+                        @*<input type="hidden" name="id" value="@item.SanPham.MaSP" />*@
+
+                        <input type="image" id="R1" src="~/Images/trash.png " />
+                    </form>
+
+                    <p id="pic1">
+                        @Html.ActionLink(item.SanPham.TenSP, "Details", "SanPhams", new { id = item.SanPham.MaSP }, new { @class = "myActionlink" })
+                    </p>
+                    <p id="Gia1">@item.DonGia.ToString("N0") @("đ")</p>
+                    <p id="Gia2">@((item.DonGia*item.SL).ToString("N0")) @("đ")</p>
+
+
+                </div>
+                <hr id="dk2" width="1200px" />
+            </div>
+        }
 
     </div>
-    }
-</div>
+
+}
 
 <div class="TongTien">
     <p id="Sum">Tổng Tiền: </p>
@@ -226,7 +243,7 @@ Trợ Giúp</pre>
 
 @if (User.Identity.IsAuthenticated)
 {
-    <a href="~/KhachHangs/CapNhat_TT_KH/@Session["MaKH"].ToString()"><div id="button_ThanhToan">Thanh toán</div></a>
+    <a href="@Url.Action("Create", "HoaDon")/@Session["MaKH"].ToString()"><div id="button_ThanhToan">Thanh toán</div></a>
 }
 else
 {

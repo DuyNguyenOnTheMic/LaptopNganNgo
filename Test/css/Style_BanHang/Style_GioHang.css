@@ -588,7 +588,7 @@ body {
     color: #333333;
     position: absolute;
     top: 337.25px;
-    left: 1355.43px;
+    left: 1400px;
 }
 
 #pic1 {
@@ -848,7 +848,7 @@ body {
     width: 14.035324096679688px;
     height: 10.0px;
     position: relative;
-    top: -70px;
+    top: -48px;
     left: 610px;
     transform: rotate(270deg);
 }
@@ -857,7 +857,7 @@ body {
     width: 14.035324096679688px;
     height: 10.0px;
     position: relative;
-    top: -45px;
+    top: -23px;
     left: 592px;
     transform: rotate(90deg);
 }
@@ -903,7 +903,9 @@ body {
     height: 19.610707028170964px;
     position: relative;
     top: -55px;
-    left: 1090px;
+    left: 1300px;
+    /*top: -55px;
+    left: 1300px;*/
 }
 
 #R2 {
@@ -936,15 +938,15 @@ body {
 }
 
 #s1 {
-    width: 10.381510734558105px;
-    height: 21.0px;
+    width: 50px;
+    height: 25px;
     font-family: Arial;
-    font-size: 18.666668px;
+    font-size: 19px;
     font-weight: 400;
     color: #333333;
     position: relative;
-    top: -210px;
-    left: 720px;
+    top: -30px;
+    left: 700px;
 }
 
 
@@ -1173,3 +1175,8 @@ body {
     .myActionlink:hover {
         color: blue;
     }
+
+#SanPham_ViTri {
+    position: relative;
+    top: -50px;
+} 
