@@ -31,6 +31,12 @@ namespace Test.Controllers
             var model = db.DonHangs.ToList();
             return View(model);
         }
+
+        public ActionResult TT_ThanhCong( DonHang model)
+        {
+            
+            return View();
+        }
         public ActionResult Create()
         {
             GetShoppingCart();
@@ -70,7 +76,7 @@ namespace Test.Controllers
                 db.SaveChanges();
                 session["ShoppingCart"] = null;
 
-                return RedirectToAction("Index", "SanPhams");
+                return RedirectToAction("TT_ThanhCong", "HoaDon");
             }
             ViewBag.Cart = ShoppingCart;
             return View();

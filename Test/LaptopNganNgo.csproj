@@ -290,7 +290,6 @@
     <Content Include="Views\TT_DangNhap\Index.cshtml" />
     <Content Include="Views\_TT_DangKy.cshtml" />
     <Content Include="Views\_TT_DatMua.cshtml" />
-    <Content Include="Views\TT_DatMua\Index.cshtml" />
     <Content Include="Views\_TT_LoTrinh.cshtml" />
     <Content Include="Views\TT_LoTrinh\Index.cshtml" />
     <Content Include="Views\_TT_ThanhCong.cshtml" />
@@ -339,7 +338,6 @@
     <Content Include="Views\_QT_CapNhatSP.cshtml" />
     <Content Include="Views\SanPhams\Search_NotFound.cshtml" />
     <Content Include="Views\_TimKiemSP_NotFound.cshtml" />
-    <Content Include="Views\CTDHs\Index - Copy.cshtml" />
     <Content Include="Views\HoaDon\Create.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
