@@ -1,52 +1,139 @@
 ﻿@model Test.Models.DonHang
-
+@using Test.Models
 @{
     ViewBag.Title = "Create";
-    Layout = "~/Views/_QT_DonHang.cshtml";
+    Layout = "~/Views/_TT_DatMua.cshtml";
+    var Cart = ViewBag.Cart as List<CTDH>;
+    double TongTien = 0;
+    int sl = 0;
+    int maKH = int.Parse(Session["MaKH"].ToString());
+
 }
 
-<h2>Create</h2>
 
-@using (Html.BeginForm()) 
-{
-    @Html.AntiForgeryToken()
-    
-    <div class="form-horizontal">
-        <h4>DonHang</h4>
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <div class="form-group">
-            @Html.LabelFor(model => model.NgayBan, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.NgayBan, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.NgayBan, "", new { @class = "text-danger" })
-            </div>
-        </div>
+<div id="header">
+    <div class="rectangle"></div>
+    <div class="circle"></div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.MaKH, "MaKH", htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.DropDownList("MaKH", null, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.MaKH, "", new { @class = "text-danger" })
-            </div>
-        </div>
+    <a href="~/SanPhams/Index">
+        <p id="Tittle">LaptopNganNgo</p>
+        <img id="LetterL" width="70"
+             src="~/Images/royal-alphabet-crown-letter-english-l-512.png" />
+    </a>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.TongTien, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.TongTien, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.TongTien, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
-            </div>
-        </div>
-    </div>
-}
-
-<div>
-    @Html.ActionLink("Back to List", "Index")
 </div>
+
+<div class="Footer">
+
+    <div id="logo_footer">
+        <img src="~/Images/royal-alphabet-crown-letter-english-l-512.png "
+             width="70" />
+    </div>
+    <p id="text1_ft">Sản Phẩm  </p>
+    <p id="text2_ft">Tiếp Xúc </p>
+    <p id="text3_ft">Theo Dõi  </p>
+    <p id="text4_ft">Đăng Ký </p>
+
+    <pre id="text5_ft">Đặc Trưng
+Quảng cáo  
+Tải Xuống</pre>
+
+    <pre id="text6_ft">Liên hệ
+FAQ  
+Trợ Giúp</pre>
+
+    <input id="Email_textbox" type="text"
+           placeholder="Nhập Email của bạn" />
+    <img id="FB_ft" src="~/Images/FB.png "
+         width="30" />
+    <img id="IG_ft" src="~/Images/IG.png "
+         width="30" />
+
+</div>
+
+<p id="label1">Chọn hình thức thanh toán</p>
+<p id="label2">Thông tin người mua</p>
+
+<div class="rec1">
+
+    <input type="radio" id="Tien" name="gender" value="tien">
+    <label for="tien" style="font-size: 20px" id="lbt">Thanh toán tiền mặt khi nhận hàng </label><br>
+
+    <input type="radio" id="The" name="gender" value="the">
+    <label for="the" style="font-size: 20px" id="lbth">
+        Thẻ ATM đăng ký Internet Banking
+    </label><br>
+
+</div>
+
+<div class="rec2">
+
+    <input type="checkbox" id="HoTen" name="ahi" value="hoten">
+    <label for="hoten" style="font-size: 20px" id="lbht">
+        Sử dụng họ tên & SĐT của địa chỉ giao hàng
+    </label><br>
+
+    <input type="checkbox" id="HoaDon" name="ahi" value="hoadon">
+    <label for="hoadon" style="font-size: 20px" id="lbhd">
+        Xuất hoá đơn đỏ cho đơn hàng này
+    </label><br>
+
+</div>
+
+<div class="rec3">
+    @foreach (var item in Cart)
+    {
+        TongTien += item.DonGia * item.SL;
+        sl += item.SL;
+
+    }
+    <hr id="dk1" width="80%" />
+    <hr id="dk2" width="80%" />
+
+    <p id="dh">Đơn hàng</p>
+    <label id="sp">(@sl sản phẩm)</label>
+
+    <label id="lb1">Tạm tính:</label>
+    <label id="lb2">Giảm giá:</label>
+    <label id="lb3">Phí ship:</label>
+
+    <label id="lb4">@TongTien.ToString("N0") </label>
+    <label id="lb5">0 </label>
+    <label id="lb6">0</label>
+
+    <label id="lb7">Thành tiền:</label>
+    <label id="lb8">@TongTien.ToString("N0") </label>
+    <label id="lb9">(Đã bao gồm V.A.T)</label>
+
+    <label id="lbd1">đ</label>
+    <label id="lbd2">đ</label>
+    <label id="lbd3">đ</label>
+    <label id="lbd4">đ</label>
+
+    <a href="@Url.Action("Index", "CTDHs")">
+        <button class="btS">Sửa</button>
+    </a>
+
+
+</div>
+
+<form action="@Url.Action("Create1","DonHangs" )" method="post">
+    @Html.Hidden("maKH", maKH)
+    @Html.Hidden("Tongtien", TongTien)
+    <input type="submit" id="dm" value="Đặt mua" />
+</form>
+@*<a href="~/TT_ThanhCong/Index">
+        <button class="dm">Đặt mua</button>
+    </a>*@
+
+
+<button class="button1">1</button>
+<button class="button2">2</button>
+<button class="button3">3</button>
+
+<label id="bt1"><p>Đăng nhập</p></label>
+<label id="bt2"><p>Địa chỉ giao hàng</p></label>
+<label id="bt3"><p>Thanh toán và đặt mua</p></label>
+
+<button class="btn1"></button>
+<button class="btn2"></button>

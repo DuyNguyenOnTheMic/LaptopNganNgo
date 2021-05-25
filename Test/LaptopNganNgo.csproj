@@ -294,7 +294,7 @@
     <Content Include="Views\_TT_LoTrinh.cshtml" />
     <Content Include="Views\TT_LoTrinh\Index.cshtml" />
     <Content Include="Views\_TT_ThanhCong.cshtml" />
-    <Content Include="Views\TT_ThanhCong\Index.cshtml" />
+    <Content Include="Views\DonHangs\TT_ThanhCong.cshtml" />
     <Content Include="Views\_DangKy.cshtml" />
     <Content Include="Views\_TT_DiaChi.cshtml" />
     <Content Include="Views\TT_DiaChi\Index.cshtml" />

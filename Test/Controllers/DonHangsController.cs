@@ -30,9 +30,8 @@ namespace Test.Controllers
             }
         }
 
-        public ActionResult TT_ThanhCong(DonHang model)
+        public ActionResult TT_ThanhCong()
         {
-
             return View();
         }
 
