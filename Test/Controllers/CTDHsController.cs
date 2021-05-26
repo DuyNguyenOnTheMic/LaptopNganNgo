@@ -100,8 +100,6 @@ namespace Test.Controllers
 
         
 
-        // GET: CTDHs/Delete/5
-        [ValidateAntiForgeryToken]
         public ActionResult Delete(int id)
         {
             var session = System.Web.HttpContext.Current.Session;

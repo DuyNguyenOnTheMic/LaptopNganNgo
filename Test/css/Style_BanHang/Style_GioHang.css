@@ -597,7 +597,6 @@ body {
     font-family: Arial;
     font-size: 16.0px;
     font-weight: 400;
-    text-align: center;
     text-decoration: underline;
     color: #333333;
     position: relative;
@@ -614,7 +613,7 @@ body {
     font-weight: 400;
     color: #333333;
     position: relative;
-    top: -130px;
+    top: -125px;
     left: 900px;
 }
 
@@ -639,7 +638,7 @@ body {
     font-weight: 400;
     color: #333333;
     position: relative;
-    top: -170px;
+    top: -165px;
     left: 1100px;
 }
 
@@ -826,6 +825,7 @@ body {
     width: 127.10841820577019px;
     height: 118.83766351314665px;
     position: relative;
+    top: -15px;
 }
 
 #N2 {
@@ -902,10 +902,8 @@ body {
     width: 23px;
     height: 19.610707028170964px;
     position: relative;
-    top: -55px;
-    left: 1300px;
-    /*top: -55px;
-    left: 1300px;*/
+    top: -45px;
+    left: 1245px;
 }
 
 #R2 {
@@ -945,7 +943,7 @@ body {
     font-weight: 400;
     color: #333333;
     position: relative;
-    top: -30px;
+    top: -45px;
     left: 700px;
 }
 
@@ -1057,13 +1055,13 @@ body {
 }
 
 #dk2 {
-    width: 1200.0px;
+    width: 1450.9738131759011px;
     height: 0.0px;
     opacity: 0.3;
     border-top: 2px solid #404040;
     position: relative;
     top: -150px;
-    left: 62.45px;
+    left: -50px;
 }
 
 #dk3 {
@@ -1129,7 +1127,7 @@ body {
 
 .LoadSP_GH {
     list-style-type: none;
-    width: 1500px;
+    width: 1400px;
     height: auto;
     position: absolute;
     left: 100px;
@@ -1169,12 +1167,18 @@ body {
 
 .myActionlink {
     text-decoration: none;
+    text-align: left;
     color: black;
 }
 
     .myActionlink:hover {
         color: blue;
     }
+
+#SanPham_ViTri {
+    position: relative;
+    top: -50px;
+}
 
 #SanPham_ViTri {
     position: relative;
