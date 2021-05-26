@@ -167,7 +167,6 @@ namespace Test.Controllers
             return View(donHang);
         }
 
-
         // GET: DonHangs/Delete/5
         public ActionResult Delete(int? id)
         {

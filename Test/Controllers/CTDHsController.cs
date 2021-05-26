@@ -98,7 +98,35 @@ namespace Test.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult Edit_CTDH(int id)
+        {
+            CTDH cTDH = db.CTDHs.FirstOrDefault(m => m.MaDH == id);
+            if (cTDH == null)
+            {
+                return HttpNotFound();
+            }
+            ViewBag.MaDH = new SelectList(db.DonHangs, "MaDH", "MaDH", cTDH.MaDH);
+            ViewBag.MaSP = new SelectList(db.SanPhams, "MaSP", "TenSP", cTDH.MaSP);
+            return View(cTDH);
+        }
 
+        // POST: CTDHs1/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit_CTDH([Bind(Include = "MaDH,MaSP,SL,DonGia,ChietKhau,ThanhTien")] CTDH cTDH)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Entry(cTDH).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            ViewBag.MaDH = new SelectList(db.DonHangs, "MaDH", "MaDH", cTDH.MaDH);
+            ViewBag.MaSP = new SelectList(db.SanPhams, "MaSP", "TenSP", cTDH.MaSP);
+            return View(cTDH);
+        }
 
         // GET: CTDHs/Delete/5
         [HttpPost]
@@ -109,6 +137,45 @@ namespace Test.Controllers
             session["ShoppingCart"] = ShoppingCart;
             return RedirectToAction("Index");
         
+        }
+
+        // GET: CTDHs1/Edit/5
+        public ActionResult Edit_Order_Details(int id)
+        {
+            CTDH cTDH = db.CTDHs.SingleOrDefault(m => m.MaDH == id);
+            if (cTDH == null)
+            {
+                return HttpNotFound();
+            }
+            ViewBag.MaDH = new SelectList(db.DonHangs, "MaDH", "MaDH", cTDH.MaDH);
+            ViewBag.MaSP = new SelectList(db.SanPhams, "MaSP", "TenSP", cTDH.MaSP);
+            return View(cTDH);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit_Order_Details([Bind(Include = "MaDH,MaSP,SL,DonGia,ChietKhau,ThanhTien")] CTDH cTDH)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Entry(cTDH).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            ViewBag.MaDH = new SelectList(db.DonHangs, "MaDH", "MaDH", cTDH.MaDH);
+            ViewBag.MaSP = new SelectList(db.SanPhams, "MaSP", "TenSP", cTDH.MaSP);
+            return View(cTDH);
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete_Order_Details(int id)
+        {
+            CTDH cTDH = db.CTDHs.SingleOrDefault(m => m.MaDH == id);
+            db.CTDHs.Remove(cTDH);
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }

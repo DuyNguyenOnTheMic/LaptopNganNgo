@@ -425,3 +425,8 @@ th {
     #button_Delete:hover {
         background-image: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
     }
+
+#Button_DeleteCTDH {
+    text-align: center;
+    cursor: pointer;
+}
