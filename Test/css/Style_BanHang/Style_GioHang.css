@@ -903,9 +903,8 @@ body {
     height: 19.610707028170964px;
     position: relative;
     top: -55px;
-    left: 1300px;
-    /*top: -55px;
-    left: 1300px;*/
+    left: 1245px;
+    
 }
 
 #R2 {
@@ -1129,7 +1128,7 @@ body {
 
 .LoadSP_GH {
     list-style-type: none;
-    width: 1500px;
+    width: 1400px;
     height: auto;
     position: absolute;
     left: 100px;

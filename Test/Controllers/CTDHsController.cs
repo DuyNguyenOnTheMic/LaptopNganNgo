@@ -68,7 +68,6 @@ namespace Test.Controllers
                 SL = sl,
                 DonGia = dongia,
 
-
             });
 
             return RedirectToAction("Index");
