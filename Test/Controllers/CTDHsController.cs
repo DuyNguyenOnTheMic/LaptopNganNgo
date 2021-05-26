@@ -98,38 +98,10 @@ namespace Test.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult Edit_CTDH(int id)
-        {
-            CTDH cTDH = db.CTDHs.FirstOrDefault(m => m.MaDH == id);
-            if (cTDH == null)
-            {
-                return HttpNotFound();
-            }
-            ViewBag.MaDH = new SelectList(db.DonHangs, "MaDH", "MaDH", cTDH.MaDH);
-            ViewBag.MaSP = new SelectList(db.SanPhams, "MaSP", "TenSP", cTDH.MaSP);
-            return View(cTDH);
-        }
-
-        // POST: CTDHs1/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit_CTDH([Bind(Include = "MaDH,MaSP,SL,DonGia,ChietKhau,ThanhTien")] CTDH cTDH)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(cTDH).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            ViewBag.MaDH = new SelectList(db.DonHangs, "MaDH", "MaDH", cTDH.MaDH);
-            ViewBag.MaSP = new SelectList(db.SanPhams, "MaSP", "TenSP", cTDH.MaSP);
-            return View(cTDH);
-        }
+        
 
         // GET: CTDHs/Delete/5
-        [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Delete(int id)
         {
             var session = System.Web.HttpContext.Current.Session;
@@ -139,43 +111,39 @@ namespace Test.Controllers
         
         }
 
-        // GET: CTDHs1/Edit/5
-        public ActionResult Edit_Order_Details(int id)
+
+        // GET: CTDHs1/Delete/5
+        public ActionResult DeleteOrderDetails(int? id, int count)
         {
-            CTDH cTDH = db.CTDHs.SingleOrDefault(m => m.MaDH == id);
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            CTDH cTDH = db.CTDHs.FirstOrDefault(m => m.MaDH == id);
             if (cTDH == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.MaDH = new SelectList(db.DonHangs, "MaDH", "MaDH", cTDH.MaDH);
-            ViewBag.MaSP = new SelectList(db.SanPhams, "MaSP", "TenSP", cTDH.MaSP);
-            return View(cTDH);
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit_Order_Details([Bind(Include = "MaDH,MaSP,SL,DonGia,ChietKhau,ThanhTien")] CTDH cTDH)
-        {
-            if (ModelState.IsValid)
+            if (count == 1)
             {
-                db.Entry(cTDH).State = EntityState.Modified;
+                DonHang donhang = db.DonHangs.Find(id);
+                donhang.TrangThai = 4;
+                db.Entry(donhang).State = EntityState.Modified;
+                db.CTDHs.Remove(cTDH);
                 db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            ViewBag.MaDH = new SelectList(db.DonHangs, "MaDH", "MaDH", cTDH.MaDH);
-            ViewBag.MaSP = new SelectList(db.SanPhams, "MaSP", "TenSP", cTDH.MaSP);
-            return View(cTDH);
-        }
-
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete_Order_Details(int id)
-        {
-            CTDH cTDH = db.CTDHs.SingleOrDefault(m => m.MaDH == id);
+                return RedirectToAction("Edit", "DonHangs", new { id = id.ToString() });
+            }           
             db.CTDHs.Remove(cTDH);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Edit", "DonHangs", new { id = id.ToString() });
         }
+
+
+        //[HttpPost, ActionName("DeleteOrderDetails")]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult DeleteConfirmed(int id)
+        //{
+            
+        //}
     }
 }

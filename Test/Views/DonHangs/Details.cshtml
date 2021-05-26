@@ -33,8 +33,8 @@
             <td id="txt_ChietKhau">@item.ChietKhau</td>
             <td>@((item.DonGia*item.SL).ToString("N0"))</td>
             @*<td>
-                <img src="~/Images/trash.png" width="15" />
-            </td>*@
+                    <img src="~/Images/trash.png" width="15" />
+                </td>*@
 
         </tr>
 
@@ -74,9 +74,9 @@
 <div class="Body">
 
     @*<a href="~/DonHangs/Index">
-        <img id="Back"
-             src="~/Images/previous.png" />
-    </a>*@
+            <img id="Back"
+                 src="~/Images/previous.png" />
+        </a>*@
 
 
     @if (Model.KhachHang.GioiTinh == "Nam")
@@ -131,13 +131,29 @@
     </div>
 
 
-    <a id="button_Edit" href="@Url.Action("Edit_CTDH", "CTDHs", new {id = Model.MaDH })">
-        Sửa
-    </a>
+    @if (Model.CTDHs.Count == 0)
+    {
+        <a id="button_Edit" onclick="myFunction()">
+            Sửa
+        </a>
+    }  
+    else
+    {
+        <a id="button_Edit" href="@Url.Action("Edit", "DonHangs", new {id = Model.MaDH })">
+            Sửa
+        </a>
+    }
 
     <div id="button_Delete">Huỷ đơn</div>
 
 </div>
+
+<script>
+    function myFunction() {
+        alert("Bạn không thể sửa đơn đã huỷ!!");
+    }
+</script>
+
 
 <div>
     @if (Session["HoTen"] != null)

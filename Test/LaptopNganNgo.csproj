@@ -213,7 +213,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\CTDHs1Controller.cs" />
     <Compile Include="Controllers\CTDHsController.cs" />
     <Compile Include="Controllers\DonHangsController.cs" />
     <Compile Include="Controllers\HangSPsController.cs" />
@@ -326,9 +325,8 @@
     <Content Include="Views\HangSPs\Edit.cshtml" />
     <Content Include="Views\HangSPs\Index.cshtml" />
     <Content Include="Views\CTDHs\Create.cshtml" />
-    <Content Include="Views\CTDHs\Delete.cshtml" />
+    <Content Include="Views\CTDHs\DeleteOrderDetails.cshtml" />
     <Content Include="Views\CTDHs\Details.cshtml" />
-    <Content Include="Views\CTDHs\Edit_CTDH.cshtml" />
     <Content Include="Views\CTDHs\Index.cshtml" />
     <Content Include="Views\SanPhams\Search.cshtml" />
     <Content Include="Views\SanPhams\QT_SanPham.cshtml" />
@@ -340,11 +338,6 @@
     <Content Include="Views\DonHangs\Details.cshtml" />
     <Content Include="Views\DonHangs\Edit.cshtml" />
     <Content Include="Views\DonHangs\Index.cshtml" />
-    <Content Include="Views\CTDHs1\Create.cshtml" />
-    <Content Include="Views\CTDHs1\Delete.cshtml" />
-    <Content Include="Views\CTDHs1\Details.cshtml" />
-    <Content Include="Views\CTDHs1\Edit.cshtml" />
-    <Content Include="Views\CTDHs1\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
