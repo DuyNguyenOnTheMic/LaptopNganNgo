@@ -193,13 +193,14 @@ Trợ Giúp</pre>
 
 
 
-@using (Html.BeginForm("Edit", "CTDHs"))
+@using (Html.BeginForm("Edit", "CTDHs", FormMethod.Post))
 {
     @*<form action="@Url.Action("Edit","CTDHs" )" method="post">*@
+
     <input type="submit" id="button_CapNhatGioHang" value="Cập nhật giỏ hàng" />
     @*</form>*@
-
     <div class="LoadSP_GH">
+
         @foreach (var item in Model)
         {
             TongTien += item.DonGia * item.SL;
@@ -208,14 +209,9 @@ Trợ Giúp</pre>
                 <div id="SanPham_ViTri">
                     @Html.Hidden("id", item.SanPham.MaSP)
                     @Html.Hidden("dongia", item.DonGia)
+
                     <input id="s1" max="@item.SanPham.SL" min="1" type="number" value="@item.SL" name="sl">
-
-                    <form action="@Url.Action("Delete","CTDHs" )" method="post">
-                        @*<input type="hidden" name="id" value="@item.SanPham.MaSP" />*@
-
-                        <input type="image" id="R1" src="~/Images/trash.png " />
-                    </form>
-
+                    <input type="image" id="R1" src="~/Images/trash.png " formaction="@Url.Action("Delete")" method="post" />
                     <p id="pic1">
                         @Html.ActionLink(item.SanPham.TenSP, "Details", "SanPhams", new { id = item.SanPham.MaSP }, new { @class = "myActionlink" })
                     </p>
@@ -224,32 +220,29 @@ Trợ Giúp</pre>
 
 
                 </div>
-                <hr id="dk2" width="1200px" />
+                <hr id="dk2" />
             </div>
+
         }
     </div>
 
-
 }
-
-
-
-
 <div class="TongTien">
     <p id="Sum">Tổng Tiền: </p>
     <p id="Tien">@TongTien.ToString("N0") @("đ")</p>
 </div>
+
+
+
 
 <a href="~/TT_DangNhap/Index"><div id="button_ThanhToan">Thanh toán</div></a>
 
 
 @if (User.Identity.IsAuthenticated)
 {
-    <a href="~/KhachHangs/CapNhat_TT_KH/@Session["MaKH"].ToString()"><div id="button_ThanhToan">Thanh toán</div></a>
+    <a href="@Url.Action("Create", "DonHangs")/@Session["MaKH"].ToString()"><div id="button_ThanhToan">Thanh toán</div></a>
 }
 else
 {
     <a href="@Url.Action("Index", "TT_DangNhap")"><div id="button_ThanhToan">Thanh toán</div></a>
 }
-
-

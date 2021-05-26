@@ -11,60 +11,59 @@
 {
     @Html.AntiForgeryToken()
 
-<div class="form-horizontal">
+    <div class="form-horizontal">
 
-    @Html.HiddenFor(model => model.MaDH)
+        @Html.HiddenFor(model => model.MaDH)
 
-    <div class="form-group">
-        <div class="col-md-10">
-            @Html.HiddenFor(model => model.TongTien, new { htmlAttributes = new { @class = "form-control" } })
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.HiddenFor(model => model.TongTien, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.HiddenFor(model => model.MaKH, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.HiddenFor(model => model.NgayBan, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+
+        <div id="CTDonHang">
+            <b>
+                Mã đơn hàng: <span style="font-size: 24px;">
+                    @Html.DisplayFor(model => model.MaDH)
+                </span>
+            </b>
+            <br /> <br />
+            Ngày lập đơn: @Html.DisplayFor(model => model.NgayBan)
+            <br />
+
+            @if (Model.CTDHs.Count == 0)
+            {
+                <p>Trạng thái: Đã huỷ</p>
+            }
+            else
+            {
+                <p>Trạng thái: @Html.DropDownList("TrangThai", null, htmlAttributes: new { @class = "form-control", @id = "drop_TT" })</p>
+            }
+
+
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Lưu" class="btn btn-default" id="button_Edit" />
+            </div>
         </div>
     </div>
-
-    <div class="form-group">
-        <div class="col-md-10">
-            @Html.HiddenFor(model => model.MaKH, new { htmlAttributes = new { @class = "form-control" } })
-        </div>
-    </div>
-
-    <div class="form-group">
-        <div class="col-md-10">
-            @Html.HiddenFor(model => model.NgayBan, new { htmlAttributes = new { @class = "form-control" } })
-        </div>
-    </div>
-
-
-    <div id="CTDonHang">
-        <b>
-            Mã đơn hàng: <span style="font-size: 24px;">
-                @Html.DisplayFor(model => model.MaDH)
-            </span>
-        </b>
-        <br /> <br />
-        Ngày lập đơn: @Html.DisplayFor(model => model.NgayBan)
-        <br />
-        Trạng thái: @Html.DropDownList("TrangThai", null, htmlAttributes: new { @class = "form-control", @id = "drop_TT" })
-
-    </div>
-
-    <div class="form-group">
-        <div class="col-md-offset-2 col-md-10">
-            <input type="submit" value="Save" class="btn btn-default" id="button_Edit" />
-        </div>
-    </div>
-</div>
 }
 
-@*@using (Html.BeginForm("EditDetails", "Orders", FormMethod.Post))
-    {
-        @Html.LabelFor(m => m.quantity)
-        @Html.TextBoxFor(m => m.quantity)
-
-        @Html.LabelFor(m => m.productID)
-        @Html.DropDownListFor(m => m.productID, new SelectList((IEnumerable)ViewBag.productList, "productID", "fullProductName"))
-
-        @Html.HiddenFor(model => model.orderID)
-    }*@
 
 <table class="table">
     <tr>
@@ -74,7 +73,7 @@
         <th>Đơn giá</th>
         <th>Chiết khấu</th>
         <th>Tổng</th>
-        @*<th>Xoá</th>*@
+        <th>Xoá</th>
     </tr>
 
     @foreach (var item in Model.CTDHs)
@@ -91,10 +90,24 @@
             <td id="txt_SL">@item.SL</td>
             <td>@item.DonGia.ToString("N0")</td>
             <td id="txt_ChietKhau">@item.ChietKhau</td>
-            <td>@((item.DonGia*item.SL).ToString("N0"))</td>
-            @*<td>
-                    <img src="~/Images/trash.png" width="15" />
-                </td>*@
+            <td>@((item.DonGia * item.SL).ToString("N0"))</td>
+            <td id="Button_DeleteCTDH">
+                @if (Model.CTDHs.Count == 1)
+                {
+                    <a href="@Url.Action("DeleteOrderDetails", "CTDHs", new {id = item.MaDH, count = Model.CTDHs.Count() })"
+                       onclick="return confirm ('Bạn có chắc muốn xoá sản phẩm cuối? Điều này sẽ dẫn đến đơn sẽ bị huỷ?')">
+                        <img src="~/Images/trash.png" width="15" />
+                    </a>
+                }
+                else
+                {
+                    <a href="@Url.Action("DeleteOrderDetails", "CTDHs", new {id = item.MaDH, count = Model.CTDHs.Count() })"
+                       onclick="return confirm ('Bạn có chắc muốn xoá sản phẩm?')">
+                        <img src="~/Images/trash.png" width="15" />
+                    </a>
+                }
+
+            </td>
 
         </tr>
 
@@ -102,6 +115,8 @@
     }
 
 </table>
+
+
 
 <p id="TongTien">Tổng tiền: <span style="color:red">@(TongTien.ToString("N0")) @("đ")</span></p>
 
