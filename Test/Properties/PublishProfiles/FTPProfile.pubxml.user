@@ -8,7 +8,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbs93vE1laE+WFk3PWNU1tAAAAAACAAAAAAAQZgAAAAEAACAAAADqAAd4sWAHW7F+3GwrguWzYq/Pw/aPf8gikjEqDNAWOwAAAAAOgAAAAAIAACAAAACAwrhkbz8A7NJEHptr7p1HDIZ1GXfzrSueSeu7x6Y5pyAAAADICKcDTIR6qZmOzhhBNzMk9X4Hnxjke3XXGBs8UfAmtkAAAAA6yGRU1fs++t+5Fja6vTkD/hlYbxRE74u201rKaqvD4u+2UtMHRVDgMo2n1yh0UGuXS2/NBrhs+wmUuuP2LE7y</EncryptedPassword>
     <_PublishTargetUrl>ftp://cntttest.vanlanguni.edu.vn:18085</_PublishTargetUrl>
-    <History>True|2021-05-26T10:37:11.8669972Z;True|2021-05-25T17:48:31.1654032+07:00;True|2021-05-25T17:06:17.1131221+07:00;True|2021-05-24T22:09:55.5979826+07:00;True|2021-05-24T21:04:46.5792119+07:00;True|2021-05-24T18:46:17.2022756+07:00;</History>
+    <History>True|2021-05-26T15:00:40.6910123Z;True|2021-05-26T17:37:11.8669972+07:00;True|2021-05-25T17:48:31.1654032+07:00;True|2021-05-25T17:06:17.1131221+07:00;True|2021-05-24T22:09:55.5979826+07:00;True|2021-05-24T21:04:46.5792119+07:00;True|2021-05-24T18:46:17.2022756+07:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/EntityFramework.dll">
@@ -138,10 +138,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/04/2021 19:54:03</publishTime>
     </File>
     <File Include="bin/Test.dll">
-      <publishTime>05/26/2021 17:35:06</publishTime>
+      <publishTime>05/26/2021 22:00:28</publishTime>
     </File>
     <File Include="bin/Test.pdb">
-      <publishTime>05/26/2021 17:35:06</publishTime>
+      <publishTime>05/26/2021 22:00:28</publishTime>
     </File>
     <File Include="Content/PagedList.css">
       <publishTime>05/17/2021 13:06:39</publishTime>
@@ -459,7 +459,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Views/CTDHs/Index.cshtml">
-      <publishTime>05/26/2021 17:18:18</publishTime>
+      <publishTime>05/26/2021 21:59:55</publishTime>
     </File>
     <File Include="Views/DangNhap/Index.cshtml">
       <publishTime>05/17/2021 13:06:39</publishTime>

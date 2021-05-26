@@ -240,7 +240,7 @@ Trợ Giúp</pre>
 
 @if (User.Identity.IsAuthenticated)
 {
-    <a href="@Url.Action("Create", "DonHangs")/@Session["MaKH"].ToString()"><div id="button_ThanhToan">Thanh toán</div></a>
+    <a href="~/KhachHangs/CapNhat_TT_KH/@Session["MaKH"].ToString()"><div id="button_ThanhToan">Thanh toán</div></a>
 }
 else
 {
