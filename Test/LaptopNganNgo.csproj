@@ -116,6 +116,7 @@
     <Content Include="css\Style_BanHang\Style_XemSP.css" />
     <Content Include="css\Style_BanHang\Style_DangNhap.css" />
     <Content Include="css\Style_BanHang\Style_CSKH.css" />
+    <Content Include="css\Style_QuanTri\Style_TaiKhoanQT.css" />
     <Content Include="css\Style_QuanTri\Style_ThemHangSP.css" />
     <Content Include="css\Style_QuanTri\Style_DangSP.css" />
     <Content Include="css\Style_QuanTri\Style_DonHang.css" />
@@ -338,6 +339,8 @@
     <Content Include="Views\DonHangs\Details.cshtml" />
     <Content Include="Views\DonHangs\Edit.cshtml" />
     <Content Include="Views\DonHangs\Index.cshtml" />
+    <Content Include="Views\KhachHangs\TaiKhoan.cshtml" />
+    <Content Include="Views\_QT_TaiKhoan.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

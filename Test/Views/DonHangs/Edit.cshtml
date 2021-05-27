@@ -7,7 +7,63 @@
 }
 
 
-@using (Html.BeginForm())
+<table class="table">
+    <tr>
+        <th>Mã sản phẩm</th>
+        <th>Tên sản phẩm</th>
+        <th>Số lượng</th>
+        <th>Đơn giá</th>
+        <th>Chiết khấu</th>
+        <th>Tổng</th>
+        <th>Xoá</th>
+    </tr>
+
+    @foreach (var item in Model.CTDHs)
+    {
+        TongTien += item.DonGia * item.SL;
+
+        <tr>
+            <td id="txt_MaSP">@item.MaSP</td>
+            <td>
+                <div id="txt_TenSP">
+                    @item.SanPham.TenSP
+                </div>
+            </td>
+            <td id="txt_SL">@item.SL</td>
+            <td>@item.DonGia.ToString("N0")</td>
+            <td id="txt_ChietKhau">@item.ChietKhau</td>
+            <td>@((item.DonGia * item.SL).ToString("N0"))</td>
+            <td id="Button_DeleteCTDH">
+                @if (Model.CTDHs.Count == 1)
+                {
+                    <a href="@Url.Action("DeleteOrderDetails", "CTDHs", new {madh = item.MaDH, masp = item.MaSP, count = Model.CTDHs.Count() })"
+                       onclick="return confirm ('Bạn có chắc muốn xoá sản phẩm cuối? Điều này sẽ dẫn đến đơn sẽ bị huỷ?')">
+                        <img src="~/Images/trash.png" width="15" />
+                    </a>
+                }
+                else
+                {
+                    <a href="@Url.Action("DeleteOrderDetails", "CTDHs", new {madh = item.MaDH, masp = item.MaSP, count = Model.CTDHs.Count() })"
+                       onclick="return confirm ('Bạn có chắc muốn xoá sản phẩm?')">
+                        <img src="~/Images/trash.png" width="15" />
+                    </a>
+                }
+
+            </td>
+
+        </tr>
+
+
+    }
+
+</table>
+
+
+
+<p id="TongTien">Tổng tiền: <span style="color:red">@(TongTien.ToString("N0")) @("đ")</span></p>
+
+
+@using (Html.BeginForm(new { money = TongTien }))
 {
     @Html.AntiForgeryToken()
 
@@ -63,62 +119,6 @@
         </div>
     </div>
 }
-
-
-<table class="table">
-    <tr>
-        <th>Mã sản phẩm</th>
-        <th>Tên sản phẩm</th>
-        <th>Số lượng</th>
-        <th>Đơn giá</th>
-        <th>Chiết khấu</th>
-        <th>Tổng</th>
-        <th>Xoá</th>
-    </tr>
-
-    @foreach (var item in Model.CTDHs)
-    {
-        TongTien += item.DonGia * item.SL;
-
-        <tr>
-            <td id="txt_MaSP">@item.MaSP</td>
-            <td>
-                <div id="txt_TenSP">
-                    @item.SanPham.TenSP
-                </div>
-            </td>
-            <td id="txt_SL">@item.SL</td>
-            <td>@item.DonGia.ToString("N0")</td>
-            <td id="txt_ChietKhau">@item.ChietKhau</td>
-            <td>@((item.DonGia * item.SL).ToString("N0"))</td>
-            <td id="Button_DeleteCTDH">
-                @if (Model.CTDHs.Count == 1)
-                {
-                    <a href="@Url.Action("DeleteOrderDetails", "CTDHs", new {madh = item.MaDH, masp = item.MaSP, count = Model.CTDHs.Count() })"
-                       onclick="return confirm ('Bạn có chắc muốn xoá sản phẩm cuối? Điều này sẽ dẫn đến đơn sẽ bị huỷ?')">
-                        <img src="~/Images/trash.png" width="15" />
-                    </a>
-                }
-                else
-                {
-                    <a href="@Url.Action("DeleteOrderDetails", "CTDHs", new {madh = item.MaDH, masp = item.MaSP, count = Model.CTDHs.Count() })"
-                       onclick="return confirm ('Bạn có chắc muốn xoá sản phẩm?')">
-                        <img src="~/Images/trash.png" width="15" />
-                    </a>
-                }
-
-            </td>
-
-        </tr>
-
-
-    }
-
-</table>
-
-
-
-<p id="TongTien">Tổng tiền: <span style="color:red">@(TongTien.ToString("N0")) @("đ")</span></p>
 
 
 

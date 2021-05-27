@@ -1,0 +1,227 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+}
+
+#Logo_Header {
+    width: 99.00000000000011px;
+    height: 73.99999999999989px;
+    position: absolute;
+    top: 49px;
+    left: 513px;
+}
+
+#Text_Header {
+    width: 466.15625px;
+    height: 73.0px;
+    font-family: 'UTM Avo';
+    font-size: 64.0px;
+    font-weight: 400;
+    color: #000000;
+    position: absolute;
+    top: -15px;
+    left: 638.88px;
+}
+
+#Product_SanPham {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    top: 136px;
+    left: 136.35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_DonHang {
+    width: 268.1745635910226px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 406px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_KhachHang {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 675px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_DoanhThu {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 944px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Product_TaiKhoan {
+    width: 268.17456359102243px;
+    height: 64.0px;
+    font-family: 'UTM Avo';
+    font-size: 21.333334px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #333333;
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    border: 1px solid #000000;
+    position: absolute;
+    left: 1213px;
+    top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Header {
+    position: absolute;
+    left: -15px;
+}
+
+#Footer_Text {
+    width: 309.8372802734375px;
+    height: 103.99999999999955px;
+    font-family: 'UTM Avo';
+    font-size: 18.666668px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 28px;
+    color: #1EAAF1;
+    position: absolute;
+    left: 645.08px;
+    top: 690px;
+}
+
+#rectangle {
+    width: 1345px;
+    height: 42.99999999999977px;
+    font-family: 'UTM Avo';
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background: linear-gradient(#F9E1E0,#FFFFFF);
+    position: absolute;
+    top: 265px;
+    left: 136.35px;
+}
+
+.Footer {
+    position: absolute;
+    top: 1000px;
+}
+
+
+#Log_in {
+    width: 96.44140625px;
+    height: 21.0px;
+    font-family: 'UTM Avo';
+    font-size: 18.666668px;
+    font-weight: 700;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 60px;
+}
+
+    #Log_in:hover {
+        color: #BC85A3;
+    }
+
+#Button_LogOut {
+    width: auto;
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 95px;
+    text-decoration: none;
+}
+
+    #Button_LogOut:hover {
+        color: darkblue;
+    }
+
+#User_icon {
+    position: absolute;
+    left: 1300.43px;
+    top: 70px;
+}
+
+#Hello_Text {
+    width: 200px;
+    font-family: 'UTM Avo';
+    font-size: 16px;
+    color: #000000;
+    position: absolute;
+    left: 1360px;
+    top: 55px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+#Rectangle_DSTaiKhoan {
+    width: 582.9999999999997px;
+    height: 517.0000000000002px;
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    background-color: #EFEFEF;
+}

@@ -154,10 +154,11 @@ namespace Test.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "MaDH,NgayBan,MaKH,TongTien,TrangThai")] DonHang donHang)
+        public ActionResult Edit([Bind(Include = "MaDH,NgayBan,MaKH,TongTien,TrangThai")] DonHang donHang, double money)
         {
             if (ModelState.IsValid)
             {
+                donHang.TongTien = money;
                 db.Entry(donHang).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Details", "DonHangs", new { id = donHang.MaDH });

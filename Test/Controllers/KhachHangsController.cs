@@ -20,6 +20,16 @@ namespace Test.Controllers.Website_QuanTri
             return View(db.KhachHangs.ToList());
         }
 
+        public ActionResult TaiKhoan()
+        {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Redirect("~/QT_DangNhap/Index");
+            }
+            return View(db.KhachHangs.ToList());
+        }
+
+
         // GET: KhachHangs/Details/5
         public ActionResult Details(int? id)
         {

@@ -127,7 +127,7 @@ namespace Test.Controllers
                 db.CTDHs.Remove(cTDH);
                 db.SaveChanges();
                 return RedirectToAction("Edit", "DonHangs", new { id = madh.ToString() });
-            }           
+            }          
             db.CTDHs.Remove(cTDH);
             db.SaveChanges();
             return RedirectToAction("Edit", "DonHangs", new { id = madh.ToString() });
