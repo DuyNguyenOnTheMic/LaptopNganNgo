@@ -26,7 +26,7 @@ namespace Test.Controllers.Website_QuanTri
             {
                 return Redirect("~/QT_DangNhap/Index");
             }
-            return View(db.KhachHangs.ToList());
+            return View(db.KhachHangs.Where(x=>x.VaiTro == "Admin").ToList());
         }
 
 
@@ -62,7 +62,7 @@ namespace Test.Controllers.Website_QuanTri
             {
                 db.KhachHangs.Add(khachHang);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("TaiKhoan");
             }
 
             return View(khachHang);

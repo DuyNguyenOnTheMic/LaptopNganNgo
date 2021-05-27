@@ -547,7 +547,6 @@ C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\bin\System.Web.Webpages.Razor.xml
 C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\bin\System.Web.Helpers.xml
 C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\bin\System.Web.Mvc.xml
 C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\obj\Debug\LaptopNganNgo.csprojAssemblyReference.cache
 C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\obj\Debug\LaptopNganNgo.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\obj\Debug\LaptopNganNgo.csproj.CopyComplete
 C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\obj\Debug\Test.dll
@@ -568,3 +567,4 @@ E:\LaptopNganNgo\Test\bin\PagedList.dll
 E:\LaptopNganNgo\Test\bin\PagedList.Mvc.dll
 E:\LaptopNganNgo\Test\bin\PagedList.xml
 E:\LaptopNganNgo\Test\bin\PagedList.Mvc.xml
+C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\obj\Debug\LaptopNganNgo.csproj.AssemblyReference.cache
