@@ -126,6 +126,7 @@ namespace Test.Controllers
             {
                 DonHang donhang = db.DonHangs.Find(id);
                 donhang.TrangThai = 4;
+                donhang.TongTien = 0;
                 db.Entry(donhang).State = EntityState.Modified;
                 db.CTDHs.Remove(cTDH);
                 db.SaveChanges();
