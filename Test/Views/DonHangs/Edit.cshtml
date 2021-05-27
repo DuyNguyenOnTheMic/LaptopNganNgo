@@ -94,14 +94,14 @@
             <td id="Button_DeleteCTDH">
                 @if (Model.CTDHs.Count == 1)
                 {
-                    <a href="@Url.Action("DeleteOrderDetails", "CTDHs", new {id = item.MaDH, count = Model.CTDHs.Count() })"
+                    <a href="@Url.Action("DeleteOrderDetails", "CTDHs", new {madh = item.MaDH, masp = item.MaSP, count = Model.CTDHs.Count() })"
                        onclick="return confirm ('Bạn có chắc muốn xoá sản phẩm cuối? Điều này sẽ dẫn đến đơn sẽ bị huỷ?')">
                         <img src="~/Images/trash.png" width="15" />
                     </a>
                 }
                 else
                 {
-                    <a href="@Url.Action("DeleteOrderDetails", "CTDHs", new {id = item.MaDH, count = Model.CTDHs.Count() })"
+                    <a href="@Url.Action("DeleteOrderDetails", "CTDHs", new {madh = item.MaDH, masp = item.MaSP, count = Model.CTDHs.Count() })"
                        onclick="return confirm ('Bạn có chắc muốn xoá sản phẩm?')">
                         <img src="~/Images/trash.png" width="15" />
                     </a>

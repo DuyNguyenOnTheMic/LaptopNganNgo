@@ -111,30 +111,26 @@ namespace Test.Controllers
 
 
         // GET: CTDHs1/Delete/5
-        public ActionResult DeleteOrderDetails(int? id, int count)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            CTDH cTDH = db.CTDHs.FirstOrDefault(m => m.MaDH == id);
+        public ActionResult DeleteOrderDetails(int madh, int masp, int count)
+        {          
+            CTDH cTDH = db.CTDHs.Find(madh, masp);
             if (cTDH == null)
             {
                 return HttpNotFound();
             }
             if (count == 1)
             {
-                DonHang donhang = db.DonHangs.Find(id);
+                DonHang donhang = db.DonHangs.Find(madh);
                 donhang.TrangThai = 4;
                 donhang.TongTien = 0;
                 db.Entry(donhang).State = EntityState.Modified;
                 db.CTDHs.Remove(cTDH);
                 db.SaveChanges();
-                return RedirectToAction("Edit", "DonHangs", new { id = id.ToString() });
+                return RedirectToAction("Edit", "DonHangs", new { id = madh.ToString() });
             }           
             db.CTDHs.Remove(cTDH);
             db.SaveChanges();
-            return RedirectToAction("Edit", "DonHangs", new { id = id.ToString() });
+            return RedirectToAction("Edit", "DonHangs", new { id = madh.ToString() });
         }
 
 
