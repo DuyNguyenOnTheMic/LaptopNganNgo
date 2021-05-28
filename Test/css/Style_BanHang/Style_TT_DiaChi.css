@@ -710,17 +710,57 @@ body {
     left: 680px;
 }
 
-#HoTen_Constraint {
-    width: 266.73822021484375px;
-    height: 15.0px;
+.HoTen_Constraint {
     font-family: Arial;
     font-size: 13.333334px;
     font-weight: 400;
     color: #FF0000;
     position: absolute;
-    top: 364px;
-    left: 770px;
+    top: 380px;
+    left: 679px;
 }
+
+.GioiTinh_Constraint {
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    color: #FF0000;
+    position: absolute;
+    top: 447px;
+    left: 679px;
+}
+
+.SĐT_Constraint {
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    color: #FF0000;
+    position: absolute;
+    top: 538px;
+    left: 679px;
+}
+
+.NgaySinh_Constraint {
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    color: #FF0000;
+    position: absolute;
+    top: 618px;
+    left: 679px;
+}
+
+
+.DiaChi_Constraint {
+    font-family: Arial;
+    font-size: 13.333334px;
+    font-weight: 400;
+    color: #FF0000;
+    position: absolute;
+    top: 745px;
+    left: 679px;
+}
+
 
 
 #GT_Nam {
@@ -823,18 +863,6 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
-}
-
-#SĐT_Constraint {
-    width: 266.73822021484375px;
-    height: 15.0px;
-    font-family: Arial;
-    font-size: 13.333334px;
-    font-weight: 400;
-    color: #FF0000;
-    position: absolute;
-    top: 522px;
-    left: 770px;
 }
 
 #NhapNgaysinh {
@@ -1127,3 +1155,4 @@ input::-webkit-inner-spin-button {
     top: 178px;
     left: 796px;
 }
+

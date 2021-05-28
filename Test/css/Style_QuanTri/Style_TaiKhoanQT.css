@@ -32,7 +32,7 @@
     text-align: center;
     line-height: 18px;
     color: #333333;
-    background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
+    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
     border: 1px solid #000000;
     position: absolute;
     top: 136px;
@@ -112,7 +112,7 @@
     text-align: center;
     line-height: 18px;
     color: #333333;
-    background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
+    background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
     border: 1px solid #000000;
     position: absolute;
     left: 1213px;
@@ -125,7 +125,7 @@
 
 .Header {
     position: absolute;
-    left: -15px;
+    left: -7.5px;
 }
 
 #Footer_Text {
@@ -218,7 +218,8 @@
 
 .Load_DSTaiKhoan {
     position: absolute;
-    left: -100px;
+    left: -120px;
+    top: -80px;
 }
 
 #DS_TaiKhoan {
@@ -231,15 +232,13 @@
 
 
 #label_Tittle {
-    width: 256.41796875px;
-    height: 35.0px;
-    font-family: UTM Avo;
-    font-size: 24.0px;
-    font-weight: 700;
+    font-family: 'UTM Avo';
+    font-size: 29.333334px;
+    font-weight: 400;
     color: #333333;
     position: absolute;
-    left: 106.35px;
-    top: 366px;
+    left: 120px;
+    top: 308px;
 }
 
 #label_TenTaiKhoan {
@@ -251,7 +250,7 @@
     color: #333333;
     position: absolute;
     left: 649.64px;
-    top: 483.5px;
+    top: 403.5px;
 }
 
 #label_Email {
@@ -263,7 +262,7 @@
     color: #333333;
     position: absolute;
     left: 869.49px;
-    top: 483.5px;
+    top: 403.5px;
 }
 
 #Img_TK {

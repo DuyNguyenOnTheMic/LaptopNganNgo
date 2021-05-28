@@ -114,34 +114,28 @@ namespace Test.Controllers
         }
 
         // GET: HangSPs/Delete/5
-        public ActionResult Delete(int? id)
+        public ActionResult Delete(int id)
         {
-            if (!User.Identity.IsAuthenticated)
+            try
             {
-                return Redirect("~/QT_DangNhap/Index");
-            }
-            else if (id == null)
+                if (!User.Identity.IsAuthenticated)
+                {
+                    return Redirect("~/QT_DangNhap/Index");
+                }
+                HangSP hangSP = db.HangSPs.Find(id);
+                if (hangSP == null)
+                {
+                    return HttpNotFound();
+                }
+                db.HangSPs.Remove(hangSP);
+                db.SaveChanges();
+            } catch
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                TempData["Message"] = "Bạn không thể xoá do còn sản phẩm của hãng này!!";
             }
-            HangSP hangSP = db.HangSPs.Find(id);
-            if (hangSP == null)
-            {
-                return HttpNotFound();
-            }
-            return View(hangSP);
-        }
-
-        // POST: HangSPs/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            HangSP hangSP = db.HangSPs.Find(id);
-            db.HangSPs.Remove(hangSP);
-            db.SaveChanges();
             return RedirectToAction("Index");
         }
+
 
         protected override void Dispose(bool disposing)
         {

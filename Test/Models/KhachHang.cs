@@ -22,14 +22,23 @@ namespace Test.Models
         {
             this.DonHangs = new HashSet<DonHang>();
         }
-    
+
         public int MaKH { get; set; }
+        [Required(ErrorMessage = "Bạn chưa nhập họ và tên!")]
+        [StringLength(100, ErrorMessage = "Họ và tên không được quá 100 kí tự!")]
+        [RegularExpression(@"[\p{L} ]+$", ErrorMessage = "Họ và tên chỉ được nhập chữ!")]
         public string HoTen { get; set; }
+        [Required(ErrorMessage = "Bạn chưa chọn giới tính!")]
         public string GioiTinh { get; set; }
+        [Required(ErrorMessage = "Bạn chưa nhập số điện thoại!")]
+        [RegularExpression(@"^(\d{10})$", ErrorMessage = "Số điện thoại không đúng định dạng!")]
         public string DienThoai { get; set; }
+        [Required(ErrorMessage = "Bạn chưa nhập địa chỉ!")]
         public string DiaChi { get; set; }
-        [DataType(DataType.Date)]
-        public Nullable<System.DateTime> NgaySinh { get; set; }
+        [Display(Name = "Birth Date")]
+        [RegularExpression(@"(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$", ErrorMessage = "Invalid date format.")]
+        [Required(ErrorMessage = "Bạn chưa nhập ngày sinh!")]
+        public string NgaySinh { get; set; }
         [Required(ErrorMessage = "Bạn chưa nhập Email")]
         [RegularExpression("^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$", ErrorMessage = "E-mail không đúng định dạng!")]
         public string Email { get; set; }
@@ -44,7 +53,7 @@ namespace Test.Models
         [Compare("MatKhau", ErrorMessage = "Xác nhận mật khẩu không trùng!")]
         public string XacNhanMK { get; set; }
         public string VaiTro { get; set; }
-    
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DonHang> DonHangs { get; set; }
     }
