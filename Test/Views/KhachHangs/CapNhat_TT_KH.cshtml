@@ -24,7 +24,7 @@
            @id = "NhapHoten"
        }
             })
-            @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "HoTen_Constraint" })
+            @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "HoTen_Constraint" })        
         </div>
     </div>
 
@@ -70,7 +70,7 @@
                @id = "NhapNgaysinh",
                placeholder = "Nhập ngày sinh",
                type = "text",
-               maxlength = 10
+               maxlength = 10,
            }
        })
             @Html.ValidationMessageFor(model => model.NgaySinh, "", new { @class = "NgaySinh_Constraint" })

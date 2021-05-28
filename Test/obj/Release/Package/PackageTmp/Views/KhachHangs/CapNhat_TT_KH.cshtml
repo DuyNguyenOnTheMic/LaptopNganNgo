@@ -24,7 +24,7 @@
            @id = "NhapHoten"
        }
             })
-            @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "HoTen_Constraint" })        
         </div>
     </div>
 
@@ -37,7 +37,7 @@
             <div id="lb_khac">Khác</div>
             @Html.RadioButtonFor(model => model.GioiTinh, "Khác", new { @id = "GT_Khac" })
 
-            @Html.ValidationMessageFor(model => model.GioiTinh, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.GioiTinh, "", new { @class = "GioiTinh_Constraint" })
         </div>
     </div>
 
@@ -55,22 +55,9 @@
                     maxlength = "10"
         }
             })
-            @Html.ValidationMessageFor(model => model.DienThoai, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.DienThoai, "", new { @class = "SĐT_Constraint" })
         </div>
     </div>
-
-    <div class="form-group">
-        <div class="col-md-10">
-            @Html.TextAreaFor(model => model.DiaChi, new
-       {
-           @class = "form-control",
-           @id = "NhapDiachi",
-           placeholder = "Nhập địa chỉ"
-       })
-            @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
-        </div>
-    </div>
-
 
     <div class="form-group">
         <div class="col-md-10">
@@ -83,9 +70,22 @@
                @id = "NhapNgaysinh",
                placeholder = "Nhập ngày sinh",
                type = "text",
+               maxlength = 10,
            }
        })
-            @Html.ValidationMessageFor(model => model.NgaySinh, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.NgaySinh, "", new { @class = "NgaySinh_Constraint" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.TextAreaFor(model => model.DiaChi, new
+       {
+           @class = "form-control",
+           @id = "NhapDiachi",
+           placeholder = "Nhập địa chỉ"
+       })
+            @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "DiaChi_Constraint" })
         </div>
     </div>
 
@@ -148,7 +148,7 @@
 
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
-            <input id="Btn_CapNhat" type="submit" value="Cập nhật" class="btn btn-default"/>
+            <input id="Btn_CapNhat" type="submit" value="Cập nhật" class="btn btn-default" />
         </div>
     </div>
 </div>
@@ -175,9 +175,7 @@
         <p id="Diachi">Địa chỉ</p>
 
 
-        <p id="HoTen_Constraint">* Họ tên chỉ cho phép nhập chữ</p>
 
-        <p id="SĐT_Constraint">* SĐT chỉ được nhập số và đủ 10 kí tự</p>
             <a id="Btn_Huy" href="~/SanPhams/Index">Hủy bỏ</a>
     </form>
 

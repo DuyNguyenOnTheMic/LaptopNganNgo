@@ -48,6 +48,10 @@ namespace Test.Controllers.Website_QuanTri
         // GET: KhachHangs/Create
         public ActionResult Dky_QT()
         {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Redirect("~/QT_DangNhap/Index");
+            }
             return View();
         }
 
@@ -58,11 +62,28 @@ namespace Test.Controllers.Website_QuanTri
         [ValidateAntiForgeryToken]
         public ActionResult Dky_QT([Bind(Include = "MaKH,HoTen,GioiTinh,DienThoai,DiaChi,NgaySinh,Email,MatKhau,VaiTro,XacNhanMK")] KhachHang khachHang)
         {
+            ModelState.Remove("MaKH");
+            ModelState.Remove("HoTen");
+            ModelState.Remove("GioiTinh");
+            ModelState.Remove("DienThoai");
+            ModelState.Remove("DiaChi");
+            ModelState.Remove("NgaySinh");
+
             if (ModelState.IsValid)
             {
-                db.KhachHangs.Add(khachHang);
-                db.SaveChanges();
-                return RedirectToAction("TaiKhoan");
+                var check = db.KhachHangs.FirstOrDefault(s => s.Email == khachHang.Email);
+                if (check == null)
+                {
+                    db.Configuration.ValidateOnSaveEnabled = false;
+                    db.KhachHangs.Add(khachHang);
+                    db.SaveChanges();
+                    return RedirectToAction("TaiKhoan");
+                }
+                else
+                {
+                    ViewBag.error = "Địa chỉ email này đã được đăng ký rồi";
+                    return View();
+                }
             }
 
             return View(khachHang);
@@ -82,11 +103,29 @@ namespace Test.Controllers.Website_QuanTri
         [ValidateAntiForgeryToken]
         public ActionResult Dky_KH([Bind(Include = "MaKH,HoTen,GioiTinh,DienThoai,DiaChi,NgaySinh,Email,MatKhau,VaiTro,XacNhanMK")] KhachHang khachHang)
         {
+            ModelState.Remove("MaKH");
+            ModelState.Remove("HoTen");
+            ModelState.Remove("GioiTinh");
+            ModelState.Remove("DienThoai");
+            ModelState.Remove("DiaChi");
+            ModelState.Remove("NgaySinh");
+
             if (ModelState.IsValid)
             {
-                db.KhachHangs.Add(khachHang);
-                db.SaveChanges();
-                return RedirectToAction("Index", "DangNhap");
+                var check = db.KhachHangs.FirstOrDefault(s => s.Email == khachHang.Email);
+                if (check == null)
+                {
+                    db.Configuration.ValidateOnSaveEnabled = false;
+                    db.KhachHangs.Add(khachHang);
+                    db.SaveChanges();
+                    return RedirectToAction("Index", "DangNhap");
+                }
+                else
+                {
+                    ViewBag.error = "Địa chỉ email này đã được đăng ký rồi";
+                    return View();
+                }
+
             }
             return View(khachHang);
         }
@@ -104,11 +143,28 @@ namespace Test.Controllers.Website_QuanTri
         [ValidateAntiForgeryToken]
         public ActionResult Dky_TT_KH([Bind(Include = "MaKH,HoTen,GioiTinh,DienThoai,DiaChi,NgaySinh,Email,MatKhau,VaiTro,XacNhanMK")] KhachHang khachHang)
         {
+            ModelState.Remove("MaKH");
+            ModelState.Remove("HoTen");
+            ModelState.Remove("GioiTinh");
+            ModelState.Remove("DienThoai");
+            ModelState.Remove("DiaChi");
+            ModelState.Remove("NgaySinh");
+
             if (ModelState.IsValid)
             {
-                db.KhachHangs.Add(khachHang);
-                db.SaveChanges();
-                return RedirectToAction("Index", "TT_DangNhap");
+                var check = db.KhachHangs.FirstOrDefault(s => s.Email == khachHang.Email);
+                if (check == null)
+                {
+                    db.Configuration.ValidateOnSaveEnabled = false;
+                    db.KhachHangs.Add(khachHang);
+                    db.SaveChanges();
+                    return RedirectToAction("Index", "TT_DangNhap");
+                }
+                else
+                {
+                    ViewBag.error = "Địa chỉ email này đã được đăng ký rồi";
+                    return View();
+                }
             }
 
             return View(khachHang);

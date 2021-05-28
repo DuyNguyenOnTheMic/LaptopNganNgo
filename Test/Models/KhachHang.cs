@@ -35,10 +35,9 @@ namespace Test.Models
         public string DienThoai { get; set; }
         [Required(ErrorMessage = "Bạn chưa nhập địa chỉ!")]
         public string DiaChi { get; set; }
-        [Display(Name = "Birth Date")]
-        [RegularExpression(@"(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$", ErrorMessage = "Invalid date format.")]
+        [DataType(DataType.Date)]
         [Required(ErrorMessage = "Bạn chưa nhập ngày sinh!")]
-        public string NgaySinh { get; set; }
+        public Nullable<System.DateTime> NgaySinh { get; set; }
         [Required(ErrorMessage = "Bạn chưa nhập Email")]
         [RegularExpression("^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$", ErrorMessage = "E-mail không đúng định dạng!")]
         public string Email { get; set; }

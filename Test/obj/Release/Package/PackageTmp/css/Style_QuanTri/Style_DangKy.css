@@ -189,3 +189,12 @@
     z-index: +1;
 }
 
+#error_Email {
+    font-family: 'UTM Avo';
+    font-size: 15.0px;
+    position: absolute;
+    top: 526px;
+    left: 580px;
+    color: red;
+    z-index: +1;
+}

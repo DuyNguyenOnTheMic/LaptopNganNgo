@@ -27,8 +27,9 @@
         </a>
         <p id="Product_KhachHang">Khách hàng</p>
         <p id="Product_DoanhThu">Doanh thu</p>
-        <p id="Product_TaiKhoan">Tài khoản</p>
-
+        <a href="~/KhachHangs/TaiKhoan">
+            <p id="Product_TaiKhoan">Tài khoản</p>
+        </a>
         <span id="rectangle"></span>
     </div>
 </div>
@@ -47,13 +48,61 @@
 
 </div>
 
-<div id="Rectangle_DSTaiKhoan">
+<p id="label_Tittle">Danh sách tài khoản</p>
+
+<a id="button_ThemTaiKhoan" href="~/KhachHangs/Dky_QT">Thêm tài khoản</a>
+
+<p id="label_TenTaiKhoan">Họ tên</p>
+<p id="label_Email">Email</p>
+
+<div class="Load_DSTaiKhoan">
+
+    <div id="DS_TaiKhoan">
+
+        @foreach (var item in Model)
+        {
+            if (item.GioiTinh == "Nam")
+            {
+                <img id="Img_TK"
+                     width="50"
+                     height="50"
+                     src="~/Images/male.png" />
+            }
+            else if (item.GioiTinh == "Nữ")
+            {
+                <img id="Img_TK"
+                     width="50"
+                     height="50"
+                     src="~/Images/female.png" />
+            }
+            else
+            {
+                <img id="Img_TK"
+                     width="50"
+                     height="50"
+                     src="~/Images/rainbow-flag.png" />
+            }
+            if (item.HoTen != null)
+            {
+                <p id="txt_TenTaiKhoan">@item.HoTen</p>
+            }
+            else
+            {
+                <p id="txt_TenTaiKhoan">Admin #@item.MaKH</p>
+            }
+            <p id="txt_Email">@item.Email</p>
+
+        }
+
+
+    </div>
+
 </div>
 
 
-<div class="Footer">
+@*<div class="Footer">
     <p id="Footer_Text">
         2021
         <br />Powered by Squad Ngáo Ngơ
     </p>
-</div>
+</div>*@

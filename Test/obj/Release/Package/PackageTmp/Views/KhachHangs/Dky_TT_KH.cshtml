@@ -22,6 +22,7 @@
            }
        })
             @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger_Email" })
+            <p id="error_Email">@ViewBag.error</p>
         </div>
     </div>
 

@@ -38,7 +38,7 @@
     <Property Name="GioiTinh" Type="nvarchar" MaxLength="10" />
     <Property Name="DienThoai" Type="varchar" MaxLength="10" />
     <Property Name="DiaChi" Type="nvarchar" MaxLength="100" />
-    <Property Name="NgaySinh" Type="varchar" MaxLength="10" />
+    <Property Name="NgaySinh" Type="date" />
     <Property Name="Email" Type="varchar" MaxLength="50" />
     <Property Name="MatKhau" Type="varchar" MaxLength="50" />
     <Property Name="VaiTro" Type="nvarchar" MaxLength="50" />

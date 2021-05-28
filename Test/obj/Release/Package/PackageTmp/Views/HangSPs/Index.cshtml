@@ -22,7 +22,7 @@
                         <button id="button_EditHangSP">Sửa</button>
                     </a>
                     <a href="@Url.Action("Delete","HangSPs", new { id = item.MaHang })">
-                        <button id="button_DeleteHangSP">Xoá</button>
+                        <button id="button_DeleteHangSP" onclick="return confirm('Bạn có chắc muốn xoá hãng @item.TenHang?');">Xoá</button>
                     </a>
                 </td>
             </tr>
@@ -38,6 +38,7 @@
     <button id="button_Create">Thêm mới</button>
 </a>
 
+<h3 id="Error_Message"><strong>@TempData["Message"]</strong></h3>
 
 
 <div class="Header">
@@ -61,8 +62,9 @@
     </a>
     <p id="Product_KhachHang">Khách hàng</p>
     <p id="Product_DoanhThu">Doanh thu</p>
-    <p id="Product_TaiKhoan">Tài khoản</p>
-
+    <a href="~/KhachHangs/TaiKhoan">
+        <p id="Product_TaiKhoan">Tài khoản</p>
+    </a>
     <span id="rectangle"></span>
 </div>
 

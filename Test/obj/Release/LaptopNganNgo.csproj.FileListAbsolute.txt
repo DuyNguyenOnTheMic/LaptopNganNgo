@@ -115,8 +115,8 @@ C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\bin\System.Web.Webpages.Deployment.
 C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\bin\System.Web.Webpages.Razor.xml
 C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\bin\System.Web.Helpers.xml
 C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\bin\System.Web.Mvc.xml
-C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\obj\Release\LaptopNganNgo.csprojAssemblyReference.cache
 C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\obj\Release\LaptopNganNgo.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\obj\Release\LaptopNganNgo.csproj.CopyComplete
 C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\obj\Release\Test.dll
 C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\obj\Release\Test.pdb
+C:\Users\Lenovo\Downloads\LaptopNganNgo\Test\obj\Release\LaptopNganNgo.csproj.AssemblyReference.cache

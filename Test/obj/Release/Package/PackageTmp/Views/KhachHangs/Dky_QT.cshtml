@@ -24,6 +24,7 @@
            }
        })
             @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger_Email" })
+            <p id="error_Email">@ViewBag.error</p>
         </div>
     </div>
 
@@ -65,7 +66,7 @@
 
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
-            <input id="B1" type="submit" value="Đăng ký" class="btn btn-default" onclick="return validate();" />
+            <input id="B1" type="submit" value="Đăng ký" class="btn btn-default" />
         </div>
     </div>
 </div>

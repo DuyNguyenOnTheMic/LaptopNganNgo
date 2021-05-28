@@ -576,7 +576,7 @@ body {
     color: #333333;
     position: absolute;
     top: 337.25px;
-    left: 1171.7px;
+    left: 1190.7px;
 }
 
 #Xoa {
@@ -1130,7 +1130,7 @@ body {
     width: 1400px;
     height: auto;
     position: absolute;
-    left: 100px;
+    left: 79px;
     top: 430px;
 }
 
@@ -1183,4 +1183,10 @@ body {
 #SanPham_ViTri {
     position: relative;
     top: -50px;
-} 
+}
+
+.label_GioHang {
+    position: absolute;
+    left: -20px;
+    top: 0px;
+}
