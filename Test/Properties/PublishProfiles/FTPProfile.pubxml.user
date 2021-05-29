@@ -8,7 +8,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbs93vE1laE+WFk3PWNU1tAAAAAACAAAAAAAQZgAAAAEAACAAAADqAAd4sWAHW7F+3GwrguWzYq/Pw/aPf8gikjEqDNAWOwAAAAAOgAAAAAIAACAAAACAwrhkbz8A7NJEHptr7p1HDIZ1GXfzrSueSeu7x6Y5pyAAAADICKcDTIR6qZmOzhhBNzMk9X4Hnxjke3XXGBs8UfAmtkAAAAA6yGRU1fs++t+5Fja6vTkD/hlYbxRE74u201rKaqvD4u+2UtMHRVDgMo2n1yh0UGuXS2/NBrhs+wmUuuP2LE7y</EncryptedPassword>
     <_PublishTargetUrl>ftp://cntttest.vanlanguni.edu.vn:18085</_PublishTargetUrl>
-    <History>True|2021-05-28T10:33:09.0869273Z;True|2021-05-27T15:50:26.3721496+07:00;True|2021-05-27T11:41:36.1630147+07:00;True|2021-05-27T11:34:41.4671944+07:00;True|2021-05-26T22:00:40.6910123+07:00;True|2021-05-26T17:37:11.8669972+07:00;True|2021-05-25T17:48:31.1654032+07:00;True|2021-05-25T17:06:17.1131221+07:00;True|2021-05-24T22:09:55.5979826+07:00;True|2021-05-24T21:04:46.5792119+07:00;True|2021-05-24T18:46:17.2022756+07:00;</History>
+    <History>True|2021-05-29T10:19:09.4855281Z;True|2021-05-28T17:33:09.0869273+07:00;True|2021-05-27T15:50:26.3721496+07:00;True|2021-05-27T11:41:36.1630147+07:00;True|2021-05-27T11:34:41.4671944+07:00;True|2021-05-26T22:00:40.6910123+07:00;True|2021-05-26T17:37:11.8669972+07:00;True|2021-05-25T17:48:31.1654032+07:00;True|2021-05-25T17:06:17.1131221+07:00;True|2021-05-24T22:09:55.5979826+07:00;True|2021-05-24T21:04:46.5792119+07:00;True|2021-05-24T18:46:17.2022756+07:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/EntityFramework.dll">
@@ -18,7 +18,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/25/2021 15:15:58</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>07/08/2020 21:52:58</publishTime>
+      <publishTime>08/07/2020 21:52:58</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>05/08/2021 17:34:23</publishTime>
@@ -69,10 +69,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/19/2020 01:40:20</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
-      <publishTime>12/05/2017 01:36:44</publishTime>
+      <publishTime>05/12/2017 01:36:44</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
-      <publishTime>12/05/2017 01:36:44</publishTime>
+      <publishTime>05/12/2017 01:36:44</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
       <publishTime>05/19/2020 01:40:20</publishTime>
@@ -138,10 +138,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/08/2021 17:34:23</publishTime>
     </File>
     <File Include="bin/Test.dll">
-      <publishTime>05/28/2021 17:31:25</publishTime>
+      <publishTime>05/29/2021 17:17:53</publishTime>
     </File>
     <File Include="bin/Test.pdb">
-      <publishTime>05/28/2021 17:31:25</publishTime>
+      <publishTime>05/29/2021 17:17:53</publishTime>
     </File>
     <File Include="Content/PagedList.css">
       <publishTime>05/16/2021 09:20:33</publishTime>
@@ -157,6 +157,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="css/Style_BanHang/Style_GioHang.css">
       <publishTime>05/28/2021 17:02:47</publishTime>
+    </File>
+    <File Include="css/Style_BanHang/Style_GioHang_Empty.css">
+      <publishTime>05/29/2021 17:05:52</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_TimKiemSP.css">
       <publishTime>05/18/2021 10:41:56</publishTime>
@@ -174,7 +177,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_TT_DatMua.css">
-      <publishTime>05/25/2021 15:51:54</publishTime>
+      <publishTime>05/29/2021 16:28:28</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_TT_DiaChi.css">
       <publishTime>05/28/2021 13:09:51</publishTime>
@@ -368,6 +371,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Images/promotion.png">
       <publishTime>05/08/2021 17:34:22</publishTime>
     </File>
+    <File Include="Images/question.png">
+      <publishTime>05/29/2021 17:07:46</publishTime>
+    </File>
     <File Include="Images/rainbow-flag.png">
       <publishTime>05/21/2021 11:57:04</publishTime>
     </File>
@@ -444,7 +450,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/28/2021 14:00:53</publishTime>
     </File>
     <File Include="Views/CSKH/Index.cshtml">
-      <publishTime>05/28/2021 17:31:07</publishTime>
+      <publishTime>05/29/2021 17:12:39</publishTime>
     </File>
     <File Include="Views/CTDHs/Create.cshtml">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -461,14 +467,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Views/CTDHs/Edit.cshtml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
+    <File Include="Views/CTDHs/GioHang_Empty.cshtml">
+      <publishTime>05/29/2021 17:08:48</publishTime>
+    </File>
     <File Include="Views/CTDHs/Index.cshtml">
-      <publishTime>05/28/2021 17:26:38</publishTime>
+      <publishTime>05/29/2021 17:16:12</publishTime>
     </File>
     <File Include="Views/DangNhap/Index.cshtml">
       <publishTime>05/16/2021 14:08:31</publishTime>
     </File>
     <File Include="Views/DonHangs/Create.cshtml">
-      <publishTime>05/25/2021 17:01:01</publishTime>
+      <publishTime>05/29/2021 17:00:22</publishTime>
     </File>
     <File Include="Views/DonHangs/Delete.cshtml">
       <publishTime>05/21/2021 09:38:46</publishTime>
@@ -477,7 +486,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/28/2021 10:43:21</publishTime>
     </File>
     <File Include="Views/DonHangs/Edit.cshtml">
-      <publishTime>05/27/2021 15:34:59</publishTime>
+      <publishTime>05/29/2021 16:13:04</publishTime>
     </File>
     <File Include="Views/DonHangs/Index.cshtml">
       <publishTime>05/28/2021 10:43:09</publishTime>
@@ -492,13 +501,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Views/HangSPs/Edit.cshtml">
-      <publishTime>05/28/2021 10:41:16</publishTime>
+      <publishTime>05/29/2021 16:16:38</publishTime>
     </File>
     <File Include="Views/HangSPs/Index.cshtml">
-      <publishTime>05/28/2021 11:18:58</publishTime>
+      <publishTime>05/29/2021 16:13:30</publishTime>
     </File>
     <File Include="Views/KhachHangs/CapNhat_TT_KH.cshtml">
-      <publishTime>05/28/2021 15:44:36</publishTime>
+      <publishTime>05/29/2021 16:16:57</publishTime>
     </File>
     <File Include="Views/KhachHangs/Delete.cshtml">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -513,7 +522,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/28/2021 15:13:12</publishTime>
     </File>
     <File Include="Views/KhachHangs/Dky_TT_KH.cshtml">
-      <publishTime>05/28/2021 15:11:26</publishTime>
+      <publishTime>05/29/2021 16:17:44</publishTime>
     </File>
     <File Include="Views/KhachHangs/Index.cshtml">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -537,10 +546,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/14/2021 11:33:32</publishTime>
     </File>
     <File Include="Views/SanPhams/Details.cshtml">
-      <publishTime>05/25/2021 15:15:58</publishTime>
+      <publishTime>05/29/2021 16:18:25</publishTime>
     </File>
     <File Include="Views/SanPhams/Edit.cshtml">
-      <publishTime>05/28/2021 10:42:21</publishTime>
+      <publishTime>05/29/2021 16:18:41</publishTime>
     </File>
     <File Include="Views/SanPhams/Index.cshtml">
       <publishTime>05/19/2021 09:23:32</publishTime>
@@ -549,10 +558,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/28/2021 10:42:38</publishTime>
     </File>
     <File Include="Views/SanPhams/Search.cshtml">
-      <publishTime>05/19/2021 09:23:32</publishTime>
+      <publishTime>05/29/2021 16:18:59</publishTime>
     </File>
     <File Include="Views/SanPhams/Search_NotFound.cshtml">
-      <publishTime>05/19/2021 09:23:32</publishTime>
+      <publishTime>05/29/2021 16:19:09</publishTime>
     </File>
     <File Include="Views/TT_DangNhap/Index.cshtml">
       <publishTime>05/16/2021 14:31:24</publishTime>
@@ -586,6 +595,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Views/_GioHang.cshtml">
       <publishTime>05/08/2021 17:34:22</publishTime>
+    </File>
+    <File Include="Views/_GioHang_Empty.cshtml">
+      <publishTime>05/29/2021 16:09:31</publishTime>
     </File>
     <File Include="Views/_QT_CapNhatSP.cshtml">
       <publishTime>05/16/2021 16:16:10</publishTime>

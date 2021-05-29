@@ -33,7 +33,11 @@ namespace Test.Controllers
 
         // GET: CTDHs
         public ActionResult Index()
-        {       
+        {
+            if ((Session["ShoppingCart"] as List<CTDH>)?.Count == null || (Session["ShoppingCart"] as List<CTDH>)?.Count == 0)
+            {
+                return RedirectToAction("GioHang_Empty");
+            }
                 var hashtable = new Hashtable();
             foreach (var item in ShoppingCart)
             {
@@ -134,11 +138,9 @@ namespace Test.Controllers
         }
 
 
-        //[HttpPost, ActionName("DeleteOrderDetails")]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult DeleteConfirmed(int id)
-        //{
-            
-        //}
+       public ActionResult GioHang_Empty()
+        {
+            return View();
+        }
     }
 }
