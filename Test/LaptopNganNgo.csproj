@@ -102,6 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\PagedList.css" />
+    <Content Include="css\Style_BanHang\Style_GioHang_Empty.css" />
     <Content Include="css\Style_BanHang\Style_TImKiemSP_NotFound.css" />
     <Content Include="css\Style_BanHang\Style_TT_SuaGioHang.css" />
     <Content Include="css\Style_BanHang\Style_TimKiemSP.css" />
@@ -290,14 +291,12 @@
     <Content Include="Views\TT_DangNhap\Index.cshtml" />
     <Content Include="Views\_TT_DangKy.cshtml" />
     <Content Include="Views\_TT_DatMua.cshtml" />
-    <Content Include="Views\TT_DatMua\Index.cshtml" />
     <Content Include="Views\_TT_LoTrinh.cshtml" />
     <Content Include="Views\TT_LoTrinh\Index.cshtml" />
     <Content Include="Views\_TT_ThanhCong.cshtml" />
     <Content Include="Views\DonHangs\TT_ThanhCong.cshtml" />
     <Content Include="Views\_DangKy.cshtml" />
     <Content Include="Views\_TT_DiaChi.cshtml" />
-    <Content Include="Views\TT_DiaChi\Index.cshtml" />
     <Content Include="Views\QT_DangNhap.cshtml" />
     <Content Include="Views\QT_DangNhap\Index.cshtml" />
     <Content Include="Views\QT_DangKy.cshtml" />
@@ -341,6 +340,8 @@
     <Content Include="Views\DonHangs\Index.cshtml" />
     <Content Include="Views\KhachHangs\TaiKhoan.cshtml" />
     <Content Include="Views\_QT_TaiKhoan.cshtml" />
+    <Content Include="Views\_GioHang_Empty.cshtml" />
+    <Content Include="Views\CTDHs\GioHang_Empty.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
