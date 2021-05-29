@@ -4,7 +4,9 @@
     ViewBag.Title = "Thanh toán";
     Layout = "~/Views/_TT_DatMua.cshtml";
     var Cart = ViewBag.Cart as List<CTDH>;
+    double TamTinh = 0;
     double TongTien = 0;
+    double GiamGia = 0;
     int sl = 0;
     int maKH = int.Parse(Session["MaKH"].ToString());
 
@@ -83,6 +85,8 @@ Trợ Giúp</pre>
 <div class="rec3">
     @foreach (var item in Cart)
     {
+        TamTinh += item.SanPham.DonGiaGoc * item.SL;
+        GiamGia += item.SanPham.DonGiaGoc - item.SanPham.DonGiaKM;
         TongTien += item.DonGia * item.SL;
         sl += item.SL;
 
@@ -97,8 +101,8 @@ Trợ Giúp</pre>
     <label id="lb2">Giảm giá:</label>
     <label id="lb3">Phí ship:</label>
 
-    <label id="lb4">@TongTien.ToString("N0") </label>
-    <label id="lb5">0 </label>
+    <label id="lb4">@TamTinh.ToString("N0") </label>
+    <label id="lb5">@GiamGia.ToString("N0") </label>
     <label id="lb6">0</label>
 
     <label id="lb7">Thành tiền:</label>
