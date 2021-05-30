@@ -11,7 +11,6 @@
     @Html.AntiForgeryToken()
 
 <div class="form-horizontal">
-    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
     @Html.HiddenFor(model => model.MaSP)
 
     <div class="form-group">
@@ -26,7 +25,7 @@
 
            }
        })
-            @Html.ValidationMessageFor(model => model.TenSP, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.TenSP, "", new { @class = "text-danger_TenSP" })
         </div>
     </div>
 
@@ -52,7 +51,7 @@
            @id = "W5"
        }
             })
-            @Html.ValidationMessageFor(model => model.DongSP, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.DongSP, "", new { @class = "text-danger_DongSP" })
         </div>
     </div>
 
@@ -60,7 +59,7 @@
 
         <div class="col-md-10">
             @Html.TextAreaFor(model => model.ThongTinChiTietSP, new { style = "max-width:100%", @id = "S4" })
-            @Html.ValidationMessageFor(model => model.ThongTinChiTietSP, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.ThongTinChiTietSP, "", new { @class = "text-danger_TTCT" })
         </div>
     </div>
 
@@ -69,6 +68,7 @@
             <img src="@Url.Content(Session["imgPath"].ToString())" height="100" width="100" id="output" />
             <input type="file" name="file" id="file" accept="image/x-png,image/gif,image/jpeg" onchange="loadFile(event)" />
             @Html.ValidationMessageFor(model => model.HinhAnhSP, "", new { @class = "text-danger" })
+            <p id="Error_Image">@ViewBag.msg</p>
         </div>
     </div>
 
@@ -91,7 +91,7 @@
                placeholder = "0đ"
            }
        })
-            @Html.ValidationMessageFor(model => model.DonGiaGoc, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.DonGiaGoc, "", new { @class = "text-danger_GiaGoc" })
         </div>
     </div>
 
@@ -107,7 +107,7 @@
                @id = "txt_DonGiaKM"
            }
        })
-            @Html.ValidationMessageFor(model => model.DonGiaKM, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.DonGiaKM, "", new { @class = "text-danger_GiaKM" })
         </div>
     </div>
 
@@ -122,7 +122,7 @@
            @id = "W3"
        }
             })
-            @Html.ValidationMessageFor(model => model.TrangThaiSP, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.TrangThaiSP, "", new { @class = "text-danger_TinhTrang" })
         </div>
     </div>
 
@@ -138,7 +138,7 @@
            @type = "number"
        }
             })
-            @Html.ValidationMessageFor(model => model.SL, "", new { @class = "text-danger" })
+            @Html.ValidationMessageFor(model => model.SL, "", new { @class = "text-danger_SoLuong" })
         </div>
     </div>
 

@@ -249,7 +249,7 @@
     font-weight: 700;
     color: #333333;
     position: absolute;
-    left: 649.64px;
+    left: 629.64px;
     top: 403.5px;
 }
 
@@ -261,7 +261,7 @@
     font-weight: 700;
     color: #333333;
     position: absolute;
-    left: 869.49px;
+    left: 849.49px;
     top: 403.5px;
 }
 
@@ -299,7 +299,7 @@
     background: linear-gradient(#FEADB9,rgba(188,133,163,0.5));
     border: 1px solid grey;
     position: absolute;
-    left: 1270px;
+    left: 1284px;
     top: 334px;
     display: flex;
     align-items: center;

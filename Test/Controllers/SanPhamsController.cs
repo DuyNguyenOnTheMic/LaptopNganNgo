@@ -119,17 +119,17 @@ namespace Test.Controllers.Website_QuanTri
                             file.SaveAs(path);
                             ViewBag.msg = "sanpham Added";
                             ModelState.Clear();
+                            return RedirectToAction("QT_SanPham", "SanPhams");
                         }
                     }
                     else
                     {
-                        ViewBag.msg = "File Size must be Equal or less than 4mb";
-                        return View(sanpham);
+                        ViewBag.msg = "Hình ảnh phải lớn hơn hoặc bằng 4MB!";
                     }
                 }
                 else
                 {
-                    ViewBag.msg = "Inavlid File Type";
+                    ViewBag.msg = "Định dạng file không hợp lệ!";
                 }
             }
             return View(sanpham);
@@ -158,8 +158,14 @@ namespace Test.Controllers.Website_QuanTri
         [HttpPost]
         public ActionResult Edit(HttpPostedFileBase file, SanPham sanpham)
         {
+            if (!ModelState.IsValid)
+            {
+                ViewBag.MaHangSP = new SelectList(db.HangSPs, "MaHang", "TenHang");
+                return View(sanpham);
+            }
             if (ModelState.IsValid)
             {
+                ViewBag.MaHangSP = new SelectList(db.HangSPs, "MaHang", "TenHang");
                 if (file != null)
                 {
                     string filename = Path.GetFileName(file.FileName);
@@ -191,7 +197,7 @@ namespace Test.Controllers.Website_QuanTri
                         }
                         else
                         {
-                            ViewBag.msg = "File Size must be Equal or less than 10mb";
+                            ViewBag.msg = "File Size must be Equal or less than 4mb";
                         }
                     }
                     else
@@ -211,7 +217,7 @@ namespace Test.Controllers.Website_QuanTri
 
                 }
             }
-            return View();
+            return View(sanpham);
         }
 
         // GET: SanPhams/Delete/5

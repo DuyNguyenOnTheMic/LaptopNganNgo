@@ -125,7 +125,8 @@
 
 .Header {
     position: absolute;
-    left: -15px;
+    left: -7.5px;
+    top: 0px;
 }
 
 #Footer_Text {
@@ -240,7 +241,7 @@
     border: 1px solid #000000;
     border-radius: 0px;
     position: absolute;
-    top: 1520px;
+    top: 1525px;
     left: 665px;
     z-index: +1;
 }
@@ -520,7 +521,7 @@
 
 #K4 {
     width: 1010.0000000000002px;
-    height: 165.00000000000023px;
+    height: 172.00000000000023px;
     font-family: 'UTM Avo';
     font-size: 13.333334px;
     font-weight: 400;
@@ -857,6 +858,86 @@
     display: -webkit-box;
     -webkit-line-clamp: 1; /* number of lines to show */
     -webkit-box-orient: vertical;
+}
+
+.text-danger_TenSP {
+    font-family: 'UTM Avo';
+    font-size: 14.0px;
+    position: absolute;
+    top: 546px;
+    left: 176px;
+    color: red;
+    z-index: +1;
+}
+
+.text-danger_DongSP {
+    font-family: 'UTM Avo';
+    font-size: 14.0px;
+    position: absolute;
+    top: 676px;
+    left: 1168px;
+    color: red;
+    z-index: +1;
+}
+
+.text-danger_TTCT {
+    font-family: 'UTM Avo';
+    font-size: 14.0px;
+    position: absolute;
+    top: 936px;
+    left: 176px;
+    color: red;
+    z-index: +1;
+}
+
+.text-danger_GiaGoc {
+    font-family: 'UTM Avo';
+    font-size: 14.0px;
+    position: absolute;
+    top: 1365px;
+    left: 176px;
+    color: red;
+    z-index: +1;
+}
+
+.text-danger_GiaKM {
+    font-family: 'UTM Avo';
+    font-size: 14.0px;
+    position: absolute;
+    top: 1365px;
+    left: 665px;
+    color: red;
+    z-index: +1;
+}
+
+.text-danger_TinhTrang {
+    font-family: 'UTM Avo';
+    font-size: 14.0px;
+    position: absolute;
+    top: 1561px;
+    left: 176px;
+    color: red;
+    z-index: +1;
+}
+
+.text-danger_SoLuong {
+    font-family: 'UTM Avo';
+    font-size: 14.0px;
+    position: absolute;
+    top: 1561px;
+    left: 665px;
+    color: red;
+    z-index: +1;
+}
+
+#Error_Image {
+    font-family: 'UTM Avo';
+    font-size: 14.0px;
+    position: absolute;
+    top: 1128px;
+    left: 320px;
+    color: red;
+    z-index: +1;
 }
 
 .button_Delete {

@@ -32,13 +32,16 @@ namespace Test.Models
         [Required(ErrorMessage = "Bạn chưa nhập thông tin chi tiết sản phẩm!")]
         public string ThongTinChiTietSP { get; set; }
         public string HinhAnhSP { get; set; }
-        [Required(ErrorMessage = "Bạn chưa nhập trạng thái sản phẩm!")]
-        [StringLength(50, ErrorMessage = "Trạng thái không được quá 100 kí tự!")]
+        [Required(ErrorMessage = "Bạn chưa nhập tình trạng sản phẩm!")]
+        [StringLength(50, ErrorMessage = "Tình trạng không được quá 50 kí tự!")]
         public string TrangThaiSP { get; set; }
         [Required(ErrorMessage = "Bạn chưa nhập số lượng sản phẩm!")]
+        [Range(0, int.MaxValue, ErrorMessage = "Bạn không thể nhập giá trị nhỏ hơn {1}")]
         public int SL { get; set; }
         [Required(ErrorMessage = "Bạn chưa nhập giá gốc sản phẩm!")]
+        [Range(0, int.MaxValue, ErrorMessage = "Bạn không thể nhập giá trị nhỏ hơn {1}")]
         public double DonGiaGoc { get; set; }
+        [Range(0, int.MaxValue, ErrorMessage = "Bạn không thể nhập giá trị nhỏ hơn {1}")]
         [Required(ErrorMessage = "Bạn chưa nhập giá khuyến mãi sản phẩm!")]
         public double DonGiaKM { get; set; }
     

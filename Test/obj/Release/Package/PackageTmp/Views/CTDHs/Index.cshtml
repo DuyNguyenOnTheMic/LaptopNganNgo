@@ -213,7 +213,7 @@ Trợ Giúp</pre>
                     @Html.Hidden("dongia", item.DonGia)
 
                     <input id="s1" max="@item.SanPham.SL" min="1" type="number" value="@item.SL" name="sl">
-                    <input type="image" id="R1" src="~/Images/trash.png " formaction="@Url.Action("Delete")" method="post" />
+                    <input type="image" id="R1" src="~/Images/trash.png " formaction="@Url.Action("Delete", new { masp = item.SanPham.MaSP})" method="post" />
                     <p id="pic1">
                         @Html.ActionLink(item.SanPham.TenSP, "Details", "SanPhams", new { id = item.SanPham.MaSP }, new { @class = "myActionlink" })
                     </p>

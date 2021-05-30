@@ -8,7 +8,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbs93vE1laE+WFk3PWNU1tAAAAAACAAAAAAAQZgAAAAEAACAAAADqAAd4sWAHW7F+3GwrguWzYq/Pw/aPf8gikjEqDNAWOwAAAAAOgAAAAAIAACAAAACAwrhkbz8A7NJEHptr7p1HDIZ1GXfzrSueSeu7x6Y5pyAAAADICKcDTIR6qZmOzhhBNzMk9X4Hnxjke3XXGBs8UfAmtkAAAAA6yGRU1fs++t+5Fja6vTkD/hlYbxRE74u201rKaqvD4u+2UtMHRVDgMo2n1yh0UGuXS2/NBrhs+wmUuuP2LE7y</EncryptedPassword>
     <_PublishTargetUrl>ftp://cntttest.vanlanguni.edu.vn:18085</_PublishTargetUrl>
-    <History>True|2021-05-29T10:19:09.4855281Z;True|2021-05-28T17:33:09.0869273+07:00;True|2021-05-27T15:50:26.3721496+07:00;True|2021-05-27T11:41:36.1630147+07:00;True|2021-05-27T11:34:41.4671944+07:00;True|2021-05-26T22:00:40.6910123+07:00;True|2021-05-26T17:37:11.8669972+07:00;True|2021-05-25T17:48:31.1654032+07:00;True|2021-05-25T17:06:17.1131221+07:00;True|2021-05-24T22:09:55.5979826+07:00;True|2021-05-24T21:04:46.5792119+07:00;True|2021-05-24T18:46:17.2022756+07:00;</History>
+    <History>True|2021-05-30T08:31:15.5848716Z;True|2021-05-29T17:19:09.4855281+07:00;True|2021-05-28T17:33:09.0869273+07:00;True|2021-05-27T15:50:26.3721496+07:00;True|2021-05-27T11:41:36.1630147+07:00;True|2021-05-27T11:34:41.4671944+07:00;True|2021-05-26T22:00:40.6910123+07:00;True|2021-05-26T17:37:11.8669972+07:00;True|2021-05-25T17:48:31.1654032+07:00;True|2021-05-25T17:06:17.1131221+07:00;True|2021-05-24T22:09:55.5979826+07:00;True|2021-05-24T21:04:46.5792119+07:00;True|2021-05-24T18:46:17.2022756+07:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/EntityFramework.dll">
@@ -18,7 +18,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/25/2021 15:15:58</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>08/07/2020 21:52:58</publishTime>
+      <publishTime>07/08/2020 21:52:58</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>05/08/2021 17:34:23</publishTime>
@@ -69,10 +69,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/19/2020 01:40:20</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
-      <publishTime>05/12/2017 01:36:44</publishTime>
+      <publishTime>12/05/2017 01:36:44</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
-      <publishTime>05/12/2017 01:36:44</publishTime>
+      <publishTime>12/05/2017 01:36:44</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
       <publishTime>05/19/2020 01:40:20</publishTime>
@@ -138,10 +138,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/08/2021 17:34:23</publishTime>
     </File>
     <File Include="bin/Test.dll">
-      <publishTime>05/29/2021 17:17:53</publishTime>
+      <publishTime>05/30/2021 15:29:53</publishTime>
     </File>
     <File Include="bin/Test.pdb">
-      <publishTime>05/29/2021 17:17:53</publishTime>
+      <publishTime>05/30/2021 15:29:53</publishTime>
     </File>
     <File Include="Content/PagedList.css">
       <publishTime>05/16/2021 09:20:33</publishTime>
@@ -195,7 +195,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/28/2021 16:56:47</publishTime>
     </File>
     <File Include="css/Style_QuanTri/Style_CapNhatSP.css">
-      <publishTime>05/19/2021 09:23:32</publishTime>
+      <publishTime>05/30/2021 15:17:44</publishTime>
     </File>
     <File Include="css/Style_QuanTri/Style_DangKy.css">
       <publishTime>05/28/2021 15:12:53</publishTime>
@@ -204,13 +204,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/16/2021 10:39:32</publishTime>
     </File>
     <File Include="css/Style_QuanTri/Style_DangSP.css">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>05/30/2021 15:06:57</publishTime>
     </File>
     <File Include="css/Style_QuanTri/Style_DonHang.css">
       <publishTime>05/23/2021 10:49:28</publishTime>
     </File>
     <File Include="css/Style_QuanTri/Style_TaiKhoanQT.css">
-      <publishTime>05/28/2021 11:39:21</publishTime>
+      <publishTime>05/30/2021 14:11:36</publishTime>
     </File>
     <File Include="css/Style_QuanTri/Style_ThemHangSP.css">
       <publishTime>05/28/2021 11:29:11</publishTime>
@@ -471,7 +471,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/29/2021 17:08:48</publishTime>
     </File>
     <File Include="Views/CTDHs/Index.cshtml">
-      <publishTime>05/29/2021 17:16:12</publishTime>
+      <publishTime>05/30/2021 12:49:21</publishTime>
     </File>
     <File Include="Views/DangNhap/Index.cshtml">
       <publishTime>05/16/2021 14:08:31</publishTime>
@@ -540,7 +540,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/08/2021 17:34:22</publishTime>
     </File>
     <File Include="Views/SanPhams/Create.cshtml">
-      <publishTime>05/28/2021 10:41:54</publishTime>
+      <publishTime>05/30/2021 15:01:41</publishTime>
     </File>
     <File Include="Views/SanPhams/Delete.cshtml">
       <publishTime>05/14/2021 11:33:32</publishTime>
@@ -549,7 +549,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/29/2021 16:18:25</publishTime>
     </File>
     <File Include="Views/SanPhams/Edit.cshtml">
-      <publishTime>05/29/2021 16:18:41</publishTime>
+      <publishTime>05/30/2021 15:11:15</publishTime>
     </File>
     <File Include="Views/SanPhams/Index.cshtml">
       <publishTime>05/19/2021 09:23:32</publishTime>
@@ -654,7 +654,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/08/2021 17:34:22</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>05/28/2021 17:31:34</publishTime>
+      <publishTime>05/30/2021 15:29:59</publishTime>
     </File>
   </ItemGroup>
 </Project>
