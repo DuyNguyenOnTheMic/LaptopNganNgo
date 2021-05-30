@@ -17,11 +17,12 @@
         <th>xóa</th>
         @*<th>Xoá</th>*@
     </tr>
+    <form action="@Url.Action("Update", "CTDHs")" method="post">
+        @foreach (var item in Model.CTDHs)
+        {
 
-    @foreach (var item in Model.CTDHs)
-    {
-        TongTien += item.DonGia * item.SL - item.ChietKhau;
-        <form action="@Url.Action("Update","CTDHs" )" method="post">
+            TongTien += item.DonGia * item.SL - item.ChietKhau;
+
             <tr>
                 <td id="txt_MaSP">@item.MaSP</td>
                 <td>
@@ -53,176 +54,182 @@
 
                 </td>
 
-                @Html.Hidden("maSP", item.MaSP)
-                @Html.Hidden("maDH", Model.MaDH)
-                @Html.Hidden("dongia", item.DonGia)
-      
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="Lưu" class="btn btn-default" id="button_Edit" />
-                    </div>
-                </div>
+
 
 
             </tr>
+            @Html.Hidden("maSP", item.MaSP)
+            @Html.Hidden("maDH", Model.MaDH)
+            @Html.Hidden("dongia", item.DonGia)
 
-
-        </form>
-    }
-
-
-<p id="TongTien">Tổng tiền: <span style="color:red">@(TongTien.ToString("N0")) @("đ")</span></p>
-
-
-@using (Html.BeginForm(new { money = TongTien }))
-{
-    @Html.AntiForgeryToken()
-
-    <div class="form-horizontal">
-
-        @Html.HiddenFor(model => model.MaDH)
-
-        <div class="form-group">
-            <div class="col-md-10">
-                @Html.HiddenFor(model => model.TongTien, new { htmlAttributes = new { @class = "form-control" } })
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Lưu" class="btn btn-default" id="button_Edit" />
+                </div>
             </div>
+
+
+            
+
+        }
+    </form>
+
+    <p id="TongTien">Tổng tiền: <span style="color:red">@(TongTien.ToString("N0")) @("đ")</span></p>
+
+
+    @using (Html.BeginForm(new { money = TongTien }))
+    {
+        @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+
+    @Html.HiddenFor(model => model.MaDH)
+
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.HiddenFor(model => model.TongTien, new { htmlAttributes = new { @class = "form-control" } })
         </div>
-
-        <div class="form-group">
-            <div class="col-md-10">
-                @Html.HiddenFor(model => model.MaKH, new { htmlAttributes = new { @class = "form-control" } })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-10">
-                @Html.HiddenFor(model => model.NgayBan, new { htmlAttributes = new { @class = "form-control" } })
-            </div>
-        </div>
-
-
-        <div id="CTDonHang">
-            <b>
-                Mã đơn hàng: <span style="font-size: 24px;">
-                    @Html.DisplayFor(model => model.MaDH)
-                </span>
-            </b>
-            <br /> <br />
-            Ngày lập đơn: @Html.DisplayFor(model => model.NgayBan)
-            <br />
-
-            @if (Model.CTDHs.Count == 0)
-            {
-                <p>Trạng thái: Đã huỷ</p>
-            }
-            else
-            {
-                <p>Trạng thái: @Html.DropDownList("TrangThai", null, htmlAttributes: new { @class = "form-control", @id = "drop_TT" })</p>
-            }
-
-
-        </div>
-
-        
     </div>
-}
+
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.HiddenFor(model => model.MaKH, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.HiddenFor(model => model.NgayBan, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
 
 
-
-<div class="Header">
-    <img src="~/Images/user_QT.png"
-         id="User_icon"
-         width="45" />
-    <a href="~/SanPhams/QT_SanPham">
-        <img id="Logo_Header"
-             src="~/Images/bird.png"
-             width="99" />
-        <p id="Text_Header">LaptopNganNgo</p>
-    </a>
-
-    <a href="~/SanPhams/QT_SanPham">
-        <p id="Product_SanPham">Sản phẩm</p>
-    </a>
-    <a href="~/DonHangs/Index">
-        <p id="Product_DonHang">Đơn hàng</p>
-    </a>
-    <p id="Product_KhachHang">Khách hàng</p>
-    <p id="Product_DoanhThu">Doanh thu</p>
-    <p id="Product_TaiKhoan">Tài khoản</p>
-
-    <span id="rectangle"></span>
-</div>
-
-<div class="Body">
-
-    @*<a href="~/DonHangs/Index">
-            <img id="Back"
-                 src="~/Images/previous.png" />
-        </a>*@
-
-
-    @if (Model.KhachHang.GioiTinh == "Nam")
-    {
-        <img id="Img_DH"
-             width="101"
-             height="101"
-             src="~/Images/male.png" />
-    }
-    else if (Model.KhachHang.GioiTinh == "Nữ")
-    {
-        <img id="Img_DH"
-             width="101"
-             height="101"
-             src="~/Images/female.png" />
-    }
-    else
-    {
-        <img id="Img_DH"
-             width="101"
-             height="101"
-             src="~/Images/rainbow-flag.png" />
-    }
-
-    <div id="text_TTKH">
-
-        <b>Thông tin khách hàng:</b>
-
+    <div id="CTDonHang">
+        <b>
+            Mã đơn hàng: <span style="font-size: 24px;">
+                @Html.DisplayFor(model => model.MaDH)
+            </span>
+        </b>
         <br /> <br />
+        Ngày lập đơn: @Html.DisplayFor(model => model.NgayBan)
+        <br />
 
-        Khách hàng: @Html.DisplayFor(model => model.KhachHang.HoTen)
-        <br />
-        Số điện thoại: @Html.DisplayFor(model => model.KhachHang.DienThoai)
-        <br />
-        Email: @Html.DisplayFor(model => model.KhachHang.Email)
-        <br />
-        Địa chỉ: @Html.DisplayFor(model => model.KhachHang.DiaChi)
+        @if (Model.CTDHs.Count == 0)
+        {
+            <p>Trạng thái: Đã huỷ</p>
+        }
+        else
+        {
+            <p>Trạng thái: @Html.DropDownList("TrangThai", null, htmlAttributes: new { @class = "form-control", @id = "drop_TT" })</p>
+        }
+
+
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Lưu" class="btn btn-default" id="button_Edit" />
+        </div>
+    </div>
+
+</div>
+    }
+
+
+
+    <div class="Header">
+        <img src="~/Images/user_QT.png"
+             id="User_icon"
+             width="45" />
+        <a href="~/SanPhams/QT_SanPham">
+            <img id="Logo_Header"
+                 src="~/Images/bird.png"
+                 width="99" />
+            <p id="Text_Header">LaptopNganNgo</p>
+        </a>
+
+        <a href="~/SanPhams/QT_SanPham">
+            <p id="Product_SanPham">Sản phẩm</p>
+        </a>
+        <a href="~/DonHangs/Index">
+            <p id="Product_DonHang">Đơn hàng</p>
+        </a>
+        <p id="Product_KhachHang">Khách hàng</p>
+        <p id="Product_DoanhThu">Doanh thu</p>
+        <p id="Product_TaiKhoan">Tài khoản</p>
+
+        <span id="rectangle"></span>
+    </div>
+
+    <div class="Body">
+
+        @*<a href="~/DonHangs/Index">
+                <img id="Back"
+                     src="~/Images/previous.png" />
+            </a>*@
+
+
+        @if (Model.KhachHang.GioiTinh == "Nam")
+        {
+            <img id="Img_DH"
+                 width="101"
+                 height="101"
+                 src="~/Images/male.png" />
+        }
+        else if (Model.KhachHang.GioiTinh == "Nữ")
+        {
+            <img id="Img_DH"
+                 width="101"
+                 height="101"
+                 src="~/Images/female.png" />
+        }
+        else
+        {
+            <img id="Img_DH"
+                 width="101"
+                 height="101"
+                 src="~/Images/rainbow-flag.png" />
+        }
+
+        <div id="text_TTKH">
+
+            <b>Thông tin khách hàng:</b>
+
+            <br /> <br />
+
+            Khách hàng: @Html.DisplayFor(model => model.KhachHang.HoTen)
+            <br />
+            Số điện thoại: @Html.DisplayFor(model => model.KhachHang.DienThoai)
+            <br />
+            Email: @Html.DisplayFor(model => model.KhachHang.Email)
+            <br />
+            Địa chỉ: @Html.DisplayFor(model => model.KhachHang.DiaChi)
+
+        </div>
+
+
+
+
+        <div id="button_Delete">Huỷ đơn</div>
 
     </div>
 
+    <div>
+        @if (Session["HoTen"] != null)
+        {
+            <p id="Hello_Text">@Session["HoTen"].ToString()</p>
+            <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+        }
+        else if (Session["Email"] != null && Session["HoTen"] == null)
+        {
+            <p id="Hello_Text">Chào bạn,</p>
+            <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+        }
 
+    </div>
 
-
-    <div id="button_Delete">Huỷ đơn</div>
-
-</div>
-
-<div>
-    @if (Session["HoTen"] != null)
-    {
-        <p id="Hello_Text">@Session["HoTen"].ToString()</p>
-        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
-    }
-    else if (Session["Email"] != null && Session["HoTen"] == null)
-    {
-        <p id="Hello_Text">Chào bạn,</p>
-        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
-    }
-
-</div>
-
-<div class="Footer">
-    <p id="Footer_Text">
-        2021
-        <br />Powered by Squad Ngáo Ngơ
-    </p>
-</div>
+    <div class="Footer">
+        <p id="Footer_Text">
+            2021
+            <br />Powered by Squad Ngáo Ngơ
+        </p>
+    </div>
