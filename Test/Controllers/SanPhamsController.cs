@@ -99,30 +99,40 @@ namespace Test.Controllers.Website_QuanTri
 
             sanpham.HinhAnhSP = "~/images/" + _filename;
 
-
-            if (extension.ToLower() == ".jpg" || extension.ToLower() == ".jpeg" || extension.ToLower() == ".png")
+            if (!ModelState.IsValid)
             {
-                if (file.ContentLength <= 10000000)
-                {
-                    db.SanPhams.Add(sanpham);
+                ViewBag.MaHangSP = new SelectList(db.HangSPs, "MaHang", "TenHang");
+                return View(sanpham);
+            }
+            if (ModelState.IsValid)
+            {
+                ViewBag.MaHangSP = new SelectList(db.HangSPs, "MaHang", "TenHang");
 
-                    if (db.SaveChanges() > 0)
+                if (extension.ToLower() == ".jpg" || extension.ToLower() == ".jpeg" || extension.ToLower() == ".png")
+                {
+                    if (file.ContentLength <= 4000000)
                     {
-                        file.SaveAs(path);
-                        ViewBag.msg = "sanpham Added";
-                        ModelState.Clear();
+                        db.SanPhams.Add(sanpham);
+
+                        if (db.SaveChanges() > 0)
+                        {
+                            file.SaveAs(path);
+                            ViewBag.msg = "sanpham Added";
+                            ModelState.Clear();
+                        }
+                    }
+                    else
+                    {
+                        ViewBag.msg = "File Size must be Equal or less than 4mb";
+                        return View(sanpham);
                     }
                 }
                 else
                 {
-                    ViewBag.msg = "File Size must be Equal or less than 10mb";
+                    ViewBag.msg = "Inavlid File Type";
                 }
             }
-            else
-            {
-                ViewBag.msg = "Inavlid File Type";
-            }
-            return RedirectToAction("QT_SanPham","SanPhams");
+            return View(sanpham);
         }
 
         // GET: SanPhams/Edit/5
@@ -163,7 +173,7 @@ namespace Test.Controllers.Website_QuanTri
 
                     if (extension.ToLower() == ".jpg" || extension.ToLower() == ".jpeg" || extension.ToLower() == ".png")
                     {
-                        if (file.ContentLength <= 10000000)
+                        if (file.ContentLength <= 4000000)
                         {
                             db.Entry(sanpham).State = EntityState.Modified;
                             string oldImgPath = Request.MapPath(Session["imgPath"].ToString());

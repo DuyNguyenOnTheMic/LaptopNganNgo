@@ -104,13 +104,12 @@ namespace Test.Controllers
 
         
 
-        public ActionResult Delete(int id)
+        public ActionResult Delete(int masp)
         {
             var session = System.Web.HttpContext.Current.Session;
-            ShoppingCart.RemoveAll(x => x.SanPham.MaSP == id);
+            ShoppingCart.RemoveAll(x => x.SanPham.MaSP == masp);
             session["ShoppingCart"] = ShoppingCart;
             return RedirectToAction("Index");
-        
         }
 
 

@@ -66,6 +66,7 @@
             <img width="100" height="100" id="output" />
             <input type="file" required="required" name="file" id="file" accept="image/x-png,image/gif,image/jpeg" onchange="loadFile(event)" />
             @Html.ValidationMessageFor(model => model.HinhAnhSP, "", new { @class = "text-danger" })
+            <p>@ViewBag.msg</p>
         </div>
     </div>
 
