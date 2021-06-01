@@ -154,15 +154,35 @@ namespace Test.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "MaDH,NgayBan,MaKH,TongTien,TrangThai")] DonHang donHang, double money)
+        public ActionResult Edit([Bind(Include = "MaDH,NgayBan,MaKH,TongTien,TrangThai")] DonHang donHang, double money, int[] maSP, int[] sl, int maDH, double[] dongia, int[] chieckhau)
         {
             if (ModelState.IsValid)
             {
                 donHang.TongTien = money;
                 db.Entry(donHang).State = EntityState.Modified;
+
+                for (int i = 0; i < maSP.Length; i++)
+                {
+                    var cTDH = db.CTDHs.Find(maDH, maSP[i]);
+                    db.CTDHs.Remove(cTDH);
+                    
+                        var SP = db.SanPhams.Find(maSP[i]);
+                        db.CTDHs.Add(new CTDH
+                        {
+                            SanPham = SP,
+                            SL = sl[i],
+                            MaDH = maDH,
+                            DonGia = dongia[i],
+                            ThanhTien = (dongia[i] * sl[i]) - chieckhau[i],
+                            ChietKhau = chieckhau[i]
+                        });
+                    
+                }
+
                 db.SaveChanges();
                 return RedirectToAction("Details", "DonHangs", new { id = donHang.MaDH });
             }
+
             ViewBag.MaKH = new SelectList(db.KhachHangs, "MaKH", "HoTen", donHang.MaKH);
             ViewBag.TrangThai = new SelectList(db.TrangThaiDHs, "MaTrangThai", "TrangThai", donHang.TrangThai);
             return View(donHang);

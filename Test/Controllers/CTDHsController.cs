@@ -142,31 +142,31 @@ namespace Test.Controllers
             return View();
         }
 
-        [HttpPost]
-        public ActionResult Update(int[] maSP, int[] sl, int maDH, double[] dongia, int[] chieckhau)
-        {
-            for (int i = 0; i < maSP.Length; i++)
-            {
-                var cTDH = db.CTDHs.Find(maDH, maSP[i]);
-                            db.CTDHs.Remove(cTDH);
-                            if (maSP[i] != null)
-                            {
-                                var SP = db.SanPhams.Find(maSP[i]);
-                                db.CTDHs.Add(new CTDH
-                                {
-                                    SanPham = SP,
-                                    SL = sl[i],
-                                    MaDH = maDH,
-                                    DonGia = dongia[i],
-                                    ThanhTien = (dongia[i] * sl[i]) -chieckhau [i],
-                                    ChietKhau = chieckhau[i]
-                                });
-                            }
-            }
+        //[HttpPost]
+        //public ActionResult Update(int[] maSP, int[] sl, int maDH, double[] dongia, int[] chieckhau)
+        //{
+        //    for (int i = 0; i < maSP.Length; i++)
+        //    {
+        //        var cTDH = db.CTDHs.Find(maDH, maSP[i]);
+        //                    db.CTDHs.Remove(cTDH);
+        //                    if (maSP[i] != null)
+        //                    {
+        //                        var SP = db.SanPhams.Find(maSP[i]);
+        //                        db.CTDHs.Add(new CTDH
+        //                        {
+        //                            SanPham = SP,
+        //                            SL = sl[i],
+        //                            MaDH = maDH,
+        //                            DonGia = dongia[i],
+        //                            ThanhTien = (dongia[i] * sl[i]) -chieckhau [i],
+        //                            ChietKhau = chieckhau[i]
+        //                        });
+        //                    }
+        //    }
             
-            db.SaveChanges();
-            DonHang donHang = db.DonHangs.Find(maDH);
-            return RedirectToAction("Details", "DonHangs", new { id = donHang.MaDH });
-        }
+        //    db.SaveChanges();
+        //    DonHang donHang = db.DonHangs.Find(maDH);
+        //    return RedirectToAction("Details", "DonHangs", new { id = donHang.MaDH });
+        //}
     }
 }

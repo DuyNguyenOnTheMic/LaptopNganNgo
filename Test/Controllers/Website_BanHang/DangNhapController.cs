@@ -27,9 +27,10 @@ namespace Test.Controllers.Website_BanHang
         {
             using (var context = new CT25Team24Entities())
             {
-                var account = context.KhachHangs.Where(acc => acc.Email == model.Email && acc.MatKhau == model.MatKhau).FirstOrDefault();
-                bool isValid = context.KhachHangs.Any(x => x.Email == model.Email
-                && x.MatKhau == model.MatKhau);
+                var account = context.KhachHangs.Where(acc => acc.Email.Equals(model.Email) 
+                                                        && acc.MatKhau.Equals(model.MatKhau)).FirstOrDefault();
+                bool isValid = context.KhachHangs.Any(x => x.Email.Equals(model.Email)
+                                                       && x.MatKhau.Equals(model.MatKhau));
                 if (isValid)
                 {
                     Session["HoTen"] = account.HoTen;
