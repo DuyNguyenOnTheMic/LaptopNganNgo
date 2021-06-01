@@ -19,24 +19,22 @@
 
     @foreach (var item in Model.CTDHs)
     {
-        TongTien += item.DonGia * item.SL;
+        TongTien += item.DonGia * item.SL - item.ChietKhau;
 
-        <tr>
-            <td id="txt_MaSP">@item.MaSP</td>
-            <td>
-                <div id="txt_TenSP">
-                    @item.SanPham.TenSP
-                </div>
-            </td>
-            <td id="txt_SL">@item.SL</td>
-            <td>@item.DonGia.ToString("N0")</td>
-            <td id="txt_ChietKhau">@item.ChietKhau</td>
-            <td>@((item.DonGia*item.SL).ToString("N0"))</td>
-            @*<td>
-                    <img src="~/Images/trash.png" width="15" />
-                </td>*@
+    <tr>
 
-        </tr>
+        <td id="txt_MaSP">@item.MaSP</td>
+        <td>
+            <div id="txt_TenSP">
+                @item.SanPham.TenSP
+            </div>
+        </td>
+        <td id="txt_SL">@item.SL</td>
+        <td>@item.DonGia.ToString("N0")</td>
+        <td id="txt_ChietKhau">@item.ChietKhau.ToString("N0")</td>
+        <td>@((item.DonGia * item.SL - item.ChietKhau).ToString("N0"))</td>       
+
+    </tr>
 
 
     }
@@ -146,7 +144,6 @@
         </a>
     }
 
-    <div id="button_Delete">Huỷ đơn</div>
 
 </div>
 

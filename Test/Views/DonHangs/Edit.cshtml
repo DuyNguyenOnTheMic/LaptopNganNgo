@@ -3,219 +3,217 @@
 @{
     ViewBag.Title = "Chi tiết đơn hàng";
     Layout = "~/Views/_QT_XemCTDH.cshtml";
-    double TongTien = 0;
 }
 
 
-<table class="table">
-    <tr>
-        <th>Mã sản phẩm</th>
-        <th>Tên sản phẩm</th>
-        <th>Số lượng</th>
-        <th>Đơn giá</th>
-        <th>Chiết khấu</th>
-        <th>Tổng</th>
-        <th>Xoá</th>
-    </tr>
-
-    @foreach (var item in Model.CTDHs)
-    {
-        TongTien += item.DonGia * item.SL;
-
-        <tr>
-            <td id="txt_MaSP">@item.MaSP</td>
-            <td>
-                <div id="txt_TenSP">
-                    @item.SanPham.TenSP
-                </div>
-            </td>
-            <td id="txt_SL">@item.SL</td>
-            <td>@item.DonGia.ToString("N0")</td>
-            <td id="txt_ChietKhau">@item.ChietKhau</td>
-            <td>@((item.DonGia * item.SL).ToString("N0"))</td>
-            <td id="Button_DeleteCTDH">
-                @if (Model.CTDHs.Count == 1)
-                {
-                    <a href="@Url.Action("DeleteOrderDetails", "CTDHs", new {madh = item.MaDH, masp = item.MaSP, count = Model.CTDHs.Count() })"
-                       onclick="return confirm ('Bạn có chắc muốn xoá sản phẩm cuối? Điều này sẽ dẫn đến đơn sẽ bị huỷ?')">
-                        <img src="~/Images/trash.png" width="15" />
-                    </a>
-                }
-                else
-                {
-                    <a href="@Url.Action("DeleteOrderDetails", "CTDHs", new {madh = item.MaDH, masp = item.MaSP, count = Model.CTDHs.Count() })"
-                       onclick="return confirm ('Bạn có chắc muốn xoá sản phẩm?')">
-                        <img src="~/Images/trash.png" width="15" />
-                    </a>
-                }
-
-            </td>
-
-        </tr>
-
-
-    }
-
-</table>
-
-
-
-<p id="TongTien">Tổng tiền: <span style="color:red">@(TongTien.ToString("N0")) @("đ")</span></p>
-
-
-@using (Html.BeginForm(new { money = TongTien }))
+@using (Html.BeginForm())
 {
-    @Html.AntiForgeryToken()
+        @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
 
-        @Html.HiddenFor(model => model.MaDH)
+    @Html.HiddenFor(model => model.MaDH)
 
-        <div class="form-group">
-            <div class="col-md-10">
-                @Html.HiddenFor(model => model.TongTien, new { htmlAttributes = new { @class = "form-control" } })
-            </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.HiddenFor(model => model.TongTien, new { htmlAttributes = new { @class = "form-control" } })
         </div>
+    </div>
 
-        <div class="form-group">
-            <div class="col-md-10">
-                @Html.HiddenFor(model => model.MaKH, new { htmlAttributes = new { @class = "form-control" } })
-            </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.HiddenFor(model => model.MaKH, new { htmlAttributes = new { @class = "form-control" } })
         </div>
+    </div>
 
-        <div class="form-group">
-            <div class="col-md-10">
-                @Html.HiddenFor(model => model.NgayBan, new { htmlAttributes = new { @class = "form-control" } })
-            </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            @Html.HiddenFor(model => model.NgayBan, new { htmlAttributes = new { @class = "form-control" } })
         </div>
+    </div>
 
 
-        <div id="CTDonHang">
-            <b>
-                Mã đơn hàng: <span style="font-size: 24px;">
-                    @Html.DisplayFor(model => model.MaDH)
-                </span>
-            </b>
-            <br /> <br />
-            Ngày lập đơn: @Html.DisplayFor(model => model.NgayBan)
-            <br />
+    <div id="CTDonHang">
+        <b>
+            Mã đơn hàng: <span style="font-size: 24px;">
+                @Html.DisplayFor(model => model.MaDH)
+            </span>
+        </b>
+        <br /> <br />
+        Ngày lập đơn: @Html.DisplayFor(model => model.NgayBan)
+        <br />
 
-            @if (Model.CTDHs.Count == 0)
-            {
-                <p>Trạng thái: Đã huỷ</p>
-            }
-            else
-            {
-                <p>Trạng thái: @Html.DropDownList("TrangThai", null, htmlAttributes: new { @class = "form-control", @id = "drop_TT" })</p>
-            }
+        @if (Model.CTDHs.Count == 0)
+        {
+            <p>Trạng thái: Đã huỷ</p>
+        }
+        else
+        {
+            <p>Trạng thái: @Html.DropDownList("TrangThai", null, htmlAttributes: new { @class = "form-control", @id = "drop_TT" })</p>
+        }
 
 
-        </div>
+    </div>
 
-        <div class="form-group">
+    <table class="table">
+        <tr>
+            <th>Mã sản phẩm</th>
+            <th>Tên sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Đơn giá</th>
+            <th>Chiết khấu</th>
+            <th>Tổng</th>
+            <th>xóa</th>
+            @*<th>Xoá</th>*@
+        </tr>
+        @foreach (var item in Model.CTDHs)
+        {
+
+            <tr>
+                <td id="txt_MaSP">@item.MaSP</td>
+                <td>
+                    <div id="txt_TenSP">
+                        @item.SanPham.TenSP
+                    </div>
+                </td>
+
+
+                <td id="txt_SL">
+                    <input max="@item.SanPham.SL" min="1" type="number" value="@item.SL" id="sl" name="sl">
+                </td>
+                <td>@item.DonGia.ToString("N0")</td>
+                <td id="txt_ChietKhau">
+                    <input id="s1" max="@item.DonGia*@item.SL" min="0" step="10000" type="number" value="@item.ChietKhau" name="chieckhau">
+                </td>
+                <td>@((item.DonGia * item.SL - item.ChietKhau).ToString("N0"))</td>
+                <td id="Button_DeleteCTDH">
+                    @if (Model.CTDHs.Count == 1)
+                    {
+                        <a href="@Url.Action("DeleteOrderDetails", "CTDHs", new {madh = item.MaDH, masp = item.MaSP, count = Model.CTDHs.Count() })"
+                           onclick="return confirm ('Bạn có chắc muốn xoá sản phẩm cuối? Điều này sẽ dẫn đến đơn sẽ bị huỷ?')">
+                            <img src="~/Images/trash.png" width="15" />
+                        </a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("DeleteOrderDetails", "CTDHs", new {madh = item.MaDH, masp = item.MaSP, count = Model.CTDHs.Count() })"
+                           onclick="return confirm ('Bạn có chắc muốn xoá sản phẩm?')">
+                            <img src="~/Images/trash.png" width="15" />
+                        </a>
+                    }
+
+                </td>
+
+            </tr>
+
+            @Html.Hidden("maSP", item.MaSP)
+            @Html.Hidden("maDH", Model.MaDH)
+            @Html.Hidden("dongia", item.DonGia)
+
+        }
+    </table>
+
+    <p id="TongTien">Tổng tiền: <span style="color:red">@(Model.TongTien.ToString("N0")) @("đ")</span></p>
+
+    <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Lưu" class="btn btn-default" id="button_Edit" />
             </div>
         </div>
-    </div>
-}
 
-
-
-<div class="Header">
-    <img src="~/Images/user_QT.png"
-         id="User_icon"
-         width="45" />
-    <a href="~/SanPhams/QT_SanPham">
-        <img id="Logo_Header"
-             src="~/Images/bird.png"
-             width="99" />
-        <p id="Text_Header">LaptopNganNgo</p>
-    </a>
-
-    <a href="~/SanPhams/QT_SanPham">
-        <p id="Product_SanPham">Sản phẩm</p>
-    </a>
-    <a href="~/DonHangs/Index">
-        <p id="Product_DonHang">Đơn hàng</p>
-    </a>
-    <p id="Product_KhachHang">Khách hàng</p>
-    <p id="Product_DoanhThu">Doanh thu</p>
-    <p id="Product_TaiKhoan">Tài khoản</p>
-
-    <span id="rectangle"></span>
 </div>
 
-<div class="Body">
-
-    @*<a href="~/DonHangs/Index">
-            <img id="Back"
-                 src="~/Images/previous.png" />
-        </a>*@
 
 
-    @if (Model.KhachHang.GioiTinh == "Nam")
-    {
-        <img id="Img_DH"
-             width="101"
-             height="101"
-             src="~/Images/male.png" />
-    }
-    else if (Model.KhachHang.GioiTinh == "Nữ")
-    {
-        <img id="Img_DH"
-             width="101"
-             height="101"
-             src="~/Images/female.png" />
-    }
-    else
-    {
-        <img id="Img_DH"
-             width="101"
-             height="101"
-             src="~/Images/rainbow-flag.png" />
     }
 
-    <div id="text_TTKH">
 
-        <b>Thông tin khách hàng:</b>
 
-        <br /> <br />
 
-        Khách hàng: @Html.DisplayFor(model => model.KhachHang.HoTen)
-        <br />
-        Số điện thoại: @Html.DisplayFor(model => model.KhachHang.DienThoai)
-        <br />
-        Email: @Html.DisplayFor(model => model.KhachHang.Email)
-        <br />
-        Địa chỉ: @Html.DisplayFor(model => model.KhachHang.DiaChi)
+    <div class="Header">
+        <img src="~/Images/user_QT.png"
+             id="User_icon"
+             width="45" />
+        <a href="~/SanPhams/QT_SanPham">
+            <img id="Logo_Header"
+                 src="~/Images/bird.png"
+                 width="99" />
+            <p id="Text_Header">LaptopNganNgo</p>
+        </a>
 
+        <a href="~/SanPhams/QT_SanPham">
+            <p id="Product_SanPham">Sản phẩm</p>
+        </a>
+        <a href="~/DonHangs/Index">
+            <p id="Product_DonHang">Đơn hàng</p>
+        </a>
+        <p id="Product_KhachHang">Khách hàng</p>
+        <p id="Product_DoanhThu">Doanh thu</p>
+        <p id="Product_TaiKhoan">Tài khoản</p>
+
+        <span id="rectangle"></span>
     </div>
 
+    <div class="Body">
 
 
+        @if (Model.KhachHang.GioiTinh == "Nam")
+        {
+            <img id="Img_DH"
+                 width="101"
+                 height="101"
+                 src="~/Images/male.png" />
+        }
+        else if (Model.KhachHang.GioiTinh == "Nữ")
+        {
+            <img id="Img_DH"
+                 width="101"
+                 height="101"
+                 src="~/Images/female.png" />
+        }
+        else
+        {
+            <img id="Img_DH"
+                 width="101"
+                 height="101"
+                 src="~/Images/rainbow-flag.png" />
+        }
 
-    <div id="button_Delete">Huỷ đơn</div>
+        <div id="text_TTKH">
 
-</div>
+            <b>Thông tin khách hàng:</b>
 
-<div>
-    @if (Session["HoTen"] != null)
-    {
-        <p id="Hello_Text">@Session["HoTen"].ToString()</p>
-        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
-    }
-    else if (Session["Email"] != null && Session["HoTen"] == null)
-    {
-        <p id="Hello_Text">Chào bạn,</p>
-        <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
-    }
+            <br /> <br />
 
-</div>
+            Khách hàng: @Html.DisplayFor(model => model.KhachHang.HoTen)
+            <br />
+            Số điện thoại: @Html.DisplayFor(model => model.KhachHang.DienThoai)
+            <br />
+            Email: @Html.DisplayFor(model => model.KhachHang.Email)
+            <br />
+            Địa chỉ: @Html.DisplayFor(model => model.KhachHang.DiaChi)
 
-<div class="Footer">
-    <p id="Footer_Text">
-        2021
-        <br />Powered by Squad Ngáo Ngơ
-    </p>
-</div>
+        </div>
+
+    </div>
+
+    <div>
+        @if (Session["HoTen"] != null)
+        {
+            <p id="Hello_Text">@Session["HoTen"].ToString()</p>
+            <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+        }
+        else if (Session["Email"] != null && Session["HoTen"] == null)
+        {
+            <p id="Hello_Text">Chào bạn,</p>
+            <a href="@Url.Action("LogOut", "QT_DangNhap")" id="Button_LogOut">Đăng xuất</a>
+        }
+
+    </div>
+
+    <div class="Footer">
+        <p id="Footer_Text">
+            2021
+            <br />Powered by Squad Ngáo Ngơ
+        </p>
+    </div>
