@@ -8,563 +8,563 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbs93vE1laE+WFk3PWNU1tAAAAAACAAAAAAAQZgAAAAEAACAAAADqAAd4sWAHW7F+3GwrguWzYq/Pw/aPf8gikjEqDNAWOwAAAAAOgAAAAAIAACAAAACAwrhkbz8A7NJEHptr7p1HDIZ1GXfzrSueSeu7x6Y5pyAAAADICKcDTIR6qZmOzhhBNzMk9X4Hnxjke3XXGBs8UfAmtkAAAAA6yGRU1fs++t+5Fja6vTkD/hlYbxRE74u201rKaqvD4u+2UtMHRVDgMo2n1yh0UGuXS2/NBrhs+wmUuuP2LE7y</EncryptedPassword>
     <_PublishTargetUrl>ftp://cntttest.vanlanguni.edu.vn:18085</_PublishTargetUrl>
-    <History>True|2021-06-02T09:02:40.0115514Z;True|2021-06-01T17:35:14.8924333+07:00;True|2021-05-30T15:31:15.5848716+07:00;True|2021-05-29T17:19:09.4855281+07:00;True|2021-05-28T17:33:09.0869273+07:00;True|2021-05-27T15:50:26.3721496+07:00;True|2021-05-27T11:41:36.1630147+07:00;True|2021-05-27T11:34:41.4671944+07:00;True|2021-05-26T22:00:40.6910123+07:00;True|2021-05-26T17:37:11.8669972+07:00;True|2021-05-25T17:48:31.1654032+07:00;True|2021-05-25T17:06:17.1131221+07:00;True|2021-05-24T22:09:55.5979826+07:00;True|2021-05-24T21:04:46.5792119+07:00;True|2021-05-24T18:46:17.2022756+07:00;</History>
+    <History>True|2021-06-02T09:55:29.1459871Z;True|2021-06-02T16:02:40.0115514+07:00;True|2021-06-01T17:35:14.8924333+07:00;True|2021-05-30T15:31:15.5848716+07:00;True|2021-05-29T17:19:09.4855281+07:00;True|2021-05-28T17:33:09.0869273+07:00;True|2021-05-27T15:50:26.3721496+07:00;True|2021-05-27T11:41:36.1630147+07:00;True|2021-05-27T11:34:41.4671944+07:00;True|2021-05-26T22:00:40.6910123+07:00;True|2021-05-26T17:37:11.8669972+07:00;True|2021-05-25T17:48:31.1654032+07:00;True|2021-05-25T17:06:17.1131221+07:00;True|2021-05-24T22:09:55.5979826+07:00;True|2021-05-24T21:04:46.5792119+07:00;True|2021-05-24T18:46:17.2022756+07:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/EntityFramework.dll">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="bin/EntityFramework.SqlServer.dll">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/PagedList.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/PagedList.Mvc.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe.config">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/csc.rsp">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/csi.exe">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/csi.exe.config">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/csi.rsp">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/System.Buffers.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/System.Collections.Immutable.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/System.Memory.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/System.Numerics.Vectors.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/System.Reflection.Metadata.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/System.Runtime.CompilerServices.Unsafe.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe.config">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.rsp">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe.config">
-      <publishTime>01/06/2021 10:19:39</publishTime>
+      <publishTime>06/01/2021 10:19:39</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="bin/System.Web.Webpages.Deployment.dll">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="bin/System.Web.Webpages.dll">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="bin/System.Web.Webpages.Razor.dll">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="bin/Test.dll">
-      <publishTime>06/02/2021 16:02:30</publishTime>
+      <publishTime>02/06/2021 16:02:30</publishTime>
     </File>
     <File Include="bin/Test.pdb">
-      <publishTime>06/02/2021 16:02:30</publishTime>
+      <publishTime>02/06/2021 16:02:30</publishTime>
     </File>
     <File Include="Content/PagedList.css">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_CSKH.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_DangKy.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_DangNhap.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_GioHang.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_GioHang_Empty.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_TimKiemSP.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/02/2021 16:35:24</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_TImKiemSP_NotFound.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_TrangChu.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/02/2021 16:32:57</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_TT_DangKy.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_TT_DangNhap.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_TT_DatMua.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_TT_DiaChi.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_TT_LoTrinh.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_TT_SuaGioHang.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_TT_ThanhCong.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_BanHang/Style_XemSP.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_QuanTri/Style_CapNhatSP.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_QuanTri/Style_DangKy.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_QuanTri/Style_DangNhap.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_QuanTri/Style_DangSP.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_QuanTri/Style_DonHang.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/02/2021 16:53:44</publishTime>
     </File>
     <File Include="css/Style_QuanTri/Style_TaiKhoanQT.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_QuanTri/Style_ThemHangSP.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="css/Style_QuanTri/Style_TrangChu.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/02/2021 16:49:17</publishTime>
     </File>
     <File Include="css/Style_QuanTri/Style_XemCTDH.css">
-      <publishTime>01/06/2021 17:29:16</publishTime>
+      <publishTime>06/01/2021 17:29:16</publishTime>
     </File>
     <File Include="css/Style_QuanTri/Style_XemCTTrangChu.css">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/0257_270px-Black_triangle.svg.jpg">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/ahihi.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/ArrowIcon.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/back_TimKiemSP.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/bird.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/down-arrow.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/facebook.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/FB.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/female.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/google.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/H1.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/H2.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/H3.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/H4.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/H5.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/HA.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/HAHA.jpg">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/HAHU.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/HEHE.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/hihi.jpg">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/hoho.jpg">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/Home_page_1.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/Home_page_2.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/Home_page_3.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/Home_page_4.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/Home_page_5.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/HotDeal1.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/HotDeal2.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/HotDeal3.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/HotDeal4.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/HUHU.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/iconfinder_arrow-right-01_186409.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/IG.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/image.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/img_227643.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/JP_Clipboard_Image.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/JP_Clipboard_Image1.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/JP_Clipboard_Image2.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/JP_Clipboard_Image3.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/JP_Clipboard_Image4.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/key.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/male.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/next.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/next_TimKiemSP.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/password-icon-28.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/policy.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/previous.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/promotion.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/question.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/rainbow-flag.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/royal-alphabet-crown-letter-english-l-512.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/sad.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/search.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/send.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/shopping-cart.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/SP1.jpg">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/SP2.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/SP3.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/SP4.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/SP5.png">
-      <publishTime>01/06/2021 10:19:37</publishTime>
+      <publishTime>06/01/2021 10:19:37</publishTime>
     </File>
     <File Include="Images/SP6.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/star.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/support.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/tich.jpg">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/trash.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/truck.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/twitter.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/tym.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/user.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/user2.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/user_CSKH.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/user_QT.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Images/wrench.png">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Models/CT25Team24.edmx.diagram">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/CSKH/Index.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/CTDHs/Create.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/CTDHs/Delete.cshtml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Views/CTDHs/DeleteOrderDetails.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/CTDHs/Details.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/CTDHs/Edit.cshtml">
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Views/CTDHs/GioHang_Empty.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/CTDHs/Index.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/DangNhap/Index.cshtml">
-      <publishTime>01/06/2021 15:53:41</publishTime>
+      <publishTime>06/01/2021 15:53:41</publishTime>
     </File>
     <File Include="Views/DonHangs/Create.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/DonHangs/Delete.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/DonHangs/Details.cshtml">
-      <publishTime>01/06/2021 16:58:45</publishTime>
+      <publishTime>06/01/2021 16:58:45</publishTime>
     </File>
     <File Include="Views/DonHangs/Edit.cshtml">
-      <publishTime>01/06/2021 17:31:57</publishTime>
+      <publishTime>06/01/2021 17:31:57</publishTime>
     </File>
     <File Include="Views/DonHangs/Index.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/DonHangs/TT_ThanhCong.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/HangSPs/Create.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/HangSPs/Delete.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/HangSPs/Edit.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/HangSPs/Index.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/KhachHangs/CapNhat_TT_KH.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/KhachHangs/Delete.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/KhachHangs/Details.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/KhachHangs/Dky_KH.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/KhachHangs/Dky_QT.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/KhachHangs/Dky_TT_KH.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/KhachHangs/Index.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/KhachHangs/TaiKhoan.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/QT_DangKy.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/QT_DangNhap.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/QT_DangNhap/Index.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/SanPhams/Create.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/SanPhams/Delete.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/SanPhams/Details.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/SanPhams/Edit.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/SanPhams/Index.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/SanPhams/QT_SanPham.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/SanPhams/Search.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/SanPhams/Search_NotFound.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/TT_DangNhap/Index.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/TT_DatMua/Index.cshtml">
       <publishTime>05/16/2021 14:31:38</publishTime>
@@ -573,88 +573,88 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/16/2021 14:31:48</publishTime>
     </File>
     <File Include="Views/TT_LoTrinh/Index.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/TT_SuaGioHang/Index.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/TT_ThanhCong/Index.cshtml">
       <publishTime>05/17/2021 13:06:39</publishTime>
     </File>
     <File Include="Views/web.config">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_CSKH.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_DangKy.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_DangNhap.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_GioHang.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_GioHang_Empty.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_QT_CapNhatSP.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_QT_DangSP.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_QT_DonHang.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_QT_TaiKhoan.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_QT_ThemHangSP.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_QT_TrangChu.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_QT_XemCTDH.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_TimKiemSP.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_TimKiemSP_NotFound.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_TrangChu.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_TT_DangKy.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_TT_DangNhap.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_TT_DatMua.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_TT_DiaChi.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_TT_LoTrinh.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_TT_SuaGioHang.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_TT_ThanhCong.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Views/_XemSP.cshtml">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/06/2021 10:19:38</publishTime>
+      <publishTime>06/01/2021 10:19:38</publishTime>
     </File>
   </ItemGroup>
 </Project>

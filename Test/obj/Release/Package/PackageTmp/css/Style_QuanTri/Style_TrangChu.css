@@ -261,6 +261,7 @@
 }
 
 
+
 .ul.pagination {
     display: inline-block;
     position: absolute;
@@ -280,14 +281,40 @@ ul.pagination li {
         transition: background-color .3s;
     }
 
-        ul.pagination li a.active {
-            background-color: #4CAF50;
-            color: white;
-        }
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #FEADB9;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
 
-        ul.pagination li a:hover:not(.active) {
-            background-color: #ddd;
-        }
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #FEADB9;
+    border-color: #FEADB9;
+}
 
 .pagination {
     font-family: 'UTM Avo';
