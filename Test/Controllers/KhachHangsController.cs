@@ -4,6 +4,8 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Security.Cryptography;
+using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using Test.Models;
@@ -74,6 +76,7 @@ namespace Test.Controllers.Website_QuanTri
                 var check = db.KhachHangs.FirstOrDefault(s => s.Email == khachHang.Email);
                 if (check == null)
                 {
+                    khachHang.MatKhau = GetMD5(khachHang.MatKhau);
                     db.Configuration.ValidateOnSaveEnabled = false;
                     db.KhachHangs.Add(khachHang);
                     db.SaveChanges();
@@ -88,6 +91,22 @@ namespace Test.Controllers.Website_QuanTri
 
             return View(khachHang);
         }
+
+        public static string GetMD5(string str)
+        {
+            MD5 md5 = new MD5CryptoServiceProvider();
+            byte[] fromData = Encoding.UTF8.GetBytes(str);
+            byte[] targetData = md5.ComputeHash(fromData);
+            string byte2String = null;
+
+            for (int i = 0; i < targetData.Length; i++)
+            {
+                byte2String += targetData[i].ToString("x2");
+
+            }
+            return byte2String;
+        }
+
 
 
         // GET: KhachHangs/Create
@@ -115,6 +134,7 @@ namespace Test.Controllers.Website_QuanTri
                 var check = db.KhachHangs.FirstOrDefault(s => s.Email == khachHang.Email);
                 if (check == null)
                 {
+                    khachHang.MatKhau = GetMD5(khachHang.MatKhau);
                     db.Configuration.ValidateOnSaveEnabled = false;
                     db.KhachHangs.Add(khachHang);
                     db.SaveChanges();
@@ -155,6 +175,7 @@ namespace Test.Controllers.Website_QuanTri
                 var check = db.KhachHangs.FirstOrDefault(s => s.Email == khachHang.Email);
                 if (check == null)
                 {
+                    khachHang.MatKhau = GetMD5(khachHang.MatKhau);
                     db.Configuration.ValidateOnSaveEnabled = false;
                     db.KhachHangs.Add(khachHang);
                     db.SaveChanges();
