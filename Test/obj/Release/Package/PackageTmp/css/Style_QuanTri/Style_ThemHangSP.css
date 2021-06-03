@@ -500,3 +500,11 @@
     color: red;
 }
 
+.text-danger_TenHang {
+    position: absolute;
+    top: 443px;
+    left: 127px;
+    font-family: 'UTM Avo';
+    font-size: 13px;
+    color: red;
+}

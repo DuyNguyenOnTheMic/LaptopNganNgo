@@ -32,7 +32,7 @@
       <PropertyRef Name="MaHang" />
     </Key>
     <Property Name="MaHang" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="TenHang" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TenHang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="SanPhams" Relationship="Self.FK_SanPham_HangSP" FromRole="HangSP" ToRole="SanPham" />
   </EntityType>
   <EntityType Name="KhachHang">

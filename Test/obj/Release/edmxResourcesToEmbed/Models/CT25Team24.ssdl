@@ -27,7 +27,7 @@
       <PropertyRef Name="MaHang" />
     </Key>
     <Property Name="MaHang" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="TenHang" Type="varchar" MaxLength="50" />
+    <Property Name="TenHang" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="KhachHang">
     <Key>

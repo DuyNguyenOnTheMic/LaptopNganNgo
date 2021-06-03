@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Đăng nhập";
     Layout = "~/Views/QT_DangNhap.cshtml";
 }
@@ -34,8 +33,14 @@
     @using (Html.BeginForm("Index", "QT_DangNhap", FormMethod.Post))
     {
         <form action="Index" method="post">
-            <input name="Email" type="text" placeholder="Địa chỉ email" id="txt_TenDangNhap">
-            <input name="MatKhau" type="password" placeholder="Mật khẩu" id="txt_MatKhau">
+            <input name="Email" type="text" placeholder="Địa chỉ email" id="txt_TenDangNhap"
+                   required="required"
+                   oninvalid="this.setCustomValidity('Nhập email ở đây')"
+                   oninput="this.setCustomValidity('')">
+            <input name="MatKhau" type="password" placeholder="Mật khẩu" id="txt_MatKhau"
+                   required="required"
+                   oninvalid="this.setCustomValidity('Nhập mật khẩu ở đây')"
+                   oninput="this.setCustomValidity('')">
 
             <button id="B1">Đăng nhập</button>
         </form>

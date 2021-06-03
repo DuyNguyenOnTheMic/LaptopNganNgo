@@ -16,7 +16,7 @@
         <div class="form-group">
             <div class="col-md-10">
                 @Html.EditorFor(model => model.TenHang, new { htmlAttributes = new { @class = "form-control", @id = "Add", placeholder = "Tên hãng sản phẩm" } })
-                @Html.ValidationMessageFor(model => model.TenHang, "", new { @class = "text-danger" })
+                @Html.ValidationMessageFor(model => model.TenHang, "", new { @class = "text-danger_TenHang" })
             </div>
         </div>
 
@@ -72,5 +72,5 @@
 
 </div>
 
-<a href="~/SanPhams/Create"><button id="btn_back">Huỷ</button></a>
+<a href="~/HangSPs/Index"><button id="btn_back">Huỷ</button></a>
 
