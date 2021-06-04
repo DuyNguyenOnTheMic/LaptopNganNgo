@@ -63,14 +63,13 @@ namespace Test.Controllers
 
         [HttpPost]
         public ActionResult Create(int id, int sl, int dongia)
-        {
+        {          
             var ID = db.SanPhams.Find(id);
             ShoppingCart.Add(new CTDH
             {
                 SanPham = ID,
                 SL = sl,
                 DonGia = dongia,
-
 
             });
 

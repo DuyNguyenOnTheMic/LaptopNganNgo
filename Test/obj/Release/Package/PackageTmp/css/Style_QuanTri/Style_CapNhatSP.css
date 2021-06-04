@@ -964,3 +964,13 @@
     .button_Delete:hover {
         background: linear-gradient(#BC85A3,rgba(151,153,186,0.5));
     }
+
+#Delete_Error {
+    position: absolute;
+    top: 300px;
+    left: 127px;
+    font-family: 'UTM Avo';
+    font-size: 18.0px;
+    color: red;
+    z-index: +1;
+}

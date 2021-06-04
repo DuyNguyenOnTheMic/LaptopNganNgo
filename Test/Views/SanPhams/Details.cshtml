@@ -6,25 +6,6 @@
     Layout = "~/Views/_XemSP.cshtml";
 }
 
-@*<div>
-        <dl class="dl-horizontal">
-
-            <dt>
-                @Html.DisplayNameFor(model => model.HinhAnhSP)
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.HinhAnhSP)
-            </dd>
-
-
-        </dl>
-    </div>
-
-    <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.MaSP }) |
-        @Html.ActionLink("Back to List", "Index")
-    </p>*@
 
 <div id="header">
     <div class="rectangle"></div>
@@ -219,7 +200,14 @@ Trợ Giúp</pre>
         <div class="KhuyenMai">
             <div id="KM_square1"></div>
             <div>
-                <input type="submit" id="KM_square2" value="THÊM VÀO GIỎ HÀNG" />
+                @if (Model.SL == 0)
+                {
+                    <div id="KM_square2" onclick="myFunction()">THÊM VÀO GIỎ HÀNG</div id="KM_square2">
+                }
+                else
+                {
+                    <input type="submit" id="KM_square2" value="THÊM VÀO GIỎ HÀNG" />
+                }
             </div>
             <div id="KM_square3">MUA NGAY</div>
             <p id="KMvaQT">KHUYẾN MÃI VÀ QUÀ TẶNG:</p>
@@ -294,7 +282,7 @@ Trợ Giúp</pre>
 <div class="ChiTietCauHinh">
     <p id="CTCH_test1">CHI TIẾT CẤU HÌNH:</p>
     <div id="CTCH_square">
-        
+
         <pre id="CTCH_test2">
 @Model.ThongTinChiTietSP.TrimStart()
 	</pre>
@@ -426,3 +414,10 @@ Nguyễn Thị E		<p id="cmt_day3">--3/1/2020--</p>
 
     <div id="CMT_square_MoreCmt">Xem thêm bình luận</div>
 </div>
+
+
+<script>
+function myFunction() {
+  alert("Xin lỗi, sản phẩm này hiện đã hết :(");
+}
+</script>

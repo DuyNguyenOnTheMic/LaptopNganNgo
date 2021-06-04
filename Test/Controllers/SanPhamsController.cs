@@ -191,18 +191,17 @@ namespace Test.Controllers.Website_QuanTri
                                 {
                                     System.IO.File.Delete(oldImgPath);
                                 }
-                                TempData["msg"] = "Data Updated";
                                 return RedirectToAction("QT_SanPham");
                             }
                         }
                         else
                         {
-                            ViewBag.msg = "File Size must be Equal or less than 4mb";
+                            ViewBag.msg = "Hình ảnh phải lớn hơn hoặc bằng 4MB!";
                         }
                     }
                     else
                     {
-                        ViewBag.msg = "Inavlid File Type";
+                        ViewBag.msg = "Định dạng file không hợp lệ!";
                     }
                 }
                 else
@@ -211,7 +210,6 @@ namespace Test.Controllers.Website_QuanTri
                     db.Entry(sanpham).State = EntityState.Modified;
                     if (db.SaveChanges() > 0)
                     {
-                        TempData["msg"] = "Data Updated";
                         return RedirectToAction("QT_SanPham", "SanPhams");
                     }
 
@@ -238,17 +236,24 @@ namespace Test.Controllers.Website_QuanTri
             {
                 return HttpNotFound();
             }
-            string currentImg = Request.MapPath(sanpham.HinhAnhSP);
-            db.Entry(sanpham).State = EntityState.Deleted;
-            if (db.SaveChanges() > 0)
+            try
             {
-                if (System.IO.File.Exists(currentImg))
+                string currentImg = Request.MapPath(sanpham.HinhAnhSP);
+                db.Entry(sanpham).State = EntityState.Deleted;
+                if (db.SaveChanges() > 0)
                 {
-                    System.IO.File.Delete(currentImg);
+                    if (System.IO.File.Exists(currentImg))
+                    {
+                        System.IO.File.Delete(currentImg);
+                    }
+                    return RedirectToAction("QT_SanPham");
                 }
-                TempData["msg"] = "Data Deleted";
-                return RedirectToAction("QT_SanPham");
             }
+            catch (Exception)
+            {
+                TempData["msg"] = String.Format("Bạn không thể xoá sản phẩm đã có trong đơn hàng!");
+                return RedirectToAction("Edit", new { id = sanpham.MaSP });
+            }          
 
             return View();
         }
