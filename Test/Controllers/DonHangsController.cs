@@ -37,7 +37,7 @@ namespace Test.Controllers
 
         // GET: DonHangs
 
-        public ActionResult Index(int? keyword, int? page, int? category)
+        public ActionResult Index(string keyword, int? page, int? category)
         {
             db = new CT25Team24Entities();
 
@@ -45,17 +45,24 @@ namespace Test.Controllers
             {
                 return Redirect("~/QT_DangNhap/Index");
             }
+            bool notfound = db.DonHangs.Any(x => x.MaDH.ToString().Contains(keyword.ToString()) || keyword == null);
+            if (!notfound)
+            {
+                return RedirectToAction("QT_DHNotFound");
+            }
             if (category != null)
             {
                 ViewBag.category = category;
                 return View(db.DonHangs.Where(x => x.MaDH.ToString().Contains(keyword.ToString()) || keyword == null)
                 .Where(x => x.TrangThai == category).ToList().OrderByDescending(x => x.MaDH).ToPagedList(page ?? 1, 6));
             }
-            else
-            {
                 return View(db.DonHangs.Where(x => x.MaDH.ToString().Contains(keyword.ToString()) || keyword == null)
                 .ToList().OrderByDescending(x => x.MaDH).ToPagedList(page ?? 1, 6));
-            }
+        }
+
+        public ActionResult QT_DHNotFound()
+        {
+            return View();
         }
 
         // GET: DonHangs/Details/5

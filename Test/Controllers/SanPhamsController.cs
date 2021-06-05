@@ -37,14 +37,26 @@ namespace Test.Controllers.Website_QuanTri
                 return Redirect("~/QT_DangNhap/Index");
             }
             db = new CT25Team24Entities();
-            List<SanPham> listSP = db.SanPhams.ToList();
-            return View(db.SanPhams.Where(x => x.TenSP.ToLower().Contains(keyword.ToLower()) || keyword==null).ToList().OrderByDescending(x => x.MaSP).ToPagedList(page ?? 1, 4));
+            var searchSP = db.SanPhams.Where(x => x.TenSP.ToLower().Contains(keyword.ToLower()) || keyword == null).ToList().OrderByDescending(x => x.MaSP).ToPagedList(page ?? 1, 4);
+            if (searchSP.Count() == 0)
+            {
+                return RedirectToAction("QT_SPNotFound");
+            }
+            return View(searchSP);
+        }
+
+        public ActionResult QT_SPNotFound()
+        {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Redirect("~/QT_DangNhap/Index");
+            }
+            return View();
         }
 
         public ActionResult Search(string keyword, int? page)
         {           
             db = new CT25Team24Entities();
-            List<SanPham> listSP = db.SanPhams.ToList();          
             ViewBag.keyword = keyword;
             bool notfound = db.SanPhams.Any(x => x.TenSP.ToLower().Contains(keyword.ToLower()));
             if (!notfound)

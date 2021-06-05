@@ -117,6 +117,8 @@
     <Content Include="css\Style_BanHang\Style_XemSP.css" />
     <Content Include="css\Style_BanHang\Style_DangNhap.css" />
     <Content Include="css\Style_BanHang\Style_CSKH.css" />
+    <Content Include="css\Style_QuanTri\Style_DHNotFound.css" />
+    <Content Include="css\Style_QuanTri\Style_SPNotFound.css" />
     <Content Include="css\Style_QuanTri\Style_TaiKhoanQT.css" />
     <Content Include="css\Style_QuanTri\Style_ThemHangSP.css" />
     <Content Include="css\Style_QuanTri\Style_DangSP.css" />
@@ -132,6 +134,7 @@
     <Content Include="Images\ahihi.png" />
     <Content Include="Images\back_TimKiemSP.png" />
     <Content Include="Images\bird.png" />
+    <Content Include="Images\box.png" />
     <Content Include="Images\down-arrow.png" />
     <Content Include="Images\facebook.png" />
     <Content Include="Images\FB.png" />
@@ -343,6 +346,10 @@
     <Content Include="Views\_QT_TaiKhoan.cshtml" />
     <Content Include="Views\_GioHang_Empty.cshtml" />
     <Content Include="Views\CTDHs\GioHang_Empty.cshtml" />
+    <Content Include="Views\SanPhams\QT_SPNotFound.cshtml" />
+    <Content Include="Views\_QT_SPNotFound.cshtml" />
+    <Content Include="Views\_QT_DHNotFound.cshtml" />
+    <Content Include="Views\DonHangs\QT_DHNotFound.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
