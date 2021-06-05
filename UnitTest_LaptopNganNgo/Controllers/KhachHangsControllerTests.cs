@@ -74,8 +74,23 @@ namespace Test.Controllers.Website_QuanTri.Tests
             Assert.IsNotNull(result0);
         }
 
+        //False
         [TestMethod()]
         public void Test_Details_View_Data_KhachHang()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var result = controller.Details(3) as ViewResult;
+            var khachhang = (KhachHang)result.ViewData.Model;
+
+            //Assert
+            Assert.AreEqual("Hoàng Minh Thuận", khachhang.HoTen);
+        }
+        //True
+        [TestMethod()]
+        public void Test_Details_View_Data_KhachHang2()
         {
             //Arrange
             var controller = new KhachHangsController();

@@ -17,23 +17,23 @@ namespace Test.Controllers
 
         private List<CTDH> ShoppingCart = null;
 
-        public CTDHsController()
+        public void GetCTDHsController()
         {
-            var session = System.Web.HttpContext.Current.Session;
-            if (session["ShoppingCart"] != null)
+            if (Session["ShoppingCart"] != null)
             {
-                ShoppingCart = session["ShoppingCart"] as List<CTDH>;
+                ShoppingCart = Session["ShoppingCart"] as List<CTDH>;
             }
             else
             {
                 ShoppingCart = new List<CTDH>();
-                session["ShoppingCart"] = ShoppingCart;
+                Session["ShoppingCart"] = ShoppingCart;
             }
         }
 
         // GET: CTDHs
         public ActionResult Index()
         {
+            GetCTDHsController();
             if ((Session["ShoppingCart"] as List<CTDH>)?.Count == null || (Session["ShoppingCart"] as List<CTDH>)?.Count == 0)
             {
                 return RedirectToAction("GioHang_Empty");
@@ -64,14 +64,13 @@ namespace Test.Controllers
         [HttpPost]
         public ActionResult Create(int id, int sl, int dongia)
         {
+            GetCTDHsController();
             var ID = db.SanPhams.Find(id);
             ShoppingCart.Add(new CTDH
             {
                 SanPham = ID,
                 SL = sl,
-                DonGia = dongia,
-
-
+                DonGia = dongia
             });
 
             return RedirectToAction("Index");
@@ -82,10 +81,9 @@ namespace Test.Controllers
         [HttpPost]
         public ActionResult Edit(int[] id, int[] sl, double[] dongia)
         {
-            var session = System.Web.HttpContext.Current.Session;
+            GetCTDHsController();
+            //var session = System.Web.HttpContext.Current.Session;
             ShoppingCart.Clear();
-            if (id != null)
-            {
                 for (int i = 0; i < id.Length; i++)
                 {
                     var SP = db.SanPhams.Find(id[i]);
@@ -96,26 +94,37 @@ namespace Test.Controllers
                         DonGia = dongia[i]
                     });
                 }
-            }
-            session["ShoppingCart"] = ShoppingCart;
+            Session["ShoppingCart"] = ShoppingCart;
 
             return RedirectToAction("Index");
         }
-
-        
 
         public ActionResult Delete(int masp)
         {
-            var session = System.Web.HttpContext.Current.Session;
+            GetCTDHsController();
+            //var session = System.Web.HttpContext.Current.Session;
             ShoppingCart.RemoveAll(x => x.SanPham.MaSP == masp);
-            session["ShoppingCart"] = ShoppingCart;
+            Session["ShoppingCart"] = ShoppingCart;
             return RedirectToAction("Index");
         }
 
+        public double Total
+        {
+            get
+            {
+                double total = 0;
+                foreach (var item in ShoppingCart)
+                {
+                    total += (item.SL * item.DonGia);
+                }
+                return total;
+            }
+        }
 
-        // GET: CTDHs1/Delete/5
-        public ActionResult DeleteOrderDetails(int madh, int masp, int count)
-        {          
+            // GET: CTDHs1/Delete/5
+            public ActionResult DeleteOrderDetails(int madh, int masp, int count)
+        {
+            GetCTDHsController();
             CTDH cTDH = db.CTDHs.Find(madh, masp);
             if (cTDH == null)
             {
