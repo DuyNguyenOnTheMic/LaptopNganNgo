@@ -183,7 +183,10 @@ namespace Test.Controllers
                         ThanhTien = (dongia[i] * sl[i]) - chieckhau[i],
                         ChietKhau = chieckhau[i]
                     });
-                  
+                  if (donHang.TrangThai == 4)
+                    {
+                        SP.SL = SP.SL + sl[i];                      
+                    }
                 }
                 donHang.TongTien = money;
                 db.Entry(donHang).State = EntityState.Modified;
