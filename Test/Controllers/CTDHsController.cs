@@ -108,19 +108,6 @@ namespace Test.Controllers
             return RedirectToAction("Index");
         }
 
-        public double Total
-        {
-            get
-            {
-                double total = 0;
-                foreach (var item in ShoppingCart)
-                {
-                    total += (item.SL * item.DonGia);
-                }
-                return total;
-            }
-        }
-
             // GET: CTDHs1/Delete/5
             public ActionResult DeleteOrderDetails(int madh, int masp, int count)
         {
