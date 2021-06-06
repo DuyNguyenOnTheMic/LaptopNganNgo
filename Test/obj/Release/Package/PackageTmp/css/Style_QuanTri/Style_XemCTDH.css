@@ -433,6 +433,7 @@ th {
 }
 
 #sl {
+    width: 50px;
     font-family: 'UTM Avo';
     font-size: 18px;
     text-align: center;
