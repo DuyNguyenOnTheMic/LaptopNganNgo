@@ -79,7 +79,9 @@
 
 
                 <td id="txt_SL">
-                    <input max="@item.SanPham.SL" min="1" type="number" value="@item.SL" id="sl" name="sl">
+                    <input max="@item.SanPham.SL" min="1" type="number" value="@item.SL" id="sl" name="sl"
+                    oninvalid="this.setCustomValidity('Bạn không thể nhập số lượng nhỏ hơn 0 và lớn hơn số lượng tồn kho. Sản phẩm này hiện còn tồn @item.SanPham.SL cái!')"
+                    oninput="this.setCustomValidity('')">
                 </td>
                 <td>@item.DonGia.ToString("N0")</td>
                 <td id="txt_ChietKhau">
