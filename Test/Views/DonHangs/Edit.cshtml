@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Chi tiết đơn hàng";
     Layout = "~/Views/_QT_XemCTDH.cshtml";
+    int maxstock = 0;
 }
 
 
@@ -68,7 +69,7 @@
         </tr>
         @foreach (var item in Model.CTDHs)
         {
-
+            maxstock = @item.SanPham.SL + @item.SL;
             <tr>
                 <td id="txt_MaSP">@item.MaSP</td>
                 <td>
@@ -79,8 +80,8 @@
 
 
                 <td id="txt_SL">
-                    <input min="1" type="number" value="@item.SL" id="sl" name="sl"
-                    oninvalid="this.setCustomValidity('Bạn không thể nhập số lượng nhỏ hơn 0')"
+                    <input max="@maxstock" min="1" type="number" value="@item.SL" id="sl" name="sl"
+                    oninvalid="this.setCustomValidity('Bạn không thể nhập số lượng nhỏ hơn 0 hoặc lớn hơn số lượng tồn kho. Sản phẩm này hiện còn tồn @item.SanPham.SL cái!')"
                     oninput="this.setCustomValidity('')">
                 </td>
                 <td>@item.DonGia.ToString("N0")</td>

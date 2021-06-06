@@ -214,7 +214,7 @@ Trợ Giúp</pre>
 
                     <input id="s1" max="@item.SanPham.SL" min="1"
                            name="sl" type="number" value="@item.SL"
-                           oninvalid="this.setCustomValidity('Bạn không thể nhập số lượng nhỏ hơn 0 và lớn hơn số lượng tồn kho. Sản phẩm này hiện còn tồn @item.SanPham.SL cái!')"
+                           oninvalid="this.setCustomValidity('Bạn không thể nhập số lượng nhỏ hơn 0 hoặc lớn hơn số lượng tồn kho. Sản phẩm này hiện còn tồn @item.SanPham.SL cái!')"
                            oninput="this.setCustomValidity('')">
                     <input type="image" id="R1" src="~/Images/trash.png " formaction="@Url.Action("Delete", new { masp = item.SanPham.MaSP})" method="post" />
                     <p id="pic1">
