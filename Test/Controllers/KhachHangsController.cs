@@ -50,10 +50,10 @@ namespace Test.Controllers.Website_QuanTri
         // GET: KhachHangs/Create
         public ActionResult Dky_QT()
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Redirect("~/QT_DangNhap/Index");
-            }
+            //if (!User.Identity.IsAuthenticated)
+            //{
+            //    return Redirect("~/QT_DangNhap/Index");
+            //}
             return View();
         }
 

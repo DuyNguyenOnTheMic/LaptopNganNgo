@@ -32,10 +32,10 @@ namespace Test.Controllers.Website_QuanTri
 
         public ActionResult QT_SanPham(string keyword, int? page)
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Redirect("~/QT_DangNhap/Index");
-            }
+            //if (!User.Identity.IsAuthenticated)
+            //{
+            //    return Redirect("~/QT_DangNhap/Index");
+            //}
             db = new CT25Team24Entities();
             var searchSP = db.SanPhams.Where(x => x.TenSP.ToLower().Contains(keyword.ToLower()) || 
             x.MaSP.ToString().Contains(keyword.ToString()) || keyword == null).ToList().
@@ -49,10 +49,10 @@ namespace Test.Controllers.Website_QuanTri
 
         public ActionResult QT_SPNotFound()
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Redirect("~/QT_DangNhap/Index");
-            }
+            //if (!User.Identity.IsAuthenticated)
+            //{
+            //    return Redirect("~/QT_DangNhap/Index");
+            //}
             return View();
         }
 
@@ -93,10 +93,10 @@ namespace Test.Controllers.Website_QuanTri
         // GET: SanPhams/Create
         public ActionResult Create()
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Redirect("~/QT_DangNhap/Index");
-            }
+            //if (!User.Identity.IsAuthenticated)
+            //{
+            //    return Redirect("~/QT_DangNhap/Index");
+            //}
             ViewBag.MaHangSP = new SelectList(db.HangSPs, "MaHang", "TenHang");
             return View();
         }
@@ -153,10 +153,10 @@ namespace Test.Controllers.Website_QuanTri
         // GET: SanPhams/Edit/5
         public ActionResult Edit(int? id)
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Redirect("~/QT_DangNhap/Index");
-            } else
+            //if (!User.Identity.IsAuthenticated)
+            //{
+            //    return Redirect("~/QT_DangNhap/Index");
+            //} else
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -236,10 +236,10 @@ namespace Test.Controllers.Website_QuanTri
         // GET: SanPhams/Delete/5
         public ActionResult Delete(int? id)
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Redirect("~/QT_DangNhap/Index");
-            } else
+            //if (!User.Identity.IsAuthenticated)
+            //{
+            //    return Redirect("~/QT_DangNhap/Index");
+            //} else
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
