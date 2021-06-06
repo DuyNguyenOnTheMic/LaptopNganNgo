@@ -212,9 +212,8 @@ Trợ Giúp</pre>
                     @Html.Hidden("id", item.SanPham.MaSP)
                     @Html.Hidden("dongia", item.DonGia)
 
-                    <input id="s1" max="@item.SanPham.SL" min="1"  
-                           name="sl" type="number" value="@item.SL"
-                           >
+                    <input id="s1" max="@item.SanPham.SL" min="1"
+                           name="sl" type="number" value="@item.SL">
                     <input type="image" id="R1" src="~/Images/trash.png " formaction="@Url.Action("Delete", new { masp = item.SanPham.MaSP})" method="post" />
                     <p id="pic1">
                         @Html.ActionLink(item.SanPham.TenSP, "Details", "SanPhams", new { id = item.SanPham.MaSP }, new { @class = "myActionlink" })
@@ -222,6 +221,24 @@ Trợ Giúp</pre>
                     <p id="Gia1">@item.DonGia.ToString("N0") @("đ")</p>
                     <p id="Gia2">@((item.DonGia*item.SL).ToString("N0")) @("đ")</p>
 
+                    <script>
+                        // Get DOM reference
+                        var input = document.getElementById("s1");
+
+                        // Add event listener
+                        input.addEventListener("input", function (e) {
+
+                            // Clear any old status
+                            this.setCustomValidity("");
+
+                            // Check for invalid state(s)
+                            if (this.validity.rangeOverflow) {
+                                this.setCustomValidity("Bạn không thể nhập số lượng lớn hơn số lượng tồn kho (hiện sản phẩm còn @item.SanPham.SL cái!)");
+                            } else if (this.validity.rangeUnderflow) {
+                                this.setCustomValidity("Bạn không thể nhập số lượng nhỏ hơn 1");
+                            }
+                        });
+                    </script>
 
                 </div>
                 <hr id="dk2" />
@@ -237,7 +254,6 @@ Trợ Giúp</pre>
 </div>
 
 
-
 @if (User.Identity.IsAuthenticated)
 {
     <a href="~/KhachHangs/CapNhat_TT_KH/@Session["MaKH"].ToString()"><div id="button_ThanhToan">Thanh toán</div></a>
@@ -247,21 +263,3 @@ else
     <a href="@Url.Action("Index", "TT_DangNhap")"><div id="button_ThanhToan">Thanh toán</div></a>
 }
 
-<script>
-    // Get DOM reference
-    var input = document.getElementById("s1");
-
-    // Add event listener
-    input.addEventListener("input", function (e) {
-
-        // Clear any old status
-        this.setCustomValidity("");
-
-        // Check for invalid state(s)
-        if (this.validity.rangeOverflow) {
-            this.setCustomValidity("Bạn không thể nhập số lượng lớn hơn số lượng tồn kho");
-        } else if (this.validity.rangeUnderflow) {
-            this.setCustomValidity("Bạn không thể nhập số lượng nhỏ hơn 1");
-        }
-    });
-</script>

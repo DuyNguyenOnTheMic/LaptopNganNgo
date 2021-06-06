@@ -37,7 +37,9 @@ namespace Test.Controllers.Website_QuanTri
                 return Redirect("~/QT_DangNhap/Index");
             }
             db = new CT25Team24Entities();
-            var searchSP = db.SanPhams.Where(x => x.TenSP.ToLower().Contains(keyword.ToLower()) || keyword == null).ToList().OrderByDescending(x => x.MaSP).ToPagedList(page ?? 1, 4);
+            var searchSP = db.SanPhams.Where(x => x.TenSP.ToLower().Contains(keyword.ToLower()) || 
+            x.MaSP.ToString().Contains(keyword.ToString()) || keyword == null).ToList().
+            OrderByDescending(x => x.MaSP).ToPagedList(page ?? 1, 4);
             if (searchSP.Count() == 0)
             {
                 return RedirectToAction("QT_SPNotFound");
