@@ -171,18 +171,16 @@ namespace Test.Controllers
                 {
                     var cTDH = db.CTDHs.Find(maDH, maSP[i]);
                     money += (dongia[i] * sl[i]) - chieckhau[i];
-                    db.CTDHs.Remove(cTDH);
 
                     var SP = db.SanPhams.Find(maSP[i]);
-                    db.CTDHs.Add(new CTDH
-                    {
-                        SanPham = SP,
-                        SL = sl[i],
-                        MaDH = maDH,
-                        DonGia = dongia[i],
-                        ThanhTien = (dongia[i] * sl[i]) - chieckhau[i],
-                        ChietKhau = chieckhau[i]
-                    });
+
+                    cTDH.SanPham = SP;
+                    cTDH.SL = sl[i];
+                    cTDH.MaDH = maDH;
+                    cTDH.DonGia = dongia[i];
+                    cTDH.ThanhTien = (dongia[i] * sl[i]) - chieckhau[i];
+                    cTDH.ChietKhau = chieckhau[i];
+                    
                   if (donHang.TrangThai == 4)
                     {
                         SP.SL = SP.SL + sl[i];                      

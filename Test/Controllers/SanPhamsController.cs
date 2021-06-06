@@ -60,12 +60,13 @@ namespace Test.Controllers.Website_QuanTri
         {           
             db = new CT25Team24Entities();
             ViewBag.keyword = keyword;
-            bool notfound = db.SanPhams.Any(x => x.TenSP.ToLower().Contains(keyword.ToLower()));
-            if (!notfound)
+            var searchSP = db.SanPhams.Where(x => x.TenSP.ToLower().Contains(keyword.ToLower()) ||
+            x.MaSP.ToString().Contains(keyword.ToString()) || keyword == null).ToList().ToPagedList(page ?? 1, 6);
+            if (searchSP.Count() == 0)
             {
                 return View("Search_NotFound");
             }           
-            return View(db.SanPhams.Where(x => x.TenSP.ToLower().Contains(keyword.ToLower()) || keyword == null).ToList().ToPagedList(page ?? 1, 6));
+            return View(searchSP);
         }
 
         public ActionResult Search_NotFound()
