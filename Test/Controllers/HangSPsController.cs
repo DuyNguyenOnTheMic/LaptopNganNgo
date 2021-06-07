@@ -17,21 +17,22 @@ namespace Test.Controllers
         // GET: HangSPs
         public ActionResult Index()
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Redirect("~/QT_DangNhap/Index");
-            }
+            //if (!User.Identity.IsAuthenticated)
+            //{
+            //    return Redirect("~/QT_DangNhap/Index");
+            //}
             return View(db.HangSPs.ToList());
         }
 
         // GET: HangSPs/Details/5
         public ActionResult Details(int? id)
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Redirect("~/QT_DangNhap/Index");
-            }
-            else if (id == null)
+            //if (!User.Identity.IsAuthenticated)
+            //{
+            //    return Redirect("~/QT_DangNhap/Index");
+            //}
+            //else if (id == null)
+             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
@@ -46,10 +47,10 @@ namespace Test.Controllers
         // GET: HangSPs/Create
         public ActionResult Create()
         {
-             if (!User.Identity.IsAuthenticated)
-            {
-                return Redirect("~/QT_DangNhap/Index");
-            }
+            // if (!User.Identity.IsAuthenticated)
+            //{
+            //    return Redirect("~/QT_DangNhap/Index");
+            //}
             return View();
         }
 
@@ -75,13 +76,14 @@ namespace Test.Controllers
         }
 
         // GET: HangSPs/Edit/5
-        public ActionResult Edit(int? id)
+        public ActionResult Edit(int id)
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Redirect("~/QT_DangNhap/Index");
-            }
-            else if (id == null)
+            //if (!User.Identity.IsAuthenticated)
+            //{
+            //    return Redirect("~/QT_DangNhap/Index");
+            //}
+           //else if
+             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
@@ -118,10 +120,10 @@ namespace Test.Controllers
         {
             try
             {
-                if (!User.Identity.IsAuthenticated)
-                {
-                    return Redirect("~/QT_DangNhap/Index");
-                }
+                //if (!User.Identity.IsAuthenticated)
+                //{
+                //    return Redirect("~/QT_DangNhap/Index");
+                //}
                 HangSP hangSP = db.HangSPs.Find(id);
                 if (hangSP == null)
                 {

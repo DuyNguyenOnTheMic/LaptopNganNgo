@@ -113,7 +113,7 @@
   <ItemGroup>
     <Compile Include="Controllers\CTDHsControllerTests.cs" />
     <Compile Include="Controllers\KhachHangsControllerTests.cs" />
-    <Compile Include="Controllers\SanPhamsControllerTests.cs" />
+    <Compile Include="Controllers\HangSanPhamsControllerTests.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
