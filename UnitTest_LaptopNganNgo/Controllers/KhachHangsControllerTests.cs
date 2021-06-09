@@ -87,5 +87,111 @@ namespace Test.Controllers.Website_QuanTri.Tests
             //Assert
             Assert.AreEqual("Nguyễn Tân Duy", khachhang.HoTen);
         }
+
+        [TestMethod()]
+        public void Test_Details_GioiTinhKH_Data_KhachHang()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var result = controller.Details(2) as ViewResult;
+            var khachhang = (KhachHang)result.ViewData.Model;
+
+            //Assert
+            Assert.AreEqual("Nữ", khachhang.GioiTinh);
+        }
+
+        [TestMethod()]
+        public void Test_Details_DiaChiKH_Data_KhachHang()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var result = controller.Details(3) as ViewResult;
+            var khachhang = (KhachHang)result.ViewData.Model;
+
+            //Assert
+            Assert.AreEqual("HCM", khachhang.DiaChi);
+        }
+
+        [TestMethod()]
+        public void Test_Details_SDTKH_Data_KhachHang()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var result = controller.Details(3) as ViewResult;
+            var khachhang = (KhachHang)result.ViewData.Model;
+
+            //Assert
+            Assert.AreEqual("0705653375", khachhang.DienThoai);
+        }
+
+        [TestMethod()]
+        public void Test_Delete_HoTenKH_Data_KhachHang()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var result = controller.Delete(4) as ViewResult;
+            var khachhang = (KhachHang)result.ViewData.Model;
+
+            //Assert
+            Assert.AreEqual("Trần Quốc Nam", khachhang.HoTen);
+        }
+
+        [TestMethod()]
+        public void Test_Delete_DiaChiKH_Data_KhachHang()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var result = controller.Delete(3) as ViewResult;
+            var khachhang = (KhachHang)result.ViewData.Model;
+
+            //Assert
+            Assert.AreEqual("HCM", khachhang.DiaChi);
+        }
+
+
+        [TestMethod()]
+        public void Test_CapNhat_TT_MatKhauKH_Data_KhachHang()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var result = controller.CapNhat_TT_KH(6) as ViewResult;
+            var khachhang = (KhachHang)result.ViewData.Model;
+
+            //Assert
+            Assert.AreEqual("467329d70768629b6948b530e2cdcb51", khachhang.MatKhau);
+        }
+
+
+        [TestMethod()]
+        public void Test_CapNhat_TT_Email_Data_KhachHang()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var result = controller.CapNhat_TT_KH(6) as ViewResult;
+            var khachhang = (KhachHang)result.ViewData.Model;
+
+            //Assert
+            Assert.AreEqual("ahihi123@gmail.com", khachhang.Email);
+        }
+
+        [TestMethod()]
+        public void Test_Get_Dispose_KhachHang()
+        {
+            using (var controller = new KhachHangsController()) { }
+        }
     }
 }

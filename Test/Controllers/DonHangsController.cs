@@ -41,10 +41,10 @@ namespace Test.Controllers
         {
             db = new CT25Team24Entities();
 
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Redirect("~/QT_DangNhap/Index");
-            }
+            //if (!User.Identity.IsAuthenticated)
+            //{
+            //    return Redirect("~/QT_DangNhap/Index");
+            //}
             bool notfound = db.DonHangs.Any(x => x.MaDH.ToString().Contains(keyword.ToString()) || keyword == null);
             if (!notfound)
             {

@@ -17,28 +17,28 @@ namespace Test.Controllers
 
         private List<CTDH> ShoppingCart = null;
 
-        public CTDHsController()
+        public void GetCTDHsController()
         {
-            var session = System.Web.HttpContext.Current.Session;
-            if (session["ShoppingCart"] != null)
+            if (Session["ShoppingCart"] != null)
             {
-                ShoppingCart = session["ShoppingCart"] as List<CTDH>;
+                ShoppingCart = Session["ShoppingCart"] as List<CTDH>;
             }
             else
             {
                 ShoppingCart = new List<CTDH>();
-                session["ShoppingCart"] = ShoppingCart;
+                Session["ShoppingCart"] = ShoppingCart;
             }
         }
 
         // GET: CTDHs
         public ActionResult Index()
         {
+            GetCTDHsController();
             if ((Session["ShoppingCart"] as List<CTDH>)?.Count == null || (Session["ShoppingCart"] as List<CTDH>)?.Count == 0)
             {
                 return RedirectToAction("GioHang_Empty");
             }
-                var hashtable = new Hashtable();
+            var hashtable = new Hashtable();
             foreach (var item in ShoppingCart)
             {
                 if (hashtable[item.SanPham.MaSP] != null)
@@ -63,14 +63,14 @@ namespace Test.Controllers
 
         [HttpPost]
         public ActionResult Create(int id, int sl, int dongia)
-        {          
+        {
+            GetCTDHsController();
             var ID = db.SanPhams.Find(id);
             ShoppingCart.Add(new CTDH
             {
                 SanPham = ID,
                 SL = sl,
-                DonGia = dongia,
-
+                DonGia = dongia
             });
 
             return RedirectToAction("Index");
@@ -81,40 +81,37 @@ namespace Test.Controllers
         [HttpPost]
         public ActionResult Edit(int[] id, int[] sl, double[] dongia)
         {
-            var session = System.Web.HttpContext.Current.Session;
+            GetCTDHsController();
+            //var session = System.Web.HttpContext.Current.Session;
             ShoppingCart.Clear();
-            if (id != null)
+            for (int i = 0; i < id.Length; i++)
             {
-                for (int i = 0; i < id.Length; i++)
+                var SP = db.SanPhams.Find(id[i]);
+                ShoppingCart.Add(new CTDH
                 {
-                    var SP = db.SanPhams.Find(id[i]);
-                    ShoppingCart.Add(new CTDH
-                    {
-                        SanPham = SP,
-                        SL = sl[i],
-                        DonGia = dongia[i]
-                    });
-                }
+                    SanPham = SP,
+                    SL = sl[i],
+                    DonGia = dongia[i]
+                });
             }
-            session["ShoppingCart"] = ShoppingCart;
+            Session["ShoppingCart"] = ShoppingCart;
 
             return RedirectToAction("Index");
         }
-
-        
 
         public ActionResult Delete(int masp)
         {
-            var session = System.Web.HttpContext.Current.Session;
+            GetCTDHsController();
+            //var session = System.Web.HttpContext.Current.Session;
             ShoppingCart.RemoveAll(x => x.SanPham.MaSP == masp);
-            session["ShoppingCart"] = ShoppingCart;
+            Session["ShoppingCart"] = ShoppingCart;
             return RedirectToAction("Index");
         }
 
-
         // GET: CTDHs1/Delete/5
         public ActionResult DeleteOrderDetails(int madh, int masp, int count)
-        {          
+        {
+            GetCTDHsController();
             CTDH cTDH = db.CTDHs.Find(madh, masp);
             if (cTDH == null)
             {
@@ -129,14 +126,14 @@ namespace Test.Controllers
                 db.CTDHs.Remove(cTDH);
                 db.SaveChanges();
                 return RedirectToAction("Edit", "DonHangs", new { id = madh.ToString() });
-            }          
+            }
             db.CTDHs.Remove(cTDH);
             db.SaveChanges();
             return RedirectToAction("Edit", "DonHangs", new { id = madh.ToString() });
         }
 
 
-       public ActionResult GioHang_Empty()
+        public ActionResult GioHang_Empty()
         {
             return View();
         }
