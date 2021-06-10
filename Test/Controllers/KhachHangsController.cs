@@ -24,10 +24,10 @@ namespace Test.Controllers.Website_QuanTri
 
         public ActionResult TaiKhoan()
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Redirect("~/QT_DangNhap/Index");
-            }
+            //if (!User.Identity.IsAuthenticated)
+            //{
+            //    return Redirect("~/QT_DangNhap/Index");
+            //}
             return View(db.KhachHangs.Where(x=>x.VaiTro == "Admin").ToList());
         }
 

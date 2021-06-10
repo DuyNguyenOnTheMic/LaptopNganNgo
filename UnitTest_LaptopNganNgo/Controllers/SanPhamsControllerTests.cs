@@ -1,10 +1,12 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 using PagedList;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 using System.Web;
 using System.Web.Mvc;
 using Test.Models;
@@ -78,16 +80,48 @@ namespace Test.Controllers.Website_QuanTri.Tests
                 TenSP = "Tlinh",
                 DonGiaGoc = -2,
                 DonGiaKM = 8000000,
-                HinhAnhSP = "HEHe",
                 DongSP = "MCK",
                 SL = 1,
                 TrangThaiSP = "Còn hàng",
                 ThongTinChiTietSP = "BlaBla",
+                MaHangSP = 1
 
             };
             var controller = new SanPhamsController();
-            var result0 = controller.Create() as ViewResult;
-            Assert.IsNotNull(result0);
+
+            var picture = new Mock<HttpPostedFileBase>();
+            var server = new Mock<HttpServerUtilityBase>();
+            var context = new Mock<HttpContextBase>();
+            context.Setup(c => c.Server).Returns(server.Object);
+            controller.ControllerContext = new ControllerContext(context.Object, 
+                new System.Web.Routing.RouteData(), controller);
+
+            var filename = "wowwwww.png";
+            server.Setup(s => s.MapPath(It.IsAny<string>())).Returns<string>(s => s);
+            picture.Setup(p => p.SaveAs(It.IsAny<string>())).Callback<string>(s => filename = s);
+
+            using (var scope = new TransactionScope())
+            {
+                controller.ModelState.Clear();
+                var result1 = controller.Create(picture.Object, sanpham) as RedirectToRouteResult;
+                Assert.IsNotNull(result1);
+                Assert.AreEqual("QT_SanPham", result1.RouteValues["action"]);
+
+                var db = new CT25Team24Entities();
+                var entity = db.SanPhams.SingleOrDefault(p => p.TenSP == sanpham.TenSP
+                && p.DonGiaGoc == sanpham.DonGiaGoc && p.DonGiaKM == sanpham.DonGiaKM
+                && p.DongSP == sanpham.DongSP && p.SL == sanpham.SL
+                && p.TrangThaiSP == sanpham.TrangThaiSP && p.ThongTinChiTietSP == sanpham.ThongTinChiTietSP
+                && p.MaHangSP == sanpham.MaHangSP);
+                Assert.IsNotNull(entity);
+                Assert.AreEqual(sanpham.DonGiaGoc, entity.DonGiaGoc);
+
+                Assert.IsTrue(filename.StartsWith("~/Images/"));
+
+            }
+
+            var result0 = controller.Create(picture.Object, sanpham) as ViewResult;
+            //Assert.IsNotNull(result0);
         }
 
         [TestMethod()]
