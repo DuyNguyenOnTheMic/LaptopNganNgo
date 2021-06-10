@@ -150,6 +150,8 @@ namespace Test.Controllers.Website_QuanTri
             return View(sanpham);
         }
 
+       
+
         // GET: SanPhams/Edit/5
         public ActionResult Edit(int? id)
         {

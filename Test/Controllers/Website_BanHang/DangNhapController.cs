@@ -47,6 +47,7 @@ namespace Test.Controllers.Website_BanHang
             return View();
         }
 
+
         public static string GetMD5(string str)
         {
             MD5 md5 = new MD5CryptoServiceProvider();

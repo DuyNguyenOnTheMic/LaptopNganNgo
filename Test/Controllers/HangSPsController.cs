@@ -46,10 +46,10 @@ namespace Test.Controllers
         // GET: HangSPs/Create
         public ActionResult Create()
         {
-             if (!User.Identity.IsAuthenticated)
-            {
-                return Redirect("~/QT_DangNhap/Index");
-            }
+            // if (!User.Identity.IsAuthenticated)
+            //{
+            //    return Redirect("~/QT_DangNhap/Index");
+            //}
             return View();
         }
 
@@ -60,11 +60,12 @@ namespace Test.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "MaHang,TenHang")] HangSP hangSP)
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Redirect("~/QT_DangNhap/Index");
-            }
-            else if (ModelState.IsValid)
+            //if (!User.Identity.IsAuthenticated)
+            //{
+            //    return Redirect("~/QT_DangNhap/Index");
+            //}
+            //else 
+            if (ModelState.IsValid)
             {
                 db.HangSPs.Add(hangSP);
                 db.SaveChanges();

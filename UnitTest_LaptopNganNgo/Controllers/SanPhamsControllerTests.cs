@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 using Test.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Test.Controllers.Website_QuanTri.Tests
 {
@@ -14,172 +15,172 @@ namespace Test.Controllers.Website_QuanTri.Tests
     public class SanPhamsControllerTests
     {
 
-        [TestMethod()]
-        public void IndexTest()
+        private IList<ValidationResult> ValidateModel(object model)
         {
-            //Arrange
-            var controller = new SanPhamsController();
-            var db = new CT25Team24Entities();
-
-            //Act
-            var result = controller.Index(1) as ViewResult;
-            var model = result.Model as List<SanPham>;
-
-            //Assert
-            Assert.IsNotNull(result);
-            Assert.IsNotNull(model);
-            Assert.AreEqual(db.SanPhams.Count(), model.Count);
+            var validationResults = new List<ValidationResult>();
+            var ctx = new ValidationContext(model, null, null);
+            Validator.TryValidateObject(model, ctx, validationResults, true);
+            return validationResults;
         }
 
         [TestMethod()]
-        public void Test_Get_Dispose_SanPham()
-        {
-            using (var controller = new SanPhamsController()) { }
-        }
-
-        [TestMethod()]
-        public void Test_Get_Create_SanPham()
+        public void Test_Create_TenSP_Null()
         {
             var controller = new SanPhamsController();
-            var result = controller.Create() as ViewResult;
-            Assert.IsNotNull(result);
-        }
-
-        [TestMethod()]
-        public void Test_Post_Create_SanPham()
-        {
-            var random = new Random();
-            var sanpham = new SanPham
+            var model = new SanPham()
             {
-                TenSP = random.NextDouble().ToString(),
-                DonGiaGoc = random.Next(),
-                DonGiaKM = random.Next(),
-
-                DongSP = random.NextDouble().ToString(),
-                SL = random.Next(),
-                TrangThaiSP = random.NextDouble().ToString(),
-                ThongTinChiTietSP = random.NextDouble().ToString(),
-
+                TenSP = null,
+                DongSP = "Dell",
+                ThongTinChiTietSP = "ahh",
+                TrangThaiSP = "Còn hàng",
+                SL = 12,
+                DonGiaGoc = 1200000,
+                DonGiaKM = 50000
             };
-            var controller = new SanPhamsController();
+
             var result0 = controller.Create() as ViewResult;
-            Assert.IsNotNull(result0);
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập tên sản phẩm!")).Count() > 0);
         }
 
         [TestMethod()]
-        public void Test_Get_Edit_SanPham()
+        public void Test_Create_TenSP_Qua_200_Ky_Tu()
         {
-
-            var db = new CT25Team24Entities();
             var controller = new SanPhamsController();
-            var product = db.SanPhams.First();
-            var result = controller.Edit(product.MaSP) as ViewResult;
-            Assert.IsNotNull(result);
-
-            var model = result.Model as SanPham;
-            Assert.IsNotNull(model);
-            Assert.AreEqual(product.TenSP, model.TenSP);
-            Assert.AreEqual(product.DonGiaKM, model.DonGiaKM);
-            Assert.AreEqual(product.DonGiaGoc, model.DonGiaGoc);
-            Assert.AreEqual(product.HinhAnhSP, model.HinhAnhSP);
-            Assert.AreEqual(product.SL, model.SL);
-            Assert.AreEqual(product.DongSP, model.DongSP);
-            Assert.AreEqual(product.TrangThaiSP, model.TrangThaiSP);
-            Assert.AreEqual(product.ThongTinChiTietSP, model.ThongTinChiTietSP);
-        }
-
-        [TestMethod()]
-        public void Test_Post_Edit_SanPham()
-        {
+            var model = new SanPham()
             {
-                var random = new Random();
-                var db = new CT25Team24Entities();
-                var product = db.SanPhams.First();
-                product.TenSP = random.NextDouble().ToString();
-                product.DonGiaGoc = -random.Next();
-                product.DonGiaKM = -random.Next();
+                TenSP = "Hồi nhỏ sống với đồng với sông rồi với bể. Hồi chiến tranh ở rừng vầng trăng thành tri kỷ. Trần trụi với thiên nhiên hồn nhiên như cây cỏ ngỡ không bao giờ quên cái vầng trăng tình nghĩa. Từ hồi về thành phố quen ánh điện cửa gương vầng trăng đi qua ngõ như người dưng qua đường",
+                DongSP = "Dell",
+                ThongTinChiTietSP = "ahh",
+                TrangThaiSP = "Còn hàng",
+                SL = 12,
+                DonGiaGoc = 1200000,
+                DonGiaKM = 50000
+            };
 
-                product.DongSP = random.NextDouble().ToString();
-                product.SL = -random.Next();
-                product.TrangThaiSP = random.NextDouble().ToString();
-                product.ThongTinChiTietSP = random.NextDouble().ToString();
-
-                var controller = new SanPhamsController();
-                var result0 = controller.Edit(product.MaSP) as ViewResult;
-                Assert.IsNotNull(result0);
-            }
+            var result0 = controller.Create() as ViewResult;
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Tên sản phẩm không được quá 200 kí tự!")).Count() > 0);
         }
 
         [TestMethod()]
-        public void Details_SP_Test()
+        public void Test_Create_DongSP_Null()
         {
             var controller = new SanPhamsController();
-            var result0 = controller.Details(0) as HttpNotFoundResult;
-            Assert.IsNotNull(result0);
+            var model = new SanPham()
+            {
+                TenSP = "Ahihi",
+                DongSP = null,
+                ThongTinChiTietSP = "ahh",
+                TrangThaiSP = "Còn hàng",
+                SL = 12,
+                DonGiaGoc = 1200000,
+                DonGiaKM = 50000
+            };
 
-            var db = new CT25Team24Entities();
-            var product = db.SanPhams.First();
-            var result1 = controller.Details(product.MaSP) as ViewResult;
-            Assert.IsNotNull(result1);
-
-            var model = result1.Model as SanPham;
-            Assert.IsNotNull(model);
-            Assert.AreEqual(product.TenSP, model.TenSP);
-            Assert.AreEqual(product.DonGiaKM, model.DonGiaKM);
-            Assert.AreEqual(product.DonGiaGoc, model.DonGiaGoc);
-            Assert.AreEqual(product.HinhAnhSP, model.HinhAnhSP);
-            Assert.AreEqual(product.SL, model.SL);
-            Assert.AreEqual(product.DongSP, model.DongSP);
-            Assert.AreEqual(product.TrangThaiSP, model.TrangThaiSP);
-            Assert.AreEqual(product.ThongTinChiTietSP, model.ThongTinChiTietSP);
-
+            var result0 = controller.Create() as ViewResult;
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập dòng sản phẩm!")).Count() > 0);
         }
 
         [TestMethod()]
-        public void Test_Get_Delete_SanPham()
+        public void Test_Create_DongSP_Qua_100_Ky_Tu()
         {
             var controller = new SanPhamsController();
-            var result0 = controller.Delete(0) as HttpNotFoundResult;
-            Assert.IsNotNull(result0);
+            var model = new SanPham()
+            {
+                TenSP = "Ahihi",
+                DongSP = "Một bếp lửa chờn vờn sương sớm. Một bếp lửa ấp iu nồng đượm. Cháu thương bà biết mấy nắng mưa! Lên bốn tuổi cháu đã quen mùi khói. Năm ấy là năm đói mòn đói mỏi, Bố đi đánh xe, khô rạc ngựa gầy, Chỉ nhớ khói hun nhèm mắt cháu Nghĩ lại đến giờ sống mũi còn cay!",
+                ThongTinChiTietSP = "ahh",
+                TrangThaiSP = "Còn hàng",
+                SL = 12,
+                DonGiaGoc = 1200000,
+                DonGiaKM = 50000
+            };
 
-            var db = new CT25Team24Entities();
-            var product = db.SanPhams.First();
-            var result1 = controller.Delete(product.MaSP) as ViewResult;
-            Assert.IsNotNull(result1);
-
-            var model = result1.Model as SanPham;
-            Assert.IsNotNull(model);
-            Assert.AreEqual(product.TenSP, model.TenSP);
-            Assert.AreEqual(product.DonGiaKM, model.DonGiaKM);
-            Assert.AreEqual(product.DonGiaGoc, model.DonGiaGoc);
-            Assert.AreEqual(product.HinhAnhSP, model.HinhAnhSP);
-            Assert.AreEqual(product.SL, model.SL);
-            Assert.AreEqual(product.DongSP, model.DongSP);
-            Assert.AreEqual(product.TrangThaiSP, model.TrangThaiSP);
-            Assert.AreEqual(product.ThongTinChiTietSP, model.ThongTinChiTietSP);
+            var result0 = controller.Create() as ViewResult;
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Dòng sản phẩm không được quá 100 kí tự!")).Count() > 0);
         }
 
         [TestMethod()]
-        public void Test_Post_Delete_SanPham()
+        public void Test_Create_ThongTinChiTietSP_Null()
         {
-            var db = new CT25Team24Entities();
-            var product = db.SanPhams.AsNoTracking().First();
-        }
-
-        [TestMethod()]
-        public void SearchTest()
-        {
-            var db = new CT25Team24Entities();
-            var sanphams = db.SanPhams.ToList();
-            var keyword = sanphams.First().TenSP.Split().First();
-            sanphams = sanphams.Where(p => p.TenSP.ToLower().Contains(keyword.ToLower())).ToList();
             var controller = new SanPhamsController();
-            var result = controller.Search() as ViewResult;
-            Assert.IsNotNull(result);
+            var model = new SanPham()
+            {
+                TenSP = "Ahihi",
+                DongSP = "Ahuhu",
+                ThongTinChiTietSP = null,
+                TrangThaiSP = "Còn hàng",
+                SL = 12,
+                DonGiaGoc = 1200000,
+                DonGiaKM = 50000
+            };
 
-            var model = result.Model as List<SanPham>;
-            Assert.AreEqual("Dell", sanphams);
+            var result0 = controller.Create() as ViewResult;
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập thông tin chi tiết sản phẩm!")).Count() > 0);
+        }
 
+        [TestMethod()]
+        public void Test_Create_TrangThaiSP_Null()
+        {
+            var controller = new SanPhamsController();
+            var model = new SanPham()
+            {
+                TenSP = "Ahihi",
+                DongSP = "Ahuhu",
+                ThongTinChiTietSP = "Aha",
+                TrangThaiSP = null,
+                SL = 12,
+                DonGiaGoc = 1200000,
+                DonGiaKM = 50000
+            };
+
+            var result0 = controller.Create() as ViewResult;
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập tình trạng sản phẩm!")).Count() > 0);
+        }
+
+        [TestMethod()]
+        public void Test_Create_TrangThaiSP_Qua_50_Ky_Tu()
+        {
+            var controller = new SanPhamsController();
+            var model = new SanPham()
+            {
+                TenSP = "Ahihi",
+                DongSP = "Ahuhu",
+                ThongTinChiTietSP = "Aha",
+                TrangThaiSP = "Quê hương anh nước mặn, đồng chua. Làng tôi nghèo đất cày lên sỏi đá. Anh với tôi đôi người xa lạ. Tự phương trời chẳng hẹn quen nhau. Súng bên súng, đầu sát bên đầu. Đêm rét chung chăn thành đôi tri kỷ. Đồng chí!",
+                SL = 12,
+                DonGiaGoc = 1200000,
+                DonGiaKM = 50000
+            };
+
+            var result0 = controller.Create() as ViewResult;
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Tình trạng không được quá 50 kí tự!")).Count() > 0);
+        }
+
+        [TestMethod()]
+        public void Test_Create_SoLuongNhoHon1()
+        {
+            var controller = new SanPhamsController();
+            var model = new SanPham()
+            {
+                TenSP = "Ahihi",
+                DongSP = "Ahuhu",
+                ThongTinChiTietSP = "Aha",
+                TrangThaiSP = "Hết Hàng",
+                SL = -1,
+                DonGiaGoc = 1200000,
+                DonGiaKM = 50000
+            };
+
+            var result0 = controller.Create() as ViewResult;
+            //Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Any(x => x.MemberNames.Contains("SL") && x.ErrorMessage.Equals("Bạn không thể nhập giá trị nhỏ hơn {1}")));
         }
 
     }
