@@ -62,7 +62,6 @@ namespace Test.Controllers.Website_QuanTri.Tests
         {
             //Arrange
             var controller = new KhachHangsController();
-            //var db = new CT25Team24Entities();
 
             //Act
             var model = new KhachHang()
@@ -75,7 +74,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
                 MatKhau = "123456",
                 XacNhanMK = "123456",
                 NgaySinh = null,
-                VaiTro = "Admin"
+                VaiTro = "Test"
             };
            
 
@@ -84,7 +83,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
             //Assert
 
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập Email")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập Email")).Count() > 0);
 
         }
 
@@ -93,7 +92,6 @@ namespace Test.Controllers.Website_QuanTri.Tests
         {
             //Arrange
             var controller = new KhachHangsController();
-            //var db = new CT25Team24Entities();
 
             //Act
             var model = new KhachHang()
@@ -106,7 +104,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
                 MatKhau = "",
                 XacNhanMK = "blabla",
                 NgaySinh = null,
-                VaiTro = "Admin"
+                VaiTro = "Test"
             };
 
 
@@ -115,7 +113,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
             //Assert
 
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập mật khẩu")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập mật khẩu")).Count() > 0);
 
         }
 
@@ -125,7 +123,6 @@ namespace Test.Controllers.Website_QuanTri.Tests
         {
             //Arrange
             var controller = new KhachHangsController();
-            //var db = new CT25Team24Entities();
 
             //Act
             var model = new KhachHang()
@@ -138,7 +135,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
                 MatKhau = "hehe",
                 XacNhanMK = "blabla",
                 NgaySinh = null,
-                VaiTro = "Admin"
+                VaiTro = "Test"
             };
 
 
@@ -147,7 +144,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
             //Assert
 
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Xác nhận mật khẩu không trùng!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Xác nhận mật khẩu không trùng!")).Count() > 0);
 
         }
 
@@ -156,7 +153,6 @@ namespace Test.Controllers.Website_QuanTri.Tests
         {
             //Arrange
             var controller = new KhachHangsController();
-            //var db = new CT25Team24Entities();
 
             //Act
             var model = new KhachHang()
@@ -169,7 +165,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
                 MatKhau = "",
                 XacNhanMK = "blabla",
                 NgaySinh = null,
-                VaiTro = "Admin"
+                VaiTro = "Test"
             };
 
 
@@ -178,9 +174,9 @@ namespace Test.Controllers.Website_QuanTri.Tests
             //Assert
 
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập Email")).Count() > 0);
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập mật khẩu")).Count() > 0);
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Xác nhận mật khẩu không trùng!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập Email")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập mật khẩu")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Xác nhận mật khẩu không trùng!")).Count() > 0);
 
         }
 
@@ -189,7 +185,6 @@ namespace Test.Controllers.Website_QuanTri.Tests
         {
             //Arrange
             var controller = new KhachHangsController();
-            //var db = new CT25Team24Entities();
 
             //Act
             var model = new KhachHang()
@@ -202,7 +197,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
                 MatKhau = "123",
                 XacNhanMK = "123",
                 NgaySinh = null,
-                VaiTro = "Admin"
+                VaiTro = "Test"
             };
 
 
@@ -211,7 +206,37 @@ namespace Test.Controllers.Website_QuanTri.Tests
             //Assert
 
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Mật khẩu phải dài ít nhất 6 kí tự!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Mật khẩu phải dài ít nhất 6 kí tự!")).Count() > 0);
+
+        }
+
+        [TestMethod()]
+        public void Test_Create_TaiKhoan_QuanTri_Password_Equal_6_Character()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var model = new KhachHang()
+            {
+                HoTen = null,
+                DiaChi = null,
+                DienThoai = null,
+                Email = "duy567890@gmail.com",
+                GioiTinh = null,
+                MatKhau = "123456",
+                XacNhanMK = "123456",
+                NgaySinh = null,
+                VaiTro = "Test"
+            };
+
+
+            var result0 = controller.Dky_QT(model) as ViewResult;
+
+            //Assert
+
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsNotNull(result0);
 
         }
 
@@ -220,7 +245,6 @@ namespace Test.Controllers.Website_QuanTri.Tests
         {
             //Arrange
             var controller = new KhachHangsController();
-            //var db = new CT25Team24Entities();
 
             //Act
             var model = new KhachHang()
@@ -228,12 +252,12 @@ namespace Test.Controllers.Website_QuanTri.Tests
                 HoTen = null,
                 DiaChi = null,
                 DienThoai = null,
-                Email = "duy7890@gmail.com",
+                Email = "duy7890gmail.com",
                 GioiTinh = null,
                 MatKhau = "123456",
                 XacNhanMK = "123456",
                 NgaySinh = null,
-                VaiTro = "Admin"
+                VaiTro = "Test"
             };
 
 
@@ -242,7 +266,282 @@ namespace Test.Controllers.Website_QuanTri.Tests
             //Assert
 
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("E-mail không đúng định dạng!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("E-mail không đúng định dạng!")).Count() > 0);
+
+        }
+
+        [TestMethod()]
+        public void Test_Create_TaiKhoan_QuanTri_Email_Not_Have_Dot()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var model = new KhachHang()
+            {
+                HoTen = null,
+                DiaChi = null,
+                DienThoai = null,
+                Email = "duy7890@gmailcom",
+                GioiTinh = null,
+                MatKhau = "123456",
+                XacNhanMK = "123456",
+                NgaySinh = null,
+                VaiTro = "Test"
+            };
+
+
+            var result0 = controller.Dky_QT(model) as ViewResult;
+
+            //Assert
+
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("E-mail không đúng định dạng!")).Count() > 0);
+
+        }
+
+        [TestMethod()]
+        public void Test_Create_TaiKhoan_KhachHang_Email_Null()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var model = new KhachHang()
+            {
+                HoTen = null,
+                DiaChi = null,
+                DienThoai = null,
+                Email = null,
+                GioiTinh = null,
+                MatKhau = "123456",
+                XacNhanMK = "123456",
+                NgaySinh = null,
+                VaiTro = "Test"
+            };
+
+
+            var result0 = controller.Dky_KH(model) as ViewResult;
+
+            //Assert
+
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập Email")).Count() > 0);
+
+        }
+
+        [TestMethod()]
+        public void Test_Create_TaiKhoan_KhachHang_Password_Null()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var model = new KhachHang()
+            {
+                HoTen = null,
+                DiaChi = null,
+                DienThoai = null,
+                Email = "duy567890@gmail.com",
+                GioiTinh = null,
+                MatKhau = "",
+                XacNhanMK = "blabla",
+                NgaySinh = null,
+                VaiTro = "Test"
+            };
+
+
+            var result0 = controller.Dky_KH(model) as ViewResult;
+
+            //Assert
+
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập mật khẩu")).Count() > 0);
+
+        }
+
+
+        [TestMethod()]
+        public void Test_Create_TaiKhoan_KhachHang_Password_Not_Match()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var model = new KhachHang()
+            {
+                HoTen = null,
+                DiaChi = null,
+                DienThoai = null,
+                Email = "duy567890@gmail.com",
+                GioiTinh = null,
+                MatKhau = "hehe",
+                XacNhanMK = "blabla",
+                NgaySinh = null,
+                VaiTro = "Test"
+            };
+
+
+            var result0 = controller.Dky_KH(model) as ViewResult;
+
+            //Assert
+
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Xác nhận mật khẩu không trùng!")).Count() > 0);
+
+        }
+
+        [TestMethod()]
+        public void Test_Create_TaiKhoan_KhachHang_Email_And_Password_Null()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var model = new KhachHang()
+            {
+                HoTen = null,
+                DiaChi = null,
+                DienThoai = null,
+                Email = null,
+                GioiTinh = null,
+                MatKhau = "",
+                XacNhanMK = "blabla",
+                NgaySinh = null,
+                VaiTro = "Test"
+            };
+
+
+            var result0 = controller.Dky_KH(model) as ViewResult;
+
+            //Assert
+
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập Email")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập mật khẩu")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Xác nhận mật khẩu không trùng!")).Count() > 0);
+
+        }
+
+        [TestMethod()]
+        public void Test_Create_TaiKhoan_KhachHang_Password_Less_Than_6_Character()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var model = new KhachHang()
+            {
+                HoTen = null,
+                DiaChi = null,
+                DienThoai = null,
+                Email = "duy567890@gmail.com",
+                GioiTinh = null,
+                MatKhau = "123",
+                XacNhanMK = "123",
+                NgaySinh = null,
+                VaiTro = "Test"
+            };
+
+
+            var result0 = controller.Dky_KH(model) as ViewResult;
+
+            //Assert
+
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Mật khẩu phải dài ít nhất 6 kí tự!")).Count() > 0);
+
+        }
+
+
+        [TestMethod()]
+        public void Test_Create_TaiKhoan_KhachHang_Password_Equal_6_Character()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var model = new KhachHang()
+            {
+                HoTen = null,
+                DiaChi = null,
+                DienThoai = null,
+                Email = "duy567890@gmail.com",
+                GioiTinh = null,
+                MatKhau = "123456",
+                XacNhanMK = "123456",
+                NgaySinh = null,
+                VaiTro = "Test"
+            };
+
+
+            var result0 = controller.Dky_KH(model) as ViewResult;
+
+            //Assert
+
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsNotNull(result0);
+
+        }
+
+
+        [TestMethod()]
+        public void Test_Create_TaiKhoan_KhachHang_Email_Not_Have_AtSign()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var model = new KhachHang()
+            {
+                HoTen = null,
+                DiaChi = null,
+                DienThoai = null,
+                Email = "duy7890gmail.com",
+                GioiTinh = null,
+                MatKhau = "123456",
+                XacNhanMK = "123456",
+                NgaySinh = null,
+                VaiTro = "Test"
+            };
+
+
+            var result0 = controller.Dky_KH(model) as ViewResult;
+
+            //Assert
+
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("E-mail không đúng định dạng!")).Count() > 0);
+
+        }
+
+        [TestMethod()]
+        public void Test_Create_TaiKhoan_KhachHang_Email_Not_Have_Dot()
+        {
+            //Arrange
+            var controller = new KhachHangsController();
+
+            //Act
+            var model = new KhachHang()
+            {
+                HoTen = null,
+                DiaChi = null,
+                DienThoai = null,
+                Email = "duy7890@gmailcom",
+                GioiTinh = null,
+                MatKhau = "123456",
+                XacNhanMK = "123456",
+                NgaySinh = null,
+                VaiTro = "Test"
+            };
+
+
+            var result0 = controller.Dky_KH(model) as ViewResult;
+
+            //Assert
+
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("E-mail không đúng định dạng!")).Count() > 0);
 
         }
 
