@@ -163,25 +163,5 @@ namespace Test.Controllers.Website_QuanTri.Tests
             Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Tình trạng không được quá 50 kí tự!")).Count() > 0);
         }
 
-        [TestMethod()]
-        public void Test_Create_SoLuongNhoHon1()
-        {
-            var controller = new SanPhamsController();
-            var model = new SanPham()
-            {
-                TenSP = "Ahihi",
-                DongSP = "Ahuhu",
-                ThongTinChiTietSP = "Aha",
-                TrangThaiSP = "Hết Hàng",
-                SL = -1,
-                DonGiaGoc = 1200000,
-                DonGiaKM = 50000
-            };
-
-            var result0 = controller.Create() as ViewResult;
-            //Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Any(x => x.MemberNames.Contains("SL") && x.ErrorMessage.Equals("Bạn không thể nhập giá trị nhỏ hơn {1}")));
-        }
-
     }
 }

@@ -203,7 +203,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
         }
 
         [TestMethod()]
-        public void Test_Create_TT_KH_HoTenKH_Null()
+        public void Test_TT_KH_HoTenKH_Null()
         {
             var controller = new KhachHangsController();
             var model = new KhachHang()
@@ -220,11 +220,11 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Dky_TT_KH(model) as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập họ và tên!")).Count() > 0);     
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập họ và tên!")).Count() > 0);     
         }
 
         [TestMethod()]
-        public void Test_Create_TT_KH_HoTenKH_NhapSo()
+        public void Test_TT_KH_HoTenKH_NhapSo()
         {
             var controller = new KhachHangsController();
             var model = new KhachHang()
@@ -241,11 +241,11 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Dky_TT_KH(model) as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Họ và tên chỉ được nhập chữ!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Họ và tên chỉ được nhập chữ!")).Count() > 0);
         }
 
         [TestMethod()]
-        public void Test_Create_TT_KH_HoTenKH_Qua_100_Ky_Tu()
+        public void Test_TT_KH_HoTenKH_Qua_100_Ky_Tu()
         {
             var controller = new KhachHangsController();
             var model = new KhachHang()
@@ -262,11 +262,11 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Dky_TT_KH(model) as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Họ và tên không được quá 100 kí tự!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Họ và tên không được quá 100 kí tự!")).Count() > 0);
         }
 
         [TestMethod()]
-        public void Test_Create_TT_KH_GioiTinhKH_Null()
+        public void Test_TT_KH_GioiTinhKH_Null()
         {
             var controller = new KhachHangsController();
             var model = new KhachHang()
@@ -283,11 +283,11 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Dky_TT_KH(model) as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa chọn giới tính!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa chọn giới tính!")).Count() > 0);
         }
 
         [TestMethod()]
-        public void Test_Create_TT_KH_SDT_Null()
+        public void Test_TT_KH_SDT_Null()
         {
             var controller = new KhachHangsController();
             var model = new KhachHang()
@@ -304,11 +304,11 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Dky_TT_KH(model) as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập số điện thoại!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập số điện thoại!")).Count() > 0);
         }
 
         [TestMethod()]
-        public void Test_Create_TT_KH_SDT_KhongDungDinhDang()
+        public void Test_TT_KH_SDT_KhongDungDinhDang()
         {
             var controller = new KhachHangsController();
             var model = new KhachHang()
@@ -325,11 +325,11 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Dky_TT_KH(model) as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Số điện thoại không đúng định dạng!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Số điện thoại không đúng định dạng!")).Count() > 0);
         }
 
         [TestMethod()]
-        public void Test_Create_TT_KH_DiaChiKH_Null()
+        public void Test_TT_KH_DiaChiKH_Null()
         {
             var controller = new KhachHangsController();
             var model = new KhachHang()
@@ -347,7 +347,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Dky_TT_KH(model) as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập địa chỉ!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập địa chỉ!")).Count() > 0);
         }
 
     }
