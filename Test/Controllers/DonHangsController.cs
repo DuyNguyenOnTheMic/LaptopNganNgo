@@ -183,7 +183,8 @@ namespace Test.Controllers
                     
                   if (donHang.TrangThai == 4)
                     {
-                        SP.SL = SP.SL + sl[i];                      
+                        SP.SL = SP.SL + sl[i];
+                        SP.TrangThaiSP = "Còn hàng";
                     }
                 }
                 donHang.TongTien = money;
