@@ -125,23 +125,6 @@ namespace Test.Controllers.Tests
             Assert.IsNotNull(model);
             Assert.AreEqual(keyword, null);
             Assert.AreEqual(donhangs.Count, model.Count);
-        }
-
-        private List<CTDH> ShoppingCart = null;
-
-        public void GetShoppingCart()
-        {
-            var session = System.Web.HttpContext.Current.Session;
-            if (session["ShoppingCart"] != null)
-            {
-                ShoppingCart = session["ShoppingCart"] as List<CTDH>;
-            }
-            else
-            {
-                ShoppingCart = new List<CTDH>();
-                session["ShoppingCart"] = ShoppingCart;
-            }
-        }
-
+        }       
     }
 }

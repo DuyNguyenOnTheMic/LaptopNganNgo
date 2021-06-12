@@ -660,11 +660,6 @@ namespace Test.Controllers.Website_QuanTri.Tests
             Assert.AreEqual("ahihi123@gmail.com", khachhang.Email);
         }
 
-        [TestMethod()]
-        public void Test_Get_Dispose_KhachHang()
-        {
-            using (var controller = new KhachHangsController()) { }
-        }
 
         [TestMethod()]
         public void Test_TT_KH_HoTenKH_Null()

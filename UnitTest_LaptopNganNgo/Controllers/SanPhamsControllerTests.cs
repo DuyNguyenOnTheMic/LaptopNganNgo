@@ -60,20 +60,6 @@ namespace Test.Controllers.Website_QuanTri.Tests
         }
 
         [TestMethod()]
-        public void Test_Get_Dispose_SanPham()
-        {
-            using (var controller = new SanPhamsController()) { }
-        }
-
-        [TestMethod()]
-        public void Test_Get_Create_SanPham()
-        {
-            var controller = new SanPhamsController();
-            var result = controller.Create() as ViewResult;
-            Assert.IsNotNull(result);
-        }
-
-        [TestMethod()]
         public void Test_Post_Create_SanPham()
         {
             var sanpham = new SanPham

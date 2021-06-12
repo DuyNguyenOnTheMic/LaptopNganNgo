@@ -148,7 +148,7 @@ namespace UnitTest_LaptopNganNgo.Controllers
         }
 
         [TestMethod()]
-        public void TestEdit_HangSP_Success()
+        public void Test_Edit_HangSP_Success()
         {
 
             var db = new CT25Team24Entities();
@@ -171,7 +171,7 @@ namespace UnitTest_LaptopNganNgo.Controllers
 
         }
         [TestMethod()]
-        public void TestDeleteG()
+        public void TestDelete_HangSP()
         {
 
             var controller = new HangSPsController();
@@ -195,7 +195,7 @@ namespace UnitTest_LaptopNganNgo.Controllers
         }
        
         [TestMethod()]
-        public void TestDetailsG()
+        public void Test_Details_HangSP()
         {
             var controller = new HangSPsController();
             var result0 = controller.Details(0) as HttpNotFoundResult;
@@ -215,14 +215,7 @@ namespace UnitTest_LaptopNganNgo.Controllers
             Assert.AreEqual(product.MaHang, model.MaHang);
             Assert.AreEqual(product.TenHang, model.TenHang);
 
-
-
-
         }
-        [TestMethod()]
-        public void TestDisposeG()
-        {
-            using (var controller = new HangSPsController()) { }
-        }
+       
     }
 }
