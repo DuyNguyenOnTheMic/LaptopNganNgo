@@ -18,15 +18,15 @@ namespace Test.Controllers
         private List<CTDH> ShoppingCart = null;
         public void GetShoppingCart()
         {
-            var session = System.Web.HttpContext.Current.Session;
-            if (session["ShoppingCart"] != null)
+            //var session = System.Web.HttpContext.Current.Session;
+            if (Session["ShoppingCart"] != null)
             {
-                ShoppingCart = session["ShoppingCart"] as List<CTDH>;
+                ShoppingCart = Session["ShoppingCart"] as List<CTDH>;
             }
             else
             {
                 ShoppingCart = new List<CTDH>();
-                session["ShoppingCart"] = ShoppingCart;
+                Session["ShoppingCart"] = ShoppingCart;
             }
         }
 
@@ -68,10 +68,10 @@ namespace Test.Controllers
         // GET: DonHangs/Details/5
         public ActionResult Details(int? id)
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return Redirect("~/QT_DangNhap/Index");
-            }
+            //if (!User.Identity.IsAuthenticated)
+            //{
+            //    return Redirect("~/QT_DangNhap/Index");
+            //}
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
@@ -96,7 +96,7 @@ namespace Test.Controllers
         [HttpPost]
         public ActionResult Create1(int maKH, double Tongtien)
         {
-            var session = System.Web.HttpContext.Current.Session;
+            //var session = System.Web.HttpContext.Current.Session;
             GetShoppingCart();
             if (ModelState.IsValid)
             {
@@ -122,7 +122,7 @@ namespace Test.Controllers
                     });
                 }
                 db.SaveChanges();
-                session["ShoppingCart"] = null;
+                Session["ShoppingCart"] = null;
 
                 return RedirectToAction("TT_ThanhCong", "DonHangs");
             }

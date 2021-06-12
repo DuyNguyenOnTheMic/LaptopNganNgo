@@ -683,7 +683,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
         }
 
         [TestMethod()]
-        public void Test_TT_KH_HoTenKH_NhapSo()
+        public void Test_TT_KH_HoTenKH_Input_Numbers()
         {
             var controller = new KhachHangsController();
             var model = new KhachHang()
@@ -704,7 +704,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
         }
 
         [TestMethod()]
-        public void Test_TT_KH_HoTenKH_Qua_100_Ky_Tu()
+        public void Test_TT_KH_HoTenKH_MoreThan_100_Characters()
         {
             var controller = new KhachHangsController();
             var model = new KhachHang()
@@ -767,7 +767,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
         }
 
         [TestMethod()]
-        public void Test_TT_KH_SDT_KhongDungDinhDang()
+        public void Test_TT_KH_SDT_Not_Right_Format()
         {
             var controller = new KhachHangsController();
             var model = new KhachHang()
