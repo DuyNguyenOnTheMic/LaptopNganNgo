@@ -40,7 +40,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Create() as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập tên sản phẩm!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập tên sản phẩm!")).Count() > 0);
         }
 
         [TestMethod()]
@@ -60,7 +60,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Create() as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Tên sản phẩm không được quá 200 kí tự!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Tên sản phẩm không được quá 200 kí tự!")).Count() > 0);
         }
 
         [TestMethod()]
@@ -80,7 +80,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Create() as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập dòng sản phẩm!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập dòng sản phẩm!")).Count() > 0);
         }
 
         [TestMethod()]
@@ -100,7 +100,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Create() as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Dòng sản phẩm không được quá 100 kí tự!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Dòng sản phẩm không được quá 100 kí tự!")).Count() > 0);
         }
 
         [TestMethod()]
@@ -120,7 +120,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Create() as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập thông tin chi tiết sản phẩm!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập thông tin chi tiết sản phẩm!")).Count() > 0);
         }
 
         [TestMethod()]
@@ -140,7 +140,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Create() as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập tình trạng sản phẩm!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập tình trạng sản phẩm!")).Count() > 0);
         }
 
         [TestMethod()]
@@ -160,12 +160,13 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Create() as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Tình trạng không được quá 50 kí tự!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Tình trạng không được quá 50 kí tự!")).Count() > 0);
         }
 
         [TestMethod()]
         public void Test_Create_SoLuongNhoHon1()
         {
+            
             var controller = new SanPhamsController();
             var model = new SanPham()
             {
@@ -173,14 +174,37 @@ namespace Test.Controllers.Website_QuanTri.Tests
                 DongSP = "Ahuhu",
                 ThongTinChiTietSP = "Aha",
                 TrangThaiSP = "Hết Hàng",
-                SL = -1,
+                SL = -5,
                 DonGiaGoc = 1200000,
                 DonGiaKM = 50000
             };
 
             var result0 = controller.Create() as ViewResult;
-            //Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Any(x => x.MemberNames.Contains("SL") && x.ErrorMessage.Equals("Bạn không thể nhập giá trị nhỏ hơn {1}")));
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn không thể nhập giá trị nhỏ hơn {1}")).Count() > 0);
+            
+        }
+
+        [TestMethod()]
+        public void Test_Create_SanPham_Successs()
+        {
+            var controller = new SanPhamsController();
+            var db = new CT25Team24Entities();
+            var model = new SanPham()
+            {
+                TenSP = "Ahihi",
+
+            };
+
+            var result = controller.Create() as ViewResult;
+            var haha = db.SanPhams.FirstOrDefault(x => x.TenSP == model.TenSP);
+
+            Assert.AreEqual(model.TenSP, haha.TenSP);
+
+            db.SanPhams.Remove(haha);
+            db.SaveChanges();
+
+
         }
 
     }

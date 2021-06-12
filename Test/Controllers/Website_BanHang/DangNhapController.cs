@@ -31,8 +31,9 @@ namespace Test.Controllers.Website_BanHang
             {
                 var f_password = GetMD5(model.MatKhau);
                 var account = context.KhachHangs.Where(acc => acc.Email.Equals(model.Email) && acc.MatKhau.Equals(f_password)).FirstOrDefault();
-                bool isValid = context.KhachHangs.Any(x => x.Email.Equals(model.Email)
-                && x.MatKhau.Equals(f_password));
+                bool isValid = context.KhachHangs.Any(x => x.Email.Equals(model.Email)               
+                && x.MatKhau.Equals(f_password)) ;
+      
                 if (isValid)
                 {
                     Session["HoTen"] = account.HoTen;

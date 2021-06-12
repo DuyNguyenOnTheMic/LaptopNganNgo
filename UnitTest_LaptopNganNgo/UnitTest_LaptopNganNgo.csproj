@@ -115,6 +115,7 @@
     <Compile Include="Controllers\HangSPsControllerTests.cs" />
     <Compile Include="Controllers\KhachHangsControllerTests.cs" />
     <Compile Include="Controllers\SanPhamsControllerTests.cs" />
+    <Compile Include="Controllers\Website_BanHang\DangNhapControllerTests.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
