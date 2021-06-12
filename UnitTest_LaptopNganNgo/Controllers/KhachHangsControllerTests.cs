@@ -665,5 +665,153 @@ namespace Test.Controllers.Website_QuanTri.Tests
         {
             using (var controller = new KhachHangsController()) { }
         }
+
+        [TestMethod()]
+        public void Test_TT_KH_HoTenKH_Null()
+        {
+            var controller = new KhachHangsController();
+            var model = new KhachHang()
+            {
+                HoTen = null,
+                DiaChi = "Hà Nội",
+                DienThoai = "1234567899",
+                Email = null,
+                GioiTinh = "Nữ",
+                MatKhau = null,
+                XacNhanMK = null,
+                VaiTro = "Khách lẻ"
+            };
+
+            var result0 = controller.Dky_TT_KH(model) as ViewResult;
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập họ và tên!")).Count() > 0);
+        }
+
+        [TestMethod()]
+        public void Test_TT_KH_HoTenKH_NhapSo()
+        {
+            var controller = new KhachHangsController();
+            var model = new KhachHang()
+            {
+                HoTen = "Anh123",
+                DiaChi = "Hà Nội",
+                DienThoai = "1234567899",
+                Email = null,
+                GioiTinh = "Nữ",
+                MatKhau = null,
+                XacNhanMK = null,
+                VaiTro = "Khách lẻ"
+            };
+
+            var result0 = controller.Dky_TT_KH(model) as ViewResult;
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Họ và tên chỉ được nhập chữ!")).Count() > 0);
+        }
+
+        [TestMethod()]
+        public void Test_TT_KH_HoTenKH_Qua_100_Ky_Tu()
+        {
+            var controller = new KhachHangsController();
+            var model = new KhachHang()
+            {
+                HoTen = "Không có kính không phải vì xe không có kính Bom giật, bom rung kính vỡ đi rồi. Ung dung buồng lái ta ngồi, Nhìn đất, nhìn trời, nhìn thẳng. Nhìn thấy gió vào xoa mắt đắng. Nhìn thấy con đường chạy thẳng vào tim. Thấy sao trời và đột ngột cánh chimNhư sa,như ùa vào buồng lái",
+                DiaChi = "Hà Nội",
+                DienThoai = "1234567899",
+                Email = null,
+                GioiTinh = "Nữ",
+                MatKhau = null,
+                XacNhanMK = null,
+                VaiTro = "Khách lẻ"
+            };
+
+            var result0 = controller.Dky_TT_KH(model) as ViewResult;
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Họ và tên không được quá 100 kí tự!")).Count() > 0);
+        }
+
+        [TestMethod()]
+        public void Test_TT_KH_GioiTinhKH_Null()
+        {
+            var controller = new KhachHangsController();
+            var model = new KhachHang()
+            {
+                HoTen = "Anh",
+                DiaChi = "Hà Nội",
+                DienThoai = "1234567899",
+                Email = null,
+                GioiTinh = null,
+                MatKhau = null,
+                XacNhanMK = null,
+                VaiTro = "Khách lẻ"
+            };
+
+            var result0 = controller.Dky_TT_KH(model) as ViewResult;
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa chọn giới tính!")).Count() > 0);
+        }
+
+        [TestMethod()]
+        public void Test_TT_KH_SDT_Null()
+        {
+            var controller = new KhachHangsController();
+            var model = new KhachHang()
+            {
+                HoTen = "Anh",
+                DiaChi = "Hà Nội",
+                DienThoai = null,
+                Email = null,
+                GioiTinh = "Nam",
+                MatKhau = null,
+                XacNhanMK = null,
+                VaiTro = "Khách lẻ"
+            };
+
+            var result0 = controller.Dky_TT_KH(model) as ViewResult;
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập số điện thoại!")).Count() > 0);
+        }
+
+        [TestMethod()]
+        public void Test_TT_KH_SDT_KhongDungDinhDang()
+        {
+            var controller = new KhachHangsController();
+            var model = new KhachHang()
+            {
+                HoTen = "Anh",
+                DiaChi = "Hà Nội",
+                DienThoai = "0123456789123456789",
+                Email = null,
+                GioiTinh = "Nam",
+                MatKhau = null,
+                XacNhanMK = null,
+                VaiTro = "Khách lẻ"
+            };
+
+            var result0 = controller.Dky_TT_KH(model) as ViewResult;
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Số điện thoại không đúng định dạng!")).Count() > 0);
+        }
+
+        [TestMethod()]
+        public void Test_TT_KH_DiaChiKH_Null()
+        {
+            var controller = new KhachHangsController();
+            var model = new KhachHang()
+            {
+                HoTen = "Anh",
+                DiaChi = null,
+                DienThoai = "0123456789",
+                Email = null,
+                GioiTinh = "Nam",
+                MatKhau = null,
+                XacNhanMK = null,
+                VaiTro = "Khách lẻ",
+
+            };
+
+            var result0 = controller.Dky_TT_KH(model) as ViewResult;
+            Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập địa chỉ!")).Count() > 0);
+        }
     }
 }
