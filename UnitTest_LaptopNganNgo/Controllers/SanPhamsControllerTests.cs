@@ -106,7 +106,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
                 controller.ModelState.Clear();
                 var result1 = controller.Create(picture.Object, sanpham) as RedirectToRouteResult;
                 Assert.IsNotNull(result1);
-                Assert.AreEqual("QT_SanPham", result1.RouteValues["action"]);
+                Assert.AreEqual("QT_SanPham", result1.RouteValues["SanPhams"]);
 
                 var db = new CT25Team24Entities();
                 var entity = db.SanPhams.SingleOrDefault(p => p.TenSP == sanpham.TenSP
@@ -502,11 +502,11 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Create() as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập tên sản phẩm!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập tên sản phẩm!")).Count() > 0);
         }
 
         [TestMethod()]
-        public void Test_Create_TenSP_Qua_200_Ky_Tu()
+        public void Test_Create_TenSP_MoreThan_200_Characters()
         {
             var controller = new SanPhamsController();
             var model = new SanPham()
@@ -522,7 +522,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Create() as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Tên sản phẩm không được quá 200 kí tự!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Tên sản phẩm không được quá 200 kí tự!")).Count() > 0);
         }
 
         [TestMethod()]
@@ -542,11 +542,11 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Create() as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập dòng sản phẩm!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập dòng sản phẩm!")).Count() > 0);
         }
 
         [TestMethod()]
-        public void Test_Create_DongSP_Qua_100_Ky_Tu()
+        public void Test_Create_DongSP_MoreThan_100_Characters()
         {
             var controller = new SanPhamsController();
             var model = new SanPham()
@@ -562,7 +562,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Create() as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Dòng sản phẩm không được quá 100 kí tự!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Dòng sản phẩm không được quá 100 kí tự!")).Count() > 0);
         }
 
         [TestMethod()]
@@ -582,7 +582,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Create() as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập thông tin chi tiết sản phẩm!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập thông tin chi tiết sản phẩm!")).Count() > 0);
         }
 
         [TestMethod()]
@@ -602,11 +602,11 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Create() as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Bạn chưa nhập tình trạng sản phẩm!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Bạn chưa nhập tình trạng sản phẩm!")).Count() > 0);
         }
 
         [TestMethod()]
-        public void Test_Create_TrangThaiSP_Qua_50_Ky_Tu()
+        public void Test_Create_TrangThaiSP_MoreThan_50_Characters()
         {
             var controller = new SanPhamsController();
             var model = new SanPham()
@@ -622,7 +622,7 @@ namespace Test.Controllers.Website_QuanTri.Tests
 
             var result0 = controller.Create() as ViewResult;
             Assert.IsTrue(string.IsNullOrEmpty(result0.ViewName));
-            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Contains("Tình trạng không được quá 50 kí tự!")).Count() > 0);
+            Assert.IsTrue(ValidateModel(model).Where(x => x.ErrorMessage.Equals("Tình trạng không được quá 50 kí tự!")).Count() > 0);
         }
 
     }

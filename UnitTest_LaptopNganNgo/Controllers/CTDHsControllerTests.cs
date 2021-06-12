@@ -65,7 +65,7 @@ namespace UnitTest_LaptopNganNgo.Controllers
             controller.ControllerContext = new ControllerContext(context.Object, new RouteData(), controller);
 
             var db = new CT25Team24Entities();
-            var product = db.SanPhams.First();
+            var product = db.SanPhams.Find(10001);
             var shoppingcart = new List<CTDH>();
             shoppingcart.Add(new CTDH
             {
