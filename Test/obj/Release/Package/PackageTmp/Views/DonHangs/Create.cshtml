@@ -86,7 +86,7 @@ Trợ Giúp</pre>
     @foreach (var item in Cart)
     {
         TamTinh += item.SanPham.DonGiaGoc * item.SL;
-        GiamGia += item.SanPham.DonGiaGoc - item.SanPham.DonGiaKM;
+        GiamGia += (item.SanPham.DonGiaGoc - item.SanPham.DonGiaKM) * item.SL;
         TongTien += item.DonGia * item.SL;
         sl += item.SL;
 
